@@ -14,8 +14,9 @@ window.Store = (function() {
   const SAVES_KEY = 'jupao.saves.v1';
   const LAST_KEY = 'jupao.last.v1';
   const LEGACY_SAVE_KEY = 'jupao.save.v1';
+  const ALBUM_KEY = 'jupao.album.consent.v1';
 
-  const DEFAULT_PROFILE = { name: '剧抛新人', avatar: 'oliver' };
+  const DEFAULT_PROFILE = { name: '剧抛新人', avatar: 'oliver', customAvatar: '' };
 
   function read(key, fallback) {
     try {
@@ -71,10 +72,21 @@ window.Store = (function() {
 
     /** 保存用户资料 */
     saveProfile: function(profile) {
+      const prev = this.loadProfile();
       return write(PROFILE_KEY, {
         name: profile.name,
-        avatar: profile.avatar
+        avatar: profile.avatar,
+        customAvatar: typeof profile.customAvatar === 'string' ? profile.customAvatar : prev.customAvatar
       });
+    },
+
+    /** 相册授权：只问一次，记住选择 */
+    loadAlbumConsent: function() {
+      try { return window.localStorage.getItem(ALBUM_KEY) === '1'; } catch (e) { return false; }
+    },
+
+    saveAlbumConsent: function() {
+      try { window.localStorage.setItem(ALBUM_KEY, '1'); } catch (e) { /* ignore */ }
     },
 
     /** 全部存档表 { versionId: snapshot } */
@@ -136,6 +148,7 @@ window.Store = (function() {
         window.localStorage.removeItem(LAST_KEY);
         window.localStorage.removeItem(PROFILE_KEY);
         window.localStorage.removeItem(LEGACY_SAVE_KEY);
+        window.localStorage.removeItem(ALBUM_KEY);
       } catch (e) { /* ignore */ }
     }
   };

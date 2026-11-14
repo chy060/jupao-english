@@ -160,6 +160,18 @@ body {
   font-size: 12px;
 }
 
+/* App 内嵌浏览器（WebView）常静音网页音频，单独给一条提示 */
+.webview-tip {
+  margin: 10px 0 0;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: rgba(255, 193, 7, 0.1);
+  border: 1px solid rgba(255, 193, 7, 0.32);
+  color: #ffc107;
+  font-size: 12.5px;
+  line-height: 1.55;
+}
+
 /* ========== 游戏页：状态栏 ========== */
 .status-bar {
   display: flex;

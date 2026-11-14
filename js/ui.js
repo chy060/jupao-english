@@ -146,6 +146,7 @@
     app.innerHTML = `
       <div class="screen screen-select">
         <div class="top-actions">
+          <button class="me-btn js-wordbook" data-from="home">📚 单词本</button>
           <button class="me-btn js-me">👤 我的</button>
         </div>
         <header class="hero">
@@ -879,6 +880,17 @@
       totalCorrect += s.correctCount || 0;
     });
 
+    const wStats = window.Store.loadWordStats();
+    let wbTotal = 0, wbGreen = 0, wbYellow = 0, wbRed = 0;
+    Object.keys(wStats).forEach(k => {
+      const s = wStats[k];
+      if (!s || (!s.correct && !s.wrong)) return;
+      wbTotal += 1;
+      if (s.wrong === 0) wbGreen += 1;
+      else if (s.correct === 0) wbRed += 1;
+      else wbYellow += 1;
+    });
+
     app.innerHTML = `
       <div class="screen screen-profile" style="--theme-color:#6a11cb">
         <button class="back-link" id="profileBack">← 返回</button>
@@ -931,6 +943,17 @@
             <div class="stat-cell"><b>${totalCorrect}</b><span>累计答对</span></div>
             <div class="stat-cell"><b>${latest ? latest.hp + '%' : '—'}</b><span>最近血量</span></div>
           </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-title">📚 单词本</div>
+          <div class="wordbook-mini">
+            已解锁 <b>${wbTotal}</b> 个 ·
+            <span class="mini-green">一直对 ${wbGreen}</span> ·
+            <span class="mini-yellow">错过 ${wbYellow}</span> ·
+            <span class="mini-red">一直错 ${wbRed}</span>
+          </div>
+          <button class="panel-btn js-wordbook" data-from="profile">打开单词本 →</button>
         </div>
 
         <div class="panel">
@@ -1054,6 +1077,92 @@
         }
       });
     });
+  }
+
+  // ========== 8.5 单词本 ==========
+  /** 只列出已答过的单词：一直对=绿、错过但答对过=黄、一次没对过=红 */
+  function renderWordBook(from) {
+    document.documentElement.style.setProperty('--theme-color', '#6a11cb');
+
+    const stats = window.Store.loadWordStats();
+    const bank = window.WORD_BANK || [];
+    const rows = [];
+
+    bank.forEach(w => {
+      const s = stats[w.id];
+      if (!s || (!s.correct && !s.wrong)) return;   // 没解锁的不出现
+      let status = 'yellow';
+      if (s.wrong === 0) status = 'green';
+      else if (s.correct === 0) status = 'red';
+      rows.push({ id: w.id, word: w.word, meaning: w.meaning, category: w.category, correct: s.correct, wrong: s.wrong, status });
+    });
+
+    const order = { red: 0, yellow: 1, green: 2 };
+    rows.sort((a, b) => (order[a.status] - order[b.status]) || (a.id - b.id));
+
+    const green = rows.filter(r => r.status === 'green').length;
+    const yellow = rows.filter(r => r.status === 'yellow').length;
+    const red = rows.filter(r => r.status === 'red').length;
+
+    app.innerHTML = `
+      <div class="screen screen-profile screen-wordbook" style="--theme-color:#6a11cb">
+        <button class="back-link" id="wordbookBack">← 返回</button>
+
+        <div class="profile-card">
+          <div class="avatar-lg wordbook-emoji">📚</div>
+          <div class="profile-info">
+            <div class="profile-name">单词本</div>
+            <div class="profile-sub">只显示你答过的单词 · 共 ${rows.length} 个 · 五个剧本共用一本</div>
+          </div>
+        </div>
+
+        ${rows.length ? `
+          <div class="panel">
+            <div class="stats-grid">
+              <div class="stat-cell"><b>${rows.length}</b><span>已解锁</span></div>
+              <div class="stat-cell stat-green"><b>${green}</b><span>一直答对</span></div>
+              <div class="stat-cell stat-yellow"><b>${yellow}</b><span>错过也答对过</span></div>
+              <div class="stat-cell stat-red"><b>${red}</b><span>一次没对过</span></div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="wordbook-legend">
+              <span><i class="legend-dot dot-green"></i>一直答对</span>
+              <span><i class="legend-dot dot-yellow"></i>有答错记录</span>
+              <span><i class="legend-dot dot-red"></i>一直答错</span>
+            </div>
+            <div class="wordbook-grid">
+              ${rows.map(r => `
+                <div class="word-item ${r.status}">
+                  <div class="word-item-top">
+                    <span class="word-item-en">${escapeHtml(r.word)}</span>
+                    <span class="tts-btn" data-speak="${escapeAttr(r.word)}" data-lang="en-US" title="朗读单词">🔊</span>
+                  </div>
+                  <div class="word-item-cn">${escapeHtml(r.meaning)}</div>
+                  <div class="word-item-stat">答对 ${r.correct} 次 · 答错 ${r.wrong} 次</div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        ` : `
+          <div class="panel">
+            <div class="empty-save">单词本还是空的。答过一道题，这个词就会记进来；答对答错会分别标成不同颜色。</div>
+            <button class="next-btn" id="wordbookGo">去答题 →</button>
+          </div>
+        `}
+      </div>
+    `;
+
+    document.getElementById('wordbookBack').addEventListener('click', () => {
+      if (from === 'home') renderVersionSelect();
+      else renderProfile();
+    });
+
+    const goBtn = document.getElementById('wordbookGo');
+    if (goBtn) goBtn.addEventListener('click', renderVersionSelect);
+
+    bindTts();
   }
 
   // ========== 9. 编辑资料（昵称 + 头像） ==========
@@ -1195,6 +1304,15 @@
     if (e.target.closest('.js-home')) {
       window.TTS.stop();
       renderVersionSelect();
+    }
+  });
+
+  // ========== 全局事件委托：进入「单词本」 ==========
+  app.addEventListener('click', (e) => {
+    const btn = e.target.closest('.js-wordbook');
+    if (btn) {
+      window.TTS.stop();
+      renderWordBook(btn.dataset.from || 'profile');
     }
   });
 

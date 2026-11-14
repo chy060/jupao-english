@@ -26,6 +26,28 @@ window.GameEngine = (function() {
     return !!(list && list.length > 0);
   }
 
+  /** 找出这道题考的目标词在词库里的条目 */
+  function targetWordOf(q) {
+    if (!q) return null;
+    if (q.word && q.word.id) return q.word;   // 词汇模式直接带 word
+    const bank = window.WORD_BANK || [];
+    const m = String(q.prompt || "").match(/'([^']+)'/);
+    if (!m) return null;
+    const raw = m[1].toLowerCase();
+    const firstRaw = raw.split(/\s+/)[0];
+    let hit = bank.find(w => w.word.toLowerCase() === raw);
+    if (!hit) hit = bank.find(w => w.word.toLowerCase().split(/\s+/)[0] === firstRaw);
+    return hit || null;
+  }
+
+  /** 记入单词本（跨剧本共用一本） */
+  function recordWord(q, isCorrect) {
+    const w = targetWordOf(q);
+    if (w && window.Store && window.Store.recordWordStat) {
+      window.Store.recordWordStat(w.id, isCorrect);
+    }
+  }
+
   /** 初始化新游戏 */
   function init(versionId) {
     const version = window.getVersion(versionId);
@@ -123,6 +145,7 @@ window.GameEngine = (function() {
     const key = `${state.chapterIndex}-${state.questionIndex}`;
 
     state.results[key] = isCorrect;
+    recordWord(q, isCorrect);
 
     if (isCorrect) {
       state.coins += CORRECT_COINS;
@@ -233,6 +256,7 @@ window.GameEngine = (function() {
 
     const selected = q.options[optionIndex];
     const isCorrect = selected && selected.correct;
+    recordWord(q, !!isCorrect);
 
     if (isCorrect) {
       state.coins += CORRECT_COINS;

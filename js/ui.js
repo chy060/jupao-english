@@ -251,6 +251,7 @@
               <span class="stat-icon">🪙</span>
               <span class="stat-val">${state.coins}</span>
             </div>
+            <button class="icon-btn js-wordbook" data-from="game" title="单词本">📚</button>
             <button class="icon-btn js-me" title="我的">👤</button>
           </div>
         </div>
@@ -308,6 +309,7 @@
               <span class="stat-icon">🪙</span>
               <span class="stat-val">${state.coins}</span>
             </div>
+            <button class="icon-btn js-wordbook" data-from="game" title="单词本">📚</button>
             <button class="icon-btn js-me" title="我的">👤</button>
           </div>
         </div>
@@ -1155,7 +1157,8 @@
     `;
 
     document.getElementById('wordbookBack').addEventListener('click', () => {
-      if (from === 'home') renderVersionSelect();
+      if (from === 'game' && window.GameEngine.getState()) renderGame();
+      else if (from === 'home') renderVersionSelect();
       else renderProfile();
     });
 

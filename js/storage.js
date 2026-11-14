@@ -15,6 +15,7 @@ window.Store = (function() {
   const LAST_KEY = 'jupao.last.v1';
   const LEGACY_SAVE_KEY = 'jupao.save.v1';
   const ALBUM_KEY = 'jupao.album.consent.v1';
+  const WORD_STATS_KEY = 'jupao.wordstats.v1';
 
   const DEFAULT_PROFILE = { name: '剧抛新人', avatar: 'oliver', customAvatar: '' };
 
@@ -89,6 +90,23 @@ window.Store = (function() {
       try { window.localStorage.setItem(ALBUM_KEY, '1'); } catch (e) { /* ignore */ }
     },
 
+    /** 单词本原始数据 { [wordId]: { correct, wrong } }，所有剧本共用一本 */
+    loadWordStats: function() {
+      const data = read(WORD_STATS_KEY, null);
+      return data && typeof data === 'object' ? data : {};
+    },
+
+    /** 记录一次作答结果，用于单词本标色 */
+    recordWordStat: function(wordId, isCorrect) {
+      if (wordId == null) return false;
+      const stats = this.loadWordStats();
+      const cur = stats[wordId] || { correct: 0, wrong: 0 };
+      if (isCorrect) cur.correct += 1;
+      else cur.wrong += 1;
+      stats[wordId] = cur;
+      return write(WORD_STATS_KEY, stats);
+    },
+
     /** 全部存档表 { versionId: snapshot } */
     loadSaves: loadSaves,
 
@@ -149,6 +167,7 @@ window.Store = (function() {
         window.localStorage.removeItem(PROFILE_KEY);
         window.localStorage.removeItem(LEGACY_SAVE_KEY);
         window.localStorage.removeItem(ALBUM_KEY);
+        window.localStorage.removeItem(WORD_STATS_KEY);
       } catch (e) { /* ignore */ }
     }
   };

@@ -21,9 +21,9 @@ window.TTS = (function() {
    */
   const PROFILES = {
     female_lead: { pitch: 1.05, rate: 1.00, prefer: ['Google US English', 'Samantha', 'Jenny', 'Aria', 'Zira'] }, // 大女主：干练御姐
-    male_lead:   { pitch: 0.60, rate: 0.92, prefer: ['Google UK English Male', 'David', 'Mark', 'Guy', 'Ryan', 'Daniel', 'Alex'] }, // 大男主：低沉磁性
-    dual_female: { pitch: 1.25, rate: 1.04, prefer: ['Google US English', 'Samantha', 'Jenny', 'Aria', 'Zira'] }, // 百合：明亮温柔
-    dual_male:   { pitch: 0.80, rate: 1.00, prefer: ['Google UK English Male', 'Daniel', 'Mark', 'Guy', 'David', 'Alex'] }, // 耽美：年轻清亮
+    male_lead:   { pitch: 0.60, rate: 0.85, prefer: ['Google UK English Male', 'David', 'Mark', 'Guy', 'Ryan', 'Daniel', 'Alex'] }, // 大男主：低沉磁性
+    dual_female: { pitch: 1.25, rate: 1.06, prefer: ['Google US English', 'Samantha', 'Jenny', 'Aria', 'Zira'] }, // 百合：明亮温柔
+    dual_male:   { pitch: 0.80, rate: 1.08, prefer: ['Google UK English Male', 'Daniel', 'Mark', 'Guy', 'David', 'Alex'] }, // 耽美：年轻清亮
     pure_love:   { pitch: 1.40, rate: 0.88, prefer: ['Google US English', 'Samantha', 'Aria', 'Jenny', 'Zira'] } // 纯爱：轻缓治愈
   };
 
@@ -71,6 +71,7 @@ window.TTS = (function() {
     try {
       const url = 'https://dict.youdao.com/dictvoice?type=2&audio=' + encodeURIComponent(text);
       if (!audioEl) audioEl = new Audio();
+      audioEl.onerror = null;
       audioEl.src = url;
       const p = audioEl.play();
       if (p && p.catch) p.catch(function() {});

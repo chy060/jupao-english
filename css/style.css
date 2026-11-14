@@ -172,6 +172,15 @@ body {
   line-height: 1.55;
 }
 
+/* 页脚版本号：用来确认手机上加载的是不是最新代码 */
+.build-stamp {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 11px;
+  color: var(--text-muted);
+  opacity: 0.55;
+}
+
 /* ========== 游戏页：状态栏 ========== */
 .status-bar {
   display: flex;

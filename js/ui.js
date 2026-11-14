@@ -146,7 +146,7 @@
     app.innerHTML = `
       <div class="screen screen-select">
         <div class="top-actions">
-          <button class="me-btn js-wordbook" data-from="home">📚 单词本</button>
+          <button class="me-btn js-wordbook" data-from="home">单词本</button>
           <button class="me-btn js-me">👤 我的</button>
         </div>
         <header class="hero">
@@ -248,10 +248,10 @@
               <span class="stat-val">${state.hp}%</span>
             </div>
             <div class="stat coins" title="金币">
-              <span class="stat-icon">🪙</span>
+              <span class="coin-icon">¥</span>
               <span class="stat-val">${state.coins}</span>
             </div>
-            <button class="icon-btn js-wordbook" data-from="game" title="单词本">📚</button>
+            <button class="icon-btn icon-text js-wordbook" data-from="game" title="单词本">词</button>
             <button class="icon-btn js-me" title="我的">👤</button>
           </div>
         </div>
@@ -306,10 +306,10 @@
               <span class="stat-val">${state.hp}%</span>
             </div>
             <div class="stat coins" title="金币">
-              <span class="stat-icon">🪙</span>
+              <span class="coin-icon">¥</span>
               <span class="stat-val">${state.coins}</span>
             </div>
-            <button class="icon-btn js-wordbook" data-from="game" title="单词本">📚</button>
+            <button class="icon-btn icon-text js-wordbook" data-from="game" title="单词本">词</button>
             <button class="icon-btn js-me" title="我的">👤</button>
           </div>
         </div>
@@ -721,7 +721,7 @@
           <p class="death-desc">你的 ${state.version.name} 之旅暂时中断了……</p>
           <div class="death-stats">
             <div>已答对：<b>${state.correctCount}</b> 题</div>
-            <div>当前金币：<b>${state.coins}</b> 🪙</div>
+            <div>当前金币：<b>${state.coins}</b></div>
           </div>
           ${canRevive ? `
             <button class="revive-btn" id="reviveBtn">
@@ -801,7 +801,7 @@
       `;
     }
     return `
-      <div class="novel-header">📚 小说解锁（第一本进度 ${np.novel1.percent >= 100 ? '已解锁，进入第二本' : np.novel1.percent + '%'}）</div>
+      <div class="novel-header">小说解锁（第一本进度 ${np.novel1.percent >= 100 ? '已解锁，进入第二本' : np.novel1.percent + '%'}）</div>
       ${n1HTML}
       ${n2HTML}
     `;
@@ -850,10 +850,10 @@
             <div>版本：${state.version.icon} ${state.version.name}</div>
             <div>答对题数：<b>${state.correctCount}</b> / 200</div>
             <div>剩余血量：<b>${state.hp}%</b></div>
-            <div>累计金币：<b>${state.coins}</b> 🪙</div>
+            <div>累计金币：<b>${state.coins}</b></div>
           </div>
           <div class="finish-novels">
-            <div>📚 已解锁小说：</div>
+            <div>已解锁小说：</div>
             <div>① ${np.novel1.cover} ${np.novel1.titleCn}</div>
             ${np.novel2 ? `<div>② ${np.novel2.cover} ${np.novel2.titleCn}</div>` : ''}
           </div>
@@ -921,7 +921,7 @@
                       <span class="save-item-name">${v.icon} ${v.name}</span>
                       <span class="save-item-tag">${saveTag(s)}</span>
                     </div>
-                    <div class="save-item-sub">${ch ? ch.novel + ' · ' + ch.title : '词汇模式'} · ❤️ ${s.hp}% · 🪙 ${s.coins}</div>
+                    <div class="save-item-sub">${ch ? ch.novel + ' · ' + ch.title : '词汇模式'} · ❤️ ${s.hp}% · 金币 ${s.coins}</div>
                     <div class="save-item-actions">
                       <button class="panel-btn js-resume" data-vid="${s.versionId}">继续</button>
                       <button class="panel-btn ghost js-restart" data-vid="${s.versionId}">重新开始</button>
@@ -948,7 +948,7 @@
         </div>
 
         <div class="panel">
-          <div class="panel-title">📚 单词本</div>
+          <div class="panel-title">单词本</div>
           <div class="wordbook-mini">
             已解锁 <b>${wbTotal}</b> 个 ·
             <span class="mini-green">一直对 ${wbGreen}</span> ·
@@ -1111,7 +1111,7 @@
         <button class="back-link" id="wordbookBack">← 返回</button>
 
         <div class="profile-card">
-          <div class="avatar-lg wordbook-emoji">📚</div>
+          <div class="avatar-lg wordbook-emoji">词</div>
           <div class="profile-info">
             <div class="profile-name">单词本</div>
             <div class="profile-sub">只显示你答过的单词 · 共 ${rows.length} 个 · 五个剧本共用一本</div>

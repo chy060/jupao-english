@@ -916,6 +916,15 @@
           </ul>
         </div>
 
+        <div class="panel">
+          <div class="panel-title">📮 问题反馈</div>
+          <textarea class="form-input feedback-input" id="feedbackInput" rows="4" maxlength="500"
+            placeholder="遇到 bug、题目有错、剧情读不通，都可以写在这里"></textarea>
+          <div class="form-hint">点「发送」会打开你的邮箱，自动填好收件人 2109173509@qq.com；内容同时复制到剪贴板，邮箱没弹出时可手动粘贴发送。</div>
+          <button class="next-btn" id="sendFeedbackBtn">发送</button>
+          <div class="feedback-status" id="feedbackStatus"></div>
+        </div>
+
         <div class="danger-zone">
           <button class="danger-btn" id="clearAllBtn">🗑 清除所有数据</button>
           <p class="danger-hint">会删除昵称、头像和全部关卡进度，只有你点确认后才会执行。</p>
@@ -964,6 +973,46 @@
 
     const goSelectBtn = document.getElementById('goSelectBtn');
     if (goSelectBtn) goSelectBtn.addEventListener('click', renderVersionSelect);
+
+    document.getElementById('sendFeedbackBtn').addEventListener('click', () => {
+      const input = document.getElementById('feedbackInput');
+      const status = document.getElementById('feedbackStatus');
+      const text = input.value.trim();
+      if (text.length < 5) {
+        status.textContent = '再多写几个字（至少 5 个字）才能发送哦';
+        status.className = 'feedback-status warn';
+        return;
+      }
+      const profile = window.Store.loadProfile();
+      const v = latest ? window.getVersion(latest.versionId) : null;
+      const body = [
+        '【剧抛大脑 · 问题反馈】',
+        '',
+        text,
+        '',
+        '—— 自动附带信息 ——',
+        '昵称：' + (profile.name || '未设置'),
+        '当前剧本：' + (v ? v.name : '未开始'),
+        '进度：' + (latest ? saveSummary(latest) : '无存档'),
+        '血量 / 金币：' + (latest ? latest.hp + '% / ' + latest.coins : '—'),
+        '页面：' + location.href,
+        '设备：' + navigator.userAgent,
+        '时间：' + new Date().toLocaleString('zh-CN')
+      ].join('\n');
+      const mailto = 'mailto:2109173509@qq.com?subject=' +
+        encodeURIComponent('【剧抛大脑】问题反馈 - ' + (profile.name || '玩家')) +
+        '&body=' + encodeURIComponent(body);
+      const go = () => {
+        window.location.href = mailto;
+        status.textContent = '已调起邮箱。如果没有弹出，内容已复制，手动发到 2109173509@qq.com 即可。';
+        status.className = 'feedback-status ok';
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(body).then(go, go);
+      } else {
+        go();
+      }
+    });
 
     document.getElementById('clearAllBtn').addEventListener('click', () => {
       confirmDialog({

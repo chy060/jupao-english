@@ -32,6 +32,9 @@ window.TTS = (function() {
   const IS_APPLE = /iPhone|iPad|iPod/i.test(UA) || (/Macintosh/.test(UA) && navigator.maxTouchPoints > 1);
   // 微信内置浏览器对 Web Speech 支持不稳定，直接用音频更保险
   const IS_WECHAT = /MicroMessenger/i.test(UA);
+  const IS_MOBILE = /Android|iPhone|iPad|iPod|Mobile/i.test(UA);
+  // 安卓：系统语音引擎经常「假成功」——回调报已开始却完全没声音（国产 ROM 尤其常见）
+  const IS_ANDROID = /Android/i.test(UA);
 
   function init() {
     if ('speechSynthesis' in window) {
@@ -73,14 +76,20 @@ window.TTS = (function() {
   }
 
   /** 兜底：用在线词典音频（本机无英语语音时才有意义） */
-  function playAudio(text) {
+  function playAudio(text, onFail) {
     try {
       const url = 'https://dict.youdao.com/dictvoice?type=2&audio=' + encodeURIComponent(text);
       if (!audioEl) audioEl = new Audio();
-      audioEl.onerror = null;
+      let failed = false;
+      const fail = function() {
+        if (failed) return;
+        failed = true;
+        if (onFail) onFail();
+      };
+      audioEl.onerror = onFail ? fail : null;
       audioEl.src = url;
       const p = audioEl.play();
-      if (p && p.catch) p.catch(function() {});
+      if (p && p.catch) p.catch(fail);
       return true;
     } catch (e) {
       return false;
@@ -112,12 +121,12 @@ window.TTS = (function() {
         if (synth.paused) synth.resume();
         synth.speak(utter);
 
-        // 合成器没有任何反应（系统缺语音/被静音）时改用词典音频
-        // iOS 上这里一定已经被系统拦截，不用白试
+        // 只要合成器没真正开始发声，就改用词典音频
+        // 注意：不能只看 synth.speaking，安卓上很多机型会假报 true 却不出声
         if (!IS_APPLE) {
           setTimeout(function() {
-            if (!started && !synth.speaking && !synth.pending) playAudio(text);
-          }, 1200);
+            if (!started) playAudio(text);
+          }, 1500);
         }
       } catch (e) {
         if (!IS_APPLE) playAudio(text);
@@ -158,6 +167,15 @@ window.TTS = (function() {
     if (IS_APPLE) {
       if (synth) doSpeak(content, language);
       else playAudio(content);
+      return;
+    }
+
+    // 安卓：系统语音引擎假成功的情况太多，直接用在线音频，点了就一定有声音
+    // （只有音频也加载失败时，才退回语音合成试一次）
+    if (IS_ANDROID) {
+      if (!playAudio(content, function() { doSpeak(content, language); })) {
+        doSpeak(content, language);
+      }
       return;
     }
 

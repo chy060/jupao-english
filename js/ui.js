@@ -37,7 +37,35 @@
   ];
 
   function getAvatarChoice(id) {
+    if (id === 'custom') {
+      const p = window.Store ? window.Store.loadProfile() : null;
+      if (p && p.customAvatar) return { id: 'custom', type: 'img', url: p.customAvatar, label: '我的' };
+      return AVATAR_CHOICES[0];
+    }
     return AVATAR_CHOICES.find(a => a.id === id) || AVATAR_CHOICES[0];
+  }
+
+  /** 把用户上传的图片居中裁成正方形并压缩，避免 base64 撑爆本地存储 */
+  function shrinkImage(src, size) {
+    return new Promise((resolve) => {
+      const img = new Image();
+      img.onload = () => {
+        try {
+          const side = Math.min(img.width, img.height);
+          const sx = (img.width - side) / 2;
+          const sy = (img.height - side) / 2;
+          const canvas = document.createElement('canvas');
+          canvas.width = size;
+          canvas.height = size;
+          canvas.getContext('2d').drawImage(img, sx, sy, side, side, 0, 0, size, size);
+          resolve(canvas.toDataURL('image/jpeg', 0.82));
+        } catch (e) {
+          resolve(src);
+        }
+      };
+      img.onerror = () => resolve(src);
+      img.src = src;
+    });
   }
 
   function avatarHTML(av, extraClass) {
@@ -1032,8 +1060,17 @@
   function renderProfileEdit() {
     const profile = window.Store.loadProfile();
     let picked = profile.avatar;
+    let customData = profile.customAvatar || '';
 
     document.documentElement.style.setProperty('--theme-color', '#6a11cb');
+
+    const customTile = () => customData ? `
+      <button class="avatar-choice ${picked === 'custom' ? 'selected' : ''}" data-avatar="custom">
+        ${avatarHTML({ type: 'img', url: customData })}
+        <span class="avatar-choice-label">我的</span>
+      </button>
+    ` : '';
+
     app.innerHTML = `
       <div class="screen screen-profile" style="--theme-color:#6a11cb">
         <button class="back-link" id="editBack">← 返回我的</button>
@@ -1046,7 +1083,8 @@
 
         <div class="panel">
           <div class="panel-title">🖼 头像</div>
-          <div class="avatar-grid">
+          <div class="avatar-grid" id="avatarGrid">
+            ${customTile()}
             ${AVATAR_CHOICES.map(a => `
               <button class="avatar-choice ${a.id === picked ? 'selected' : ''}" data-avatar="${a.id}">
                 ${avatarHTML(a)}
@@ -1054,25 +1092,87 @@
               </button>
             `).join('')}
           </div>
+          <button class="panel-btn ghost" id="uploadAvatarBtn">📷 上传我自己的头像</button>
+          <input type="file" id="avatarFile" accept="image/*" hidden>
+          <div class="form-hint">点上传会先询问是否允许打开相册；图片会居中裁成正方形并压缩，只存在这台设备，不会上传到任何服务器。</div>
         </div>
 
         <button class="next-btn" id="saveProfileBtn">保存资料</button>
       </div>
     `;
 
-    app.querySelectorAll('.avatar-choice').forEach(btn => {
-      btn.addEventListener('click', () => {
-        picked = btn.dataset.avatar;
-        app.querySelectorAll('.avatar-choice').forEach(b => {
-          b.classList.toggle('selected', b === btn);
-        });
+    function bindChoices() {
+      app.querySelectorAll('.avatar-choice').forEach(btn => {
+        btn.onclick = () => {
+          picked = btn.dataset.avatar;
+          app.querySelectorAll('.avatar-choice').forEach(b => {
+            b.classList.toggle('selected', b === btn);
+          });
+        };
       });
+    }
+    bindChoices();
+
+    const fileInput = document.getElementById('avatarFile');
+    const uploadBtn = document.getElementById('uploadAvatarBtn');
+
+    uploadBtn.addEventListener('click', () => {
+      if (window.Store.loadAlbumConsent()) {
+        fileInput.click();
+        return;
+      }
+      confirmDialog({
+        title: '允许打开相册吗？',
+        text: '上传头像需要读取你相册里的一张图片。图片只会在本机裁剪压缩后保存，不会上传到任何服务器。此询问只出现一次。',
+        okText: '允许并选择图片',
+        onOk: () => {
+          window.Store.saveAlbumConsent();
+          fileInput.click();
+        }
+      });
+    });
+
+    fileInput.addEventListener('change', () => {
+      const file = fileInput.files && fileInput.files[0];
+      fileInput.value = '';
+      if (!file) return;
+      if (file.type.indexOf('image/') !== 0) {
+        uploadBtn.textContent = '⚠️ 请选择图片文件';
+        return;
+      }
+      const reader = new FileReader();
+      reader.onload = () => {
+        shrinkImage(reader.result, 240).then(url => {
+          customData = url;
+          picked = 'custom';
+          const grid = document.getElementById('avatarGrid');
+          const old = grid.querySelector('[data-avatar="custom"]');
+          const html = `
+            <button class="avatar-choice selected" data-avatar="custom">
+              ${avatarHTML({ type: 'img', url: customData })}
+              <span class="avatar-choice-label">我的</span>
+            </button>`;
+          if (old) old.outerHTML = html;
+          else grid.insertAdjacentHTML('afterbegin', html);
+          bindChoices();
+          uploadBtn.textContent = '✅ 已选好，点下方「保存资料」生效';
+        });
+      };
+      reader.readAsDataURL(file);
     });
 
     document.getElementById('editBack').addEventListener('click', renderProfile);
     document.getElementById('saveProfileBtn').addEventListener('click', () => {
       const name = document.getElementById('nameInput').value.trim();
-      window.Store.saveProfile({ name: name || '剧抛新人', avatar: picked });
+      const saved = window.Store.saveProfile({
+        name: name || '剧抛新人',
+        avatar: picked,
+        customAvatar: customData
+      });
+      if (!saved) {
+        uploadBtn.textContent = '⚠️ 本地存储空间不足，头像可能没保存成功';
+        return;
+      }
       renderProfile();
     });
   }

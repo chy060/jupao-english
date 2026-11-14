@@ -179,6 +179,23 @@ body {
 }
 .stat { display: flex; align-items: center; gap: 6px; font-size: 14px; }
 .stat-icon { font-size: 16px; }
+/* 金币图标：不依赖 emoji 字体，任何设备都能显示 */
+.coin-icon {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #ffe082, #f9a825);
+  color: #5d4037;
+  font-size: 11px;
+  font-weight: 900;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+/* 文字型图标按钮（如「词」） */
+.icon-btn.icon-text { font-size: 13px; font-weight: 800; }
 .hp-bar {
   width: 60px;
   height: 10px;

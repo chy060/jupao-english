@@ -12,6 +12,20 @@ window.TTS = (function() {
   let voices = [];
   let currentUtterance = null;
   let audioEl = null;
+  let profileId = null;
+
+  /**
+   * 各版本的人设音色
+   * prefer 是优先匹配的语音名（不同浏览器/系统可用的语音不一样），
+   * pitch / rate 是兜底差异：就算只有一条英语语音，也能听出不同人设
+   */
+  const PROFILES = {
+    female_lead: { pitch: 1.05, rate: 1.00, prefer: ['Google US English', 'Samantha', 'Jenny', 'Aria', 'Zira'] }, // 大女主：干练御姐
+    male_lead:   { pitch: 0.60, rate: 0.92, prefer: ['Google UK English Male', 'David', 'Mark', 'Guy', 'Ryan', 'Daniel', 'Alex'] }, // 大男主：低沉磁性
+    dual_female: { pitch: 1.25, rate: 1.04, prefer: ['Google US English', 'Samantha', 'Jenny', 'Aria', 'Zira'] }, // 百合：明亮温柔
+    dual_male:   { pitch: 0.80, rate: 1.00, prefer: ['Google UK English Male', 'Daniel', 'Mark', 'Guy', 'David', 'Alex'] }, // 耽美：年轻清亮
+    pure_love:   { pitch: 1.40, rate: 0.88, prefer: ['Google US English', 'Samantha', 'Aria', 'Jenny', 'Zira'] } // 纯爱：轻缓治愈
+  };
 
   function init() {
     if ('speechSynthesis' in window) {
@@ -33,12 +47,20 @@ window.TTS = (function() {
     }
   }
 
-  /** 找一条最合适的语音：完全匹配语言 > 同语种 > 任意英语 */
-  function pickVoice(lang) {
+  /** 找一条最合适的语音：优先人设指定的语音名 > 完全匹配语言 > 同语种 > 任意英语 */
+  function pickVoice(lang, prefer) {
     if (!voices.length) loadVoices();
     const want = String(lang || 'en-US').toLowerCase();
     const short = want.split('-')[0];
-    let hit = voices.find(v => String(v.lang || '').toLowerCase() === want);
+    let hit = null;
+
+    if (prefer && prefer.length) {
+      for (let i = 0; i < prefer.length && !hit; i++) {
+        const key = prefer[i].toLowerCase();
+        hit = voices.find(v => String(v.name || '').toLowerCase().indexOf(key) >= 0);
+      }
+    }
+    if (!hit) hit = voices.find(v => String(v.lang || '').toLowerCase() === want);
     if (!hit) hit = voices.find(v => String(v.lang || '').toLowerCase().indexOf(short) === 0);
     if (!hit) hit = voices.find(v => /^en/i.test(String(v.lang || '')));
     return hit || null;
@@ -65,13 +87,14 @@ window.TTS = (function() {
   }
 
   function doSpeak(text, lang) {
+    const profile = PROFILES[profileId] || null;
     const startSpeak = function() {
       try {
         const utter = new SpeechSynthesisUtterance(text);
         utter.lang = lang;
-        utter.rate = 0.95;
-        utter.pitch = 1;
-        const voice = pickVoice(lang);
+        utter.rate = profile ? profile.rate : 0.95;
+        utter.pitch = profile ? profile.pitch : 1;
+        const voice = pickVoice(lang, profile ? profile.prefer : null);
         if (voice) utter.voice = voice;
 
         let started = false;
@@ -152,8 +175,13 @@ window.TTS = (function() {
     return synth ? (synth.speaking || synth.pending) : false;
   }
 
+  /** 切换人设音色：传版本 id；传空则恢复默认中性音色 */
+  function setProfile(id) {
+    profileId = PROFILES[id] ? id : null;
+  }
+
   // 初始化
   if (typeof window !== 'undefined') init();
 
-  return { speak, speakEn, stop, isSpeaking };
+  return { speak, speakEn, stop, isSpeaking, setProfile };
 })();

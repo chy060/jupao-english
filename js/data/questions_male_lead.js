@@ -1,6 +1,6 @@
 /**
- * 大男主 ·《赘婿归来：从被退婚开始》剧情题库
- * 50 章 × 4 题 = 200 题，词汇按 WORD_BANK id 顺序逐章取用
+ * 原创剧情题库 —— 大男主 ·《赘婿归来：从被退婚开始》
+ * 50 章 × 4 题 = 200 题
  */
 window.NOVEL_CHAPTERS = window.NOVEL_CHAPTERS || {};
 window.NOVEL_CHAPTERS.male_lead = [
@@ -10,66 +10,66 @@ window.NOVEL_CHAPTERS.male_lead = [
     title: '第 1 章 · 退婚书上的那一笔',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '苏家老宅的客厅里，退婚书摊在红木桌上。三年前陈默入赘苏家，今天苏家要把他扫地出门。苏明哲把笔推到他面前，一屋子人都在等这个吃软饭的废物低头。',
+    storyText: '苏家老宅的客厅里，退婚书摊在红木桌上。陈默昨晚在小酒馆喝到天亮，太阳穴一跳一跳地疼。苏明哲把笔推到他面前，一屋子人都在等这个入赘三年的废物低头。',
     questions: [
       {
-        plotDescription: '苏明哲晃着酒杯，故意把话说得很慢，让满屋子人都听得清清楚楚。陈默没有动怒，只是把笔轻轻放下。',
-        line: "You keep saying I'm broke. Give me one month, and I'll buy this house.",
-        lineCn: '你一口一个我身无分文。给我一个月，这栋房子我买下来。',
-        prompt: "根据上下文，选出画线词汇 'Broke' 最准确的意思。",
+        plotDescription: '苏明哲晃着茶杯，故意把话说得很慢，让满屋子人都听得清清楚楚。',
+        line: "You look pissed off. Good. A man with nothing should at least know how to be angry.",
+        lineCn: '你看着挺火大的。很好，一个一无所有的男人，至少该知道怎么生气。',
+        prompt: "根据上下文，选出画线词汇 'Pissed off' 最准确的意思。",
         options: [
-          { key: 'A', en: 'having no money at all', cn: '身无分文、没钱', correct: true, reason: '苏明哲一直在骂他穷，broke 在口语里就是“一分钱都没有”。' },
-          { key: 'B', en: 'broken or damaged', cn: '坏掉的、破损的', correct: false, reason: '那不是 break 的过去式吗？这里是形容词“没钱”，没人说东西坏了。' },
-          { key: 'C', en: 'a bankrupt company', cn: '公司破产', correct: false, reason: 'broke 说的是人身上没钱，公司破产要说 bankrupt。' }
+          { key: 'A', en: 'very angry and annoyed', cn: '火大、憋着一肚子气', correct: true, reason: '他被人当众羞辱，pissed off 正是口语里的「火大」。' },
+          { key: 'B', en: 'a little sleepy', cn: '有点困', correct: false, reason: '他确实没睡好，但这句话说的是怒气，不是困意。' },
+          { key: 'C', en: 'calm and polite', cn: '冷静又有礼貌', correct: false, reason: '满屋子都在等他发火，这句是挑衅，不是夸他冷静。' }
         ],
-        analysis: 'broke 是口语里最常用的“没钱”，比 poor 更随便，也更扎人。陈默不解释、不吵架，只丢下一句期限——他不是在辩解，是在下战书。',
-        wrongFeedback: '你选错了，满屋子人笑出声，苏明哲把退婚书又往前推了推，陈默的手指在桌沿上慢慢收紧。',
-        afterCorrect: '陈默把笔捡起来，在退婚书上签下名字，一笔到底。他抬头看了一眼墙上的钟：“一个月，从今晚开始算。”满屋子的笑声忽然卡住了一半。'
+        analysis: 'pissed off 是很口语的「火大」，比 angry 更冲。陈默没有拍桌子，只是把笔拿起来——他的火不往外烧，往心里压。',
+        wrongFeedback: '你选错了，满屋子人笑出声，苏明哲把退婚书又往前推了推，陈默的手指在桌沿上慢慢收紧。气血 -10',
+        afterCorrect: '陈默在退婚书上签下名字，一笔到底。他抬头看了看墙上的钟：「一个月，从今晚开始算。」客厅里的笑声忽然卡住了一半。'
       },
       {
-        plotDescription: '苏明哲指着墙上那幅全家福，笑得意味深长，把“白住三年”四个字咬得很重。',
-        line: "Three years of free rent, and you still act like we owe you something.",
-        lineCn: '白给你住了三年房子，你还一副我们欠你的样子。',
-        prompt: "根据上下文，选出画线词汇 'rent' 最准确的意思。",
+        plotDescription: '听到「一个月」三个字，苏明哲脸上的笑僵住了，声音一下拔高。',
+        line: "Don't freak out, cousin. I'm only telling you the facts.",
+        lineCn: '别抓狂，表哥。我只是在说事实。',
+        prompt: "根据上下文，选出画线词汇 'Freak out' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a car rental fee', cn: '租车费', correct: false, reason: '这句说的是在苏家住了三年，付的是房子的钱，不是车。' },
-          { key: 'B', en: 'money paid to live in a place', cn: '房租、住房的钱', correct: true, reason: 'free rent 就是“免房租”，他是在算这三年白住的账。' },
-          { key: 'C', en: 'a torn opening in cloth', cn: '裂口、破口', correct: false, reason: '拼写像，但“裂口”是 tear 或 rip，这里说的是住的地方。' }
+          { key: 'A', en: 'to panic and lose control', cn: '崩溃、抓狂、情绪失控', correct: true, reason: '苏明哲脸色都变了，freak out 就是情绪一下炸开。' },
+          { key: 'B', en: 'to laugh out loud', cn: '放声大笑', correct: false, reason: '这里没人笑，他是被一句话噎住之后的失态。' },
+          { key: 'C', en: 'to walk away quietly', cn: '安静地走开', correct: false, reason: 'freak out 是情绪炸开，他还站在原地追问。' }
         ],
-        analysis: 'free rent 是“不用交房租”。苏明哲把人情的账算成钱，是想让陈默难堪；陈默听懂了，只是他连这笔账都不屑于争。',
-        wrongFeedback: '你选错了，苏明哲顺势把“吃白饭”说得更响，几个长辈跟着点头，客厅里的空气又冷了一层。',
-        afterCorrect: '陈默笑了一下：“三年房租，我按市价三倍还。”他从旧背包里抽出一张卡放在桌上，“密码六个零，你们先查余额。”'
+        analysis: 'freak out 强调的是情绪瞬间崩掉。陈默用这个词，是在提醒对方：先失控的人不是我。',
+        wrongFeedback: '你选错了，苏明哲抓住话头继续嘲讽，客厅里又响起一阵附和的轻笑。气血 -10',
+        afterCorrect: '苏明哲把茶杯重重放下：「一个月？你拿什么买？」陈默没回答，只是把签好的退婚书推了回去。'
       },
       {
-        plotDescription: '苏振海终于开口，语气像在批一份不合格的报表，连眼皮都没抬起来。',
-        line: "There is no budget for a man who brings nothing to this family.",
-        lineCn: '这个家没有多余的钱，去养一个什么都带不来的人。',
-        prompt: "根据上下文，选出画线词汇 'budget' 最准确的意思。",
+        plotDescription: '签完字，陈默站起来，眼下的青黑藏不住，扶着桌沿缓了一下才站稳。',
+        line: "I'm exhausted, but I'm not done here yet.",
+        lineCn: '我已经精疲力尽了，但我还没打算就这么走。',
+        prompt: "根据上下文，选出画线词汇 'Exhausted' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a small suitcase', cn: '小行李箱', correct: false, reason: 'budget 跟行李没有半点关系，别被发音带偏，这里说的是钱。' },
-          { key: 'B', en: 'a secret plan', cn: '秘密计划', correct: false, reason: 'budget 是钱的安排，不是计划本身，说“预算”才对得上这句。' },
-          { key: 'C', en: 'the money planned for spending', cn: '预算、可支配的钱', correct: true, reason: 'no budget for 就是“没有这笔预算”，等于说不打算再养他。' }
+          { key: 'A', en: 'completely out of energy', cn: '精疲力尽、累到极点', correct: true, reason: '他宿醉未醒又熬了一夜，exhausted 就是身体被抽干。' },
+          { key: 'B', en: 'very hungry', cn: '非常饿', correct: false, reason: '这里说的是累，不是饿，他连桌上的茶都没碰。' },
+          { key: 'C', en: 'slightly bored', cn: '有点无聊', correct: false, reason: '他面对的是退婚和羞辱，跟无聊没有关系。' }
         ],
-        analysis: 'no budget for somebody 是很冷的一句话：不是没钱，是“这笔钱不该花在你身上”。苏振海用账本的口吻，把三年的情分抹成了一项成本。',
-        wrongFeedback: '你选错了，苏振海合上账本，客厅里没有一个人替陈默说话，苏晚的手指在袖口里攥紧了。',
-        afterCorrect: '陈默点点头：“那就别花了。”他把椅子推回原位，声音很平，“从这个月起，苏家的账，我一分不沾。”'
+        analysis: 'exhausted 比 tired 重得多，是「一点力气都不剩」。他明明站不稳，却还是把话说完了。',
+        wrongFeedback: '你选错了，你没读出他硬撑的那口气，苏明哲顺势又刺了一句。气血 -10',
+        afterCorrect: '他松开桌沿，把背挺直。苏晚站在门口，第一次没有躲开他的视线。'
       },
       {
-        plotDescription: '临出门前，苏晚忽然叫住他，声音很轻，像是怕被客厅里的人听见。',
-        line: "In three years you never once splurged on yourself. Not even a pair of shoes.",
-        lineCn: '三年了，你一次都没为自己花过钱，连一双鞋都没有。',
-        prompt: "根据上下文，选出画线词汇 'splurged' 最准确的意思。",
+        plotDescription: '苏晚送他到门口，闻到他身上那股酒味，眉头皱了起来。',
+        line: "You came here with a hangover? You could barely stand straight.",
+        lineCn: '你就顶着宿醉来了？你差点连站都站不直。',
+        prompt: "根据上下文，选出画线词汇 'Hangover' 最准确的意思。",
         options: [
-          { key: 'A', en: 'spent a lot on something you wanted', cn: '大手笔花钱、舍得花', correct: true, reason: 'splurge 是“为自己痛快花一笔”，她说的是他从不舍得花钱。' },
-          { key: 'B', en: 'complained loudly', cn: '大声抱怨', correct: false, reason: 'splurge 只跟花钱有关，跟抱怨没有关系，别被开头字母骗了。' },
-          { key: 'C', en: 'saved every penny', cn: '一分钱都存起来', correct: false, reason: '方向正好相反，splurge 是花，不是省；存钱是 save up。' }
+          { key: 'A', en: 'the sick feeling after drinking too much', cn: '宿醉、喝多之后第二天的难受', correct: true, reason: '她闻到了酒味，hangover 就是喝酒过量后的不适。' },
+          { key: 'B', en: 'a headache from lack of sleep', cn: '缺觉引起的头痛', correct: false, reason: '头痛只是症状，hangover 的起因是前一晚喝酒。' },
+          { key: 'C', en: 'a strong smell of perfume', cn: '很浓的香水味', correct: false, reason: '她闻到的是酒味，不是香水。' }
         ],
-        analysis: 'splurge on 后面的东西，就是“在某样想要的东西上狠心花一笔”。苏晚这句话不是嘲讽，是三年里第一次认真看他。',
-        wrongFeedback: '你选错了，苏晚眼里那点松动又收了回去，她转身走回客厅，只留下高跟鞋敲地板的声音。',
-        afterCorrect: '陈默低头看了看自己那双开了口的旧鞋，笑了：“以前是没必要。”他推开门，夜风灌进来，“以后不一样了。”'
+        analysis: 'hangover 特指喝酒过量后第二天的难受。陈默昨晚喝到天亮，今天却还是来了——他不是来求，是来结账。',
+        wrongFeedback: '你选错了，苏晚眼里那点松动收了回去，转身走回客厅。气血 -10',
+        afterCorrect: '陈默笑了一下：「喝酒是为了记住今天。」他把旧背包甩到肩上，走进了院子里的夜风。'
       }
     ],
-    completeText: '第 1 章结束。退婚书签完，陈默没拿走苏家一分钱，只带走了一个旧背包。走到门口他停了一下，回头看了一眼苏晚——她低着头，一个字也没说。'
+    completeText: '第 1 章结束。退婚书签完，陈默没拿走苏家一分钱，只带走一个旧背包。走到门口他回头看了一眼——苏晚低着头，一个字也没说。'
   },
   {
     id: 'ml_2',
@@ -77,3281 +77,3281 @@ window.NOVEL_CHAPTERS.male_lead = [
     title: '第 2 章 · 三年饭钱，一笔算清',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '退婚书刚签完，苏明哲又拿出一张手写的清单，说这三年陈默在苏家吃了三千多顿饭，得赔。院子里停着一辆黑色迈巴赫，司机老周站在车门边，一直没说话。',
+    storyText: '第二天一早，苏家把三年「饭钱」列成清单送到陈默的旧公寓。楼道里停着一辆黑色迈巴赫，一位穿灰色西装的老者站在门口，已经等了两个小时。',
     questions: [
       {
-        plotDescription: '苏明哲把清单拍在桌上，一年的伙食费写得比苏氏员工的工资还高，还催着陈默当场认账。',
-        line: "Fifty thousand a year for meals? That is a rip-off, and you know it.",
-        lineCn: '一年五万的伙食费？这就是宰人，你心里清楚。',
-        prompt: "根据上下文，选出画线词汇 'rip-off' 最准确的意思。",
+        plotDescription: '老者扫了一眼那张清单，又看了看陈默住了三年的旧公寓，声音很轻。',
+        line: "This house is toxic, young master. You should have left three years ago.",
+        lineCn: '这个家是有毒的，少爷。你三年前就该走了。',
+        prompt: "根据上下文，选出画线词汇 'Toxic' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a very good bargain', cn: '很划算的买卖', correct: false, reason: '正好说反了，rip-off 是“被狠狠宰了一刀”，不是捡便宜。' },
-          { key: 'B', en: 'a wildly overpriced deal', cn: '宰人的价、坑钱的买卖', correct: true, reason: 'rip-off 指价格离谱到坑人，用在这张乱写的清单上刚好。' },
-          { key: 'C', en: 'a small gift', cn: '小礼物', correct: false, reason: 'rip-off 是钱上的事，跟送礼无关，这里也没人在送礼。' }
+          { key: 'A', en: 'poisonous and harmful', cn: '有毒的、会慢慢把人耗坏的', correct: true, reason: '他说的是这个家的气氛在腐蚀人，toxic 正是这个意思。' },
+          { key: 'B', en: 'very noisy and crowded', cn: '很吵很挤', correct: false, reason: '老宅并不吵，toxic 说的是伤害性，不是热闹。' },
+          { key: 'C', en: 'extremely expensive', cn: '非常贵', correct: false, reason: '钱不是这里的重点，他说的是人。' }
         ],
-        analysis: 'rip-off 是“贵得离谱、明摆着坑你”。陈默没有砍价，只是把这张纸的性质点破——他不是付不起，是不陪他们演。',
-        wrongFeedback: '你选错了，苏明哲立刻加了一句“嫌贵就别吃”，亲戚们跟着笑，陈默把清单折成了两半。',
-        afterCorrect: '陈默把那张清单撕成四条，扔进垃圾桶：“按市价算，我三年吃的是你们家的剩饭。”他顿了顿，“要算，就连剩饭的钱一起算。”'
+        analysis: 'toxic 原本指「有毒的」，现在常形容一段关系或环境在慢慢消耗人。老周一句话，把三年的忍耐说透了。',
+        wrongFeedback: '你选错了，老周没再说第二遍，只是把那张清单折好放进口袋。气血 -10',
+        afterCorrect: '陈默把清单撕成两半：「他们连剩饭都算钱。」老周躬身：「那我们就按三倍还。」'
       },
       {
-        plotDescription: '苏明哲被噎了一下，转头换了个说法，把“白吃白住”四个字挂在嘴边，还故意看向苏晚。',
-        line: "For three years you have been a freeloader in my uncle's house.",
-        lineCn: '这三年你就是在我叔叔家里白吃白住的人。',
-        prompt: "根据上下文，选出画线词汇 'freeloader' 最准确的意思。",
+        plotDescription: '苏明哲带人追到楼道，正撞上老周替陈默拉开车门，场面一下僵住。',
+        line: "Well, this is awkward. Since when does a loser have a driver?",
+        lineCn: '这场面可真尴尬。一个废物什么时候配司机了？',
+        prompt: "根据上下文，选出画线词汇 'Awkward' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a person who works too hard', cn: '拼命工作的人', correct: false, reason: '正好相反，freeloader 是白拿好处、不出力的人。' },
-          { key: 'B', en: 'a free delivery service', cn: '免费送货服务', correct: false, reason: '别被 free 骗了，这个词说的是人，不是服务。' },
-          { key: 'C', en: 'someone who lives off others without paying', cn: '白吃白住、占便宜的人', correct: true, reason: 'freeloader 就是靠别人养、一分不掏的人，正对上他的嘲讽。' }
+          { key: 'A', en: 'uncomfortable and embarrassing', cn: '尴尬、让人下不来台', correct: true, reason: '他本来气势汹汹，结果撞见迈巴赫，气氛立刻变得难堪。' },
+          { key: 'B', en: 'very exciting', cn: '非常刺激', correct: false, reason: '这里没人觉得刺激，只有措手不及的难堪。' },
+          { key: 'C', en: 'totally normal', cn: '完全正常', correct: false, reason: '正因为觉得不正常，他才脱口而出这句话。' }
         ],
-        analysis: 'freeloader 由 free 加 load 组成，画面感很强：白拿东西还嫌重。苏明哲用它给陈默定性，是想让苏晚也跟着看不起他。',
-        wrongFeedback: '你选错了，苏明哲把这句重复了一遍，声音更大，苏晚的睫毛动了一下，却始终没有抬头。',
-        afterCorrect: '陈默看着他，忽然笑了：“白吃白住的人，今天把这三年的饭钱一次付清。”他朝门外抬了抬下巴，“老周，把箱子拿进来。”'
+        analysis: 'awkward 形容场面突然变得不好收场。苏明哲想羞辱人，却先被这辆车羞辱了。',
+        wrongFeedback: '你选错了，苏明哲抓住机会冷笑一声，楼道里的人都跟着看热闹。气血 -10',
+        afterCorrect: '老周替陈默拉开车门：「少爷，老爷等您三年了。」苏明哲的脸一点点白下去。'
       },
       {
-        plotDescription: '苏明哲见势头不对，赶紧抽出一张早就准备好的纸，说只要签字认下这笔债，退婚的事就不再追究。',
-        line: "This paper is a scam, and everybody at this table knows it.",
-        lineCn: '这张纸就是个骗局，在座每一个人心里都清楚。',
-        prompt: "根据上下文，选出画线词汇 'scam' 最准确的意思。",
+        plotDescription: '跟来的表弟盯着那张黑色卡片，笑得停不下来，觉得这是个笑话。',
+        line: "I'm dead. You expect me to believe a card can fix three years?",
+        lineCn: '笑死我了。你觉得我会信一张卡能抵三年？',
+        prompt: "根据上下文，选出画线词汇 'Dead' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a trick to cheat someone out of money', cn: '骗局、坑人的圈套', correct: true, reason: 'scam 就是用假东西骗钱，这张认债书正是这种圈套。' },
-          { key: 'B', en: 'a legal contract', cn: '合法合同', correct: false, reason: '如果真是合法合同，就不用偷偷写好逼人签字了。' },
-          { key: 'C', en: 'a quick phone call', cn: '一个电话', correct: false, reason: 'scam 和打电话无关，这里是纸上的骗局。' }
+          { key: 'A', en: "used to say something is hilarious", cn: '笑死我了、笑到不行（俚语）', correct: true, reason: '这里的 dead 不是真死，是年轻人说「太好笑了」。' },
+          { key: 'B', en: 'actually dead', cn: '真的死了', correct: false, reason: '他站在这儿说话，dead 只是夸张的俚语。' },
+          { key: 'C', en: 'deeply serious', cn: '非常严肃', correct: false, reason: '他明明在笑，语气是嘲讽不是严肃。' }
         ],
-        analysis: 'scam 比 lie 更重，它指一整套骗钱的手法。陈默一句话把台面掀开：这不是家务事，是敲诈。',
-        wrongFeedback: '你选错了，苏明哲立刻把纸收回去，嘴上说“不识好歹”，手却在发抖，纸角被捏出了褶。',
-        afterCorrect: '陈默拿起那张纸，看都没看，直接撕了。“想让我签字，可以。”他抬眼看苏振海，“先把你们偷税的那本账拿出来。”'
+        analysis: '口语里 I am dead 表示「笑死我了」。表弟以为抓到了笑话，其实他笑的是自己看不清的东西。',
+        wrongFeedback: '你选错了，表弟笑得更响，老周没有反驳，只是把卡片放在他手里。气血 -10',
+        afterCorrect: '老周替他刷开闸机：「余额自己看。」表弟低头看了一眼，笑声当场断在喉咙里。'
       },
       {
-        plotDescription: '客厅里安静下来，苏振海换上一副长辈的口气，说陈默欠苏家的，这辈子都还不完。',
-        line: "Write down a number. I will clear every debt your family thinks I owe.",
-        lineCn: '写个数字。你们家觉得我欠的每一笔债，我今天全清。',
-        prompt: "根据上下文，选出画线词汇 'debt' 最准确的意思。",
+        plotDescription: '车上，老周拨通一个电话，把手机递到陈默耳边。',
+        line: "Your grandfather will be thrilled. He has been waiting three years.",
+        lineCn: '老爷子会高兴坏的。他已经等了三年。',
+        prompt: "根据上下文，选出画线词汇 'Thrilled' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a kind of food', cn: '一种食物', correct: false, reason: 'debt 跟吃的一点关系没有，别和 diet（饮食）搞混了。' },
-          { key: 'B', en: 'money that must be paid back', cn: '欠下的债、要还的钱', correct: true, reason: 'clear a debt 就是“把债还清”，正对上他要一次结清的话。' },
-          { key: 'C', en: 'a written apology', cn: '书面道歉', correct: false, reason: 'debt 是钱上的亏欠，不是一句道歉，这里说的是账。' }
+          { key: 'A', en: 'extremely pleased', cn: '欣喜若狂、高兴坏了', correct: true, reason: '老人等孙子回家三年，thrilled 是压不住的欢喜。' },
+          { key: 'B', en: 'a little worried', cn: '有点担心', correct: false, reason: '这里说的是高兴，担心的话不会用 thrilled。' },
+          { key: 'C', en: 'very angry', cn: '非常生气', correct: false, reason: '意思正好相反，thrilled 是极度的开心。' }
         ],
-        analysis: 'clear a debt 是“结清债务”。陈默把苏家的道德绑架换成一个具体数字——你们要算账，那就按账来。',
-        wrongFeedback: '你选错了，苏振海冷笑一声，说“你拿什么清”，亲戚们的目光像针一样扎过来。',
-        afterCorrect: '老周这时推门进来，手里拎着一只黑色箱子，放在桌上，扣锁一响。“先生说清，就清得干净。”'
+        analysis: 'thrilled 比 happy 强得多，是「高兴到心跳加快」。这一头是老人的等待，另一头是陈默三年没回的家。',
+        wrongFeedback: '你选错了，电话那头沉默了几秒，老周轻轻叹了口气。气血 -10',
+        afterCorrect: '陈默握着手机，很久才开口：「爷爷，我回来了。」车窗外的苏家老宅一点点退到后面。'
       }
     ],
-    completeText: '第 2 章结束。箱子没有打开，苏家也没人敢先伸手。陈默起身告辞，走到院门口时，老周替他拉开了迈巴赫的车门，声音低而稳：“指挥官，兄弟们等您三年了。”'
+    completeText: '第 2 章结束。车子驶出老城区，陈默把那张清单的碎片从口袋里掏出来，扔进了路边的垃圾桶。'
   },
   {
     id: 'ml_3',
     index: 3,
-    title: '第 3 章 · 一张卡，砸在桌上',
+    title: '第 3 章 · 顶层的那间办公室',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '苏家的家宴还没散，陈默被叫回来“把话说清楚”。老周跟着他进门，黑伞收在门边，雨水顺着伞骨滴在苏家的大理石地面上，没人敢催他擦。',
+    storyText: '车子停在江城最高的那栋楼前。顶层的会议室里，天枢资本的十二个负责人已经站了三个小时。老周把一份股权文件放在陈默面前——三年里，这家公司一直在等他签字。',
     questions: [
       {
-        plotDescription: '苏明哲看见老周的穿着，立刻提高了嗓门，想用“没正经工作”把陈默重新按回泥里。',
-        line: "A man with no paycheck should not be talking about money at this table.",
-        lineCn: '一个连工资都没有的人，不该在这张桌子上谈钱。',
-        prompt: "根据上下文，选出画线词汇 'paycheck' 最准确的意思。",
+        plotDescription: '会议室的门一开，十几个人同时鞠躬，陈默站在门口，手指停在文件封面上。',
+        line: "I'm a little overwhelmed. Give me five minutes alone.",
+        lineCn: '我有点被压住了。给我五分钟，一个人待会儿。',
+        prompt: "根据上下文，选出画线词汇 'Overwhelmed' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a bank card', cn: '银行卡', correct: false, reason: 'paycheck 不是卡，是发到手里的那笔工资，别和银行卡混了。' },
-          { key: 'B', en: 'a monthly bill', cn: '每月的账单', correct: false, reason: '账单是你要付出去的钱，paycheck 是你挣回来的钱。' },
-          { key: 'C', en: 'the money you earn from a job', cn: '工资、薪水', correct: true, reason: 'paycheck 原指工资支票，口语里就是“每月挣的那笔钱”。' }
+          { key: 'A', en: 'unable to deal with too much at once', cn: '压力过载、一下子被压住', correct: true, reason: '三年隐忍之后突然要接管一切，信息量把他压得喘不过气。' },
+          { key: 'B', en: 'extremely bored', cn: '极其无聊', correct: false, reason: '他不是无聊，是一下子接不住这么多东西。' },
+          { key: 'C', en: 'very confident', cn: '非常自信', correct: false, reason: '手指停在封面上，说明他心里并不轻松。' }
         ],
-        analysis: 'paycheck 带着“按月领钱”的画面。苏明哲用它划界限：你连收入都没有，就别上桌。陈默要做的，是把这条界限踩碎。',
-        wrongFeedback: '你选错了，苏明哲得意地靠回椅背，还给旁边的人使了个眼色，笑声从桌子那头传过来。',
-        afterCorrect: '陈默没接话，只是把一张黑卡放在转盘上，轻轻一推。卡转到苏振海面前时，停住了。“先看余额，再谈谁没工资。”'
+        analysis: 'overwhelmed 是「事情太多太重，一时招架不住」。他没有硬撑，直接要了五分钟——这才是能扛事的人。',
+        wrongFeedback: '你选错了，你没读懂他的停顿，会议室里的空气更紧了。气血 -10',
+        afterCorrect: '五分钟后他推门出来，把文件翻到最后一页，签下名字：「从今天起，天枢不再等任何人。」'
       },
       {
-        plotDescription: '苏振海盯着那张卡，脸色变了又变，最后把话题扯到苏家替陈默垫付的各种开销上。',
-        line: "Put every bill on the table. I will pay them all before midnight.",
-        lineCn: '把所有账单都摆到桌上。午夜之前，我全部付清。',
-        prompt: "根据上下文，选出画线词汇 'bill' 最准确的意思。",
+        plotDescription: '散会后，老周问他要不要立刻开会，陈默靠在窗边，看着楼下的车流。',
+        line: "Let the others panic. I'd rather stay chill for one hour.",
+        lineCn: '让别人去慌吧。我宁愿先躺平一个小时。',
+        prompt: "根据上下文，选出画线词汇 'Chill' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a statement of money you owe', cn: '账单、欠款的单据', correct: true, reason: 'put the bills on the table 就是把该付的账单都摆出来。' },
-          { key: 'B', en: 'paper money', cn: '纸币', correct: false, reason: 'bill 在美式英语里确实能指钞票，但这句说的是要付的账。' },
-          { key: 'C', en: 'small coins', cn: '硬币', correct: false, reason: '硬币是 coin，bill 在这里不是零钱，是要结的账。' }
+          { key: 'A', en: 'calm and relaxed', cn: '放松、躺平、不着急', correct: true, reason: '他要在开战前先把自己稳住，chill 就是这个状态。' },
+          { key: 'B', en: 'cold and unfriendly', cn: '冷淡、不友好', correct: false, reason: 'chill 在这里说的是放松，不是冷漠。' },
+          { key: 'C', en: 'ready to fight', cn: '准备开打', correct: false, reason: '他恰恰是在开打之前让自己慢下来。' }
         ],
-        analysis: 'bill 在这里是“账单”，不是口袋里的钞票。陈默把主动权抢回来：你们不是要算账吗，那就一次算干净。',
-        wrongFeedback: '你选错了，苏振海把一叠单据推过来，纸张滑过桌面，声音刺耳，苏晚的眉头皱了一下。',
-        afterCorrect: '陈默一张张翻过去，翻到第三张时停住：“这张是你们自己买的补品，也算我头上？”他把单据推回去，“重写。”'
+        analysis: 'chill 作形容词是「松弛、不慌」。三年里他一直在忍，现在他学会先把节奏握在自己手里。',
+        wrongFeedback: '你选错了，老周把行程表又翻了一页，你还是没抓住他的节奏。气血 -10',
+        afterCorrect: '他给自己倒了杯温水，坐了整整一小时。一小时后，他按下内线：「把苏氏的资料全部调出来。」'
       },
       {
-        plotDescription: '老周把箱子放在桌角，问了一句怎么结账，声音不大，却让整桌人都停了筷子。',
-        line: "Cash is faster. Bring the case in and open it here.",
-        lineCn: '现金最快。把箱子拿进来，就在这儿打开。',
-        prompt: "根据上下文，选出画线词汇 'cash' 最准确的意思。",
+        plotDescription: '深夜十一点，最后一份报表合上，陈默靠在椅背上，眼睛闭了很久。',
+        line: "Three years of pretending took everything. I'm drained.",
+        lineCn: '三年的装傻，把什么都耗光了。我被掏空了。',
+        prompt: "根据上下文，选出画线词汇 'Drained' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a personal check', cn: '个人支票', correct: false, reason: '支票是 check，cash 是立刻能点清的现钱，两回事。' },
-          { key: 'B', en: 'money in notes or coins', cn: '现金', correct: true, reason: 'cash 就是现钞，跟转账、支票相对，所以他说“更快”。' },
-          { key: 'C', en: 'a credit limit', cn: '信用额度', correct: false, reason: '信用额度是能刷多少，cash 是手里实实在在的钱。' }
+          { key: 'A', en: 'completely used up', cn: '被掏空、精力耗尽', correct: true, reason: '他不是累了一天，是三年的隐忍一次结算。' },
+          { key: 'B', en: 'well rested', cn: '休息得很好', correct: false, reason: '正好相反，他连眼睛都快睁不开。' },
+          { key: 'C', en: 'quite satisfied', cn: '挺满足', correct: false, reason: '这句话的语气是空，不是满足。' }
         ],
-        analysis: 'cash 强调的是“立刻到手”。老周这句回答看似随意，其实是在告诉苏家：我们不必走你们的流程。',
-        wrongFeedback: '你选错了，老周没有动，苏明哲却先笑了，说“装什么装”，笑声在箱扣弹开的那一瞬戛然而止。',
-        afterCorrect: '箱盖掀开，一沓沓现金码得整整齐齐。陈默没看钱，只看着苏振海：“数清楚。数完，我们两清。”'
+        analysis: 'drained 是「被抽干」，比 tired 更彻底。他把情绪关掉太久，一松手就整个人空下来。',
+        wrongFeedback: '你选错了，你忽略了那几秒闭眼的重量。气血 -10',
+        afterCorrect: '他睁开眼，把台灯调亮：「空了好，空了才能装新的东西。」'
       },
       {
-        plotDescription: '苏振海下不来台，转而讥讽陈默连请律师的钱都要借，话里话外都是轻蔑。',
-        line: "You will need a loan just to pay for a lawyer, boy.",
-        lineCn: '小子，你连请律师的钱都得去贷款。',
-        prompt: "根据上下文，选出画线词汇 'loan' 最准确的意思。",
+        plotDescription: '凌晨，老周送来一份名单，上面是这三年来打压过陈家的所有名字，第一个就是赵家。',
+        line: "I'm not anxious about them. I'm anxious about what I'll become.",
+        lineCn: '我不为他们焦虑。我焦虑的是，我会变成什么样的人。',
+        prompt: "根据上下文，选出画线词汇 'Anxious' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a gift with no return', cn: '不用还的礼物', correct: false, reason: 'loan 是要还的，礼物才不用还，这两个差得远。' },
-          { key: 'B', en: 'a punishment', cn: '惩罚', correct: false, reason: '贷款是借钱，不是处罚，这里说的是请律师的钱。' },
-          { key: 'C', en: 'money borrowed that must be repaid', cn: '贷款、要还的借款', correct: true, reason: 'take out a loan 就是借钱，还得连本带息还回去。' }
+          { key: 'A', en: 'worried and uneasy', cn: '焦虑、心里不踏实', correct: true, reason: '他怕的不是对手，是自己会被仇恨改造成另一个人。' },
+          { key: 'B', en: 'excited about the future', cn: '对未来很兴奋', correct: false, reason: '这句话分明是担心，不是兴奋。' },
+          { key: 'C', en: 'angry at the list', cn: '对名单很生气', correct: false, reason: '他明确说了「不是为他们」。' }
         ],
-        analysis: 'loan 的核心是“借来还要还”。苏振海以为这是羞辱，陈默却听出了一件事——苏家已经开始怕他打官司了。',
-        wrongFeedback: '你选错了，苏振海笑得很响，苏明哲跟着附和，只有苏晚抬头看了陈默一眼，眼神很复杂。',
-        afterCorrect: '陈默把箱盖合上：“律师我已经请好了，从京城来的。”他站起身，“明天上午九点，他会带着审计报告上门。”'
+        analysis: 'anxious 是那种说不清、放不下的不安。名单在手，他却先问自己——这是陈默和赵天佑最大的区别。',
+        wrongFeedback: '你选错了，老周收回名单，没有再多说一句。气血 -10',
+        afterCorrect: '陈默把名单压在台灯下：「先查苏氏。他们撑不过这个月。」'
       }
     ],
-    completeText: '第 3 章结束。苏家的家宴不欢而散。陈默走出大门时，雨停了，老周撑开伞又收起来：“指挥官，苏氏那本账，我们三年前就拿到了。”'
+    completeText: '第 3 章结束。这一夜，天枢顶层的灯亮到天亮。陈默签了十七份文件，只留下一个名字没动——苏晚。'
   },
   {
     id: 'ml_4',
     index: 4,
-    title: '第 4 章 · 你们赔不起的那件西装',
+    title: '第 4 章 · 雨里的那把伞',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '第二天，苏氏集团的周年酒会。陈默本来不该出现，是苏老爷子生前留下的一份邀请函把他请了进来。他穿着三年前那套旧西装，站在水晶灯下，像一把收在鞘里的刀。',
+    storyText: '三天后，苏氏被银行抽贷的消息传遍江城。苏振海在董事会上摔了杯子，苏明哲连夜找人借钱，没有一家肯接电话。',
     questions: [
       {
-        plotDescription: '苏明哲端着红酒走过来，故意撞了他一下，酒全泼在那件旧西装上，然后掏出五百块钱。',
-        line: "Here is five hundred. That suit looks cheap anyway.",
-        lineCn: '拿着，五百块。反正这西装看着就廉价。',
-        prompt: "根据上下文，选出画线词汇 'cheap' 最准确的意思。",
+        plotDescription: '陈默看着手里的资料，指节一点点收紧——三年前让苏氏抽贷的，正是赵家。',
+        line: "I was furious when I saw the file. They planned this three years ago.",
+        lineCn: '我看到文件的时候是狂怒的。他们三年前就布好了局。',
+        prompt: "根据上下文，选出画线词汇 'Furious' 最准确的意思。",
         options: [
-          { key: 'A', en: 'low in price and poor in quality', cn: '廉价的、不上档次的', correct: true, reason: '他一边赔钱一边贬低衣服，cheap 就是“便宜又没质感”。' },
-          { key: 'B', en: 'extremely expensive', cn: '极其昂贵', correct: false, reason: '如果真贵，他就不会只掏五百块，语境正好相反。' },
-          { key: 'C', en: 'dirty from the wine', cn: '被酒弄脏的', correct: false, reason: '衣服确实脏了，但 cheap 说的是价钱和档次，不是脏。' }
+          { key: 'A', en: 'extremely angry', cn: '狂怒、怒到极点', correct: true, reason: '三年前的局间接害死了他父亲，furious 是压不住的火。' },
+          { key: 'B', en: 'a bit confused', cn: '有点困惑', correct: false, reason: '资料写得很清楚，他不是看不懂，是看懂了才怒。' },
+          { key: 'C', en: 'very pleased', cn: '非常满意', correct: false, reason: '意思完全相反。' }
         ],
-        analysis: 'cheap 在口语里既能说“便宜”，也带“掉价、不上台面”的贬义。苏明哲给钱又踩人，是想让全场都看陈默的笑话。',
-        wrongFeedback: '你选错了，周围有人低笑，苏明哲把钱塞进陈默口袋，还拍了拍，像在打发一个讨饭的。',
-        afterCorrect: '陈默把那五百块抽出来，放回他手里：“这件西装，你十年工资都赔不起。”他抬手指了指袖口的暗纹，“手工缝的，全球三件。”'
+        analysis: 'furious 比 angry 更重，是「怒火冲到头顶」。他没有砸东西，只是把资料合上——那是在压。',
+        wrongFeedback: '你选错了，老周看见他手背上的青筋，默默把门带上。气血 -10',
+        afterCorrect: '他把资料锁进抽屉：「赵家想看着苏氏死，那我就让它活给他们看。」'
       },
       {
-        plotDescription: '苏明哲不信，转头招呼几个合作方过来围观，语气夸张，说要看看这“地摊货”值几个钱。',
-        line: "You cannot afford this suit. Not with ten years of your salary.",
-        lineCn: '你买不起这件西装，十年的工资都不够。',
-        prompt: "根据上下文，选出画线词汇 'afford' 最准确的意思。",
+        plotDescription: '同一晚，苏晚一个人坐在苏氏楼下的台阶上，手机屏幕亮了又暗。',
+        line: "She sounded depressed on the phone. I've never heard her like that.",
+        lineCn: '她在电话里听起来很抑郁。我从没听过她那样说话。',
+        prompt: "根据上下文，选出画线词汇 'Depressed' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to repair something', cn: '修理', correct: false, reason: '这句说的是钱够不够，不是修不修，afford 跟修理无关。' },
-          { key: 'B', en: 'to have enough money for something', cn: '负担得起、买得起', correct: true, reason: 'can afford 就是“钱够”，所以后面才接十年的工资。' },
-          { key: 'C', en: 'to borrow from someone', cn: '向别人借', correct: false, reason: '借是 borrow，afford 说的是自己有没有这个购买力。' }
+          { key: 'A', en: 'very sad and without hope', cn: '抑郁、低落得看不到头', correct: true, reason: '苏氏要垮，她一个人扛着，情绪已经沉到底。' },
+          { key: 'B', en: 'extremely cheerful', cn: '非常开心', correct: false, reason: '正好相反，她的声音已经低下去。' },
+          { key: 'C', en: 'just a little tired', cn: '只是有点累', correct: false, reason: 'depressed 比累重得多，是一种看不到出路的低落。' }
         ],
-        analysis: 'afford 后面常接钱、时间、代价：can not afford 是“承受不起”。陈默这句不是炫富，是把对方的轻视原样扔回去。',
-        wrongFeedback: '你选错了，苏明哲笑得更欢，还招呼人拍照，闪光灯一下下打在陈默脸上。',
-        afterCorrect: '陈默没有躲镜头，反而站直了：“拍清楚点。”他看向苏明哲，“等你们查完这件的来历，记得把照片删了。”'
+        analysis: 'depressed 描述的是持续往下沉的低落。陈默三年没听过她这样的声音，这一句让他停住了。',
+        wrongFeedback: '你选错了，你没听出那通电话里的重量。气血 -10',
+        afterCorrect: '陈默站在落地窗前，看了很久的江面：「老周，备车。」'
       },
       {
-        plotDescription: '酒会散场，苏晚在露台上找到他，手里还捏着那杯没喝完的香槟，问的话很轻。',
-        line: "Was it worth it? Making enemies of everyone in one night.",
-        lineCn: '值得吗？一个晚上把所有人都得罪光。',
-        prompt: "根据上下文，选出画线词汇 'worth it' 最准确的意思。",
+        plotDescription: '车里，韩野从外地赶回来，一上车就把外套甩到后座，眼睛发亮。',
+        line: "I'm so hyped. We're finally going to take them down.",
+        lineCn: '我太兴奋了。我们终于要动手了。',
+        prompt: "根据上下文，选出画线词汇 'Hyped' 最准确的意思。",
         options: [
-          { key: 'A', en: 'very expensive', cn: '非常昂贵', correct: false, reason: '她问的不是价钱，是“这么做划不划算”，别只盯字面。' },
-          { key: 'B', en: 'completely pointless', cn: '毫无意义', correct: false, reason: '如果她认定没意义，就不会用问句，也不会专门来找他。' },
-          { key: 'C', en: 'good enough to justify the cost', cn: '值了、值得这么做', correct: true, reason: 'be worth it 就是“代价换来了相应的价值”。' }
+          { key: 'A', en: 'extremely excited', cn: '极度兴奋、热血上头', correct: true, reason: '韩野等了三年就等这一仗，hyped 正是这个状态。' },
+          { key: 'B', en: 'deeply worried', cn: '非常担心', correct: false, reason: '他拍着座椅、眼睛发亮，是兴奋不是担心。' },
+          { key: 'C', en: 'totally calm', cn: '完全平静', correct: false, reason: '他的动作和语气都不平静。' }
         ],
-        analysis: 'worth it 问的是“付出值不值”。苏晚其实在替他担心：你撕破脸，接下来怎么在苏家待。她还没意识到，他根本不打算待。',
-        wrongFeedback: '你选错了，苏晚的眼神暗下去，把香槟放在栏杆上，说了句“随你”，转身就走。',
-        afterCorrect: '陈默看着夜景：“三年里我什么都没做，那才叫不值。”他转过头，“今晚至少让他们记住了一个名字。”'
+        analysis: 'hyped 是「被点着了」，年轻人的战前兴奋。陈默没有跟着热起来，只问了一句：人呢。',
+        wrongFeedback: '你选错了，韩野的兴奋被浇了一半，声音低下去。气血 -10',
+        afterCorrect: '陈默只问：「人齐了吗？」韩野立刻收起笑：「齐了，一个都没少。」'
       },
       {
-        plotDescription: '苏明哲在背后阴阳怪气，说一个吃软饭的就算有点副业，也翻不了天。',
-        line: "Does being a house husband count as a side hustle now?",
-        lineCn: '现在当家庭煮夫也算一门副业了？',
-        prompt: "根据上下文，选出画线词汇 'side hustle' 最准确的意思。",
+        plotDescription: '苏家门口，苏晚一个人站在雨里，看见车灯亮起，抬起头。',
+        line: "She looked miserable, standing there in the rain with no umbrella.",
+        lineCn: '她看起来惨透了，站在雨里连把伞都没有。',
+        prompt: "根据上下文，选出画线词汇 'Miserable' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a second job for extra income', cn: '副业、额外挣钱的门路', correct: true, reason: 'side hustle 就是主业之外的挣钱路子，他是在拿这个嘲笑人。' },
-          { key: 'B', en: 'a weekend hobby', cn: '周末爱好', correct: false, reason: 'hobby 是花钱玩的爱好，side hustle 是为了多挣钱。' },
-          { key: 'C', en: 'housework at home', cn: '家里的家务', correct: false, reason: '家务是 chores，side hustle 的重点在“挣钱”，不在干活。' }
+          { key: 'A', en: 'extremely unhappy and pitiful', cn: '惨透了、又狼狈又难受', correct: true, reason: '淋着雨、家要垮、没人帮她，miserable 就是这个画面。' },
+          { key: 'B', en: 'fashionable and elegant', cn: '时髦又优雅', correct: false, reason: '雨里的狼狈和优雅没有关系。' },
+          { key: 'C', en: 'very determined', cn: '非常坚定', correct: false, reason: '她此刻更多是撑不住了，不是坚定。' }
         ],
-        analysis: 'side hustle 这几年很流行，指下班后搞的第二份收入，带着点自嘲也带着点狠劲。苏明哲拿它讽刺，陈默却真有。',
-        wrongFeedback: '你选错了，苏明哲笑得很得意，还问旁边的人“听懂没有”，几个人配合地点头。',
-        afterCorrect: '陈默理了理被泼湿的袖口：“算。”他顿了顿，“不过我这份副业，一年挣的比苏氏三年利润多。”'
+        analysis: 'miserable 是「身心都惨」。陈默在车里看了她三秒才开门——他要救苏氏，但不想让她以为这是心软。',
+        wrongFeedback: '你选错了，车没有停，直接开进了苏家院子。气血 -10',
+        afterCorrect: '陈默下车，把伞递给她，声音很平：「上车。谈的是生意，不是旧情。」'
       }
     ],
-    completeText: '第 4 章结束。酒会结束时，苏氏的股价忽然被人悄悄扫了一笔。没人知道买家是谁，只有苏振海盯着屏幕，第一次觉得这栋楼不太稳。'
+    completeText: '第 4 章结束。苏晚握着那把伞，指节发白。她上了车，两个人一路没有说一句话。'
   },
   {
     id: 'ml_5',
     index: 5,
-    title: '第 5 章 · 我的工资，比你们全家高',
+    title: '第 5 章 · 三亿的价码',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '苏家每月一次的家宴，照例要审一遍陈默。今年的话题换了：苏氏效益不好，苏振海说要开源节流，先把“闲人”的开支砍掉。饭桌上十几双眼睛都落在陈默身上。',
+    storyText: '苏家会议室里，天枢资本的三亿注资协议摆在桌上。条款只有一条：苏家当众承认三年前那份退婚书作废。',
     questions: [
       {
-        plotDescription: '一个远房亲戚放下筷子，故意问苏晚，你老公现在做什么工作，挣多少钱。',
-        line: "What does he even do? Minimum wage jobs, I heard.",
-        lineCn: '他到底干什么的？我听说就是最低工资那种活。',
-        prompt: "根据上下文，选出画线词汇 'minimum wage' 最准确的意思。",
+        plotDescription: '苏振海看完协议，手抖了一下，抬头看陈默的眼神完全变了。苏明哲在旁边小声补了一句。',
+        line: "My father was ecstatic when he heard the offer. He couldn't sit still.",
+        lineCn: '我爸听到这个条件时欣喜若狂，坐都坐不住。',
+        prompt: "根据上下文，选出画线词汇 'Ecstatic' 最准确的意思。",
         options: [
-          { key: 'A', en: 'the highest salary in a company', cn: '公司里的最高薪', correct: false, reason: '正好反了，minimum 是“最低”，说的是最底层的法定工资。' },
-          { key: 'B', en: 'the lowest pay allowed by law', cn: '最低工资', correct: true, reason: 'minimum wage 就是法律规定的工资下限，常用来形容活累钱少。' },
-          { key: 'C', en: 'a monthly bonus', cn: '月度奖金', correct: false, reason: '这是奖金，不是工资底线，minimum 和 bonus 意思不搭。' }
+          { key: 'A', en: 'extremely happy and excited', cn: '欣喜若狂', correct: true, reason: '三亿能救苏氏，苏振海当然喜出望外。' },
+          { key: 'B', en: 'deeply ashamed', cn: '深感羞耻', correct: false, reason: '他先想到的是活下来，羞耻是后面的事。' },
+          { key: 'C', en: 'slightly relieved', cn: '稍微松了口气', correct: false, reason: 'ecstatic 是极度的喜，不是轻微松口气。' }
         ],
-        analysis: 'minimum wage 是“最低工资”，在口语里几乎是“没什么本事、挣得最少”的代名词。亲戚问得很客气，扎人却很准。',
-        wrongFeedback: '你选错了，那位亲戚自顾自往下说，把“吃软饭”又讲了一遍，桌上有人笑出声。',
-        afterCorrect: '陈默擦了擦手：“我上一份工作，年薪七位数。”他抬眼看过去，“后来不干了，因为太闲。”'
+        analysis: 'ecstatic 是「喜到失态」。同一个苏振海，三天前还在摔杯子，今天已经开始算怎么把话说得体面。',
+        wrongFeedback: '你选错了，苏振海的脸僵了一下，会议室安静得能听见空调声。气血 -10',
+        afterCorrect: '陈默把笔推过去：「签字前，我要苏明哲当众念一遍那份退婚书。」'
       },
       {
-        plotDescription: '苏明哲赶紧接话，说自己这个月刷卡刷爆了，还要替苏家垫付酒会费用，装出一副大出血的样子。',
-        line: "My card hit an overdraft just paying for that party.",
-        lineCn: '光付那场酒会的钱，我卡就透支了。',
-        prompt: "根据上下文，选出画线词汇 'overdraft' 最准确的意思。",
+        plotDescription: '苏晚坐在长桌另一端，从头到尾没有表情，直到听见自己的名字。',
+        line: "I felt numb when he read my name out loud. I didn't feel anything.",
+        lineCn: '他念到我的名字时，我是麻木的。什么都没感觉到。',
+        prompt: "根据上下文，选出画线词汇 'Numb' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a discount on a bill', cn: '账单单上的折扣', correct: false, reason: 'overdraft 是钱不够还硬花，跟“打折”没有关系。' },
-          { key: 'B', en: 'money returned to your account', cn: '退回账户的钱', correct: false, reason: '那是退款 refund，overdraft 是账户被刷穿了。' },
-          { key: 'C', en: 'spending more than the money in your account', cn: '透支、花超了余额', correct: true, reason: 'hit an overdraft 就是刷到超出余额，还得付透支费。' }
+          { key: 'A', en: 'unable to feel anything', cn: '麻木、什么都感觉不到', correct: true, reason: '退婚书被当众念出来，她已经没有力气再难过。' },
+          { key: 'B', en: 'extremely happy', cn: '非常开心', correct: false, reason: '她坐在那儿一动不动，不是开心。' },
+          { key: 'C', en: 'very angry', cn: '非常愤怒', correct: false, reason: '她的状态是空的，不是烧起来的怒。' }
         ],
-        analysis: 'overdraft 是银行术语，指账户余额被花穿。苏明哲想用这个卖惨，可他忘了，酒会的钱本来是苏氏出的。',
-        wrongFeedback: '你选错了，苏明哲顺势把话题引到“家里开销大”，几个长辈开始数落年轻人不会过日子。',
-        afterCorrect: '陈默端起茶：“酒会的账，我看了。”他放下杯子，“三百万的场地费，报成八百万，这透支得挺值。”'
+        analysis: 'numb 是「感觉被关掉了」。三年里她一直沉默，此刻连羞耻都感觉不到，才最让人心里发沉。',
+        wrongFeedback: '你选错了，苏晚垂下眼，没有再看任何人。气血 -10',
+        afterCorrect: '陈默合上协议：「钱今天到账。」他起身，从她椅背旁走过，没有停。'
       },
       {
-        plotDescription: '苏晚皱起眉，正想岔开话题，陈默却先开了口，语气不重，每个字都落得很稳。',
-        line: "I have been saving up for three years. Not for a house — for a company.",
-        lineCn: '我攒了三年的钱。不是为了买房，是为了买一家公司。',
-        prompt: "根据上下文，选出画线词汇 'saving up' 最准确的意思。",
+        plotDescription: '散会后，苏明哲在走廊里拦住苏晚，压低声音，眼睛却盯着会议室的方向。',
+        line: "You think he's doing this for you? I've never been more jealous of a loser.",
+        lineCn: '你以为他是为了你？我从没这么嫉妒过一个废物。',
+        prompt: "根据上下文，选出画线词汇 'Jealous' 最准确的意思。",
         options: [
-          { key: 'A', en: 'keeping money for later use', cn: '攒钱、存钱', correct: true, reason: 'save up 就是一点点把钱留下来，为将来的事做准备。' },
-          { key: 'B', en: 'spending money very fast', cn: '很快把钱花光', correct: false, reason: '方向完全相反，save 是存，不是花。' },
-          { key: 'C', en: 'giving money to charity', cn: '把钱捐出去', correct: false, reason: '捐钱是 donate，save up 是把钱攥在自己手里。' }
+          { key: 'A', en: 'unhappy because someone has what you want', cn: '嫉妒、眼红', correct: true, reason: '他嫉妒的是陈默如今的位置和钱，不是别的。' },
+          { key: 'B', en: 'grateful', cn: '感激', correct: false, reason: '他的语气是咬牙切齿，不是感谢。' },
+          { key: 'C', en: 'confused', cn: '困惑', correct: false, reason: '他很清楚自己在嫉妒，说的是气话。' }
         ],
-        analysis: 'save up for 是“为某件事攒钱”。陈默把三年说得很轻，可这三年他连一双鞋都没换过，这句话的分量全在留白里。',
-        wrongFeedback: '你选错了，苏明哲立刻问“攒了多少，够买辆二手车吗”，笑声又一次压过来。',
-        afterCorrect: '陈默没回答数字，只说了一句：“明天上午，苏氏会收到一份收购意向书。”他放下筷子，“买家是我。”'
+        analysis: 'jealous 是「别人有而我没有」的酸。苏明哲越骂废物，越说明他心里的账已经算反了。',
+        wrongFeedback: '你选错了，苏晚绕过他走了，走廊里只剩他一个人。气血 -10',
+        afterCorrect: '苏晚停在电梯口，回头说了一句：「他从来没为自己争过一句。」'
       },
       {
-        plotDescription: '苏振海脸色沉下来，说年轻人手里有点钱就乱投，最后血本无归，还不如老老实实上班。',
-        line: "The boss does not spend. He invests. There is a difference.",
-        lineCn: '老板不花钱，他投资。这两件事不一样。',
-        prompt: "根据上下文，选出画线词汇 'invest' 最准确的意思。",
+        plotDescription: '车里，陈默看着窗外，忽然开口，声音很轻。',
+        line: "I used her family's collapse to get what I wanted. I feel guilty about that.",
+        lineCn: '我利用她家的崩盘拿到了我想要的。我对此感到内疚。',
+        prompt: "根据上下文，选出画线词汇 'Guilty' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to waste money on nothing', cn: '把钱浪费掉', correct: false, reason: 'invest 是为了未来有回报，不是浪费，方向要分清。' },
-          { key: 'B', en: 'to put money in to get more back', cn: '投资、投钱求回报', correct: true, reason: 'invest 的核心就是投入资源换回报，正对上这句的对比。' },
-          { key: 'C', en: 'to lend money to a friend', cn: '借钱给朋友', correct: false, reason: '借钱收利息才算投资，单说 lend 只是借出去。' }
+          { key: 'A', en: 'feeling you did something wrong', cn: '内疚、心里过不去', correct: true, reason: '他清楚自己把苏晚的处境当成了筹码。' },
+          { key: 'B', en: 'proud of himself', cn: '为自己骄傲', correct: false, reason: '他说话的语气是低的，不是得意。' },
+          { key: 'C', en: 'completely innocent', cn: '完全无辜', correct: false, reason: 'guilty 恰恰是承认自己有责任。' }
         ],
-        analysis: 'invest 和 spend 的差别，正是这句台词的刀锋：花钱是消费，投资是把钱变成更多的钱。说话的是一直沉默的老周。',
-        wrongFeedback: '你选错了，苏振海把“年轻人不懂事”说了一遍，还敲了敲桌子，饭桌上的气氛彻底僵住。',
-        afterCorrect: '老周替陈默添了茶，动作很稳：“苏先生，这三年他每天只睡四小时。”他顿了顿，“那不叫乱投，叫布局。”'
+        analysis: 'feel guilty 是「心里有愧」。他可以赢，但他不想用这种方式赢——这句自省，是他和赵天佑的分界线。',
+        wrongFeedback: '你选错了，韩野从后视镜看了他一眼，没有接话。气血 -10',
+        afterCorrect: '韩野沉默了一会儿：「那你打算怎么还？」陈默说：「把她想要的东西，一样一样买回来。」'
       }
     ],
-    completeText: '第 5 章结束。这顿饭没人吃好。散席时苏晚站在走廊尽头，看着陈默和老周一前一后下楼，忽然发现自己从来没问过，这三年他到底在做什么。'
+    completeText: '第 5 章结束。三亿到账那天，苏氏的股价止跌。同一天，赵天佑在朋友圈发了一张江城夜景，只写了四个字：好戏开场。'
   },
   {
     id: 'ml_6',
     index: 6,
-    title: '第 6 章 · 收据我留着',
+    title: '第 6 章 · 十四个小时的会议室',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '苏氏要请一位重要客户吃饭，苏振海故意让陈默去结账，说是“给个表现的机会”。包厢里一桌人点了最贵的酒，账单送上来时，所有人都在看陈默的脸色。',
+    storyText: '债务重组的第一周，苏氏七家子公司同时伸手要钱。陈默把天枢的团队直接搬进苏氏大楼，会议室的白板写了擦、擦了写，已经三天没关过灯。',
     questions: [
       {
-        plotDescription: '服务员把账单递过来，苏明哲抢先看了一眼，故意大声念出最后那一行加收的费用。',
-        line: "Add the tax. He cannot even do the math anyway.",
-        lineCn: '把税也加上。反正他连账都算不明白。',
-        prompt: "根据上下文，选出画线词汇 'tax' 最准确的意思。",
+        plotDescription: '第七家子公司的负责人刚走，陈默揉着眉心，对韩野说了一句实话。',
+        line: "I'm stressed, but I can't show it in front of them.",
+        lineCn: '我压力很大，但不能在他们面前露出来。',
+        prompt: "根据上下文，选出画线词汇 'Stressed' 最准确的意思。",
         options: [
-          { key: 'A', en: 'extra money left for the waiter', cn: '留给服务员的小费', correct: false, reason: '小费是 tip，是自愿给的；tax 是必须交给国家的。' },
-          { key: 'B', en: 'a discount for large groups', cn: '大桌客人的折扣', correct: false, reason: '税是往上加的，折扣是往下减的，方向完全不同。' },
-          { key: 'C', en: 'money paid to the government', cn: '税、要上缴的钱', correct: true, reason: 'tax 是消费时要额外缴给政府的部分，账单上单列一行。' }
+          { key: 'A', en: 'under a lot of pressure', cn: '压力大、绷得很紧', correct: true, reason: '七家子公司同时要钱，全压在他一个人身上。' },
+          { key: 'B', en: 'completely relaxed', cn: '完全放松', correct: false, reason: '正好相反，他连眉心都松不开。' },
+          { key: 'C', en: 'a little disappointed', cn: '有点失望', correct: false, reason: '这里说的是压力，不是失望。' }
         ],
-        analysis: 'tax 是账单上单列的那一笔，跑不掉也砍不掉。苏明哲拿它当众羞辱人，其实是在提醒陈默：这顿饭很贵。',
-        wrongFeedback: '你选错了，苏明哲把账单往陈默面前一推，笑着说“慢慢算，别算错了”，满桌人都等着看笑话。',
-        afterCorrect: '陈默扫了一眼总额，把卡递过去：“不用算。”他看向苏明哲，“你们点的那两瓶酒，没开。”'
+        analysis: 'stressed 是「被压力绷住」。他可以对韩野说实话，却不能对下面的人露出来——领头的人一慌，队伍就散了。',
+        wrongFeedback: '你选错了，韩野看了他一眼，把话咽了回去。气血 -10',
+        afterCorrect: '陈默把白板上的第七个名字划掉：「先保工资，再谈债。顺序不能错。」'
       },
       {
-        plotDescription: '陈默把没开封的两瓶酒推回服务员手里，声音不大，但整个包厢都听见了。',
-        line: "I want a refund for the two bottles nobody opened.",
-        lineCn: '那两瓶没人开的酒，我要退款。',
-        prompt: "根据上下文，选出画线词汇 'refund' 最准确的意思。",
+        plotDescription: '凌晨一点，韩野推门进来，脸色很差，说有两个同事已经连着三天没回家。',
+        line: "Two of my guys hit burnout in the first week. I can't lose them.",
+        lineCn: '我手底下两个人第一周就职业倦怠了。我不能失去他们。',
+        prompt: "根据上下文，选出画线词汇 'Burnout' 最准确的意思。",
         options: [
-          { key: 'A', en: 'money given back to you', cn: '退款、退回来的钱', correct: true, reason: '没开的酒退回去，钱返给你，这就是 refund。' },
-          { key: 'B', en: 'a second order', cn: '再点一次单', correct: false, reason: '他要的是退钱，不是再买，方向正好相反。' },
-          { key: 'C', en: 'a receipt for payment', cn: '付款收据', correct: false, reason: '收据是证明你付过钱，退款是把钱拿回来。' }
+          { key: 'A', en: 'extreme tiredness from too much work', cn: '职业倦怠、长期高压耗到熄火', correct: true, reason: '连轴转三天不回家，burnout 正是这种耗到空的状态。' },
+          { key: 'B', en: 'a sudden promotion', cn: '突然升职', correct: false, reason: '没有人因为升职三天不回家还脸色发白。' },
+          { key: 'C', en: 'a small mistake', cn: '一个小失误', correct: false, reason: 'burnout 说的是人被工作烧空，不是差错。' }
         ],
-        analysis: 'refund 是“退货退款”。陈默不吵不闹，只把没动过的东西退掉——他每一分钱都花得清楚，谁也别想让他当冤大头。',
-        wrongFeedback: '你选错了，苏明哲抢着说“开了开了，都开了”，可桌上那两瓶酒的封口亮得刺眼。',
-        afterCorrect: '服务员核实后当场退了钱。陈默把退款单折好，放进内袋：“账单我付，没开的酒我不认。”'
+        analysis: 'burnout 是长期高压之后「烧到熄火」，不是一两天的累。陈默听完沉默了几秒，第一件事是让所有人轮班。',
+        wrongFeedback: '你选错了，韩野没再说话，门关得很轻。气血 -10',
+        afterCorrect: '陈默当场改了三班表：「十点以后不许留人。人没了，项目也活不了。」'
       },
       {
-        plotDescription: '经理亲自进来道歉，问要不要开发票，语气恭敬了不少。',
-        line: "Sir, do you need the receipt? I can print it right now.",
-        lineCn: '先生，您需要收据吗？我现在就能打出来。',
-        prompt: "根据上下文，选出画线词汇 'receipt' 最准确的意思。",
+        plotDescription: '凌晨两点，银行那边突然来电，说放款流程要往后拖一周。',
+        line: "For ten minutes I thought we'd panic. Then the money landed.",
+        lineCn: '有那么十分钟我以为我们要慌了。然后钱到账了。',
+        prompt: "根据上下文，选出画线词汇 'Panic' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a menu with prices', cn: '带价格的菜单', correct: false, reason: '菜单是点菜看的，收据是付完钱拿的凭证。' },
-          { key: 'B', en: 'proof that you paid', cn: '收据、付款凭证', correct: true, reason: 'receipt 就是证明这笔钱你付过的单据，所以能打印。' },
-          { key: 'C', en: 'a table number', cn: '桌号', correct: false, reason: '桌号是座位编号，receipt 跟钱有关，不是号码。' }
+          { key: 'A', en: 'sudden overwhelming fear', cn: '恐慌、一下子慌了神', correct: true, reason: '钱一拖，工资就发不出，那十分钟所有人都在崩边上。' },
+          { key: 'B', en: 'celebrate loudly', cn: '大声庆祝', correct: false, reason: '钱还没到，没有任何人想庆祝。' },
+          { key: 'C', en: 'take a short break', cn: '短暂休息', correct: false, reason: 'panic 是情绪失控，不是休息。' }
         ],
-        analysis: 'receipt 是“付款凭证”。陈默要它不是为了报销，而是因为从今晚起，苏家的每一笔账都会变成证据。',
-        wrongFeedback: '你选错了，经理以为他不在意，转身要走，苏明哲趁机说“看吧，连票都不会要”。',
-        afterCorrect: '陈默伸手接过那张纸，仔细看了看金额：“留着。”他把收据夹进钱包，“以后有人问这顿饭谁付的，我拿得出证据。”'
+        analysis: 'panic 是「突然被恐惧抓住」。陈默没让会议室乱起来，他只是把手机扣在桌上，等那十分钟过去。',
+        wrongFeedback: '你选错了，会议室里有人开始收拾东西，陈默没有再解释。气血 -10',
+        afterCorrect: '到账短信亮起时，没人喊。陈默只说了一句：「继续。」'
       },
       {
-        plotDescription: '结完账，苏明哲还在挑刺，说服务也就一般，一分小费都不该给。',
-        line: "Keep the change as a tip. You were the only one here who was polite.",
-        lineCn: '零头留着当小费。今晚这儿只有你是客气的。',
-        prompt: "根据上下文，选出画线词汇 'tip' 最准确的意思。",
+        plotDescription: '天快亮时，陈默靠在椅背上，手机屏幕上那条到账短信还没关。',
+        line: "I've never been so relieved to see a bank notification.",
+        lineCn: '我从没因为一条银行通知这么松过一口气。',
+        prompt: "根据上下文，选出画线词汇 'Relieved' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a piece of advice', cn: '建议、提示', correct: false, reason: 'tip 确实有“建议”的意思，但这里给的是钱，不是忠告。' },
-          { key: 'B', en: 'a warning about danger', cn: '危险警告', correct: false, reason: '警告是 warning，跟给服务员的钱完全不搭。' },
-          { key: 'C', en: 'extra money for good service', cn: '小费', correct: true, reason: 'keep the change as a tip 就是“零头当小费”，标准用法。' }
+          { key: 'A', en: 'glad that a worry is gone', cn: '松了口气、悬着的心放下来', correct: true, reason: '钱到了，工资能发了，那口气才落下去。' },
+          { key: 'B', en: 'still worried', cn: '仍然担心', correct: false, reason: '他说的是松一口气，不是继续担心。' },
+          { key: 'C', en: 'extremely angry', cn: '极其愤怒', correct: false, reason: '这条短信救了他，不可能让他愤怒。' }
         ],
-        analysis: 'tip 在这里是“小费”，一句话把包厢里的两种人分开了：算计的人和做事的人。陈默给的也不只是钱。',
-        wrongFeedback: '你选错了，服务员低着头退出去，苏明哲还在说“惯的”，陈默的脸色终于冷了下来。',
-        afterCorrect: '陈默把钱包收好，站起身：“这顿饭我请，但我记住的不是菜。”他看了眼苏明哲，“是你们怎么对一个端盘子的人。”'
+        analysis: 'relieved 是「悬着的东西终于放下」。他没有笑，只是把手机扣过来，闭了两分钟眼。',
+        wrongFeedback: '你选错了，你把他的安静当成了冷漠。气血 -10',
+        afterCorrect: '他睁开眼，对韩野说：「睡四个小时。八点，我们谈城南那个项目。」'
       }
     ],
-    completeText: '第 6 章结束。回去的车上，老周把那张收据拍照存档：“指挥官，苏氏报销的金额是这桌的三倍。”陈默闭着眼：“记下来，以后一起算。”'
+    completeText: '第 6 章结束。苏氏撑过了第一周。而城南那个项目，赵天佑已经盯了半年。'
   },
   {
     id: 'ml_7',
     index: 7,
-    title: '第 7 章 · 从今天起，我雇人',
+    title: '第 7 章 · 城南项目易主',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '苏氏集团年会，苏振海宣布裁员，名单里有跟了苏家二十年的老员工。台下没人敢出声。陈默坐在最后一排，手里捏着那份名单，指节泛白。',
+    storyText: '城南新能源的项目招标会上，赵天佑带着六个人提前半小时进场。开标结果出来，天枢以零点三分之差落败。散场时，赵天佑特意走到陈默面前。',
     questions: [
       {
-        plotDescription: '苏振海念完名单，说公司要活下去，就得换一批更便宜的人，语气像在换零件。',
-        line: "Starting tomorrow, this company will hire people who can actually work.",
-        lineCn: '从明天起，这家公司只招真正能干活的人。',
-        prompt: "根据上下文，选出画线词汇 'hire' 最准确的意思。",
+        plotDescription: '回程车里，老周提起三年前陈默父亲出殡那晚的事，说起苏晚在殡仪馆外站了一整夜。',
+        line: "I was heartbroken when I heard what she did that night.",
+        lineCn: '听到她那晚做的事，我心都碎了。',
+        prompt: "根据上下文，选出画线词汇 'Heartbroken' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to give someone a job', cn: '雇佣、招人进来', correct: true, reason: 'hire 就是把人招进公司给岗位，正对上他要换人的说法。' },
-          { key: 'B', en: 'to remove someone from a job', cn: '把人从岗位上撤掉', correct: false, reason: '那是 fire 或 lay off，hire 是招进来，方向相反。' },
-          { key: 'C', en: 'to pay a fine', cn: '缴纳罚款', correct: false, reason: 'hire 跟罚款无关，这里说的是招工。' }
+          { key: 'A', en: 'deeply hurt emotionally', cn: '心碎、难受得说不出话', correct: true, reason: '他三年不知道她在门外站了一夜，这份迟到的知情让他心里裂开。' },
+          { key: 'B', en: 'very hungry', cn: '非常饿', correct: false, reason: '这是情绪上的痛，跟身体无关。' },
+          { key: 'C', en: 'slightly curious', cn: '有点好奇', correct: false, reason: '他的反应远不止好奇。' }
         ],
-        analysis: 'hire 是“招人、雇人”。苏振海用这个词包装裁员，好像只要换人，公司就能活。台下的人听懂了另一层意思：谁都不安全。',
-        wrongFeedback: '你选错了，名单被念到第三页，前排一个老师傅低下了头，手里的笔一直没放下。',
-        afterCorrect: '陈默站了起来：“招人可以。”他把名单举起来，“但这十二个人，我雇。”会场一下安静，所有人的目光转了过来。'
+        analysis: 'heartbroken 是「心被撕开」的痛。陈默三年里以为她冷眼旁观，原来那一夜她一直在门外。',
+        wrongFeedback: '你选错了，你没有接住这句话，车里的空气冷了下来。气血 -10',
+        afterCorrect: '陈默很久没说话，最后只问：「她后来为什么一个字都不提？」'
       },
       {
-        plotDescription: '苏明哲急了，指着陈默喊了一句，让保安把人清出去，声音都劈了。',
-        line: "Uncle, fire him. Right now. He is ruining the meeting.",
-        lineCn: '叔叔，把他开了。现在，他正在毁掉这场会。',
-        prompt: "根据上下文，选出画线词汇 'fire' 最准确的意思。",
+        plotDescription: '招标会门口，赵天佑把中标文件卷在手里，笑着拍了拍陈默的肩。',
+        line: "He looked so smug when he took the project. I wanted to break something.",
+        lineCn: '他抢下项目时那副得意忘形的样子，我真想砸点东西。',
+        prompt: "根据上下文，选出画线词汇 'Smug' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to light a flame', cn: '点火、放火', correct: false, reason: '那是字面意思，这里说的是把人从职位上赶走。' },
-          { key: 'B', en: 'to dismiss someone from a job', cn: '解雇、炒掉', correct: true, reason: 'fire somebody 就是把他开掉，后面还有 right now 催着执行。' },
-          { key: 'C', en: 'to train a new worker', cn: '培训新人', correct: false, reason: '培训是 train，跟“赶人走”完全相反。' }
+          { key: 'A', en: 'too pleased with yourself', cn: '得意忘形、自鸣得意', correct: true, reason: '赵天佑故意来拍肩，就是那副「我赢了」的得意。' },
+          { key: 'B', en: 'very humble', cn: '非常谦虚', correct: false, reason: '他特意走过来炫耀，跟谦虚正相反。' },
+          { key: 'C', en: 'deeply sorry', cn: '非常抱歉', correct: false, reason: '他没有半点歉意，只有得意。' }
         ],
-        analysis: 'fire 是“炒人”，是老板对员工的动作。有意思的是，喊这句话的苏明哲并没有这个权力，他只是在替自己慌。',
-        wrongFeedback: '你选错了，保安真的往前走了两步，会场里有人倒吸一口气，那位老师傅抬起了头。',
-        afterCorrect: '陈默没看保安，只看着苏振海：“你现在开我，明天这十二个人就带着客户走。”他顿了一下，“包括华东那三家。”'
+        analysis: 'smug 是那种招人烦的「我就知道我会赢」。陈默没动手，他把这口气记住了。',
+        wrongFeedback: '你选错了，全场都看见了那份难堪，赵天佑笑得更开。气血 -10',
+        afterCorrect: '陈默把手插回口袋：「恭喜。希望三个月后你还笑得出来。」'
       },
       {
-        plotDescription: '苏振海沉默了很久，最后换了个说法，说陈默既然要走，就别再拿苏家的东西。',
-        line: "I quit this family three years ago. Tonight I am just collecting my things.",
-        lineCn: '三年前我就退出这个家了。今晚我只是来拿回自己的东西。',
-        prompt: "根据上下文，选出画线词汇 'quit' 最准确的意思。",
+        plotDescription: '当晚，苏明哲的电话一个接一个打进来，语气一次比一次刻薄。',
+        line: "He keeps calling me. I'm annoyed, but I pick up every time.",
+        lineCn: '他一个劲儿打给我。我烦透了，但每次都接。',
+        prompt: "根据上下文，选出画线词汇 'Annoyed' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to become quiet', cn: '安静下来', correct: false, reason: '安静是 quiet，quit 比它多一个 t，意思却是“退出”。' },
-          { key: 'B', en: 'to be promoted', cn: '被提拔', correct: false, reason: '升职是 get a promotion，quit 是主动离开。' },
-          { key: 'C', en: 'to leave a job or a position', cn: '退出、主动不干了', correct: true, reason: 'quit 是主动退出，用在这里是“退出这个家”。' }
+          { key: 'A', en: 'slightly angry and bothered', cn: '烦透了、被搅得心烦', correct: true, reason: '电话一个接一个，还全是讽刺，annoyed 正合适。' },
+          { key: 'B', en: 'deeply moved', cn: '深受感动', correct: false, reason: '苏明哲的话没有一句值得感动。' },
+          { key: 'C', en: 'totally indifferent', cn: '完全无所谓', correct: false, reason: '他每次都接，说明这通电话确实搅到了他。' }
         ],
-        analysis: 'quit 的核心是“主动不干了”。陈默把婚姻、把这三年的身份，用一个 quit 轻轻放下——不是被赶走，是他自己走的。',
-        wrongFeedback: '你选错了，苏振海冷笑说“说得好像你随时能走”，台下的老员工交换了一个眼神。',
-        afterCorrect: '陈默把工牌放在第一排的桌上，那是苏氏三年前发给他的临时证。“东西我早搬完了。”他转身，“今晚带走的是人。”'
+        analysis: 'annoyed 是「被反复搅扰之后的烦躁」，比 angry 轻。他每通都接，是因为他在等对方说漏嘴。',
+        wrongFeedback: '你选错了，韩野替你按了静音，你却还是把电话接了回来。气血 -10',
+        afterCorrect: '他听完最后一句，只回了一个字：「嗯。」挂断后，他把号码存进了证据文件夹。'
       },
       {
-        plotDescription: '散会后，苏晚在地下车库拦住他，说董事会正在讨论她的位置，让他别再添乱。',
-        line: "The board is talking about my promotion. Do not make it harder.",
-        lineCn: '董事会正在讨论我的升职。别让事情更难办。',
-        prompt: "根据上下文，选出画线词汇 'promotion' 最准确的意思。",
+        plotDescription: '深夜，老周拿着检测仪在办公室走了一圈，最后从茶几底下摸出一个小东西。',
+        line: "Maybe it's paranoia, but someone has been in my office.",
+        lineCn: '也许是我想多了，但有人进过我的办公室。',
+        prompt: "根据上下文，选出画线词汇 'Paranoia' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a move to a higher position', cn: '升职、提拔', correct: true, reason: '董事会讨论的 promotion，就是把她往上提一级。' },
-          { key: 'B', en: 'a cut in pay', cn: '降薪', correct: false, reason: '降薪是 pay cut，promotion 是往上走。' },
-          { key: 'C', en: 'a transfer to another city', cn: '调去外地', correct: false, reason: '调岗是 transfer，promotion 强调的是职位升高。' }
+          { key: 'A', en: 'the feeling that others are out to get you', cn: '被害妄想、总觉得有人要害自己', correct: true, reason: '他嘴上说也许是自己多疑，其实窃听器就在手里。' },
+          { key: 'B', en: 'a strong memory', cn: '清晰的记忆', correct: false, reason: 'paranoia 是一种怀疑，不是记忆。' },
+          { key: 'C', en: 'a sleeping problem', cn: '睡眠问题', correct: false, reason: '这里说的是「总觉得有人盯着」，跟睡眠无关。' }
         ],
-        analysis: 'promotion 是“升职”。苏晚把这句话说得像谈判，其实是在解释自己为什么不能站到他这边——她的位置，也悬着。',
-        wrongFeedback: '你选错了，苏晚眼里的疲惫一下子涌上来，她松开手，退后一步，说“当我没说”。',
-        afterCorrect: '陈默看着她：“那就让他们讨论。”他拉开车门，“等你坐上那个位置，你会明白今晚我为什么站起来。”'
+        analysis: 'paranoia 指没有根据也觉得被人针对。陈默先自嘲了一句 paranoia，然后把手里的东西放到桌上——他不是多疑，他是被证实了。',
+        wrongFeedback: '你选错了，老周把东西收进口袋，没有再说一句。气血 -10',
+        afterCorrect: '陈默看着那个小黑点：「从今天起，重要的话只在车上说。」'
       }
     ],
-    completeText: '第 7 章结束。第二天，十二个老员工集体递了辞呈，跟着陈默走了。苏氏的年会视频被传到网上，评论区吵成一片，没人知道那个站起来的人是谁。'
+    completeText: '第 7 章结束。城南项目丢了，办公室还被装了东西。陈默把所有文件搬回那间旧公寓——三年前他一无所有的地方，现在成了最安全的地方。'
   },
   {
     id: 'ml_8',
     index: 8,
-    title: '第 8 章 · 十分钟，签完这份合同',
+    title: '第 8 章 · 最黑的那三夜',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '苏氏最大的客户要撤单，合同半夜到期。苏晚带着团队守在会议室，改了七版方案，对方始终不接电话。凌晨十一点四十，陈默推门进来，手里只有一张纸。',
+    storyText: '城南项目易主后，江城的媒体一夜之间全倒向赵家。三篇稿子把天枢写成「靠资本硬撑的空壳」，两家银行同时要求追加担保。',
     questions: [
       {
-        plotDescription: '苏晚的助理小声说，全组人今晚都别想回家了，咖啡已经续到第四轮。',
-        line: "Everyone is on overtime tonight. Nobody goes home until it is signed.",
-        lineCn: '今晚全员加班。签完字之前，谁也不许回家。',
-        prompt: "根据上下文，选出画线词汇 'overtime' 最准确的意思。",
+        plotDescription: '第三个失眠的夜里，陈默在客厅来回走，凌晨三点开车绕了半座城。',
+        line: "I've been restless for three nights. I can't sit still.",
+        lineCn: '我已经连着三晚焦躁得睡不着。坐都坐不住。',
+        prompt: "根据上下文，选出画线词汇 'Restless' 最准确的意思。",
         options: [
-          { key: 'A', en: 'working fewer hours than usual', cn: '比平时少干几个小时', correct: false, reason: 'overtime 是“超出正常工时”，不是缩短工时。' },
-          { key: 'B', en: 'extra hours beyond normal work', cn: '加班、额外的工作时间', correct: true, reason: 'on overtime 就是留下来加班，正好对上“不许回家”。' },
-          { key: 'C', en: 'a public holiday', cn: '法定假日', correct: false, reason: '假日是 holiday，这里说的是熬夜干活。' }
+          { key: 'A', en: 'unable to relax or stay still', cn: '焦躁、静不下来', correct: true, reason: '连睡三晚都坐不住，restless 就是这种状态。' },
+          { key: 'B', en: 'sleeping deeply', cn: '睡得很沉', correct: false, reason: '他根本睡不着，正好相反。' },
+          { key: 'C', en: 'very energetic', cn: '精力充沛', correct: false, reason: '这不是精力，是压不住的躁。' }
         ],
-        analysis: 'overtime 指正常工时之外的加班，也指加班费。这句话里全是疲惫：方案改了七版，人还在撑着。',
-        wrongFeedback: '你选错了，助理把这句话转达下去，会议室里有人低低叹了口气，键盘声又响起来。',
-        afterCorrect: '陈默把那张纸放在桌上：“都回去睡。”他看了眼表，“十分钟，我签完。”苏晚抬起头，眼睛红得厉害。'
+        analysis: 'restless 是「身体停下来，心还在跑」。三夜没睡，他不是在想怎么赢，是在想哪一步走错了。',
+        wrongFeedback: '你选错了，你只看见他还在开车，没看见他已经三天没合眼。气血 -10',
+        afterCorrect: '天快亮时他把车停在江边，给韩野发了条消息：「把城南的底稿全部找出来。」'
       },
       {
-        plotDescription: '苏晚说对方公司的法务卡着一条条款不放，时间根本不够，语气里全是无力。',
-        line: "The deadline is midnight. We finish before it, or we lose the client.",
-        lineCn: '死线是午夜。我们必须赶在之前完成，否则客户就没了。',
-        prompt: "根据上下文，选出画线词汇 'deadline' 最准确的意思。",
+        plotDescription: '韩野把那三篇稿子的转载数据放到桌上，陈默看得很慢。',
+        line: "I'm not bitter about losing. I'm bitter about how they won.",
+        lineCn: '我不是输不起。我是恨他们赢的方式。',
+        prompt: "根据上下文，选出画线词汇 'Bitter' 最准确的意思。",
         options: [
-          { key: 'A', en: 'the start of a meeting', cn: '会议开始的时间', correct: false, reason: 'deadline 是最后期限，不是开始时间，方向正好相反。' },
-          { key: 'B', en: 'a fee for paying late', cn: '逾期要交的费用', correct: false, reason: '滞纳金是 late fee，deadline 是那条不能越的时间线。' },
-          { key: 'C', en: 'the last time something must be finished', cn: '最后期限、死线', correct: true, reason: 'deadline 就是必须完成的最后时点，所以后面跟着“否则丢客户”。' }
+          { key: 'A', en: 'angry and resentful about unfair treatment', cn: '苦涩、怨恨、咽不下这口气', correct: true, reason: '他不是输不起，是咽不下被做局的那口气。' },
+          { key: 'B', en: 'sweet and pleasant', cn: '甜美愉快的', correct: false, reason: '情绪完全相反。' },
+          { key: 'C', en: 'completely calm', cn: '完全平静', correct: false, reason: '他说的是「恨」，不是平静。' }
         ],
-        analysis: 'deadline 字面是“死亡线”，指不能拖过的最后时点。苏晚怕的不是条款，是十二点之后一切归零。',
-        wrongFeedback: '你选错了，苏晚把笔放下，声音很轻：“来不及了。”会议室里没人敢接这句话。',
-        afterCorrect: '陈默拿起手机拨了一个号码，只说了一句：“老周，让对方老板听电话。”三分钟后，法务的邮件到了。'
+        analysis: 'bitter 是「苦到了心里」，带着不甘和怨。陈默承认自己 bitter，比假装大度更有力量。',
+        wrongFeedback: '你选错了，韩野把稿子收起来，屋里没人说话。气血 -10',
+        afterCorrect: '他点了点那三篇稿子：「查转载源。同一批账号，不可能只做这一次。」'
       },
       {
-        plotDescription: '电话挂断，苏晚还没反应过来，对方公司的人已经改口，说合同可以按苏氏的版本签。',
-        line: "The client asked for you by name. Who are you, Chen Mo?",
-        lineCn: '客户点名要你。陈默，你到底是谁？',
-        prompt: "根据上下文，选出画线词汇 'client' 最准确的意思。",
+        plotDescription: '半夜，苏晚提着一袋粥站在旧公寓门口，看见他开门时的样子，愣住了。',
+        line: "I don't let people see me like this. Right now I'm vulnerable.",
+        lineCn: '我不让人看见我这个样子。现在我很脆弱。',
+        prompt: "根据上下文，选出画线词汇 'Vulnerable' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a customer who pays for a service', cn: '客户、出钱的合作方', correct: true, reason: 'client 就是花钱买服务的一方，这里指那家大公司。' },
-          { key: 'B', en: 'a business competitor', cn: '竞争对手', correct: false, reason: '如果是竞争对手，就不会点名要他签合同了。' },
-          { key: 'C', en: 'a lawyer hired by the company', cn: '公司请的律师', correct: false, reason: '律师是 lawyer，client 是付钱的那一方。' }
+          { key: 'A', en: 'easily hurt and unprotected', cn: '脆弱、没有防备', correct: true, reason: '他三天没睡、胡子没刮，第一次在人前卸下那层壳。' },
+          { key: 'B', en: 'extremely strong', cn: '极其强大', correct: false, reason: '他明确说的是自己此刻不设防。' },
+          { key: 'C', en: 'very polite', cn: '非常有礼貌', correct: false, reason: 'vulnerable 说的是心理状态，不是礼貌。' }
         ],
-        analysis: 'client 是“客户”，在商务里比 customer 更正式，常指长期合作方。苏晚这一问，问的是三年都没问出口的事。',
-        wrongFeedback: '你选错了，苏晚把问题咽了回去，转身去安排签约，只是背影比刚才僵。',
-        afterCorrect: '陈默没有回答，只把签好的合同推过去：“先保住公司。”他站起来，“我的事，等你准备好了再问。”'
+        analysis: 'vulnerable 是「把软的地方露出来」。他让苏晚进门，等于承认自己也会撑不住。',
+        wrongFeedback: '你选错了，门在你手里停了一下，最后还是关上了。气血 -10',
+        afterCorrect: '苏晚把粥放在桌上，没有问项目，只说：「先吃。凉了就不能吃了。」'
       },
       {
-        plotDescription: '签完字，苏晚说明早九点还要开复盘会，让他务必到场，语气像在试探。',
-        line: "Move the meeting to nine. I have somewhere to be at eight.",
-        lineCn: '会议改到九点。八点我还有别的地方要去。',
-        prompt: "根据上下文，选出画线词汇 'meeting' 最准确的意思。",
+        plotDescription: '第二天，赵天佑在采访里放话，说天枢撑不过这个季度。韩野把视频递过来时，声音都哑了。',
+        line: "For the first time in three years, I felt hopeless.",
+        lineCn: '三年来第一次，我觉得没指望了。',
+        prompt: "根据上下文，选出画线词汇 'Hopeless' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a celebration party', cn: '庆功聚会', correct: false, reason: '这里是要复盘工作，不是庆祝，party 才对。' },
-          { key: 'B', en: 'an arranged gathering to discuss business', cn: '会议、碰头商量事情', correct: true, reason: 'meeting 就是约好时间坐下来谈事，改时间正说明它是安排。' },
-          { key: 'C', en: 'a phone repair appointment', cn: '手机维修预约', correct: false, reason: '语境是公司复盘，跟修手机没有关系。' }
+          { key: 'A', en: 'feeling there is no way out', cn: '绝望、看不到出路', correct: true, reason: '银行追保、媒体围剿、项目又丢了，他确实走到了最低处。' },
+          { key: 'B', en: 'full of hope', cn: '充满希望', correct: false, reason: '正好相反。' },
+          { key: 'C', en: 'a little curious', cn: '有点好奇', correct: false, reason: '这句话是低谷的自白，不是好奇。' }
         ],
-        analysis: 'meeting 是可安排、可改期的“会议”。陈默答应得很随意，苏晚却记住了那句“八点还有别的地方”。',
-        wrongFeedback: '你选错了，助理把时间改到九点，会议室里的人都松了口气，只有苏晚盯着门口。',
-        afterCorrect: '第二天八点，陈默出现在城郊一家小医院。他妹妹陈小满躺在病床上，看见他就笑：“哥，你怎么又瘦了。”'
+        analysis: 'hopeless 是「看不见出口」。允许自己承认这一刻的绝望，才有力气走下一步。',
+        wrongFeedback: '你选错了，韩野把视频关了，房间里只剩下电脑的风扇声。气血 -10',
+        afterCorrect: '陈默把视频看完，忽然笑了一下：「他急了。急了就会出错。」'
       }
     ],
-    completeText: '第 8 章结束。合同保住了，苏氏的股价止跌。苏晚在会上第一次没有提陈默的名字，散会后才问助理：“帮我查一个人，三年前从哪儿来的。”'
+    completeText: '第 8 章结束。这一夜陈默睡了四个小时，是三天来最长的一觉。醒来时，桌上那碗粥已经凉了，旁边压着一张便签：别一个人扛。'
   },
   {
     id: 'ml_9',
     index: 9,
-    title: '第 9 章 · 谁才是废物',
+    title: '第 9 章 · 存折与一碗面',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '苏氏季度会上，苏明哲把陈默牵头救回来的项目写成了自己的名字，还做了一份漂亮的汇报。台下掌声很响，苏振海当场宣布给他升职。',
+    storyText: '第二天上午，老周把一个旧存折放在陈默桌上，说自己这些年攒的退休金，可以先填进去。同一天，韩野带回了那批账号的转账记录。',
     questions: [
       {
-        plotDescription: '苏明哲站在投影前，指着那页方案，说他跟了三个月，每一个细节都亲自盯。',
-        line: "That project was mine. You just signed your name on the last page.",
-        lineCn: '那个项目是我的。你只是在最后一页签了个名字。',
-        prompt: "根据上下文，选出画线词汇 'project' 最准确的意思。",
+        plotDescription: '陈默把存折推回去，老周却按住不松手。',
+        line: "I'm grateful, but I can't take your retirement money.",
+        lineCn: '我很感激，但我不能拿你的养老钱。',
+        prompt: "根据上下文，选出画线词汇 'Grateful' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a paper file', cn: '一份纸质文件', correct: false, reason: '文件只是载体，project 指的是一整套要做完的工作。' },
-          { key: 'B', en: 'a promise to someone', cn: '对别人的承诺', correct: false, reason: '承诺是 promise，这里说的是能汇报、能邀功的事。' },
-          { key: 'C', en: 'a planned piece of work', cn: '项目、有计划的一摊工作', correct: true, reason: 'project 就是为了某个目标推进的一整套工作。' }
+          { key: 'A', en: 'thankful for what someone did', cn: '感激、心里记着这份情', correct: true, reason: '老周愿意掏出养老钱，他当然心里发热。' },
+          { key: 'B', en: 'angry at the offer', cn: '对这个提议很生气', correct: false, reason: '他说的是感激，随后才是拒绝。' },
+          { key: 'C', en: 'totally uninterested', cn: '完全不感兴趣', correct: false, reason: '他把存折推回去，是因为珍重，不是无所谓。' }
         ],
-        analysis: 'project 是“项目”，有时间、有目标、有负责人。苏明哲抢的正是这个“负责人”的身份，而陈默只留了一个签名。',
-        wrongFeedback: '你选错了，投影翻到署名页，苏明哲的名字被放得很大，台下又响起一阵掌声。',
-        afterCorrect: '陈默没有站起来，只问了一句：“第三版的成本模型，第二页第三行是什么数？”苏明哲的笑容停在脸上。'
+        analysis: 'grateful 是「记得别人为你做过什么」。陈默拒绝的不是这份心，是不能再让老人替他冒险。',
+        wrongFeedback: '你选错了，老周的手停在半空，很久才收回去。气血 -10',
+        afterCorrect: '陈默把存折塞回他口袋：「等这事完了，我给您换个带院子的房子。」'
       },
       {
-        plotDescription: '苏明哲答不上来，索性把话挑明，说陈默这种人留在苏氏一天都是祸害。',
-        line: "Say one more word, and you will be fired before sunrise.",
-        lineCn: '你再多说一句，天亮之前你就得被炒。',
-        prompt: "根据上下文，选出画线词汇 'fired' 最准确的意思。",
+        plotDescription: '晚上回到旧公寓，苏晚在小小的厨房里煮面，锅里的水正好开。',
+        line: "For the first time in years, I feel content.",
+        lineCn: '这么多年，我第一次觉得满足。',
+        prompt: "根据上下文，选出画线词汇 'Content' 最准确的意思。",
         options: [
-          { key: 'A', en: 'dismissed from a job', cn: '被解雇、被开掉', correct: true, reason: 'be fired 就是被公司赶走，所以前面才有“天亮之前”。' },
-          { key: 'B', en: 'set on fire', cn: '被点着了', correct: false, reason: '字面意思不成立，人不是东西，这里是“被炒”。' },
-          { key: 'C', en: 'extremely tired', cn: '累到极点', correct: false, reason: '累是 exhausted，被开掉才是 fired。' }
+          { key: 'A', en: 'quietly satisfied', cn: '满足、心里踏实', correct: true, reason: '一碗面、一盏灯，他这三年的紧绷第一次松开。' },
+          { key: 'B', en: 'the main part of something', cn: '内容、主体', correct: false, reason: '这里用的是形容词「满足」，不是名词「内容」。' },
+          { key: 'C', en: 'extremely excited', cn: '极度兴奋', correct: false, reason: 'content 是安静的满足，不是兴奋。' }
         ],
-        analysis: 'be fired 是“被解雇”，和 quit（主动辞职）刚好相反。苏明哲拿它当威胁，可他忘了自己也只是个打工的。',
-        wrongFeedback: '你选错了，苏明哲的声音拔高，苏振海也跟着敲桌子，让陈默“识相点”。',
-        afterCorrect: '陈默终于站起来，把一份打印件放在投影仪上：“这是项目的邮件记录，三百二十七封。”他抬了抬下巴，“要数署名吗？”'
+        analysis: 'content 作形容词是「不多不少，刚刚好」。他刚打完一场败仗，却在这一碗面前觉得值。',
+        wrongFeedback: '你选错了，苏晚把面推到他面前，你却还在想别的。气血 -10',
+        afterCorrect: '陈默吃了两口，忽然说：「等我把这事办完，你教我煮这个。」'
       },
       {
-        plotDescription: '会议室鸦雀无声。陈默把打印件收好，语气平淡，像在谈一件与己无关的事。',
-        line: "This is not personal. This is business. You taught me that.",
-        lineCn: '这不是私人恩怨，这是生意。这话是你教我的。',
-        prompt: "根据上下文，选出画线词汇 'business' 最准确的意思。",
+        plotDescription: '韩野推门进来，把转账记录拍在桌上——三篇稿子的钱，来自同一家空壳公司。',
+        line: "Seeing them cheer made me feel fulfilled.",
+        lineCn: '看到他们欢呼，我觉得这一切都值了、特别充实。',
+        prompt: "根据上下文，选出画线词汇 'Fulfilled' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a personal hobby', cn: '个人爱好', correct: false, reason: '他在谈公司里的利益，不是下班后的兴趣。' },
-          { key: 'B', en: 'the activity of trading and making money', cn: '生意、商业上的事', correct: true, reason: 'business 在这里就是“生意场上的事”，和 private 相对。' },
-          { key: 'C', en: 'a family matter', cn: '家里的私事', correct: false, reason: '正好相反，他说这句就是为了把私事和生意分开。' }
+          { key: 'A', en: 'deeply satisfied because something matters', cn: '充实、觉得做的事有意义', correct: true, reason: '团队熬了半个月终于抓到线头，这种满足不是钱能给的。' },
+          { key: 'B', en: 'completely empty', cn: '彻底空虚', correct: false, reason: '意思正好相反。' },
+          { key: 'C', en: 'slightly tired', cn: '有点累', correct: false, reason: '累是真的，但这句话说的是值。' }
         ],
-        analysis: 'This is business 是职场里最冷的一句话：不谈感情，只谈规则。陈默把它还给苏振海，等于宣告自己不再当家人。',
-        wrongFeedback: '你选错了，苏振海脸色一变，会议被迫中断，苏明哲站在原地，手里的激光笔还在抖。',
-        afterCorrect: '陈默把资料留在桌上：“项目归谁我不在乎。”他走到门口，“但从今天起，你们每拿一次这个项目，就得付我一次授权费。”'
+        analysis: 'fulfilled 是「被意义填满」。陈默要的从来不只是赢，是这群人愿意跟他一起熬。',
+        wrongFeedback: '你选错了，韩野的笑容僵了一下，把记录收了回去。气血 -10',
+        afterCorrect: '陈默把记录看了三遍，抬头说：「明天开董事会。该让一些人下来了。」'
       },
       {
-        plotDescription: '苏振海追出来，在走廊上压低声音，说可以谈，问他到底想要什么。',
-        line: "Here is the deal: you leave tonight, and I will not sue.",
-        lineCn: '条件是这样：你今晚走人，我就不起诉。',
-        prompt: "根据上下文，选出画线词汇 'deal' 最准确的意思。",
+        plotDescription: '第二天董事会刚开始，苏明哲就冲了进来，领带歪着，声音尖得不像他。',
+        line: "Su Mingzhe burst in, hysterical, screaming that I ruined him.",
+        lineCn: '苏明哲冲了进来，歇斯底里地喊着说我毁了他。',
+        prompt: "根据上下文，选出画线词汇 'Hysterical' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a card game', cn: '一种纸牌游戏', correct: false, reason: '这里是谈判条件，不是打牌，字面义要排除。' },
-          { key: 'B', en: 'a meal for two', cn: '两人份的饭', correct: false, reason: 'deal 跟吃饭无关，后面接的是条件和后果。' },
-          { key: 'C', en: 'an agreement between two sides', cn: '交易、谈成的条件', correct: true, reason: 'here is the deal 就是“条件是这样”，一种谈判说法。' }
+          { key: 'A', en: 'wildly out of control with emotion', cn: '歇斯底里、情绪彻底失控', correct: true, reason: '他领带歪着、声音发尖地喊，就是彻底失控。' },
+          { key: 'B', en: 'very calm and polite', cn: '非常冷静有礼', correct: false, reason: '他冲进会议室大喊，跟冷静相反。' },
+          { key: 'C', en: 'a little shy', cn: '有点害羞', correct: false, reason: 'hysterical 是情绪爆炸，不是害羞。' }
         ],
-        analysis: 'Here is the deal 是谈判桌上的固定开场：我把条件摆出来。陈默用它反客为主——现在轮到他提条件了。',
-        wrongFeedback: '你选错了，苏振海以为他怕了，语气立刻硬起来，还补了一句“别不识抬举”。',
-        afterCorrect: '陈默转过身：“我的条件是，苏明哲今晚走。”他笑了笑，“至于起诉，你可以试试，看谁先坐不住。”'
+        analysis: 'hysterical 是「情绪冲到无法自控」。真正毁掉苏明哲的不是陈默，是他自己签过的那些字。',
+        wrongFeedback: '你选错了，保安把他拦在门口，会议室里的人都不敢抬头。气血 -10',
+        afterCorrect: '陈默把一叠文件推到他面前：「这些签字，哪一个是我逼你的？」'
       }
     ],
-    completeText: '第 9 章结束。当晚，苏明哲被停职，苏氏内部炸了锅。陈默回到那间租来的小办公室，老周递上一份文件：“指挥官，第一步，成了。”'
+    completeText: '第 9 章结束。董事会投票结果出来，苏明哲被免去一切职务。他走的时候回头看了一眼，陈默没有抬头。'
   },
   {
     id: 'ml_10',
     index: 10,
-    title: '第 10 章 · 妹妹，别怕，哥在',
+    title: '第 10 章 · 决战前夜',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '陈默的妹妹陈小满查出需要手术，费用三十万。苏家停了她的医疗卡，理由写得冠冕堂皇：非直系亲属，不予垫付。医院下了最后通知，今晚不交钱就停药。',
+    storyText: '深夜，老周把最后一份资料放在桌上——三年前陈默父亲的公司被做局的全部证据，最后一页是一张伪造的债务确认书，签名是赵家的老爷子。',
     questions: [
       {
-        plotDescription: '医院办公室里，苏家的委托人把一份文件推过来，说签了这个，费用就能谈。',
-        line: "Read the contract. Every word. Then tell me who the freeloader is.",
-        lineCn: '把这份合同读完，一个字一个字读。然后告诉我，谁才是白占便宜的人。',
-        prompt: "根据上下文，选出画线词汇 'contract' 最准确的意思。",
+        plotDescription: '陈默一页一页翻完，翻到最后一页时，手停住了。',
+        line: "When I read the last page, I felt pure rage.",
+        lineCn: '读到最后一页的时候，我心里只剩下纯粹的暴怒。',
+        prompt: "根据上下文，选出画线词汇 'Rage' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a written legal agreement', cn: '合同、有法律效力的约定', correct: true, reason: 'contract 就是双方签字的书面约定，所以要“一个字一个字读”。' },
-          { key: 'B', en: 'a business card', cn: '名片', correct: false, reason: '名片只有联系方式，不会需要逐字读完再签字。' },
-          { key: 'C', en: 'a payment receipt', cn: '付款收据', correct: false, reason: '收据是付完钱才有的，这里还没付，是拿来签的。' }
+          { key: 'A', en: 'violent, uncontrollable anger', cn: '暴怒、怒到发抖', correct: true, reason: '父亲是被这一纸伪造的确认书逼死的，这已经不是生气。' },
+          { key: 'B', en: 'mild annoyance', cn: '轻微的不快', correct: false, reason: 'rage 是极端的怒，不是一点点烦。' },
+          { key: 'C', en: 'deep sadness', cn: '深深的悲伤', correct: false, reason: '悲伤是后面的事，这一页先点着的是怒。' }
         ],
-        analysis: 'contract 是“合同”，每一个字都可能埋着陷阱。陈默让它被读完，是为了让对方自己听见里面的条件有多脏。',
-        wrongFeedback: '你选错了，委托人笑着把笔递过来，说“签吧，你妹妹等不起”，走廊里传来推车的声响。',
-        afterCorrect: '陈默把合同翻到最后一页，指着一行小字：“签了这份，我妹妹的肖像和病例归你们用三年。”他合上文件，“这也叫垫付？”'
+        analysis: 'rage 是「烧起来、压不住的暴怒」。他没有摔东西，只是把那一页按在桌上，指节全白。',
+        wrongFeedback: '你选错了，老周伸手想收走文件，被他按住了。气血 -10',
+        afterCorrect: '他闭上眼数到十，才开口：「还有谁知道这份东西？」'
       },
       {
-        plotDescription: '委托人讪讪收回文件，转头说起医院的难处，说药价年年涨，谁都不容易。',
-        line: "You made a profit off a sick girl's medicine. That is the real shame.",
-        lineCn: '你们从一个生病女孩的药上赚利润。这才叫丢人。',
-        prompt: "根据上下文，选出画线词汇 'profit' 最准确的意思。",
+        plotDescription: '天亮前，陈默一个人去了城郊的墓园。',
+        line: "The rage passed. What was left was sorrow.",
+        lineCn: '怒气过去了，剩下的是悲伤。',
+        prompt: "根据上下文，选出画线词汇 'Sorrow' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a financial loss', cn: '亏损', correct: false, reason: 'profit 是赚到的钱，亏钱是 loss，方向反了。' },
-          { key: 'B', en: 'money gained after costs', cn: '利润、赚到的钱', correct: true, reason: 'make a profit 就是赚了钱，这里说的是从药上多赚的部分。' },
-          { key: 'C', en: 'a discount for patients', cn: '给病人的折扣', correct: false, reason: '折扣是少收钱，利润是多出来的钱，完全不同。' }
+          { key: 'A', en: 'deep sadness', cn: '悲伤、心里发沉', correct: true, reason: '站在父亲墓前，怒烧完了，只剩下沉到底的难过。' },
+          { key: 'B', en: 'great joy', cn: '巨大的喜悦', correct: false, reason: '墓园里不可能有喜悦。' },
+          { key: 'C', en: 'a feeling of hunger', cn: '饥饿感', correct: false, reason: '这是情绪，不是生理感觉。' }
         ],
-        analysis: 'make a profit off 是“从……身上赚钱”，后面接人时往往带道德指责。陈默这句话不是骂，是把账摆在明面上。',
-        wrongFeedback: '你选错了，委托人脸色一沉，说“医院也要运转”，把停药通知往前推了推。',
-        afterCorrect: '陈默拿出手机，把那份药价清单拍下来：“这张单子，明天会出现在卫健委的邮箱里。”对方的手停住了。'
+        analysis: 'sorrow 比 sad 更沉，是长时间压在心里的悲。他在墓前站了半小时，只说了三个字：我来了。',
+        wrongFeedback: '你选错了，你把这一刻的安静读成了空白。气血 -10',
+        afterCorrect: '他把那份资料的复印件烧了：「爸，剩下的我用手办，不用纸。」'
       },
       {
-        plotDescription: '缴费窗口前，护士小声说，刚才有人替这位病人补了一笔钱，还多给了值班人员。',
-        line: "The hospital staff got a bonus tonight. From him, not from us.",
-        lineCn: '今晚医院的人拿了奖金。是他给的，不是我们。',
-        prompt: "根据上下文，选出画线词汇 'bonus' 最准确的意思。",
+        plotDescription: '上午十点，韩野打来电话，声音在抖——赵家海外账户的流水，全部拿到了。',
+        line: "The whole room felt euphoria when the file came through.",
+        lineCn: '文件传过来的那一刻，整个房间都陷入了狂喜。',
+        prompt: "根据上下文，选出画线词汇 'Euphoria' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a punishment for mistakes', cn: '犯错后的处罚', correct: false, reason: 'bonus 是额外给的好处，处罚是 punishment。' },
-          { key: 'B', en: 'a bill to be paid', cn: '待付的账单', correct: false, reason: '奖金是给出去的钱，账单是要付的钱。' },
-          { key: 'C', en: 'extra money given as a reward', cn: '奖金、额外奖励', correct: true, reason: 'bonus 就是工资之外额外给的奖励，这里指他额外给的钱。' }
+          { key: 'A', en: 'intense happiness and excitement', cn: '极度愉悦、狂喜', correct: true, reason: '熬了半个月，最关键的证据到手，所有人都炸了。' },
+          { key: 'B', en: 'deep despair', cn: '深深的绝望', correct: false, reason: '正好相反，这是赢的那一刻。' },
+          { key: 'C', en: 'a quiet boredom', cn: '淡淡的无聊', correct: false, reason: '房间里在欢呼，不是无聊。' }
         ],
-        analysis: 'bonus 是“额外奖励”。陈默没有讲价，也没有闹，他只是让今晚值班的人知道：做对的事有人看见。',
-        wrongFeedback: '你选错了，护士低下头继续敲键盘，窗口外的队伍往前挪了一步，没人再说话。',
-        afterCorrect: '陈默把缴费单收好，转身对妹妹说：“手术排在下周一。”他蹲下来，平视她的眼睛，“别怕，钱的事哥来解决。”'
+        analysis: 'euphoria 是「兴奋到飘起来」的极度愉悦。陈默站在欢呼里，却没有跟着笑——他知道最难的一步还在后面。',
+        wrongFeedback: '你选错了，韩野的声音在电话那头停住了。气血 -10',
+        afterCorrect: '陈默只说了一句：「先别发。等我见完一个人。」'
       },
       {
-        plotDescription: '陈小满抓着他的袖子，问他是不是又在外面受气了，说自己可以不做手术。',
-        line: "Keep your salary. I came for my sister, not for your money.",
-        lineCn: '你的工资自己留着。我来是为了我妹妹，不是为了你的钱。',
-        prompt: "根据上下文，选出画线词汇 'salary' 最准确的意思。",
+        plotDescription: '下午，赵天佑约他在江边见面。对方说了很多，从合作说到求和，最后说到「别做得太绝」。',
+        line: "He begged for a meeting. I felt nothing but apathy.",
+        lineCn: '他求着要见面。我心里只有冷漠。',
+        prompt: "根据上下文，选出画线词汇 'Apathy' 最准确的意思。",
         options: [
-          { key: 'A', en: 'fixed money paid for a job', cn: '薪资、按月发的工资', correct: true, reason: 'salary 是按岗位定期发的工资，所以能说“留着你的”。' },
-          { key: 'B', en: 'a bank loan', cn: '银行贷款', correct: false, reason: '贷款要还，工资是干活挣来的，性质不同。' },
-          { key: 'C', en: 'a retirement pension', cn: '退休金', correct: false, reason: '退休金是养老的钱，这里说的是在职的工资。' }
+          { key: 'A', en: 'a total lack of interest or feeling', cn: '冷漠、什么都感觉不到', correct: true, reason: '三年前他父亲被逼死时，赵家没有半点迟疑，此刻他也提不起任何情绪。' },
+          { key: 'B', en: 'strong sympathy', cn: '强烈的同情', correct: false, reason: '他说的是「什么都不想给」，不是同情。' },
+          { key: 'C', en: 'great curiosity', cn: '强烈的好奇', correct: false, reason: 'apathy 是彻底的无感。' }
         ],
-        analysis: 'salary 是“固定薪资”，通常按月发。陈默把苏家递来的钱推回去，是不想让妹妹的手术沾上任何条件。',
-        wrongFeedback: '你选错了，陈小满的眼圈红了，把被子往上拉了拉，小声说“哥，我不想拖累你”。',
-        afterCorrect: '陈默替她把被角掖好：“三年前我答应过爸妈，会把你养大。”他站起身，“手术做完，哥带你去吃火锅。”'
+        analysis: 'apathy 是「连恨都懒得给」。最重的报复不是怒吼，是把对方当成一件无关的事。',
+        wrongFeedback: '你选错了，赵天佑还在说，江风把你的回答吹散了。气血 -10',
+        afterCorrect: '陈默站起来：「三年前你也没给他机会。」他把杯子留在桌上，转身走了。'
       }
     ],
-    completeText: '第 10 章结束。手术费当天结清。深夜，陈默坐在医院走廊的长椅上，老周发来一条消息：“赵家的人今天去了苏家，谈的是联姻。”他回了两个字：盯住。'
+    completeText: '第 10 章结束。那一夜，陈默把所有证据锁进保险柜，一份都没发。他给苏晚发了条消息：明天开始，我要做一件很脏的事。'
   },
   {
     id: 'ml_11',
     index: 11,
-    title: '第 11 章 · 商场门口的第一巴掌',
+    title: '第 11 章 · 三天没回的消息',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '苏氏看中的那块地，对手是赵家。赵天豪约苏晚在商场谈，谈崩了以后堵在门口，当着几十号人的面说她“嫁了个废物还想做生意”。陈默赶到时，苏晚的手正被人抓着。',
+    storyText: '证据递上去的第三天，赵家的两家公司被查封。同一时间，陈默却开始躲着苏晚——她发来的消息，他一条都没回。',
     questions: [
       {
-        plotDescription: '赵天豪的手下把苏晚围在中间，嘴里不干不净，说苏家现在连个能出头的男人都没有。',
-        line: "I am pissed off, and you will not like me when I am.",
-        lineCn: '我现在很火大，而我火大的时候，你不会喜欢那个我。',
-        prompt: "根据上下文，选出画线词汇 'pissed off' 最准确的意思。",
+        plotDescription: '韩野把手机推到陈默面前，上面是苏晚发来的第十条消息，只有一句：他是不是出事了。',
+        line: "She's had a crush on you since college. You can't tell me you never noticed.",
+        lineCn: '她从大学就暗恋你。你别告诉我你一直没看出来。',
+        prompt: "根据上下文，选出画线词汇 'Crush' 最准确的意思。",
         options: [
-          { key: 'A', en: 'very angry', cn: '非常火大、气炸了', correct: true, reason: 'pissed off 是口语里最常见的“气炸”，后面还带着警告。' },
-          { key: 'B', en: 'slightly confused', cn: '有点困惑', correct: false, reason: '被人堵在门口不会只是困惑，这句话的语气明显是愤怒。' },
-          { key: 'C', en: 'very drunk', cn: '喝得很醉', correct: false, reason: 'pissed 在英式里能指喝醉，但 off 加上就是“生气”。' }
+          { key: 'A', en: 'a strong but secret liking for someone', cn: '暗恋、偷偷喜欢一个人', correct: true, reason: '说的是她从大学就喜欢他，crush 正是这种心思。' },
+          { key: 'B', en: 'a serious injury', cn: '严重的压伤', correct: false, reason: 'crush 确实有「压伤」的意思，但这里讲的是感情。' },
+          { key: 'C', en: 'a big argument', cn: '一场大吵', correct: false, reason: '从大学到现在，他们并没有一直吵架。' }
         ],
-        analysis: 'be pissed off 是“被惹毛了”，语气比 angry 更冲更口语。陈默这句不是虚张声势，是给对方最后一次退场的机会。',
-        wrongFeedback: '你选错了，那几个手下笑得更放肆，其中一个人还伸手去拉苏晚的包带。',
-        afterCorrect: '陈默走上前，一只手扣住那人的手腕，力道不大，对方却整条胳膊都软了。“我数三个数。”他说，“你们一起走。”'
+        analysis: 'crush 作名词是「偷偷喜欢一个人」。韩野这一句，把苏晚守了三年的沉默翻了出来。',
+        wrongFeedback: '你选错了，韩野把手机收回去，摇了摇头。气血 -10',
+        afterCorrect: '陈默盯着那行字看了很久，最后还是把手机扣在桌上：「现在不能见她。」'
       },
       {
-        plotDescription: '赵天豪退了一步，转头对围观的人喊，说这人是个疯子，让大家别慌。',
-        line: "Do not freak out, everyone. He is just a house husband with a temper.",
-        lineCn: '大家别慌。他不过是个有点脾气的上门女婿。',
-        prompt: "根据上下文，选出画线词汇 'freak out' 最准确的意思。",
+        plotDescription: '三天了，陈默连一个标点都没回。韩野把椅子拉到他面前坐下。',
+        line: "You can't just ghost her after that night. She deserves a sentence.",
+        lineCn: '那晚之后你不能就这么玩消失。她至少该得到一句话。',
+        prompt: "根据上下文，选出画线词汇 'Ghost' 最准确的意思。",
         options: [
-          { key: 'A', en: 'get very excited', cn: '兴奋起来', correct: false, reason: '这里是让人别慌，不是让人别兴奋，情绪方向不对。' },
-          { key: 'B', en: 'panic or lose control', cn: '惊慌、情绪失控', correct: true, reason: 'freak out 在冲突现场就是“慌了、乱了”，所以要先安抚。' },
-          { key: 'C', en: 'leave the place', cn: '离开这个地方', correct: false, reason: '离开是 leave，freak out 说的是情绪崩掉。' }
+          { key: 'A', en: 'to disappear and stop replying to someone', cn: '玩消失、不回消息', correct: true, reason: '三天一条不回，这就是恋爱里说的 ghost。' },
+          { key: 'B', en: 'to visit someone at midnight', cn: '半夜去拜访某人', correct: false, reason: '他一次都没去，恰好是没出现。' },
+          { key: 'C', en: 'to send a very long message', cn: '发一条很长的消息', correct: false, reason: '正相反，他一个字都没发。' }
         ],
-        analysis: 'freak out 在这里是“被吓到、乱起来”。赵天豪嘴上安抚人群，实际是在给陈默扣“疯子”的帽子。',
-        wrongFeedback: '你选错了，围观的人真的往后退了半步，赵天豪的嘴角翘起来，像是赢了一局。',
-        afterCorrect: '陈默没理他，只把苏晚拉到身后，然后对围观的人说：“该慌的不是你们。”他抬眼看赵天豪，“是他。”'
+        analysis: 'ghost 作动词是「突然消失、把对方晾着」。陈默不是不在乎，他是怕自己一开口就收不住。',
+        wrongFeedback: '你选错了，韩野把手机塞进他手里，转身走到窗边。气血 -10',
+        afterCorrect: '陈默打了三行字，删了三行，最后只发出两个字：「没事。」'
       },
       {
-        plotDescription: '人群散开后，苏晚才发现自己的手在抖，她靠着墙，说了一句“我没事”。',
-        line: "You are exhausted. Sit down before you fall down.",
-        lineCn: '你已经累到极限了。坐下，别等摔了才坐。',
-        prompt: "根据上下文，选出画线词汇 'exhausted' 最准确的意思。",
+        plotDescription: '韩野越说越急，索性站起来，椅子在地上刮出一声。',
+        line: "Disappearing when things get hard is a red flag, and you know it.",
+        lineCn: '一遇到难处就消失，这是危险信号，你自己也清楚。',
+        prompt: "根据上下文，选出画线词汇 'Red flag' 最准确的意思。",
         options: [
-          { key: 'A', en: 'extremely tired', cn: '精疲力尽、累到极限', correct: true, reason: 'exhausted 是“被榨干了力气”，所以下一句才让她坐下。' },
-          { key: 'B', en: 'very excited', cn: '非常兴奋', correct: false, reason: '她手在抖、靠墙站，是脱力，不是兴奋。' },
-          { key: 'C', en: 'a little hungry', cn: '有点饿', correct: false, reason: '饿是 hungry，不至于让人站不住。' }
+          { key: 'A', en: 'a warning sign of a problem', cn: '危险信号、该警惕的征兆', correct: true, reason: '在感情里突然消失，是典型的警示信号。' },
+          { key: 'B', en: 'a red banner at a ceremony', cn: '典礼上的红旗', correct: false, reason: '这里不是实物，是比喻的警示。' },
+          { key: 'C', en: 'a sign of good luck', cn: '好运的兆头', correct: false, reason: '意思正好相反，red flag 是坏兆头。' }
         ],
-        analysis: 'exhausted 比 tired 重得多，是“力气被抽干”。苏晚一句“我没事”，反而让这个词更明显。',
-        wrongFeedback: '你选错了，苏晚勉强站直，脚下却晃了一下，扶住了旁边的广告牌，脸色白得吓人。',
-        afterCorrect: '陈默把她按在长椅上，蹲下来看她：“你一个人扛了三年。”他声音低下去，“从今天起，分我一半。”'
+        analysis: 'red flag 是「值得警惕的信号」。韩野骂得不客气，是因为他见过太多人毁在这种沉默里。',
+        wrongFeedback: '你选错了，韩野不再说了，屋里的空气沉下去。气血 -10',
+        afterCorrect: '陈默站起来：「等我把赵家按下去，我会去跟她把话说清楚。」'
       },
       {
-        plotDescription: '第二天，赵天豪派人送来一瓶酒，说是赔罪，还附了句话，说昨晚喝多了。',
-        line: "A hangover does not excuse what he did. Send it back.",
-        lineCn: '宿醉不能当他所作所为的借口。退回去。',
-        prompt: "根据上下文，选出画线词汇 'hangover' 最准确的意思。",
+        plotDescription: '同一晚，苏明哲在酒吧里端着酒，对一桌人说得眉飞色舞。',
+        line: "Half the club thinks they hooked up that night. I'll make sure everyone believes it.",
+        lineCn: '半个酒吧都觉得他们那晚勾搭上了。我会让所有人都信。',
+        prompt: "根据上下文，选出画线词汇 'Hook up' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a headache after drinking too much', cn: '宿醉、喝多后的难受', correct: true, reason: 'hangover 就是前一天喝多，第二天头痛难受的状态。' },
-          { key: 'B', en: 'a formal apology', cn: '正式的道歉', correct: false, reason: '道歉是 apology，这里说的是喝醉的后果。' },
-          { key: 'C', en: 'a gift of wine', cn: '送来的酒', correct: false, reason: '酒是礼物，hangover 是喝酒之后的身体反应。' }
+          { key: 'A', en: 'to get together with someone romantically', cn: '勾搭上、有了暧昧关系', correct: true, reason: '他要造的就是两人有私情的谣，hook up 正是这个意思。' },
+          { key: 'B', en: 'to hang a picture on the wall', cn: '把画挂到墙上', correct: false, reason: '这里的 hook up 说的是人，不是挂东西。' },
+          { key: 'C', en: 'to hold a business meeting', cn: '开一场商务会议', correct: false, reason: '酒吧里的传闻跟开会无关。' }
         ],
-        analysis: 'hangover 是“宿醉”，常被拿来当挡箭牌。陈默一句顶回去：喝多了不是理由，动手就是动手。',
-        wrongFeedback: '你选错了，那瓶酒被留在了前台，赵天豪的人在门口笑，说“苏家还挺好哄”。',
-        afterCorrect: '老周把酒原样送回赵氏前台，还附了一张纸：“酒退。人，我们会来找。”当天下午，赵氏的股价开始掉。'
+        analysis: 'hook up 在口语里指「勾搭上、发展出暧昧或亲密关系」。苏明哲把它当刀子，捅的是苏晚的名声。',
+        wrongFeedback: '你选错了，那桌人笑成一片，话越传越难听。气血 -10',
+        afterCorrect: '陈默在门口站了两秒，走过去把酒杯从他手里拿走：「造谣的账，我另算。」'
       }
     ],
-    completeText: '第 11 章结束。苏晚在办公室坐到很晚，临走时问陈默：“你昨晚为什么来得那么快？”他正在收伞：“因为我一直在楼下。”'
+    completeText: '第 11 章结束。那一晚陈默第一次主动打电话给苏晚，只响了一声就被接起。两个人都没说话，听着彼此的呼吸，过了很久。'
   },
   {
     id: 'ml_12',
     index: 12,
-    title: '第 12 章 · 你们的局，我拆了',
+    title: '第 12 章 · 大厅里的那场哭',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '赵家设局，请了半个商会的人吃饭，说是要“给苏家一个机会”。包厢里摆着九位座，苏晚被安排在末席。陈默推门进去时，赵天豪正举杯，说要谈一桩只赚不赔的买卖。',
+    storyText: '第二天上午，苏明哲的母亲带着两个亲戚冲进苏氏大厅，往地上一坐就开始哭，说陈默抢了苏家的产业。前台不敢拦，员工全围了过来。',
     questions: [
       {
-        plotDescription: '酒杯一圈圈敬下来，赵天豪的人在每个杯子边都放了同样的合同，说是“合作意向”。',
-        line: "This partnership is toxic. It will eat your company from the inside.",
-        lineCn: '这个合作是有毒的。它会从里面把你们的公司吃空。',
-        prompt: "根据上下文，选出画线词汇 'toxic' 最准确的意思。",
+        plotDescription: '前台打来电话，声音发抖。陈默看着监控画面，没有站起来。',
+        line: "Let her have her drama. The cameras are already on.",
+        lineCn: '让她演吧。摄像头早就开着。',
+        prompt: "根据上下文，选出画线词汇 'Drama' 最准确的意思。",
         options: [
-          { key: 'A', en: 'harmful in a hidden way', cn: '有毒的、暗地里有害的', correct: true, reason: 'toxic 本指有毒，用来形容关系或合作就是“表面好、内里烂”。' },
-          { key: 'B', en: 'extremely profitable', cn: '极其赚钱的', correct: false, reason: '他是在警告这笔合作会掏空公司，不是夸它赚钱。' },
-          { key: 'C', en: 'legally invalid', cn: '法律上无效的', correct: false, reason: 'toxic 说的是有害，不是无效，无效是 invalid。' }
+          { key: 'A', en: 'over-the-top emotional scenes', cn: '抓马、夸张的戏码', correct: true, reason: '坐在地上哭闹给全楼看，这就是一场戏。' },
+          { key: 'B', en: 'a serious legal case', cn: '严肃的法律案件', correct: false, reason: '地板上哭一场不是案件，是表演。' },
+          { key: 'C', en: 'a stage play with actors', cn: '有演员的话剧', correct: false, reason: '这里是比喻的说法，不是真的演出。' }
         ],
-        analysis: 'toxic 从“有毒”引申为“慢性伤害”。陈默不说违法，只说有毒——因为这份合同每一页都合法，合起来却要命。',
-        wrongFeedback: '你选错了，赵天豪顺势把合同推到苏晚面前，笑着说“签了吧，机会不等人”。',
-        afterCorrect: '陈默把合同翻到第七页，指着担保条款：“这一条，等于苏氏替赵氏所有债务兜底。”他把纸转过去，“这也叫只赚不赔？”'
+        analysis: 'drama 在口语里指「夸张的情绪戏」。陈默不劝不拦，只让人把录像留好——戏演得越大，证据越足。',
+        wrongFeedback: '你选错了，大厅里的人越围越多，喊声传上了楼。气血 -10',
+        afterCorrect: '他给保安部打了电话：「不要碰她。把每一分钟都录下来。」'
       },
       {
-        plotDescription: '包厢里安静了一瞬，赵天豪干笑两声，说陈默不懂规矩，让他别在长辈面前乱说话。',
-        line: "It is awkward for everyone when the house husband starts talking business.",
-        lineCn: '一个上门女婿开始谈生意，这让在座所有人都挺尴尬。',
-        prompt: "根据上下文，选出画线词汇 'awkward' 最准确的意思。",
+        plotDescription: '下午，苏晚坐在他办公室里，手机每隔几分钟就响一次，她一次都没接。',
+        line: "Your mother has been clingy since the divorce talk started. She calls twenty times a day.",
+        lineCn: '从提离婚那件事开始，你妈就变得特别黏人。她一天打二十个电话。',
+        prompt: "根据上下文，选出画线词汇 'Clingy' 最准确的意思。",
         options: [
-          { key: 'A', en: 'funny and entertaining', cn: '好笑、有意思的', correct: false, reason: '他说这话是想让人难堪，不是想逗乐，气氛是僵的。' },
-          { key: 'B', en: 'embarrassing and uncomfortable', cn: '尴尬、让人不舒服的', correct: true, reason: 'awkward 就是那种“空气突然安静”的难堪，正对上场面。' },
-          { key: 'C', en: 'angry and loud', cn: '愤怒又吵闹的', correct: false, reason: '没人吼叫，恰恰是安静下来，所以才是尴尬。' }
+          { key: 'A', en: 'always needing to be close to someone', cn: '黏人、一刻都离不开', correct: true, reason: '一天二十个电话，就是不肯松手的状态。' },
+          { key: 'B', en: 'very independent', cn: '非常独立', correct: false, reason: '正好相反。' },
+          { key: 'C', en: 'easy to talk to', cn: '很好说话', correct: false, reason: 'clingy 说的是依赖性，不是好沟通。' }
         ],
-        analysis: 'awkward 形容“场面僵住、让人不自在”。赵天豪想用这个词把陈默按回“不懂事”的位置，可尴尬的其实是他自己。',
-        wrongFeedback: '你选错了，几个人低头喝水，苏晚的手指停在杯沿上，包厢里的空气凝了一层。',
-        afterCorrect: '陈默笑了笑：“尴尬的不是我。”他环视一圈，“是签了这份合同的各位。”桌上有人的手抖了一下。'
+        analysis: 'clingy 形容一个人抓得太紧、让人透不过气。苏母不是爱女儿，是怕失去控制。',
+        wrongFeedback: '你选错了，苏晚把手机翻过来扣在桌上，眼睛红了。气血 -10',
+        afterCorrect: '陈默把她的手机拿过去，按下静音：「今天你不用接任何一个。」'
       },
       {
-        plotDescription: '有人不服，说这份合同他们公司法务看过，没问题。陈默只回了一句，全桌都静了。',
-        line: "Your legal team is dead wrong. Read clause seven again.",
-        lineCn: '你们法务错得离谱。再去读一遍第七条。',
-        prompt: "根据上下文，选出画线词汇 'dead' 最准确的意思。",
+        plotDescription: '苏晚抬头看他，问了一句：我是不是太软弱了。',
+        line: "You're not weak. But I need boundaries, and so do you.",
+        lineCn: '你不软弱。但我需要边界，你也需要。',
+        prompt: "根据上下文，选出画线词汇 'Boundaries' 最准确的意思。",
         options: [
-          { key: 'A', en: 'completely, used for emphasis', cn: '完全地、彻底地（加强语气）', correct: true, reason: 'dead wrong 是“错得彻底”，dead 在这里只是加强语气。' },
-          { key: 'B', en: 'no longer alive', cn: '已经死了', correct: false, reason: '法务团队是活人，这里 dead 是在修饰 wrong，不是人。' },
-          { key: 'C', en: 'very funny', cn: '非常搞笑', correct: false, reason: '他在指出合同的问题，没有半点开玩笑的意思。' }
+          { key: 'A', en: 'limits on what you will accept', cn: '边界感、能接受和不能接受的界线', correct: true, reason: '他要的是把「哪些事可以被干涉」划清楚。' },
+          { key: 'B', en: 'the walls of a building', cn: '建筑的围墙', correct: false, reason: '这里说的不是实物，是人和人之间的界线。' },
+          { key: 'C', en: 'long travel plans', cn: '长途旅行计划', correct: false, reason: '跟旅行没有关系。' }
         ],
-        analysis: 'dead 在口语里能当副词用，表示“完全、绝对”，比如 dead right、dead wrong。这里不是“死了”，是“错得没边”。',
-        wrongFeedback: '你选错了，那人翻了两页就把合同合上，额头上开始出汗，赵天豪递过去一个眼神。',
-        afterCorrect: '那位老板把合同推到一边，站起来说家里有事，先走了。第二个、第三个跟着起身，包厢一下空了一半。'
+        analysis: 'boundaries 在关系里指「界线」。陈默不是在指责她，是在告诉她：不设界线，谁都会被拖进去。',
+        wrongFeedback: '你选错了，苏晚低下头，把没说完的话咽了回去。气血 -10',
+        afterCorrect: '苏晚沉默了一会儿，拿起手机，第一次按下了拒接。'
       },
       {
-        plotDescription: '赵天豪脸上挂不住，把杯子重重放下，说陈默坏了大家的好事，这事没完。',
-        line: "I am thrilled you showed your hand tonight. Now everyone knows what you are.",
-        lineCn: '我很高兴你今晚把手牌亮出来了。现在所有人都知道你是什么东西了。',
-        prompt: "根据上下文，选出画线词汇 'thrilled' 最准确的意思。",
+        plotDescription: '第三天，听证会开始。苏明哲的名字在证人名单上，位置一直空着。',
+        line: "He promised to show up, then he bailed at the last minute.",
+        lineCn: '他说好一定到场，结果最后一刻放鸽子跑了。',
+        prompt: "根据上下文，选出画线词汇 'Bail' 最准确的意思。",
         options: [
-          { key: 'A', en: 'extremely pleased', cn: '欣喜若狂、非常高兴', correct: true, reason: 'thrilled 是“高兴到激动”，这句是反话式的挑衅。' },
-          { key: 'B', en: 'deeply worried', cn: '非常担心', correct: false, reason: '他在放狠话，不是示弱，语气里带着得意。' },
-          { key: 'C', en: 'a little bored', cn: '有点无聊', correct: false, reason: '这个词跟无聊无关，thrilled 是高分贝的高兴。' }
+          { key: 'A', en: 'to cancel or run away at the last minute', cn: '放鸽子、临阵跑路', correct: true, reason: '名字在名单上，人却没来，正是临时跑掉。' },
+          { key: 'B', en: 'to arrive very early', cn: '很早就到', correct: false, reason: '他根本没出现，跟早到相反。' },
+          { key: 'C', en: 'to pay money for a ticket', cn: '花钱买票', correct: false, reason: 'bail 在这里是「放人鸽子」，不是买票。' }
         ],
-        analysis: 'thrilled 是“兴奋、痛快”，这里被赵天豪拿来装镇定。陈默听懂了，回的是一句更狠的。',
-        wrongFeedback: '你选错了，赵天豪把酒杯一推，酒洒在桌布上，他起身就走，门被摔得很响。',
-        afterCorrect: '陈默替他扶正那把椅子：“我也很高兴。”他声音不大，“今晚之后，没人敢再跟你签第二份合同。”'
+        analysis: 'bail 在口语里是「临时不来、撂挑子」。苏明哲到最后一刻才敢跑，说明他连谎都编不圆。',
+        wrongFeedback: '你选错了，听证席上有人交换了一个眼神。气血 -10',
+        afterCorrect: '陈默把那份空着的证人席写进记录：「缺席，也是一种证词。」'
       }
     ],
-    completeText: '第 12 章结束。那晚的饭局散得很快，商会里传开一句话：赵家的合同不能签。苏晚走出酒店时，第一次主动跟陈默并肩走。'
+    completeText: '第 12 章结束。苏明哲缺席的第二天，赵家主动撤了两项诉讼。风向开始变了。'
   },
   {
     id: 'ml_13',
     index: 13,
-    title: '第 13 章 · 一夜之间，风向变了',
+    title: '第 13 章 · 两箱啤酒和一条兄弟规矩',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '拆局之后，苏氏的电话被打爆了。有人来求和，有人来探口风，也有人递来合作意向。苏晚连续三天没回家，办公室的灯一直亮到凌晨。',
+    storyText: '听证会前夜，韩野从楼下拎了两箱啤酒上来，说要按「兄弟的老规矩」把话说清楚。楼下大厅，苏晚的父母提着一锅汤，已经等了一个小时。',
     questions: [
       {
-        plotDescription: '助理抱着一摞文件进来，说今天又新增了七家合作方，苏晚盯着电脑，半天没说话。',
-        line: "You look overwhelmed. Pick three, and let the rest wait.",
-        lineCn: '你看着快被压垮了。挑三家，剩下的让他们等。',
-        prompt: "根据上下文，选出画线词汇 'overwhelmed' 最准确的意思。",
+        plotDescription: '韩野开了两瓶酒，把一瓶推到陈默面前，表情难得正经。',
+        line: "Bro code says I have to tell you the truth, even when it hurts.",
+        lineCn: '兄弟法则规定我必须跟你说实话，哪怕这话很难听。',
+        prompt: "根据上下文，选出画线词汇 'Bro code' 最准确的意思。",
         options: [
-          { key: 'A', en: 'unable to cope because there is too much', cn: '被压得喘不过气、应付不过来', correct: true, reason: 'overwhelmed 是“事情多到接不住”，所以下一句才让她只挑三家。' },
-          { key: 'B', en: 'very happy about the news', cn: '因为消息而非常开心', correct: false, reason: '她盯着屏幕半天不说话，是撑不住，不是高兴。' },
-          { key: 'C', en: 'well organized', cn: '安排得井井有条', correct: false, reason: '正好相反，正因为乱成一团才需要有人帮她筛。' }
+          { key: 'A', en: 'the unofficial rules between close male friends', cn: '兄弟法则、哥们之间不成文的规矩', correct: true, reason: '他拎着酒上门说真话，正是这条不成文的规矩。' },
+          { key: 'B', en: 'a computer programming language', cn: '一种计算机编程语言', correct: false, reason: 'code 有代码的意思，但 bro code 说的是兄弟间的规矩。' },
+          { key: 'C', en: 'a secret company policy', cn: '公司的保密制度', correct: false, reason: '这里是两个朋友之间的约定，不是公司制度。' }
         ],
-        analysis: 'be overwhelmed 是“被淹没”，主语可以是人，也可以是情绪。陈默没有劝她加油，只是替她把事情砍到能做的数量。',
-        wrongFeedback: '你选错了，苏晚又点开一封邮件，手指在键盘上停了很久，最后什么也没回。',
-        afterCorrect: '陈默抽走她手里的鼠标：“去睡两个小时。”他把三份文件摆在桌上，“这三家是真想合作的，我盯着。”'
+        analysis: 'bro code 是男性朋友之间那套「必须讲义气、必须说实话」的默契。韩野把它搬出来，是因为接下来的话不好听。',
+        wrongFeedback: '你选错了，韩野把瓶盖按在桌上，没有再说下去。气血 -10',
+        afterCorrect: '陈默拿起酒瓶碰了一下：「说吧。说轻了我还不习惯。」'
       },
       {
-        plotDescription: '苏晚靠在椅背上，闭着眼说，她怕自己一停下来，所有事情就全塌了。',
-        line: "Chill. The building will not fall down because you slept for two hours.",
-        lineCn: '放松点。你睡两个小时，这栋楼不会塌。',
-        prompt: "根据上下文，选出画线词汇 'Chill' 最准确的意思。",
+        plotDescription: '话说到一半，前台来电，说苏晚的父母在大厅等着，手里还提着保温桶。',
+        line: "Your future in-laws are downstairs with soup. They've been waiting an hour.",
+        lineCn: '你未来的岳父母在楼下提着汤。他们已经等了一个小时。',
+        prompt: "根据上下文，选出画线词汇 'In-laws' 最准确的意思。",
         options: [
-          { key: 'A', en: 'cool down the room', cn: '把房间降温', correct: false, reason: '这是字面理解，语境是在劝人放松，不是空调。' },
-          { key: 'B', en: 'relax and stop worrying', cn: '放松、别那么紧绷', correct: true, reason: '口语里 chill 就是“松一松、别慌”，正对上她的焦虑。' },
-          { key: 'C', en: 'work harder', cn: '更努力地干', correct: false, reason: '方向反了，chill 是让人停下来，不是催她加码。' }
+          { key: 'A', en: 'the family of your husband or wife', cn: '公婆、岳父母、姻亲', correct: true, reason: '苏晚的父母就是他的岳父母，属于 in-laws。' },
+          { key: 'B', en: 'laws passed by the government', cn: '政府制定的法律', correct: false, reason: 'law 是法律，in-laws 指的是姻亲。' },
+          { key: 'C', en: 'people who work in a court', cn: '在法院工作的人', correct: false, reason: '提着汤在楼下等的是长辈，不是法院的人。' }
         ],
-        analysis: 'chill 当动词是“放松下来”，语气很轻，像朋友拍你一下肩膀。陈默用这个词，是把她的紧绷先卸掉。',
-        wrongFeedback: '你选错了，苏晚睁开眼，说我不能停，又把文件拉回自己面前，指尖压得发白。',
-        afterCorrect: '陈默没再劝，关了她桌上的台灯：“灯我关了。”他走到门口，“你要么睡，要么我陪你熬到天亮。”'
+        analysis: 'in-laws 专指因婚姻产生的亲属。三年前他们没替他说过一句话，今天却提着汤来了。',
+        wrongFeedback: '你选错了，前台又打了一次，你让她把人请回去。气血 -10',
+        afterCorrect: '陈默下楼，接过那锅汤，只说了一句：「汤我收下。话，等官司完了再谈。」'
       },
       {
-        plotDescription: '凌晨四点，苏晚终于撑不住，趴在桌上睡着了。陈默替她披上外套，自己坐到沙发上。',
-        line: "I am drained, but I cannot sleep. Too much is riding on tomorrow.",
-        lineCn: '我被掏空了，可就是睡不着。明天压着太多东西。',
-        prompt: "根据上下文，选出画线词汇 'drained' 最准确的意思。",
+        plotDescription: '回到楼上，苏晚打来电话，声音很累，说母亲又给她安排了一场见面。',
+        line: "She set up a blind date for me. I didn't agree to any of it.",
+        lineCn: '她给我安排了一场相亲。我一句都没答应。',
+        prompt: "根据上下文，选出画线词汇 'Blind date' 最准确的意思。",
         options: [
-          { key: 'A', en: 'completely emptied of energy', cn: '被掏空、一点力气都不剩', correct: true, reason: 'drained 是“像被抽干”，和后面“睡不着”一起说明她透支了。' },
-          { key: 'B', en: 'wet from rain', cn: '被雨淋湿了', correct: false, reason: 'drain 有排水之义，但这里说的是人的精力被抽干。' },
-          { key: 'C', en: 'confused about the plan', cn: '对计划感到困惑', correct: false, reason: '她不是不懂计划，是身体和精神都空了。' }
+          { key: 'A', en: 'a meeting with someone you have never met', cn: '相亲、和没见过的人约会', correct: true, reason: '母亲安排、她没答应，正是相亲的场面。' },
+          { key: 'B', en: 'a date where you wear a blindfold', cn: '蒙着眼睛的约会', correct: false, reason: 'blind 在这里是「事先没见过」，不是真的蒙眼。' },
+          { key: 'C', en: 'a meeting with a doctor', cn: '和医生见面', correct: false, reason: '母亲安排的是相亲对象，不是医生。' }
         ],
-        analysis: 'drained 形容精力被榨干，比 tired 更深一层。陈默说这句话时，其实自己也是同样的状态——他已经三天没合眼。',
-        wrongFeedback: '你选错了，苏晚的声音越来越轻，最后几个字几乎听不见，额头顶在文件上。',
-        afterCorrect: '陈默把外套盖在她肩上，自己靠着沙发闭上眼。天快亮时，他忽然睁开眼，手机在震——是韩青。'
+        analysis: 'blind date 是「双方没见过面、由别人安排的约会」。陈默听到这句，手里的笔停了。',
+        wrongFeedback: '你选错了，电话那头安静了几秒，苏晚轻轻叹了口气。气血 -10',
+        afterCorrect: '陈默说：「明天我去。我坐你旁边那桌。」苏晚笑了一声，很轻。'
       },
       {
-        plotDescription: '电话那头，韩青说查到赵家最近在大量收购苏氏的散股，动作很急。',
-        line: "I am anxious about one thing: they are buying too fast.",
-        lineCn: '我只担心一件事：他们买得太急了。',
-        prompt: "根据上下文，选出画线词汇 'anxious' 最准确的意思。",
+        plotDescription: '挂了电话，韩野靠在门边，看了他半天。',
+        line: "You can read a balance sheet in ten minutes, but Su Wan is your blind spot.",
+        lineCn: '你十分钟就能看穿一张资产负债表，可苏晚是你的盲区。',
+        prompt: "根据上下文，选出画线词汇 'Blind spot' 最准确的意思。",
         options: [
-          { key: 'A', en: 'worried about something', cn: '焦虑、为某件事担心', correct: true, reason: 'be anxious about 就是“为某事不安”，后面接的正是担心的事。' },
-          { key: 'B', en: 'excited to start', cn: '跃跃欲试', correct: false, reason: '买得太急是危险信号，语气是警觉而不是期待。' },
-          { key: 'C', en: 'angry at someone', cn: '对某人生气', correct: false, reason: '这里是心里没底，不是发火，angry 更直接。' }
+          { key: 'A', en: 'something you fail to see clearly', cn: '盲区、看不清楚的地方', correct: true, reason: '他能算清所有账，唯独看不透自己的心。' },
+          { key: 'B', en: 'a spot on the wall', cn: '墙上的一个斑点', correct: false, reason: '这里说的是认知上的盲区，不是墙上的点。' },
+          { key: 'C', en: 'a very bright light', cn: '一盏很亮的灯', correct: false, reason: '跟照明无关。' }
         ],
-        analysis: 'anxious 是“心里悬着”，既可以指担心，也可以指迫切。这里配上 too fast，就是典型的危险预判。',
-        wrongFeedback: '你选错了，韩青在电话那头沉默了几秒，说“要不要现在就动手”，陈默却迟迟没有回答。',
-        afterCorrect: '陈默走到窗边：“让他们买。”他看着楼下的车流，“买得越多，套得越深。查清楚他们用谁的钱。”'
+        analysis: 'blind spot 是「自己看不见的那一块」。韩野这句话不是嘲笑，是提醒：再强的人也有绕不过去的地方。',
+        wrongFeedback: '你选错了，韩野把最后一瓶酒放回箱子，没有再问。气血 -10',
+        afterCorrect: '陈默沉默了很久：「所以明天那场，我得去。」'
       }
     ],
-    completeText: '第 13 章结束。天亮时苏晚醒来，肩上多了一件外套。桌上放着一份整理好的名单，每一家后面都写着两个字：可靠，或危险。'
+    completeText: '第 13 章结束。第二天下午三点，陈默坐在咖啡厅靠窗的位置，隔着一张桌子，看着苏晚走进那场相亲。'
   },
   {
     id: 'ml_14',
     index: 14,
-    title: '第 14 章 · 他也配姓陈？',
+    title: '第 14 章 · 隔一张桌子的约会',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '赵天豪找了个由头，把苏氏的供应商都请去喝茶，席间放话：谁敢再给苏氏供货，就是跟赵家过不去。三家供应商当晚就退了单，苏氏的产线停了一半。',
+    storyText: '相亲对象是个家世不错的律师，开口就聊房产和股权。苏晚坐在对面，一直低头搅咖啡。陈默在隔壁桌，把整杯水喝完了。',
     questions: [
       {
-        plotDescription: '苏晚把退单函放在桌上，赵天豪的人还在门口等着回话，态度轻慢。',
-        line: "I was furious when I read this. Then I realized it is a gift.",
-        lineCn: '我看完这份东西的时候狂怒。然后我意识到，这是一份礼物。',
-        prompt: "根据上下文，选出画线词汇 'furious' 最准确的意思。",
+        plotDescription: '前一晚，苏晚的闺蜜林薇从上海回来，一坐下就说了半小时陈默的坏话。',
+        line: "Lin Wei is a toxic friend. She only calls when she needs something.",
+        lineCn: '林薇是个有毒的朋友。她只在需要帮忙的时候才打电话。',
+        prompt: "根据上下文，选出画线词汇 'Toxic friend' 最准确的意思。",
         options: [
-          { key: 'A', en: 'extremely angry', cn: '狂怒、气到极点', correct: true, reason: 'furious 是愤怒的最高级，后面“然后我意识到”正是情绪转折。' },
-          { key: 'B', en: 'slightly disappointed', cn: '有点失望', correct: false, reason: '失望是 disappointed，不足以形容看到退单函的反应。' },
-          { key: 'C', en: 'very fast', cn: '非常快', correct: false, reason: 'furious 和速度无关，那是 fast，这里是情绪。' }
+          { key: 'A', en: 'a friend who drains or harms you', cn: '有毒的朋友、会消耗和伤害你的人', correct: true, reason: '三年不联系，一回来就挑拨，正是这种朋友。' },
+          { key: 'B', en: 'a friend who is a doctor', cn: '当医生的朋友', correct: false, reason: 'toxic 说的是关系的伤害性，不是职业。' },
+          { key: 'C', en: 'a friend who lives far away', cn: '住得很远的朋友', correct: false, reason: '距离不是重点，重点是她在消耗苏晚。' }
         ],
-        analysis: 'furious 是“暴怒”，比 angry 重得多。陈默先承认真实的情绪，再说这是个机会——这句话的层次就在这里。',
-        wrongFeedback: '你选错了，苏晚以为他要发作，赶紧说“别冲动”，门口赵家的人笑了一声。',
-        afterCorrect: '陈默把三封退单函并排放好：“三家一起退，说明他们早就串通好了。”他抬起头，“证据自己送上门了。”'
+        analysis: 'toxic friend 指那种表面亲近、实际不断消耗你的人。苏晚听完只回了一句：我知道。',
+        wrongFeedback: '你选错了，苏晚把杯子放下，没有再解释。气血 -10',
+        afterCorrect: '苏晚把林薇的号码从置顶里删了，动作很轻，但没有犹豫。'
       },
       {
-        plotDescription: '苏晚问他是不是早就料到，低声说自己这几天几乎没睡好，心里堵得慌。',
-        line: "I was depressed for two days, then I stopped waiting for good news.",
-        lineCn: '我抑郁了两天，然后我就不再等好消息了。',
-        prompt: "根据上下文，选出画线词汇 'depressed' 最准确的意思。",
+        plotDescription: '相亲结束后，陈默在咖啡厅门口拦住苏晚，把手插在口袋里。',
+        line: "I'm asking you on a real date. Not a business meeting, not a favor.",
+        lineCn: '我是在正式约你。不是谈生意，也不是还人情。',
+        prompt: "根据上下文，选出画线词汇 'Date' 最准确的意思。",
         options: [
-          { key: 'A', en: 'feeling very low and hopeless', cn: '情绪低落、抑郁', correct: true, reason: 'depressed 是持续的情绪低迷，和“两天”这种时长搭得上。' },
-          { key: 'B', en: 'feeling physically sick', cn: '身体不舒服', correct: false, reason: '这里是情绪状态，不是生病，虽然两者会互相影响。' },
-          { key: 'C', en: 'feeling sleepy', cn: '困倦', correct: false, reason: '困是 sleepy，depressed 说的是心情往下沉。' }
+          { key: 'A', en: 'a romantic meeting with someone', cn: '约会', correct: true, reason: '他特意说不是谈生意，就是要把这场见面定性为约会。' },
+          { key: 'B', en: 'a specific day on a calendar', cn: '日历上的日期', correct: false, reason: '这里不是指某一天，而是指两个人见面这件事。' },
+          { key: 'C', en: 'a business appointment', cn: '商务预约', correct: false, reason: '他明确排除了「谈生意」。' }
         ],
-        analysis: 'depressed 指“情绪持续低落”，不只是当下的难过。陈默说的是那两天的状态，也是他决定不再被动等的转折。',
-        wrongFeedback: '你选错了，苏晚垂下眼，说自己也是，声音轻得几乎听不见，办公室里安静下来。',
-        afterCorrect: '陈默递给她一份名单：“这三家退了单，还会有六家想进来。”他敲了敲纸面，“苏氏不是非他们不可。”'
+        analysis: 'date 作名词是「约会」。陈默把话说得很直，因为他不想再让这段关系被当成交易。',
+        wrongFeedback: '你选错了，苏晚的眼睛垂下去，那句「好」没能说出口。气血 -10',
+        afterCorrect: '苏晚抬起头：「那你请我吃什么？」陈默说：「楼下那家面馆。我只会请你吃这个。」'
       },
       {
-        plotDescription: '下午，新供应商的代表来了，看完苏氏的订单量，眼睛都亮了，说这买卖值得干。',
-        line: "I am hyped about this. Your volume is three times what we expected.",
-        lineCn: '我对这事极度兴奋。你们的量是我们预期的三倍。',
-        prompt: "根据上下文，选出画线词汇 'hyped' 最准确的意思。",
+        plotDescription: '面馆里，苏晚忽然放下筷子，问他是不是还想退婚。',
+        line: "If you want to break up, say it to my face. Don't make it a rumor.",
+        lineCn: '你要是想分手，就当面跟我说。别把它变成一句谣言。',
+        prompt: "根据上下文，选出画线词汇 'Break up' 最准确的意思。",
         options: [
-          { key: 'A', en: 'extremely excited', cn: '极度兴奋、热血上头', correct: true, reason: 'hyped 是“被点燃了”，正对上他看见订单量时的反应。' },
-          { key: 'B', en: 'very doubtful', cn: '非常怀疑', correct: false, reason: '他看到三倍订单量，是兴奋，不是怀疑。' },
-          { key: 'C', en: 'slightly tired', cn: '有点累', correct: false, reason: 'hype 是往上抬的情绪，跟疲惫相反。' }
+          { key: 'A', en: 'to end a romantic relationship', cn: '分手、结束恋爱关系', correct: true, reason: '她问的就是两个人要不要结束这段关系。' },
+          { key: 'B', en: 'to break something into pieces', cn: '把东西打碎', correct: false, reason: 'break 是打碎，break up 在这里是分手。' },
+          { key: 'C', en: 'to stop a meeting', cn: '中止一场会议', correct: false, reason: '面馆里的两个人不是在开会。' }
         ],
-        analysis: 'hyped 是口语里“超级期待、兴奋”的说法，常和 about / for 连用。赵家封了一家，反而把更好的送到了门口。',
-        wrongFeedback: '你选错了，那位代表看看苏晚又看看陈默，把合同收了回去，说“那我们再考虑考虑”。',
-        afterCorrect: '陈默把合同推过去：“签吧。但我有一个条件——赵家来找你们，你们得把话原样告诉我。”'
+        analysis: 'break up 是「结束一段感情」。陈默没有立刻回答，他把碗里的面吃完了才开口。',
+        wrongFeedback: '你选错了，苏晚站起来，椅子在地上响了一声。气血 -10',
+        afterCorrect: '陈默放下筷子：「三年前那份退婚书，我签的时候就没打算认。」'
       },
       {
-        plotDescription: '送走客人，苏晚靠在门边，说这几天像做了一场很糟的梦，问他是不是早就习惯了这种日子。',
-        line: "Those three days were miserable. But I have had worse.",
-        lineCn: '那三天惨透了。不过我经历过更糟的。',
-        prompt: "根据上下文，选出画线词汇 'miserable' 最准确的意思。",
+        plotDescription: '当晚，苏晚在楼下给那位律师打了电话，说了不到两分钟。',
+        line: "I dumped him on the phone ten minutes ago. It's over.",
+        lineCn: '我十分钟前在电话里把他甩了。结束了。',
+        prompt: "根据上下文，选出画线词汇 'Dump' 最准确的意思。",
         options: [
-          { key: 'A', en: 'extremely unhappy and unpleasant', cn: '惨透了、痛苦难熬', correct: true, reason: 'miserable 形容处境或心情“糟到极点”，正对上那三天的状态。' },
-          { key: 'B', en: 'calm and peaceful', cn: '平静安宁', correct: false, reason: '正好相反，miserable 是难熬，不是安宁。' },
-          { key: 'C', en: 'busy but productive', cn: '忙碌但有成效', correct: false, reason: '如果是有成效，就不会用“惨”来形容这三天了。' }
+          { key: 'A', en: 'to end a relationship with someone', cn: '甩掉、跟某人分手', correct: true, reason: '她在电话里把相亲对象结束掉，正是这个用法。' },
+          { key: 'B', en: 'to throw away rubbish', cn: '倒垃圾', correct: false, reason: 'dump 有倒垃圾的意思，但这里说的是人。' },
+          { key: 'C', en: 'to accept an offer', cn: '接受一个提议', correct: false, reason: '她拒绝了他，不是接受。' }
         ],
-        analysis: 'miserable 是“苦不堪言”，既能形容人，也能形容天气、日子。陈默说“更糟的”，是把这三天的分量悄悄压了下去。',
-        wrongFeedback: '你选错了，苏晚看着他，想说什么又停住，最后只说了一句“对不起”。',
-        afterCorrect: '陈默摇摇头：“不用对不起。”他看向窗外，“三天停线，换掉一个赵家，很划算。”'
+        analysis: 'dump 作动词是「把恋人甩了」，语气比 break up 更干脆。苏晚这一次没有拖。',
+        wrongFeedback: '你选错了，陈默在楼上听见了半句，站在楼梯口没动。气血 -10',
+        afterCorrect: '她挂了电话，抬头看见他站在楼梯上，两个人都笑了。'
       }
     ],
-    completeText: '第 14 章结束。一周之内，苏氏换了四家供应商，产能恢复。赵天豪坐在办公室里，第一次把“陈默”两个字写在了纸上，画了个圈。'
+    completeText: '第 14 章结束。那一晚，苏晚第一次走进他那间旧公寓，没有带汤，也没有带文件。'
   },
   {
     id: 'ml_15',
     index: 15,
-    title: '第 15 章 · 一亿的局，我接了',
+    title: '第 15 章 · 酒会上的那叠照片',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '赵家放出消息，要在一个月内收购苏氏三成股份，报价高得离谱。董事会有人动心，有人害怕。苏振海把陈默叫到老宅，说只要他点头，可以给他一笔钱，让他离开苏晚。',
+    storyText: '苏氏年中酒会上，赵天佑带着一叠照片出现，说拍到苏晚在伦敦跟一个男人吃饭。他把照片一张张摆到桌上，等着看陈默的脸色。',
     questions: [
       {
-        plotDescription: '苏振海把一张支票推到桌子中间，说这是他这辈子听过最划算的安排，让陈默别贪心。',
-        line: "I am ecstatic about this offer? You must think I am a fool.",
-        lineCn: '我对这个提议欣喜若狂？你一定觉得我是傻子。',
-        prompt: "根据上下文，选出画线词汇 'ecstatic' 最准确的意思。",
+        plotDescription: '陈默把照片看完，一张张推回去，声音很平。',
+        line: "If she wanted to cheat, she wouldn't need to fly to another country.",
+        lineCn: '如果她想出轨，根本不用飞到另一个国家。',
+        prompt: "根据上下文，选出画线词汇 'Cheat' 最准确的意思。",
         options: [
-          { key: 'A', en: 'extremely happy', cn: '欣喜若狂、高兴到极点', correct: true, reason: 'ecstatic 是喜悦的最高档，这里用问句是在反讽。' },
-          { key: 'B', en: 'very confused', cn: '非常困惑', correct: false, reason: '他不是困惑，是不屑，后面那句“你觉得我是傻子”说明了态度。' },
-          { key: 'C', en: 'slightly interested', cn: '有点感兴趣', correct: false, reason: '如果是有点兴趣，就不会反问，语气明显是讽刺。' }
+          { key: 'A', en: 'to be unfaithful to a partner', cn: '出轨、对伴侣不忠', correct: true, reason: '赵天佑拿照片暗示的就是这个，陈默正面回击。' },
+          { key: 'B', en: 'to copy in an exam', cn: '考试作弊', correct: false, reason: 'cheat 有作弊的意思，但这里说的是感情。' },
+          { key: 'C', en: 'to win by luck', cn: '靠运气赢', correct: false, reason: '语境是照片和婚姻，不是比赛。' }
         ],
-        analysis: 'ecstatic 是“狂喜”，比 happy 强很多。陈默故意把话说满，再用反问掀翻，这种反讽比直接拒绝更打脸。',
-        wrongFeedback: '你选错了，苏振海以为他嫌少，又加了一个数字，还说“年轻人要知足”。',
-        afterCorrect: '陈默把支票推回去：“钱你留着。”他身体前倾，“我只要一句话，苏晚知道这笔交易吗？”'
+        analysis: 'cheat 在感情语境里就是「出轨」。陈默没有解释照片，他直接拆掉了对方的逻辑。',
+        wrongFeedback: '你选错了，赵天佑笑意更深，把照片又摆了回来。气血 -10',
+        afterCorrect: '陈默把照片拢成一叠，递回给他：「下次拍清楚点，别浪费我的时间。」'
       },
       {
-        plotDescription: '苏振海没有回答，只是端起茶，说苏晚是苏家的人，婚事本来就该由家里做主。',
-        line: "Three years of this, and I am numb to your family's talk.",
-        lineCn: '三年了，我对你们家这套说辞已经麻木了。',
-        prompt: "根据上下文，选出画线词汇 'numb' 最准确的意思。",
+        plotDescription: '半场时，一位合作方的女负责人端着酒走过来，站得很近，说话时手一直没离开他的袖口。',
+        line: "That woman has been flirting with you for twenty minutes. Do something.",
+        lineCn: '那个女人已经跟你调情二十分钟了。你倒是做点什么。',
+        prompt: "根据上下文，选出画线词汇 'Flirt' 最准确的意思。",
         options: [
-          { key: 'A', en: 'unable to feel anything anymore', cn: '麻木、已经感觉不到', correct: true, reason: 'be numb to 就是“对……已经没感觉”，正对上三年反复听这些话。' },
-          { key: 'B', en: 'physically cold', cn: '身体发冷', correct: false, reason: 'numb 确实可指冻僵，但这里说的是对说辞的反应。' },
-          { key: 'C', en: 'very surprised', cn: '非常惊讶', correct: false, reason: '听了三年，不可能还惊讶，麻木才是准确的状态。' }
+          { key: 'A', en: 'to behave in a way that shows romantic interest', cn: '调情、暧昧地示好', correct: true, reason: '站得很近、手不离袖口，正是调情的动作。' },
+          { key: 'B', en: 'to argue about business', cn: '争论业务', correct: false, reason: '他们聊的不是合同条款。' },
+          { key: 'C', en: 'to refuse politely', cn: '礼貌地拒绝', correct: false, reason: '正好相反，她在主动靠近。' }
         ],
-        analysis: 'numb 本指“失去知觉”，用来形容情绪就是“麻了、无所谓了”。三个字背后，是三年里被磨掉的期待。',
-        wrongFeedback: '你选错了，苏振海把茶杯放下，说“你这是什么态度”，客厅里的佣人都退了出去。',
-        afterCorrect: '陈默站起来：“我签退婚书的时候，就没打算再听你们安排。”他走到门口，“股份的事，我会接。”'
+        analysis: 'flirt 是「带着好感的试探」。苏晚站在三米外，把这句话说得不高不低，刚好让他听见。',
+        wrongFeedback: '你选错了，苏晚转身去拿酒，脚步有点快。气血 -10',
+        afterCorrect: '陈默往后退了半步，把名片递过去：「合作的事，明天办公室谈。」'
       },
       {
-        plotDescription: '苏明哲在门外听见了，冲进来质问，说陈默凭什么接这么大的局，是不是想吞掉苏家。',
-        line: "You are jealous because nobody ever trusted you with a real deal.",
-        lineCn: '你嫉妒，是因为从来没人把真正的生意交到你手上。',
-        prompt: "根据上下文，选出画线词汇 'jealous' 最准确的意思。",
+        plotDescription: '门口，一个穿深灰西装的男人站了很久，视线一直落在苏晚身上。',
+        line: "Her ex is standing by the door. He's been staring at her all night.",
+        lineCn: '她的前任站在门口。他整晚都在盯着她。',
+        prompt: "根据上下文，选出画线词汇 'Ex' 最准确的意思。",
         options: [
-          { key: 'A', en: 'angry because someone has what you want', cn: '嫉妒、因为别人有而心里不平衡', correct: true, reason: 'jealous 就是因为别人得到了你想要的而难受，正对上他的质问。' },
-          { key: 'B', en: 'proud of someone', cn: '为某人感到骄傲', correct: false, reason: '他冲进来质问，是气不过，不是骄傲。' },
-          { key: 'C', en: 'confused by the numbers', cn: '被数字搞糊涂了', correct: false, reason: '这里说的是情绪，不是看不懂报表。' }
+          { key: 'A', en: 'a former partner', cn: '前任', correct: true, reason: '站在门口盯着苏晚的那个人，就是她以前的恋人。' },
+          { key: 'B', en: 'a stranger who looks familiar', cn: '看起来很眼熟的陌生人', correct: false, reason: '这里明确指的是有旧情的人。' },
+          { key: 'C', en: 'an old business partner', cn: '旧商业伙伴', correct: false, reason: '语境说的是感情，不是生意。' }
         ],
-        analysis: 'jealous 是“眼红、嫉妒”，常跟 of 连用。陈默一句话戳穿：苏明哲真正恨的不是安排，是轮不到他。',
-        wrongFeedback: '你选错了，苏明哲脸涨红了，指着陈默的鼻子骂了一句，被苏振海喝住。',
-        afterCorrect: '陈默没有回头：“你要是想接，可以。”他顿了顿，“先把那三百二十七封邮件读一遍。”'
+        analysis: 'ex 是「前任」的口语说法。陈默看了一眼，只看了一眼，然后把杯子放到了苏晚手边。',
+        wrongFeedback: '你选错了，那个男人往前走了半步，苏晚却没有回头。气血 -10',
+        afterCorrect: '顾言走过来，伸出手：「好久不见。」陈默握住他的手：「是挺久了。」'
       },
       {
-        plotDescription: '车子开出老宅，老周问他要不要现在就动手，陈默看着窗外，说自己有点过意不去。',
-        line: "I feel guilty about one thing: I let her carry it alone for three years.",
-        lineCn: '我只对一件事内疚：让她一个人扛了三年。',
-        prompt: "根据上下文，选出画线词汇 'guilty' 最准确的意思。",
+        plotDescription: '韩野不知从哪儿冒出来，一把拦住还想再靠近的那位女负责人。',
+        line: "I'll be your wingman tonight. Go talk to her.",
+        lineCn: '今晚我给你当僚机。去跟她说话。',
+        prompt: "根据上下文，选出画线词汇 'Wingman' 最准确的意思。",
         options: [
-          { key: 'A', en: 'feeling responsible for something wrong', cn: '内疚、觉得自己有责任', correct: true, reason: 'feel guilty about 就是“为某事心里过不去”，正对上他让苏晚独自承受。' },
-          { key: 'B', en: 'feeling proud of himself', cn: '为自己感到自豪', correct: false, reason: '如果自豪，就不会用“过意不去”这种说法。' },
-          { key: 'C', en: 'feeling bored', cn: '觉得无聊', correct: false, reason: 'guilty 是道德上的不安，跟无聊没有关系。' }
+          { key: 'A', en: 'a friend who helps you with romance', cn: '僚机、帮你追人的朋友', correct: true, reason: '韩野替他挡住别人，让他能去找苏晚，正是僚机的活。' },
+          { key: 'B', en: 'a pilot in a plane', cn: '飞机上的僚机飞行员', correct: false, reason: '原义是战斗机僚机，这里指的是帮忙的朋友。' },
+          { key: 'C', en: 'a security guard', cn: '保安', correct: false, reason: '他不是在执行安保，是在帮忙。' }
         ],
-        analysis: 'feel guilty about 是“为某事内疚”。这是陈默第一次露出软处——他算得清所有账，唯独这笔算不清。',
-        wrongFeedback: '你选错了，老周从后视镜看了他一眼，没有接话，车里的空气沉了下来。',
-        afterCorrect: '老周把车停稳：“指挥官，那不怪您。”陈默摇头：“怪。”他推开车门，“所以接下来的局，我得替她赢回来。”'
+        analysis: 'wingman 本来是空战里的「僚机」，口语里指帮朋友打配合的人。韩野这晚干得相当称职。',
+        wrongFeedback: '你选错了，韩野挡在你前面，你却没往前走。气血 -10',
+        afterCorrect: '陈默走过去，站在苏晚身侧，对顾言说：「她今晚跟我来的。」'
       }
     ],
-    completeText: '第 15 章结束。第二天，陈默以个人名义接下赵家的收购盘，一亿的局，他连眉头都没皱。消息传出去，全城都在问：这个上门女婿，哪来的钱？'
+    completeText: '第 15 章结束。顾言笑了笑，把名片放在桌上就走了。苏晚看着那张名片，忽然说：你刚才那句话，说得太晚了三年。'
   },
   {
     id: 'ml_16',
     index: 16,
-    title: '第 16 章 · 仓库里的那盏灯',
+    title: '第 16 章 · 天台上的三个小时',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '苏氏城郊的仓库被赵家的人围了，说是查消防，其实是要清货。陈默赶到时，门口停着三辆车，仓库里只有一盏灯还亮着，几个老工人死死守着货。',
+    storyText: '酒会散场后，苏晚没有回家。陈默把车开到苏氏大楼顶层，两个人坐在天台的台阶上，从十一点坐到凌晨两点。',
     questions: [
       {
-        plotDescription: '带队的男人把检查单拍在铁门上，说今天必须封库，谁拦就是妨碍执法。',
-        line: "I am stressed, and my patience is the first thing to go.",
-        lineCn: '我现在压力很大，而我的耐心是最先没的东西。',
-        prompt: "根据上下文，选出画线词汇 'stressed' 最准确的意思。",
+        plotDescription: '风把苏晚的头发吹乱了，她抬头看了看四周，忽然笑了。',
+        line: "This rooftop has a good vibe. I used to come here when I had nothing.",
+        lineCn: '这个天台的氛围很好。我一无所有的时候常来这儿。',
+        prompt: "根据上下文，选出画线词汇 'Vibe' 最准确的意思。",
         options: [
-          { key: 'A', en: 'under a lot of pressure', cn: '压力大、绷得很紧', correct: true, reason: 'stressed 就是“被压力压着”，所以下一句才说耐心快没了。' },
-          { key: 'B', en: 'physically strong', cn: '身体强壮', correct: false, reason: '这个词是心理状态，不是体力，别和 strong 搞混。' },
-          { key: 'C', en: 'very relaxed', cn: '非常放松', correct: false, reason: '正好相反，放松的人不会说耐心快用完了。' }
+          { key: 'A', en: 'the feeling a place or person gives you', cn: '氛围感、给人的感觉', correct: true, reason: '他说的是这个天台让人放松的感觉。' },
+          { key: 'B', en: 'a loud noise', cn: '很大的噪音', correct: false, reason: '天台上很安静，说的是气氛不是声音。' },
+          { key: 'C', en: 'a strong wind', cn: '一阵强风', correct: false, reason: '风只是背景，vibe 指的是氛围。' }
         ],
-        analysis: 'stressed 是“压力大”，常和 out 连用。陈默把情绪摆在明面上，是在给对方最后一次机会。',
-        wrongFeedback: '你选错了，带队的人挥手让人上前，铁门被拍得砰砰响，里面的老工人往后退了一步。',
-        afterCorrect: '陈默走过去，把检查单拿起来看了一眼：“消防检查，需要提前三天通知。”他抬头，“你们的手续呢？”'
+        analysis: 'vibe 是「一个地方或一个人给你的整体感觉」。三年前他在这里坐着看别人的灯，现在灯下面有他的名字。',
+        wrongFeedback: '你选错了，苏晚裹紧了外套，没有再说下去。气血 -10',
+        afterCorrect: '陈默指了指远处那栋旧楼：「那时候我在那儿当过三个月保安。」'
       },
       {
-        plotDescription: '对方拿不出手续，改口说是“例行抽查”，还催着工人赶紧把货搬出来。',
-        line: "Three years in this company, and I am close to burnout. Do not push it.",
-        lineCn: '在这家公司三年，我快职业倦怠了。别逼我。',
-        prompt: "根据上下文，选出画线词汇 'burnout' 最准确的意思。",
+        plotDescription: '苏晚安静地听完，把头靠在栏杆上，声音很轻。',
+        line: "I don't believe in soulmates. But I believe you know me better than anyone.",
+        lineCn: '我不信灵魂伴侣。但我相信，你比任何人都懂我。',
+        prompt: "根据上下文，选出画线词汇 'Soulmate' 最准确的意思。",
         options: [
-          { key: 'A', en: 'exhaustion from too much work over time', cn: '长期过劳导致的倦怠', correct: true, reason: 'burnout 是“长期高压耗空”，不是一时的累，所以前面有“三年”。' },
-          { key: 'B', en: 'a fire that burns out', cn: '火烧完了', correct: false, reason: '这个词已经引申为“人耗尽”，这里说的是自己的状态。' },
-          { key: 'C', en: 'a sudden promotion', cn: '突然升职', correct: false, reason: '升职是好事，burnout 是耗损，意思差得远。' }
+          { key: 'A', en: 'a person perfectly suited to you', cn: '灵魂伴侣、天生契合的人', correct: true, reason: '她嘴上说不信，说的正是这个词本身。' },
+          { key: 'B', en: 'a close business partner', cn: '亲密的商业伙伴', correct: false, reason: '这里说的是感情上的契合，不是合作。' },
+          { key: 'C', en: 'a classmate from school', cn: '学校里的同学', correct: false, reason: '他们不是同学，soulmate 也不是同学。' }
         ],
-        analysis: 'burnout 指长期高压后的身心耗尽，是“被工作烧空了”。这句话从守夜的工人嘴里说出来，比任何控诉都重。',
-        wrongFeedback: '你选错了，那位老工人被推了一下，手里的账本掉在地上，纸页散了一地。',
-        afterCorrect: '陈默弯腰把账本捡起来，一页页码好，递回去：“今晚谁也别动这批货。”他转身面向门口，“我说的。”'
+        analysis: 'soulmate 是「天生契合的那个人」。她说不信，却把最重的一句给了陈默。',
+        wrongFeedback: '你选错了，苏晚把头偏开，风把这句话吹散了一半。气血 -10',
+        afterCorrect: '陈默沉默了几秒：「那你就当我信。反正我比你固执。」'
       },
       {
-        plotDescription: '门外忽然又来了两辆车，下来十几个人，场面一下子紧到极点。老工人脸色都白了。',
-        line: "Do not panic. Stay behind me and keep your hands where I can see them.",
-        lineCn: '别恐慌。站在我身后，把手放在我能看见的地方。',
-        prompt: "根据上下文，选出画线词汇 'panic' 最准确的意思。",
+        plotDescription: '下楼时，韩野在车里等着，看他们并肩走出来，忍不住摇头。',
+        line: "Anyone can see the chemistry between you two. It's embarrassing.",
+        lineCn: '谁都看得出来你们之间的化学反应。真是看不下去了。',
+        prompt: "根据上下文，选出画线词汇 'Chemistry' 最准确的意思。",
         options: [
-          { key: 'A', en: 'sudden uncontrolled fear', cn: '恐慌、突然的失控害怕', correct: true, reason: 'panic 是“突然吓乱了”，所以他才要人别乱、站到身后。' },
-          { key: 'B', en: 'a loud argument', cn: '大声争吵', correct: false, reason: '这里还没吵起来，是怕起来，重点是恐惧。' },
-          { key: 'C', en: 'a plan for escape', cn: '逃跑计划', correct: false, reason: 'panic 是情绪，不是计划，别按中文“慌”去猜。' }
+          { key: 'A', en: 'a strong mutual attraction', cn: '化学反应、两个人之间的吸引力', correct: true, reason: '韩野说的不是实验室，是两人之间的火花。' },
+          { key: 'B', en: 'a school subject about substances', cn: '化学这门学科', correct: false, reason: '这里是比喻，指两个人合不合拍。' },
+          { key: 'C', en: 'a serious disagreement', cn: '严重的分歧', correct: false, reason: '他们并没有在吵，是别人看着难受。' }
         ],
-        analysis: 'panic 是“突然的、控制不住的恐惧”。陈默一句命令式的安抚，把一群普通工人的情绪先按住。',
-        wrongFeedback: '你选错了，有人往后退，撞倒了货架，铁皮倒地的声音让场面彻底乱了。',
-        afterCorrect: '那十几个人走到灯下，齐刷刷停住，领头的人摘下帽子，低声说：“指挥官，龙渊一组，到齐。”'
+        analysis: 'chemistry 用来形容两个人之间「说不清的吸引」。韩野嘴上嫌烦，其实替他们高兴。',
+        wrongFeedback: '你选错了，韩野把车钥匙扔过来，没再说话。气血 -10',
+        afterCorrect: '陈默接住钥匙：「开车。明天还有一场硬仗。」'
       },
       {
-        plotDescription: '危机解除，老工人蹲在地上直喘气，说以为今晚这批货保不住了。',
-        line: "Everyone is relieved now. It is over, and nobody got hurt.",
-        lineCn: '现在大家都松了口气。结束了，没人受伤。',
-        prompt: "根据上下文，选出画线词汇 'relieved' 最相关的意思。",
+        plotDescription: '回到公寓，陈默从抽屉里拿出一把钥匙，放在苏晚手心。',
+        line: "I don't give this key to anyone. This is about trust.",
+        lineCn: '这把钥匙我不给任何人。这关乎信任。',
+        prompt: "根据上下文，选出画线词汇 'Trust' 最准确的意思。",
         options: [
-          { key: 'A', en: 'feeling calm after worry is gone', cn: '松了口气、放下心来', correct: true, reason: 'relieved 就是“担心的事过去之后，心里那块石头落下来”的感觉。' },
-          { key: 'B', en: 'still terrified', cn: '仍然极度恐惧', correct: false, reason: '事情已经结束，人也说“结束了”，恐惧已经落地。' },
-          { key: 'C', en: 'angry at the workers', cn: '对工人们发火', correct: false, reason: '他是在安抚，不是追责，语气已经软下来。' }
+          { key: 'A', en: 'belief that someone is honest and reliable', cn: '信任、相信对方靠得住', correct: true, reason: '交出一把私人钥匙，就是把自己交出去。' },
+          { key: 'B', en: 'a legal document', cn: '一份法律文件', correct: false, reason: '他递的是一把钥匙，不是文件。' },
+          { key: 'C', en: 'a feeling of doubt', cn: '怀疑的感觉', correct: false, reason: '正好相反，trust 是相信。' }
         ],
-        analysis: 'relieved 是“担心解除后的轻松”。陈默没说安慰的话，只说了三个事实：结束了、没人受伤、可以呼吸。',
-        wrongFeedback: '你选错了，老工人还想解释，陈默抬手打断，让他先去喝口水，别再硬撑。',
-        afterCorrect: '老工人捧着水杯，手还在抖：“小陈，你到底什么来头？”陈默笑了笑：“先看货，别的以后说。”'
+        analysis: 'trust 是「把自己交出去也不怕」。陈默这三年谁都不信，这把钥匙比任何一句表白都重。',
+        wrongFeedback: '你选错了，苏晚的手停在半空，没有接住那把钥匙。气血 -10',
+        afterCorrect: '苏晚把钥匙收进包里，很轻地说：「我不会弄丢它。」'
       }
     ],
-    completeText: '第 16 章结束。那晚仓库的灯亮到天亮，货一箱没少。老周站在门口抽烟，说了一句：“三年了，终于有人替他们撑腰。”'
+    completeText: '第 16 章结束。那一夜两个人都没睡好，但都没有发消息。有些话已经不用再说了。'
   },
   {
     id: 'ml_17',
     index: 17,
-    title: '第 17 章 · 旧照片上的肩章',
+    title: '第 17 章 · 三倍年薪的挖角',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '仓库的事上了本地新闻，照片里陈默站在灯下，背影笔直。苏晚把照片放大，发现他抬手时，袖口滑出一截旧疤痕，形状像一道军徽。',
+    storyText: '赵家开始反扑：三倍年薪挖韩野，五倍价格买陈默的核心团队，还派人带着合同去找苏晚，要她做赵氏在苏氏的「内线」。',
     questions: [
       {
-        plotDescription: '苏晚把打印出来的照片放在他面前，问他手上那道疤是怎么来的，声音有点抖。',
-        line: "I was heartbroken when I thought you were just a nobody. Now I am scared.",
-        lineCn: '我以为你只是个无名小卒的时候，心都碎了。现在我害怕。',
-        prompt: "根据上下文，选出画线词汇 'heartbroken' 最准确的意思。",
+        plotDescription: '韩野把那份合同拍在桌上，合同上的数字能让任何人动心。',
+        line: "I'm loyal to you, not to the money. Put that thing away.",
+        lineCn: '我忠于你，不是忠于钱。把那玩意儿收起来。',
+        prompt: "根据上下文，选出画线词汇 'Loyal' 最准确的意思。",
         options: [
-          { key: 'A', en: 'extremely sad and hurt', cn: '心碎、难过到极点', correct: true, reason: 'heartbroken 是“心被击碎”，正对上她三年里的失望。' },
-          { key: 'B', en: 'physically injured in the chest', cn: '胸口受了伤', correct: false, reason: '字面理解不成立，这里说的是感情上的痛。' },
-          { key: 'C', en: 'very confused', cn: '非常困惑', correct: false, reason: '她是难过和害怕，不是单纯想不通。' }
+          { key: 'A', en: 'always supporting someone you believe in', cn: '忠诚、始终站在对方这边', correct: true, reason: '三倍年薪摆在面前，他还是选择留下。' },
+          { key: 'B', en: 'greedy for more money', cn: '贪图更多的钱', correct: false, reason: '他恰恰是把钱推开了。' },
+          { key: 'C', en: 'afraid of change', cn: '害怕改变', correct: false, reason: '他不是怕，是认定要跟这个人。' }
         ],
-        analysis: 'heartbroken 是“心碎”，多数时候指感情上的重创。苏晚把这三年的失望说出口，语气比指责更重。',
-        wrongFeedback: '你选错了，苏晚把照片收回去，指尖在纸边停了很久，最后只说“当我没问”。',
-        afterCorrect: '陈默沉默了一会儿，把袖子往上推了推：“这道疤是三年前留下的。”他抬头，“也是我离开那支队伍的原因。”'
+        analysis: 'loyal 是「认定了就不换」。韩野把合同推回去的动作，比任何誓言都硬。',
+        wrongFeedback: '你选错了，韩野把合同撕成两半，扔进垃圾桶。气血 -10',
+        afterCorrect: '陈默看着他，忽然说了一句三年没说过的话：「谢了，兄弟。」'
       },
       {
-        plotDescription: '苏明哲听说仓库的事，反倒冷笑，说陈默不过是请了几个演员，演了一出戏。',
-        line: "He looks so smug for a man who has nothing but a rented suit.",
-        lineCn: '一个除了一身租来的西装什么都没有的人，居然这么得意。',
-        prompt: "根据上下文，选出画线词汇 'smug' 最准确的意思。",
+        plotDescription: '同一天下午，苏晚一个人去了赵氏，四十分钟后出来，把那份合同留在了会议桌上。',
+        line: "I went there to reject their offer in person.",
+        lineCn: '我去那儿，是当面拒绝他们的条件。',
+        prompt: "根据上下文，选出画线词汇 'Reject' 最准确的意思。",
         options: [
-          { key: 'A', en: 'too pleased with himself', cn: '得意忘形、自鸣得意', correct: true, reason: 'smug 是“自我感觉太好”，正对上他看不惯的那副样子。' },
-          { key: 'B', en: 'very nervous', cn: '非常紧张', correct: false, reason: '能在这种时候冷笑的人，不是紧张，是自以为占了上风。' },
-          { key: 'C', en: 'poorly dressed', cn: '穿得很寒酸', correct: false, reason: '衣服寒酸是前半句的内容，smug 说的是神态。' }
+          { key: 'A', en: 'to refuse to accept something', cn: '拒绝、不接受', correct: true, reason: '她去了，却把合同留在桌上，就是当面拒绝。' },
+          { key: 'B', en: 'to accept with conditions', cn: '有条件地接受', correct: false, reason: '她把合同留下了，说明没有接受。' },
+          { key: 'C', en: 'to discuss in detail', cn: '详细讨论', correct: false, reason: '四十分钟后她走出来，留下的是合同。' }
         ],
-        analysis: 'smug 专指那种“藏不住的得意”，带贬义。苏明哲用这个词骂人，其实照出的是自己的不甘心。',
-        wrongFeedback: '你选错了，苏明哲越说越来劲，还拿出手机翻新闻，说要找人“扒一扒这个骗子”。',
-        afterCorrect: '陈默把照片转过去：“你说得对，西装是租的。”他指了指照片里的灯，“那盏灯下站的人，可没租。”'
+        analysis: 'reject 是「明确说不」。苏晚这一次没有让任何人替她开口。',
+        wrongFeedback: '你选错了，苏晚看着你，等你说点什么，你却什么都没说。气血 -10',
+        afterCorrect: '陈默问：「他们说了什么？」苏晚说：「说我如果不签，就让你一无所有。」'
       },
       {
-        plotDescription: '苏晚追问那道疤，陈默只说了一句“以前干过几年活”，她明显不信，眉头一直没松。',
-        line: "You are annoyed because I keep giving you half answers.",
-        lineCn: '你烦透了，是因为我一直只给你一半的答案。',
-        prompt: "根据上下文，选出画线词汇 'annoyed' 最准确的意思。",
+        plotDescription: '当晚，陈默把车停在江边，关了发动机，很久没有说话。',
+        line: "I've wanted to confess this for three years. I'm not good at it, so I'll be quick.",
+        lineCn: '这句话我想表白想了三年。我不擅长这个，所以我快点说。',
+        prompt: "根据上下文，选出画线词汇 'Confess' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a little angry and irritated', cn: '烦、被惹得有点恼火', correct: true, reason: 'annoyed 是“被反复磨到不耐烦”，正对上她追问半天得不到答案。' },
-          { key: 'B', en: 'deeply moved', cn: '深受感动', correct: false, reason: '她是在追问和不满，不是被打动。' },
-          { key: 'C', en: 'completely calm', cn: '完全平静', correct: false, reason: '眉头一直没松，显然不是平静的状态。' }
+          { key: 'A', en: 'to admit a feeling you have kept hidden', cn: '表白、把藏着的心里话说出来', correct: true, reason: '藏了三年的话终于要说出口。' },
+          { key: 'B', en: 'to admit a crime', cn: '承认罪行', correct: false, reason: 'confess 有认罪的意思，但这里是表白。' },
+          { key: 'C', en: 'to refuse to speak', cn: '拒绝开口', correct: false, reason: '他正要开口，不是不说。' }
         ],
-        analysis: 'annoyed 是“被烦到了”，程度比 angry 轻，但持续时间更长。陈默看得清楚，也知道自己该给答案了。',
-        wrongFeedback: '你选错了，苏晚把笔往桌上一放，说我问的是你的过去，不是苏氏的事。',
-        afterCorrect: '陈默看着她，终于开口：“龙渊特战，代号零。”他停了一下，“三年前那场行动，我丢了七个兄弟。”'
+        analysis: 'confess 是「把藏了很久的事说出来」。他说自己不擅长，却准备了三年。',
+        wrongFeedback: '你选错了，苏晚低下头，江面上的灯晃了一下。气血 -10',
+        afterCorrect: '陈默说：「三年前我进苏家，不是为了苏家的钱。」他停了一下，「是为了你。」'
       },
       {
-        plotDescription: '苏晚半天没说话，忽然问他，是不是一直有人在盯着苏家，所以他才不走。',
-        line: "It is not paranoia if someone really has been watching this house.",
-        lineCn: '如果真有人在盯着这栋房子，那就不叫被害妄想。',
-        prompt: "根据上下文，选出画线词汇 'paranoia' 最准确的意思。",
+        plotDescription: '苏晚没有立刻回答。她看着江面，手指在膝盖上收紧又松开。',
+        line: "What I want is a commitment, not a promise made at midnight.",
+        lineCn: '我要的是一个承诺，不是半夜里说说的情话。',
+        prompt: "根据上下文，选出画线词汇 'Commitment' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a false belief that people are after you', cn: '被害妄想、无端的猜疑', correct: true, reason: 'paranoia 是“总觉得有人要害你”，而这里的关键是“如果真有”。' },
-          { key: 'B', en: 'a strong sense of duty', cn: '强烈的责任感', correct: false, reason: '词义完全不对，paranoia 是猜疑，不是责任。' },
-          { key: 'C', en: 'a medical test', cn: '一项医学检查', correct: false, reason: '这个词和检查无关，它在说一种心理状态。' }
+          { key: 'A', en: 'a serious promise to stay and try', cn: '承诺、愿意长期负责的决心', correct: true, reason: '她要的不是一句情话，是能落地的决心。' },
+          { key: 'B', en: 'a short holiday plan', cn: '一个短期度假计划', correct: false, reason: '这跟旅行无关。' },
+          { key: 'C', en: 'a business contract', cn: '一份商业合同', correct: false, reason: '她说的是感情上的承担。' }
         ],
-        analysis: 'paranoia 指没有根据的猜疑。陈默这句是反转：不是你想多了，是真有人盯着。一句话把她的不安正名了。',
-        wrongFeedback: '你选错了，苏晚勉强笑了一下，说我大概是最近太累了，把照片收进了抽屉。',
-        afterCorrect: '陈默走到窗边，把窗帘拉开一条缝：“对面七楼，第三扇窗。”他回头，“那台相机，今天下午刚换过位置。”'
+        analysis: 'commitment 是「愿意把自己绑在这件事上」。苏晚要的从来不是浪漫，是别再被丢下。',
+        wrongFeedback: '你选错了，苏晚推开车门，夜风一下灌了进来。气血 -10',
+        afterCorrect: '陈默说：「那我不说。我做给你看。」苏晚停在车门口，没有下车。'
       }
     ],
-    completeText: '第 17 章结束。苏晚站在窗边，第一次觉得自己这三年住的地方这么陌生。她问：“你留下来，是为了我们，还是为了他们？”陈默没有回答。'
+    completeText: '第 17 章结束。那一夜苏晚没有走。凌晨的时候，她靠着车窗睡着了，陈默把外套盖在她身上，坐到天亮。'
   },
   {
     id: 'ml_18',
     index: 18,
-    title: '第 18 章 · 她开始怀疑',
+    title: '第 18 章 · 第一个月的甜',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '苏晚开始翻三年前的旧资料。老爷子临终前那份遗嘱里，有一条被所有人忽略的附加条款：苏家必须留陈默三年，一天都不能少。',
+    storyText: '在一起后的第一个月，陈默把会议压缩到六点前结束，把周五晚上空出来。韩野说这是他认识陈默以来最不正常的一个月。',
     questions: [
       {
-        plotDescription: '深夜的书房里，苏晚一遍遍看那段录像，坐不住，站起来又坐下。',
-        line: "I have been restless all night. There is something you are not telling me.",
-        lineCn: '我一整晚都坐立不安。有件事你没告诉我。',
-        prompt: "根据上下文，选出画线词汇 'restless' 最准确的意思。",
+        plotDescription: '第一个周末，苏晚在他公寓里待到很晚，两个人一句话都没说，只是各看各的东西。',
+        line: "I'm not good at intimacy. I've been alone for too long.",
+        lineCn: '我不太会亲近人。我一个人待得太久了。',
+        prompt: "根据上下文，选出画线词汇 'Intimacy' 最准确的意思。",
         options: [
-          { key: 'A', en: 'unable to stay calm or still', cn: '坐立不安、静不下来', correct: true, reason: 'restless 就是“待不住、心里翻腾”，正对上她反复起身。' },
-          { key: 'B', en: 'sleeping deeply', cn: '睡得很沉', correct: false, reason: '正好相反，她一整晚都没能安坐，更别说睡好。' },
-          { key: 'C', en: 'very hungry', cn: '很饿', correct: false, reason: 'restless 是身体和情绪上的不安，不是饥饿。' }
+          { key: 'A', en: 'closeness and emotional openness', cn: '亲密、愿意向对方敞开', correct: true, reason: '他说的是自己不会和人靠得太近。' },
+          { key: 'B', en: 'a formal introduction', cn: '正式的介绍', correct: false, reason: '这里说的是情感距离，不是介绍。' },
+          { key: 'C', en: 'a large social event', cn: '大型社交活动', correct: false, reason: '屋里只有两个人，安安静静。' }
         ],
-        analysis: 'restless 是“安静不下来”，既可以指睡不着，也可以指心里有事。苏晚这句不是质问，是被悬着的感觉逼出来的。',
-        wrongFeedback: '你选错了，苏晚合上录像，走到门口又停下，手指搭在门把上，一直没有拧下去。',
-        afterCorrect: '陈默把遗嘱复印件放在桌上：“这一条，是你爷爷写的。”他指着最后一行，“留我三年，是在保苏家。”'
+        analysis: 'intimacy 是「靠得很近也不设防」。陈默把这句话说出来，本身就是一次靠近。',
+        wrongFeedback: '你选错了，苏晚合上书，站起来去倒水。气血 -10',
+        afterCorrect: '苏晚把水放在他手边：「那我们慢慢来。我不着急。」'
       },
       {
-        plotDescription: '苏晚读完那一行字，忽然笑了一声，说原来这三年她一直恨错了人。',
-        line: "I have been bitter about this marriage for three years. It was never your choice.",
-        lineCn: '我为这桩婚事怨恨了三年。可这从来都不是你的选择。',
-        prompt: "根据上下文，选出画线词汇 'bitter' 最准确的意思。",
+        plotDescription: '周一早上出门前，苏晚踮起脚，替他把歪掉的领带重新系好。',
+        line: "She does it with such affection that I forget what to say.",
+        lineCn: '她做这件事时满是温柔，我一时忘了要说什么。',
+        prompt: "根据上下文，选出画线词汇 'Affection' 最准确的意思。",
         options: [
-          { key: 'A', en: 'full of resentment over time', cn: '怨恨、心里憋着苦', correct: true, reason: 'bitter about 是“对某事长期耿耿于怀”，正对上三年这两个字。' },
-          { key: 'B', en: 'having a sharp taste', cn: '味道发苦', correct: false, reason: '字面义是苦味，但这里说的是情绪，不是咖啡。' },
-          { key: 'C', en: 'very grateful', cn: '非常感激', correct: false, reason: '如果是感激，就不会说“恨错了人”。' }
+          { key: 'A', en: 'a gentle feeling of love', cn: '爱慕、温柔的情意', correct: true, reason: '系领带这个动作里是藏不住的温柔。' },
+          { key: 'B', en: 'a serious illness', cn: '一种严重的疾病', correct: false, reason: 'affection 有「病症」的旧义，但这里是爱意。' },
+          { key: 'C', en: 'a formal greeting', cn: '正式的问候', correct: false, reason: '这不是客套，是亲近。' }
         ],
-        analysis: 'bitter 从“苦味”引申为“长期的怨”。苏晚这句是在认错，也是三年来第一次把矛头从陈默身上挪开。',
-        wrongFeedback: '你选错了，苏晚把纸折起来，声音发紧，说她需要一个人待一会儿。',
-        afterCorrect: '陈默没有拦她：“你恨我没关系。”他把纸往她那边推了推，“但别恨你爷爷，他到死都在替你铺路。”'
+        analysis: 'affection 是「带着温度的爱意」，比 love 轻，但更日常。陈默站着没动，怕破坏这个瞬间。',
+        wrongFeedback: '你选错了，苏晚的手停在领口，往后退了半步。气血 -10',
+        afterCorrect: '陈默低头看她：「以后每天都要这样。」苏晚说：「想得美。」'
       },
       {
-        plotDescription: '第二天，苏晚在董事会上第一次替他说话，站出来时，手心里全是汗。',
-        line: "For the first time, I feel vulnerable standing in this room. And I am still standing.",
-        lineCn: '第一次，我站在这个房间里觉得脆弱。可我还是站着。',
-        prompt: "根据上下文，选出画线词汇 'vulnerable' 最准确的意思。",
+        plotDescription: '周五下午，韩野抱着一摞文件进办公室，发现陈默已经在收东西了。',
+        line: "Friday is our date night. No phones, no files, no excuses.",
+        lineCn: '周五是我们的约会之夜。不带手机，不带文件，不许找借口。',
+        prompt: "根据上下文，选出画线词汇 'Date night' 最准确的意思。",
         options: [
-          { key: 'A', en: 'easily hurt and unprotected', cn: '脆弱、容易受伤、没有保护', correct: true, reason: 'vulnerable 是“没有遮挡、容易被击中”，正对上她手心的汗。' },
-          { key: 'B', en: 'extremely powerful', cn: '极其强大', correct: false, reason: '这句的重点是“脆弱却仍然站着”，不是强大。' },
-          { key: 'C', en: 'very popular', cn: '很受欢迎', correct: false, reason: 'vulnerable 跟受欢迎无关，她是在说自己没有依靠。' }
+          { key: 'A', en: 'a regular evening set aside for romance', cn: '约会之夜、固定留给两个人的晚上', correct: true, reason: '他把周五整晚空出来，就是固定的约会时间。' },
+          { key: 'B', en: 'the night before an exam', cn: '考试前夜', correct: false, reason: '这里跟考试无关。' },
+          { key: 'C', en: 'a night shift at work', cn: '上夜班', correct: false, reason: '他恰恰是不加班了。' }
         ],
-        analysis: 'vulnerable 是“暴露在伤害之下”。承认脆弱之后还说“我还是站着”，这句话的力量反而更大。',
-        wrongFeedback: '你选错了，她的声音抖了一下，几位董事交换眼神，有人低头去翻文件。',
-        afterCorrect: '陈默坐在最后一排，没有说话，只是把手里那支笔放下。苏晚看见了他的动作，忽然把背挺得更直。'
+        analysis: 'date night 是「固定留给伴侣的晚上」。对陈默这种把时间当武器的人来说，这比送礼重得多。',
+        wrongFeedback: '你选错了，韩野把文件往桌上一放，你还是坐回了椅子上。气血 -10',
+        afterCorrect: '陈默把手机扔进抽屉：「天塌了也明天再说。」'
       },
       {
-        plotDescription: '会后，苏明哲追出来，说苏晚疯了，居然替一个外人说话，苏家迟早完在他手里。',
-        line: "It feels hopeless to you because you have never built anything yourself.",
-        lineCn: '你觉得绝望，是因为你自己从来没建成过任何东西。',
-        prompt: "根据上下文，选出画线词汇 'hopeless' 最准确的意思。",
+        plotDescription: '面馆老板把两碗面端上来，看着他们笑，说这是他见过最黏的一对。韩野在门口探头。',
+        line: "Look at you. You're completely smitten, and you don't even know it.",
+        lineCn: '看看你。你已经神魂颠倒了，自己还不知道。',
+        prompt: "根据上下文，选出画线词汇 'Smitten' 最准确的意思。",
         options: [
-          { key: 'A', en: 'feeling that nothing can change', cn: '绝望、看不到出路', correct: true, reason: 'hopeless 是“觉得怎么都没用”，正对上苏明哲的唱衰。' },
-          { key: 'B', en: 'very hopeful', cn: '充满希望', correct: false, reason: '这是反义，hopeless 是希望全无。' },
-          { key: 'C', en: 'careless about details', cn: '不注重细节', correct: false, reason: '这是 careless，和 hopeless 拼写像但意思不同。' }
+          { key: 'A', en: 'completely in love', cn: '神魂颠倒、被爱冲昏头', correct: true, reason: '他一边看文件一边笑，谁都能看出来。' },
+          { key: 'B', en: 'deeply annoyed', cn: '非常恼火', correct: false, reason: '他的表情完全不是恼火。' },
+          { key: 'C', en: 'slightly ill', cn: '有点不舒服', correct: false, reason: 'smite 有打击的意思，但 smitten 在这里是着迷。' }
         ],
-        analysis: 'hopeless 是“看不到希望”。陈默把苏明哲的恐惧原样点出来：你不是担心苏家，你是怕自己一无所有。',
-        wrongFeedback: '你选错了，苏明哲气得指着他的鼻子，半天没说出一句完整的话，走廊里有人探头看。',
-        afterCorrect: '陈默替他把话说完：“苏家不会完。”他转身往电梯走，“会完的是那些只会等着分东西的人。”'
+        analysis: 'smitten 是「被爱情击中、完全沦陷」。陈默自己没察觉，旁观的人全看明白了。',
+        wrongFeedback: '你选错了，韩野在门口笑得直不起腰。气血 -10',
+        afterCorrect: '陈默把筷子放下：「吃完这碗，我送你回去。」苏晚说：「再坐十分钟。」'
       }
     ],
-    completeText: '第 18 章结束。那天之后，苏晚把遗嘱的复印件锁进了自己抽屉。她开始重新看这三年——那些沉默、那些低头，原来都不是软弱。'
+    completeText: '第 18 章结束。那个月是陈默三年来第一次觉得日子有味道。月底，伦敦分公司出事的电话来了。'
   },
   {
     id: 'ml_19',
     index: 19,
-    title: '第 19 章 · 第一桶金，带血',
+    title: '第 19 章 · 伦敦的九十天',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '陈默的第一桶金来自一场拍卖。城西那块地的持有人急着出手，价格低得反常。老周查了三天，回话说这地底下埋过东西，前任主人一家没走出来。',
+    storyText: '伦敦分公司被查出账目问题，苏晚必须过去接手三个月。同一天，苏振海与妻子的离婚手续被媒体曝光，苏家的股价又跌了一截。',
     questions: [
       {
-        plotDescription: '老周把调查结果放在桌上，说自己这三年能站在这里，全靠陈默当年拉了一把。',
-        line: "I am grateful you pulled me out of that place. I never forgot it.",
-        lineCn: '我很感激你把我从那个地方拉出来。我从来没忘。',
-        prompt: "根据上下文，选出画线词汇 'grateful' 最准确的意思。",
+        plotDescription: '机场安检口，苏晚把围巾往上拉了拉，眼睛有点红。',
+        line: "The first month of long distance was pure heartbreak.",
+        lineCn: '异地恋的第一个月，纯粹就是心碎。',
+        prompt: "根据上下文，选出画线词汇 'Heartbreak' 最准确的意思。",
         options: [
-          { key: 'A', en: 'feeling thankful', cn: '感激、心里记着别人的好', correct: true, reason: 'be grateful 就是“心怀感激”，后面接的正是被救的事。' },
-          { key: 'B', en: 'feeling sorry for someone', cn: '为某人感到难过', correct: false, reason: '那是同情，不是感激；他是在谢人，不是在可怜人。' },
-          { key: 'C', en: 'feeling bored with the job', cn: '对工作感到厌倦', correct: false, reason: 'grateful 是正向的情绪，跟厌倦无关。' }
+          { key: 'A', en: 'deep emotional pain after losing someone', cn: '心碎、失去带来的剧痛', correct: true, reason: '分开一个月，两个人都熬得难受。' },
+          { key: 'B', en: 'a small misunderstanding', cn: '一场小误会', correct: false, reason: '没有误会，只是分隔两地。' },
+          { key: 'C', en: 'a broken machine', cn: '一台坏掉的机器', correct: false, reason: 'heartbreak 是情绪上的痛。' }
         ],
-        analysis: 'grateful 是“感激”，比 thanks 更沉一点。老周说这话时没抬头，三年的分量都在这一句里。',
-        wrongFeedback: '你选错了，老周把文件推过去就没再说话，办公室里只剩空调的声音。',
-        afterCorrect: '陈默把文件翻到最后一页：“那块地，我要。”他抬眼，“但不是为了钱。”'
+        analysis: 'heartbreak 是「心被分开这件事撕开」。陈默从不说想她，只是把伦敦的天气预报加进了手机。',
+        wrongFeedback: '你选错了，苏晚转身进了安检口，没有回头。气血 -10',
+        afterCorrect: '陈默站在原地，直到看不见她，才掏出手机订了下个月飞伦敦的机票。'
       },
       {
-        plotDescription: '拍卖会的包厢里，赵天豪也在，隔着玻璃朝他们举杯，一副志在必得的样子。',
-        line: "I am content to let him bid. The more he spends, the deeper he sinks.",
-        lineCn: '我很乐意让他叫价。他花得越多，陷得越深。',
-        prompt: "根据上下文，选出画线词汇 'content' 最准确的意思。",
+        plotDescription: '第二个月，两个人隔着七个小时的时差，只能在她睡前说十分钟话。',
+        line: "Long-distance is harder than I thought. I keep waking up at four to talk to you.",
+        lineCn: '异地恋比我想的难。我总在凌晨四点醒来跟你说话。',
+        prompt: "根据上下文，选出画线词汇 'Long-distance' 最准确的意思。",
         options: [
-          { key: 'A', en: 'satisfied and willing to accept it', cn: '满足、心甘情愿', correct: true, reason: 'be content to do 就是“愿意这样、觉得可以接受”，正对上他不急着抢。' },
-          { key: 'B', en: 'the main idea of a book', cn: '书的内容', correct: false, reason: 'content 作名词才是“内容”，这里用的是形容词“满足”。' },
-          { key: 'C', en: 'very angry about it', cn: '对此非常生气', correct: false, reason: '他举着杯、语气轻松，显然是乐见其成。' }
+          { key: 'A', en: 'a relationship between people far apart', cn: '异地恋、相隔很远的感情关系', correct: true, reason: '七个小时时差、隔着两个国家，正是异地恋。' },
+          { key: 'B', en: 'a long phone call', cn: '一通很长的电话', correct: false, reason: '这里说的是关系状态，不是通话时长。' },
+          { key: 'C', en: 'a long business trip', cn: '一次长期出差', correct: false, reason: 'long-distance 在这句里指两个人的关系。' }
         ],
-        analysis: 'be content to 是“甘愿、乐得如此”。陈默不抢，是因为他知道那块地的价格里藏着别人的血。',
-        wrongFeedback: '你选错了，老周忍不住问“真让他拿走？”，陈默只是把茶杯放下，没有解释。',
-        afterCorrect: '价格一路抬到九千万，赵天豪落了槌。陈默站起来鼓掌：“恭喜。”他笑着说，“那块地，我本来就没打算要。”'
+        analysis: 'long-distance 是「隔着距离谈恋爱」。凌晨四点的电话，是这段关系里最笨也最真的部分。',
+        wrongFeedback: '你选错了，电话那头安静了一会儿，苏晚说她要睡了。气血 -10',
+        afterCorrect: '陈默把航班改到了周五晚上，没有告诉她。'
       },
       {
-        plotDescription: '散场后，苏晚问他为什么放弃，说这明明是苏氏翻身的机会，语气里带着不甘。',
-        line: "I feel fulfilled for the first time in three years. I finally did one thing right.",
-        lineCn: '三年来我第一次觉得踏实。我终于做对了一件事。',
-        prompt: "根据上下文，选出画线词汇 'fulfilled' 最准确的意思。",
+        plotDescription: '国内一家八卦杂志把他们的关系写成了「开放式关系」，配了一张拼凑的照片。',
+        line: "A magazine called our relationship polyamory. She laughed, then got angry.",
+        lineCn: '一本杂志把我们的关系写成了多边恋。她先是笑，然后就生气了。',
+        prompt: "根据上下文，选出画线词汇 'Polyamory' 最准确的意思。",
         options: [
-          { key: 'A', en: 'satisfied because something meaningful is done', cn: '充实、因为做成了有意义的事而满足', correct: true, reason: 'fulfilled 是“被填满了”，指价值感上的满足，不只是高兴。' },
-          { key: 'B', en: 'completely exhausted', cn: '彻底累垮了', correct: false, reason: '那是 exhausted，fulfilled 是正向的满足。' },
-          { key: 'C', en: 'confused by the result', cn: '对结果感到困惑', correct: false, reason: '他说“做对了一件事”，显然心里很清楚。' }
+          { key: 'A', en: 'having more than one romantic partner at a time', cn: '多边恋、同时与多人交往', correct: true, reason: '杂志造的就是「两人各自有别人」的谣。' },
+          { key: 'B', en: 'a marriage between two families', cn: '两个家族之间的联姻', correct: false, reason: '这是政治联姻的概念，不是多边恋。' },
+          { key: 'C', en: 'a very public wedding', cn: '一场盛大的婚礼', correct: false, reason: '他们没有办婚礼，重点是「同时有多人」。' }
         ],
-        analysis: 'fulfilled 是“价值被满足”，比 happy 深一层。放弃九千万，换来的是三年里第一次觉得自己没白待。',
-        wrongFeedback: '你选错了，苏晚皱起眉，说这不是做生意的方式，转身先上了车。',
-        afterCorrect: '陈默看着拍卖行的大门：“那块地下面的东西，明天会由警方挖出来。”他轻声说，“赵天豪买的不是地，是案底。”'
+        analysis: 'polyamory 指「多边恋」，即同时维持多段亲密关系。这个词被拿来当脏水，苏晚笑完就火了。',
+        wrongFeedback: '你选错了，杂志的转载量又涨了一轮。气血 -10',
+        afterCorrect: '陈默让法务把稿子全部取证：「一家一家告。一个都不放过。」'
       },
       {
-        plotDescription: '当晚新闻爆出城西地块发现遗骸，赵氏股价跳水，赵天豪在电话里失控地吼。',
-        line: "He is hysterical on the phone. Turn on the news and you will see why.",
-        lineCn: '他在电话里歇斯底里。打开新闻，你就知道为什么了。',
-        prompt: "根据上下文，选出画线词汇 'hysterical' 最准确的意思。",
+        plotDescription: '同一周，苏振海与妻子三十年的婚姻正式结束，离婚协议被拍到了网上。',
+        line: "My father-in-law's divorce is on every front page. Su Wan won't say a word about it.",
+        lineCn: '我岳父的离婚案上了所有头条。苏晚一个字都不肯说。',
+        prompt: "根据上下文，选出画线词汇 'Divorce' 最准确的意思。",
         options: [
-          { key: 'A', en: 'wildly out of control emotionally', cn: '歇斯底里、情绪完全失控', correct: true, reason: 'hysterical 是“情绪崩到失控”，所以才会在电话里吼。' },
-          { key: 'B', en: 'very calm and quiet', cn: '非常平静安静', correct: false, reason: '正好相反，这个词形容的是失控的激烈状态。' },
-          { key: 'C', en: 'extremely funny', cn: '非常好笑', correct: false, reason: '这里是愤怒和崩溃，不是搞笑。' }
+          { key: 'A', en: 'the legal end of a marriage', cn: '离婚、婚姻的法律终结', correct: true, reason: '三十年的婚姻正式结束，就是离婚。' },
+          { key: 'B', en: 'a business partnership ending', cn: '商业合作终止', correct: false, reason: '这里的对象是夫妻，不是公司。' },
+          { key: 'C', en: 'a family reunion', cn: '一次家庭团聚', correct: false, reason: '意思相反，是家庭解体。' }
         ],
-        analysis: 'hysterical 是“情绪失控到极点”，可以指哭、笑、怒。用在赵天豪身上，是他第一次真正慌。',
-        wrongFeedback: '你选错了，老周把电视音量调小，屏幕上的红色字幕还在滚。',
-        afterCorrect: '陈默靠在沙发上：“第一桶金，到账了。”他闭上眼，“只是这钱上面，有三条人命。”'
+        analysis: 'divorce 是「婚姻的解体」。陈默知道苏晚不说，是因为她怕自己一开口就撑不住。',
+        wrongFeedback: '你选错了，电话打了三次都没人接。气血 -10',
+        afterCorrect: '陈默给她发了条消息：不想说就不说。我明天到。'
       }
     ],
-    completeText: '第 19 章结束。苏氏没有参与那块地，却因为提前抽身，被媒体写成“唯一清醒的公司”。苏晚第一次在采访里说：这是我们团队的判断。'
+    completeText: '第 19 章结束。第二天下午，陈默出现在伦敦那栋办公楼门口。苏晚走出来，看见他，站在原地没动。'
   },
   {
     id: 'ml_20',
     index: 20,
-    title: '第 20 章 · 别谢我，记账',
+    title: '第 20 章 · 希思罗的拥抱',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '城西的事让苏氏缓过来了。苏振海破天荒地在家宴上给陈默留了座位，还让人添了一副碗筷。苏晚看着他，等他坐下。',
+    storyText: '陈默在伦敦待了三天。回国的前一天，赵天佑放出一张照片，说陈默与女助理同住一间酒店，标题用了「婚内出轨」。',
     questions: [
       {
-        plotDescription: '苏振海举杯，说这杯酒算是谢他，语气别别扭扭，眼睛却不看他。',
-        line: "Do not thank me. Just remember who stood here when it mattered.",
-        lineCn: '别谢我。只要记住，关键时刻是谁站在这里。',
-        prompt: "根据上下文，选出画线词汇 'mattered' 最准确的意思。",
+        plotDescription: '韩野打来电话，语气难得有点急，说国内已经传开了。',
+        line: "The rumor says I'm having an affair with my assistant. She booked two rooms, and I have the receipts.",
+        lineCn: '传闻说我跟助理有婚外情。她订的是两间房，收据在我手上。',
+        prompt: "根据上下文，选出画线词汇 'Affair' 最准确的意思。",
         options: [
-          { key: 'A', en: 'was important at that moment', cn: '重要、关键', correct: true, reason: 'when it mattered 就是“在要紧的时候”，matter 作动词表示重要。' },
-          { key: 'B', en: 'became a physical object', cn: '变成了实物', correct: false, reason: '那是 matter 作名词“物质”，这里是动词“要紧”。' },
-          { key: 'C', en: 'turned into a problem', cn: '变成了麻烦', correct: false, reason: '语义不对，这句强调的是关键时刻的分量。' }
+          { key: 'A', en: 'a secret romantic relationship outside a marriage', cn: '婚外情、绯闻', correct: true, reason: '标题说的就是这种不忠的关系。' },
+          { key: 'B', en: 'a business event', cn: '一场商务活动', correct: false, reason: 'affair 有「事务」的意思，但这里是绯闻。' },
+          { key: 'C', en: 'a family dinner', cn: '一顿家庭晚餐', correct: false, reason: '传闻说的不是吃饭。' }
         ],
-        analysis: 'matter 作动词是“要紧、有关系”。陈默不要一句谢谢，他要的是这份记忆——以后再算账，谁都别装不记得。',
-        wrongFeedback: '你选错了，苏振海把杯子放下，说“年轻人别得寸进尺”，气氛又冷了下来。',
-        afterCorrect: '陈默端起杯子，只沾了一下唇：“这杯我喝。”他放下杯，“下一杯，等你们把欠的账还清。”'
+        analysis: 'affair 在感情语境里特指「婚外情」。陈默懒得辩解，他直接拿出了两间房的收据。',
+        wrongFeedback: '你选错了，韩野在电话那头骂了一句。气血 -10',
+        afterCorrect: '陈默说：「把收据发给每一家转载的媒体。附一句：造谣的，法庭见。」'
       },
       {
-        plotDescription: '苏明哲坐在角落，阴阳怪气地说有些人翻身了，就忘了自己是从哪张桌子上被赶下去的。',
-        line: "I was furious for three years. Now I am just taking notes.",
-        lineCn: '我狂怒了三年。现在我只记账。',
-        prompt: "根据上下文，选出画线词汇 'furious' 最准确的意思。",
+        plotDescription: '希思罗机场的咖啡厅里，苏晚把手机推到他面前，屏幕上是一篇写得很酸的报道。',
+        line: "You're not good at romance, but you always show up. That's enough for me.",
+        lineCn: '你不擅长浪漫，但你每次都出现。这对我来说就够了。',
+        prompt: "根据上下文，选出画线词汇 'Romance' 最准确的意思。",
         options: [
-          { key: 'A', en: 'violently angry', cn: '暴怒、气得发抖', correct: true, reason: 'furious 是愤怒的顶点，和后面“现在只记账”形成对比。' },
-          { key: 'B', en: 'slightly amused', cn: '觉得有点好笑', correct: false, reason: '这句话在讲三年的怒，不是觉得有趣。' },
-          { key: 'C', en: 'totally indifferent', cn: '完全无所谓', correct: false, reason: '如果无所谓，就不会有“狂怒”和“记账”的对照。' }
+          { key: 'A', en: 'the feeling and gestures of love', cn: '浪漫、恋爱里的情调', correct: true, reason: '她说的是他不会说甜话、不会制造惊喜。' },
+          { key: 'B', en: 'a long novel about love', cn: '一部长篇爱情小说', correct: false, reason: '这里说的是现实里的浪漫，不是小说。' },
+          { key: 'C', en: 'a formal marriage ceremony', cn: '正式的婚礼仪式', correct: false, reason: '他们还没办婚礼。' }
         ],
-        analysis: 'furious 比 angry 更烈，接近“暴怒”。陈默把三年的情绪摊开，再收成一本账——这比当场发作更让人发凉。',
-        wrongFeedback: '你选错了，苏明哲还想接话，被苏振海一个眼神压住，只能低头夹菜。',
-        afterCorrect: '陈默夹了一筷子菜，慢慢吃完：“记账的人不吵。”他放下筷子，“到日子，一次结清。”'
+        analysis: 'romance 是恋爱里的情调与仪式感。苏晚把这句说出口，等于承认自己要的从来不是这些。',
+        wrongFeedback: '你选错了，苏晚把手机收回去，低头喝了一口咖啡。气血 -10',
+        afterCorrect: '陈默沉默了一下：「那我以后每个周五都出现。」'
       },
       {
-        plotDescription: '饭后，苏晚在院子里追上他，说今天这顿饭，算是苏家第一次正式承认他。',
-        line: "I am not hyped about a seat at this table. I sat here for three years without one.",
-        lineCn: '我不稀罕这张桌子上的一把椅子。这三年我没椅子也坐在这儿。',
-        prompt: "根据上下文，选出画线词汇 'hyped' 最准确的意思。",
+        plotDescription: '临走前，苏晚把一叠文件交给他——是这三个月她整理的伦敦公司账目，每一页都有她的批注。',
+        line: "Three years of devotion, and I never once said thank you.",
+        lineCn: '三年的付出，我一次都没说过谢谢。',
+        prompt: "根据上下文，选出画线词汇 'Devotion' 最准确的意思。",
         options: [
-          { key: 'A', en: 'very excited about something', cn: '为某事特别兴奋、上头', correct: true, reason: 'be hyped about 就是“特别期待、兴奋”，这里用否定是在泼冷水。' },
-          { key: 'B', en: 'very disappointed', cn: '非常失望', correct: false, reason: '他是不在乎，不是失望；失望是在意之后的情绪。' },
-          { key: 'C', en: 'confused about the seating', cn: '对座位安排感到困惑', correct: false, reason: '这里是比喻“被承认的地位”，不是真的座位问题。' }
+          { key: 'A', en: 'deep love shown through steady effort', cn: '奉献、长久的付出', correct: true, reason: '三个月十八小时工作制，一页页批注，这就是付出。' },
+          { key: 'B', en: 'a short holiday', cn: '一次短暂的假期', correct: false, reason: '她不是来度假的。' },
+          { key: 'C', en: 'a strong disagreement', cn: '强烈的分歧', correct: false, reason: '这是付出，不是争执。' }
         ],
-        analysis: 'hyped 是“兴奋到上头”，常带一点夸张。陈默用否定句把这顿饭的意义直接抹掉：承认来得太晚，就不值钱了。',
-        wrongFeedback: '你选错了，苏晚站在原地，夜风把她的头发吹乱，她说“你就不能好好说一句话吗”。',
-        afterCorrect: '陈默回头看她：“能。”他停了一下，“这三年，谢谢你没把我赶出去。”说完他先走了，留下她一个人愣在门口。'
+        analysis: 'devotion 是「用行动一直守在旁边」。陈默翻着那些批注，很久没有说话。',
+        wrongFeedback: '你选错了，苏晚把文件收了回去，说算了。气血 -10',
+        afterCorrect: '陈默把文件按在桌上：「这些我都要。人也一样。」'
       },
       {
-        plotDescription: '深夜，老周在车里汇报：赵家开始查三年前的旧案，已经有人摸到龙渊的线索。',
-        line: "Here is what worries me: their apathy about being watched. They are not afraid.",
-        lineCn: '让我担心的是这个：他们对被盯着毫不在意。他们不怕。',
-        prompt: "根据上下文，选出画线词汇 'apathy' 最准确的意思。",
+        plotDescription: '登机口前，韩野的视频电话打过来，背景是国内的办公室，一群人挤在镜头前。',
+        line: "There's still passion between you two. Don't waste it on paperwork.",
+        lineCn: '你们之间还有激情。别把它浪费在文件上。',
+        prompt: "根据上下文，选出画线词汇 'Passion' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a lack of interest or concern', cn: '冷漠、毫不在意', correct: true, reason: 'apathy 是“完全不关心”，正对上“他们不怕”这种反应。' },
-          { key: 'B', en: 'a strong sense of fear', cn: '强烈的恐惧', correct: false, reason: '这里说他们不怕，是缺少恐惧，不是充满恐惧。' },
-          { key: 'C', en: 'an urgent request', cn: '紧急请求', correct: false, reason: 'apathy 是态度冷淡，跟请求无关。' }
+          { key: 'A', en: 'intense feeling and desire', cn: '激情、强烈的感情', correct: true, reason: '他说的是两个人之间还没熄灭的火。' },
+          { key: 'B', en: 'a slow and boring job', cn: '一份缓慢无聊的工作', correct: false, reason: '意思完全相反。' },
+          { key: 'C', en: 'a quiet agreement', cn: '一个平静的共识', correct: false, reason: 'passion 是强烈的情绪，不是平静。' }
         ],
-        analysis: 'apathy 是“冷漠、无动于衷”，是最危险的一种反应：对手连被监视都不在乎，说明他手里还有牌。',
-        wrongFeedback: '你选错了，老周等着他下指令，车里安静了很久，只有雨刷的声音。',
-        afterCorrect: '陈默敲了敲车窗：“那就让他们查。”他声音很轻，“查得越深，越会自己走到我面前来。”'
+        analysis: 'passion 是「烧得很旺的感情」。韩野说完就把电话挂了，留他们两个人在登机口。',
+        wrongFeedback: '你选错了，视频那头一片起哄，你却只看着手机。气血 -10',
+        afterCorrect: '陈默把手机收起来，回头对苏晚说：「下个月，我再来。」'
       }
     ],
-    completeText: '第 20 章结束。第一幕收尾。苏家的饭桌上终于有了陈默的位置，可他知道，真正的对手还没露面。老周发来最后一条消息：赵家背后的人，姓霍。'
+    completeText: '第 20 章结束。飞机起飞时，苏晚还站在玻璃后面。陈默把那张两间房的收据夹进了护照里，一直到落地都没扔。'
   },
   {
     id: 'ml_21',
     index: 21,
-    title: '第 21 章 · 有人在盯着苏家',
+    title: '第 21 章 · 老宅里的最后一场谈话',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '城南的咖啡馆里，苏晚的大学同学周宁回国，约她叙旧。陈默陪着去，坐在角落。周宁一进门就笑着拥抱苏晚，眼神却在陈默身上停了两秒。',
+    storyText: '苏晚留在伦敦收尾，陈默先回国。苏振海把他叫回老宅，开门见山：把苏氏卖给赵家，换一条活路，也换苏家上下平安。',
     questions: [
       {
-        plotDescription: '周宁坐下就说，自己当年在学校就喜欢苏晚，只是没敢说，现在回来还来得及。',
-        line: "I had a huge crush on you back then. Everyone knew it but you.",
-        lineCn: '我那时候特别喜欢你。除了你，所有人都看出来了。',
-        prompt: "根据上下文，选出画线词汇 'crush' 最准确的意思。",
+        plotDescription: '陈默把茶推回去，没有坐，站在那张红木桌前。',
+        line: "I came here to confront you, not to negotiate. You sold my father out three years ago.",
+        lineCn: '我来是对质，不是来谈判。三年前是你把我父亲卖了。',
+        prompt: "根据上下文，选出画线词汇 'Confront' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a strong but quiet romantic liking', cn: '暗恋、悄悄喜欢', correct: true, reason: 'have a crush on 就是“暗恋某人”，正对上他当年没敢说。' },
-          { key: 'B', en: 'a serious injury', cn: '严重的伤', correct: false, reason: 'crush 作名词确实有“压伤”，但这里接的是人，指暗恋。' },
-          { key: 'C', en: 'a business partner', cn: '生意伙伴', correct: false, reason: '这里的 crush 明显是在讲感情，不是生意上的伙伴。' }
+          { key: 'A', en: 'to face someone directly about a problem', cn: '对质、当面把问题摊开', correct: true, reason: '他专程上门，就是要把三年前的事当面说清。' },
+          { key: 'B', en: 'to avoid someone politely', cn: '礼貌地避开某人', correct: false, reason: '他站在桌前，一步都没退。' },
+          { key: 'C', en: 'to negotiate a better price', cn: '谈一个更好的价钱', correct: false, reason: '他开口就说了「不是来谈判」。' }
         ],
-        analysis: 'have a crush on 是“暗恋某人”，重点在“没说出口”。周宁把这句话摆在陈默面前，是想试探这段婚姻到底有多牢。',
-        wrongFeedback: '你选错了，苏晚端着杯子的手停了一下，周宁笑得更自然，把话题往从前带。',
-        afterCorrect: '苏晚放下杯子：“我结婚了。”她说得很平静。周宁看了一眼陈默，笑容终于淡了半分：“我知道，所以我只是来道个喜。”'
+        analysis: 'confront 是「当面把话摊开」。陈默没有带律师，也没有带文件，他带的是三年的账。',
+        wrongFeedback: '你选错了，苏振海把茶杯放下，声音也沉了下去。气血 -10',
+        afterCorrect: '苏振海沉默了很久，只说了一句：「你父亲当年，也不肯签。」'
       },
       {
-        plotDescription: '周宁半开玩笑地说，毕业后给苏晚发过很多消息，一条都没回，像是被彻底删掉了。',
-        line: "You ghosted me after graduation. Three years, not one reply.",
-        lineCn: '毕业后你就对我玩消失。三年，一条回复都没有。',
-        prompt: "根据上下文，选出画线词汇 'ghosted' 最准确的意思。",
+        plotDescription: '走出老宅时，苏明哲追出来，说要跟他「重新谈条件」。',
+        line: "From tonight, I cut ties with this family. Every debt is settled.",
+        lineCn: '从今晚起，我跟这个家断绝关系。所有账，一笔勾销。',
+        prompt: "根据上下文，选出画线词汇 'Cut ties' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a dead spirit', cn: '鬼魂', correct: false, reason: 'ghost 作名词才是“鬼”，这里加了 ed 是动词“消失”。' },
-          { key: 'B', en: 'disappeared without replying', cn: '玩消失、突然不回消息', correct: true, reason: 'ghost 作动词就是“人间蒸发”，正对上三年没回一条。' },
-          { key: 'C', en: 'sent a gift', cn: '送了礼物', correct: false, reason: '送礼物是 send a gift，与“不回消息”正好相反。' }
+          { key: 'A', en: 'to end a relationship completely', cn: '断绝关系、彻底切开联系', correct: true, reason: '他说的是从今晚起不再有任何往来。' },
+          { key: 'B', en: 'to untie a rope', cn: '把绳子解开', correct: false, reason: '这里是比喻，指人和人的关系。' },
+          { key: 'C', en: 'to reduce a price', cn: '降低价格', correct: false, reason: '跟钱无关，他说的是关系。' }
         ],
-        analysis: 'ghost 从“鬼魂”引申成“像鬼一样消失”，专指不回消息、突然断联。周宁说得轻，其实是在提醒她：你欠我一个解释。',
-        wrongFeedback: '你选错了，苏晚只是笑了笑，说那时候忙。周宁的眼神却越过她，落在陈默脸上，带着点挑衅。',
-        afterCorrect: '陈默替她答了：“她那三年在救一家公司。”他放下杯子，“没空回消息的人，通常都在替别人扛事。”'
+        analysis: 'cut ties 是「一刀两断」。陈默说完没有回头，因为他知道一回头就会心软。',
+        wrongFeedback: '你选错了，苏明哲还在后面喊，声音越来越远。气血 -10',
+        afterCorrect: '车开出巷子，他才发现手心全是汗。老周没有问，只把空调调低了一点。'
       },
       {
-        plotDescription: '周宁话锋一转，提起赵家最近的动作，说得太熟，连内部报价都报得出来。',
-        line: "The way you keep bringing up the Zhao family is a red flag.",
-        lineCn: '你一直提赵家，这就是个危险信号。',
-        prompt: "根据上下文，选出画线词汇 'red flag' 最准确的意思。",
+        plotDescription: '同一晚，韩野打来电话，声音发紧，说有一份报价单发错了邮箱。',
+        line: "I messed up. I sent the file to the wrong address.",
+        lineCn: '我搞砸了。我把文件发错了地址。',
+        prompt: "根据上下文，选出画线词汇 'Mess up' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a piece of red cloth', cn: '一块红布', correct: false, reason: '这是字面拼凑，红布在这里没有任何意义。' },
-          { key: 'B', en: 'a warning sign on the road', cn: '路边的红色警示牌', correct: false, reason: '虽然都带警示意味，但这里说的是人的可疑表现。' },
-          { key: 'C', en: 'a warning sign of danger', cn: '危险信号、值得警惕的迹象', correct: true, reason: 'red flag 在口语里就是“警讯”，指某人的言行很可疑。' }
+          { key: 'A', en: 'to make a mistake that causes trouble', cn: '搞砸、弄出错', correct: true, reason: '发错地址导致报价外泄，正是闯了祸。' },
+          { key: 'B', en: 'to clean a room', cn: '把房间弄乱再打扫', correct: false, reason: 'mess 有乱的意思，但这里是「办错事」。' },
+          { key: 'C', en: 'to finish early', cn: '提前完成', correct: false, reason: '他的语气是认错，不是报喜。' }
         ],
-        analysis: 'red flag 是“危险信号”，用来提醒关系或合作里有问题。周宁一句“内部报价”说漏了嘴，等于自己举了旗。',
-        wrongFeedback: '你选错了，周宁笑着岔开话题，说自己只是听朋友讲。苏晚的眉头却慢慢皱了起来。',
-        afterCorrect: '陈默把手机翻过来，屏幕上是一段录音波形：“你刚才说的报价，赵氏内部只有七个人知道。”他抬眼，“你是第几个？”'
+        analysis: 'mess up 是「把事情弄糟」。陈默在车里闭了两秒眼，问的第一句是：发给了谁。',
+        wrongFeedback: '你选错了，电话那头韩野的声音更低了下去。气血 -10',
+        afterCorrect: '陈默说：「别慌。把发送记录截图给我，一条都别删。」'
       },
       {
-        plotDescription: '周宁脸色变了，站起来说还有事，临走前丢下一句，让他们别把好心当恶意。',
-        line: "People say you hooked up with Zhao's people behind Su's back. Is that true?",
-        lineCn: '外面都说你背着苏家跟赵家的人勾搭上了。是真的吗？',
-        prompt: "根据上下文，选出画线词汇 'hooked up' 最准确的意思。",
+        plotDescription: '第二天上午，竞标结果出来，天枢的底价被对方压着打，输得干干净净。',
+        line: "We screwed up once, and it cost us the bid. It won't happen twice.",
+        lineCn: '我们弄糟了一次，代价是这个标。不会有第二次。',
+        prompt: "根据上下文，选出画线词汇 'Screw up' 最准确的意思。",
         options: [
-          { key: 'A', en: 'secretly connected or teamed up with', cn: '暗中搭上线、勾搭在一起', correct: true, reason: 'hook up 在这里指“私下接上关系”，正对上“背着苏家”。' },
-          { key: 'B', en: 'hung something on a wall', cn: '把东西挂在墙上', correct: false, reason: '那是 hook 的字面动作，跟人搭关系完全不是一回事。' },
-          { key: 'C', en: 'met by pure accident', cn: '纯属偶然碰面', correct: false, reason: '这里说的是暗中合作，不是偶遇，语境里有“背着”。' }
+          { key: 'A', en: 'to do something badly and ruin it', cn: '弄糟、把事办砸', correct: true, reason: '底价外泄，标直接丢了，这就是办砸。' },
+          { key: 'B', en: 'to tighten a screw', cn: '把螺丝拧紧', correct: false, reason: '这里不是动手，是比喻把事情搞坏。' },
+          { key: 'C', en: 'to win by a small margin', cn: '以微弱优势赢下', correct: false, reason: '他们输了，不是赢。' }
         ],
-        analysis: 'hook up 可以指“搭上线”，也可以指暧昧关系，具体看语境。这里加 behind somebody\'s back，就是“私下勾连”。',
-        wrongFeedback: '你选错了，苏晚的手在桌下攥紧，周宁把这句话说完，拎起外套就走，门铃响得很刺耳。',
-        afterCorrect: '陈默没有追，只把录音保存好：“他不是来叙旧的。”他看向苏晚，“他是来确认，赵家该从哪儿下手。”'
+        analysis: 'screw up 和 mess up 意思接近，但更口语、更带自嘲。陈默把这句话说给全组听，没有点任何人的名字。',
+        wrongFeedback: '你选错了，会议室里没人敢出声。气血 -10',
+        afterCorrect: '他把白板翻过来，重新写下四个字：内鬼，报价。'
       }
     ],
-    completeText: '第 21 章结束。回去的路上苏晚一直没说话，快到公司时才开口：“周宁以前不是这样的人。”陈默看着前方：“人会变，尤其是欠了钱的人。”'
+    completeText: '第 21 章结束。那天下午，陈默让技术部调出了报价单的每一次转发记录。转发链的尽头，是一个他熟悉得不能再熟悉的账号。'
   },
   {
     id: 'ml_22',
     index: 22,
-    title: '第 22 章 · 越界的关心',
+    title: '第 22 章 · 会议室里的那段录音',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '周宁的录音在公司传开，苏家内部先乱了。苏明哲在家族群里发了一千字长文，把自己写成受害者。第二天一早，他又带着一个助理堵在陈默办公室门口。',
+    storyText: '三天后，苏氏召开家族会议。长桌两侧坐了十九个人，陈默把一支录音笔放在桌子中央。苏晚从伦敦赶回来，站在门口，没有坐下。',
     questions: [
       {
-        plotDescription: '苏明哲的长文写得声泪俱下，说有人要害他，家族群里一片安慰，苏晚的眉头越皱越紧。',
-        line: "There is too much drama in this family. Bring me facts, not tears.",
-        lineCn: '这个家的戏太多了。给我事实，别给我眼泪。',
-        prompt: "根据上下文，选出画线词汇 'drama' 最准确的意思。",
+        plotDescription: '会议开始前，韩野凑到他耳边，眼睛发亮。',
+        line: "Come on, spill the tea. What did the old man say last night?",
+        lineCn: '快说快说，爆点料。老爷子昨晚到底说了什么？',
+        prompt: "根据上下文，选出画线词汇 'Spill the tea' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a stage play', cn: '戏剧、舞台剧', correct: false, reason: '这里没有人演戏，说的是家族群里夸张的闹剧。' },
-          { key: 'B', en: 'exaggerated emotional scenes', cn: '抓马、夸张的情绪戏', correct: true, reason: 'drama 在口语里就是“戏多、闹剧”，正对上那篇长文。' },
-          { key: 'C', en: 'a serious accident', cn: '严重的事故', correct: false, reason: 'drama 跟事故无关，这里说的是一群人演苦情戏。' }
+          { key: 'A', en: 'to share the latest gossip or secrets', cn: '吃瓜、爆料、把内幕说出来', correct: true, reason: '韩野要听的就是昨晚谈话的内幕。' },
+          { key: 'B', en: 'to pour a cup of tea', cn: '倒一杯茶', correct: false, reason: '这里不是真的倒茶，是「说内幕」。' },
+          { key: 'C', en: 'to keep a secret', cn: '保守秘密', correct: false, reason: '正好相反，是让对方说出来。' }
         ],
-        analysis: 'drama 在口语里指“戏精式的闹剧”，重点不是悲伤，而是表演。苏晚一句话把群里的哭声定义成了噪音。',
-        wrongFeedback: '你选错了，苏明哲在群里又补了一段，说“有人想把我们赶尽杀绝”，下面一排点赞。',
-        afterCorrect: '苏晚在群里回了一条：“从今天起，家族群只发工作。”她把手机扣在桌上，“谁再演，就别怪我清人。”'
+        analysis: 'spill the tea 是网络口语「爆料、吃瓜」。会议室里的气氛紧得像弦，只有韩野还有心思问这个。',
+        wrongFeedback: '你选错了，韩野撇了撇嘴，退到墙边。气血 -10',
+        afterCorrect: '陈默没回答，只把录音笔按下了播放键。'
       },
       {
-        plotDescription: '中午，苏明哲派来的助理一直跟着陈默，从电梯跟到车库，连他去买水都站在三米外。',
-        line: "Your assistant is too clingy. Tell him to stop following me.",
-        lineCn: '你的助理太黏人了。让他别再跟着我。',
-        prompt: "根据上下文，选出画线词汇 'clingy' 最准确的意思。",
+        plotDescription: '录音放到第三分钟，苏振海的手开始抖。陈默把录音停住，看着他。',
+        line: "Swear to god you never saw that document. Say it in front of everyone.",
+        lineCn: '你对天发誓你没见过那份文件。当着所有人的面说。',
+        prompt: "根据上下文，选出画线词汇 'Swear to god' 最准确的意思。",
         options: [
-          { key: 'A', en: 'holding on too tightly to someone', cn: '黏人、离了就缠着不放', correct: true, reason: 'clingy 形容人“贴得太紧”，正对上跟到车库的行为。' },
-          { key: 'B', en: 'very clean and tidy', cn: '干净整洁', correct: false, reason: '拼写像 clean，但 clingy 说的是缠人，不是干净。' },
-          { key: 'C', en: 'easy to talk to', cn: '很好说话', correct: false, reason: '这里是在抱怨被人盯梢，不是在夸性格好。' }
+          { key: 'A', en: 'to promise very seriously', cn: '对天发誓、把话说死', correct: true, reason: '他要的是最重的一种保证，让对方没有退路。' },
+          { key: 'B', en: 'to curse at God', cn: '对着神骂人', correct: false, reason: '这里不是咒骂，是起誓。' },
+          { key: 'C', en: 'to mention something casually', cn: '随口提一句', correct: false, reason: '这句话的重量恰恰在于不能随口。' }
         ],
-        analysis: 'clingy 是“过分粘人”，本来是形容恋人的词。陈默把它用在盯梢的助理身上，带一点冷幽默。',
-        wrongFeedback: '你选错了，那助理笑了一下，说“苏总让我照顾您”，脚却一步没退。',
-        afterCorrect: '陈默停下脚步：“照顾我？”他把车钥匙在手里转了半圈，“那你替我开车门，我正好缺个司机。”'
+        analysis: 'swear to god 是「拿最重的东西担保」。陈默把这句话递过去，等于把最后一条退路堵死了。',
+        wrongFeedback: '你选错了，会议室里有人低下了头。气血 -10',
+        afterCorrect: '苏振海张了张嘴，一个字都没说出来。'
       },
       {
-        plotDescription: '苏明哲听说后赶来，说都是一家人，别分那么清，还说自己的人只是“关心”。',
-        line: "I need clear boundaries. Your family does not walk into my office.",
-        lineCn: '我需要清楚的边界。你们家的人不能随便进我办公室。',
-        prompt: "根据上下文，选出画线词汇 'boundaries' 最准确的意思。",
+        plotDescription: '苏明哲忽然站起来，把椅子往后一推，脸上挂着笑。',
+        line: "Whatever. Nobody in this city will believe a loser like you.",
+        lineCn: '随便吧。这城里没人会信你这种废物。',
+        prompt: "根据上下文，选出画线词汇 'Whatever' 最准确的意思。",
         options: [
-          { key: 'A', en: 'personal limits that must be respected', cn: '边界感、不能越的界限', correct: true, reason: 'boundaries 指人与人之间的界线，正对上“不能随便进”。' },
-          { key: 'B', en: 'walls of a building', cn: '建筑的围墙', correct: false, reason: '这里是比喻人际界线，不是真的砖墙。' },
-          { key: 'C', en: 'rules for parking', cn: '停车规定', correct: false, reason: '语境是办公室被闯，不是停车位的问题。' }
+          { key: 'A', en: 'used to show you do not care', cn: '随便吧、无所谓（表示不在乎）', correct: true, reason: '他知道自己站不住脚，只能用「随便」撑场面。' },
+          { key: 'B', en: 'anything at all', cn: '任何东西', correct: false, reason: 'whatever 有「无论什么」的意思，但这里是不在乎。' },
+          { key: 'C', en: 'definitely yes', cn: '当然是', correct: false, reason: '他的语气是敷衍，不是肯定。' }
         ],
-        analysis: 'set boundaries 是“划清界限”，是这几年很常见的心理说法。陈默把它用在生意上：关心可以，越界不行。',
-        wrongFeedback: '你选错了，苏明哲立刻说“你这是什么意思”，声音拔高，走廊里的人都看了过来。',
-        afterCorrect: '陈默把门推开：“意思很简单。”他指了指门牌，“敲门前先问，进门后别翻。”'
+        analysis: 'whatever 在这里是「我懒得跟你争」的敷衍。越是心虚的人，越爱用这个词。',
+        wrongFeedback: '你选错了，苏明哲笑得更响，会议室变得更乱。气血 -10',
+        afterCorrect: '陈默把一叠打印件推过去：「不信我，那就信你自己的签字。」'
       },
       {
-        plotDescription: '下午的供应商会议，苏明哲答应了要来，结果人没出现，电话也不接。',
-        line: "He bailed on the meeting again. Do not cover for him this time.",
-        lineCn: '他又放会议鸽子了。这次别再替他圆场。',
-        prompt: "根据上下文，选出画线词汇 'bailed' 最准确的意思。",
+        plotDescription: '门口，苏晚终于开口。她走进来，把护照放在桌上。',
+        line: "Seriously? You're still lying with the whole room watching?",
+        lineCn: '你认真的吗？全屋子人看着，你还在撒谎？',
+        prompt: "根据上下文，选出画线词汇 'Seriously?' 最准确的意思。",
         options: [
-          { key: 'A', en: 'jumped out of a plane', cn: '从飞机上跳下来', correct: false, reason: '那是 bail out 的字面义，这里说的是临时不来。' },
-          { key: 'B', en: 'failed to show up as promised', cn: '放鸽子、临时不来了', correct: true, reason: 'bail on somebody 就是“答应好的事临时跑掉”。' },
-          { key: 'C', en: 'paid the bill', cn: '把账结了', correct: false, reason: '结账是 pay，跟“人没来”正好相反。' }
+          { key: 'A', en: 'used to show disbelief', cn: '你认真的吗？真的假的？（表示难以置信）', correct: true, reason: '证据摆在桌上，对方还在否认，她实在难以相信。' },
+          { key: 'B', en: 'in a serious manner', cn: '以严肃的方式', correct: false, reason: 'serious 是严肃，但这里是一个反问，表示不敢相信。' },
+          { key: 'C', en: 'please continue', cn: '请继续', correct: false, reason: '她不是在鼓励对方，是在质问。' }
         ],
-        analysis: 'bail on 是“爽约、撂挑子”。陈默特意补一句“别再替他圆场”，是把责任按回该在的人身上。',
-        wrongFeedback: '你选错了，苏晚替他说了句“可能堵车”，供应商代表对视一眼，合同又收了回去。',
-        afterCorrect: '陈默把会议记录推过去：“他缺席，记录照写。”他签字，“从今天起，苏氏开会只认到场的人。”'
+        analysis: 'Seriously? 单独成句时是「你认真的吗」，带着难以置信。苏晚这句一出口，会议室彻底静了。',
+        wrongFeedback: '你选错了，苏晚没有再看他，转身走到陈默身边。气血 -10',
+        afterCorrect: '她把护照放在录音笔旁边：「我从伦敦飞回来，不是为了听你说随便。」'
       }
     ],
-    completeText: '第 22 章结束。那天之后，家族群里安静了。苏明哲在办公室摔了一个杯子，碎片划破手，没人过去看。'
+    completeText: '第 22 章结束。会议记录签完，苏振海当场辞去董事长职务。散场时他经过陈默身边，停了半秒，什么都没说。'
   },
   {
     id: 'ml_23',
     index: 23,
-    title: '第 23 章 · 兄弟们的老规矩',
+    title: '第 23 章 · 办公室里那场火',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '老周把雷豹带来了。雷豹个子高，进门时低了一下头，站定后喊了一声“指挥官”，声音哑得像砂纸。他说自己找了三年的队伍，只剩下七个人还活着。',
+    storyText: '会议结束后，韩野在办公室里承认，那份报价是他发给苏明哲的——对方只说「帮你老板一个忙」。陈默第一次对他发了火。',
     questions: [
       {
-        plotDescription: '雷豹说起三年前撤退那一夜，有人本来能走，却回头去背伤员，最后没出来。',
-        line: "Bro code says we do not leave a brother behind. That is the whole rule.",
-        lineCn: '兄弟法则就一句话：不把兄弟丢在后面。',
-        prompt: "根据上下文，选出画线词汇 'Bro code' 最准确的意思。",
+        plotDescription: '韩野站在桌前，没有找任何借口，先把话说了。',
+        line: "My bad. I should have checked the address twice before I hit send.",
+        lineCn: '我的锅。按下发送之前我该核对两遍地址。',
+        prompt: "根据上下文，选出画线词汇 'My bad' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a law about brothers in court', cn: '关于兄弟的法律条文', correct: false, reason: '这不是法律，是男人之间默认的规矩。' },
-          { key: 'B', en: 'a password for a club', cn: '俱乐部的暗号', correct: false, reason: '这里说的是做人底线，不是什么暗号。' },
-          { key: 'C', en: 'an unwritten rule among close male friends', cn: '兄弟之间不成文的规矩', correct: true, reason: 'bro code 就是哥们儿之间的默契和底线，正对上那句“不丢下兄弟”。' }
+          { key: 'A', en: 'my mistake, I am sorry', cn: '我的锅、是我的错', correct: true, reason: '他直接认下这件事，没有推给别人。' },
+          { key: 'B', en: 'my turn', cn: '轮到我了', correct: false, reason: '这里不是轮次，是认错。' },
+          { key: 'C', en: 'my luck', cn: '我的运气', correct: false, reason: '他没有把责任推给运气。' }
         ],
-        analysis: 'bro code 是流行说法，指男性朋友之间那些不用明说的规矩。雷豹把它当军令念出来，比任何誓言都重。',
-        wrongFeedback: '你选错了，雷豹把杯子攥得吱响，说“那天我没回头”，声音低得几乎听不见。',
-        afterCorrect: '陈默把手放在他肩上：“那天是我下的令。”他停了一下，“要背，也是我背。”'
+        analysis: 'my bad 是很口语的认错方式，不隆重，但干脆。韩野选这句话，是因为他知道解释没有用。',
+        wrongFeedback: '你选错了，韩野把头低下去，手一直没离开桌沿。气血 -10',
+        afterCorrect: '陈默看着他，火气反而降了一半：「坐下。把事情从头说一遍。」'
       },
       {
-        plotDescription: '院子外，苏振海的弟弟一家拖着行李上门，说老宅要修，先在苏晚这里住一个月。',
-        line: "My in-laws just moved half their family into this house.",
-        lineCn: '我的岳家刚把他们家一半人搬进了这栋房子。',
-        prompt: "根据上下文，选出画线词汇 'in-laws' 最准确的意思。",
+        plotDescription: '陈默在窗边站了很久，转过身时，声音很平。',
+        line: "I'm not going to blame you. I want to know who gave you the address.",
+        lineCn: '我不会甩锅给你。我要知道是谁给你的地址。',
+        prompt: "根据上下文，选出画线词汇 'Blame' 最准确的意思。",
         options: [
-          { key: 'A', en: 'the family of your husband or wife', cn: '公婆、岳父母一家', correct: true, reason: 'in-laws 指配偶的父母和亲属，正对上“岳家搬进来”。' },
-          { key: 'B', en: 'people who break the law', cn: '违法的人', correct: false, reason: '别被 law 骗了，in-laws 是姻亲，不是罪犯。' },
-          { key: 'C', en: 'neighbors next door', cn: '隔壁邻居', correct: false, reason: '这里说的是苏晚这边的亲戚，不是邻居。' }
+          { key: 'A', en: 'to say someone is responsible for a fault', cn: '甩锅、把错归到某人头上', correct: true, reason: '他明确说不把责任推给韩野，要追的是源头。' },
+          { key: 'B', en: 'to praise someone', cn: '表扬某人', correct: false, reason: '意思相反。' },
+          { key: 'C', en: 'to forget about it', cn: '把这件事忘掉', correct: false, reason: '他没有忘，只是不打算怪错人。' }
         ],
-        analysis: 'in-laws 是“姻亲”，常见搭配是 father-in-law、mother-in-law。陈默用这个词，等于把自己放在“女婿”的位置上，也点明了麻烦的来源。',
-        wrongFeedback: '你选错了，苏明哲在门口笑，说“一家人住一起热闹”，行李箱已经推进了客厅。',
-        afterCorrect: '陈默把行李箱拦在玄关：“住可以。”他抬手指了指楼上，“三层不许上，书房不许进。”'
+        analysis: 'blame 是「把责任算在谁头上」。一个团队真正开始散，往往是从找人背锅那一刻起。',
+        wrongFeedback: '你选错了，韩野抬起头，眼睛有点红。气血 -10',
+        afterCorrect: '韩野说出了那个名字。陈默听完，只回了一句：「果然。」'
       },
       {
-        plotDescription: '苏明哲凑过来打圆场，说他已经给苏晚安排好了，周末和赵天豪见一面，算赔个礼。',
-        line: "You set up a blind date with Zhao Tianhao and called it an apology?",
-        lineCn: '你安排了一场和赵天豪的相亲，还管这叫赔礼？',
-        prompt: "根据上下文，选出画线词汇 'blind date' 最准确的意思。",
+        plotDescription: '回忆那通电话时，韩野说他们吵了一个小时，谁也不让谁。',
+        line: "We argued for an hour, and neither of us was completely wrong.",
+        lineCn: '我们吵了一个小时，谁都不算完全错。',
+        prompt: "根据上下文，选出画线词汇 'Argue' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a meeting with no witnesses', cn: '没有证人的会面', correct: false, reason: 'blind 不是“看不见”，这里指彼此不熟识的相亲。' },
-          { key: 'B', en: 'a romantic meeting set up by others', cn: '相亲、被安排的见面', correct: true, reason: 'blind date 就是别人牵线、两人第一次见面的约会。' },
-          { key: 'C', en: 'a dinner for business partners', cn: '商务伙伴的饭局', correct: false, reason: '这里明明是和赵天豪单独见面，性质是相亲。' }
+          { key: 'A', en: 'to disagree angrily with someone', cn: '争吵、争辩', correct: true, reason: '两个人各说各的，谁也不让，正是 argue。' },
+          { key: 'B', en: 'to agree quietly', cn: '安静地同意', correct: false, reason: '他们吵了一小时，不是同意。' },
+          { key: 'C', en: 'to write a report', cn: '写一份报告', correct: false, reason: '这里说的是口头争执。' }
         ],
-        analysis: 'blind date 指由别人安排、双方不熟的约会。苏明哲把联姻包装成道歉，陈默一句话把遮羞布扯下来。',
-        wrongFeedback: '你选错了，苏明哲笑着说“年轻人认识一下嘛”，苏晚站在楼梯上，脸色很难看。',
-        afterCorrect: '陈默把请柬扔回桌上：“要道歉，让他来公司。”他抬头，“我太太的周末，不归你们安排。”'
+        analysis: 'argue 是「各执一词地争」。韩野这句不是辩解，是在承认自己当时也有问题。',
+        wrongFeedback: '你选错了，韩野把话咽了回去。气血 -10',
+        afterCorrect: '陈默说：「吵完还记得他说了什么吗？」韩野点头：「记得，一字不差。」'
       },
       {
-        plotDescription: '夜里，苏晚问他为什么总能提前看穿苏明哲的算盘，语气里有点服气，也有点不安。',
-        line: "You have a blind spot when it comes to your uncle. He knows it.",
-        lineCn: '你对你的叔叔有盲区。而他自己很清楚这一点。',
-        prompt: "根据上下文，选出画线词汇 'blind spot' 最准确的意思。",
+        plotDescription: '傍晚，陈默一个人在会议室里坐下，给苏晚发了条消息，说自己今天发了火。',
+        line: "I yelled at him. Then I apologized, because he was the only one who told me the truth.",
+        lineCn: '我对他大喊了一通。后来我道了歉，因为他是唯一跟我说实话的人。',
+        prompt: "根据上下文，选出画线词汇 'Yell' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a dark spot in the room', cn: '房间里一块暗的地方', correct: false, reason: '这是字面理解，这里说的是看人的盲区。' },
-          { key: 'B', en: 'a physical injury in the eye', cn: '眼睛上的伤', correct: false, reason: 'blind spot 在医学上指视野盲点，这里是比喻。' },
-          { key: 'C', en: 'something you fail to notice', cn: '盲区、自己看不见的地方', correct: true, reason: 'blind spot 就是“你以为自己看得很清，其实漏掉的地方”。' }
+          { key: 'A', en: 'to shout loudly', cn: '大喊、吼叫', correct: true, reason: '他说自己当时没控制住音量。' },
+          { key: 'B', en: 'to whisper', cn: '低声耳语', correct: false, reason: '意思相反。' },
+          { key: 'C', en: 'to laugh', cn: '大笑', correct: false, reason: '场合和情绪都不对。' }
         ],
-        analysis: 'blind spot 本指视野里的盲点，引申为“认知上看不见的角落”。陈默点出她对叔叔的心软，也点出了这份心软一直被利用。',
-        wrongFeedback: '你选错了，苏晚抿了抿嘴，说他毕竟是我叔叔，声音低下去，像在替谁辩解。',
-        afterCorrect: '陈默没有反驳：“所以我替你看。”他把灯关掉，“等你哪天自己能看见，我就不用站在这儿了。”'
+        analysis: 'yell 是「大声吼」。陈默会道歉，是因为他终于学会：发火可以，但要认。',
+        wrongFeedback: '你选错了，苏晚的回复只有三个字：辛苦了。气血 -10',
+        afterCorrect: '他盯着那三个字看了很久，然后把手机收起来，重新打开了那份报价单。'
       }
     ],
-    completeText: '第 23 章结束。那晚院子里停了三辆车，雷豹在车里守到天亮。苏晚起夜时看见楼下的身影，第一次觉得这栋房子其实是有人守着的。'
+    completeText: '第 23 章结束。那一夜，陈默和韩野在办公室里把三年前的每一笔交易重新对了一遍。天亮时，白板上多了一条完整的资金链。'
   },
   {
     id: 'ml_24',
     index: 24,
-    title: '第 24 章 · 那场没办成的订婚宴',
+    title: '第 24 章 · 门口的保温桶',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '苏振海真把订婚宴办了，请了半个城的人。苏晚被关在化妆间里，手机被收走。林薇坐在她对面补口红，说这都是为她好。宴会厅的水晶灯下，赵天豪已经举起了第一杯酒。',
+    storyText: '第二天，苏明哲在家族群里连发十几条消息，否认一切，说录音是伪造的。中午，苏母提着保温桶站在公司门口，说要替儿子道歉。',
     questions: [
       {
-        plotDescription: '化妆间里，林薇一边替苏晚整理头纱，一边轻声说陈默配不上她，早点认清现实。',
-        line: "Lin Wei is not helping you. She is a toxic friend who enjoys watching you fall.",
-        lineCn: '林薇不是在帮你。她是个有毒的朋友，就爱看你摔下去。',
-        prompt: "根据上下文，选出画线词汇 'toxic friend' 最准确的意思。",
+        plotDescription: '韩野把手机递过来，群里的话一条比一条难听。',
+        line: "He denied everything, even the signature on the paper.",
+        lineCn: '他什么都否认，连纸上那个签名都否认。',
+        prompt: "根据上下文，选出画线词汇 'Deny' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a friend who quietly harms you', cn: '有毒的朋友、暗地里消耗你的人', correct: true, reason: 'toxic friend 指表面亲近、实际在拖你下水的人，正对上她的话。' },
-          { key: 'B', en: 'a friend who is seriously ill', cn: '病得很重的朋友', correct: false, reason: 'toxic 在这里不是生病，是形容这段关系有害。' },
-          { key: 'C', en: 'a friend who pays for everything', cn: '什么都替你买单的朋友', correct: false, reason: '这里说的是精神上的消耗，不是花钱的事。' }
+          { key: 'A', en: 'to say something is not true', cn: '否认、说某件事不是真的', correct: true, reason: '他连自己签的字都不认，正是 deny。' },
+          { key: 'B', en: 'to admit everything', cn: '全部承认', correct: false, reason: '意思相反。' },
+          { key: 'C', en: 'to explain in detail', cn: '详细解释', correct: false, reason: '他不是解释，是直接不认。' }
         ],
-        analysis: 'toxic friend 是这几年很常见的说法，指那种让你越来越糟的“朋友”。陈默一句话点破：她不是来帮忙的，是来看戏的。',
-        wrongFeedback: '你选错了，林薇替苏晚把门推开一半，笑着说“去吧，别让大家等”，苏晚的手在抖。',
-        afterCorrect: '陈默走进化妆间，把苏晚的手机放回她手里：“你的朋友在门外收了赵家的红包。”他看向林薇，“要我现在说数字吗？”'
+        analysis: 'deny 是「一口咬定没这回事」。可签字是有笔迹鉴定的，否认只会让后面更难收场。',
+        wrongFeedback: '你选错了，群里又跳出一条新消息。气血 -10',
+        afterCorrect: '陈默看完了，把手机还回去：「不用回。让鉴定报告说话。」'
       },
       {
-        plotDescription: '赵天豪端着酒走过来，说今晚是他和苏晚的第一次正式约会，还伸手要牵她。',
-        line: "This is not a date. This is a business arrangement her family forced on her.",
-        lineCn: '这不是约会。这是她家里强加给她的商业安排。',
-        prompt: "根据上下文，选出画线词汇 'date' 最准确的意思。",
+        plotDescription: '楼下，苏母把保温桶放在前台，双手交叠，站得很直。',
+        line: "I came to apologize for my son. He won't come himself.",
+        lineCn: '我是来替我儿子道歉的。他自己不肯来。',
+        prompt: "根据上下文，选出画线词汇 'Apologize' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a day on the calendar', cn: '日历上的日期', correct: false, reason: '这里是两个人见面的事，不是几月几号。' },
-          { key: 'B', en: 'a romantic meeting between two people', cn: '约会、两人的见面', correct: true, reason: 'date 指有感情意味的见面，所以他要牵手、要敬酒。' },
-          { key: 'C', en: 'a signed business contract', cn: '签好的商业合同', correct: false, reason: '合同是 contract，date 在这是“约会”。' }
+          { key: 'A', en: 'to say sorry for something you did', cn: '道歉、说对不起', correct: true, reason: '她专程来替儿子低头。' },
+          { key: 'B', en: 'to demand an explanation', cn: '要求一个解释', correct: false, reason: '她提着汤来，是来认错的。' },
+          { key: 'C', en: 'to celebrate good news', cn: '庆祝好消息', correct: false, reason: '这个场合没有喜事。' }
         ],
-        analysis: 'date 作名词是“约会”，可这场饭局从头到尾没人问过苏晚愿不愿意。陈默把“约会”两个字拆开，露出底下的交易。',
-        wrongFeedback: '你选错了，赵天豪顺势揽住苏晚的肩，说“感情可以慢慢培养”，闪光灯亮了一片。',
-        afterCorrect: '陈默把他的手拿开：“培养感情要两个人都愿意。”他把苏晚拉到身后，“她今晚一步都不会跟你走。”'
+        analysis: 'apologize 是「为做过的事说对不起」。苏母这一低头，比苏明哲那十几条消息都重。',
+        wrongFeedback: '你选错了，苏母把保温桶往前推了推。气血 -10',
+        afterCorrect: '陈默下楼，接过保温桶：「汤我收。歉，让他自己来道。」'
       },
       {
-        plotDescription: '苏晚忽然从包里掏出一封旧信，纸边发黄，说这是三年前写的，一直没敢给他。',
-        line: "I wrote you a letter to break up three years ago. I never sent it.",
-        lineCn: '三年前我写过一封跟你分手的信。我一直没寄出去。',
-        prompt: "根据上下文，选出画线词汇 'break up' 最准确的意思。",
+        plotDescription: '办公室里，苏晚问他要不要就这样算了。陈默看着窗外，很久才开口。',
+        line: "I can forgive the money. I can't forgive what he did to her.",
+        lineCn: '钱我可以原谅。他对她做的那些事，我不能原谅。',
+        prompt: "根据上下文，选出画线词汇 'Forgive' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to start dating someone', cn: '开始交往', correct: false, reason: '方向正好相反，break up 是结束关系。' },
-          { key: 'B', en: 'to get married', cn: '结婚', correct: false, reason: '结婚是 get married，这里是“分开”。' },
-          { key: 'C', en: 'to end a romantic relationship', cn: '分手、结束关系', correct: true, reason: 'break up 就是恋人分开，所以才会写信。' }
+          { key: 'A', en: 'to stop being angry at someone', cn: '原谅、不再记恨', correct: true, reason: '他说钱可以放过去，这是原谅的范围。' },
+          { key: 'B', en: 'to punish severely', cn: '严厉惩罚', correct: false, reason: '意思相反，他说的是放下。' },
+          { key: 'C', en: 'to forget completely', cn: '彻底忘记', correct: false, reason: '原谅不等于忘记，他记得很清楚。' }
         ],
-        analysis: 'break up 是“分手”，也可指会议散场、信号中断。苏晚把信留了三年，说明那晚她没舍得真的断。',
-        wrongFeedback: '你选错了，苏晚把信收回去，指尖发白，说“算了，都过去了”，声音很轻。',
-        afterCorrect: '陈默没有接那封信：“你留着。”他顿了一下，“等哪天你想走，我签字；但在那之前，谁也别想替你签。”'
+        analysis: 'forgive 是「放过对方，也放过自己」。陈默划了一条线：钱可以让，人被欺负不行。',
+        wrongFeedback: '你选错了，苏晚低下头，没有再问。气血 -10',
+        afterCorrect: '他转过身：「但我也不会再用他的错来罚我自己。」'
       },
       {
-        plotDescription: '苏明哲冲上台抢过话筒，说苏晚早就把陈默甩了，今晚只是补个流程，让宾客别误会。',
-        line: "She dumped you in front of the whole city. Why are you still standing here?",
-        lineCn: '她当着全城的面把你甩了。你还站在这儿干什么？',
-        prompt: "根据上下文，选出画线词汇 'dumped' 最准确的意思。",
+        plotDescription: '一周后，老周提起苏母近况，说她还是不肯跟陈默同桌吃饭。',
+        line: "She still holds a grudge about the divorce. She blames you for all of it.",
+        lineCn: '她还在为离婚的事记仇。她把一切都算在你头上。',
+        prompt: "根据上下文，选出画线词汇 'Grudge' 最准确的意思。",
         options: [
-          { key: 'A', en: 'ended a relationship with someone', cn: '把某人甩了、结束关系', correct: true, reason: 'dump somebody 就是“甩掉对方”，正对上他那句嘲讽。' },
-          { key: 'B', en: 'dropped something heavy', cn: '把很重的东西扔下', correct: false, reason: '这是字面义，这里说的是一段关系被扔掉。' },
-          { key: 'C', en: 'insulted someone in public', cn: '当众羞辱某人', correct: false, reason: '羞辱不等于甩掉，dump 的重点是结束关系。' }
+          { key: 'A', en: 'a lasting feeling of anger toward someone', cn: '记仇、长久咽不下的怨', correct: true, reason: '她不肯同桌吃饭，说明这口气一直没消。' },
+          { key: 'B', en: 'a small gift', cn: '一份小礼物', correct: false, reason: '跟送礼无关。' },
+          { key: 'C', en: 'a happy memory', cn: '一段愉快的回忆', correct: false, reason: '这是怨，不是回忆。' }
         ],
-        analysis: 'dump 在感情里是“单方面甩掉”，比 break up 更狠。苏明哲拿它当刀子，可陈默手里握着的，是这场宴会的账。',
-        wrongFeedback: '你选错了，台下响起一片议论，苏明哲笑得很得意，话筒还没放下。',
-        afterCorrect: '陈默走上台，把一份文件放在话筒边：“这场宴会的场地费、酒水费、安保费，都是苏氏垫的。”他抬眼看苏明哲，“现在，谁被甩了？”'
+        analysis: 'grudge 是「记很久的仇」。陈默听完没有生气，只说：给她时间。',
+        wrongFeedback: '你选错了，老周把话停在这里，没有再说下去。气血 -10',
+        afterCorrect: '陈默说：「她只有一个儿子。等她明白过来，就晚了。」'
       }
     ],
-    completeText: '第 24 章结束。订婚宴没办成。宾客散尽后，苏晚一个人坐在空荡的宴会厅里，陈默把那封旧信放在她手边，什么也没问。'
+    completeText: '第 24 章结束。苏明哲始终没有出现。第三天，审计组进驻苏氏，带走了他办公室的两台电脑。'
   },
   {
     id: 'ml_25',
     index: 25,
-    title: '第 25 章 · 谁在背后递刀',
+    title: '第 25 章 · 电视里的那张脸',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '订婚宴的账查下去，牵出了更大的窟窿。苏氏财务总监王坤三年里转走了八百万，签字笔迹和苏明哲的一模一样。审计报告送到陈默桌上时，赵家的车正停在苏氏楼下。',
+    storyText: '审计结果出来：报价单的泄露源头，正是苏明哲的账号，前后一共转发过十一次。同一时间，赵天佑在电视上接受采访，说自己「从不做局」。',
     questions: [
       {
-        plotDescription: '审计师一页页念下去，王坤的账户、空壳公司、转账时间，全对得上。',
-        line: "Wang Kun cheated this company out of eight million over three years.",
-        lineCn: '王坤三年里从这家公司骗走了八百万。',
-        prompt: "根据上下文，选出画线词汇 'cheated' 最准确的意思。",
+        plotDescription: '韩野把审计报告放在桌上，最后一页是转发记录。',
+        line: "He betrayed the only person who still called him family.",
+        lineCn: '他背叛了唯一还把他当家人的人。',
+        prompt: "根据上下文，选出画线词汇 'Betray' 最准确的意思。",
         options: [
-          { key: 'A', en: 'copied answers in an exam', cn: '考试时抄答案', correct: false, reason: 'cheat 在考试里是作弊，但这里接的是公司钱款。' },
-          { key: 'B', en: 'took money by deception', cn: '骗取、用欺骗手段拿走（钱财）', correct: true, reason: 'cheat somebody out of money 就是“骗走某人的钱”。' },
-          { key: 'C', en: 'had a secret lover', cn: '有地下情人', correct: false, reason: '那是 cheat on somebody，后面接的是人不是钱。' }
+          { key: 'A', en: 'to be disloyal to someone who trusted you', cn: '背叛、辜负信任', correct: true, reason: '他卖了苏氏，也卖了还护着他的母亲。' },
+          { key: 'B', en: 'to support someone quietly', cn: '默默支持某人', correct: false, reason: '意思正好相反。' },
+          { key: 'C', en: 'to report a crime', cn: '举报一桩罪行', correct: false, reason: '他泄露的是商业机密，不是举报。' }
         ],
-        analysis: 'cheat 的用法看宾语：cheat on 伴侣是出轨，cheat somebody out of 钱是骗钱。这里金额和时间都写死了。',
-        wrongFeedback: '你选错了，审计师合上报告，说“还有第二份”，会议室的空气一下沉了下去。',
-        afterCorrect: '陈默把报告翻到签字页：“这个笔迹不是王坤的。”他抬头，“去把苏明哲请来，就说账已经对平了。”'
+        analysis: 'betray 是「把信任当筹码卖掉」。陈默翻到最后一页时，没有意外，只有一种冷掉的疲惫。',
+        wrongFeedback: '你选错了，韩野把报告合上，推到一边。气血 -10',
+        afterCorrect: '陈默说：「材料交给经侦。该走的程序，一个都不省。」'
       },
       {
-        plotDescription: '酒会上，林薇整晚贴着赵天豪，笑得亲热，手一直搭在他臂上，苏晚就站在三步之外。',
-        line: "She was flirting with Zhao all night, right in front of your wife.",
-        lineCn: '她整晚都在跟赵调情，就当着你太太的面。',
-        prompt: "根据上下文，选出画线词汇 'flirting' 最准确的意思。",
+        plotDescription: '电视里，赵天佑穿着深色西装，语速很慢，说自己是被冤枉的。',
+        line: "He's a liar. Every sentence he said on TV was written by a PR team.",
+        lineCn: '他是个骗子。他在电视上说的每一句，都是公关团队写好的。',
+        prompt: "根据上下文，选出画线词汇 'Liar' 最准确的意思。",
         options: [
-          { key: 'A', en: 'arguing loudly with someone', cn: '跟人吵得很凶', correct: false, reason: '两人有说有笑，不是吵架，语气和场面都不对。' },
-          { key: 'B', en: 'discussing business details', cn: '谈生意的细节', correct: false, reason: '谈生意不会一直把手搭在别人臂上。' },
-          { key: 'C', en: 'showing romantic interest playfully', cn: '调情、有意无意地撩', correct: true, reason: 'flirt 就是带暧昧意味地示好，正对上她的举动。' }
+          { key: 'A', en: 'a person who tells lies', cn: '骗子、说谎的人', correct: true, reason: '每一句都是稿子，说的又是假话。' },
+          { key: 'B', en: 'a lawyer', cn: '律师', correct: false, reason: 'liar 和 lawyer 发音有点像，但这里是说谎的人。' },
+          { key: 'C', en: 'a very honest person', cn: '非常诚实的人', correct: false, reason: '意思相反。' }
         ],
-        analysis: 'flirt 是“带点玩心的示好”，动作和眼神都算。陈默说这句话时没有情绪，只是在给苏晚递一个提醒。',
-        wrongFeedback: '你选错了，林薇听见了，端着酒过来敬一杯，说“别误会”，眼睛却看着苏晚。',
-        afterCorrect: '苏晚把杯子放下：“我没误会。”她看着林薇，“从大学到现在，你一直这样。”林薇的笑僵在脸上。'
+        analysis: 'liar 是「惯于说谎的人」。陈默关掉电视，是因为再看下去只会让自己变脏。',
+        wrongFeedback: '你选错了，电视里的声音还在继续。气血 -10',
+        afterCorrect: '他按下遥控器：「说得好听没用。账本不会撒谎。」'
       },
       {
-        plotDescription: '记者围上来问周宁到底什么身份，他把手一摊，说自己只是个没赶上的人。',
-        line: "I am not her ex. I am just the guy who never got a chance.",
-        lineCn: '我不是她的前任。我只是那个从来没得到过机会的人。',
-        prompt: "根据上下文，选出画线词汇 'ex' 最准确的意思。",
+        plotDescription: '记者会现场，赵天佑对着镜头笑，抬起手做了一个承诺的手势。',
+        line: "That smile is fake. Watch his hands — they never stop moving.",
+        lineCn: '那个笑是假的。看他的手，一直没停过。',
+        prompt: "根据上下文，选出画线词汇 'Fake' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a former romantic partner', cn: '前任（恋人）', correct: true, reason: 'ex 就是“前任”，所以他先否认自己不是。' },
-          { key: 'B', en: 'an old teacher', cn: '以前的老师', correct: false, reason: '老师是 teacher，ex 在感情语境里指前任。' },
-          { key: 'C', en: 'a former boss', cn: '前老板', correct: false, reason: '老板是 boss，这里说的是恋爱关系。' }
+          { key: 'A', en: 'not real or genuine', cn: '虚伪的、假的', correct: true, reason: '笑得体面，手却一直不安，说明是装出来的。' },
+          { key: 'B', en: 'very warm and sincere', cn: '非常温暖真诚', correct: false, reason: '意思相反。' },
+          { key: 'C', en: 'extremely tired', cn: '极度疲惫', correct: false, reason: '这里说的是真假，不是累。' }
         ],
-        analysis: 'ex 是口语里对“前任”的简称，可接 boyfriend、wife 等。周宁这句否认得越轻，越显得他一直在意。',
-        wrongFeedback: '你选错了，记者把这句话原样记下来，第二天的标题写得更难听。',
-        afterCorrect: '陈默从人群外递过一句话：“机会不是等来的。”他看着周宁，“你替赵家递刀的时候，就已经选好了。”'
+        analysis: 'fake 是「装出来的」。老周看人看了几十年，一眼就能分辨笑到不到眼底。',
+        wrongFeedback: '你选错了，镜头又给了那张笑脸一个特写。气血 -10',
+        afterCorrect: '老周说：「少爷，他撑不住了。」陈默点头：「那就再推一把。」'
       },
       {
-        plotDescription: '散场后，雷豹端着两杯酒挤过来，说今晚替他挡人，让他专心去跟苏晚说句话。',
-        line: "I will be your wingman tonight. You talk to her, I handle the rest.",
-        lineCn: '今晚我给你当僚机。你去跟她说话，剩下的我处理。',
-        prompt: "根据上下文，选出画线词汇 'wingman' 最准确的意思。",
+        plotDescription: '采访最后，赵天佑说自己这些年捐了多少学校，从没亏过任何人。',
+        line: "He calls himself a philanthropist. What a hypocrite.",
+        lineCn: '他自称慈善家。真是个伪君子。',
+        prompt: "根据上下文，选出画线词汇 'Hypocrite' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a driver waiting outside', cn: '在外面等着的司机', correct: false, reason: '司机是 driver，wingman 是帮忙撮合的朋友。' },
-          { key: 'B', en: 'a friend who helps you with romance', cn: '僚机、帮你追人的朋友', correct: true, reason: 'wingman 就是替你在感情上打配合的哥们儿。' },
-          { key: 'C', en: 'a bodyguard in a suit', cn: '穿西装的保镖', correct: false, reason: '保镖是 bodyguard，这里明显是玩笑话。' }
+          { key: 'A', en: 'someone who pretends to have good morals', cn: '伪君子、嘴上讲道德实际相反的人', correct: true, reason: '一边捐学校一边做局害人，正是伪君子。' },
+          { key: 'B', en: 'a generous donor', cn: '慷慨的捐赠者', correct: false, reason: '他嘴上像，实际不是。' },
+          { key: 'C', en: 'a medical doctor', cn: '医生', correct: false, reason: '跟职业无关。' }
         ],
-        analysis: 'wingman 原是战斗机僚机，口语里指帮朋友搭话、挡人的那位。雷豹这个糙汉子说出口，反而有点可爱。',
-        wrongFeedback: '你选错了，雷豹把两杯酒都自己喝了，说“那我不管了”，转身去找老周。',
-        afterCorrect: '陈默接过一杯：“不用挡。”他朝苏晚的方向看了一眼，“今晚我自己说。”'
+        analysis: 'hypocrite 是「说一套做一套的人」。陈默没有骂回去，他把赵家捐学校的那笔钱也列进了调查表。',
+        wrongFeedback: '你选错了，采访还在继续，弹幕里一片叫好。气血 -10',
+        afterCorrect: '陈默在纸上写了一行字：查捐款去向。然后合上了笔帽。'
       }
     ],
-    completeText: '第 25 章结束。那晚陈默只说了三句话，苏晚却记住了很久。而苏氏楼下的那辆车，直到凌晨才开走。'
+    completeText: '第 25 章结束。三天后，苏明哲被带走协助调查。同一天，赵氏的三家子公司收到税务稽查通知。'
   },
   {
     id: 'ml_26',
     index: 26,
-    title: '第 26 章 · 我信的人，不会反手',
+    title: '第 26 章 · 镜头前的那场戏',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '陈默终于决定交底。他约了韩青到办公室，把三年的档案铺了一桌。门被推开时，苏晚站在门口，手里拎着两份宵夜，目光落在那个短发女人身上。',
+    storyText: '苏明哲被带走后第三天，赵天佑安排了一场「受害者」采访，让苏明哲的母亲出镜，说陈默三年前就图谋苏家产业。同一天，他约苏晚单独见面。',
     questions: [
       {
-        plotDescription: '苏晚推门进来，看见一个短发女人坐在陈默对面，桌上摆着两杯还冒热气的茶。',
-        line: "The vibe in this room is wrong. Who is she, Chen Mo?",
-        lineCn: '这屋里的气氛不对劲。她是谁，陈默？',
-        prompt: "根据上下文，选出画线词汇 'vibe' 最准确的意思。",
+        plotDescription: '韩野把采访视频投到墙上，画面里那张脸哭得很用力。',
+        line: "He took your money and then backstabbed you on camera. That's the thanks you get.",
+        lineCn: '他拿了你的钱，然后在镜头前背刺你。这就是他给你的感谢。',
+        prompt: "根据上下文，选出画线词汇 'Backstab' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a style of music', cn: '一种音乐风格', correct: false, reason: 'vibe 确实能指音乐的感觉，但这里说的是屋里气氛。' },
-          { key: 'B', en: 'a shaking of the floor', cn: '地面的震动', correct: false, reason: '不是物理震动，是人和场面给人的感觉。' },
-          { key: 'C', en: 'the feeling a place or situation gives', cn: '氛围、场面给人的感觉', correct: true, reason: 'vibe 就是“感觉、气场”，正对上她觉得不对劲。' }
+          { key: 'A', en: 'to betray someone who trusts you', cn: '背刺、在背后捅信任你的人一刀', correct: true, reason: '苏明哲拿了钱还反咬一口，正是背刺。' },
+          { key: 'B', en: 'to praise someone in public', cn: '公开表扬某人', correct: false, reason: '意思相反。' },
+          { key: 'C', en: 'to give someone a gift', cn: '送某人一份礼物', correct: false, reason: '镜头前是造谣，不是送礼。' }
         ],
-        analysis: 'vibe 是口语里的“氛围、气场”，可好可坏。苏晚一句“气氛不对”，其实已经把自己的在意说漏了。',
-        wrongFeedback: '你选错了，苏晚把宵夜放在门口，说“我打扰了”，转身就要走。',
-        afterCorrect: '陈默起身挡住门：“别走。”他指了指韩青，“她叫韩青，龙渊的军医，救过我三次。”'
+        analysis: 'backstab 是「被信任的人从背后捅一刀」。陈默看着视频，脸上没有任何表情。',
+        wrongFeedback: '你选错了，视频里的话越说越狠。气血 -10',
+        afterCorrect: '陈默说：「把三年前的流水调出来。让她看看谁给谁钱。」'
       },
       {
-        plotDescription: '韩青笑着站起来，自我介绍完，还故意把“灵魂伴侣”这个词抛出来，看苏晚的反应。',
-        line: "Relax. I am not his soulmate. I am the one who patches him up.",
-        lineCn: '放松点。我不是他的灵魂伴侣。我是那个给他缝伤口的人。',
-        prompt: "根据上下文，选出画线词汇 'soulmate' 最准确的意思。",
+        plotDescription: '傍晚，苏晚从赵氏回来，坐在沙发上很久没动，手一直在发抖。',
+        line: "He kept telling me I imagined things. That's gaslighting, and I know it now.",
+        lineCn: '他一直说我是在胡思乱想。这就是 PUA，我现在知道了。',
+        prompt: "根据上下文，选出画线词汇 'Gaslight' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a person perfectly suited to you', cn: '灵魂伴侣、天生一对的人', correct: true, reason: 'soulmate 指精神上高度契合的伴侣，所以她才特意否认。' },
-          { key: 'B', en: 'a close family member', cn: '关系很近的家人', correct: false, reason: '家人是 relative，soulmate 说的是伴侣层面的契合。' },
-          { key: 'C', en: 'a business partner', cn: '生意伙伴', correct: false, reason: '这里明显在解释感情关系，不是谈合作。' }
+          { key: 'A', en: 'to make someone doubt their own memory or sanity', cn: '心理操控、让人怀疑自己', correct: true, reason: '他反复说「是你想多了」，就是典型的心理操控。' },
+          { key: 'B', en: 'to light a room with gas', cn: '用煤气灯照亮房间', correct: false, reason: '这是这个词的字面来源，但这里说的是操控。' },
+          { key: 'C', en: 'to comfort someone gently', cn: '温柔地安慰某人', correct: false, reason: '他不是安慰，是让她怀疑自己。' }
         ],
-        analysis: 'soulmate 是“灵魂伴侣”，比男朋友、女朋友更强调精神契合。韩青这句自嘲，既解了围，也把位置让清楚了。',
-        wrongFeedback: '你选错了，苏晚的脸色没有缓下来，把宵夜往桌上一放，说“你们聊”。',
-        afterCorrect: '韩青收拾好医药箱：“我走了。”她经过苏晚身边时压低声音，“他这三年，没睡过一个整觉。”'
+        analysis: 'gaslight 来自一部老电影，指「让对方怀疑自己的记忆和判断」。苏晚能 naming 它，就已经走出来了。',
+        wrongFeedback: '你选错了，苏晚把手缩回袖子里，没有再说。气血 -10',
+        afterCorrect: '陈默蹲下来，和她平视：「你没想多。一个字都没有。」'
       },
       {
-        plotDescription: '韩青走后，苏晚别过头，说他们俩说话的样子，像认识了半辈子。',
-        line: "You two have chemistry. I saw it before you did.",
-        lineCn: '你们俩很有默契。我比你先看出来。',
-        prompt: "根据上下文，选出画线词汇 'chemistry' 最准确的意思。",
+        plotDescription: '第二天，苏氏三位老董事联名要求开临时股东会，议题只有一条：卖掉公司。',
+        line: "He manipulated the board into voting for the sale. Every one of them owes him money.",
+        lineCn: '他操控董事会投票同意出售。每一个人都欠他的钱。',
+        prompt: "根据上下文，选出画线词汇 'Manipulate' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a subject about substances', cn: '化学这门学科', correct: false, reason: '这里不是在聊功课，说的是两个人之间的默契。' },
-          { key: 'B', en: 'a natural connection between people', cn: '默契、人与人之间的化学反应', correct: true, reason: 'chemistry 在人际里就是“来电、合拍”，正对上他们说话的样子。' },
-          { key: 'C', en: 'a medical treatment', cn: '一种医学治疗', correct: false, reason: '治疗是 treatment，chemistry 在这里是比喻。' }
+          { key: 'A', en: 'to control someone unfairly', cn: '操控、不正当手段影响别人', correct: true, reason: '拿人情和欠款逼人投票，就是操控。' },
+          { key: 'B', en: 'to operate a machine', cn: '操作一台机器', correct: false, reason: 'manipulate 有操作的意思，但这里对象是人。' },
+          { key: 'C', en: 'to explain the rules', cn: '解释规则', correct: false, reason: '他不是在讲规则，是在绕规则。' }
         ],
-        analysis: 'chemistry 除了化学，还常用来形容两个人之间的默契或吸引力。苏晚说这话时带酸味，她自己大概也听出来了。',
-        wrongFeedback: '你选错了，苏晚把筷子放下，说我先回去了，语气硬得像在赌气。',
-        afterCorrect: '陈默把档案推到她面前：“她是战友。”他翻到一页，“这上面七个人，只剩三个还活着。”'
+        analysis: 'manipulate 是「把人当成工具来操纵」。陈默没有立刻反击，他在等这些人自己站到台前。',
+        wrongFeedback: '你选错了，三位董事的联名信已经发到了媒体。气血 -10',
+        afterCorrect: '陈默给法务打电话：「查他们的授信。一笔一笔查。」'
       },
       {
-        plotDescription: '苏晚一页页看下去，看到最后停住，问他为什么敢把这些东西交到她手上。',
-        line: "Trust is not given. It is built, one hard night at a time.",
-        lineCn: '信任不是白给的。它是一个难关一个难关熬出来的。',
-        prompt: "根据上下文，选出画线词汇 'Trust' 最准确的意思。",
+        plotDescription: '深夜，陈默站在阳台上，苏晚问他还撑不撑得住。',
+        line: "For three years I let them treat me like a push over. Not anymore.",
+        lineCn: '三年里我任由他们把我当老好人。以后不会了。',
+        prompt: "根据上下文，选出画线词汇 'Push over' 最准确的意思。",
         options: [
-          { key: 'A', en: 'money lent to a friend', cn: '借给朋友的钱', correct: false, reason: '那是 loan，跟“信不信一个人”无关。' },
-          { key: 'B', en: 'a legal duty', cn: '法律上的义务', correct: false, reason: 'trust 在法律里指信托，但这里说的是人心。' },
-          { key: 'C', en: 'the belief that someone is reliable', cn: '信任、相信对方靠得住', correct: true, reason: 'trust 就是“把后背交给对方”的那种相信，正对上交档案。' }
+          { key: 'A', en: 'someone who is easy to take advantage of', cn: '老好人、容易被拿捏的人', correct: true, reason: '三年里他从不还嘴，谁都能推他一把。' },
+          { key: 'B', en: 'to push something until it falls', cn: '把东西推倒', correct: false, reason: '这里是形容人，不是动作。' },
+          { key: 'C', en: 'a very stubborn person', cn: '非常固执的人', correct: false, reason: '意思相反，他当时太好说话。' }
         ],
-        analysis: 'trust 是“信任”，强调愿意把重要的东西交出去。陈默把七个人的名字交给她，比任何表白都重。',
-        wrongFeedback: '你选错了，苏晚合上档案，说“我不配看这个”，手却一直按在封面上。',
-        afterCorrect: '陈默把档案推回去：“你配。”他停了一下，“这三年，你是唯一没拿我换好处的人。”'
+        analysis: 'push over 指「一推就倒的人」，也就是好拿捏。陈默承认这一点，比任何狠话都更像转变。',
+        wrongFeedback: '你选错了，苏晚把外套披在他肩上，没有说话。气血 -10',
+        afterCorrect: '他说：「明天股东会，我一个人去。你在家等消息。」'
       }
     ],
-    completeText: '第 26 章结束。那晚办公室的灯亮到两点。苏晚走的时候，把两份宵夜都留在了桌上，还说了一句：明天记得热一下再吃。'
+    completeText: '第 26 章结束。股东会开了四个小时。散场时，三位老董事没有一个人接受采访。'
   },
   {
     id: 'ml_27',
     index: 27,
-    title: '第 27 章 · 一句承诺，三年',
+    title: '第 27 章 · 她第一次站起来',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '赵家开始挖人，第一个找的是老周，开出三倍薪水，还许了一个副总的位置。老周把合同原样退回，连信封都没拆。苏振海听说后，亲自来问他要什么条件。',
+    storyText: '采访播出后，苏氏几位老董事要求陈默「为了大局」退出。股东会上，苏晚第一次站起来说话，声音不大，但整间屋子都听见了。',
     questions: [
       {
-        plotDescription: '苏振海把新合同推过去，说只要点个头，明天就能搬进江边的房子。',
-        line: "I have been loyal to one man for twelve years. That will not change for money.",
-        lineCn: '我忠于一个人十二年了。这不会因为钱改变。',
-        prompt: "根据上下文，选出画线词汇 'loyal' 最准确的意思。",
+        plotDescription: '散会后，苏晚在走廊里追上他，表情有点紧。',
+        line: "I stood up for you in that room. Don't make me regret it.",
+        lineCn: '我在那间屋子里替你说话了。别让我后悔。',
+        prompt: "根据上下文，选出画线词汇 'Stand up for' 最准确的意思。",
         options: [
-          { key: 'A', en: 'always supporting someone', cn: '忠诚、始终站在某人一边', correct: true, reason: 'loyal to 就是“对某人忠诚”，正对上十二年这句话。' },
-          { key: 'B', en: 'good at following orders blindly', cn: '盲目听命令', correct: false, reason: '忠诚不等于盲从，这里强调的是选择站在谁那边。' },
-          { key: 'C', en: 'polite to strangers', cn: '对陌生人客气', correct: false, reason: 'loyal 说的是长期的关系，不是礼貌。' }
+          { key: 'A', en: 'to defend someone or something you believe in', cn: '捍卫、站出来替某人说话', correct: true, reason: '她当着所有董事的面替他说话，正是这个意思。' },
+          { key: 'B', en: 'to stand up from a chair', cn: '从椅子上站起来', correct: false, reason: '她确实站起来了，但这句话的重点是「替他说话」。' },
+          { key: 'C', en: 'to give up on someone', cn: '放弃某人', correct: false, reason: '意思相反。' }
         ],
-        analysis: 'loyal 是“忠诚、讲义气”，常用 loyal to somebody。老周一句十二年，把所有的价码都堵死了。',
-        wrongFeedback: '你选错了，苏振海以为他嫌少，又加了一句“股份也可以谈”，老周把茶推了回去。',
-        afterCorrect: '老周站起来：“苏先生，我开车不是为了钱。”他把椅子归位，“是为了有一天能把他平安送回家。”'
+        analysis: 'stand up for 是「站出来护住」。三年前她一个字都不敢说，这一次她把话说在了所有人前面。',
+        wrongFeedback: '你选错了，苏晚的手垂下去，转身走了。气血 -10',
+        afterCorrect: '陈默拉住她的手腕：「我记住了。这次不会让你白站。」'
       },
       {
-        plotDescription: '苏振海转而找苏晚，把赵家的合作书递过去，说这是苏家最后的机会。',
-        line: "I reject their offer, and I reject the reason behind it.",
-        lineCn: '我拒绝他们的条件，也拒绝这条件背后的理由。',
-        prompt: "根据上下文，选出画线词汇 'reject' 最准确的意思。",
+        plotDescription: '办公室里，韩野问要不要先避一避风头，陈默把手机反过来扣在桌上。',
+        line: "If they hit us in public, we fight back in court. Not on the internet.",
+        lineCn: '他们在公开场合打我们，我们就在法庭上反击。不在网上骂。',
+        prompt: "根据上下文，选出画线词汇 'Fight back' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to accept gladly', cn: '欣然接受', correct: false, reason: '方向正好相反，reject 是拒绝，不是接受。' },
-          { key: 'B', en: 'to refuse to accept', cn: '拒绝、不接受', correct: true, reason: 'reject an offer 就是“拒绝这个条件”，标准搭配。' },
-          { key: 'C', en: 'to delay a decision', cn: '把决定往后拖', correct: false, reason: '她当场推回去，是明确拒绝，不是拖延。' }
+          { key: 'A', en: 'to resist or attack after being attacked', cn: '反击、被打之后还手', correct: true, reason: '对方先动手，他选择在法庭上还手。' },
+          { key: 'B', en: 'to run away from a fight', cn: '从打斗中逃走', correct: false, reason: '他不是要跑，是要反击。' },
+          { key: 'C', en: 'to apologize publicly', cn: '公开道歉', correct: false, reason: '他没有道歉的打算。' }
         ],
-        analysis: 'reject 是“明确不接受”，比 refuse 更正式。苏晚拒绝的不只是钱，还有那套“女人该被安排”的逻辑。',
-        wrongFeedback: '你选错了，苏振海把合同拍在桌上，说“你会后悔”，声音在书房里回荡。',
-        afterCorrect: '苏晚把合同撕成两半：“我后悔的是，三年前没早点说不。”她把纸扔进垃圾桶，“现在不晚。”'
+        analysis: 'fight back 是「被打之后还手」。陈默把战场从舆论挪到法庭，是他这三年学到的最重要一课。',
+        wrongFeedback: '你选错了，韩野把手机放下，不再劝了。气血 -10',
+        afterCorrect: '他给律师发了条消息：明天上午，起诉第一批造谣账号。'
       },
       {
-        plotDescription: '车里只有他们两个人，雨刷一下一下扫着，陈默握着方向盘，很久才开口。',
-        line: "Before I confess everything, I need you to hear one thing: I never lied to you.",
-        lineCn: '在我坦白一切之前，我需要你先听一句话：我从没对你说过谎。',
-        prompt: "根据上下文，选出画线词汇 'confess' 最准确的意思。",
+        plotDescription: '律师看完材料，摘下眼镜，说了一句让陈默沉默的话。',
+        line: "I can defend the company, but I can't defend your temper in that meeting.",
+        lineCn: '我可以为公司辩护，但我没法为你在那场会上的脾气辩护。',
+        prompt: "根据上下文，选出画线词汇 'Defend' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to say sorry for something', cn: '为某事道歉', correct: false, reason: '道歉是 apologize，confess 是把藏着的真相说出来。' },
-          { key: 'B', en: 'to argue back', cn: '反驳对方', correct: false, reason: '他没有争辩，是要交代过去。' },
-          { key: 'C', en: 'to admit the truth', cn: '坦白、把真相说出来', correct: true, reason: 'confess 就是“承认、交代”，后面接的正是“一切”。' }
+          { key: 'A', en: 'to protect someone from attack or criticism', cn: '辩护、保护某人不受攻击', correct: true, reason: '他说的是在法庭和舆论上护住公司。' },
+          { key: 'B', en: 'to attack someone first', cn: '先发制人攻击对方', correct: false, reason: 'defend 是防守，不是先攻。' },
+          { key: 'C', en: 'to sign a contract', cn: '签一份合同', correct: false, reason: '语境是应诉，不是签约。' }
         ],
-        analysis: 'confess 是“坦白”，常带一点沉重，像把压着的东西放下来。陈默先要一句“我没骗过你”，是因为这比真相更重要。',
-        wrongFeedback: '你选错了，苏晚转过头看窗外，说“你现在说这个，是怕我不听吗”。',
-        afterCorrect: '陈默把车停在路边：“三年前我不是逃出来的，是被送出来的。”他松开方向盘，“有人要我活着，把七条命的事说清楚。”'
+        analysis: 'defend 是「替人挡住攻击」。律师这句话很客气，意思却很直：外面我能挡，里面你自己收着点。',
+        wrongFeedback: '你选错了，律师把材料合上，等你回答。气血 -10',
+        afterCorrect: '陈默点头：「那场会，我一句废话都不说。」'
       },
       {
-        plotDescription: '苏晚沉默了很久，忽然问他，这三年对他来说到底算什么。',
-        line: "Three years is a commitment, not a cover story.",
-        lineCn: '三年是一份承诺，不是一个用来掩护的借口。',
-        prompt: "根据上下文，选出画线词汇 'commitment' 最准确的意思。",
+        plotDescription: '当晚，韩野问他为什么这几年一直不还手，陈默看着楼下。',
+        line: "I ignored him for three years. That was my mistake, not his victory.",
+        lineCn: '我无视了他三年。那是我的错，不是他的胜利。',
+        prompt: "根据上下文，选出画线词汇 'Ignore' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a serious promise you keep', cn: '承诺、要认真守住的东西', correct: true, reason: 'commitment 是“把自己绑上去的承诺”，正对上“不是借口”。' },
-          { key: 'B', en: 'a short holiday', cn: '一个短期休假', correct: false, reason: '这是 vacation，与承诺无关。' },
-          { key: 'C', en: 'a legal punishment', cn: '一种法律惩罚', correct: false, reason: 'commitment 在商业里指投入，在感情里指承诺，不是刑罚。' }
+          { key: 'A', en: 'to pay no attention to someone', cn: '无视、不予理会', correct: true, reason: '三年里他对苏明哲的挑衅一概不回应。' },
+          { key: 'B', en: 'to study carefully', cn: '仔细研究', correct: false, reason: '他不是在研究对方，是不理。' },
+          { key: 'C', en: 'to forgive completely', cn: '完全原谅', correct: false, reason: '不回应不等于原谅。' }
         ],
-        analysis: 'commitment 是“承诺、投入”，比 promise 更有分量，因为它包含代价。陈默把它放在“三年”后面，等于承认自己也赔进去了。',
-        wrongFeedback: '你选错了，苏晚笑了一下，说“承诺”，语气像是在念一个很旧的词。',
-        afterCorrect: '陈默转过头看她：“对，承诺。”他顿了很久，“对你爷爷的，也是对你的。”'
+        analysis: 'ignore 是「当它不存在」。陈默承认这不是大度，是一种逃避。',
+        wrongFeedback: '你选错了，韩野靠在门框上，没有接话。气血 -10',
+        afterCorrect: '他关掉楼下的灯：「从现在起，他说的每一句，我都记账。」'
       }
     ],
-    completeText: '第 27 章结束。那晚的雨下到天亮。苏晚回家时没有开灯，坐在玄关很久，手里攥着那把早就配好的备用钥匙。'
+    completeText: '第 27 章结束。第一批起诉立案的当天，两家媒体撤稿道歉。赵天佑第一次没有出现在公开场合。'
   },
   {
     id: 'ml_28',
     index: 28,
-    title: '第 28 章 · 她递来的那杯温水',
+    title: '第 28 章 · 地下停车场的十分钟',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '陈默的旧伤发炎，半夜发起烧来。苏晚被客厅的响动惊醒，看见他扶着桌角站着，袖子已经被血浸透。她没说话，转身去拿了医药箱，又倒了一杯温水。',
+    storyText: '赵天佑约陈默在地下车场见面，只带了两个人。他开门见山：收手，否则苏晚三年前的就诊记录会被放到网上。',
     questions: [
       {
-        plotDescription: '苏晚替他换药，手指擦过那道旧疤，两个人都没说话，屋里只听见纱布拉开的细响。',
-        line: "There has never been intimacy between us. Tonight there is something.",
-        lineCn: '我们之间从来没有过亲密。今晚有点不一样了。',
-        prompt: "根据上下文，选出画线词汇 'intimacy' 最准确的意思。",
+        plotDescription: '陈默没有坐下，也没有说话，就那么看着他，整整一分钟。',
+        line: "I sat there in silence for a full minute, and he started talking.",
+        lineCn: '我在那儿沉默着坐了整整一分钟，他就自己开始说了。',
+        prompt: "根据上下文，选出画线词汇 'Silence' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a formal introduction', cn: '正式的介绍', correct: false, reason: '这里没有人互相介绍，说的是两个人之间的靠近。' },
-          { key: 'B', en: 'a close, private emotional connection', cn: '亲密、私底下的亲近', correct: true, reason: 'intimacy 指心理和身体上的亲近，正对上换药这个场景。' },
-          { key: 'C', en: 'a business partnership', cn: '商业上的合作', correct: false, reason: '这是婚姻里的词，不是谈生意。' }
+          { key: 'A', en: 'complete quiet, with no sound or speech', cn: '沉默、一句话都不说', correct: true, reason: '他一句话不说，对方反而先慌了。' },
+          { key: 'B', en: 'a loud argument', cn: '一场大声争吵', correct: false, reason: '正好相反，他一个字都没说。' },
+          { key: 'C', en: 'a written statement', cn: '一份书面声明', correct: false, reason: '这里说的是不出声。' }
         ],
-        analysis: 'intimacy 是“亲密”，可以指情感，也可以指身体距离。三年同一个屋檐下，第一次离得这么近，谁都没有退开。',
-        wrongFeedback: '你选错了，苏晚的手停了一下，纱布掉在地上，她弯腰去捡，耳根有点红。',
-        afterCorrect: '陈默低声说了句“谢谢”。苏晚把纱布重新缠好：“别说话。”她的声音很轻，手上却很稳。'
+        analysis: 'silence 在这里是武器。谁先沉不住气，谁就先交出底牌。',
+        wrongFeedback: '你选错了，赵天佑笑了笑，把话又绕了回去。气血 -10',
+        afterCorrect: '等对方说完，陈默才开口：「你说完了？那我说两句。」'
       },
       {
-        plotDescription: '她把温水塞进他手里，转身还替他把半扇窗关上，动作快得像怕被看见。',
-        line: "She shows affection in small ways. You just have to look.",
-        lineCn: '她表达感情的方式很小。你得仔细看才看得见。',
-        prompt: "根据上下文，选出画线词汇 'affection' 最准确的意思。",
+        plotDescription: '赵天佑把一份打印件推过来，上面是苏晚三年前的住院记录。',
+        line: "He threatened to release her medical records if I didn't back off.",
+        lineCn: '他威胁说如果我不收手，就把她的病历公开。',
+        prompt: "根据上下文，选出画线词汇 'Threaten' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a serious illness', cn: '严重的病', correct: false, reason: 'affection 和疾病无关，别和 infection（感染）搞混。' },
-          { key: 'B', en: 'a loud argument', cn: '大声争吵', correct: false, reason: '她一句话没多说，正相反，是安静的关心。' },
-          { key: 'C', en: 'a feeling of liking and caring', cn: '爱意、关心', correct: true, reason: 'affection 就是“喜欢和在乎”，藏在倒水关窗这些小事里。' }
+          { key: 'A', en: 'to say you will harm someone', cn: '威胁、扬言要伤害对方', correct: true, reason: '拿别人的病历当筹码，就是威胁。' },
+          { key: 'B', en: 'to warn someone kindly', cn: '善意地提醒', correct: false, reason: '这不是提醒，是拿隐私做刀。' },
+          { key: 'C', en: 'to ask for help', cn: '请求帮助', correct: false, reason: '他的语气是逼迫，不是求助。' }
         ],
-        analysis: 'affection 是“喜爱、关怀”，往往通过动作表达。陈默看得懂，因为他自己也习惯用做事代替说话。',
-        wrongFeedback: '你选错了，苏晚把杯子往他手边推了推，说“喝完再睡”，转身走得很快。',
-        afterCorrect: '陈默捧着那杯水，温度刚好。他忽然想起三年前，也是这样一个雨夜，她隔着门缝塞进来一杯水。'
+        analysis: 'threaten 是「用伤害来逼对方就范」。陈默把那张纸拿起来，看都没看就撕了。',
+        wrongFeedback: '你选错了，赵天佑把另一份推了过来。气血 -10',
+        afterCorrect: '陈默把碎片放回他面前：「原件在你手上？那更好。敲诈勒索，量刑更重。」'
       },
       {
-        plotDescription: '第二天，老周把车钥匙放在桌上，说今晚谁都不许加班，位子已经订好。',
-        line: "It is your date night. I already booked the table.",
-        lineCn: '今晚是你们的约会之夜。位子我已经订好了。',
-        prompt: "根据上下文，选出画线词汇 'date night' 最准确的意思。",
+        plotDescription: '赵天佑站起来，整理袖口，说了一句很轻的话。',
+        line: "He said he could ruin me in a week. I gave him two.",
+        lineCn: '他说一周就能毁掉我。我给了他两周。',
+        prompt: "根据上下文，选出画线词汇 'Ruin' 最准确的意思。",
         options: [
-          { key: 'A', en: 'an evening set aside for a couple', cn: '约会之夜、留给两个人的晚上', correct: true, reason: 'date night 就是伴侣专门留出来的那一晚，所以还订了位子。' },
-          { key: 'B', en: 'a night shift at work', cn: '夜班', correct: false, reason: '老周说的是不许加班，正好和夜班相反。' },
-          { key: 'C', en: 'a company dinner', cn: '公司聚餐', correct: false, reason: '公司聚餐不会用 date night 这种说法。' }
+          { key: 'A', en: 'to destroy someone and their success', cn: '毁掉、让某人身败名裂', correct: true, reason: '他扬言一周之内让陈默彻底垮掉。' },
+          { key: 'B', en: 'to help someone succeed', cn: '帮助某人成功', correct: false, reason: '意思相反。' },
+          { key: 'C', en: 'to repair a building', cn: '修缮一栋建筑', correct: false, reason: '这里是毁掉名声，不是修房子。' }
         ],
-        analysis: 'date night 指情侣或夫妻固定留出的“约会之夜”。老周这种安排，比任何劝说都更像长辈。',
-        wrongFeedback: '你选错了，苏晚听见了，说“我们不用”，陈默却把钥匙接了过来。',
-        afterCorrect: '陈默把钥匙揣进口袋：“订了就去。”他看向苏晚，“吃个饭，不谈公司。”'
+        analysis: 'ruin 是「毁到没法翻身」。陈默回的那句「我给了他两周」，比任何狠话都冷。',
+        wrongFeedback: '你选错了，赵天佑的脚步停了一下。气血 -10',
+        afterCorrect: '陈默看着他的背影：「两周之后，你连这条通道都进不来。」'
       },
       {
-        plotDescription: '雷豹在车里笑得快岔气，说从来没见过陈默这个样子，连走路都慢半拍。',
-        line: "Look at him. Twelve years in the field, and now he is smitten.",
-        lineCn: '看看他。在战场上十二年，现在神魂颠倒。',
-        prompt: "根据上下文，选出画线词汇 'smitten' 最准确的意思。",
+        plotDescription: '回到车上，韩野问他要不要一次性把赵家掀翻。',
+        line: "I don't need to destroy him. I just need the truth on record.",
+        lineCn: '我不需要摧毁他。我只需要把真相留在案卷里。',
+        prompt: "根据上下文，选出画线词汇 'Destroy' 最准确的意思。",
         options: [
-          { key: 'A', en: 'deeply asleep', cn: '睡得很沉', correct: false, reason: 'smitten 和睡觉无关，是“被感情击中”的状态。' },
-          { key: 'B', en: 'completely in love', cn: '神魂颠倒、被迷住了', correct: true, reason: 'be smitten with 就是“迷上某人”，正对上他那副样子。' },
-          { key: 'C', en: 'very angry', cn: '非常生气', correct: false, reason: '如果是生气，雷豹不会笑得这么开心。' }
+          { key: 'A', en: 'to damage something so badly it cannot continue', cn: '摧毁、彻底破坏', correct: true, reason: '韩野说的是把赵家彻底打垮。' },
+          { key: 'B', en: 'to build something new', cn: '建造新的东西', correct: false, reason: '意思相反。' },
+          { key: 'C', en: 'to hide something', cn: '把东西藏起来', correct: false, reason: '他要的是留档，不是藏。' }
         ],
-        analysis: 'smitten 是“被一击命中”，多指突然陷进去的喜欢。用在陈默身上，反差感就是笑点。',
-        wrongFeedback: '你选错了，雷豹这句说出口，苏晚正好拉开车门，车里的空气一下凝固。',
-        afterCorrect: '陈默关掉车内音响：“开车。”雷豹忍着笑发动车子，后视镜里，苏晚的耳根红得很明显。'
+        analysis: 'destroy 是「毁到不能再用」。陈默不打算做赵天佑那种人，他要的是判决书，不是废墟。',
+        wrongFeedback: '你选错了，韩野把车钥匙攥紧，没再问。气血 -10',
+        afterCorrect: '陈默说：「开庭那天，你坐第一排。看完就走，不许笑。」'
       }
     ],
-    completeText: '第 28 章结束。那顿饭吃了两个小时，谁都没提赵家、没提账、没提三年前。回去的路上苏晚靠在车窗上，第一次没有装睡。'
+    completeText: '第 28 章结束。两周后，赵氏被正式立案，赵天佑被限制出境。消息出来那天，陈默在父亲的墓前坐了一下午。'
   },
   {
     id: 'ml_29',
     index: 29,
-    title: '第 29 章 · 隔着三千公里的电话',
+    title: '第 29 章 · 墓前的那个下午',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '边境出了事，韩青的电话在凌晨打来。陈默站在阳台上听完，只说了一句“我明天到”。回屋时苏晚已经醒了，坐在床边看着他收拾行李。',
+    storyText: '赵氏被立案两个月后，赵天佑的父亲中风入院。赵家托人带话，说想谈一谈。陈默没有立刻回答，先去了墓园。',
     questions: [
       {
-        plotDescription: '韩青在电话里说，名单上又添了一个名字，声音压得很低，背景里有风声。',
-        line: "I have seen a lot of heartbreak, but nothing like a mother hearing that name.",
-        lineCn: '我见过很多心碎，但没有哪一种比得上一个母亲听到那个名字。',
-        prompt: "根据上下文，选出画线词汇 'heartbreak' 最准确的意思。",
+        plotDescription: '老周转述赵天佑在讯问室里说的话，语气很平。',
+        line: "He sat in that room and said he regretted nothing. Not one thing.",
+        lineCn: '他坐在那间屋子里，说自己什么都不后悔。一件都不后悔。',
+        prompt: "根据上下文，选出画线词汇 'Regret' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a serious head injury', cn: '头部重伤', correct: false, reason: 'heartbreak 是情感上的痛，不是医学上的伤。' },
-          { key: 'B', en: 'a machine that stopped working', cn: '坏掉的机器', correct: false, reason: '这里说的是一个母亲的感受，不是设备。' },
-          { key: 'C', en: 'deep emotional pain', cn: '心碎、极度的情感痛苦', correct: true, reason: 'heartbreak 就是“心被击碎”，正对上母亲听到噩耗。' }
+          { key: 'A', en: 'to feel sorry about something you did', cn: '后悔、为做过的事难受', correct: true, reason: '他说自己一件都不后悔，正用到这个词。' },
+          { key: 'B', en: 'to feel proud of a decision', cn: '为自己的决定骄傲', correct: false, reason: 'regret 是懊悔，不是骄傲。' },
+          { key: 'C', en: 'to forget a promise', cn: '忘记一个承诺', correct: false, reason: '跟承诺无关，是对做过的事的态度。' }
         ],
-        analysis: 'heartbreak 是“极度的情感痛苦”，常和失去有关。韩青是军医，见惯伤口，却说自己最怕听那个名字。',
-        wrongFeedback: '你选错了，电话那头沉默了很久，韩青才说“你早点来”，声音有点抖。',
-        afterCorrect: '陈默挂了电话，在阳台上站了很久。他记得那七个人的名字，也记得每一个家里还亮着的灯。'
+        analysis: 'regret 是「回头觉得不该那样做」。赵天佑一句不悔，让这场胜利少了一半快感。',
+        wrongFeedback: '你选错了，老周停下来，等你说话。气血 -10',
+        afterCorrect: '陈默把香放在碑前：「那他就带着不悔，慢慢过完下半辈子。」'
       },
       {
-        plotDescription: '苏晚把手机递过来，信号断断续续，窗外正下着雨，她说自己只说两句。',
-        line: "Long-distance is hard, but silence is harder.",
-        lineCn: '异地很难，但沉默更难。',
-        prompt: "根据上下文，选出画线词汇 'Long-distance' 最准确的意思。",
+        plotDescription: '下山时，苏晚问他现在算不算报仇了。',
+        line: "For three years I called it revenge. It was just grief with a schedule.",
+        lineCn: '三年里我把这叫复仇。其实只是给悲伤排了个时间表。',
+        prompt: "根据上下文，选出画线词汇 'Revenge' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a relationship between people far apart', cn: '异地恋、相隔很远的关系', correct: true, reason: 'long-distance 常指异地关系，正对上三千公里的电话。' },
-          { key: 'B', en: 'a very long phone call', cn: '一通很长的电话', correct: false, reason: '这里说的是两人相隔两地，不是通话时长。' },
-          { key: 'C', en: 'a marathon race', cn: '长跑比赛', correct: false, reason: 'long-distance 能修饰比赛，但这句讲的是关系。' }
+          { key: 'A', en: 'harm done to someone who hurt you', cn: '复仇、对伤害你的人还手', correct: true, reason: '他把这三年的目标称作复仇。' },
+          { key: 'B', en: 'a business negotiation', cn: '一场商业谈判', correct: false, reason: '这里说的不是谈生意。' },
+          { key: 'C', en: 'a formal apology', cn: '一次正式道歉', correct: false, reason: '意思相反。' }
         ],
-        analysis: 'long-distance 是“异地”，常作 long-distance relationship。苏晚这句话不是抱怨距离，是在说：别不联系我。',
-        wrongFeedback: '你选错了，苏晚握着手机没再说话，雨声把沉默填满了。',
-        afterCorrect: '陈默先开的口：“我每天打一个。”他停了一下，“不管多晚。”苏晚在那头轻轻“嗯”了一声。'
+        analysis: 'revenge 是「讨回那口气」。陈默这句自嘲，是整本书里他对自己最诚实的一次。',
+        wrongFeedback: '你选错了，苏晚把手放进他掌心，没有追问。气血 -10',
+        afterCorrect: '他说：「我爸大概不想看我把后半辈子也搭进去。」'
       },
       {
-        plotDescription: '第二天的八卦稿写得更离谱，说陈默同时维持多段关系，配图却是三年前的旧照。',
-        line: "The article claims he believes in polyamory. There is not one photo to prove it.",
-        lineCn: '文章说他还相信多边恋。可一张能证明的照片都没有。',
-        prompt: "根据上下文，选出画线词汇 'polyamory' 最准确的意思。",
+        plotDescription: '墓园门口，苏晚停下来，看着远处的江。',
+        line: "You can stop now. There's no peace waiting for you at the end of this.",
+        lineCn: '你可以停下来了。这条路的尽头没有和平在等你。',
+        prompt: "根据上下文，选出画线词汇 'Peace' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a fear of marriage', cn: '婚姻恐惧', correct: false, reason: '那是恐惧，polyamory 说的是关系形式，不是害怕。' },
-          { key: 'B', en: 'having more than one romantic partner at once', cn: '多边恋、同时有多位伴侣', correct: true, reason: 'poly 是“多”，amory 是“爱”，指同时维持多段关系。' },
-          { key: 'C', en: 'a love of money', cn: '爱钱', correct: false, reason: '别把 amory 当成 money，这个词只跟感情有关。' }
+          { key: 'A', en: 'a calm state without conflict', cn: '和平、内心安宁', correct: true, reason: '她说的是把仇报完之后，心里也不会安静。' },
+          { key: 'B', en: 'a piece of land', cn: '一块土地', correct: false, reason: 'peace 和 piece 同音不同义，这里是安宁。' },
+          { key: 'C', en: 'a large amount of money', cn: '一大笔钱', correct: false, reason: '这句劝的是心，不是钱。' }
         ],
-        analysis: 'polyamory 指公开、同意前提下的多重伴侣关系。这里被八卦媒体拿来当脏水，苏晚一眼看穿：连照片都是旧的。',
-        wrongFeedback: '你选错了，苏晚把稿子折起来，说“这种文章也有人信”，语气却有点紧。',
-        afterCorrect: '陈默把稿子扔进碎纸机：“让他们写。”他抬头，“等这事完了，我开个发布会，一次说清。”'
+        analysis: 'peace 是「没有仗要打的安静」。苏晚不是在劝他放手，是在提醒他别把自己也埋进去。',
+        wrongFeedback: '你选错了，苏晚看着江面，很久没再说话。气血 -10',
+        afterCorrect: '陈默说：「我知道。所以我不打算把赵家连根拔。」'
       },
       {
-        plotDescription: '苏振海把一份文件拍在桌上，说退婚不是儿戏，法律上也得走完手续。',
-        line: "You want a divorce? Then say it to her face, not behind a desk.",
-        lineCn: '你想离婚？那就当着她的面说，别躲在办公桌后面。',
-        prompt: "根据上下文，选出画线词汇 'divorce' 最准确的意思。",
+        plotDescription: '三天后，赵家派人送来一份文件，希望双方先停手，等老人病情稳定再说。',
+        line: "The Zhao family asked for a truce before the hearing. I said yes.",
+        lineCn: '赵家在开庭前请求休战。我答应了。',
+        prompt: "根据上下文，选出画线词汇 'Truce' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a change of address', cn: '搬家', correct: false, reason: '文件是解除婚姻的，不是换住址。' },
-          { key: 'B', en: 'a business merger', cn: '企业合并', correct: false, reason: '这里是家事，不是公司并购。' },
-          { key: 'C', en: 'the legal end of a marriage', cn: '离婚、法律上解除婚姻', correct: true, reason: 'divorce 就是正式结束婚姻，正对上“走完手续”。' }
+          { key: 'A', en: 'an agreement to stop fighting for a time', cn: '休战、暂时停手', correct: true, reason: '赵家求的是开庭前暂停，正是休战。' },
+          { key: 'B', en: 'a final judgment', cn: '最终判决', correct: false, reason: '他们求的是停手，不是判决。' },
+          { key: 'C', en: 'a business merger', cn: '一次商业合并', correct: false, reason: '文件是停手协议，不是合并。' }
         ],
-        analysis: 'divorce 是“离婚”，也可泛指分离。陈默把文件推回去，意思是：要结束，让她自己开口。',
-        wrongFeedback: '你选错了，苏振海把笔按在他面前，说“签了它，苏家给你一笔钱”，声音压低。',
-        afterCorrect: '陈默把文件推回去：“要签，让她来。”他站起身，“我不替她做决定，你也别替。”'
+        analysis: 'truce 是「暂时不打」。陈默答应，不是因为心软，是因为他不想赢在一个病人身上。',
+        wrongFeedback: '你选错了，送文件的人站在门口，一直没有走。气血 -10',
+        afterCorrect: '他签了字：「停两周。开庭照旧。」'
       }
     ],
-    completeText: '第 29 章结束。第二天清晨，陈默登上了飞往边境的航班。登机前他发了一条消息，只有四个字：等我回来。'
+    completeText: '第 29 章结束。休战的两周里，陈默一次都没有看赵家的资料。他陪苏晚回了趟老宅，把那棵院子里的树修了修。'
   },
   {
     id: 'ml_30',
     index: 30,
-    title: '第 30 章 · 有些账，只能用命还',
+    title: '第 30 章 · 医院走廊的一小时',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '边境的夜很冷，营地外烧着一堆火。七个位置，只坐满了四个。韩青把名单递过来，最下面一行是新添的名字。远处有人吹口琴，调子跑得厉害，没人笑。',
+    storyText: '苏振海做手术的前一晚，在走廊里等了陈默两个小时。同一天下午，韩野因为一笔投资跟他吵到掀了桌子。',
     questions: [
       {
-        plotDescription: '国内的热搜上，周宁对着镜头暗示，他和苏晚之间“从来不只是同学”。',
-        line: "There was never an affair. There was a boy who could not take no for an answer.",
-        lineCn: '从来没有什么绯闻。只有一个不肯接受拒绝的男孩。',
-        prompt: "根据上下文，选出画线词汇 'affair' 最准确的意思。",
+        plotDescription: '走廊尽头的长椅上，苏振海站起来，手里捏着一份股权转让书。',
+        line: "He wanted to reconcile before the surgery. I listened for an hour.",
+        lineCn: '他想在手术前和解。我听他讲了一个小时。',
+        prompt: "根据上下文，选出画线词汇 'Reconcile' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a secret romantic relationship', cn: '绯闻、秘密的感情关系', correct: true, reason: 'affair 常指婚外的秘密恋情，正对上他暗示的那层关系。' },
-          { key: 'B', en: 'a business deal', cn: '一笔生意', correct: false, reason: '这里说的是男女关系，不是谈生意。' },
-          { key: 'C', en: 'a public speech', cn: '一次公开演讲', correct: false, reason: 'affair 不是演讲，法语词源是“事情”，这里指私情。' }
+          { key: 'A', en: 'to become friendly again after a conflict', cn: '和解、冲突之后重新和好', correct: true, reason: '手术前把话说开，就是想和解。' },
+          { key: 'B', en: 'to argue again', cn: '再吵一次', correct: false, reason: '他听了一个小时，没有吵。' },
+          { key: 'C', en: 'to sign a new contract', cn: '签一份新合同', correct: false, reason: '股权书只是由头，重点是和解。' }
         ],
-        analysis: 'affair 在感情语境里几乎专指“见不得光的关系”，比 relationship 更重。陈默把这盆脏水原样泼回去。',
-        wrongFeedback: '你选错了，热搜又涨了一波，苏氏公关部的电话响个不停，苏晚却把手机扣在桌上。',
-        afterCorrect: '苏晚对着镜头只说了一句：“我先生叫陈默。”她顿了一下，“其他的名字，我不认识。”'
+        analysis: 'reconcile 是「把断掉的关系接回来」。陈默没有答应，也没有拒绝，他只是听完了。',
+        wrongFeedback: '你选错了，苏振海把文件收回口袋，坐了回去。气血 -10',
+        afterCorrect: '临走前陈默说：「手术我会安排人。别的，等你出来再谈。」'
       },
       {
-        plotDescription: '记者追问她，这三年婚姻里到底有没有过爱情，她看着镜头停了三秒。',
-        line: "There was no romance in this marriage. There was a promise, and I kept it.",
-        lineCn: '这段婚姻里没有浪漫。只有一个承诺，而我守住了。',
-        prompt: "根据上下文，选出画线词汇 'romance' 最准确的意思。",
+        plotDescription: '下午的会议上，韩野坚持要投那个项目，陈默不同意。两个人从讨论变成了争执。',
+        line: "We had an argument about the same thing we always argue about: how fast to move.",
+        lineCn: '我们又为同一件事争论：到底要多快。',
+        prompt: "根据上下文，选出画线词汇 'Argument' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a long novel', cn: '长篇小说', correct: false, reason: 'romance 确实有“爱情小说”的意思，但这里说的是感情。' },
-          { key: 'B', en: 'a feeling of love and excitement', cn: '浪漫、爱情的滋味', correct: true, reason: 'romance 指恋爱里的心动和浪漫，正对上“婚姻里没有”。' },
-          { key: 'C', en: 'a travel plan', cn: '旅行计划', correct: false, reason: '与旅行无关，她在回答感情问题。' }
+          { key: 'A', en: 'an angry disagreement', cn: '争论、带着火气的分歧', correct: true, reason: '两个人从讨论变成争执，就是 argument。' },
+          { key: 'B', en: 'a logical proof', cn: '一个逻辑论证', correct: false, reason: 'argument 有论证的意思，但这里是吵架。' },
+          { key: 'C', en: 'a friendly joke', cn: '一个友好的玩笑', correct: false, reason: '气氛已经很僵了。' }
         ],
-        analysis: 'romance 是“浪漫、恋情”，比 love 更强调氛围和心动。苏晚把“没有”说得很平静，后半句却承认了自己守约。',
-        wrongFeedback: '你选错了，记者立刻追问“那为什么不离婚”，苏晚没有回答，只是起身离开。',
-        afterCorrect: '这段采访在边境的屏幕上播出来。陈默站在雪地里看完，很久才说：“这三年，是我欠她的。”'
+        analysis: 'argument 是「各说各的、越说越急」。他们争的从来不是项目，是节奏。',
+        wrongFeedback: '你选错了，韩野把笔摔在桌上。气血 -10',
+        afterCorrect: '陈默说：「你要快，我要稳。我们今天谁都别说赢。」'
       },
       {
-        plotDescription: '营地里，韩青说起老周，十二年没成家，跟着陈默从南到北，连父亲最后一面都没赶上。',
-        line: "His devotion is not to me. It is to the men we buried.",
-        lineCn: '他的忠诚不是对我。是对我们埋掉的那些人。',
-        prompt: "根据上下文，选出画线词汇 'devotion' 最准确的意思。",
+        plotDescription: '散会后，两个人在停车场又碰上，话说得比会上更冲。',
+        line: "We almost got into a fight in the parking lot. Ten years, and that was the closest.",
+        lineCn: '我们差点在停车场打起来。十年了，这是最接近的一次。',
+        prompt: "根据上下文，选出画线词汇 'Fight' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a medical prescription', cn: '一张处方', correct: false, reason: 'prescription 才是处方，devotion 说的是投入和忠诚。' },
-          { key: 'B', en: 'a short break from work', cn: '工作中的短暂休息', correct: false, reason: '跟休息无关，这里是一份守了十二年的心。' },
-          { key: 'C', en: 'deep loyalty and commitment', cn: '忠诚、全身心的投入', correct: true, reason: 'devotion 是“把自己交出去”的投入，正对上十二年。' }
+          { key: 'A', en: 'a physical or angry conflict', cn: '打架、冲突', correct: true, reason: '他说的是差点动手。' },
+          { key: 'B', en: 'a formal debate', cn: '一场正式辩论', correct: false, reason: '停车场里不是辩论赛。' },
+          { key: 'C', en: 'a business deal', cn: '一笔生意', correct: false, reason: '这里说的是冲突。' }
         ],
-        analysis: 'devotion 是“奉献、忠诚”，程度比 loyalty 更深。陈默不敢领这份功劳，因为那份忠诚属于死去的人。',
-        wrongFeedback: '你选错了，韩青低下头，把手里的名单折了又折，火光照着她的侧脸。',
-        afterCorrect: '陈默把一杯酒倒在地上：“敬他们。”他停了一下，“也敬老周，他替我们活着。”'
+        analysis: 'fight 可以指打架，也可以指激烈的冲突。十年兄弟第一次走到这一步，是因为都在乎。',
+        wrongFeedback: '你选错了，韩野拉开车门，重重地关上。气血 -10',
+        afterCorrect: '陈默在原地站了一会儿，给他发了条消息：明天早上，一起吃面。'
       },
       {
-        plotDescription: '火堆边，陈默说他三年前有阵子什么都不想干，连枪都不想碰。',
-        line: "I lost my passion for this work. Then a girl needed a surgery, and it came back.",
-        lineCn: '我对这份工作失去过热情。后来有个女孩需要做手术，它又回来了。',
-        prompt: "根据上下文，选出画线词汇 'passion' 最准确的意思。",
+        plotDescription: '第二天早上，面馆里，两个人都没提昨天的事。吃到一半，韩野先开口。',
+        line: "In the end we reached a compromise: he stays in charge of execution, I decide the pace.",
+        lineCn: '最后我们达成了妥协：执行归他管，节奏由我定。',
+        prompt: "根据上下文，选出画线词汇 'Compromise' 最准确的意思。",
         options: [
-          { key: 'A', en: 'strong feeling and drive', cn: '热情、强烈的动力', correct: true, reason: 'passion 是“让人愿意拼命的劲头”，正对上“又回来了”。' },
-          { key: 'B', en: 'a strong flavor', cn: '浓烈的味道', correct: false, reason: '这里是心理状态，不是食物的味道。' },
-          { key: 'C', en: 'a serious disagreement', cn: '严重的分歧', correct: false, reason: '分歧是 disagreement，与“热情”无关。' }
+          { key: 'A', en: 'an agreement where both sides give up something', cn: '妥协、双方各让一步', correct: true, reason: '一个管执行、一个定节奏，就是各让一步。' },
+          { key: 'B', en: 'a total victory for one side', cn: '一方全胜', correct: false, reason: '两个人都让了，不是一边赢。' },
+          { key: 'C', en: 'a broken promise', cn: '一个被打破的承诺', correct: false, reason: '这里是达成一致，不是失信。' }
         ],
-        analysis: 'passion 是“热爱、激情”，可以对人，也可以对一件事。陈默把它和妹妹的手术连在一起，说明他重燃的不是野心，是理由。',
-        wrongFeedback: '你选错了，火堆噼啪响了一声，雷豹想问什么，被韩青按住了手。',
-        afterCorrect: '陈默抬头看雪：“明天进山。”他站起来，“把该还的账还了，我想回家吃顿饭。”'
+        analysis: 'compromise 是「各退一步换一个能走下去的方案」。这碗面吃完，两个人才算真的和好。',
+        wrongFeedback: '你选错了，韩野把筷子放下，等你改口。气血 -10',
+        afterCorrect: '陈默把最后一口汤喝完：「就这么定。再吵，还来这家。」'
       }
     ],
-    completeText: '第 30 章结束。第二幕收尾。凌晨三点，七个位置里最后一个也被填上了名字——那是内鬼的代号。陈默把名单投进火里，说了一句：走吧。'
+    completeText: '第 30 章结束。苏振海的手术很顺利。推出手术室时，他抓着陈默的手说了一句：苏家欠你的，我认。'
   },
   {
     id: 'ml_31',
     index: 31,
-    title: '第 31 章 · 一个电话，七个人',
+    title: '第 31 章 · 庆功宴上的点评',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '进山前，陈默拨了七个电话。四个接通，两个关机，一个在接通后立刻挂断。他把手机收进兜里，说够了。营房外下着雪，车灯在雪里拉出两道白线。',
+    storyText: '赵家退场后，苏氏重新办了一场庆功宴。韩野喝到第三杯，开始挨个点评在场的人，声音不小，邻桌都听得见。',
     questions: [
       {
-        plotDescription: '营房里，陈默把一张照片推到老K面前，照片上是三年前那张撤退路线图。',
-        line: "I am going to confront him tonight, face to face, with the map in my hand.",
-        lineCn: '今晚我要当面跟他对质，手里拿着这张地图。',
-        prompt: "根据上下文，选出画线词汇 'confront' 最准确的意思。",
+        plotDescription: '韩野指了指不远处正在跟董事说话的苏晚。',
+        line: "Su Wan is savvy. She saw the trap before any of us did.",
+        lineCn: '苏晚很精明。她比我们任何人都早看出那个陷阱。',
+        prompt: "根据上下文，选出画线词汇 'Savvy' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to avoid someone quietly', cn: '悄悄躲开某人', correct: false, reason: '正好相反，他要当面把事摊开，不是躲。' },
-          { key: 'B', en: 'to face someone directly about a problem', cn: '对质、当面把问题摊开', correct: true, reason: 'confront 就是“正面找他对峙”，后面还有 face to face。' },
-          { key: 'C', en: 'to praise someone publicly', cn: '当众表扬某人', correct: false, reason: '这里气氛是审问，不是表扬。' }
+          { key: 'A', en: 'smart and quick to understand situations', cn: '精明、很懂行、脑子快', correct: true, reason: '她比所有人先看出陷阱，正是 savvy。' },
+          { key: 'B', en: 'very shy', cn: '非常害羞', correct: false, reason: '她当场把话说清楚，不是害羞。' },
+          { key: 'C', en: 'easily confused', cn: '容易被搞糊涂', correct: false, reason: '意思相反。' }
         ],
-        analysis: 'confront 是“直面、对质”，带压迫感。陈默不搞偷袭，他要的是对方看着地图说不出话。',
-        wrongFeedback: '你选错了，老K笑了一下，说“你拿什么对质”，手却在桌下摸手机。',
-        afterCorrect: '陈默把他的手按在桌上：“不用打。”他拉开椅子坐下，“人我已经请来了。”'
+        analysis: 'savvy 是「看得懂局、反应快」。韩野这句夸得不轻，苏晚听见了，只抬了抬杯子。',
+        wrongFeedback: '你选错了，韩野把酒放下，笑得意味深长。气血 -10',
+        afterCorrect: '陈默说：「她三年前就看出来了。只是没说。」'
       },
       {
-        plotDescription: '老K否认，陈默没有再问，只让人把他的通讯设备全部收走。',
-        line: "If he lied, we cut ties tonight. No second chance.",
-        lineCn: '如果他说谎，今晚就断绝关系。没有第二次机会。',
-        prompt: "根据上下文，选出画线词汇 'cut ties' 最准确的意思。",
+        plotDescription: '轮到点评陈默时，韩野一点都不客气。',
+        line: "I'll be blunt: your speech was too long, and the last line was unnecessary.",
+        lineCn: '我直说了：你那段讲话太长，最后一句完全多余。',
+        prompt: "根据上下文，选出画线词汇 'Blunt' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to tie a knot in a rope', cn: '在绳子上打个结', correct: false, reason: '那是字面动作，tie 在这里是“关系”。' },
-          { key: 'B', en: 'to sign a new contract', cn: '签一份新合同', correct: false, reason: '这里是断关系，不是建立合作。' },
-          { key: 'C', en: 'to end a relationship completely', cn: '断绝关系、彻底断开', correct: true, reason: 'cut ties 就是“把联系切断”，常指与人或组织断交。' }
+          { key: 'A', en: 'direct and honest, sometimes rude', cn: '直白、嘴不绕弯（有时显得不客气）', correct: true, reason: '他开场就说「我直说了」，正是这个意思。' },
+          { key: 'B', en: 'sharp and pointed', cn: '钝的、不锋利的', correct: false, reason: 'blunt 有「钝」的意思，但形容说话是不绕弯。' },
+          { key: 'C', en: 'very polite', cn: '非常客气', correct: false, reason: '他这番话一点都不客气。' }
         ],
-        analysis: 'cut ties with 是固定搭配，意思是“断绝往来”。陈默给的不是惩罚，是最后一次机会——但只有一次。',
-        wrongFeedback: '你选错了，老K把设备交出来时手在抖，营房里没人看他。',
-        afterCorrect: '设备里翻出一条三年前的短信，收件人写着“霍”。陈默看了两秒，把手机递给韩青。'
+        analysis: 'blunt 形容说话「直得有点扎人」。陈默听完没有生气，只问了一句：那最后一句该怎么改。',
+        wrongFeedback: '你选错了，韩野挑起眉，等着看你翻脸。气血 -10',
+        afterCorrect: '陈默拿过他的酒杯：「明天你写稿，我念。」'
       },
       {
-        plotDescription: '雷豹忽然跪下，说三年前那个缺口是他守的，是他把整队人带进了埋伏。',
-        line: "I messed up that night. I have been paying for it ever since.",
-        lineCn: '那晚是我搞砸的。从那以后我一直在还这笔债。',
-        prompt: "根据上下文，选出画线词汇 'messed up' 最准确的意思。",
+        plotDescription: '邻桌有人凑过来敬酒，话说得轻浮，苏晚放下杯子，笑着回了两句。',
+        line: "She gave him a sassy answer and walked off. The whole table laughed.",
+        lineCn: '她回了那人一句毒舌的话就走了。整桌人都笑了。',
+        prompt: "根据上下文，选出画线词汇 'Sassy' 最准确的意思。",
         options: [
-          { key: 'A', en: 'made a serious mistake', cn: '搞砸、犯了严重的错', correct: true, reason: 'mess up 就是“把事情弄坏”，正对上他自责的那晚。' },
-          { key: 'B', en: 'cleaned up a room', cn: '收拾了一间屋子', correct: false, reason: '那是 clean up，和“犯错”不是一回事。' },
-          { key: 'C', en: 'arrived exactly on time', cn: '分秒不差地到达', correct: false, reason: '意思完全不对，这里没有准时的意思。' }
+          { key: 'A', en: 'confidently rude in a playful way', cn: '毒舌、傲娇、嘴上不饶人', correct: true, reason: '她笑着把人噎回去，正是 sassy。' },
+          { key: 'B', en: 'very quiet and obedient', cn: '安静听话', correct: false, reason: '她恰恰是把人顶了回去。' },
+          { key: 'C', en: 'extremely sad', cn: '非常难过', correct: false, reason: '整桌人都笑了，气氛并不悲伤。' }
         ],
-        analysis: 'mess up 是“弄糟、搞砸”，口语里很常用。雷豹把它用在自己身上，是想替所有人背下那一夜。',
-        wrongFeedback: '你选错了，雷豹把头埋得更低，肩膀在抖，雪从门缝里灌进来。',
-        afterCorrect: '陈默把他从地上拉起来：“那晚的路线是我定的。”他手上用力，“要背，也是我先背。”'
+        analysis: 'sassy 是「嘴上带刺但不失分寸」。三年前她只会低头，现在她知道什么时候该还一句。',
+        wrongFeedback: '你选错了，那人尴尬地站了一会儿，自己走了。气血 -10',
+        afterCorrect: '陈默看着她走回来，低声说：「这一句，比我讲八分钟有用。」'
       },
       {
-        plotDescription: '陈默说那晚的命令是自己下的，让他别把一辈子搭进去自责。',
-        line: "Do not screw up your life blaming yourself for my order.",
-        lineCn: '别为了我下的命令，把你自己的人生弄糟。',
-        prompt: "根据上下文，选出画线词汇 'screw up' 最准确的意思。",
+        plotDescription: '有人提起苏明哲前几天发的道歉视频，桌上安静了一瞬。',
+        line: "His apology video was lame. Nobody bought it for a second.",
+        lineCn: '他那个道歉视频逊毙了。没人信他一秒。',
+        prompt: "根据上下文，选出画线词汇 'Lame' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to fasten something with screws', cn: '用螺丝把东西拧紧', correct: false, reason: '那是字面义，这里接的是 life，指“毁掉”。' },
-          { key: 'B', en: 'to ruin something', cn: '弄糟、毁掉', correct: true, reason: 'screw up 在口语里就是“搞坏、毁掉”，正对上人生。' },
-          { key: 'C', en: 'to shout at someone', cn: '冲某人大吼', correct: false, reason: 'screw up 不是吼叫，重点是“弄坏”。' }
+          { key: 'A', en: 'weak and not impressive', cn: '逊毙了、很没水准', correct: true, reason: '视频里念稿子、掉眼泪，谁都不信。' },
+          { key: 'B', en: 'unable to walk', cn: '腿脚不方便', correct: false, reason: 'lame 有「跛」的本义，但这里是「很差劲」。' },
+          { key: 'C', en: 'extremely moving', cn: '非常感人', correct: false, reason: '意思相反，大家都觉得假。' }
         ],
-        analysis: 'screw up 和 mess up 意思接近，但更口语、更随意。陈默用一个糙词，把雷豹从自责里拽了出来。',
-        wrongFeedback: '你选错了，雷豹抹了一把脸，说“那我跟你去”，声音终于稳了一点。',
-        afterCorrect: '陈默拍了拍他的肩：“去。”他转身走向雪地，“七个人，一个都不能少。”'
+        analysis: 'lame 在口语里是「太弱了、拿不出手」。陈默没有评价，他只说：让他继续发。',
+        wrongFeedback: '你选错了，桌上的人交换了一个眼神。气血 -10',
+        afterCorrect: '陈默说：「发得越多，越像在演。等他自己演不下去。」'
       }
     ],
-    completeText: '第 31 章结束。四辆车在雪里出发。老K被留在营房，由两个人看着。车灯消失在白茫茫的山口时，营地里的灯一盏盏灭了。'
+    completeText: '第 31 章结束。庆功宴散场时，苏晚在门口等他，说了一句：你今晚笑得比过去三年都多。'
   },
   {
     id: 'ml_32',
     index: 32,
-    title: '第 32 章 · 有人在说你的名字',
+    title: '第 32 章 · 新来的助理',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '边境小镇只有一家还亮着灯的酒馆。陈默坐在最里面的位置，桌上摆着两杯没动过的酒。线人是当地人，进门先看了一圈，才在他对面坐下。',
+    storyText: '新助理小周第一天上班，穿了一件很潮的外套，办公桌上却堆着七个没拆的快递。韩野站在门口看了半天。',
     questions: [
       {
-        plotDescription: '线人把杯子推过来，笑着说想听故事可以，但得先看到诚意。',
-        line: "You want me to spill the tea? Then put the money on the table.",
-        lineCn: '你想让我爆料？那先把钱放到桌上。',
-        prompt: "根据上下文，选出画线词汇 'spill the tea' 最准确的意思。",
+        plotDescription: '韩野绕着小周转了一圈，最后指着那件外套。',
+        line: "That jacket is dope. Where did you get it?",
+        lineCn: '那件外套酷毙了。你在哪儿买的？',
+        prompt: "根据上下文，选出画线词汇 'Dope' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to pour tea into a cup', cn: '把茶倒进杯子里', correct: false, reason: '这是字面拆解，桌上根本没有茶，说的是消息。' },
-          { key: 'B', en: 'to clean the table', cn: '把桌子擦干净', correct: false, reason: '线人在谈价钱，不是打扫卫生。' },
-          { key: 'C', en: 'to share the latest gossip or secrets', cn: '爆料、说出内幕', correct: true, reason: 'spill the tea 是网络流行语，就是“把知道的八卦倒出来”。' }
+          { key: 'A', en: 'very cool', cn: '酷毙了、很潮', correct: true, reason: '他绕着人看了一圈才问，明显是觉得好看。' },
+          { key: 'B', en: 'a harmful drug', cn: '毒品', correct: false, reason: 'dope 有毒品的意思，但这里是夸衣服酷。' },
+          { key: 'C', en: 'very expensive', cn: '非常贵', correct: false, reason: '他问的是在哪买的，不是价格。' }
         ],
-        analysis: 'spill the tea 字面是“把茶洒了”，实际指“说八卦、抖内幕”。线人先谈钱，说明这壶茶很贵。',
-        wrongFeedback: '你选错了，线人把杯子收回去，说“那没什么好聊的”，起身要走。',
-        afterCorrect: '陈默把一沓钱压在杯底：“说。”他把酒杯往前推了推，“说得值这个价，我再加。”'
+        analysis: 'dope 在口语里是「太酷了」。小周愣了一下才反应过来，这是老板的朋友在夸他。',
+        wrongFeedback: '你选错了，小周把外套往里收了收。气血 -10',
+        afterCorrect: '韩野拍了拍他肩膀：「穿得不错。桌上这些，先收进去。」'
       },
       {
-        plotDescription: '线人收了钱，还是吞吞吐吐，眼睛一直往门口瞟。陈默把刀轻轻放在桌上。',
-        line: "Swear to god you are not lying to me. I will know if you are.",
-        lineCn: '你对天发誓没骗我。你要是骗我，我一眼就看出来。',
-        prompt: "根据上下文，选出画线词汇 'Swear to god' 最准确的意思。",
+        plotDescription: '中午，陈默翻了一遍小周做的会议纪要，把它放在桌上。',
+        line: "The work is sloppy. Three typos on the first page, and the numbers don't match.",
+        lineCn: '这活做得太毛躁。第一页三个错字，数字还对不上。',
+        prompt: "根据上下文，选出画线词汇 'Sloppy' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to promise very seriously', cn: '对天发誓、郑重保证', correct: true, reason: 'swear to god 就是“拿命保证”，常用来逼人立誓。' },
-          { key: 'B', en: 'to pray in a church', cn: '在教堂里祈祷', correct: false, reason: '酒馆里没有祈祷，这是让人发誓。' },
-          { key: 'C', en: 'to curse at someone', cn: '诅咒某人', correct: false, reason: '这里不是骂人，是要一句保证。' }
+          { key: 'A', en: 'careless and untidy', cn: '邋遢、做得马虎', correct: true, reason: '错字和数字对不上，都是马虎造成的。' },
+          { key: 'B', en: 'extremely careful', cn: '极其仔细', correct: false, reason: '意思相反。' },
+          { key: 'C', en: 'very fast', cn: '非常快', correct: false, reason: 'sloppy 说的是质量，不是速度。' }
         ],
-        analysis: 'swear to god 是口语里最重的保证方式，带一点威胁意味。陈默不需要他信神，只需要他不敢赌。',
-        wrongFeedback: '你选错了，线人的手抖了一下，酒洒在桌上，他赶紧说“我说的都是真的”。',
-        afterCorrect: '线人压低声音：“今晚有一辆车会进镇。”他比了个方向，“不是运货的，是运人的。”'
+        analysis: 'sloppy 是「做得潦草」。陈默没有骂人，只把纪要推回去，让他重做一遍。',
+        wrongFeedback: '你选错了，小周站在原地，脸涨得通红。气血 -10',
+        afterCorrect: '陈默说：「我不要求你快。我要求你交上来的东西，我不用再看第二遍。」'
       },
       {
-        plotDescription: '线人絮絮叨叨抱怨规矩多、风险大，陈默敲了敲桌子，只想听重点。',
-        line: "Whatever. Just tell me where the truck stops tonight.",
-        lineCn: '随便吧。就告诉我今晚那辆卡车停在哪。',
-        prompt: "根据上下文，选出画线词汇 'Whatever' 最准确的意思。",
+        plotDescription: '下午，苏母打来电话，说苏明哲一天打了十一个电话要钱。',
+        line: "He gets needy when he has no money. He called her eleven times before noon.",
+        lineCn: '他一没钱就特别黏人。中午之前给她打了十一个电话。',
+        prompt: "根据上下文，选出画线词汇 'Needy' 最准确的意思。",
         options: [
-          { key: 'A', en: 'anything at all', cn: '任何东西', correct: false, reason: '那是 whatever 作代词的本义，这里是口语感叹。' },
-          { key: 'B', en: 'used to show you do not care', cn: '随便吧、无所谓（表示不在意）', correct: true, reason: '这里的 whatever 是“行了别说了”，表示不想继续这个话题。' },
-          { key: 'C', en: 'a strong wish', cn: '一个强烈的愿望', correct: false, reason: '语气是敷衍，不是许愿。' }
+          { key: 'A', en: 'needing too much attention or help', cn: '缺爱、过度依赖别人', correct: true, reason: '一天十一个电话要钱，就是过度依赖。' },
+          { key: 'B', en: 'having a lot of money', cn: '很有钱', correct: false, reason: '他恰恰是没钱。' },
+          { key: 'C', en: 'very independent', cn: '非常独立', correct: false, reason: '意思相反。' }
         ],
-        analysis: 'whatever 单独成句时，是“随便、无所谓”，有时还带点不耐烦。陈默把它当句号，把闲聊直接掐断。',
-        wrongFeedback: '你选错了，线人又绕回价钱，陈默把刀往回收了一寸，对方立刻闭嘴。',
-        afterCorrect: '线人抓了抓头发：“镇口，面粉厂。”他补了一句，“那地方晚上不该有人。”'
+        analysis: 'needy 是「总要从别人那里拿点什么才安心」。陈默听完只说：别接。',
+        wrongFeedback: '你选错了，电话那头苏母的声音更低了下去。气血 -10',
+        afterCorrect: '陈默接过电话：「阿姨，钱我可以给。但只给一次，写借条。」'
       },
       {
-        plotDescription: '线人报出地址，说那里半夜有带枪的守卫，陈默皱起眉，确认了一遍。',
-        line: "Seriously? A flour factory with armed guards at midnight?",
-        lineCn: '你认真的吗？面粉厂半夜有带枪的守卫？',
-        prompt: "根据上下文，选出画线词汇 'Seriously?' 最准确的意思。",
+        plotDescription: '挂了电话，苏晚问他会不会觉得自己太狠。',
+        line: "I was selfish for three years. I only thought about my own plan, not what it did to you.",
+        lineCn: '我自私了三年。我只想着自己的计划，没想过那对你意味着什么。',
+        prompt: "根据上下文，选出画线词汇 'Selfish' 最准确的意思。",
         options: [
-          { key: 'A', en: 'in a serious manner', cn: '严肃地、认真地', correct: false, reason: '那是副词用法，这里单独成句，是反问。' },
-          { key: 'B', en: 'very quickly', cn: '非常快地', correct: false, reason: '这里不是在说速度，而是在表达难以置信。' },
-          { key: 'C', en: 'used to show surprise or doubt', cn: '真的吗？（表示惊讶或怀疑）', correct: true, reason: 'Seriously? 单独用时就是“你在开玩笑吧”，表示惊讶质疑。' }
+          { key: 'A', en: 'caring only about yourself', cn: '自私、只想着自己', correct: true, reason: '他承认三年里只顾自己的复仇计划。' },
+          { key: 'B', en: 'generous to everyone', cn: '对所有人慷慨', correct: false, reason: '意思相反。' },
+          { key: 'C', en: 'very shy', cn: '非常害羞', correct: false, reason: '这里说的是只顾自己，不是害羞。' }
         ],
-        analysis: 'Seriously? 是口语里的高频反问，等于“真的假的”。陈默不是在确认信息，是在判断这地方有多不对劲。',
-        wrongFeedback: '你选错了，线人以为他不信，赶紧说“我亲眼看见的”，声音有点急。',
-        afterCorrect: '陈默把酒一饮而尽：“面粉厂不囤面粉，囤人。”他站起来，“带路。”'
+        analysis: 'selfish 是「只看得见自己那点事」。陈默说这句时没有辩解，这是他欠她的那句实话。',
+        wrongFeedback: '你选错了，苏晚把杯子转了半圈，没有接话。气血 -10',
+        afterCorrect: '苏晚说：「那你以后自私一点，先想你自己。」'
       }
     ],
-    completeText: '第 32 章结束。走出酒馆时雪停了。老周在车里等他，听完地址只说了一句：“那地方三年前也是他们的仓库。”'
+    completeText: '第 32 章结束。小周重做的纪要在下班前交了上来，一个错字都没有。陈默在末尾批了两个字：可以。'
   },
   {
     id: 'ml_33',
     index: 33,
-    title: '第 33 章 · 边境线上的第一枪',
+    title: '第 33 章 · 墨绿色长裙',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '面粉厂的围墙比想象中高，探照灯每隔二十秒扫一次。四个人贴着墙根走，雪在脚下发出细碎的响声。雷豹走在最后，忽然停住了。',
+    storyText: '慈善晚宴在江边酒店举行。苏晚穿了一条墨绿色长裙，从楼梯上走下来时，楼下说话的声音小了一半。角落里，一个陌生男人一直没动。',
     questions: [
       {
-        plotDescription: '雷豹踩到一块铁皮，声音在夜里传得很远，守卫的手电筒立刻照了过来。',
-        line: "My bad. I stepped on it. Move now, I will cover you.",
-        lineCn: '我的锅。我踩到的。快走，我掩护。',
-        prompt: "根据上下文，选出画线词汇 'My bad' 最准确的意思。",
+        plotDescription: '陈默站在楼梯口，手还扶在栏杆上，忘了往下走。',
+        line: "You look gorgeous. I forgot what I was going to say.",
+        lineCn: '你美呆了。我忘了自己要说什么。',
+        prompt: "根据上下文，选出画线词汇 'Gorgeous' 最准确的意思。",
         options: [
-          { key: 'A', en: 'my mistake, I am sorry', cn: '我的锅、是我错了', correct: true, reason: 'my bad 是口语里最常用的认错，等于“怪我”。' },
-          { key: 'B', en: 'my turn to try', cn: '轮到我试了', correct: false, reason: '这里是认错，不是轮到谁。' },
-          { key: 'C', en: 'my close friend', cn: '我的好朋友', correct: false, reason: '句子后面接的是“我踩到了”，明显在认错。' }
+          { key: 'A', en: 'extremely beautiful', cn: '美呆了、惊艳', correct: true, reason: '他站在楼梯口忘了走路，正是被惊艳到。' },
+          { key: 'B', en: 'very tired', cn: '非常疲惫', correct: false, reason: '这里夸的是外形，不是状态。' },
+          { key: 'C', en: 'poorly dressed', cn: '穿得很随便', correct: false, reason: '意思相反。' }
         ],
-        analysis: 'my bad 是美式口语里非常轻的道歉，通常用在熟人之间。雷豹说完立刻接“我掩护”，认错和补位一气呵成。',
-        wrongFeedback: '你选错了，手电筒的光扫过来，四个人只能贴着墙趴下，雪灌进领口。',
-        afterCorrect: '陈默没回头，只抬手做了个手势。雷豹就地卧倒，枪口对准了探照灯的方向。'
+        analysis: 'gorgeous 是「美到让人失语」。陈默这种人忘词，比任何情话都管用。',
+        wrongFeedback: '你选错了，苏晚扶着栏杆，笑了一下。气血 -10',
+        afterCorrect: '苏晚走到他面前：「想好了再说。我不急。」'
       },
       {
-        plotDescription: '撤到墙后，韩青低声问是谁暴露的，雷豹刚要开口，陈默抬手止住他。',
-        line: "Do not blame him. The guard was already walking this way.",
-        lineCn: '别怪他。那个守卫本来就在往这边走。',
-        prompt: "根据上下文，选出画线词汇 'blame' 最准确的意思。",
+        plotDescription: '进场后，韩野凑过来，朝角落抬了抬下巴。',
+        line: "Something is weird about that man. He hasn't touched his drink all night.",
+        lineCn: '那个男的有哪里不对劲。他一整晚都没碰过自己的酒。',
+        prompt: "根据上下文，选出画线词汇 'Weird' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to praise someone', cn: '表扬某人', correct: false, reason: '这里是在拦着别人追责，不是表扬。' },
-          { key: 'B', en: 'to say someone is responsible for something bad', cn: '怪罪、把责任归到某人身上', correct: true, reason: 'blame somebody 就是“怪他”，正对上“别怪他”。' },
-          { key: 'C', en: 'to forget something', cn: '忘记某事', correct: false, reason: 'blame 跟记忆无关，是追责。' }
+          { key: 'A', en: 'strange and unusual', cn: '奇怪、不对劲', correct: true, reason: '来参加晚宴却一口酒都不喝，确实反常。' },
+          { key: 'B', en: 'completely normal', cn: '完全正常', correct: false, reason: '韩野正是觉得不正常才说。' },
+          { key: 'C', en: 'very friendly', cn: '非常友好', correct: false, reason: '那人一直站着不动，谈不上友好。' }
         ],
-        analysis: 'blame 是“责怪、归咎”，常用 blame somebody for something。陈默先替雷豹挡下这一句，队伍才不会乱。',
-        wrongFeedback: '你选错了，韩青没再说话，但雷豹的头低了下去，握枪的手紧了紧。',
-        afterCorrect: '陈默把地图摊在雪地上：“他从那边过来，说明巡逻路线变了。”他点了点厂房后侧，“走这里。”'
+        analysis: 'weird 是「说不上来的怪」。陈默看了一眼，记住了那个人站的位置。',
+        wrongFeedback: '你选错了，韩野把酒杯放下，不再提。气血 -10',
+        afterCorrect: '陈默低声说：「让人查一下签到名单。别惊动他。」'
       },
       {
-        plotDescription: '雷豹和韩青压低声音争了两句，一个说绕后，一个说直接破门。',
-        line: "Stop arguing. The vent on the roof is our way in.",
-        lineCn: '别争了。屋顶那个通风口是我们的入口。',
-        prompt: "根据上下文，选出画线词汇 'arguing' 最准确的意思。",
+        plotDescription: '中场时，陈默要去后门接个电话，苏晚拉住他的袖子。',
+        line: "That back exit looks sketchy. Don't go alone.",
+        lineCn: '那个后门看着可疑。别一个人去。',
+        prompt: "根据上下文，选出画线词汇 'Sketchy' 最准确的意思。",
         options: [
-          { key: 'A', en: 'agreeing completely', cn: '完全同意', correct: false, reason: '两个方案不一样，正是在意见相左。' },
-          { key: 'B', en: 'laughing at someone', cn: '嘲笑某人', correct: false, reason: '语气很紧，不是开玩笑。' },
-          { key: 'C', en: 'disagreeing in words', cn: '争吵、用言语争辩', correct: true, reason: 'argue 就是“你一句我一句地争”，正对上两个方案。' }
+          { key: 'A', en: 'suspicious and possibly dangerous', cn: '可疑的、让人不放心', correct: true, reason: '后门没灯、又有人守着，确实让人不放心。' },
+          { key: 'B', en: 'newly painted', cn: '刚刷过漆', correct: false, reason: '她担心的是安全，不是装修。' },
+          { key: 'C', en: 'well lit and safe', cn: '灯光明亮又安全', correct: false, reason: '意思相反。' }
         ],
-        analysis: 'argue 是“争论”，语气比 discuss 重。陈默一句打断，是因为时间不够他们分对错。',
-        wrongFeedback: '你选错了，两个人还在低声争，厂房里的灯又多亮了一盏。',
-        afterCorrect: '陈默把地图折起来：“我上屋顶。”他看向雷豹，“你守门。”又看向韩青，“你接人。”'
+        analysis: 'sketchy 是「看着就不对劲」。陈默停下脚步，把手机收了回去。',
+        wrongFeedback: '你选错了，苏晚的手还拉着他袖子。气血 -10',
+        afterCorrect: '陈默说：「那你跟我一起。站我后面三步。」'
       },
       {
-        plotDescription: '厂房里忽然传出喊声，二楼的灯一盏盏亮起来，守卫正对着对讲机吼。',
-        line: "He is yelling into the radio. We have less than a minute.",
-        lineCn: '他在对着对讲机大喊。我们只剩不到一分钟。',
-        prompt: "根据上下文，选出画线词汇 'yelling' 最准确的意思。",
+        plotDescription: '十分钟后，那个陌生男人在走廊里拦住他们，准确说出了苏晚小时候住的街道。',
+        line: "The whole thing was bizarre. He knew her childhood address, down to the door number.",
+        lineCn: '整件事诡异得离谱。他知道她小时候的地址，连门牌号都对。',
+        prompt: "根据上下文，选出画线词汇 'Bizarre' 最准确的意思。",
         options: [
-          { key: 'A', en: 'shouting very loudly', cn: '大喊、吼叫', correct: true, reason: 'yell 就是“扯着嗓子喊”，正对上对着对讲机吼。' },
-          { key: 'B', en: 'whispering softly', cn: '轻声耳语', correct: false, reason: '正好相反，轻声说话不会惊动整栋楼。' },
-          { key: 'C', en: 'singing a song', cn: '唱歌', correct: false, reason: '这里没有音乐，是喊话报警。' }
+          { key: 'A', en: 'very strange, hard to believe', cn: '诡异的、离奇到难以置信', correct: true, reason: '陌生人报出一个老门牌号，确实离奇。' },
+          { key: 'B', en: 'very ordinary', cn: '非常普通', correct: false, reason: '意思相反。' },
+          { key: 'C', en: 'a little boring', cn: '有点无聊', correct: false, reason: '这件事让人后背发凉，不是无聊。' }
         ],
-        analysis: 'yell 是“大声喊叫”，比 shout 更口语。这一句喊出来，意味着潜入结束，硬仗开始。',
-        wrongFeedback: '你选错了，二楼的人已经开始往下跑，铁楼梯被踩得震天响。',
-        afterCorrect: '陈默第一个翻上墙：“进去。”他压低声音，“记住，先找人，别恋战。”'
+        analysis: 'bizarre 是「怪到不合常理」。陈默把苏晚往身后带了半步，这是本能。',
+        wrongFeedback: '你选错了，那人又往前走了半步。气血 -10',
+        afterCorrect: '陈默挡在中间：「你是谁派来的？」那人笑了笑，把名片放在他胸口。'
       }
     ],
-    completeText: '第 33 章结束。第一枪是雷豹开的，打掉了探照灯。黑暗落下来的那一秒，四个人同时动了。'
+    completeText: '第 33 章结束。名片上只有一行字：赵氏资产管理。陈默把名片折好，放进了口袋。'
   },
   {
     id: 'ml_34',
     index: 34,
-    title: '第 34 章 · 我不需要解释',
+    title: '第 34 章 · 那场八分钟的发布',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '厂房二楼堆满了纸箱，箱子里不是面粉，是账本和护照。角落里蹲着十几个人，最小的看着不到十岁。守卫头目被按在地上，脸贴着水泥地。',
+    storyText: '默行科技的第一场产品发布会在旧厂房改的展厅里举行。开场前十分钟，主屏幕黑了两次。陈默站在侧幕，手里没有稿子。',
     questions: [
       {
-        plotDescription: '头目一口咬定自己什么都不知道，说只是个看门的，别的一概不清楚。',
-        line: "Deny it all you want. Your name is on the shipping list.",
-        lineCn: '你尽管否认。你的名字就在运输清单上。',
-        prompt: "根据上下文，选出画线词汇 'Deny' 最准确的意思。",
+        plotDescription: '发布会结束后，后台的人挤在一起，韩野把手机举得老高。',
+        line: "That launch was epic. We hit every number we set.",
+        lineCn: '那场发布是史诗级的。我们定的每个数都达到了。',
+        prompt: "根据上下文，选出画线词汇 'Epic' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to admit everything', cn: '全部承认', correct: false, reason: '正好相反，deny 是“不承认”，他正在抵赖。' },
-          { key: 'B', en: 'to say something is not true', cn: '否认、说某事不是真的', correct: true, reason: 'deny 就是“拒不承认”，后面正是他抵赖的话。' },
-          { key: 'C', en: 'to explain in great detail', cn: '非常详细地解释', correct: false, reason: '他一句解释都没有，只是否认。' }
+          { key: 'A', en: 'extremely impressive', cn: '史诗级的、极其震撼', correct: true, reason: '目标全部达成，现场反响炸裂。' },
+          { key: 'B', en: 'a long poem', cn: '一部长篇史诗', correct: false, reason: 'epic 有史诗的意思，但这里是夸张的「太猛了」。' },
+          { key: 'C', en: 'a complete failure', cn: '彻底的失败', correct: false, reason: '意思相反。' }
         ],
-        analysis: 'deny 是“否认”，常接 deny doing something。陈默没跟他辩论，直接把清单摊开——否认在证据面前没有意义。',
-        wrongFeedback: '你选错了，头目继续喊冤，声音在空厂房里回荡，纸箱后面有孩子哭了一声。',
-        afterCorrect: '陈默把清单拍在他脸边：“三月十七，四十个人，你签的字。”他蹲下来，“现在还想说是看门的？”'
+        analysis: 'epic 在口语里是「大到夸张、太牛了」。韩野喊这句时，嗓子已经哑了。',
+        wrongFeedback: '你选错了，韩野把手机收回去，笑声停了。气血 -10',
+        afterCorrect: '陈默说：「别急着庆功。明天开始，交付才是真正的战场。」'
       },
       {
-        plotDescription: '头目见瞒不住，忽然改口，说自己也是被逼的，家里也有孩子，求陈默放过他。',
-        line: "Apologize to the families, not to me. I am not the one you hurt.",
-        lineCn: '去跟那些家属道歉，不是跟我。我不是被你伤害的人。',
-        prompt: "根据上下文，选出画线词汇 'Apologize' 最准确的意思。",
+        plotDescription: '回办公室的路上，陈默忽然开口，说自己上台时讲了个笑话。',
+        line: "My opening joke was cringe. I could feel the room freeze.",
+        lineCn: '我开场那个笑话太脚趾扣地了。我能感觉到全场僵住。',
+        prompt: "根据上下文，选出画线词汇 'Cringe' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to ask for money', cn: '伸手要钱', correct: false, reason: '这里不是要钱，是求饶认错。' },
-          { key: 'B', en: 'to threaten someone', cn: '威胁别人', correct: false, reason: '他跪在地上，是求，不是威胁。' },
-          { key: 'C', en: 'to say sorry', cn: '道歉、说对不起', correct: true, reason: 'apologize 就是“认错道歉”，后面还指明了该向谁道歉。' }
+          { key: 'A', en: 'embarrassing', cn: '令人尴尬、脚趾扣地', correct: true, reason: '全场僵住，就是被尬到了。' },
+          { key: 'B', en: 'extremely funny', cn: '非常搞笑', correct: false, reason: '如果好笑，屋子不会僵住。' },
+          { key: 'C', en: 'very serious', cn: '非常严肃', correct: false, reason: '这里说的是尴尬，不是严肃。' }
         ],
-        analysis: 'apologize to somebody 是“向某人道歉”。陈默把方向掰正：你该面对的不是我，是那些等不到孩子回家的人。',
-        wrongFeedback: '你选错了，头目愣了一下，又开始说自己上有老下有小，声音越来越小。',
-        afterCorrect: '陈默站起身，没有再看那个人：“带走。”他转身走向角落，“先看看这些孩子。”'
+        analysis: 'cringe 是「替人尴尬到缩起来」。陈默自己承认这一点，反而显得没那么尴尬了。',
+        wrongFeedback: '你选错了，韩野把脸埋进手掌里，肩膀在抖。气血 -10',
+        afterCorrect: '韩野笑了半天：「下次别讲笑话。你就讲数字。」'
       },
       {
-        plotDescription: '韩青问他这个人怎么处理，陈默翻开账本，看了很久才开口。',
-        line: "I can forgive a man who was scared. I cannot forgive a man who sold children.",
-        lineCn: '我可以原谅一个害怕的人。我不能原谅一个贩卖孩子的人。',
-        prompt: "根据上下文，选出画线词汇 'forgive' 最准确的意思。",
+        plotDescription: '苏晚从后排走过来，把一瓶水递给他。',
+        line: "You were fabulous up there. Don't let it go to your head.",
+        lineCn: '你在台上表现极好。别因此飘了。',
+        prompt: "根据上下文，选出画线词汇 'Fabulous' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to stop being angry and let it go', cn: '原谅、不再追究', correct: true, reason: 'forgive 就是“放下怒气、不再追究”，和后半句形成对比。' },
-          { key: 'B', en: 'to punish very severely', cn: '严厉惩罚', correct: false, reason: '原谅和惩罚是两回事，这句正是在区分。' },
-          { key: 'C', en: 'to forget a person\'s name', cn: '忘记一个人的名字', correct: false, reason: 'forgive 不是忘记，是有意识地选择不追究。' }
+          { key: 'A', en: 'extremely good', cn: '极好的、棒极了', correct: true, reason: '她先夸，再提醒他别飘。' },
+          { key: 'B', en: 'a famous story', cn: '一个著名的故事', correct: false, reason: 'fable 才是寓言，fabulous 是「极好」。' },
+          { key: 'C', en: 'barely acceptable', cn: '勉强可以', correct: false, reason: '她说的是「极好」，不是勉强。' }
         ],
-        analysis: 'forgive 是“原谅”，重点在主动放下。陈默划了一条线：害怕可以理解，卖人不能。',
-        wrongFeedback: '你选错了，韩青点了点头，却看见陈默的手在账本边缘压得很紧。',
-        afterCorrect: '陈默合上账本：“把证据备份三份。”他抬头，“一份给警方，一份给媒体，一份留给霍先生。”'
+        analysis: 'fabulous 是很高的夸奖。苏晚后面那句「别飘」，才是她真正想说的。',
+        wrongFeedback: '你选错了，苏晚把水放在他手里，转身走了。气血 -10',
+        afterCorrect: '陈默拧开瓶盖：「我飘不起来。屏幕黑的那两次，我到现在还记着。」'
       },
       {
-        plotDescription: '老K被带进来时还在喊冤，说自己跟了陈默五年，不该被这样对待。',
-        line: "He has held a grudge since I rejected his promotion. That is all this is.",
-        lineCn: '自从我否掉他的升职，他就一直记着仇。就这么回事。',
-        prompt: "根据上下文，选出画线词汇 'grudge' 最准确的意思。",
+        plotDescription: '提到那两次黑屏，技术负责人低着头，站在门口不敢进来。',
+        line: "The first demo was terrible. The screen went black twice in front of three hundred people.",
+        lineCn: '第一次演示糟糕透顶。三百个人面前，屏幕黑了两次。',
+        prompt: "根据上下文，选出画线词汇 'Terrible' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a small gift', cn: '一份小礼物', correct: false, reason: 'grudge 不是礼物，它带着怨气。' },
-          { key: 'B', en: 'a long-held anger about a past wrong', cn: '记仇、长期怀恨', correct: true, reason: 'hold a grudge 就是“把旧怨记在心里”，正对上五年。' },
-          { key: 'C', en: 'a written record', cn: '一份书面记录', correct: false, reason: '记录是 record，grudge 是心里的怨。' }
+          { key: 'A', en: 'very bad', cn: '糟糕透顶、非常差', correct: true, reason: '三百人面前黑屏两次，确实是重大失误。' },
+          { key: 'B', en: 'extremely good', cn: '极其出色', correct: false, reason: '意思相反。' },
+          { key: 'C', en: 'a little slow', cn: '有点慢', correct: false, reason: '黑屏不是慢，是故障。' }
         ],
-        analysis: 'hold a grudge 是固定搭配，指“记仇”。陈默把它说出来，不是为了解释，是为了让老K知道：原因早就查清了。',
-        wrongFeedback: '你选错了，老K的声音顿了一下，随即更大声地喊“我没有”，却没人接话。',
-        afterCorrect: '陈默把手里的编号卡翻过来：“升职是我否的。”他顿了顿，“因为那晚的路线，只有你一个人看过全图。”'
+        analysis: 'terrible 是「差到不能再差」。陈默没有当场追责，他把人叫进来，问的是原因。',
+        wrongFeedback: '你选错了，技术负责人把门推开了半扇。气血 -10',
+        afterCorrect: '陈默说：「黑屏的原因写成一页纸。明天早上放我桌上。」'
       }
     ],
-    completeText: '第 34 章结束。孩子们被一个个抱上车。最小的那个抓着韩青的袖子不肯松手，问她是不是来救他们的。韩青说：是。'
+    completeText: '第 34 章结束。发布会视频当晚播放量破了三百万。评论区吵成一片，但所有人都在讨论那个产品。'
   },
   {
     id: 'ml_35',
     index: 35,
-    title: '第 35 章 · 队里出了鬼',
+    title: '第 35 章 · 一顿家宴',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '账本最后一页写着一串代号，编号方式只有龙渊内部的人看得懂。陈默把那一页撕下来，放在车灯前照了很久，最后念出一个名字。',
+    storyText: '发布会后，苏晚带他回家吃饭。苏母第一次给他盛了汤，饭桌上却摆着一张照片——「朋友家的女儿」，说是给苏晚介绍的。',
     questions: [
       {
-        plotDescription: '车灯下，陈默把那张纸递给韩青，说队里有人把路线卖了出去。',
-        line: "Someone in this team betrayed us. The number is right here.",
-        lineCn: '队里有个人背叛了我们。编号就在这儿。',
-        prompt: "根据上下文，选出画线词汇 'betrayed' 最准确的意思。",
+        plotDescription: '苏母把照片往苏晚那边推，嘴里还在夸照片上的人。',
+        line: "He's a decent guy. Boring, but decent.",
+        lineCn: '他是个体面的人。无聊是无聊，但人还算正派。',
+        prompt: "根据上下文，选出画线词汇 'Decent' 最准确的意思。",
         options: [
-          { key: 'A', en: 'helped someone in secret', cn: '暗中帮助了某人', correct: false, reason: '如果是帮忙，就不会有七个人死了。' },
-          { key: 'B', en: 'forgot an order', cn: '忘记了一条命令', correct: false, reason: '忘记和背叛完全不同，这里是有意出卖。' },
-          { key: 'C', en: 'was disloyal and harmed someone who trusted him', cn: '背叛、辜负信任并伤害对方', correct: true, reason: 'betray 就是“背叛信任”，正对上把路线卖出去。' }
+          { key: 'A', en: 'good enough and honest', cn: '体面的、还算正派', correct: true, reason: '她先承认无聊，再肯定人品，正是 decent。' },
+          { key: 'B', en: 'extremely wealthy', cn: '极其富有', correct: false, reason: '她夸的是人品，不是钱。' },
+          { key: 'C', en: 'completely unsuitable', cn: '完全不合适', correct: false, reason: '她正想把这个人介绍出去。' }
         ],
-        analysis: 'betray 是“背叛”，比 cheat 更重，强调辜负信任。陈默说这句话时没有怒，只有一种很冷的确认。',
-        wrongFeedback: '你选错了，韩青把纸捏皱了，说“不可能”，声音却已经不稳。',
-        afterCorrect: '陈默把纸摊平：“可能不可能，看这个编号。”他指着一行小字，“这是三年前才改的编排方式。”'
+        analysis: 'decent 是「不算惊艳，但靠得住」。苏母这句话说得很客气，意思却很明显。',
+        wrongFeedback: '你选错了，苏母把照片又往前推了推。气血 -10',
+        afterCorrect: '苏晚把照片推回去：「妈，我有人了。您见过。」'
       },
       {
-        plotDescription: '老K还在解释，说自己只是把路线图“借”出去换情报，从没想过会死人。',
-        line: "You are a liar. You sold the route, and seven men died for it.",
-        lineCn: '你是个骗子。你把路线卖了，七个人因此死了。',
-        prompt: "根据上下文，选出画线词汇 'liar' 最准确的意思。",
+        plotDescription: '苏母转头看韩野，看了半天，摇了摇头。',
+        line: "Your friend is a weirdo, but he's a loyal one. I'll give him that.",
+        lineCn: '你那个朋友是个怪人，但人挺讲义气。这点我承认。',
+        prompt: "根据上下文，选出画线词汇 'Weirdo' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a person who tells lies', cn: '骗子、说谎的人', correct: true, reason: 'liar 就是“满嘴谎话的人”，后面正是指他卖路线。' },
-          { key: 'B', en: 'a careful planner', cn: '谨慎的策划者', correct: false, reason: '这里是在戳穿他，不是夸他会谋划。' },
-          { key: 'C', en: 'a brave soldier', cn: '勇敢的士兵', correct: false, reason: '语境是质问，和勇敢完全不搭。' }
+          { key: 'A', en: 'a strange person', cn: '怪人、行为古怪的人', correct: true, reason: '韩野在饭桌上大声点评菜，确实像个怪人。' },
+          { key: 'B', en: 'a very polite guest', cn: '非常有礼貌的客人', correct: false, reason: '她前面先说了「怪人」，不是夸礼貌。' },
+          { key: 'C', en: 'a professional chef', cn: '专业厨师', correct: false, reason: '跟职业无关。' }
         ],
-        analysis: 'liar 是“说谎的人”，语气很直接。陈默不跟他争“借”和“卖”的字眼，只把结果摆出来：七个人。',
-        wrongFeedback: '你选错了，老K急着辩解，说“我真的不知道会这样”，眼睛却不敢看人。',
-        afterCorrect: '陈默把账本扔在他脚边：“你不知道，但他们知道。”他转身，“带走，回去审。”'
+        analysis: 'weirdo 是「行为古怪的人」，带点嫌弃也带点亲近。苏母这句评价，已经是她能给的最好评价。',
+        wrongFeedback: '你选错了，韩野在厨房里打了个喷嚏。气血 -10',
+        afterCorrect: '陈默忍着笑：「阿姨，他要是听见，能高兴一晚上。」'
       },
       {
-        plotDescription: '韩青翻出老K的证件，照片和钢印都对不上，边角还有新裁的痕迹。',
-        line: "This ID is fake. The seal is printed, not stamped.",
-        lineCn: '这张证件是假的。钢印是印上去的，不是压出来的。',
-        prompt: "根据上下文，选出画线词汇 'fake' 最准确的意思。",
+        plotDescription: '饭后，苏晚在阳台上看着他收拾碗筷，忽然开口。',
+        line: "You look hot in that shirt. Don't get used to hearing it.",
+        lineCn: '你穿这件衬衫挺性感的。别习惯听这种话。',
+        prompt: "根据上下文，选出画线词汇 'Hot' 最准确的意思。",
         options: [
-          { key: 'A', en: 'very expensive', cn: '非常昂贵', correct: false, reason: '这里说的是真假，不是价钱。' },
-          { key: 'B', en: 'not genuine, made to deceive', cn: '假的、伪造来骗人的', correct: true, reason: 'fake 就是“假货、伪造”，正对上钢印是印的。' },
-          { key: 'C', en: 'newly issued', cn: '刚发下来的', correct: false, reason: '新发的证件不会钢印不对，这里说的是伪造。' }
+          { key: 'A', en: 'physically attractive', cn: '性感、外形很吸引人', correct: true, reason: '她在夸他穿衬衫好看。' },
+          { key: 'B', en: 'high in temperature', cn: '温度很高', correct: false, reason: 'hot 有热的意思，但这里是夸人。' },
+          { key: 'C', en: 'very angry', cn: '非常生气', correct: false, reason: '她的语气是玩笑，不是发火。' }
         ],
-        analysis: 'fake 是“伪造的、假的”，可作形容词也可作名词。一张假证件，把五年的信任全部作废。',
-        wrongFeedback: '你选错了，老K伸手要抢，被雷豹一把按住，证件掉在雪里。',
-        afterCorrect: '陈默捡起证件，看了看照片：“这张脸不是你的。”他抬起眼，“三年前，你是谁？”'
+        analysis: 'hot 用来形容人，是「外形很吸引人」。陈默愣了一下，碗差点没端稳。',
+        wrongFeedback: '你选错了，苏晚笑了一声，走回屋里。气血 -10',
+        afterCorrect: '陈默把碗放进水池：「那你也别习惯。我明天换一件。」'
       },
       {
-        plotDescription: '老K忽然哭起来，说自己这些年一直在替兄弟们守墓，每年都去。',
-        line: "Do not play the grieving brother. You are a hypocrite.",
-        lineCn: '别演那个守墓的兄弟了。你是个伪君子。',
-        prompt: "根据上下文，选出画线词汇 'hypocrite' 最准确的意思。",
+        plotDescription: '离开前，苏母站在门口，看着沙发上睡着的陈默，小声对苏晚说了一句。',
+        line: "He fell asleep on the couch with his shoes half off. It was cute.",
+        lineCn: '他在沙发上睡着了，鞋脱了一半。那样子挺可爱的。',
+        prompt: "根据上下文，选出画线词汇 'Cute' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a person who is very honest', cn: '非常诚实的人', correct: false, reason: '正好相反，hypocrite 是“说一套做一套”的人。' },
-          { key: 'B', en: 'a person who talks too much', cn: '话太多的人', correct: false, reason: '这不是话多的问题，是虚伪。' },
-          { key: 'C', en: 'a person who pretends to have good morals', cn: '伪君子、假装高尚的人', correct: true, reason: 'hypocrite 就是“嘴上讲道义、做的却是另一套”的人。' }
+          { key: 'A', en: 'endearing and sweet', cn: '可爱、让人心里一软', correct: true, reason: '累到鞋脱一半就睡着，确实让人心里一软。' },
+          { key: 'B', en: 'extremely ugly', cn: '非常难看', correct: false, reason: '意思相反。' },
+          { key: 'C', en: 'very dangerous', cn: '非常危险', correct: false, reason: '这里说的是可爱，不是危险。' }
         ],
-        analysis: 'hypocrite 是“伪君子”，比 fake 更具体：假装有道德。守墓的眼泪和卖路线的钱，放在一起就是这个词。',
-        wrongFeedback: '你选错了，老K的哭声停了一下，随即更大声，像是在演给谁看。',
-        afterCorrect: '陈默没有再看他：“你有时间去守墓，就没时间去想他们为什么躺在那儿。”'
+        analysis: 'cute 是「小地方让人觉得可爱」。苏母说完自己愣了一下，像是没料到自己会这么说。',
+        wrongFeedback: '你选错了，苏母把门轻轻带上。气血 -10',
+        afterCorrect: '苏晚给他盖了条毯子，回了一句：「他这三年，没睡过一个整觉。」'
       }
     ],
-    completeText: '第 35 章结束。回程的车上没人说话。韩青开着车，忽然说：“三年前那晚，他本来可以不去。”陈默看着窗外：“所以他去了。”'
+    completeText: '第 35 章结束。那晚之后，苏母再没提过相亲的事。她把那张照片收进了抽屉最底下。'
   },
   {
     id: 'ml_36',
     index: 36,
-    title: '第 36 章 · 谁在替他说话',
+    title: '第 36 章 · 早高峰的那节车厢',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '回国第三天，苏氏临时董事会。苏明哲带着律师进场，把一叠材料拍在桌上，说陈默挪用公款。会议室里坐了十几个人，苏晚坐在主位，一直没说话。',
+    storyText: '搬出苏家老宅的第三天，两个人在城东租了一套两居室。房子不大，窗台正对一条高架。清晨六点半，楼下的早点摊冒着白汽，苏晚站在玄关看他换鞋。',
     questions: [
       {
-        plotDescription: '苏明哲念完材料，又补了一句，说自己也是被蒙骗的，请董事会给他一个机会。',
-        line: "You backstabbed the man who kept your name out of prison. Say that again.",
-        lineCn: '你背刺了那个把你名字从牢里捞出来的人。你再说一遍。',
-        prompt: "根据上下文，选出画线词汇 'backstabbed' 最准确的意思。",
+        plotDescription: '苏晚把保温杯塞进他包里，朝窗外的高架抬了抬下巴。',
+        line: "You could take the car. A two-hour commute is insane when you run the company.",
+        lineCn: '你明明可以坐车。自己开公司的人，花两个小时通勤，太离谱了。',
+        prompt: "根据上下文，选出画线词汇 'Commute' 最准确的意思。",
         options: [
-          { key: 'A', en: 'betrayed someone who trusted you', cn: '背刺、从背后捅信任你的人一刀', correct: true, reason: 'backstab 就是“背后捅刀”，正对上他反咬一口。' },
-          { key: 'B', en: 'patted someone on the back', cn: '拍了拍某人的背', correct: false, reason: '那是字面动作，这里是比喻背叛。' },
-          { key: 'C', en: 'supported someone openly', cn: '公开支持某人', correct: false, reason: '和“背刺”正好相反，他是在反咬。' }
+          { key: 'A', en: 'the regular journey between home and work', cn: '上下班往返通勤', correct: true, reason: '他每天往返公司和家，这段路程就是 commute。' },
+          { key: 'B', en: 'a company car', cn: '公司配的专车', correct: false, reason: '她说的是每天两个小时的路程，不是那辆车。' },
+          { key: 'C', en: 'a business trip abroad', cn: '出国出差', correct: false, reason: '出差是去外地，这里说的是每天往返。' }
         ],
-        analysis: 'backstab 是“背刺”，比 betray 更有画面感：当面笑，背后捅。陈默这句话一出，会议室里的人开始重新看苏明哲。',
-        wrongFeedback: '你选错了，苏明哲立刻提高声音，说“你别血口喷人”，手却把材料往自己那边挪。',
-        afterCorrect: '陈默把一份转账记录推过去：“这笔钱从你的私人账户出去，又回到你的私人账户。”他顿了顿，“我只帮你挡了三年，没帮你签字。”'
+        analysis: 'commute 指每天从家到公司的往返路程。陈默不坐那辆黑色轿车，他想自己重新走一遍这座城市。',
+        wrongFeedback: '你选错了，苏晚把保温杯往他手里一按：「别逞强，地铁上也能睡。」陈默低头笑了一下。气血 -10',
+        afterCorrect: '陈默挤上早高峰的地铁，站了四十分钟。他在人群里看见一个穿着工装、脑袋一点一点打瞌睡的中年男人，忽然想起三年前的自己。'
       },
       {
-        plotDescription: '苏明哲转头看向苏晚，说那些转账都是陈默逼他做的，还说苏晚只是记错了时间。',
-        line: "Do not gaslight her. The emails are time-stamped, and she wrote half of them.",
-        lineCn: '别PUA她了。邮件都有时间戳，其中一半还是她写的。',
-        prompt: "根据上下文，选出画线词汇 'gaslight' 最准确的意思。",
+        plotDescription: '午休时，苏晚推开他办公室的门，看见他趴在桌上。',
+        line: "Take a nap. You have twenty minutes before the client calls.",
+        lineCn: '打个盹吧。客户电话之前你还有二十分钟。',
+        prompt: "根据上下文，选出画线词汇 'Nap' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to light a gas stove', cn: '点燃气灶', correct: false, reason: '这是字面拼合，这里说的是心理操控。' },
-          { key: 'B', en: 'to make someone doubt their own memory', cn: 'PUA、让人怀疑自己的记忆', correct: true, reason: 'gaslight 指用话术让对方怀疑现实，正对上他说“你记错了”。' },
-          { key: 'C', en: 'to send a long email', cn: '发一封很长的邮件', correct: false, reason: '跟邮件长度无关，这里说的是操控人心。' }
+          { key: 'A', en: 'a short sleep, especially during the day', cn: '小睡、打盹', correct: true, reason: '二十分钟的白天短睡，正是 nap。' },
+          { key: 'B', en: 'a full night of sleep', cn: '整整一夜的睡眠', correct: false, reason: '只有二十分钟，不可能是整夜。' },
+          { key: 'C', en: 'a coffee break', cn: '喝杯咖啡歇一下', correct: false, reason: '她让他睡，不是让他喝咖啡。' }
         ],
-        analysis: 'gaslight 来自老电影，指“反复否认事实，让对方怀疑自己”。苏明哲正是这么做的，所以他被当场喝止。',
-        wrongFeedback: '你选错了，苏晚的手指在桌面上收紧，眼神有一瞬间真的开始动摇。',
-        afterCorrect: '苏晚深吸一口气：“时间戳在这里。”她把打印件推出去，“第一封，是我发的。”'
+        analysis: 'nap 是白天的短暂小睡。办公室那张旧沙发，是陈默这半年唯一能睡踏实的地方。',
+        wrongFeedback: '你选错了，苏晚把百叶窗拉下来一半：「我不是在跟你商量。」陈默这才把眼镜摘了。气血 -10',
+        afterCorrect: '陈默睡了十七分钟，醒来时桌上多了一杯温水。他看了看表，正好赶上客户的电话。'
       },
       {
-        plotDescription: '陈默把三份材料摊开，说这几年董事会每一次表决，背后都有人在牵线。',
-        line: "He manipulated the board for years. Every vote was written before the meeting.",
-        lineCn: '他操控董事会好几年了。每一次投票，会议前就写好了。',
-        prompt: "根据上下文，选出画线词汇 'manipulated' 最准确的意思。",
+        plotDescription: '晚上九点，两个人趴在茶几上翻手机，谁也不想动。',
+        line: "I am too tired to cook. Let us order in and call it a night.",
+        lineCn: '我累得不想做饭了。点个外卖，今天就到这儿吧。',
+        prompt: "根据上下文，选出画线词汇 'Order in' 最准确的意思。",
         options: [
-          { key: 'A', en: 'repaired a machine', cn: '修理了一台机器', correct: false, reason: 'manipulate 有“操作”的意思，但这里接的是董事会。' },
-          { key: 'B', en: 'spoke honestly to everyone', cn: '对所有人说实话', correct: false, reason: '正好相反，这里说的是暗中操控。' },
-          { key: 'C', en: 'controlled people or things unfairly', cn: '操控、暗中摆布', correct: true, reason: 'manipulate 就是“用手段控制别人”，正对上“会前就写好”。' }
+          { key: 'A', en: 'to have food delivered to your home', cn: '点外卖送到家里', correct: true, reason: '她不想做饭，让人把饭送上门，就是 order in。' },
+          { key: 'B', en: 'to book a table at a restaurant', cn: '在餐厅订位子', correct: false, reason: '她不想出门，订位子不符合语境。' },
+          { key: 'C', en: 'to pack leftovers to go', cn: '把剩菜打包带走', correct: false, reason: '家里没有剩菜，也没有店可以去。' }
         ],
-        analysis: 'manipulate 是“操控”，强调不光彩的手段。陈默把“投票”和“会议前”放在一起，操控的手法就不言自明。',
-        wrongFeedback: '你选错了，几位董事开始翻自己面前的表决记录，脸色一个比一个难看。',
-        afterCorrect: '陈默把最后一份材料放在苏振海面前：“三年前那笔担保，也是这么通过的。”他收回手，“现在，谁该解释？”'
+        analysis: 'order in 是把饭菜叫到家里。苏晚翻着菜单，忽然问他还记不记得苏家厨房那口熬了三年的汤锅。',
+        wrongFeedback: '你选错了，苏晚把手机推过来：「你自己选，别又点那家辣的。」气血 -10',
+        afterCorrect: '外卖送到时下起了雨。两个人挤在小餐桌前吃一份水煮鱼，谁也没提过去的日子。'
       },
       {
-        plotDescription: '一位老董事出来打圆场，劝苏晚签个字算了，说女人别把事情做绝，退一步大家都好。',
-        line: "Do not be a push over. You are the chairwoman, not a guest in this room.",
-        lineCn: '别当老好人。你是董事长，不是这间屋子里的客人。',
-        prompt: "根据上下文，选出画线词汇 'push over' 最准确的意思。",
+        plotDescription: '周末傍晚，苏晚换上外套站在门口，手里拎着包。',
+        line: "I do not want to cook on my birthday. Let us eat out for once.",
+        lineCn: '生日我不想做饭。就这一次，我们下馆子吧。',
+        prompt: "根据上下文，选出画线词汇 'Eat out' 最准确的意思。",
         options: [
-          { key: 'A', en: 'someone who is easily controlled by others', cn: '老好人、容易被摆布的人', correct: true, reason: 'push over 指“随便一推就让步的人”，正对上劝她退一步。' },
-          { key: 'B', en: 'a strong and decisive leader', cn: '强势果断的领导者', correct: false, reason: '正好相反，这里是在劝她别软弱。' },
-          { key: 'C', en: 'a person whose job is pushing chairs', cn: '专门推椅子的人', correct: false, reason: '这是字面拼凑，完全不是这个意思。' }
+          { key: 'A', en: 'to eat at a restaurant instead of at home', cn: '下馆子、在外面餐厅吃', correct: true, reason: '生日不想做饭，去外面吃，就是 eat out。' },
+          { key: 'B', en: 'to eat standing on the street', cn: '在街边站着吃', correct: false, reason: '她换好外套拎着包，是要正经吃饭。' },
+          { key: 'C', en: 'to eat far too much', cn: '吃太多', correct: false, reason: 'eat out 说的是在哪里吃，不是吃多少。' }
         ],
-        analysis: 'push over 指“太好说话、容易被人推着走”的人。陈默这句不是命令，是提醒她别忘了自己坐在主位。',
-        wrongFeedback: '你选错了，苏晚真的伸手去拿笔，会议室里有人松了口气。',
-        afterCorrect: '苏晚把笔放下了：“今天的会，不签任何东西。”她抬头，“先查账，再谈责任。”'
+        analysis: 'eat out 是去外面的餐厅吃饭。陈默手上还捏着刚签的文件，听见这句，把外套拿起来就走。',
+        wrongFeedback: '你选错了，苏晚抱着手臂看他：「你是不是又想说省钱？」气血 -10',
+        afterCorrect: '那家小馆子只有六张桌子。陈默提前订了靠窗的位置，桌上摆着一支很便宜的红玫瑰。苏晚坐下时愣了很久。'
       }
     ],
-    completeText: '第 36 章结束。会议开到傍晚。散场时苏振海一个人坐在空会议室里，面前的材料一份也没动。'
+    completeText: '第 36 章结束。那顿饭吃到打烊，苏晚一直没把那支玫瑰放下。回去的路上她说：「明年别买花了，太贵。」'
   },
   {
     id: 'ml_37',
     index: 37,
-    title: '第 37 章 · 站直了，别低头',
+    title: '第 37 章 · 水槽里堆了两天的碗',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '第二天的董事会继续。苏明哲带了律师和两个记者，摆明了要把水搅浑。苏晚到场时，所有人的目光都落在她身上，她把手里的文件放在桌上，没有坐。',
+    storyText: '周日早上八点，水槽里的碗堆了两天。陈默坐在沙发上盯着手机，屏幕的光照着他没睡好的脸。苏晚披着头发从卧室出来，绕开地上两个没拆的快递盒。',
     questions: [
       {
-        plotDescription: '苏晚第一次在董事会上公开表态，声音不大，但没有人打断她。',
-        line: "I will stand up for him, because he is the only one here who told the truth.",
-        lineCn: '我要为他说话，因为这里只有他说了实话。',
-        prompt: "根据上下文，选出画线词汇 'stand up for' 最准确的意思。",
+        plotDescription: '苏晚用脚尖踢了踢纸箱，把抹布扔到他腿上。',
+        line: "These chores are not going to do themselves. You take the kitchen, I take the bathroom.",
+        lineCn: '这些家务不会自己做完。厨房归你，卫生间归我。',
+        prompt: "根据上下文，选出画线词汇 'Chores' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to sit down quietly', cn: '安静地坐下', correct: false, reason: '方向相反，她是站起来替他说话。' },
-          { key: 'B', en: 'to support and speak in favor of someone', cn: '捍卫、为某人挺身而出', correct: true, reason: 'stand up for somebody 就是“站出来支持他”，正对上公开表态。' },
-          { key: 'C', en: 'to stand in a line', cn: '排队', correct: false, reason: '与排队无关，这里是比喻“站台”。' }
+          { key: 'A', en: 'small regular jobs around the house', cn: '家里的日常杂活、家务', correct: true, reason: '洗碗、刷卫生间，都是家里的日常活，就是 chores。' },
+          { key: 'B', en: 'office paperwork', cn: '办公室的文件工作', correct: false, reason: '这里说的是厨房和卫生间，不是公司。' },
+          { key: 'C', en: 'shopping lists', cn: '购物清单', correct: false, reason: '她分配的是干活，不是列清单。' }
         ],
-        analysis: 'stand up for 是“为……挺身而出”，比 support 更有动作感。苏晚站起来的那一刻，等于把自己的位置押了上去。',
-        wrongFeedback: '你选错了，她的话被一声冷笑打断，记者们的相机举得更高了。',
-        afterCorrect: '苏晚把文件翻开：“这是三年的审计记录。”她环视一圈，“谁想看完，我一份一份发。”'
+        analysis: 'chores 是家里那些琐碎但必须做的活。陈默在苏家当了三年「废物」，从没碰过扫把。',
+        wrongFeedback: '你选错了，苏晚把抹布往他怀里一塞：「你在苏家什么都不干，现在不一样了。」气血 -10',
+        afterCorrect: '陈默把袖子卷到肘上，第一次认真洗完一池碗。苏晚靠在卫生间门口看着他，一直没出声。'
       },
       {
-        plotDescription: '有人拍桌子说她被洗脑了，还说苏氏迟早毁在她手上。',
-        line: "You want a fight? Then I will fight back, and I will do it with evidence.",
-        lineCn: '想吵？那我就反击，而且用证据反击。',
-        prompt: "根据上下文，选出画线词汇 'fight back' 最准确的意思。",
+        plotDescription: '陈默点开邮箱，立刻又划走，端着水杯在屋子里绕了一圈。',
+        line: "Stop procrastinating. That report was due yesterday.",
+        lineCn: '别拖了。那份报告昨天就该交了。',
+        prompt: "根据上下文，选出画线词汇 'Procrastinate' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to run away quickly', cn: '赶快逃走', correct: false, reason: '她没有退，反而是回击。' },
-          { key: 'B', en: 'to give up the argument', cn: '放弃争论', correct: false, reason: '正好相反，她说的是“那我就反击”。' },
-          { key: 'C', en: 'to resist and counterattack', cn: '反击、回击', correct: true, reason: 'fight back 就是“被打压后还手”，正对上用证据反击。' }
+          { key: 'A', en: 'to keep delaying something you should do', cn: '拖延、一直往后推', correct: true, reason: '报告该交了，他还在屋里转圈，这就是在拖。' },
+          { key: 'B', en: 'to finish something ahead of time', cn: '提前把事情做完', correct: false, reason: '报告已经逾期，正好相反。' },
+          { key: 'C', en: 'to complain about work', cn: '抱怨工作', correct: false, reason: '他不是在抱怨，是在躲着不动手。' }
         ],
-        analysis: 'fight back 是“反击”，可以是动手，也可以是言语。苏晚把它和 evidence 连在一起，说明她不是情绪化。',
-        wrongFeedback: '你选错了，那位董事越说越难听，苏晚却没有再看他一眼。',
-        afterCorrect: '她把一页纸推过去：“这一笔，是你签的字。”她顿了顿，“现在，还要继续吵吗？”'
+        analysis: 'procrastinate 是明明该做却一直往后推。这份报告，是他创业以来第一次不敢下笔的东西。',
+        wrongFeedback: '你选错了，苏晚把他的椅子转向书桌：「你现在的对手不是赵天佑，是你自己。」气血 -10',
+        afterCorrect: '陈默在书桌前坐了三个小时。报告写完时窗外已经黑了，苏晚趴在旁边睡着了，手里还捏着笔。'
       },
       {
-        plotDescription: '苏明哲的律师站起来，说这些材料来源不合法，不能作为依据。',
-        line: "I will defend this company with every legal tool I have.",
-        lineCn: '我会用我手上一切合法手段来捍卫这家公司。',
-        prompt: "根据上下文，选出画线词汇 'defend' 最准确的意思。",
+        plotDescription: '晚上，苏晚把笔记本搬到床上，拍了拍身边的位置。',
+        line: "Let us binge-watch the whole season tonight. No work, no calls.",
+        lineCn: '今晚我们把这季一口气刷完。不谈工作，不接电话。',
+        prompt: "根据上下文，选出画线词汇 'Binge-watch' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to protect someone or something from attack', cn: '辩护、保护使其不受攻击', correct: true, reason: 'defend 就是“守住、辩护”，正对上用合法手段保护公司。' },
-          { key: 'B', en: 'to attack before anyone else', cn: '抢在别人之前动手', correct: false, reason: '这里是防守和辩护，不是先发制人。' },
-          { key: 'C', en: 'to sell the company', cn: '把公司卖掉', correct: false, reason: '如果卖掉，就谈不上捍卫了。' }
+          { key: 'A', en: 'to watch many episodes in one go', cn: '一口气连刷很多集', correct: true, reason: '把一整季连着看完，就是 binge-watch。' },
+          { key: 'B', en: 'to watch a movie at the cinema', cn: '去电影院看电影', correct: false, reason: '她把电脑搬到了床上。' },
+          { key: 'C', en: 'to watch something twice', cn: '把片子看两遍', correct: false, reason: '她强调的是连着刷完一整季。' }
         ],
-        analysis: 'defend 是“防御、辩护”，法庭和商战里都常用。苏晚说“合法手段”，是把这场仗拉回规则之内。',
-        wrongFeedback: '你选错了，律师顺势要求休会，记者们立刻围上去，场面乱成一片。',
-        afterCorrect: '苏晚没有退：“材料来源合法，我负全责。”她把名片放在桌上，“有异议，法庭上见。”'
+        analysis: 'binge-watch 是连着刷很多集。这是苏晚第一次在他面前说「不接电话」——她还记得他曾经三天不回消息。',
+        wrongFeedback: '你选错了，苏晚把电脑一合：「那我自己看。」陈默赶紧按住屏幕。气血 -10',
+        afterCorrect: '那一季六集，他们看到凌晨一点。苏晚靠在他肩上睡着，陈默把音量调到最小，一直没关。'
       },
       {
-        plotDescription: '散会时，苏明哲在后面骂骂咧咧，说要让陈默身败名裂，让苏家后悔。',
-        line: "Ignore him. He is loud because he has nothing left.",
-        lineCn: '无视他。他叫得响，是因为手里已经没牌了。',
-        prompt: "根据上下文，选出画线词汇 'Ignore' 最准确的意思。",
+        plotDescription: '灯关了，苏晚发现他还在被子里看手机。',
+        line: "Stop scrolling. You have been on that phone for an hour.",
+        lineCn: '别刷了。你抱着手机看了一个小时了。',
+        prompt: "根据上下文，选出画线词汇 'Scroll' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to listen very carefully', cn: '非常仔细地听', correct: false, reason: '正好相反，ignore 是不理不睬。' },
-          { key: 'B', en: 'to pay no attention to', cn: '无视、不当回事', correct: true, reason: 'ignore 就是“不理会”，正对上“叫得响是因为没牌”。' },
-          { key: 'C', en: 'to answer politely', cn: '礼貌地回应', correct: false, reason: '陈默根本没有回应。' }
+          { key: 'A', en: 'to move through content on a screen', cn: '在屏幕上下滑、刷手机', correct: true, reason: '他躲在被子里一直看手机，就是 scroll。' },
+          { key: 'B', en: 'to write a long message', cn: '写一条很长的消息', correct: false, reason: '她只说他在看，不是在打字。' },
+          { key: 'C', en: 'to make a phone call', cn: '打电话', correct: false, reason: '他在滑屏幕，不是在通话。' }
         ],
-        analysis: 'ignore 是“故意不理会”，比“没听见”更主动。陈默不接话，是因为回应本身也是一种给面子。',
-        wrongFeedback: '你选错了，苏晚回头看了一眼，苏明哲立刻叫得更凶，走廊里全是回声。',
-        afterCorrect: '苏晚收回目光：“走吧。”她走在前面，背挺得很直，“明天还有一场硬仗。”'
+        analysis: 'scroll 本义是「滚动」，在手机上就是不断往下滑。陈默看的是赵氏集团昨天的新闻。',
+        wrongFeedback: '你选错了，苏晚把手机从他手里抽走：「明天再看。它跑不了。」气血 -10',
+        afterCorrect: '陈默躺下，盯着天花板。苏晚背对着他，忽然说了一句：「赵天佑跑不了，你也别把自己熬坏。」'
       }
     ],
-    completeText: '第 37 章结束。那天的会议记录被媒体拿到，标题写得很直白：苏氏董事长公开支持丈夫。苏晚看完只说了两个字：挺好。'
+    completeText: '第 37 章结束。第二天早上，苏晚醒来时发现自己的手机里多了一条备忘录：明天我洗碗。'
   },
   {
     id: 'ml_38',
     index: 38,
-    title: '第 38 章 · 你敢动她一下',
+    title: '第 38 章 · 周六下午的沙发',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '下午四点，学校打来电话：陈小满没回家。半小时后，陈默收到一段视频，女孩被绑在椅子上，镜头外有人笑着说，三天内把东西交出来，否则就撕票。客厅里坐着七个人，没有一个人敢先开口。',
+    storyText: '连着加了半个月的班，这个周六陈默什么也没安排。窗帘没拉开，屋子里暗得像傍晚。苏晚洗完澡出来，头发还在滴水。',
     questions: [
       {
-        plotDescription: '视频放到一半，屋里所有人都停下动作，连呼吸都放轻了，等他先说话。',
-        line: "I need total silence for one minute. Then I will tell you what we do.",
-        lineCn: '我需要一分钟彻底的安静。然后我会告诉你们该做什么。',
-        prompt: "根据上下文，选出画线词汇 'silence' 最准确的意思。",
+        plotDescription: '苏晚擦着头发，看见他窝在沙发上低头滑手机。',
+        line: "What are you swiping through? You look like a teenager.",
+        lineCn: '你在滑什么？看着跟个高中生似的。',
+        prompt: "根据上下文，选出画线词汇 'Swipe' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a loud warning alarm', cn: '刺耳的警报声', correct: false, reason: '视频里没有任何警报，他要的是没人出声。' },
-          { key: 'B', en: 'an apology for a mistake', cn: '为错误道歉', correct: false, reason: '道歉是 apology，不是 silence。' },
-          { key: 'C', en: 'complete quiet, no one speaking', cn: '完全的安静、没人出声', correct: true, reason: 'silence 就是“不出声”，正对上他要所有人闭嘴一分钟。' }
+          { key: 'A', en: 'to move your finger across a touchscreen', cn: '在触屏上滑动、滑屏', correct: true, reason: '他一直低头滑屏幕，正是 swipe。' },
+          { key: 'B', en: 'to turn the pages of a book', cn: '翻书页', correct: false, reason: '他手里拿的是手机，不是书。' },
+          { key: 'C', en: 'to shut the phone off', cn: '把手机关机', correct: false, reason: '她问他在滑什么，手机明明是开着的。' }
         ],
-        analysis: 'silence 是“沉默、无声”。陈默不是要情绪，他要的是安静——因为在这种时候，一句多余的话就能把节奏带乱。',
-        wrongFeedback: '你选错了，有人以为他在发火，急着解释，屋里顿时乱成一片，陈默抬眼看过去，全场才重新静下来。',
-        afterCorrect: '一分钟里，他只看完了那段视频的帧数、光位、窗外的车声。然后他抬起头：“地址我有了。小满，今晚回来。”'
+        analysis: 'swipe 是在触屏上滑动。他滑的是招聘软件——默行科技的第二个员工，还没招到。',
+        wrongFeedback: '你选错了，苏晚凑过来看了一眼：「招人？你连自己都照顾不好。」气血 -10',
+        afterCorrect: '陈默把手机倒扣在茶几上：「走吧，今天不看了。」'
       },
       {
-        plotDescription: '陈默把手机放在桌上，对着电话那头的人说了这一句，语气平静得反常。',
-        line: "If you threaten my sister again, I will come for you myself.",
-        lineCn: '你要是再威胁我妹妹一次，我会亲自来找你。',
-        prompt: "根据上下文，选出画线词汇 'threaten' 最准确的意思。",
+        plotDescription: '下午三点，苏晚端着水果从厨房出来，发现他已经躺在沙发上没了声音。',
+        line: "He just crashed. Let him sleep, he has not rested in weeks.",
+        lineCn: '他直接累晕过去了。让他睡吧，他好几周没好好休息了。',
+        prompt: "根据上下文，选出画线词汇 'Crash' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to warn someone that you will harm them', cn: '威胁、扬言要伤害', correct: true, reason: '绑人、提条件，这就是赤裸裸的威胁。' },
-          { key: 'B', en: 'to ask someone politely for help', cn: '礼貌地请人帮忙', correct: false, reason: '这里没有人客气，对方在拿人命谈条件。' },
-          { key: 'C', en: 'to thank someone publicly', cn: '公开表示感谢', correct: false, reason: '方向和语境都反了，没人会为绑人致谢。' }
+          { key: 'A', en: 'to fall asleep from deep tiredness', cn: '累到直接睡死过去', correct: true, reason: '他躺下就没了声音，是累到倒下睡着。' },
+          { key: 'B', en: 'to fall off the sofa', cn: '从沙发上摔下来', correct: false, reason: '他还好好躺在沙发上。' },
+          { key: 'C', en: 'to break something', cn: '把东西弄坏', correct: false, reason: '这里说的是人，不是物件。' }
         ],
-        analysis: 'threaten 是“以伤害相要挟”。陈默把这句还回去，等于告诉对方：你手里那点筹码，我从来不怕。',
-        wrongFeedback: '你选错了，对方以为他还在讲道理，笑着又加了一句“那就看谁先眨眼”，陈默的手指没有动。',
-        afterCorrect: '电话那头沉默了两秒。陈默继续说：“我给你一个小时准备。一个小时后，我不再打电话了。”'
+        analysis: 'crash 口语里常指「累到直接倒下睡」。苏晚给他盖上毯子，把他露在外面的脚也塞了进去。',
+        wrongFeedback: '你选错了，苏晚自己小声补了一句：「算了，我自己跟自己说。」气血 -10',
+        afterCorrect: '陈默一觉睡到五点。醒来时屋里开着暖灯，苏晚在阳台浇花，回头看他一眼：「醒了？」'
       },
       {
-        plotDescription: '对方笑着说这只是个“提醒”，还说三天后可能发生更糟的事，语气像在谈天气。',
-        line: "You want to ruin me? Try. But you will lose everything first.",
-        lineCn: '你想搞垮我？可以试试。但你会先失去一切。',
-        prompt: "根据上下文，选出画线词汇 'ruin' 最准确的意思。",
+        plotDescription: '傍晚，苏晚拉着他出门，说楼下新开了一家旧书店。',
+        line: "Come on, let us just hang out for an hour. No plans.",
+        lineCn: '走吧，我们就闲逛一个小时。不做计划。',
+        prompt: "根据上下文，选出画线词汇 'Hang out' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to repair something broken', cn: '修好破损的东西', correct: false, reason: 'ruin 和 repair 正好相反，一个是毁，一个是修。' },
-          { key: 'B', en: 'to destroy someone completely', cn: '彻底毁掉、让人一败涂地', correct: true, reason: 'ruin 比 damage 更狠，是“毁到没法翻身”。所以他才说你会先失去一切。' },
-          { key: 'C', en: 'to rent a place to live', cn: '租一个住处', correct: false, reason: '租是 rent，和 ruin 只差一个字母，意思完全不同。' }
+          { key: 'A', en: 'to spend relaxed time with someone', cn: '一起闲逛、消磨时间', correct: true, reason: '没有计划地一起待一小时，就是 hang out。' },
+          { key: 'B', en: 'to hang the clothes outside', cn: '把衣服晾到外面', correct: false, reason: '她是要出门，不是晾衣服。' },
+          { key: 'C', en: 'to wait for someone', cn: '等某个人', correct: false, reason: '两个人一起走，不存在等谁。' }
         ],
-        analysis: 'ruin 是“毁掉”，可以毁名声、毁生意、毁一个人。陈默把对方的狠话接住，再翻倍还回去。',
-        wrongFeedback: '你选错了，对方听见“修好”两个字，笑得更大声，以为陈默在求和，胆子一下更大了。',
-        afterCorrect: '陈默把电话挂了，对老周说：“他以为我在讲狠话。”他站起来，“其实我在做时间表。”'
+        analysis: 'hang out 是没有目的的一起待着。陈默的日程表精确到十分钟，他已经很久没「没有计划」过了。',
+        wrongFeedback: '你选错了，苏晚自己先往楼下走：「那你留在家里跟文件过周末吧。」气血 -10',
+        afterCorrect: '旧书店只有半间铺面。陈默在角落翻到一本旧英语词典，扉页上有人用钢笔写着自己的名字。'
       },
       {
-        plotDescription: '陈默披上外套，转身对老周交代最后一句，老周听完立刻明白这是底线了。',
-        line: "Find them. If they touch her, destroy everything they have.",
-        lineCn: '找到他们。如果他们碰她一下，就把他们所有的一切都毁掉。',
-        prompt: "根据上下文，选出画线词汇 'destroy' 最准确的意思。",
+        plotDescription: '晚上回到家，苏晚把鞋一脱，整个人瘫进沙发。',
+        line: "Finally. Time to kick back and do absolutely nothing.",
+        lineCn: '终于。可以彻底放松，什么都不干了。',
+        prompt: "根据上下文，选出画线词汇 'Kick back' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to build something new', cn: '建造新东西', correct: false, reason: 'destroy 是拆掉、毁掉，和 build 相反。' },
-          { key: 'B', en: 'to hide something carefully', cn: '小心地把东西藏起来', correct: false, reason: '这里没有“藏”，只有“毁”。' },
-          { key: 'C', en: 'to wreck something completely', cn: '彻底摧毁、毁灭', correct: true, reason: 'destroy 指毁到不留原样，正对上“他们所拥有的一切”。' }
+          { key: 'A', en: 'to relax and enjoy doing nothing', cn: '彻底放松、歇着', correct: true, reason: '她把鞋一脱瘫进沙发，就是 kick back。' },
+          { key: 'B', en: 'to kick something with your foot', cn: '用脚踢东西', correct: false, reason: '字面拆开的意思，这里不是。' },
+          { key: 'C', en: 'to go back home early', cn: '早点回家', correct: false, reason: '已经到家了。' }
         ],
-        analysis: 'destroy 比 ruin 更强调“物理上、结构上的彻底摧毁”。他说的不是吓唬，是执行预案。',
-        wrongFeedback: '你选错了，老周以为只是去“藏起证据”，人手带少了，等到仓库门口才发现守了二十多个人。',
-        afterCorrect: '老周点了头，转身下楼。陈默把军刀扣在腰后，回头看了一眼墙上的全家福，灯还亮着。'
+        analysis: 'kick back 是彻底松弛下来。这两个字，苏晚在苏家那三年从没说过。',
+        wrongFeedback: '你选错了，苏晚把抱枕砸到他身上：「你也躺下，别站着。」气血 -10',
+        afterCorrect: '两个人并排躺着，谁也没说话。楼下的高架上，车灯一辆接一辆地过去。'
       }
     ],
-    completeText: '第 38 章结束。天黑前，老周的人已经找到了那辆车。陈默坐在后座，把外套脱下来叠好，说了一句：她怕黑，动作要快。'
+    completeText: '第 38 章结束。那天他们什么也没做成。苏晚后来说，那是搬出来以后最像家的一个下午。'
   },
   {
     id: 'ml_39',
     index: 39,
-    title: '第 39 章 · 血债，血偿',
+    title: '第 39 章 · 周日晚上十点',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '仓库里七个黑衣人被按在地上，雷豹把名单拍在桌上。陈小满被抱出来时还在抖，却咬着牙说没哭。陈默看完名单没有发火，只蹲下来问角落里那个男人一句：谁开的枪。',
+    storyText: '周日晚十点，茶几上摊着三份合同、一叠发票和一台开着的笔记本。明天上午，默行科技第一次跟供应商谈价。',
     questions: [
       {
-        plotDescription: '那个男人抖着说只是听命令，陈默把枪放在他面前，声音低得几乎听不见。',
-        line: "Do you regret it? Not because you were caught. Because she is fifteen.",
-        lineCn: '你后悔吗？不是因为被抓，是因为她才十五岁。',
-        prompt: "根据上下文，选出画线词汇 'regret' 最准确的意思。",
+        plotDescription: '苏晚把最后一页合同对齐，敲了敲桌面。',
+        line: "Let us wrap up this part. We can finish the rest tomorrow.",
+        lineCn: '这部分先收尾吧。剩下的明天再弄。',
+        prompt: "根据上下文，选出画线词汇 'Wrap up' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to feel sorry about something you did', cn: '后悔、为做过的事难过', correct: true, reason: '陈默问的不是怕不怕，是有没有为伤一个孩子而难过。' },
-          { key: 'B', en: 'to forget a bad memory', cn: '忘掉一段糟糕的记忆', correct: false, reason: 'regret 是记得并且难受，不是忘记。' },
-          { key: 'C', en: 'to repeat an action', cn: '把一个动作再做一遍', correct: false, reason: '这里问的是心里有没有悔意。' }
+          { key: 'A', en: 'to finish or complete something', cn: '收尾、把事情结束掉', correct: true, reason: '她要把这一部分结束掉，剩下的留到明天。' },
+          { key: 'B', en: 'to wrap a gift', cn: '把礼物包起来', correct: false, reason: '桌上放的是合同，不是礼物。' },
+          { key: 'C', en: 'to start a new task', cn: '开始一项新任务', correct: false, reason: '她是要结束，不是开始。' }
         ],
-        analysis: 'regret 是“后悔”，后面常跟动名词。陈默把“听命令”这三个字挡住，逼他自己面对那张脸。',
-        wrongFeedback: '你选错了，那男人立刻顺着“听命令”往下说，把自己摘得更干净，陈默却没再看他。',
-        afterCorrect: '那男人低着头，半天说了一句“她一直没哭”。陈默站起来：“她没哭，是因为看见我就知道有人会来。”'
+        analysis: 'wrap up 是把一件事收到尾声。陈默原本想通宵，被她一句话按住了。',
+        wrongFeedback: '你选错了，苏晚把合同合上：「你熬到三点，明天照样出错。」气血 -10',
+        afterCorrect: '他们把合同按顺序夹好。陈默写了三行谈判要点，字比平时小了一半。'
       },
       {
-        plotDescription: '雷豹问要不要把人送回去换条件，陈默摇头，说了一句话，屋里没人再提“和解”。',
-        line: "I do not want revenge. I want them to remember what happens next time.",
-        lineCn: '我不是要报复。我要他们记住，下次会是什么下场。',
-        prompt: "根据上下文，选出画线词汇 'revenge' 最准确的意思。",
+        plotDescription: '苏晚把一叠发票摊开，按日期分成三堆。',
+        line: "Help me sort out these receipts. I cannot tell which one is which.",
+        lineCn: '帮我理一下这些收据。我分不清哪张是哪张。',
+        prompt: "根据上下文，选出画线词汇 'Sort out' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a reward for good behavior', cn: '对好行为的奖励', correct: false, reason: '没有奖励，这里说的是报复的念头。' },
-          { key: 'B', en: 'hurting someone back for what they did', cn: '报复、以牙还牙', correct: true, reason: 'revenge 就是“还回去”，所以他否掉的是动机，不是手段。' },
-          { key: 'C', en: 'a legal agreement', cn: '一份法律协议', correct: false, reason: '这跟法律文件没关系。' }
+          { key: 'A', en: 'to organize or resolve something', cn: '整理清楚、把问题理顺', correct: true, reason: '她把发票按日期分堆，就是在整理。' },
+          { key: 'B', en: 'to throw things away', cn: '把东西扔掉', correct: false, reason: '她是在分类，不是丢弃。' },
+          { key: 'C', en: 'to sort letters by name', cn: '按姓名给信件归类', correct: false, reason: '桌上没有信件，只有发票。' }
         ],
-        analysis: 'revenge 是私人性质的“报仇”。陈默要的不是情绪上的痛快，而是让对方从此不敢再动他的家人。',
-        wrongFeedback: '你选错了，雷豹以为他要收手，松开了手，人差点从地上爬起来，被按了回去。',
-        afterCorrect: '陈默看向那七个人：“记住今天。你们不是输给我，是输给了一个十五岁的女孩没哭。”'
+        analysis: 'sort out 既是「整理」，也是「把问题弄清楚」。这些发票背后，是默行科技的第一个月。',
+        wrongFeedback: '你选错了，苏晚把发票推到他面前：「这是你的公司，不是我的。」气血 -10',
+        afterCorrect: '两个人按日期排到十二点。最后一堆只有七张，加起来不到两千块。'
       },
       {
-        plotDescription: '苏晚赶到仓库门口，看到陈小满，整个人才慢慢松下来，说这三年第一次觉得安全。',
-        line: "For the first time in three years, I feel peace.",
-        lineCn: '三年来第一次，我觉得安稳。',
-        prompt: "根据上下文，选出画线词汇 'peace' 最准确的意思。",
+        plotDescription: '陈默看着手机里供应商的报价，眉头慢慢压下来。',
+        line: "I will deal with the supplier myself tomorrow morning.",
+        lineCn: '明天早上我亲自去处理供应商的事。',
+        prompt: "根据上下文，选出画线词汇 'Deal with' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a piece of something', cn: '一块、一片（量词）', correct: false, reason: 'piece 才是“一块”，peace 是“平静”。两个词读音像，拼写不同。' },
-          { key: 'B', en: 'a loud celebration', cn: '热闹的庆祝', correct: false, reason: '仓库门口没有人庆祝，她是在说心里的感觉。' },
-          { key: 'C', en: 'a state of calm with no fighting', cn: '平静、没有争斗的安稳', correct: true, reason: 'peace 就是“安宁”，正对上她三年来第一次放松。' }
+          { key: 'A', en: 'to handle or take care of a problem', cn: '处理、应对麻烦', correct: true, reason: '他要去解决供应商的问题，就是 deal with。' },
+          { key: 'B', en: 'to make a business deal with someone', cn: '跟人达成一笔交易', correct: false, reason: '他说的是应付这件事，不是已经谈成。' },
+          { key: 'C', en: 'to share something with someone', cn: '与人分享东西', correct: false, reason: '跟分享无关。' }
         ],
-        analysis: 'peace 是“和平、安宁”。她说的不是天下太平，是家里终于没有人在暗处盯着。',
-        wrongFeedback: '你选错了，苏晚把话咽回去，只说了句“先带孩子回去”，那点刚露出来的柔软又收了。',
-        afterCorrect: '陈默把外套披在她肩上：“还没结束。”他看向仓库深处，“但今晚，她们可以睡了。”'
+        analysis: 'deal with 是处理麻烦，不等于「做交易」。陈默要面对的不只是价格，还有对方眼里的轻视。',
+        wrongFeedback: '你选错了，苏晚看着他：「你可以带我一起去。他们看不起的，不止你一个。」气血 -10',
+        afterCorrect: '陈默沉默了几秒，点头：「好。明天九点，你坐我旁边。」'
       },
       {
-        plotDescription: '天快亮时，霍先生的人打来电话，说愿意暂时收手，条件是双方都不再动手。',
-        line: "I will accept a truce. But the clock only runs until tomorrow noon.",
-        lineCn: '我接受停战。但这时钟只走到明天正午。',
-        prompt: "根据上下文，选出画线词汇 'truce' 最准确的意思。",
+        plotDescription: '收拾完已经十一点半，苏晚看见他还站在窗边，手一直插在口袋里。',
+        line: "Chill out. You have done everything you can tonight.",
+        lineCn: '放松点。今晚能做的你都做完了。',
+        prompt: "根据上下文，选出画线词汇 'Chill out' 最准确的意思。",
         options: [
-          { key: 'A', en: 'an agreement to stop fighting for a while', cn: '停战、临时休战', correct: true, reason: 'truce 是“暂时不打了”，所以他特意加了期限。' },
-          { key: 'B', en: 'a final surrender', cn: '最终投降', correct: false, reason: '投降是 surrender，truce 只是先停一下。' },
-          { key: 'C', en: 'a new business deal', cn: '一笔新的生意', correct: false, reason: '他们不是在谈生意，是在谈什么时候再动手。' }
+          { key: 'A', en: 'to relax and stop worrying', cn: '冷静下来、别紧绷着', correct: true, reason: '她让他别再想，就是 chill out。' },
+          { key: 'B', en: 'to go outside into the cold', cn: '到外面去凉快', correct: false, reason: '她不是让他出门。' },
+          { key: 'C', en: 'to force someone to calm down', cn: '强行让人冷静', correct: false, reason: '她是劝，不是强迫。' }
         ],
-        analysis: 'truce 特指“有期限的停战”。陈默接受它，不是示弱，是因为他需要一个上午把妹妹送回家。',
-        wrongFeedback: '你选错了，雷豹以为对面认输了，放松了警戒，天亮时对面又摸进来两个人。',
-        afterCorrect: '陈默放下电话，看着窗外发白的天：“明天中午，就是他们自己定的时间。”'
+        analysis: 'chill out 是叫人别绷着。陈默的肩膀一直没松下来，直到她把手放在他背上。',
+        wrongFeedback: '你选错了，苏晚把手收了回去：「行，你自己想。」气血 -10',
+        afterCorrect: '陈默关掉台灯。黑暗里他说了一句：「明天谈完，不管成不成，我请你吃饭。」'
       }
     ],
-    completeText: '第 39 章结束。清晨六点，陈小满在车上睡着了，手里还攥着陈默的袖口。苏晚替她把外套拉好，轻声问接下来怎么办。陈默说：先吃饭。'
+    completeText: '第 39 章结束。那晚陈默睡了六个小时，是这一个月里最长的一觉。'
   },
   {
     id: 'ml_40',
     index: 40,
-    title: '第 40 章 · 停火线',
+    title: '第 40 章 · 谈判前的那一夜',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '中午十二点，苏振海拄着拐杖进了苏家老宅，把两份文件放在桌上：一份是让陈默净身出户的协议，一份是股权转让书。他说今天只能签一个。苏晚站在门口，没有进来，也没有说话。',
+    storyText: '周一凌晨一点，默行科技的小办公室里还亮着灯。陈默把供应商的资料翻到第三遍，桌上摊着一包开了口的饼干，旁边是三个空咖啡杯。',
     questions: [
       {
-        plotDescription: '苏振海把笔推到陈默面前，说只要他签了，苏家愿意跟他和好，往后还是一家人。',
-        line: "You want to reconcile now? You had three years to do that.",
-        lineCn: '你现在想和好了？你有三年时间可以做这件事。',
-        prompt: "根据上下文，选出画线词汇 'reconcile' 最准确的意思。",
+        plotDescription: '苏晚推门进来，把一杯热牛奶放在他手边，顺手捏了块饼干。',
+        line: "You skipped dinner again. At least have a snack.",
+        lineCn: '你又没吃晚饭。好歹吃点零食垫垫。',
+        prompt: "根据上下文，选出画线词汇 'Snack' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to argue more seriously', cn: '更激烈地争吵', correct: false, reason: 'reconcile 是往和的方向走，不是越吵越凶。' },
-          { key: 'B', en: 'to make up and be friendly again', cn: '和解、重新和好', correct: true, reason: '老人拿文件换他低头，这就是在谈“和好”，所以他才反问这三年。' },
-          { key: 'C', en: 'to sell a company', cn: '卖掉一家公司', correct: false, reason: '这里谈的不是买卖，是关系。' }
+          { key: 'A', en: 'a small amount of food between meals', cn: '零食、两餐之间垫一口', correct: true, reason: '晚饭没吃，用饼干垫一垫，就是 snack。' },
+          { key: 'B', en: 'a full dinner', cn: '一顿正餐', correct: false, reason: '她说的是「垫一垫」，不是正经吃饭。' },
+          { key: 'C', en: 'a kind of drink', cn: '一种饮料', correct: false, reason: '饼干是吃的，不是喝的。' }
         ],
-        analysis: 'reconcile 是“使和解、重修旧好”，也可指“使两件事一致”。陈默这句是把三年的账摆回桌上。',
-        wrongFeedback: '你选错了，苏振海以为他动摇了，立刻把协议往他手边又推近一寸，笑容浮上来。',
-        afterCorrect: '陈默没有拿笔：“三年前我跪在门口那晚，您说过一句话——苏家不养闲人。”他抬头，“我记住了。”'
+        analysis: 'snack 是正餐之间的少量食物。陈默从下午到现在，只喝了三杯黑咖啡。',
+        wrongFeedback: '你选错了，苏晚把饼干袋直接收走：「那就什么都别吃。」气血 -10',
+        afterCorrect: '陈默吃了两块饼干，把牛奶也喝了。胃里有点热，脑子才慢慢转起来。'
       },
       {
-        plotDescription: '苏明哲在旁边插话，说陈默不过是想分家产，声音越来越尖，屋里气氛一下绷紧。',
-        line: "This is not my argument. This is yours. You started it three years ago.",
-        lineCn: '这不是我的争论。这是你的。三年前是你们先开始的。',
-        prompt: "根据上下文，选出画线词汇 'argument' 最准确的意思。",
+        plotDescription: '苏晚看了一眼那三个空咖啡杯，把水杯推到他面前。',
+        line: "Hydrate first. Coffee is not water.",
+        lineCn: '先喝水。咖啡不算水。',
+        prompt: "根据上下文，选出画线词汇 'Hydrate' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a written contract', cn: '一份书面合同', correct: false, reason: '合同是 contract，这里说的是争吵。' },
-          { key: 'B', en: 'a proof of innocence', cn: '清白的证据', correct: false, reason: '他谈的是谁先挑起争端，不是在举证。' },
-          { key: 'C', en: 'an angry disagreement between people', cn: '争吵、双方各执一词', correct: true, reason: 'argument 是“争论、争吵”，正对上苏明哲越说越尖的场面。' }
+          { key: 'A', en: 'to take in enough water', cn: '补充水分、喝水', correct: true, reason: '她让他先喝水，就是 hydrate。' },
+          { key: 'B', en: 'to drink something sweet', cn: '喝点甜的', correct: false, reason: '她推出的是白开水。' },
+          { key: 'C', en: 'to take medicine', cn: '吃药', correct: false, reason: '桌上没有药。' }
         ],
-        analysis: 'argument 既是“争论”，也是“论点、论据”。这里取前一个意思——一场已经吵了三年的架。',
-        wrongFeedback: '你选错了，苏明哲立刻接话“你看他自己都承认在吵”，把话头抢过去，苏振海的脸色更难看了。',
-        afterCorrect: '陈默不再看他，只对苏振海说：“我今天来，不是为了吵，是为了把一件东西还给您。”'
+        analysis: 'hydrate 是给身体补水分。她说的不是养生，是怕他在谈判桌上手抖。',
+        wrongFeedback: '你选错了，苏晚把水杯往他嘴边递了递：「喝。」气血 -10',
+        afterCorrect: '陈默喝完了一整杯。苏晚又倒满，放在他伸手就能碰到的地方。'
       },
       {
-        plotDescription: '苏振海拍了下桌子，说苏家养了他三年，不许他再带走苏晚一分钱。',
-        line: "I am not here to fight. I am here to take her home.",
-        lineCn: '我不是来打架的。我是来带她回家的。',
-        prompt: "根据上下文，选出画线词汇 'fight' 最准确的意思。",
+        plotDescription: '凌晨两点，陈默站起来，活动了一下僵住的脖子。',
+        line: "Stand up and stretch. Your back is going to lock up.",
+        lineCn: '站起来拉伸一下。你的背要僵住了。',
+        prompt: "根据上下文，选出画线词汇 'Stretch' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to struggle or battle with someone', cn: '争斗、跟人打起来', correct: true, reason: '拍桌子、抢话，这就是要吵起来的架势，所以他才说自己不是来争的。' },
-          { key: 'B', en: 'to cook a meal quickly', cn: '快速地做一顿饭', correct: false, reason: '这里没有任何人在做饭。' },
-          { key: 'C', en: 'to sign an agreement', cn: '签一份协议', correct: false, reason: '签协议是 sign，fight 是争、打。' }
+          { key: 'A', en: 'to extend your body to relax muscles', cn: '拉伸、舒展身体', correct: true, reason: '他活动僵住的脖子，就是在 stretch。' },
+          { key: 'B', en: 'to walk around the block', cn: '出去绕一圈', correct: false, reason: '她让他站起来动一动，不是出门。' },
+          { key: 'C', en: 'to make something longer', cn: '把东西拉长', correct: false, reason: '这里说的是身体，不是物件。' }
         ],
-        analysis: 'fight 可指动手，也可指争吵、抗争。陈默把它否掉，是因为他要的结果不是赢一场架。',
-        wrongFeedback: '你选错了，苏振海听见“打架”两个字，气得拐杖敲地，说这是要动手威胁老人。',
-        afterCorrect: '苏晚在门口终于开口：“爷爷，我跟他走。”她的声音不大，但屋里所有人都听见了。'
+        analysis: 'stretch 是舒展身体。这个动作，是他当赘婿那三年每天在厨房里偷偷做的。',
+        wrongFeedback: '你选错了，苏晚把他的椅子往后拉：「站起来。就一分钟。」气血 -10',
+        afterCorrect: '两个人在小办公室里伸了个懒腰。苏晚忽然笑出声：「像两只老猫。」'
       },
       {
-        plotDescription: '僵了半分钟后，苏振海退了一步：股权可以留，但陈默必须在三个月内做出成绩。',
-        line: "Fine. That is the compromise. Three months, or you both leave.",
-        lineCn: '行。这就是折中方案。三个月，做不出来你们一起走。',
-        prompt: "根据上下文，选出画线词汇 'compromise' 最准确的意思。",
+        plotDescription: '陈默盯着资料第三页，眼神慢慢空了，笔停在半空。',
+        line: "Hey. You zoned out again. Read that line to me.",
+        lineCn: '嘿。你又走神了。把那行念给我听。',
+        prompt: "根据上下文，选出画线词汇 'Zone out' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a total victory for one side', cn: '一方彻底获胜', correct: false, reason: '双方都退了一步，不是谁全赢。' },
-          { key: 'B', en: 'an agreement where both sides give up something', cn: '双方各让一步的折中方案', correct: true, reason: '老人收回“净身出户”，他接下三个月期限，这就是各让一步。' },
-          { key: 'C', en: 'a secret plan to cheat', cn: '一个作弊的秘密计划', correct: false, reason: '这里是明着谈条件，不是暗中使坏。' }
+          { key: 'A', en: 'to stop paying attention and stare blankly', cn: '走神、发呆', correct: true, reason: '他眼神空了、笔停在半空，就是走神。' },
+          { key: 'B', en: 'to fall into a deep sleep', cn: '陷入深度睡眠', correct: false, reason: '他还坐着，眼睛是睁着的。' },
+          { key: 'C', en: 'to leave the room', cn: '离开房间', correct: false, reason: '他一直没动。' }
         ],
-        analysis: 'compromise 是“妥协、折中”。陈默接受了，因为他要的从来不是赢这一桌人，而是拿到三个月的台面。',
-        wrongFeedback: '你选错了，陈默把这句话听成“最后通牒”，当场顶了回去，老人把两份文件一起收走。',
-        afterCorrect: '陈默伸出手：“三个月。”苏振海看了他很久，才把手放上来，掌心全是老茧。'
+        analysis: 'zone out 是注意力飘走、眼神发直。他不是不认真，是连续二十天没睡够。',
+        wrongFeedback: '你选错了，苏晚把资料抽走：「去洗把脸。回来我陪你过一遍。」气血 -10',
+        afterCorrect: '陈默在洗手间用冷水冲了脸。镜子里的人眼下发青，但眼神回来了。'
       }
     ],
-    completeText: '第 40 章结束。走出老宅时，苏晚问他为什么答应。陈默回头看了一眼那扇门：“因为三个月后，我要让他们自己把门打开。”'
+    completeText: '第 40 章结束。第二天上午九点，陈默推开会议室的门。供应商看了他身边坐着的苏晚一眼，笑容僵了一下。'
   },
   {
     id: 'ml_41',
     index: 41,
-    title: '第 41 章 · 龙渊，全员归队',
+    title: '第 41 章 · 账户里剩下的四位数',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '城郊废旧体育馆，七个人站成一排，衣服洗得发白，站姿却一点没变。韩青背着药箱，雷豹拎着两个铁箱，老周把一枚旧徽章放在陈默掌心。徽章背面刻着两个字：龙渊。',
+    storyText: '把天枢的股份全部交回陈家那天，陈默只在协议上签了字，什么也没带走。默行科技的办公室从写字楼搬进旧厂房改造的园区，三张桌子，一台二手打印机。月底，房东站在门口翻收据本。',
     questions: [
       {
-        plotDescription: '雷豹一见面就骂他三年不联系，陈默笑了一下，说他早就知道这些人不会散。',
-        line: "You are still the most savvy man I know. You knew we would come.",
-        lineCn: '你还是我认识的最精的人。你早就知道我们会来。',
-        prompt: "根据上下文，选出画线词汇 'savvy' 最准确的意思。",
+        plotDescription: '苏晚把手机递过来，屏幕上是银行卡余额，四位数。',
+        line: "We are officially broke. That number is not going to cover rent.",
+        lineCn: '我们正式身无分文了。这个数连房租都不够。',
+        prompt: "根据上下文，选出画线词汇 'Broke' 最准确的意思。",
         options: [
-          { key: 'A', en: 'very tired and weak', cn: '又累又虚弱', correct: false, reason: '这里夸的是脑子，不是体力。' },
-          { key: 'B', en: 'extremely rich', cn: '极其富有', correct: false, reason: 'savvy 是“精明”，和钱多钱少没关系。' },
-          { key: 'C', en: 'practical and quick to understand', cn: '精明、懂行、看得很透', correct: true, reason: 'savvy 就是“在行、精明”，正对上“你早就知道我们会来”。' }
+          { key: 'A', en: 'having no money at all', cn: '身无分文、一分钱没有', correct: true, reason: '余额只剩四位数，连房租都不够，正是 broke。' },
+          { key: 'B', en: 'broken — physically damaged', cn: '坏掉了、破损的', correct: false, reason: 'broke 和 broken 长得像，但这里说的是没钱，不是东西坏了。' },
+          { key: 'C', en: 'declared bankrupt by a court', cn: '被法院宣告破产', correct: false, reason: '他们只是没钱，还没到法律破产那一步。' }
         ],
-        analysis: 'savvy 作形容词是“精明的、懂门道的”，口语里常夸人“懂事、会看人”。雷豹这句是骂里带服。',
-        wrongFeedback: '你选错了，雷豹以为他在嫌自己穷，把铁箱往地上一放，脸色沉下来，气氛一下僵了。',
-        afterCorrect: '陈默把徽章握紧：“我从不赌人心。”他抬头看向那七个人，“我只是知道，你们没地方可去。”'
+        analysis: 'broke 是口语里的「没钱了」。它不是 broken「坏了」，也不等于法律意义上的破产。',
+        wrongFeedback: '你选错了，苏晚把手机收回去：「我没在开玩笑。」陈默这才抬起头。气血 -10',
+        afterCorrect: '陈默看了三秒屏幕，打开电脑：「先算一遍，能撑几周。」'
       },
       {
-        plotDescription: '老周劝他先躲一躲，等风头过去，陈默摇头，说自己这三年已经躲够了。',
-        line: "Let me be blunt: hiding is over. From tonight, we move first.",
-        lineCn: '我说直白点：躲的日子结束了。从今晚起，我们先动手。',
-        prompt: "根据上下文，选出画线词汇 'blunt' 最准确的意思。",
+        plotDescription: '房东站在门口，收据本捏在手里，眼睛在屋里扫了一圈。',
+        line: "Rent is due on Friday. I am not running a charity here.",
+        lineCn: '房租周五到期。我这儿不是做慈善的。',
+        prompt: "根据上下文，选出画线词汇 'Rent' 最准确的意思。",
         options: [
-          { key: 'A', en: 'direct and not polite about it', cn: '直率、不绕弯子', correct: true, reason: '他自己先说了“我说直白点”，blunt 就是不加修饰地讲。' },
-          { key: 'B', en: 'not sharp anymore', cn: '不再锋利（指刀刃）', correct: false, reason: 'blunt 确实有“钝”的意思，但这里形容的是说话方式。' },
-          { key: 'C', en: 'very polite and careful', cn: '非常客气谨慎', correct: false, reason: '正好相反，blunt 是客气少、直来直去。' }
+          { key: 'A', en: 'the money you pay regularly to use a place', cn: '房租、租金', correct: true, reason: '房东上门要的是这间办公室的租金。' },
+          { key: 'B', en: 'a loan from a bank', cn: '向银行借的贷款', correct: false, reason: '收租的是房东，不是银行。' },
+          { key: 'C', en: 'the price of buying the apartment', cn: '买下这套房子的价钱', correct: false, reason: '他们是租的，不是买。' }
         ],
-        analysis: 'blunt 形容人说话“直、不留情面”。他说得直，是因为对面不会再给他绕弯子的时间。',
-        wrongFeedback: '你选错了，老周以为他在说刀钝了，还递上磨刀石，屋里有人没忍住笑了一声。',
-        afterCorrect: '老周把地图摊开：“那就别躲了。”他用笔在第七层画了个圈，“这里，他们以为没人敢进。”'
+        analysis: 'rent 是按期付的租金。陈默每个月的第一天都会先算这一笔，这次算不出来。',
+        wrongFeedback: '你选错了，房东把本子一合：「周五，别让我再来一趟。」气血 -10',
+        afterCorrect: '门关上后，陈默把日历翻到周五，用红笔圈了一圈。'
       },
       {
-        plotDescription: '韩青把药箱放下，冲霍先生那边派来盯梢的车比了个中指，回头笑着说了句。',
-        line: "That was sassy. Now stop showing off and check the gear.",
-        lineCn: '嘴挺野的。行了别显摆了，去检查装备。',
-        prompt: "根据上下文，选出画线词汇 'sassy' 最准确的意思。",
+        plotDescription: '晚上，苏晚把一张纸摊在桌上，左边写收入，右边写支出。',
+        line: "We need a budget. Every yuan gets a name.",
+        lineCn: '我们得做个预算。每一块钱都要有去处。',
+        prompt: "根据上下文，选出画线词汇 'Budget' 最准确的意思。",
         options: [
-          { key: 'A', en: 'very sad and quiet', cn: '很难过、很安静', correct: false, reason: '韩青刚比了个中指，绝不是安静难过的状态。' },
-          { key: 'B', en: 'bold and cheeky in a playful way', cn: '泼辣、嘴上不饶人、有点皮', correct: true, reason: '对着盯梢的车比中指，这就是 sassy——带点挑衅的俏皮。' },
-          { key: 'C', en: 'slow to understand', cn: '反应慢、听不懂', correct: false, reason: '这跟反应速度无关，说的是态度张扬。' }
+          { key: 'A', en: 'a plan for how to spend your money', cn: '预算、用钱计划', correct: true, reason: '她在纸上列收入支出，就是在做预算。' },
+          { key: 'B', en: 'a list of people you owe money to', cn: '欠钱名单', correct: false, reason: '纸上写的是收支，不是债主。' },
+          { key: 'C', en: 'a bank statement', cn: '银行流水单', correct: false, reason: '这是她手写的计划表，不是银行出的。' }
         ],
-        analysis: 'sassy 多形容人“嘴上厉害、带点不服管”，通常是带笑意的评价，不是真骂。',
-        wrongFeedback: '你选错了，韩青以为在被训，立刻收了笑，把药箱背好，整队时一句话都没再说。',
-        afterCorrect: '韩青耸了耸肩：“三年没动手，嘴总得活动一下。”他打开药箱，里面整齐码着十二支止血针。'
+        analysis: 'budget 是提前安排好钱怎么花。那张纸最后只剩两行：房租、工资。',
+        wrongFeedback: '你选错了，苏晚把笔塞给他：「你也写。别全让我一个人算。」气血 -10',
+        afterCorrect: '「咖啡」那一栏，苏晚画了个叉。陈默看着那个叉，没说话。'
       },
       {
-        plotDescription: '有人提议先做套像样的装备再去，陈默看了一眼那堆旧枪，摇头。',
-        line: "We do not need fancy gear. That excuse sounds lame, and we both know it.",
-        lineCn: '我们不需要花哨的装备。这个借口听着很蹩脚，你我都清楚。',
-        prompt: "根据上下文，选出画线词汇 'lame' 最准确的意思。",
+        plotDescription: '苏晚在商场橱窗前站了很久，最后把手从玻璃上收了回来。',
+        line: "I almost splurged on that dress. Then I remembered the rent.",
+        lineCn: '我差点就为那条裙子挥霍一次。然后我想起了房租。',
+        prompt: "根据上下文，选出画线词汇 'Splurge' 最准确的意思。",
         options: [
-          { key: 'A', en: 'unable to walk', cn: '走不了路、瘸的', correct: false, reason: 'lame 原义是“瘸”，但这里是评价借口，不是形容腿。' },
-          { key: 'B', en: 'shining brightly', cn: '闪闪发光', correct: false, reason: '闪闪发光是 shiny，这里说借口差。' },
-          { key: 'C', en: 'weak and not convincing', cn: '蹩脚的、站不住脚的', correct: true, reason: '口语里 lame 就是“烂、没说服力”，正对上“这个借口”。' }
+          { key: 'A', en: 'to spend a lot of money on something you want', cn: '挥霍、忍不住大手大脚买', correct: true, reason: '她差点买下那条很贵的裙子，就是 splurge。' },
+          { key: 'B', en: 'to save money very carefully', cn: '精打细算地省钱', correct: false, reason: '她差点花钱，不是省钱。' },
+          { key: 'C', en: 'to return something to the store', cn: '把东西退回店里', correct: false, reason: '她没买，谈不上退。' }
         ],
-        analysis: 'lame 从“瘸”引申为“差劲、逊、站不住脚”。陈默不让任何人在开打前给自己找台阶。',
-        wrongFeedback: '你选错了，那个队员真以为他在说腿伤，把裤腿撩起来解释，队伍里一阵尴尬的沉默。',
-        afterCorrect: '陈默把旧枪递过去：“三年没擦，它还能响。”他拉了一下枪栓，“人也一样。”'
+        analysis: 'splurge 是明知不该花，还是为喜欢的东西花了一大笔。她在橱窗前站了五分钟，陈默一直在对面看着。',
+        wrongFeedback: '你选错了，苏晚笑了一下：「你紧张什么，我又没买。」气血 -10',
+        afterCorrect: '陈默走过去牵住她的手：「等这个月过去，我买给你。」苏晚说：「不用。我自己买。」'
       }
     ],
-    completeText: '第 41 章结束。夜里十一点，八个人在体育馆中央围成一圈，手叠在一起。陈默说了最后一句：这次不为国家，只为家里那几盏灯。'
+    completeText: '第 41 章结束。周五那天，房租一分不少地转了过去。陈默在转账备注里只写了两个字：谢谢。'
   },
   {
     id: 'ml_42',
     index: 42,
-    title: '第 42 章 · 三分钟，破门',
+    title: '第 42 章 · 报价单上的那一行',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '凌晨两点，八个人贴着墙根摸进写字楼负一层。正门有四个摄像头，货梯的锁已经锈了。雷豹把耳朵贴在门上听了十几秒，比出十一根手指。陈默看了一眼表，说三分钟。',
+    storyText: '新办公室要隔出一间会议室。韩野找来一支装修队，报价八万，工期十天。到第三天，工地上只来了两个人，刷了一半的墙停在那里。',
     questions: [
       {
-        plotDescription: '雷豹说这栋楼的安防报告写得很漂亮，陈默翻了两页就丢回给他。',
-        line: "Their security looks dope on paper. In reality, half of them are asleep.",
-        lineCn: '他们的安防在纸面上看着很牛。实际上，一半人在睡觉。',
-        prompt: "根据上下文，选出画线词汇 'dope' 最准确的意思。",
+        plotDescription: '韩野把报价单拍在桌上，指着中间那一行。',
+        line: "Twenty thousand for paint? That is a total rip-off.",
+        lineCn: '刷个漆要两万？这完全是坑钱。',
+        prompt: "根据上下文，选出画线词汇 'Rip-off' 最准确的意思。",
         options: [
-          { key: 'A', en: 'very cool or impressive', cn: '很酷、很厉害', correct: true, reason: '口语里 dope 就是“牛、酷”，正对上“纸面上看着很牛”。' },
-          { key: 'B', en: 'a kind of illegal drug', cn: '一种毒品', correct: false, reason: 'dope 确实有“毒品”的旧义，但这里在评价安防报告。' },
-          { key: 'C', en: 'a stupid person', cn: '一个蠢人', correct: false, reason: '这里形容的是方案，不是人。' }
+          { key: 'A', en: 'something that costs far more than it is worth', cn: '坑钱货、宰人的价格', correct: true, reason: '刷漆报两万，远高于正常价，就是 rip-off。' },
+          { key: 'B', en: 'a surprisingly good bargain', cn: '意外划算的好价', correct: false, reason: '韩野是在骂贵，不是在夸便宜。' },
+          { key: 'C', en: 'a written receipt', cn: '一张收据', correct: false, reason: '他指的是价格，不是单据。' }
         ],
-        analysis: 'dope 在年轻人口语里早就是“很棒、很顶”的意思，和 drugs 那层意思要分开看语境。',
-        wrongFeedback: '你选错了，雷豹以为他在说楼里有人吸毒，临时改了方案，白耽误了两分钟。',
-        afterCorrect: '陈默把报告折起来：“好看的东西最会骗人。”他指了指侧门，“从这儿进，他们连警报都不会响。”'
+        analysis: 'rip-off 是「被宰了、不值这个价」。韩野当场把施工头叫了过来。',
+        wrongFeedback: '你选错了，韩野把报价单揉成一团，又慢慢展开。气血 -10',
+        afterCorrect: '装修队退了四万，剩下的活干到一半就撤了。韩野自己拎起油漆桶上了梯子。'
       },
       {
-        plotDescription: '侧门虚掩着，锁舌根本没扣上，雷豹愣了一下，回头看他。',
-        line: "Sloppy work. They left the side door open for us.",
-        lineCn: '干得太糙了。他们等于替我们把侧门留着。',
-        prompt: "根据上下文，选出画线词汇 'sloppy' 最准确的意思。",
+        plotDescription: '韩野带来一个自称做投资的朋友，那人一坐下就点外卖，还问能不能免费用办公室。',
+        line: "He has been a freeloader since college. He never pays for anything.",
+        lineCn: '他大学起就是个白嫖怪。什么钱都不出。',
+        prompt: "根据上下文，选出画线词汇 'Freeloader' 最准确的意思。",
         options: [
-          { key: 'A', en: 'very careful and exact', cn: '非常仔细、精准', correct: false, reason: '正好相反，sloppy 是马虎、粗糙。' },
-          { key: 'B', en: 'careless and done without enough attention', cn: '马虎、粗糙、不上心', correct: true, reason: '锁都没扣上，这就是工作做得马虎。' },
-          { key: 'C', en: 'wet and muddy', cn: '湿漉漉、满是泥', correct: false, reason: 'sloppy 有“湿软”的义项，但这里评价的是做事。' }
+          { key: 'A', en: 'someone who takes things without paying', cn: '白嫖怪、白吃白拿的人', correct: true, reason: '免费蹭办公室还点外卖不付钱，正是 freeloader。' },
+          { key: 'B', en: 'a freelance worker', cn: '自由职业者', correct: false, reason: 'freeloader 和 freelance 长得像，意思完全不同。' },
+          { key: 'C', en: 'a generous investor', cn: '出手大方的投资人', correct: false, reason: '他一分钱都没出，和「大方」正好相反。' }
         ],
-        analysis: 'sloppy 形容人做事“马虎、糊弄”。陈默不领这份情——对手越松，越说明里面有更大的坑。',
-        wrongFeedback: '你选错了，雷豹直接推门就进，门轴发出一声长响，走廊尽头的灯亮了一盏。',
-        afterCorrect: '陈默拉住他，先往门缝里扔了一枚硬币。硬币落地，没有回声——里面铺着地毯。'
+        analysis: 'freeloader 是白吃白拿、专占便宜的人。韩野说完，自己也觉得脸上发烫。',
+        wrongFeedback: '你选错了，那人还在翻外卖软件，问要不要加两个菜。气血 -10',
+        afterCorrect: '陈默把那人请出了办公室。韩野追到楼下，回来时耳朵是红的。'
       },
       {
-        plotDescription: '监控室里那个保安每隔十分钟就往楼上打一次电话，陈默看了两轮，笑了。',
-        line: "A needy guard calls his boss every ten minutes. That is our window.",
-        lineCn: '一个没安全感的保安十分钟就要给上司打一次电话。那就是我们的空档。',
-        prompt: "根据上下文，选出画线词汇 'needy' 最准确的意思。",
+        plotDescription: '一周后，那人发来一份投资意向书，最后一行写着：先交五万保证金。',
+        line: "This is a scam. Real investors never ask you to pay first.",
+        lineCn: '这是骗局。真正的投资人从不让你先交钱。',
+        prompt: "根据上下文，选出画线词汇 'Scam' 最准确的意思。",
         options: [
-          { key: 'A', en: 'having no money', cn: '缺钱、穷', correct: false, reason: 'need 有“需要”，但 needy 形容人时不是“穷”，是“黏人、缺安全感”。' },
-          { key: 'B', en: 'very strong and independent', cn: '很强大、很独立', correct: false, reason: '方向相反，needy 是离不开别人。' },
-          { key: 'C', en: 'wanting attention or reassurance all the time', cn: '离不开人、总需要确认和安慰', correct: true, reason: '十分钟一个电话求确认，这就是 needy 的典型表现。' }
+          { key: 'A', en: 'a dishonest plan to take your money', cn: '骗局、诈骗', correct: true, reason: '先交保证金才给投资，是典型骗钱套路。' },
+          { key: 'B', en: 'a very strict contract', cn: '一份很严格的合同', correct: false, reason: '问题不在严格，而在于要你先掏钱。' },
+          { key: 'C', en: 'a government subsidy', cn: '政府补贴', correct: false, reason: '补贴是给钱，不是收钱。' }
         ],
-        analysis: 'needy 形容人情感上“黏、缺安全感”，需要不断被确认。陈默看到的不是笑话，是节奏。',
-        wrongFeedback: '你选错了，陈默把“缺钱”当成了贪财，准备拿钱收买，结果那人根本不接电话。',
-        afterCorrect: '陈默掐着表：“他下一次打电话是九分四十秒后。那四十秒，电梯到七楼。”'
+        analysis: 'scam 是骗钱的手段。陈默把那份意向书打印出来，贴在了办公室的墙上。',
+        wrongFeedback: '你选错了，韩野低声说：「我打给他。」陈默按住他的手。气血 -10',
+        afterCorrect: '韩野在那张纸前面站了十分钟，最后说了一句：「我欠你一次。」'
       },
       {
-        plotDescription: '雷豹问为什么把主力全放在七楼，陈默指了指平面图上的空白区域。',
-        line: "Their boss is selfish. He put every guard around himself and left the rest empty.",
-        lineCn: '他们老板很自私。他把所有人手都摆在自己身边，其他地方全空着。',
-        prompt: "根据上下文，选出画线词汇 'selfish' 最准确的意思。",
+        plotDescription: '月底，供应商的催款单第三次寄到办公室，纸角已经被翻得起了毛。',
+        line: "We still owe them forty thousand. Debt does not wait for a good mood.",
+        lineCn: '我们还欠他们四万。债务不会等你心情好。',
+        prompt: "根据上下文，选出画线词汇 'Debt' 最准确的意思。",
         options: [
-          { key: 'A', en: 'caring only about yourself', cn: '自私、只顾自己', correct: true, reason: '把保命的兵力全堆在自己身边，正是只顾自己。' },
-          { key: 'B', en: 'sharing everything with others', cn: '什么都愿意跟人分享', correct: false, reason: '正好相反，selfish 是不分享。' },
-          { key: 'C', en: 'afraid of the dark', cn: '怕黑', correct: false, reason: '这里说的是兵力分配，不是怕不怕黑。' }
+          { key: 'A', en: 'money that you owe to someone', cn: '债务、欠款', correct: true, reason: '还欠供应商四万，这就是 debt。' },
+          { key: 'B', en: 'a discount you get from a supplier', cn: '供应商给的折扣', correct: false, reason: '催款单是要钱，不是优惠。' },
+          { key: 'C', en: 'a bonus you receive at work', cn: '工作拿到的奖金', correct: false, reason: '他们不但没有进账，还欠着钱。' }
         ],
-        analysis: 'selfish 是“自私的”。这个缺点对陈默来说不是道德问题，是战术缺口。',
-        wrongFeedback: '你选错了，陈默把这个判断划掉，队伍只能按最坏的假设硬冲，多花了整整六分钟。',
-        afterCorrect: '陈默用笔一圈：“所以二楼到六楼，只有巡逻。”他抬头，“三分钟，够我们上到第七层。”'
+        analysis: 'debt 是欠别人的钱。陈默在还款计划表上写下第一笔日期，手很稳。',
+        wrongFeedback: '你选错了，苏晚把催款单收走：「我来算，你别看了。」气血 -10',
+        afterCorrect: '他把手表摘下来放在桌上：「下周先还两万。剩下的我来想办法。」'
       }
     ],
-    completeText: '第 42 章结束。货梯在六楼停了一下，门开时走廊空无一人。雷豹回头对陈默比了个手势——三分钟，开始了。'
+    completeText: '第 42 章结束。那两万还上以后，催款单没有再寄来。墙上那张假意向书，一直贴到办公室搬走。'
   },
   {
     id: 'ml_43',
     index: 43,
-    title: '第 43 章 · 那栋楼的第七层',
+    title: '第 43 章 · 第一笔回款',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '第七层整层被改成私人会所，地毯厚得能吞掉脚步声。墙上挂着霍先生的照片，每一张都笑得很得体。水晶灯亮到刺眼，却一个客人都没有。陈默停在走廊尽头，那扇门后有人正在放音乐。',
+    storyText: '第一笔回款到账是在一个下雨的下午，十二万七。陈默盯着银行短信看了很久，办公室里谁都没有说话，只听见雨打在铁皮棚顶上。',
     questions: [
       {
-        plotDescription: '雷豹一进门就看呆了，低声骂了句这装潢得花多少钱，陈默却没看灯。',
-        line: "The place is gorgeous. That is exactly why nobody expects us to walk in.",
-        lineCn: '这地方漂亮得过分。也正因如此，没人会想到我们会走进来。',
-        prompt: "根据上下文，选出画线词汇 'gorgeous' 最准确的意思。",
+        plotDescription: '韩野把工资表打印出来，一张一张发到每个人手上。',
+        line: "First paycheck in three months. I almost forgot what this feels like.",
+        lineCn: '三个月来第一笔薪水。我差点忘了这是什么感觉。',
+        prompt: "根据上下文，选出画线词汇 'Paycheck' 最准确的意思。",
         options: [
-          { key: 'A', en: 'very dangerous', cn: '非常危险', correct: false, reason: '这里夸的是好看，不是危险。' },
-          { key: 'B', en: 'extremely beautiful', cn: '极其漂亮、华丽', correct: true, reason: '水晶灯、厚地毯、照片墙，就是这个意思。' },
-          { key: 'C', en: 'very old and broken', cn: '又旧又破', correct: false, reason: '和眼前的场面正相反。' }
+          { key: 'A', en: 'the money you receive for your work', cn: '薪水、工资', correct: true, reason: '三个月没发工资，现在发的是工作报酬，就是 paycheck。' },
+          { key: 'B', en: 'a bill you have to pay', cn: '需要付的账单', correct: false, reason: '这是发出去的钱，不是收账单。' },
+          { key: 'C', en: 'a tax form', cn: '一张税务表格', correct: false, reason: '手里拿的是现金和工资条，不是表格。' }
         ],
-        analysis: 'gorgeous 比 beautiful 更重，带“惊艳”的意思，也能形容人。陈默夸它漂亮，是在说这份漂亮让人松懈。',
-        wrongFeedback: '你选错了，雷豹以为他在说这里危险，立刻拔了枪，走廊的感应灯跟着亮了一片。',
-        afterCorrect: '陈默按住他的手：“他花这么多钱，是想让人觉得自己惹不起。”他看向那扇门，“可惜他只防外面。”'
+        analysis: 'paycheck 是工作换来的报酬。三个人的工资加起来，正好花掉回款的一半。',
+        wrongFeedback: '你选错了，韩野把工资条收回去：「那我先替你保管。」气血 -10',
+        afterCorrect: '韩野把那张纸折好，放进上衣口袋，拍了拍，什么也没说。'
       },
       {
-        plotDescription: '音乐声从门缝里漏出来，节奏很急，却没有酒杯碰撞的声音，陈默停下脚步。',
-        line: "Something is weird. The music is too loud for a meeting.",
-        lineCn: '有点不对劲。开会的话，这音乐太吵了。',
-        prompt: "根据上下文，选出画线词汇 'weird' 最准确的意思。",
+        plotDescription: '苏晚把一叠单子摊在桌上：水电、物业、宽带，还有办公室的网费。',
+        line: "Pay the bills first. Everything else can wait.",
+        lineCn: '先付账单。其他都能等。',
+        prompt: "根据上下文，选出画线词汇 'Bills' 最准确的意思。",
         options: [
-          { key: 'A', en: 'very loud', cn: '非常响', correct: false, reason: '响只是表面现象，weird 说的是“反常”。' },
-          { key: 'B', en: 'extremely expensive', cn: '极其昂贵', correct: false, reason: '他评价的是气氛，不是价格。' },
-          { key: 'C', en: 'strange, not normal', cn: '奇怪、不正常', correct: true, reason: '开会却放这么吵的音乐，而且没人说话，这就是反常。' }
+          { key: 'A', en: 'money you must pay for services you use', cn: '账单、各项应付费用', correct: true, reason: '水电物业网络，都是到期要付的账单。' },
+          { key: 'B', en: 'paper money in your pocket', cn: '口袋里的纸币', correct: false, reason: '那是 cash，不是 bills 在这里的意思。' },
+          { key: 'C', en: 'small advertisements', cn: '小广告传单', correct: false, reason: '桌上的单子是要付钱的，不是广告。' }
         ],
-        analysis: 'weird 是“怪、不对劲”，口语里语气比 strange 更轻，常带“我直觉有问题”的意味。',
-        wrongFeedback: '你选错了，队伍以为只是嫌吵，直接把音乐关了，门里面瞬间安静——人被惊动了。',
-        afterCorrect: '陈默贴近门缝，听见一个女人的抽气声。他收回手，比了个手势：里面有人被绑着。'
+        analysis: 'bills 是要按期支付的费用单。苏晚把每一张都按到期日排好，最上面那张是水电。',
+        wrongFeedback: '你选错了，苏晚把单子按日期重排了一遍：「顺序不能错。」气血 -10',
+        afterCorrect: '七张账单付完，回款只剩下四万三。她在那张纸的右下角写了个小数。'
       },
       {
-        plotDescription: '走廊尽头那扇门没有把手，门边也没有摄像头，更看不见一个服务生。',
-        line: "That door is sketchy. No handle, no camera, no staff. Stay behind me.",
-        lineCn: '那扇门很可疑。没把手，没摄像头，也没人守着。跟在我后面。',
-        prompt: "根据上下文，选出画线词汇 'sketchy' 最准确的意思。",
+        plotDescription: '装修队只收现钞，韩野从银行取了一沓回来。',
+        line: "They only take cash. No transfer, no card.",
+        lineCn: '他们只收现金。不转账，不刷卡。',
+        prompt: "根据上下文，选出画线词汇 'Cash' 最准确的意思。",
         options: [
-          { key: 'A', en: 'suspicious and possibly dangerous', cn: '可疑的、可能有危险', correct: true, reason: '没把手没监控没人守，三样都不合常理，所以可疑。' },
-          { key: 'B', en: 'drawn with a pencil', cn: '用铅笔画的', correct: false, reason: 'sketch 是速写，但 sketchy 在这里不是“画出来的”。' },
-          { key: 'C', en: 'very clean and bright', cn: '非常干净明亮', correct: false, reason: '这里讲的是异常，不是整洁。' }
+          { key: 'A', en: 'money in coins or notes', cn: '现金、现钞', correct: true, reason: '韩野从银行取回来的一沓纸币，就是 cash。' },
+          { key: 'B', en: 'money sitting in a bank account', cn: '银行账户里的钱', correct: false, reason: '对方明确说不转账，要的是现钞。' },
+          { key: 'C', en: 'a credit card', cn: '信用卡', correct: false, reason: '他取的是纸币，不是卡。' }
         ],
-        analysis: 'sketchy 是“可疑的、不太靠得住的”，美剧里常用来说某个地方或某个人看着就不对。',
-        wrongFeedback: '你选错了，雷豹以为只是门有问题，一脚踹开，里面的人已经从另一侧按下了警铃。',
-        afterCorrect: '陈默把耳朵贴在门板上，数了三秒，然后回头：“门后面两个人，左边那个先动。”'
+        analysis: 'cash 是实实在在的钞票。韩野把那一沓钱摊在桌上，数了三遍。',
+        wrongFeedback: '你选错了，韩野把钱重新扎好：「数错了要出事的。」气血 -10',
+        afterCorrect: '钱递出去的时候，他的手停了半秒，还是递了过去。'
       },
       {
-        plotDescription: '门推开的一瞬，屋里只有音乐、一张桌子和满墙照片，霍先生坐在正中，笑着鼓掌。',
-        line: "A party at three in the morning with no guests? That is bizarre.",
-        lineCn: '凌晨三点办派对，一个客人都没有？太诡异了。',
-        prompt: "根据上下文，选出画线词汇 'bizarre' 最准确的意思。",
+        plotDescription: '回款不够发下个月工资，陈默在银行坐了一个下午，出来时天已经黑了。',
+        line: "The bank approved a small loan. Enough for two months.",
+        lineCn: '银行批了一笔小额贷款。够撑两个月。',
+        prompt: "根据上下文，选出画线词汇 'Loan' 最准确的意思。",
         options: [
-          { key: 'A', en: 'very noisy', cn: '非常吵闹', correct: false, reason: 'bizarre 说的是怪到没法解释，不是音量。' },
-          { key: 'B', en: 'very strange and hard to explain', cn: '离奇、怪到说不通', correct: true, reason: '凌晨三点、一个人、还放音乐，这就是“说不通”。' },
-          { key: 'C', en: 'sad and lonely', cn: '悲伤而孤独', correct: false, reason: '这里是诡异，不是伤感。' }
+          { key: 'A', en: 'money you borrow and must pay back', cn: '贷款、借款', correct: true, reason: '向银行借、以后要还的钱，就是 loan。' },
+          { key: 'B', en: 'money the bank gives you for free', cn: '银行白给的钱', correct: false, reason: '贷款是要还本付息的，不是白给。' },
+          { key: 'C', en: 'a fine you must pay', cn: '必须缴的罚款', correct: false, reason: '这是主动借来的资金，不是罚款。' }
         ],
-        analysis: 'bizarre 比 weird 更重，指“离奇到让人无法理解”。陈默用这个词，说明他已经看出这是圈套。',
-        wrongFeedback: '你选错了，陈默把这个词说成“寂寞”，走上前去，正好踩进地毯下那根细线。',
-        afterCorrect: '陈默停在门口没动：“你想让我看见你。”他把手电照向墙上的照片，“那我也让你看看，谁在外面。”'
+        analysis: 'loan 是借来的、要还的钱。签字之前，陈默把利率看了三遍。',
+        wrongFeedback: '你选错了，柜员把合同又推回来：「先生，这里还要签一个名。」气血 -10',
+        afterCorrect: '走出银行，他给苏晚发消息：够了。她回了两个字：回家。'
       }
     ],
-    completeText: '第 43 章结束。霍先生鼓完掌，抬起手示意音乐停。灯灭了一半，只剩墙上的照片还亮着。他说：你以为你上来，是你赢了？'
+    completeText: '第 43 章结束。那晚苏晚煮了两碗面，卧了两个蛋。她说：「等公司赚了钱，我要吃一次很贵的日料。」'
   },
   {
     id: 'ml_44',
     index: 44,
-    title: '第 44 章 · 这一战，够吹一辈子',
+    title: '第 44 章 · 旧货市场拉回来的桌子',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '地毯下面埋着压力线，屋里十一个人同时动了。雷豹撞翻长桌，韩青把被绑的秘书小叶拖到墙后，老周堵住了唯一的门。四十秒后，屋里只剩下喘息声和地上一片碎玻璃。',
+    storyText: '为了省下装修钱，办公室的桌子是从旧货市场拉回来的。苏晚蹲在地上擦桌面，袖口沾了一层灰。韩野站在旁边，拍着那张掉漆的桌子。',
     questions: [
       {
-        plotDescription: '霍先生被按在椅子上，却还在笑，说今晚这一场够这些人吹十年。',
-        line: "This will be epic. Ten years from now, people will still talk about tonight.",
-        lineCn: '这一场会成为传奇。十年后人们还会谈起今晚。',
-        prompt: "根据上下文，选出画线词汇 'epic' 最准确的意思。",
+        plotDescription: '韩野一掌拍在桌面上，桌子晃了一下，没倒。',
+        line: "Three tables for six hundred. Cheap and solid.",
+        lineCn: '三张桌子六百块。便宜还结实。',
+        prompt: "根据上下文，选出画线词汇 'Cheap' 最准确的意思。",
         options: [
-          { key: 'A', en: 'very short and boring', cn: '很短、很无聊', correct: false, reason: '他说的是十年后还有人谈，绝不是无聊。' },
-          { key: 'B', en: 'a long poem about heroes', cn: '一首写英雄的长诗', correct: false, reason: 'epic 有“史诗”的本义，但这里是形容一场架。' },
-          { key: 'C', en: 'grand and impressive', cn: '史诗级的、极其震撼', correct: true, reason: '口语里 epic 就是“牛到可以写进历史”，正对上“十年后还谈”。' }
+          { key: 'A', en: 'costing little money', cn: '便宜的、花不了多少钱', correct: true, reason: '三张桌子六百块，价格很低，就是 cheap。' },
+          { key: 'B', en: 'badly made and useless', cn: '做工差又没法用', correct: false, reason: '他后面还补了「结实」，说明能用。' },
+          { key: 'C', en: 'extremely expensive', cn: '贵得离谱', correct: false, reason: '六百块三张，明显是便宜。' }
         ],
-        analysis: 'epic 从“史诗”引申为“极震撼、规模宏大”，年轻人用它夸一场球、一顿饭都可以。霍先生这话是在给自己找体面。',
-        wrongFeedback: '你选错了，雷豹真以为他在念诗，愣了一秒，被地上那个人抱住了腿。',
-        afterCorrect: '陈默蹲下来：“十年后人们会谈。”他压低声音，“谈你是怎么在自己家里被按住的。”'
+        analysis: 'cheap 首先指「价格低」。它也能说人「抠门」，但这里说的是桌子。',
+        wrongFeedback: '你选错了，韩野把桌子又拍了一下：「你看，一点事没有。」气血 -10',
+        afterCorrect: '陈默把电脑放上去，试了试，桌子没有晃。'
       },
       {
-        plotDescription: '枪托砸在地板上，那声闷响让站在门口的小叶整个人一抖，抱紧了胳膊。',
-        line: "That sound made me cringe. I hate it when bone hits the floor.",
-        lineCn: '那声音让我直起鸡皮疙瘩。我最听不得骨头撞地板的声音。',
-        prompt: "根据上下文，选出画线词汇 'cringe' 最准确的意思。",
+        plotDescription: '苏晚站在一台新打印机前面看了很久，最后把手收了回来。',
+        line: "We cannot afford it yet. Give me one more month.",
+        lineCn: '现在还买不起。再给我一个月。',
+        prompt: "根据上下文，选出画线词汇 'Afford' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to feel uncomfortable or embarrassed', cn: '不适、尴尬到缩起来', correct: true, reason: '她整个人一抖、抱住胳膊，这就是 cringe 的反应。' },
-          { key: 'B', en: 'to laugh out loud', cn: '大声笑出来', correct: false, reason: '这里没有人觉得好笑。' },
-          { key: 'C', en: 'to stand up straight', cn: '站得笔直', correct: false, reason: '她是缩起来，不是挺直。' }
+          { key: 'A', en: 'to have enough money for something', cn: '负担得起、钱够买', correct: true, reason: '她说的是钱还没到那个数，就是 afford 的问题。' },
+          { key: 'B', en: 'to refuse to buy something', cn: '拒绝购买', correct: false, reason: '她不是不想要，是钱不够。' },
+          { key: 'C', en: 'to borrow something from someone', cn: '向别人借东西', correct: false, reason: '这台打印机他们没有借，是想买。' }
         ],
-        analysis: 'cringe 是“因为尴尬、难受而缩一下”。现在网络上也常用来形容“尬到受不了”。',
-        wrongFeedback: '你选错了，小叶以为他在开玩笑，勉强笑了一声，笑到一半又僵住了。',
-        afterCorrect: '陈默把外套脱下来盖在她肩上：“别看地上。”他挡在她前面，“数到十，我们就走。”'
+        analysis: 'afford 是「钱够不够」。陈默说的是钱，不是不想要。',
+        wrongFeedback: '你选错了，苏晚把手机收起来：「一个月，我记着了。」气血 -10',
+        afterCorrect: '她把打印机的型号记在手机备忘录里，后面标了一个日期。'
       },
       {
-        plotDescription: '苏晚从楼梯口走进来，外套上还带着夜里的凉气，陈默抬头看了她很久。',
-        line: "You look fabulous. Like the first night I saw you, only angrier.",
-        lineCn: '你好看得离谱。像我第一次见你那晚，只是更生气了。',
-        prompt: "根据上下文，选出画线词汇 'fabulous' 最准确的意思。",
+        plotDescription: '韩野花三百块买了一把人体工学椅，坐上去转了一圈。',
+        line: "Three hundred for this chair? Totally worth it.",
+        lineCn: '这椅子三百块？太值了。',
+        prompt: "根据上下文，选出画线词汇 'Worth it' 最准确的意思。",
         options: [
-          { key: 'A', en: 'very tired', cn: '非常疲惫', correct: false, reason: '这里是夸，不是心疼她累。' },
-          { key: 'B', en: 'extremely good-looking or wonderful', cn: '极美的、极好的', correct: true, reason: '“像我第一次见你那晚”说明他在夸她的样子。' },
-          { key: 'C', en: 'made of cloth', cn: '用布做的', correct: false, reason: 'fabric 才是“布料”，fabulous 是“好极了”。' }
+          { key: 'A', en: 'good enough to justify the money', cn: '值了、这个钱花得不亏', correct: true, reason: '他坐上去很满意，觉得三百块不亏，就是 worth it。' },
+          { key: 'B', en: 'a total waste of money', cn: '完全浪费钱', correct: false, reason: '他的语气是满意，不是后悔。' },
+          { key: 'C', en: 'too expensive to buy', cn: '贵得买不起', correct: false, reason: '他已经买下来了。' }
         ],
-        analysis: 'fabulous 比 great 更夸张，带“惊艳”的味道。陈默在这种场面里说这句，是因为他知道她一路都是自己走上来的。',
-        wrongFeedback: '你选错了，苏晚以为他在嫌她衣服旧，低头扯了一下袖口，把话咽了回去。',
-        afterCorrect: '苏晚没接话，只走到他面前，抬手把他领口的血擦掉：“先回家。”她说，“剩下的明天算。”'
+        analysis: 'worth it 是「花这个钱不亏」。韩野以前在工地上站十二个小时，腰一直不好。',
+        wrongFeedback: '你选错了，韩野从椅子上站起来：「你不懂，这腰值三百。」气血 -10',
+        afterCorrect: '陈默看了那把椅子一眼。第二天，他给苏晚也买了一把。'
       },
       {
-        plotDescription: '雷豹一边收枪一边抱怨这计划太冒险，陈默点头承认，说确实烂，但成了。',
-        line: "The plan was terrible. I know. But it worked, and that is all I care about.",
-        lineCn: '这计划很糟。我知道。但它成了，我只在乎这个。',
-        prompt: "根据上下文，选出画线词汇 'terrible' 最准确的意思。",
+        plotDescription: '晚上回家，苏晚打开电脑，接了一个品牌文案的私活。',
+        line: "I started a side hustle. It pays more than my old salary.",
+        lineCn: '我搞了个副业。赚得比我以前的工资还多。',
+        prompt: "根据上下文，选出画线词汇 'Side hustle' 最准确的意思。",
         options: [
-          { key: 'A', en: 'extremely fast', cn: '极其快速', correct: false, reason: '他谈的是计划好坏，不是速度。' },
-          { key: 'B', en: 'very easy to do', cn: '非常容易做', correct: false, reason: '正好相反，他自己说这计划很冒险。' },
-          { key: 'C', en: 'very bad', cn: '非常糟糕', correct: true, reason: '他先承认“很糟”，再补一句“但它成了”。' }
+          { key: 'A', en: 'extra work you do besides your main job', cn: '副业、主业之外的额外活儿', correct: true, reason: '她下班后接文案私活，就是 side hustle。' },
+          { key: 'B', en: 'a hobby that costs a lot of money', cn: '花钱很多的爱好', correct: false, reason: '她是在赚钱，不是在花钱。' },
+          { key: 'C', en: 'a second full-time job', cn: '第二份全职工作', correct: false, reason: '这是下班后接的活，不是全职。' }
         ],
-        analysis: 'terrible 是“极坏的”。陈默不美化过程，只认结果——这是他和别人最不一样的地方。',
-        wrongFeedback: '你选错了，雷豹以为他在夸计划快，回去照着又打了一次，第二次差点没出来。',
-        afterCorrect: '雷豹骂了一句，然后笑了。陈默拍拍他的肩：“下次你写计划，我照做。”'
+        analysis: 'side hustle 是主业之外的额外收入。她曾经是苏氏集团的总裁，现在在给别人的品牌写文案。',
+        wrongFeedback: '你选错了，苏晚头也没抬：「别站着看，去把碗洗了。」气血 -10',
+        afterCorrect: '陈默站在门口看了一会儿，把她的杯子续满了热水。'
       }
     ],
-    completeText: '第 44 章结束。凌晨四点，八个人从货梯下来，一个不少。小叶抱着账本走在中间，老周把门从里面锁死，说这栋楼今晚不会再开。'
+    completeText: '第 44 章结束。那个月苏晚的副业赚了九千。她把钱转进公司账户，备注写着：投资方。'
   },
   {
     id: 'ml_45',
     index: 45,
-    title: '第 45 章 · 他站在光里',
+    title: '第 45 章 · 余额三百二十七',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '天亮时，苏氏大楼门口围了三十多个记者。苏振海站在台阶上，第一次当众把陈默的名字念了出来。闪光灯亮成一片，苏晚站在他右手边，陈小满站在左手边，谁都没有退。',
+    storyText: '第二个月底，默行科技的账户余额是三百二十七块。离发工资还有五天。新来的实习生站在他桌前，手指绞着衣角。',
     questions: [
       {
-        plotDescription: '有记者问苏振海为什么改口，老人沉默了几秒，说了这句，声音有点抖。',
-        line: "He is a decent man. In this family, that is rarer than talent.",
-        lineCn: '他是个正派的人。在这个家里，这比才能更稀缺。',
-        prompt: "根据上下文，选出画线词汇 'decent' 最准确的意思。",
+        plotDescription: '实习生小声问他，试用期的工资能不能再高一点。',
+        line: "I used to work for minimum wage. I know exactly what that number means.",
+        lineCn: '我以前拿过最低工资。我很清楚这个数意味着什么。',
+        prompt: "根据上下文，选出画线词汇 'Minimum wage' 最准确的意思。",
         options: [
-          { key: 'A', en: 'honest and morally good', cn: '正派的、品行端正的', correct: true, reason: '老人是在给他人品上的评价，所以说“比才能更稀缺”。' },
-          { key: 'B', en: 'well dressed', cn: '穿得体面', correct: false, reason: 'decent 可以形容衣着得体，但这里说的是人。' },
-          { key: 'C', en: 'extremely clever', cn: '极其聪明', correct: false, reason: '他特意把“正派”和“才能”分开比。' }
+          { key: 'A', en: 'the lowest pay allowed by law', cn: '最低工资、法定最低报酬', correct: true, reason: '他说自己曾经拿的是法律允许的最低那档工资。' },
+          { key: 'B', en: 'a very high salary', cn: '非常高的薪水', correct: false, reason: 'minimum 是「最低」，不是最高。' },
+          { key: 'C', en: 'unpaid training', cn: '没有报酬的培训', correct: false, reason: 'wage 就是工资，不是白干。' }
         ],
-        analysis: 'decent 是“体面的、正派的”，比 good 更克制。老人用这个词，等于把三年的偏见收了回去。',
-        wrongFeedback: '你选错了，记者把这句写成“苏家承认他只是个穿得体面的人”，第二天标题全歪了。',
-        afterCorrect: '陈默没有鞠躬，只说了一句：“我不需要认可。”他顿了一下，“但苏晚需要。”'
+        analysis: 'minimum wage 是法律允许的最低报酬。陈默被赶出陈家那年端过盘子，一天八十。',
+        wrongFeedback: '你选错了，实习生低下头：「那我再看看别的机会。」气血 -10',
+        afterCorrect: '陈默给他加了五百，然后在自己的工资栏里划掉了一半。'
       },
       {
-        plotDescription: '散场后，苏明哲在角落里冷笑，说陈默这种人就是个怪胎，从小就不合群。',
-        line: "People called me a weirdo for years. I just called it being early.",
-        lineCn: '很多人叫了我好几年怪人。我只当那是来得早。',
-        prompt: "根据上下文，选出画线词汇 'weirdo' 最准确的意思。",
+        plotDescription: '银行短信弹出来：余额不足，已发生透支。',
+        line: "The account went into overdraft. We spent money we did not have.",
+        lineCn: '账户透支了。我们花了本来没有的钱。',
+        prompt: "根据上下文，选出画线词汇 'Overdraft' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a very talented person', cn: '非常有才华的人', correct: false, reason: '这是骂人的称呼，不是夸。' },
-          { key: 'B', en: 'a strange or unusual person', cn: '怪人、跟别人不一样的人', correct: true, reason: '前面刚说“不合群”，weirdo 就是“怪胎”。' },
-          { key: 'C', en: 'a person who talks too much', cn: '话太多的人', correct: false, reason: '这里说的不是话多，是格格不入。' }
+          { key: 'A', en: 'spending more than your account holds', cn: '透支、账户支出超过余额', correct: true, reason: '余额不足还发生了支出，就是 overdraft。' },
+          { key: 'B', en: 'a large deposit into the account', cn: '往账户里存入一大笔钱', correct: false, reason: '短信说的是余额不足，不是进账。' },
+          { key: 'C', en: 'a transfer to another account', cn: '向另一个账户转账', correct: false, reason: '这里说的是花超了，不是转账。' }
         ],
-        analysis: 'weirdo 是口语里的“怪人”，偏贬义，但也可以自嘲。陈默把它接过来，翻成“我只是比你们早看到”。',
-        wrongFeedback: '你选错了，苏明哲立刻接话“你看他自己都承认有才”，把这话当成台阶往下踩。',
-        afterCorrect: '陈默看了他一眼：“三年前我说赵家的账有问题，全桌人笑我是怪人。现在账本在我手上。”'
+        analysis: 'overdraft 是花超了账户里的钱。这条短信来的时候，苏晚正在厨房煮面。',
+        wrongFeedback: '你选错了，苏晚把手机拿过去看了一眼，又放回桌上。气血 -10',
+        afterCorrect: '她把面端出来，看了他一眼，什么也没问。'
       },
       {
-        plotDescription: '上车后，苏晚替他理了理领带，忽然说了句让司机都差点踩错刹车的话。',
-        line: "You are hot when you are that calm. It is unfair.",
-        lineCn: '你那么冷静的时候特别有魅力。太不公平了。',
-        prompt: "根据上下文，选出画线词汇 'hot' 最准确的意思。",
+        plotDescription: '韩野把一张存单拍在桌上，上面写着三万。',
+        line: "I saved up for a year. Take it, pay the wages.",
+        lineCn: '我存了一年。拿去，发工资。',
+        prompt: "根据上下文，选出画线词汇 'Save up' 最准确的意思。",
         options: [
-          { key: 'A', en: 'having a high temperature', cn: '温度很高、很热', correct: false, reason: 'hot 的字面义是“热”，但这里她在夸人。' },
-          { key: 'B', en: 'spicy in taste', cn: '味道很辣', correct: false, reason: '车里没有人在吃东西。' },
-          { key: 'C', en: 'very attractive', cn: '性感、非常有魅力', correct: true, reason: '“太不公平了”就是被撩到的语气，hot 在这里是夸吸引力。' }
+          { key: 'A', en: 'to keep money for a future use', cn: '攒钱、一点点存下来', correct: true, reason: '这三万是他一年攒下来的，就是 save up。' },
+          { key: 'B', en: 'to spend money very quickly', cn: '很快把钱花掉', correct: false, reason: '他说的是存了一年，不是花。' },
+          { key: 'C', en: 'to lend money to a bank', cn: '把钱借给银行', correct: false, reason: '他把钱拿出来给公司，不是存进银行。' }
         ],
-        analysis: 'hot 形容人是“性感、有魅力”，比 beautiful 更带情绪。她说“不公平”，是在承认自己被打动了。',
-        wrongFeedback: '你选错了，陈默真去把空调调低了两度，苏晚看着窗外，一路没再说话。',
-        afterCorrect: '陈默把她的手握住：“那以后我多冷静几次。”苏晚抽了一下没抽动，最后任由他握着。'
+        analysis: 'save up 是一点一点攒。韩野这一年没买过一件新衣服。',
+        wrongFeedback: '你选错了，韩野把存单按住：「你别跟我客气。」气血 -10',
+        afterCorrect: '陈默没有马上接。韩野把存单又往前推了推：「兄弟法则，记得吗？」'
       },
       {
-        plotDescription: '陈小满在后座偷笑，说哥哥耳朵红了，还说自己第一次见他这样。',
-        line: "It is cute how you still get nervous around her after three years.",
-        lineCn: '都三年了，你一见她还是会紧张，真可爱。',
-        prompt: "根据上下文，选出画线词汇 'cute' 最准确的意思。",
+        plotDescription: '一周后，一个做硬件的老板约他喝咖啡，说想投默行科技。',
+        line: "I want to invest in you, not in the product.",
+        lineCn: '我想投的是你这个人，不是这个产品。',
+        prompt: "根据上下文，选出画线词汇 'Invest' 最准确的意思。",
         options: [
-          { key: 'A', en: 'sweet and endearing', cn: '可爱、让人心里一软的', correct: true, reason: '妹妹是在笑他，带的是亲昵的语气。' },
-          { key: 'B', en: 'extremely ugly', cn: '非常丑', correct: false, reason: '正好相反，cute 是褒义。' },
-          { key: 'C', en: 'very serious', cn: '非常严肃', correct: false, reason: '车里这个气氛一点都不严肃。' }
+          { key: 'A', en: 'to put money into something to make a profit', cn: '投资、投钱进去期待回报', correct: true, reason: '他要往公司里投钱，就是 invest。' },
+          { key: 'B', en: 'to borrow money from someone', cn: '向别人借钱', correct: false, reason: '投资是给钱，借钱是拿钱，方向相反。' },
+          { key: 'C', en: 'to sell a company', cn: '把公司卖掉', correct: false, reason: '他要投钱进来，不是买走。' }
         ],
-        analysis: 'cute 除了“可爱”，口语里也能说“挺好玩的、挺招人喜欢”。小满这句是亲兄妹之间的打趣。',
-        wrongFeedback: '你选错了，陈默当真了，回头板着脸问“哪里丑”，小满笑得趴在后座上。',
-        afterCorrect: '陈默咳了一声：“坐好。”小满举手：“报告，我坐好了。”苏晚终于笑出声。'
+        analysis: 'invest 是把钱投进去，期待以后有回报。那位老板说完，陈默没有立刻回答。',
+        wrongFeedback: '你选错了，老板把咖啡杯放下：「你可以慢慢想。」气血 -10',
+        afterCorrect: '陈默问了一句：「如果三年不赚钱呢？」对方笑了：「那我就再等三年。」'
       }
     ],
-    completeText: '第 45 章结束。车开出很远，苏晚才轻声说：其实那天在老宅，我就想跟你走了。陈默没有回头，只说：我知道，所以我才敢来。'
+    completeText: '第 45 章结束。那笔钱到账的那天，陈默在办公室门口站了一会儿，才推门进去。'
   },
   {
     id: 'ml_46',
     index: 46,
-    title: '第 46 章 · 清晨六点的第一班地铁',
+    title: '第 46 章 · 一叠薄薄的票据',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '三个月期限到了，苏氏的项目活了。这天早上六点，陈默第一次不用赶时间，却还是站在地铁站台上。苏晚拎着两杯豆浆从台阶上跑下来，说今天不开车，想陪他挤一次早高峰。',
+    storyText: '第一年结束，会计抱来一摞票据。默行科技第一次要做完整的账，第一次要交税。苏晚把台灯往桌边挪了挪，两个人在灯下坐到半夜。',
     questions: [
       {
-        plotDescription: '站台上全是赶早班的人，苏晚靠在他肩边，看着一趟趟挤不上去的车。',
-        line: "I forgot how bad the commute is at six in the morning.",
-        lineCn: '我都忘了早上六点通勤有多难受了。',
-        prompt: "根据上下文，选出画线词汇 'commute' 最准确的意思。",
+        plotDescription: '会计把一份表推过来，指着最后一栏。',
+        line: "This is the tax you owe for last quarter. It is not optional.",
+        lineCn: '这是你们上季度该交的税。这不是可选项。',
+        prompt: "根据上下文，选出画线词汇 'Tax' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a short holiday', cn: '一次短假', correct: false, reason: '这里说的是每天上下班的路，不是休假。' },
-          { key: 'B', en: 'the regular journey between home and work', cn: '上下班通勤', correct: true, reason: '六点、站台、挤车，这就是通勤。' },
-          { key: 'C', en: 'a fine for breaking a rule', cn: '违规罚款', correct: false, reason: 'commute 不是罚款，罚款是 fine。' }
+          { key: 'A', en: 'money you must pay to the government', cn: '税、必须交给政府的钱', correct: true, reason: '表格最后一栏是上季度应缴的税款，就是 tax。' },
+          { key: 'B', en: 'a tip for good service', cn: '给好服务的小费', correct: false, reason: '小费是自愿给的，不是交给政府的。' },
+          { key: 'C', en: 'a discount on a purchase', cn: '购物折扣', correct: false, reason: '这是要交出去的钱，不是折扣。' }
         ],
-        analysis: 'commute 作名词是“通勤”，作动词是“通勤往返”。她说“忘了有多难受”，是因为这三年都有人替她开车门。',
-        wrongFeedback: '你选错了，苏晚以为他在说罚款，认真地问是不是车被贴条了，气氛一下散了。',
-        afterCorrect: '陈默把她的包接过来：“以后想挤，我陪你。”车门开了，他伸手挡在她前面，替她隔出一个位置。'
+        analysis: 'tax 是依法要缴给政府的钱。陈默看了一眼数字，把它记在了本子上。',
+        wrongFeedback: '你选错了，会计把笔递过来：「这里签个字。」气血 -10',
+        afterCorrect: '签完字，陈默把那张表夹进文件夹，放在最上面一格。'
       },
       {
-        plotDescription: '车厢里人贴人，苏晚靠在他肩上打哈欠，说还有四十多分钟才到。',
-        line: "You can take a nap on my shoulder. It is forty minutes.",
-        lineCn: '你可以靠我肩上眯一会儿。还有四十分钟。',
-        prompt: "根据上下文，选出画线词汇 'nap' 最准确的意思。",
+        plotDescription: '两个月后，会计打来电话，说多缴的那部分批下来了。',
+        line: "Good news. The refund came through this morning.",
+        lineCn: '好消息。退款今天上午到账了。',
+        prompt: "根据上下文，选出画线词汇 'Refund' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a full night of sleep', cn: '一整晚的睡眠', correct: false, reason: '只有四十分钟，nap 是短时间的盹。' },
-          { key: 'B', en: 'a kind of cloth', cn: '一种布料', correct: false, reason: 'nap 有“绒毛”的义项，但这里说的是睡觉。' },
-          { key: 'C', en: 'a short sleep', cn: '小睡、打个盹', correct: true, reason: '在肩上、四十分钟，这就是短期打盹。' }
+          { key: 'A', en: 'money paid back to you', cn: '退款、退回的钱', correct: true, reason: '多缴的部分被退回，就是 refund。' },
+          { key: 'B', en: 'an extra charge you must pay', cn: '需要额外支付的费用', correct: false, reason: '方向相反，这是退回来的钱。' },
+          { key: 'C', en: 'a fine for paying late', cn: '迟缴的罚款', correct: false, reason: '电话里说的是好消息，不是罚款。' }
         ],
-        analysis: 'nap 专指白天或短时间的“小睡”，比 sleep 轻。这句是整本书里最不像陈默的一句话，所以苏晚笑了一下。',
-        wrongFeedback: '你选错了，苏晚以为他在嫌她衣服起球，低头检查了半天袖子，脸都红了。',
-        afterCorrect: '她真的闭上了眼睛。陈默保持着一个姿势不动，四十分钟里没换过一次肩膀。'
+        analysis: 'refund 是把多收的钱退回来。那笔钱不多，但刚好够买一台新的打印机。',
+        wrongFeedback: '你选错了，会计在电话那头停了一下：「您还在听吗？」气血 -10',
+        afterCorrect: '陈默挂了电话，对苏晚说：「打印机能买了。」苏晚从椅子上站起来。'
       },
       {
-        plotDescription: '出站时下雨了，两个人躲在便利店檐下，苏晚看了看手机上的外卖软件。',
-        line: "Let us order in tonight. Nobody wants to cook in this weather.",
-        lineCn: '今晚叫外卖吧。这种天气没人想做饭。',
-        prompt: "根据上下文，选出画线词汇 'order in' 最准确的意思。",
+        plotDescription: '买完打印机，店员问他要不要小票。',
+        line: "Keep the receipt. We need it for the books.",
+        lineCn: '把收据留着。做账要用。',
+        prompt: "根据上下文，选出画线词汇 'Receipt' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to have food delivered to your home', cn: '点外卖、让人送餐到家', correct: true, reason: '下雨、不想做饭、看外卖软件，就是叫外卖。' },
-          { key: 'B', en: 'to give a command', cn: '下达命令', correct: false, reason: 'order 有“命令”的意思，但 order in 是“叫餐”。' },
-          { key: 'C', en: 'to arrange things neatly', cn: '把东西整理整齐', correct: false, reason: '这里在说吃饭，不是收拾。' }
+          { key: 'A', en: 'a piece of paper proving you paid', cn: '收据、付款凭证', correct: true, reason: '买东西后店员给小票，就是 receipt，做账要留。' },
+          { key: 'B', en: 'a recipe for cooking', cn: '做菜的食谱', correct: false, reason: 'receipt 和 recipe 长得像，这里不是菜谱。' },
+          { key: 'C', en: 'a warranty card', cn: '保修卡', correct: false, reason: '店员给的是付款凭证。' }
         ],
-        analysis: 'order in 是“叫外卖在家吃”，order out 更偏向“出去买”。这组短语只看一个 in 就能分出方向。',
-        wrongFeedback: '你选错了，苏晚当真以为他在下命令，收起手机说“那我听你的，不吃了”。',
-        afterCorrect: '陈默补了一句：“点你爱吃的那家。”苏晚抬头看他：“你连我常点哪家都知道？”他没回答。'
+        analysis: 'receipt 是证明你付过钱的单据。苏晚把它折好，放进一个专门的铁盒里。',
+        wrongFeedback: '你选错了，店员又把小票递了一遍：「给您。」气血 -10',
+        afterCorrect: '那个铁盒里现在有三十七张收据，是默行科技的一整年。'
       },
       {
-        plotDescription: '雨小了些，苏晚指着街角那块旧招牌，说这家她小时候常来。',
-        line: "Or we eat out. There is a noodle shop right around the corner.",
-        lineCn: '或者我们出去吃。转角就有家面馆。',
-        prompt: "根据上下文，选出画线词汇 'eat out' 最准确的意思。",
+        plotDescription: '加班到晚上十点，外卖送到，陈默从钱包里多拿了一张纸币。',
+        line: "Here is a tip. Sorry we made you come up six floors.",
+        lineCn: '这是小费。抱歉让你爬了六层楼。',
+        prompt: "根据上下文，选出画线词汇 'Tip' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to eat everything on the plate', cn: '把盘子里的都吃光', correct: false, reason: 'eat out 不是“吃完”，是“在外吃”。' },
-          { key: 'B', en: 'to eat at a restaurant instead of at home', cn: '在外面餐馆吃', correct: true, reason: '她说转角有家面馆，就是去外面吃。' },
-          { key: 'C', en: 'to feed someone else', cn: '喂别人吃', correct: false, reason: '这里没有喂谁，是两个人一起出去吃。' }
+          { key: 'A', en: 'extra money you give for good service', cn: '小费、给服务人员的额外钱', correct: true, reason: '他多给的这张纸币，是给送餐员的小费。' },
+          { key: 'B', en: 'a piece of advice', cn: '一条建议', correct: false, reason: 'tip 也有建议的意思，但这里给的是钱。' },
+          { key: 'C', en: 'the total price of the meal', cn: '这顿饭的总价', correct: false, reason: '饭钱已经付过了，这是额外的。' }
         ],
-        analysis: 'eat out 是“下馆子”，和 order in 正好是两种选择。苏晚给出的不是方案，是一个她小时候的记忆。',
-        wrongFeedback: '你选错了，苏晚把伞收起来，说“那还是回家吧”，那家面馆她最后没带他去成。',
-        afterCorrect: '陈默撑开伞：“走。”苏晚愣了一下：“现在？还没到饭点。”“那就先坐着。”'
+        analysis: 'tip 在这里是给服务人员的额外钱。送餐员愣了一下，说了声谢谢，转身下楼。',
+        wrongFeedback: '你选错了，送餐员摆摆手：「不用不用。」陈默把钱塞进他手里。气血 -10',
+        afterCorrect: '门关上后，苏晚说：「你以前连一块钱都要算。」陈默说：「以前没人给我送过饭。」'
       }
     ],
-    completeText: '第 46 章结束。面馆只有六张桌子，老板娘认得苏晚，笑着说好久没见。苏晚低头喝汤，陈默看着她，忽然觉得这三个月打得值。'
+    completeText: '第 46 章结束。那年年底，默行科技第一次没有欠款。陈默把那本账合上，长长地出了一口气。'
   },
   {
     id: 'ml_47',
     index: 47,
-    title: '第 47 章 · 一屋子的家务',
+    title: '第 47 章 · 三十七个人的公司',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '周六早上，苏晚把一整筐脏衣服搬到客厅中央，说这周谁也别想溜。陈默站在洗衣机前研究了十分钟说明书，陈小满抱着平板窝在沙发上，一动不动。',
+    storyText: '第二年春天，默行科技从三张桌子变成三十七个人。陈默的办公室搬到了走廊尽头，门口贴着一张还在往上加名字的员工表。',
     questions: [
       {
-        plotDescription: '苏晚把一张纸贴在冰箱上，上面画了三栏，写着三个人的名字。',
-        line: "We split the chores. I wash, you fold, she takes out the trash.",
-        lineCn: '家务分开做。我洗，你叠，她倒垃圾。',
-        prompt: "根据上下文，选出画线词汇 'chores' 最准确的意思。",
+        plotDescription: '人事把一份简历放在他桌上，说这个人下周就能来。',
+        line: "Let us hire him. He is the best engineer we have seen this year.",
+        lineCn: '就雇他吧。他是我们今年见过最好的工程师。',
+        prompt: "根据上下文，选出画线词汇 'Hire' 最准确的意思。",
         options: [
-          { key: 'A', en: 'homework from school', cn: '学校布置的作业', correct: false, reason: '这里是家里的事，不是功课。' },
-          { key: 'B', en: 'part-time jobs', cn: '兼职工作', correct: false, reason: '没有工资，也没有雇主。' },
-          { key: 'C', en: 'routine household tasks', cn: '日常家务', correct: true, reason: '洗衣、叠衣、倒垃圾，全是家务。' }
+          { key: 'A', en: 'to give someone a job', cn: '雇用、招进来工作', correct: true, reason: '人事推荐这个人入职，就是 hire。' },
+          { key: 'B', en: 'to dismiss someone from a job', cn: '把人辞退', correct: false, reason: '方向相反，这是招人不是开人。' },
+          { key: 'C', en: 'to rent an office', cn: '租一间办公室', correct: false, reason: '这里说的是招人，不是租房子。' }
         ],
-        analysis: 'chore 是“日常琐碎的家务活”，常带一点“不想干但必须干”的味道。苏晚用“分”的方式，是不想一个人扛。',
-        wrongFeedback: '你选错了，陈默以为她在安排工作，认真地要了份任务清单和时间节点，苏晚把纸揉了。',
-        afterCorrect: '陈默拿起笔，在自己那一栏后面加了一行：“做饭。”苏晚看了一眼，没说话，把纸重新贴平。'
+        analysis: 'hire 是雇人。陈默在简历上写了一个「见」，然后补了一句：工资按他开的给。',
+        wrongFeedback: '你选错了，人事愣了一下：「您不再看看别人？」气血 -10',
+        afterCorrect: '那个人入职那天，把自己的工位擦了三遍。'
       },
       {
-        plotDescription: '衣服在筐里堆到周一又堆到周三，苏晚靠在门框上看着沙发上那个不动的人。',
-        line: "Do not procrastinate. That basket has been there since Tuesday.",
-        lineCn: '别拖了。那筐衣服从周二就放那儿了。',
-        prompt: "根据上下文，选出画线词汇 'procrastinate' 最准确的意思。",
+        plotDescription: '一个月后，采购的账对不上，陈默把那个小伙子叫进了办公室。',
+        line: "You took money from the supplier. I have to fire you.",
+        lineCn: '你收了供应商的钱。我必须开除你。',
+        prompt: "根据上下文，选出画线词汇 'Fire' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to delay things you should do', cn: '拖延、把该做的事往后推', correct: true, reason: '一筐衣服从周二堆到周六，就是典型拖延。' },
-          { key: 'B', en: 'to finish something early', cn: '提前把事情做完', correct: false, reason: '正好相反，procrastinate 是往后拖。' },
-          { key: 'C', en: 'to complain loudly', cn: '大声抱怨', correct: false, reason: '这里说的是不动手，不是嘴上抱怨。' }
+          { key: 'A', en: 'to dismiss someone from their job', cn: '解雇、开除', correct: true, reason: '他收了回扣，陈默要把他辞掉，就是 fire。' },
+          { key: 'B', en: 'to light something on fire', cn: '点火烧东西', correct: false, reason: 'fire 本义是火，但这里说的是开除人。' },
+          { key: 'C', en: 'to give someone a warning', cn: '给某人一个警告', correct: false, reason: '他说的是「必须」，已经是决定，不只是警告。' }
         ],
-        analysis: 'procrastinate 是“拖延”，比 put off 更书面。陈默被点到名，是因为他能在三分钟内破门，却能三天不叠衣服。',
-        wrongFeedback: '你选错了，苏晚以为他在说抱怨，转身就走，那筐衣服在原地又待了两天。',
-        afterCorrect: '陈默放下说明书，直接把整筐衣服抱起来：“手动洗。”苏晚挑眉：“会吗？”他说：“学。”'
+        analysis: 'fire 在这里是「开除」。小伙子低着头，一句话也没说。',
+        wrongFeedback: '你选错了，小伙子抬起头：「陈总，我家里……」陈默打断了他：「账对不上的时候，你怎么不想家里。」气血 -10',
+        afterCorrect: '人走的那天，陈默让财务把他的工资结到了月底，一分没少。'
       },
       {
-        plotDescription: '衣服晾完，天已经黑了，苏晚擦着手说如果动作够快还有时间干点别的。',
-        line: "If we finish this, we can binge-watch that show tonight.",
-        lineCn: '要是把这些做完，今晚我们就能连着把那部剧刷了。',
-        prompt: "根据上下文，选出画线词汇 'binge-watch' 最准确的意思。",
+        plotDescription: '同一周，带了两年项目的老员工递上一封信。',
+        line: "I am going to quit. My father is sick and I have to go home.",
+        lineCn: '我要辞职。我爸病了，我得回老家。',
+        prompt: "根据上下文，选出画线词汇 'Quit' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to watch a show while eating', cn: '边吃边看剧', correct: false, reason: 'binge 是“过量”，不是“边吃边看”。' },
-          { key: 'B', en: 'to watch many episodes in a row', cn: '一口气连看好几集', correct: true, reason: '“连着刷”正对上 binge-watch 的意思。' },
-          { key: 'C', en: 'to watch something twice', cn: '把同一部看两遍', correct: false, reason: '重点是连续看很多集，不是重复看。' }
+          { key: 'A', en: 'to leave your job voluntarily', cn: '辞职、主动离开工作', correct: true, reason: '他自己递信要走，是主动离职，就是 quit。' },
+          { key: 'B', en: 'to be dismissed by the company', cn: '被公司辞退', correct: false, reason: '他是自己提的，不是被开除。' },
+          { key: 'C', en: 'to take a short holiday', cn: '请一个短假', correct: false, reason: '他递的是辞职信，不是请假单。' }
         ],
-        analysis: 'binge 原意是“暴饮暴食”，binge-watch 就是“追剧追到停不下来”。这是苏晚这三年里第一次提“想看剧”。',
-        wrongFeedback: '你选错了，苏晚以为他要边吃边看，去厨房端了一整盘水果，剧一集没看成。',
-        afterCorrect: '陈默把最后一件衣服挂好：“那就从第一集开始。”苏晚笑了：“你连第一集都没看过？”'
+        analysis: 'quit 是自己主动辞职。陈默看完信，问了一句：「回去的车票买了吗？」',
+        wrongFeedback: '你选错了，老员工把信又往前推了推：「陈总，我想好了。」气血 -10',
+        afterCorrect: '陈默批了，另外给他多发了三个月工资，说是「项目奖金」。'
       },
       {
-        plotDescription: '陈小满一晚上都缩在沙发角落，手指在屏幕上滑个不停，谁叫都没反应。',
-        line: "You have been scrolling for an hour. Put the phone down and come eat.",
-        lineCn: '你刷了一个小时了。把手机放下，过来吃饭。',
-        prompt: "根据上下文，选出画线词汇 'scroll' 最准确的意思。",
+        plotDescription: '月底的会上，陈默把一份任命书放在韩野面前。',
+        line: "Congratulations. This promotion makes you head of operations.",
+        lineCn: '恭喜。这次升职，你就是运营负责人了。',
+        prompt: "根据上下文，选出画线词汇 'Promotion' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to write by hand', cn: '手写', correct: false, reason: '她手里是手机，不是纸笔。' },
-          { key: 'B', en: 'to make a phone call', cn: '打电话', correct: false, reason: '她没有在通话，一直在滑屏。' },
-          { key: 'C', en: 'to move through content on a screen', cn: '刷屏、在屏幕上往下划', correct: true, reason: '手指滑个不停，就是 scroll。' }
+          { key: 'A', en: 'a move to a higher position at work', cn: '升职、职位提升', correct: true, reason: '任命书把他提到了更高的位置，就是 promotion。' },
+          { key: 'B', en: 'a discount on a product', cn: '产品的促销折扣', correct: false, reason: 'promotion 也有促销的意思，但这里说的是职位。' },
+          { key: 'C', en: 'a warning about poor work', cn: '对工作不佳的警告', correct: false, reason: '这是任命书，不是警告。' }
         ],
-        analysis: 'scroll 原意是“卷轴”，现在是“刷手机、往下滑”。陈默说这句的时候，语气和当年叫妹妹吃饭一模一样。',
-        wrongFeedback: '你选错了，小满以为他在让她写字，翻出作业本问写几遍，全桌人都笑了。',
-        afterCorrect: '小满把手机一扣：“哥，我在看你的新闻。”她举起屏幕，标题写着：苏氏赘婿，三个月翻盘。'
+        analysis: 'promotion 是升职。韩野拿着那张纸，看了很久，最后只说了一句：「我尽力。」',
+        wrongFeedback: '你选错了，韩野把任命书放下：「你是不是搞错了？」气血 -10',
+        afterCorrect: '散会后，韩野一个人在楼道里站了十分钟，给家里打了个电话。'
       }
     ],
-    completeText: '第 47 章结束。那晚三个人挤在沙发上看剧，小满在中途睡着了。苏晚把音量调小，陈默把毯子盖到她身上，谁也没有提外面的事。'
+    completeText: '第 47 章结束。那天晚上，员工表上又多了三个名字。陈默站在走廊尽头看了一会儿，把灯关了。'
   },
   {
     id: 'ml_48',
     index: 48,
-    title: '第 48 章 · 谁把日子过成了糖',
+    title: '第 48 章 · 十八天',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '周日，陈默第一次把手机的震动关掉。阳光斜进客厅，桌上还放着昨天剩下的半盘水果。苏晚靠在阳台门边问他今天想干什么，楼下陈小满已经在喊他们下去。',
+    storyText: '公司接到成立以来最大的一次竞标邀请，对方是华东最大的连锁商场。方案要在十八天内交上去，晚一天就作废。',
     questions: [
       {
-        plotDescription: '楼下新开了一家早餐店，苏晚说今天她请，让陈默别掏钱包。',
-        line: "Swipe the card. I am paying today, and I am not taking no for an answer.",
-        lineCn: '刷卡吧。今天我请，不接受拒绝。',
-        prompt: "根据上下文，选出画线词汇 'swipe' 最准确的意思。",
+        plotDescription: '晚上十一点，办公区只剩下一半的灯还亮着，苏晚抱着一摞资料走过来。',
+        line: "Everyone is on overtime tonight. I ordered dinner for all of us.",
+        lineCn: '今晚所有人加班。我给大家订了饭。',
+        prompt: "根据上下文，选出画线词汇 'Overtime' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to slide a card or a finger across something', cn: '刷卡、用手指划过', correct: true, reason: '早餐店结账，swipe the card 就是刷卡。' },
-          { key: 'B', en: 'to clean the floor', cn: '拖地、擦地板', correct: false, reason: '这里是付款动作，不是打扫。' },
-          { key: 'C', en: 'to steal something quietly', cn: '偷偷拿走东西', correct: false, reason: '她在付钱，不是偷。' }
+          { key: 'A', en: 'extra hours worked beyond normal hours', cn: '加班、超出正常工时', correct: true, reason: '晚上十一点还在干活，就是加班，overtime。' },
+          { key: 'B', en: 'time spent travelling for work', cn: '出差的路上时间', correct: false, reason: '他们都在办公区，不是在路上。' },
+          { key: 'C', en: 'a break during working hours', cn: '工作期间的休息', correct: false, reason: '这是接着干，不是休息。' }
         ],
-        analysis: 'swipe 原意是“用力划过”，刷卡、滑手机屏都用它。这句是苏晚少见地抢着付账，语气不容商量。',
-        wrongFeedback: '你选错了，陈默把 swipe 听成“偷”，一把按住她的手，老板娘愣在原地。',
-        afterCorrect: '陈默松开手，退到一边。苏晚刷完卡，把卡收好，很小声地说了一句：“这三年，都是我付。”'
+        analysis: 'overtime 是超出正常工时的加班。这是默行科技第一次全公司一起熬。',
+        wrongFeedback: '你选错了，苏晚把资料放下：「你再说一遍不加，我就自己干。」气血 -10',
+        afterCorrect: '外卖到的时候，三十七个人挤在会议室里吃。有人笑，有人靠墙睡着了。'
       },
       {
-        plotDescription: '回到家，陈默把外套一脱就躺倒在沙发上，说只睡一个小时。',
-        line: "I am going to crash on the sofa for an hour. Wake me at noon.",
-        lineCn: '我在沙发上躺一小时。中午叫我。',
-        prompt: "根据上下文，选出画线词汇 'crash' 最准确的意思。",
+        plotDescription: '白板上写着倒计时，韩野拿笔把数字划掉，改成十七。',
+        line: "The deadline is next Friday. We cannot miss it.",
+        lineCn: '死线是下周五。我们不能错过。',
+        prompt: "根据上下文，选出画线词汇 'Deadline' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to have a car accident', cn: '发生车祸', correct: false, reason: 'crash 有“撞车”的意思，但这里说的是睡觉。' },
-          { key: 'B', en: 'to fall asleep quickly, usually anywhere', cn: '倒下就睡、随便找个地方睡', correct: true, reason: '躺沙发、睡一小时，就是 crash 的口语用法。' },
-          { key: 'C', en: 'to break into pieces', cn: '碎成一地', correct: false, reason: '沙发没碎，人也只是躺下。' }
+          { key: 'A', en: 'the final time by which something must be done', cn: '截止时间、死线', correct: true, reason: '下周五是方案必须交的最后期限，就是 deadline。' },
+          { key: 'B', en: 'the start of a new project', cn: '新项目的开始', correct: false, reason: '这是终点，不是起点。' },
+          { key: 'C', en: 'a line on a map', cn: '地图上的一条线', correct: false, reason: '字面拆开是这个意思，但这里指时间期限。' }
         ],
-        analysis: 'crash 在口语里常指“累到一沾就睡”。陈默这三个月没睡过一个整觉，这一句其实比任何打斗都更让人心疼。',
-        wrongFeedback: '你选错了，苏晚以为他要开车出去，追到门口问是不是出事了，把人硬拉回来。',
-        afterCorrect: '结果他一觉睡到下午三点。醒来时身上盖着毯子，茶几上放着一杯还温着的水。'
+        analysis: 'deadline 是必须完成的最后期限。白板上那个数字，每天都要划掉一个。',
+        wrongFeedback: '你选错了，韩野把笔一扔：「你别不当回事。」气血 -10',
+        afterCorrect: '陈默在白板底下加了一行小字：还差十一版。'
       },
       {
-        plotDescription: '傍晚，小满抱着球从楼下跑上来，问晚上要不要一起出去走走，就他们三个。',
-        line: "Do you want to hang out with us tonight? No meetings, no business.",
-        lineCn: '今晚想跟我们出去转转吗？不开会，也不谈生意。',
-        prompt: "根据上下文，选出画线词汇 'hang out' 最准确的意思。",
+        plotDescription: '第三天，商场那边的负责人打来电话，语气很客气，也很硬。',
+        line: "Our client wants the whole plan in Chinese and English.",
+        lineCn: '我们的客户要整份方案中英文都有。',
+        prompt: "根据上下文，选出画线词汇 'Client' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to hang clothes outside', cn: '把衣服晾到外面', correct: false, reason: 'hang 是“挂”，但 hang out 是“一起玩”。' },
-          { key: 'B', en: 'to wait for someone', cn: '等一个人', correct: false, reason: '这里是提议一起出去，不是等人。' },
-          { key: 'C', en: 'to spend time together casually', cn: '一起闲逛、一起玩', correct: true, reason: '“不开会、不谈生意”就是纯玩，正是 hang out。' }
+          { key: 'A', en: 'a person or company that pays for your service', cn: '客户、出钱买你服务的一方', correct: true, reason: '商场那边是出钱买方案的甲方，就是 client。' },
+          { key: 'B', en: 'a competitor in the same market', cn: '同市场的竞争对手', correct: false, reason: '对方是甲方，不是对手。' },
+          { key: 'C', en: 'an employee of your company', cn: '自己公司的员工', correct: false, reason: '打电话的是外部合作方。' }
         ],
-        analysis: 'hang out 是“随便待在一起”，没有目的性。小满特意补了一句“不谈生意”，是怕哥哥又忙。',
-        wrongFeedback: '你选错了，小满以为哥哥在说晾衣服，抱着球跑去阳台，把球晾在了杆上。',
-        afterCorrect: '陈默看了苏晚一眼，说：“去。”小满欢呼一声，冲下楼的速度比谁都快。'
+        analysis: 'client 是付钱买你服务的客户。陈默把电话放下，转身在白板上又写了一行英文字。',
+        wrongFeedback: '你选错了，苏晚在旁边小声说：「翻译我来。」气血 -10',
+        afterCorrect: '那一晚，她和陈默一人一半，把四十六页方案翻成了英文。'
       },
       {
-        plotDescription: '夜市尽头有条旧长椅，三个人坐下来，苏晚说这一刻什么都不用想。',
-        line: "For once, just kick back and let someone else worry about the mess.",
-        lineCn: '就这一次，靠下来歇着，让别的去操心那一堆烂事。',
-        prompt: "根据上下文，选出画线词汇 'kick back' 最准确的意思。",
+        plotDescription: '第五天早上九点，会议室里坐了十二个人，投影仪刚打开。',
+        line: "This meeting decides whether we get the project.",
+        lineCn: '这场会议决定我们能不能拿到这个项目。',
+        prompt: "根据上下文，选出画线词汇 'Meeting' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to relax and do nothing', cn: '放松、靠下来歇着', correct: true, reason: '坐在长椅上、什么都不用想，就是 kick back。' },
-          { key: 'B', en: 'to kick something with your foot', cn: '用脚踢东西', correct: false, reason: '这里没有踢任何东西，是休息。' },
-          { key: 'C', en: 'to refuse to pay', cn: '拒绝付钱', correct: false, reason: '这跟钱没关系。' }
+          { key: 'A', en: 'an organised gathering to discuss something', cn: '会议、为讨论而聚在一起', correct: true, reason: '十二个人坐在会议室讨论方案，就是 meeting。' },
+          { key: 'B', en: 'a casual chat between friends', cn: '朋友之间的闲聊', correct: false, reason: '这是正式的会，不是闲聊。' },
+          { key: 'C', en: 'a sports competition', cn: '体育比赛', correct: false, reason: 'meeting 也有运动会的意思，但这里是开会。' }
         ],
-        analysis: 'kick back 是“彻底放松、什么都不干”，比 relax 更有“往后一靠”的画面感。陈默学得很快。',
-        wrongFeedback: '你选错了，苏晚以为他在说踢东西，把脚边的易拉罐挪开，三个人都笑了。',
-        afterCorrect: '陈默真的往后靠了靠，肩膀松下来。他看着夜市那排灯，说：“原来日子可以这样过。”'
+        analysis: 'meeting 是正式的会议。投影仪亮起来的那一刻，屋子里所有声音都停了。',
+        wrongFeedback: '你选错了，韩野把投影笔递过来：「你来讲。」气血 -10',
+        afterCorrect: '会开到中午。散会时，商场负责人在门口停了一下，回头说：「方案不错。」'
       }
     ],
-    completeText: '第 48 章结束。回去的路上，小满走在前面，苏晚在中间，陈默走在最后。路灯把三个影子拉得很长，像终于连成了一条线。'
+    completeText: '第 48 章结束。那天下午，倒计时还剩十三天。所有人都没走，会议室里又亮起了灯。'
   },
   {
     id: 'ml_49',
     index: 49,
-    title: '第 49 章 · 该收尾的都收尾了',
+    title: '第 49 章 · 竞标那天',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '周一上午，陈默把三份文件并排放在桌上：霍振邦的资产清单、赵家的转账记录、还有苏明哲签过字的单子。老周问他要不要一次全交出去，他摇头，说先分开，一件一件来。',
+    storyText: '竞标那天，会场在大厦顶层。陈默带着团队到得最早，把设备又检查了一遍。九点整，门口的电梯开了，苏明哲带着赵氏的人走了进来。',
     questions: [
       {
-        plotDescription: '顾长风打来电话，说上面只给一个上午的时间，问他还差多少。',
-        line: "Give me two hours. I will wrap up this case before noon.",
-        lineCn: '给我两个小时。中午之前我把这个案子收尾。',
-        prompt: "根据上下文，选出画线词汇 'wrap up' 最准确的意思。",
+        plotDescription: '苏明哲把方案书往桌上一放，故意从陈默身边走过。',
+        line: "This project is ours. A small company like yours should not even be here.",
+        lineCn: '这个项目是我们的。你们这种小公司根本不该来。',
+        prompt: "根据上下文，选出画线词汇 'Project' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to cover something with paper', cn: '用纸包起来', correct: false, reason: 'wrap 是“包”，但 wrap up 在这里是“收尾结束”。' },
-          { key: 'B', en: 'to finish something completely', cn: '收尾、把事情办完', correct: true, reason: '“中午之前”说明他说的是一个案子的结束时间。' },
-          { key: 'C', en: 'to start a new plan', cn: '开始一个新计划', correct: false, reason: '方向相反，这里是结束。' }
+          { key: 'A', en: 'a planned piece of work with a goal', cn: '项目、有计划的一整件事', correct: true, reason: '他们要竞标的是商场那整件事，就是 project。' },
+          { key: 'B', en: 'a written contract', cn: '一份书面合同', correct: false, reason: '现在还在竞标，合同还没签。' },
+          { key: 'C', en: 'a monthly salary payment', cn: '每月的工资发放', correct: false, reason: '这里说的是要做的项目，不是发工资。' }
         ],
-        analysis: 'wrap up 是“把事收尾”，原意是“包好”。用在案子上，就是所有材料归位、人到位。',
-        wrongFeedback: '你选错了，顾长风以为他要寄快递，把地址报了一遍，两边都愣了几秒。',
-        afterCorrect: '陈默挂了电话，把三份文件按时间顺序排好：“先钱，后人，最后是苏家。”'
+        analysis: 'project 是有目标、有计划的一整件工作。陈默没有回头，只把方案书的边角压平。',
+        wrongFeedback: '你选错了，苏明哲笑了一声，坐到第一排。气血 -10',
+        afterCorrect: '陈默低声对韩野说：「把我们那版改过的数据调出来。」'
       },
       {
-        plotDescription: '老周问他为什么不一起交，陈默指着最上面那张转账记录，说了这句。',
-        line: "First we sort out the money. It is the only thing everyone understands.",
-        lineCn: '先把钱理清楚。那是所有人都看得懂的东西。',
-        prompt: "根据上下文，选出画线词汇 'sort out' 最准确的意思。",
+        plotDescription: '轮到赵氏陈述，苏明哲打开投影，第一页就出了错。',
+        line: "He used last year's numbers. He is going to get fired for this.",
+        lineCn: '他用了去年的数据。这一下他要被炒了。',
+        prompt: "根据上下文，选出画线词汇 'Fired' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to throw things away', cn: '把东西扔掉', correct: false, reason: 'sort out 是整理、理清，不是丢弃。' },
-          { key: 'B', en: 'to choose a type of paper', cn: '挑一种纸', correct: false, reason: 'sort 有“分类”，但这里是理清账目。' },
-          { key: 'C', en: 'to organize or resolve something messy', cn: '理清、把乱的东西弄明白', correct: true, reason: '一堆转账记录要理清，正是 sort out。' }
+          { key: 'A', en: 'dismissed from your job', cn: '被解雇、被炒鱿鱼', correct: true, reason: '用错数据搞砸竞标，后果就是被公司开除。' },
+          { key: 'B', en: 'praised by the leadership', cn: '被领导表扬', correct: false, reason: '出了这种错，不可能是表扬。' },
+          { key: 'C', en: 'given a new project', cn: '被分配一个新项目', correct: false, reason: '这里说的是丢工作，不是接新活。' }
         ],
-        analysis: 'sort out 既可指“整理物品”，也可指“解决麻烦、把关系理清”。陈默选先动钱，是因为钱最难赖。',
-        wrongFeedback: '你选错了，老周把转账记录当成废纸收拾掉一半，陈默花了一上午才重新拼回来。',
-        afterCorrect: '中午十一点，赵家的账户被冻结。赵天豪打来电话，第一句就是：“你想要多少？”'
+        analysis: 'fired 是被开除。台下有人开始小声说话，苏明哲的手在翻页键上停住了。',
+        wrongFeedback: '你选错了，韩野压低声音：「别说话，看着就行。」气血 -10',
+        afterCorrect: '赵氏的陈述在第七分钟被主持人打断。苏明哲站在台上，脸白得像纸。'
       },
       {
-        plotDescription: '赵天豪在电话里开价，说只要放过赵家，数字随便填。陈默看着窗外，说了一句。',
-        line: "I will deal with you myself. No lawyers, no middlemen.",
-        lineCn: '我亲自来处理你。不要律师，也不要中间人。',
-        prompt: "根据上下文，选出画线词汇 'deal with' 最准确的意思。",
+        plotDescription: '中场休息，商场负责人走到陈默面前，伸出手。',
+        line: "We want to do business with people who check their numbers twice.",
+        lineCn: '我们想跟会把数字核对两遍的人做生意。',
+        prompt: "根据上下文，选出画线词汇 'Business' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to handle or take care of something', cn: '处理、应对、解决', correct: true, reason: '“不要律师不要中间人”，说明他要自己来处理这件事。' },
-          { key: 'B', en: 'to make a business deal', cn: '做一笔生意', correct: false, reason: 'deal 有“交易”的意思，但 deal with 是“处理”。' },
-          { key: 'C', en: 'to share something fairly', cn: '公平地分配', correct: false, reason: '这里没有分配，是追责。' }
+          { key: 'A', en: 'the activity of buying and selling', cn: '生意、商业往来', correct: true, reason: '他要跟陈默合作做生意，就是 do business。' },
+          { key: 'B', en: 'a private family matter', cn: '私人的家事', correct: false, reason: '这里是公开的商业合作。' },
+          { key: 'C', en: 'a kind of office furniture', cn: '一种办公家具', correct: false, reason: '跟家具无关。' }
         ],
-        analysis: 'deal with 有两个常见意思：处理问题、对付某人。陈默这句两义都在——他要处理这件事，也要处理这个人。',
-        wrongFeedback: '你选错了，赵天豪以为他要谈生意，带着合同来了，会议室里坐着三个记者和两个警察。',
-        afterCorrect: '陈默把手机放下，对老周说：“他以为我要钱。”他起身拿外套，“我要的是他在里面待够年头。”'
+        analysis: 'business 是买卖与合作的商业活动。陈默握住那只手，用了点力。',
+        wrongFeedback: '你选错了，负责人收回手，转身要走。气血 -10',
+        afterCorrect: '陈默只说了一句：「我们的数字，每一页都能对上。」'
       },
       {
-        plotDescription: '下午，雷豹在楼下喊兄弟们还等着下一步，陈默摆摆手，让大家先回去。',
-        line: "Tell your people to chill out. It is over. Go home and sleep.",
-        lineCn: '让你的人放松点。结束了。回家睡觉去。',
-        prompt: "根据上下文，选出画线词汇 'chill out' 最准确的意思。",
+        plotDescription: '下午三点，主持人宣布结果，会场安静得能听见空调声。',
+        line: "Congratulations. We have a deal.",
+        lineCn: '恭喜。我们成交了。',
+        prompt: "根据上下文，选出画线词汇 'Deal' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to make something cold', cn: '把东西弄凉', correct: false, reason: 'chill 有“冷”的意思，但 chill out 是“放松下来”。' },
-          { key: 'B', en: 'to calm down and relax', cn: '放松、别紧张', correct: true, reason: '后面紧接“结束了，回家睡觉”，就是让大家松下来。' },
-          { key: 'C', en: 'to leave a place angrily', cn: '生气地离开', correct: false, reason: '这里不是生气，是解散。' }
+          { key: 'A', en: 'an agreement between two sides', cn: '交易、双方达成的协议', correct: true, reason: '主持人宣布合作达成，就是 a deal。' },
+          { key: 'B', en: 'a problem that needs solving', cn: '一个需要解决的问题', correct: false, reason: 'deal 也有「处理」的意思，但这里是成交。' },
+          { key: 'C', en: 'a large amount of money', cn: '一大笔钱', correct: false, reason: '这里说的是协议，不是金额。' }
         ],
-        analysis: 'chill out 是“别绷着了、放松”，比 relax 更口语。陈默说完这句，自己先松了一口气。',
-        wrongFeedback: '你选错了，雷豹以为要降温，跑去把空调开到最低，八个人在冷风里坐着等指令。',
-        afterCorrect: '雷豹骂了一句“早说”，带着人走了。走之前他回头：“明天还来吗？”陈默说：“明天我做饭。”'
+        analysis: 'deal 是双方谈成的协议。陈默站起来，先回头看了一眼自己的团队。',
+        wrongFeedback: '你选错了，主持人已经转身离开讲台。气血 -10',
+        afterCorrect: '三十七个人在会场后排站了起来鼓掌。韩野喊得最大声，苏晚没有出声，只是笑。'
       }
     ],
-    completeText: '第 49 章结束。傍晚，办公室只剩陈默一个人。他把三份文件锁进抽屉，第一件事不是庆祝，是给苏晚发了一条消息：今晚我回家吃饭。'
+    completeText: '第 49 章结束。散场时，苏明哲在电梯口拦住陈默。陈默只说了一句：「数据要自己核。」电梯门关上了。'
   },
   {
     id: 'ml_50',
     index: 50,
-    title: '第 50 章 · 落幕之后，是家常',
+    title: '第 50 章 · 签字的那支笔',
     novel: '赘婿归来：从被退婚开始',
     speaker: { name: '陈默', avatar: window.VERSION_AVATARS.male_lead },
-    storyText: '半年后的一个傍晚，苏家老宅重新开了门。桌上摆着四菜一汤，苏振海第一次给陈默倒酒。窗外停车的声音一阵接一阵，老周、雷豹、韩青一个不落地都来了。',
+    storyText: '签约仪式定在周五下午。默行科技第一次把公司名字印在红色的背景板上。苏晚站在台下第二排，手里捏着一支旧钢笔。',
     questions: [
       {
-        plotDescription: '饭还没开始，小满已经拆开一袋薯片，被苏晚伸手按住。',
-        line: "Put the snack down. Dinner is in ten minutes, and you will eat all of it.",
-        lineCn: '把零食放下。十分钟就开饭，你得把饭全吃完。',
-        prompt: "根据上下文，选出画线词汇 'snack' 最准确的意思。",
+        plotDescription: '商场负责人在长桌前坐下，把文件翻到最后一页。',
+        line: "Read it carefully. Once you sign this contract, it is binding.",
+        lineCn: '仔细看一遍。这份合同一签就有约束力。',
+        prompt: "根据上下文，选出画线词汇 'Contract' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a full formal meal', cn: '一顿正式的饱饭', correct: false, reason: 'snack 是零食、小食，正餐在十分钟后才开始。' },
-          { key: 'B', en: 'a kind of drink', cn: '一种饮料', correct: false, reason: '她手里是薯片，是吃的。' },
-          { key: 'C', en: 'a small amount of food between meals', cn: '零食、正餐之间的小食', correct: true, reason: '饭前被抓、薯片一袋，这就是 snack。' }
+          { key: 'A', en: 'a formal written agreement', cn: '合同、正式的书面协议', correct: true, reason: '长桌上那份要签的文件，就是 contract。' },
+          { key: 'B', en: 'an informal verbal promise', cn: '非正式的口头承诺', correct: false, reason: '它是书面的、有约束力的，不是口头承诺。' },
+          { key: 'C', en: 'a list of company rules', cn: '一份公司规章清单', correct: false, reason: '这是双方的协议，不是内部规章。' }
         ],
-        analysis: 'snack 是“正餐之间的小食”，作动词还能表示“随便吃点”。苏晚按住它的动作，和三年前按住那封退婚书的手势一模一样。',
-        wrongFeedback: '你选错了，小满以为姐姐在夸零食好吃，又拆了一袋，苏晚把两袋一起收走了。',
-        afterCorrect: '小满捂着口袋退到一边：“我只吃一片。”陈默从她兜里又摸出一包：“这片有点大。”'
+        analysis: 'contract 是具有约束力的正式书面协议。陈默把每一页都翻了一遍，连小字也没放过。',
+        wrongFeedback: '你选错了，负责人把文件收回去：「那再给你十分钟。」气血 -10',
+        afterCorrect: '他翻到最后一页，停了两秒，然后签下自己的名字。'
       },
       {
-        plotDescription: '雷豹一进门就喊渴，陈默从冰箱里拿出几瓶水丢过去，说了句。',
-        line: "Hydrate first. You have been driving for six hours straight.",
-        lineCn: '先补水。你已经一口气开了六个小时的车。',
-        prompt: "根据上下文，选出画线词汇 'hydrate' 最准确的意思。",
+        plotDescription: '仪式结束，财务在后台小声报了第一个季度的数字。',
+        line: "First quarter profit is triple what we projected.",
+        lineCn: '第一季度的利润是预计的三倍。',
+        prompt: "根据上下文，选出画线词汇 'Profit' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to supply water to the body', cn: '补充水分、喝水', correct: true, reason: '开箱拿水、丢过去，正是让人补水。' },
-          { key: 'B', en: 'to eat a heavy meal', cn: '吃一顿很饱的饭', correct: false, reason: '这里给的是水，不是饭。' },
-          { key: 'C', en: 'to take a long shower', cn: '洗个很久的澡', correct: false, reason: '他刚进门，还没去洗澡。' }
+          { key: 'A', en: 'money you gain after costs are paid', cn: '利润、扣掉成本后赚的钱', correct: true, reason: '收入减去成本后剩下的钱，就是 profit。' },
+          { key: 'B', en: 'the total money taken in before costs', cn: '扣除成本前的总收入', correct: false, reason: '那是营收，不是利润。' },
+          { key: 'C', en: 'a loan from the bank', cn: '向银行借的钱', correct: false, reason: '这是赚到的钱，不是借的。' }
         ],
-        analysis: 'hydrate 是“补充水分”，医学和运动场景都常用。这句话原本是韩青的口头禅，现在被陈默学去了。',
-        wrongFeedback: '你选错了，雷豹以为要洗澡，直接往浴室走，被韩青拎了回来。',
-        afterCorrect: '雷豹灌了半瓶，抹了把嘴：“还是你记得。”陈默说：“你每次跑长途都忘。”'
+        analysis: 'profit 是扣掉成本之后真正赚到的钱。陈默听见这个数，第一反应是看了一眼苏晚。',
+        wrongFeedback: '你选错了，财务把报表合上：「那我先放着。」气血 -10',
+        afterCorrect: '那天晚上，他让财务把这个数字发给了每一个员工。'
       },
       {
-        plotDescription: '饭前，韩青让大家站起来活动一下，说坐了太久腰都硬了。',
-        line: "Stand up and stretch. All of you sit like old men now.",
-        lineCn: '站起来伸个懒腰。你们现在坐得跟老头一样。',
-        prompt: "根据上下文，选出画线词汇 'stretch' 最准确的意思。",
+        plotDescription: '周一早上，陈默在全员会上宣布了一件事。',
+        line: "Everyone gets a bonus this quarter. Six months of pay.",
+        lineCn: '这一季每个人都有奖金。相当于六个月工资。',
+        prompt: "根据上下文，选出画线词汇 'Bonus' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to eat as much as possible', cn: '尽量吃很多', correct: false, reason: '他说的是站起来动，不是吃。' },
-          { key: 'B', en: 'to extend your body or limbs', cn: '伸展身体、拉伸', correct: true, reason: '“坐太久腰硬了”，所以让站起来伸展。' },
-          { key: 'C', en: 'to make something longer in time', cn: '把时间拉长', correct: false, reason: 'stretch 有“延长”的义项，但这里是动身体。' }
+          { key: 'A', en: 'extra money given on top of normal pay', cn: '奖金、工资之外的额外钱', correct: true, reason: '在正常工资之外额外发的钱，就是 bonus。' },
+          { key: 'B', en: 'your regular monthly salary', cn: '正常的月薪', correct: false, reason: '它是在工资之外额外给的。' },
+          { key: 'C', en: 'a fine for breaking a rule', cn: '违规的罚款', correct: false, reason: '这是发钱，不是罚钱。' }
         ],
-        analysis: 'stretch 是“伸展”，既能说拉伸肌肉，也能说“时间、资源被拉长”。这句话是三年前部队里的原话。',
-        wrongFeedback: '你选错了，大家以为他说要多待一会儿，全都重新坐下，韩青举着手站在原地。',
-        afterCorrect: '八个人真在客厅里站成一排伸胳膊，苏晚端着菜出来，站在门口看了半天，笑出了声。'
+        analysis: 'bonus 是工资之外的额外奖励。会议室里先是安静了一秒，然后炸开。',
+        wrongFeedback: '你选错了，韩野站起来：「你再说一遍？」气血 -10',
+        afterCorrect: '陈默把名单投到屏幕上，第一个名字是那个被多发三个月工资的老员工。'
       },
       {
-        plotDescription: '饭后，苏振海坐在藤椅上打盹，电视还开着，陈默替他盖了条毯子。',
-        line: "He is zoning out again. Just let him. He has earned it.",
-        lineCn: '他又在发呆了。让他去吧。这是他应得的。',
-        prompt: "根据上下文，选出画线词汇 'zone out' 最准确的意思。",
+        plotDescription: '散会后，苏晚在走廊尽头等他，手里还捏着那支旧钢笔。',
+        line: "You are finally earning a real salary. Does it feel different?",
+        lineCn: '你终于拿一份真正的薪水了。感觉不一样吗？',
+        prompt: "根据上下文，选出画线词汇 'Salary' 最准确的意思。",
         options: [
-          { key: 'A', en: 'to become very angry', cn: '变得非常生气', correct: false, reason: '老人在打盹，不是发火。' },
-          { key: 'B', en: 'to leave the room quietly', cn: '悄悄离开房间', correct: false, reason: '他一直坐在藤椅上，没走。' },
-          { key: 'C', en: 'to stop paying attention, to stare blankly', cn: '走神、发呆、注意力放空', correct: true, reason: '电视开着人却不动，就是 zone out。' }
+          { key: 'A', en: 'fixed regular pay for a job', cn: '薪水、固定的工资', correct: true, reason: '她问的是他每个月固定拿到的那份钱，就是 salary。' },
+          { key: 'B', en: 'a one-time gift of money', cn: '一次性给的一笔钱', correct: false, reason: 'salary 是按期固定发的，不是一次性。' },
+          { key: 'C', en: 'money earned from investments', cn: '投资赚到的钱', correct: false, reason: '这里说的是工作报酬，不是投资收益。' }
         ],
-        analysis: 'zone out 是“放空、走神”，不带贬义。陈默用了“他应得的”这四个字，等于替这三年画了句号。',
-        wrongFeedback: '你选错了，苏晚以为爷爷生气了，赶紧过去道歉，老人被叫醒，一脸茫然。',
-        afterCorrect: '苏晚把电视音量调小，靠在陈默肩上：“半年前，我以为这个家要散了。”陈默说：“现在呢？”她没有回答，只是没有起身。'
+        analysis: 'salary 是按期发放的固定工资。陈默想了想，说：「不一样。这次是我自己挣的。」',
+        wrongFeedback: '你选错了，苏晚把钢笔递给他：「签你的名字去。」气血 -10',
+        afterCorrect: '陈默接过那支笔。笔身上刻着三个字：陈默的。那是三年前她偷偷刻的。'
       }
     ],
-    completeText: '第 50 章结束。夜里十点，人一个个走了。陈默关灯前回头看了一眼客厅：桌上还留着半盘水果，毯子掉在藤椅边，日子安静得不像真的。'
+    completeText: '第 50 章结束。签约的第二年，默行科技搬进了自己的楼。楼下那家只有六张桌子的小馆子还在，靠窗的位置常年空着。'
   }
 ];

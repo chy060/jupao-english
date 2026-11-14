@@ -102,50 +102,50 @@ window.TTS = (function() {
     }
   }
 
+  /**
+   * iOS 上音频元素必须由用户手势「解锁」过，之后在计时器里播放才不会被拦截。
+   * 这里在点击的同一轮里播一段极短静音，把同一个 audio 元素激活。
+   */
+  const SILENT_WAV = 'data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAgD4AAIA+AAACABAAZGF0YQAAAAA=';
+  let audioUnlocked = false;
+  function unlockAudio() {
+    if (audioUnlocked) return;
+    audioUnlocked = true;
+    try {
+      if (!audioEl) audioEl = new Audio();
+      audioEl.muted = true;
+      audioEl.src = SILENT_WAV;
+      const p = audioEl.play();
+      if (p && p.catch) p.catch(function() {});
+      audioEl.muted = false;
+    } catch (e) {}
+  }
+
   function doSpeak(text, lang) {
     const profile = PROFILES[profileId] || null;
-    const startSpeak = function() {
-      try {
-        const utter = new SpeechSynthesisUtterance(text);
-        utter.lang = lang;
-        utter.rate = profile ? profile.rate : 0.95;
-        utter.pitch = profile ? profile.pitch : 1;
-        const voice = pickVoice(lang, profile ? profile.prefer : null);
-        if (voice) utter.voice = voice;
+    try {
+      const utter = new SpeechSynthesisUtterance(text);
+      utter.lang = lang;
+      utter.rate = profile ? profile.rate : 0.95;
+      utter.pitch = profile ? profile.pitch : 1;
+      const voice = pickVoice(lang, profile ? profile.prefer : null);
+      if (voice) utter.voice = voice;
 
-        let started = false;
-        utter.onstart = function() { started = true; };
-        utter.onerror = function() { if (!started && !IS_APPLE) playAudio(text); };
+      let started = false;
+      utter.onstart = function() { started = true; };
+      utter.onerror = function() { if (!started) playAudio(text); };
 
-        currentUtterance = utter;
-        if (synth.paused) synth.resume();
-        synth.speak(utter);
+      currentUtterance = utter;
+      if (synth.paused) synth.resume();
+      synth.speak(utter);
 
-        // 只要合成器没真正开始发声，就改用词典音频
-        // 注意：不能只看 synth.speaking，安卓上很多机型会假报 true 却不出声
-        if (!IS_APPLE) {
-          setTimeout(function() {
-            if (!started) playAudio(text);
-          }, 1500);
-        }
-      } catch (e) {
-        if (!IS_APPLE) playAudio(text);
-      }
-    };
-
-    // iOS/Safari：朗读必须在用户点击的同一个事件里发起，任何延时都会被吞掉
-    if (IS_APPLE) {
-      if (synth.speaking || synth.pending) synth.cancel();
-      startSpeak();
-      return;
-    }
-
-    if (synth.speaking || synth.pending) {
-      synth.cancel();
-      // Chrome 的坑：cancel 之后必须隔开再 speak，否则这一句会被吞掉
-      setTimeout(startSpeak, 90);
-    } else {
-      startSpeak();
+      // 只要合成器没真正开始发声，就改用词典音频
+      // 注意：不能只看 synth.speaking，安卓和 iOS 都可能假报 true 却不出声
+      setTimeout(function() {
+        if (!started) playAudio(text);
+      }, IS_APPLE ? 1200 : 1500);
+    } catch (e) {
+      playAudio(text);
     }
   }
 
@@ -163,10 +163,22 @@ window.TTS = (function() {
       return;
     }
 
-    // iOS/Safari：不能等语音列表，也不能延时，必须在点击的同一事件里直接读
+    // iOS/Safari：
+    // 1. 朗读必须由用户手势发起，所以先在同一轮里把音频元素解锁，供兜底使用
+    // 2. iOS 26 及更早版本 cancel() 会吞掉同一轮的 speak()（Safari 27 才修），
+    //    因此正在朗读时先 cancel，下一轮再读，读不出来还有音频兜底
     if (IS_APPLE) {
-      if (synth) doSpeak(content, language);
-      else playAudio(content);
+      unlockAudio();
+      if (!synth) {
+        playAudio(content);
+        return;
+      }
+      if (synth.speaking || synth.pending) {
+        synth.cancel();
+        setTimeout(function() { doSpeak(content, language); }, 120);
+        return;
+      }
+      doSpeak(content, language);
       return;
     }
 

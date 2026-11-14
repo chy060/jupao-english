@@ -192,6 +192,7 @@
         </div>
         <footer class="footer-tip">💡 答对 +10 金币并推进剧情 · 答错扣血 · 100 金币复活</footer>
         ${isInAppWebView() ? `<div class="webview-tip">当前在 App 内打开，如果点朗读没有声音，请点右上角「在浏览器打开」再用一次</div>` : ''}
+        <div class="build-stamp">v2026.11.14-k</div>
       </div>
     `;
 

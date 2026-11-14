@@ -24,6 +24,12 @@
     }[c]));
   }
 
+  /** 是否在 App 内嵌浏览器里打开（这类内核常静音网页音频，且多半没有系统语音） */
+  function isInAppWebView() {
+    const ua = navigator.userAgent || '';
+    return /\bwv\b/.test(ua) || /MicroMessenger|QQ\/|aweme|BytedanceWebview|Weibo/i.test(ua);
+  }
+
   // ========== 个人资料：可选头像 ==========
   const AVATAR_CHOICES = [
     { id: 'oliver', type: 'img', url: 'assets/avatars/anime_oliver.jpg', label: '泳池少年' },
@@ -185,6 +191,7 @@
           `).join('')}
         </div>
         <footer class="footer-tip">💡 答对 +10 金币并推进剧情 · 答错扣血 · 100 金币复活</footer>
+        ${isInAppWebView() ? `<div class="webview-tip">当前在 App 内打开，如果点朗读没有声音，请点右上角「在浏览器打开」再用一次</div>` : ''}
       </div>
     `;
 

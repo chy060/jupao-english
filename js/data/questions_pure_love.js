@@ -1,3 +1,7 @@
+/**
+ * 原创剧情题库 —— 纯爱 ·《暗恋你第十年》
+ * 50 章 × 4 题 = 200 题
+ */
 window.NOVEL_CHAPTERS = window.NOVEL_CHAPTERS || {};
 window.NOVEL_CHAPTERS.pure_love = [
   {
@@ -6,63 +10,63 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 1 章 · 十年后的第一面',
     novel: '暗恋你第十年',
     speaker: { name: '温以宁', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '急诊科凌晨换班，温以宁摘下手套，听见走廊尽头有人叫“周主任”。她抬头，看见白大褂、旧球鞋，还有那双十年没变的眼睛。周叙也停住了，手里还捏着没拆封的咖啡。',
+    storyText: '急诊科凌晨换班，温以宁摘下手套，听见走廊尽头有人叫「周主任」。她抬头，看见白大褂、旧球鞋，还有那双十年没变的眼睛。周叙也停住了，手里还捏着没拆封的咖啡。',
     questions: [
       {
-        plotDescription: '交班后周叙随口问她要不要一起吃早饭，温以宁低头看了眼手机余额，笑得有点勉强。',
-        line: "Maybe next time. I'm completely broke until payday.",
-        lineCn: '下次吧。发工资之前我已经身无分文了。',
-        prompt: "根据上下文，选出画线词汇 'Broke' 最准确的意思。",
+        plotDescription: '护士长压低声音提醒她，新来的主任眼睛很毒，排班表上一点小动作都瞒不过。',
+        line: "Word is, the new director is savvy — he checks every shift swap himself.",
+        lineCn: '听说新主任很精明，每一个换班申请都亲自核对。',
+        prompt: "根据上下文，选出画线词汇 'Savvy' 最准确的意思。",
         options: [
-          { key: 'A', en: 'having no money', cn: '身无分文', correct: true, reason: '手机余额加上“发工资前”，说的是手头一分钱都没有。' },
-          { key: 'B', en: 'injured', cn: '受伤的', correct: false, reason: 'broke 虽可指骨折，但这里她谈的是余额，不是身体。' },
-          { key: 'C', en: 'broken', cn: '坏掉的', correct: false, reason: '拼写像 break 的过去式，可形容人时指的是没钱。' }
+          { key: 'A', en: 'generous with money', cn: '出手大方', correct: false, reason: '这里说的是他核对排班的能力，和花钱大方没有关系。' },
+          { key: 'B', en: 'sharp and hard to fool', cn: '精明的，很难糊弄', correct: true, reason: '亲自核对每个换班申请，正说明他看得很准、不容易被骗。' },
+          { key: 'C', en: 'slow to notice details', cn: '对细节很迟钝', correct: false, reason: '他连换班都逐一核对，恰恰和迟钝相反。' }
         ],
-        analysis: '温以宁用自嘲挡掉了邀约。broke 形容人时永远指“没钱”，和后半句“发工资”正好对上。',
-        wrongFeedback: '她把自己说成“受伤了”，周叙眉头一皱，气氛顿时更僵。',
-        afterCorrect: '周叙没笑她，只把手里那杯没拆封的咖啡放到她桌上：“那就先欠着，等发工资再请我。”温以宁低下头，耳尖有点热。'
+        analysis: '护士长的提醒落在「亲自核对」上，savvy 形容一个人脑子快、眼光准，在生活里常用来夸人精明。',
+        wrongFeedback: '你把「精明」听成了「大方」，护士长看了你一眼，把排班表收了回去。气血 -10',
+        afterCorrect: '温以宁低头看排班表，自己那一栏被人用铅笔改过两次。她抬头时，周叙正站在走廊尽头，朝她点了下头。'
       },
       {
-        plotDescription: '护士站的白板写着这个月的排班，温以宁一边算日子，一边跟同事抱怨住处涨价。',
-        line: "My rent went up again. I might have to move closer to the hospital.",
-        lineCn: '我的房租又涨了，可能得搬到离医院近一点的地方。',
-        prompt: "根据上下文，选出画线词汇 'Rent' 最准确的意思。",
+        plotDescription: '交班记录上有一处时间写错，周叙当着全科室的面直接指了出来。',
+        line: "He's blunt, but he's fair — he says the problem right to your face.",
+        lineCn: '他说话很直，但很公道，有问题当面就说。',
+        prompt: "根据上下文，选出画线词汇 'Blunt' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a car payment', cn: '车贷', correct: false, reason: '她说的是住的地方，和每个月还车钱没有关系。' },
-          { key: 'B', en: 'a hospital bill', cn: '医院账单', correct: false, reason: '她正在考虑搬家，不是在看病花钱，语境对不上。' },
-          { key: 'C', en: 'money paid monthly for housing', cn: '每月付的房租', correct: true, reason: '涨价、搬家都指向住处，rent 就是租房的钱。' }
+          { key: 'A', en: 'direct, even when it stings', cn: '直白的，哪怕听着扎人', correct: true, reason: '当面指出错误、不留情面，正是 blunt 的直白。' },
+          { key: 'B', en: 'polite and indirect', cn: '客气而委婉', correct: false, reason: '他是当着所有人直接说的，一点都不委婉。' },
+          { key: 'C', en: 'always joking', cn: '总在开玩笑', correct: false, reason: '指出交班错误是严肃的事，不是在开玩笑。' }
         ],
-        analysis: '排班表、涨价、搬家三个线索都指向住处开销，rent 在生活口语里几乎只作“房租”讲。',
-        wrongFeedback: '她把房租听成了车贷，跟同事越说越乱，最后自己先红了脸。',
-        afterCorrect: '周叙在拐角听见了，第二天把一份医院附近的租房信息压在她键盘下，便利贴上只写了两个字：看看。'
+        analysis: 'blunt 指说话不绕弯子，甚至有点嘴毒，但因为「fair」，这种直白并不带恶意。',
+        wrongFeedback: '你把他答成「委婉」，旁边的小护士差点笑出声：他刚才可一点都没绕弯。气血 -10',
+        afterCorrect: '温以宁在记录本上改掉那个时间，笔尖顿了顿。十年前他也是这样，做题错了就当面说，从不给她留面子。'
       },
       {
-        plotDescription: '温以宁把那张租房信息折好收进抽屉，嘴上却说这个月已经不能再花钱了。',
-        line: "I can't look at new places. My budget for this month is already gone.",
-        lineCn: '我不能再看新房子了，这个月的预算早就花光了。',
-        prompt: "根据上下文，选出画线词汇 'Budget' 最准确的意思。",
+        plotDescription: '温以宁被点名，笑着回了一句更狠的，抱着病历转身就走。',
+        line: "She gave him a sassy answer and walked off with the chart.",
+        lineCn: '她回了句又冲又俏皮的话，抱着病历转身就走。',
+        prompt: "根据上下文，选出画线词汇 'Sassy' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a plan for how much to spend', cn: '预算', correct: true, reason: '她说“已经花光”，指的是自己事先算好的花销上限。' },
-          { key: 'B', en: 'a list of patients', cn: '病人名单', correct: false, reason: '预算和病人名单不是一回事，这里没有名单的语境。' },
-          { key: 'C', en: 'a kind of insurance', cn: '一种保险', correct: false, reason: '保险要投保，不会用“花光”来形容，语义不搭。' }
+          { key: 'A', en: 'shy and quiet', cn: '害羞又安静', correct: false, reason: '她当场回嘴还转身就走，一点也不害羞。' },
+          { key: 'B', en: 'cheeky and bold', cn: '毒舌又大胆的', correct: true, reason: '敢顶回去、语气带刺又不失俏皮，正是 sassy。' },
+          { key: 'C', en: 'cold and formal', cn: '冷淡而正式', correct: false, reason: '她的回答带着玩笑的锋利，不是公事公办的冷淡。' }
         ],
-        analysis: 'budget 指事先算好的花钱上限。她说这个月已经花光，说明那是她给自己定的月度开销计划。',
-        wrongFeedback: '她答成“病人名单”，周叙愣了一下，以为她累到说胡话了。',
-        afterCorrect: '周叙没拆穿她的逞强，只把食堂的饭卡塞过去：“先借你，利息是一顿晚饭。”'
+        analysis: 'sassy 多形容女孩子嘴快、敢怼人，还带一点可爱的傲气，和单纯的没礼貌不同。',
+        wrongFeedback: '你答成「冷淡」，可她那句话明明带着笑，走廊里的人都听出来了。气血 -10',
+        afterCorrect: '周叙站在原地，看着她的背影笑了一下。十年了，她怼人的语速一点没变。'
       },
       {
-        plotDescription: '周五发了夜班补贴，温以宁难得没算账，直接在网上下单了一双很贵的跑鞋。',
-        line: "I splurged on running shoes. Don't judge me — my feet deserve it.",
-        lineCn: '我奢侈了一把，买了双跑鞋。别评判我，我的脚值得。',
-        prompt: "根据上下文，选出画线词汇 'Splurge' 最准确的意思。",
+        plotDescription: '周叙追上来，说她当年找的借口比现在还没说服力。',
+        line: "Your excuse is lame — you used the same one in senior year.",
+        lineCn: '你这借口太逊了，高三用的就是这一套。',
+        prompt: "根据上下文，选出画线词汇 'Lame' 最准确的意思。",
         options: [
-          { key: 'A', en: 'saved money carefully', cn: '精打细算', correct: false, reason: '她刚花了一大笔，还叫别人别评判，和节省正相反。' },
-          { key: 'B', en: 'spent a lot on a treat', cn: '为心头好大手笔花钱', correct: true, reason: '发补贴、买贵鞋、别评判，都说明她破例挥霍了一次。' },
-          { key: 'C', en: 'returned something', cn: '退货', correct: false, reason: '她是在下单买东西，不是把东西退回去。' }
+          { key: 'A', en: 'funny and clever', cn: '好笑又机灵', correct: false, reason: '他说的是「高三用过同一套」，重点是借口站不住脚，不是好笑。' },
+          { key: 'B', en: 'serious and formal', cn: '严肃正式的', correct: false, reason: '一个临时找的借口不会用「严肃正式」来形容。' },
+          { key: 'C', en: 'weak and unconvincing', cn: '逊毙了，站不住脚', correct: true, reason: '同一个借口用了十年，当然又弱又没说服力。' }
         ],
-        analysis: '发补贴、买贵跑鞋、“别评判我”，说明她破例花了笔大钱。splurge 就是偶尔放纵地挥霍一次。',
-        wrongFeedback: '她把自己说成“精打细算”，周叙看着她脚上那双新鞋，笑出了声。',
-        afterCorrect: '周叙低头看了看鞋盒：“颜色不错。”停了一下又补一句：“下次别一个人去，我帮你挑。”'
+        analysis: 'lame 本义是瘸的，口语里常用来形容借口、理由「太弱了、太逊了」。',
+        wrongFeedback: '你把这句听成了夸奖，周叙挑了下眉：「看来你当年也是这么蒙混过去的。」气血 -10',
+        afterCorrect: '温以宁咬着嘴唇没接话。走廊尽头的灯闪了一下，她忽然发现，十年过去，她还是接不住他一句话。'
       }
     ],
     completeText: '那杯咖啡最后凉在桌上，谁也没喝。温以宁回到值班室，才发现自己一整个早上都在想同一件事：他好像，也没有忘记她。'
@@ -73,66 +77,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 2 章 · 白大褂下的旧名字',
     novel: '暗恋你第十年',
     speaker: { name: '周叙', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '早会上，周叙站在投影前讲新的分诊流程，声音比高中时低了些。温以宁坐在最后一排，盯着他胸牌上的名字，笔尖在纸上戳出一个小洞。散会时他忽然说：“温医生，留一下。”',
+    storyText: '早会上，周叙站在投影前讲新的分诊流程，声音比高中时低了些。温以宁坐在最后一排，盯着他胸牌上的名字，笔尖在纸上戳出一个小洞。散会时他忽然说：「温医生，留一下。」',
     questions: [
       {
-        plotDescription: '走廊里，周叙提起医院门口那家咖啡店，说一杯美式卖三十八块。',
-        line: "Thirty-eight for an Americano? That's a rip-off.",
-        lineCn: '一杯美式三十八？这也太坑了。',
-        prompt: "根据上下文，选出画线词汇 'Rip-off' 最准确的意思。",
+        plotDescription: '他带她去看休息室新添的咖啡机，语气难得有点得意。',
+        line: "This machine is dope — it grinds the beans fresh every time.",
+        lineCn: '这机器酷毙了，每次都现磨豆子。',
+        prompt: "根据上下文，选出画线词汇 'Dope' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a good deal', cn: '划算的买卖', correct: false, reason: '他明明在嫌贵，说“划算”就把语气整个弄反了。' },
-          { key: 'B', en: 'a free sample', cn: '免费试喝', correct: false, reason: '三十八块是要付钱的，和免费试喝没有关系。' },
-          { key: 'C', en: 'way overpriced', cn: '价格离谱的坑钱货', correct: true, reason: '一杯普通美式卖到三十八，rip-off 就是明摆着坑人。' }
+          { key: 'A', en: 'broken and useless', cn: '坏掉没用的', correct: false, reason: '他明明是带着炫耀的语气，机器刚添置，不可能坏了。' },
+          { key: 'B', en: 'really cool', cn: '酷毙了，很棒', correct: true, reason: '现磨豆子还特意带她来看，dope 在这里是夸东西很棒。' },
+          { key: 'C', en: 'too expensive to use', cn: '贵得用不起', correct: false, reason: '他只提了现磨，没有任何嫌贵的意思。' }
         ],
-        analysis: '三十八块一杯美式让他直接吐槽，rip-off 指东西不值这个价、摆明了宰客。',
-        wrongFeedback: '他答成“划算”，温以宁忍不住笑：“周主任，你家钱是大风刮来的？”',
-        afterCorrect: '温以宁没接话，只从口袋里摸出一张旧会员卡：“那家店，我从来不办卡。”'
+        analysis: 'dope 在口语里常作形容词，表示「太酷了、太棒了」，和药物本义完全无关。',
+        wrongFeedback: '你把「酷毙了」听成「坏了」，还伸手去检查插头，周叙愣在原地。气血 -10',
+        afterCorrect: '温以宁接过他递来的杯子，指尖碰到杯壁，热的。她低声说：「你以前不喝咖啡。」他顿了一下：「后来值夜班，学的。」'
       },
       {
-        plotDescription: '说起科室里总有人蹭办公室的空调和热水，周叙摇着头笑。',
-        line: "That guy's a total freeloader — he's been drinking our coffee for a week.",
-        lineCn: '那人就是个纯白嫖的，蹭我们咖啡都蹭一个星期了。',
-        prompt: "根据上下文，选出画线词汇 'Freeloader' 最准确的意思。",
+        plotDescription: '温以宁打开他的储物柜找交班本，里面的东西塌了出来。',
+        line: "You're still sloppy — your locker looks like a storm hit it.",
+        lineCn: '你还是这么邋遢，柜子像被台风刮过。',
+        prompt: "根据上下文，选出画线词汇 'Sloppy' 最准确的意思。",
         options: [
-          { key: 'A', en: 'someone who takes without paying', cn: '白吃白拿的人', correct: true, reason: '白喝一周咖啡不付钱，正是占便宜不出钱的人。' },
-          { key: 'B', en: 'a new intern', cn: '新来的实习生', correct: false, reason: '实习生只是身份，这里强调的是白拿不付钱。' },
-          { key: 'C', en: 'a coffee supplier', cn: '咖啡供应商', correct: false, reason: '供应商是来送咖啡收钱的，和蹭喝完全相反。' }
+          { key: 'A', en: 'messy and careless', cn: '邋遢的，不修边幅的', correct: true, reason: '柜子乱得像被台风刮过，正是 sloppy 的凌乱随意。' },
+          { key: 'B', en: 'neat and organized', cn: '整洁有条理的', correct: false, reason: '东西都塌出来了，显然和整洁相反。' },
+          { key: 'C', en: 'empty and clean', cn: '空空荡荡很干净', correct: false, reason: '柜子里塞满东西才会塌出来，不是空的。' }
         ],
-        analysis: '白喝一周咖啡、不付钱，freeloader 专门形容这种占别人便宜、从不掏钱的人。',
-        wrongFeedback: '他答成“实习生”，温以宁挑眉：“实习生可没这么理直气壮。”',
-        afterCorrect: '周叙被她逗得笑了一下，十年没见，他笑起来还是先弯眼睛。'
+        analysis: 'sloppy 形容人做事随意、东西乱放，也可以说工作马虎。这里指生活习惯上的邋遢。',
+        wrongFeedback: '你答成「整洁」，可脚边还堆着从柜子里掉出来的两本旧杂志。气血 -10',
+        afterCorrect: '周叙蹲下去捡，耳朵有点红：「一个人住久了，就懒得收。」温以宁没说话，顺手把杂志按大小码好。'
       },
       {
-        plotDescription: '温以宁提起前几天有人冒充医院人事发短信，收“入职保证金”。',
-        line: "It was a total scam. They even used our hospital's logo.",
-        lineCn: '那完全是个骗局，他们连我们医院的标志都用了。',
-        prompt: "根据上下文，选出画线词汇 'Scam' 最准确的意思。",
+        plotDescription: '他解释自己每天给母亲打电话，怕她一个人在家。',
+        line: "I'm not needy; I just call my mom once a day.",
+        lineCn: '我不是缺爱，我只是每天给我妈打个电话。',
+        prompt: "根据上下文，选出画线词汇 'Needy' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a charity event', cn: '慈善活动', correct: false, reason: '慈善不会收入职保证金，更不会盗用医院标志。' },
-          { key: 'B', en: 'a trick to steal money', cn: '骗钱的骗局', correct: true, reason: '冒充人事收钱、盗用标志，全都是骗钱的套路。' },
-          { key: 'C', en: 'a new policy', cn: '新政策', correct: false, reason: '医院政策不会用私人短信收费，明显是冒充的。' }
+          { key: 'A', en: 'independent and tough', cn: '独立坚强的', correct: false, reason: '他是在为自己辩解，怕被说成太黏人，不是强调独立。' },
+          { key: 'B', en: 'wanting too much attention', cn: '缺爱的，过分需要陪伴', correct: true, reason: '他特意否认，说明 needy 指的是过度需要别人关注和陪伴。' },
+          { key: 'C', en: 'generous with money', cn: '花钱大方的', correct: false, reason: '打电话和花钱毫无关系，这里谈的是情感需求。' }
         ],
-        analysis: '冒充人事、收保证金、盗用院徽，这些都是骗钱的套路，scam 就是骗局。',
-        wrongFeedback: '他答成“新政策”，温以宁叹气：“周主任，你这样迟早被骗。”',
-        afterCorrect: '周叙收起笑，认真记下那条短信的号码：“发我一份，我去报备。”'
+        analysis: 'needy 在感情语境里带点贬义，指一个人过度依赖、总需要被关注，所以他急着否认。',
+        wrongFeedback: '你听成「独立」，还夸了他一句，他的表情更尴尬了。气血 -10',
+        afterCorrect: '温以宁「嗯」了一声，说：「我妈走后，我也每天给我爸打。」周叙抬头看她，那一眼很长。'
       },
       {
-        plotDescription: '说到医学院的学费，周叙难得地沉默了一会儿。',
-        line: "I spent my twenties paying off debt. Med school isn't cheap.",
-        lineCn: '我二十多岁都在还债。学医可不便宜。',
-        prompt: "根据上下文，选出画线词汇 'Debt' 最准确的意思。",
+        plotDescription: '他说起高三那年，只顾自己复习，没发现她家里出了事。',
+        line: "I was selfish back then. I only saw my own grades.",
+        lineCn: '那时候我太自私了，眼里只有自己的成绩。',
+        prompt: "根据上下文，选出画线词汇 'Selfish' 最准确的意思。",
         options: [
-          { key: 'A', en: 'money you owe', cn: '欠下的债', correct: true, reason: '学费贵、要还钱，debt 就是欠别人、需要偿还的钱。' },
-          { key: 'B', en: 'a scholarship', cn: '奖学金', correct: false, reason: '奖学金是拿到的钱，不会用“还”这个动词。' },
-          { key: 'C', en: 'a monthly bonus', cn: '月度奖金', correct: false, reason: '奖金是收入，和“还清”搭配完全说不通。' }
+          { key: 'A', en: 'selfless and caring', cn: '无私又体贴的', correct: false, reason: '他说自己「眼里只有成绩」，这是自责，不是自夸无私。' },
+          { key: 'B', en: 'careless about rules', cn: '不守规矩的', correct: false, reason: '他谈的是只顾自己，不是违反规定。' },
+          { key: 'C', en: 'caring only about yourself', cn: '自私的，只顾自己', correct: true, reason: '只看得见自己的成绩、忽略别人的处境，正是 selfish。' }
         ],
-        analysis: '学费贵、要还钱，debt 指欠别人的钱；pay off debt 就是“还清债务”。',
-        wrongFeedback: '他答成“奖学金”，温以宁看了他一眼，没戳破那句“还”。',
-        afterCorrect: '温以宁想说“我也是”，话到嘴边，变成了：“那现在，还清了吗？”'
+        analysis: 'selfish 指只考虑自己、不顾他人。他这句话是迟到了十年的道歉。',
+        wrongFeedback: '你答成「无私」，他苦笑了一下，把没说完的话咽了回去。气血 -10',
+        afterCorrect: '温以宁把交班本合上，轻声说：「你不是自私，你只是那时候什么都不知道。」'
       }
     ],
-    completeText: '他点头，又摇头：“还清了钱，没还清别的。”走廊的灯忽然灭了半排，两个人都没动，谁也没去按开关。'
+    completeText: '散会后走廊空了下来。周叙站在窗边，忽然问：「那年你家里的事，为什么一个字都没跟我说？」'
   },
   {
     id: 'pl_3',
@@ -140,66 +144,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 3 章 · 假装不认识',
     novel: '暗恋你第十年',
     speaker: { name: '温以宁', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '医院食堂，两人端着餐盘面对面坐下，像两个被迫拼桌的陌生人。温以宁低头吃饭，周叙忽然问：“高中那个总忘带饭卡的女生，是你吧？”她筷子一顿：“周主任认错人了。”',
+    storyText: '医院食堂，两人端着餐盘面对面坐下，像两个被迫拼桌的陌生人。温以宁低头吃饭，周叙忽然问：「高中那个总忘带饭卡的女生，是你吧？」她筷子一顿：「周主任认错人了。」',
     questions: [
       {
-        plotDescription: '周叙说请她吃饭，温以宁摆手，说自己的钱还没到账。',
-        line: "Let me get this one. My paycheck came in yesterday.",
-        lineCn: '这次我请。我昨天刚发薪水。',
-        prompt: "根据上下文，选出画线词汇 'Paycheck' 最准确的意思。",
+        plotDescription: '邻桌几个实习生一直在偷偷往这边看，压低声音议论。',
+        line: "The new resident is gorgeous — half the nurses found a reason to walk past.",
+        lineCn: '新来的住院医美呆了，半个科室的护士都找借口从这儿走过。',
+        prompt: "根据上下文，选出画线词汇 'Gorgeous' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a written prescription', cn: '处方', correct: false, reason: '处方是医生写的药单，和“到账、请客”毫无关系。' },
-          { key: 'B', en: 'a work schedule', cn: '排班表', correct: false, reason: '排班表不会“到账”，也不能拿来付饭钱。' },
-          { key: 'C', en: 'the money you earn from work', cn: '工作挣的薪水', correct: true, reason: '刚到手、能请客，paycheck 在这里代指发下来的工资。' }
+          { key: 'A', en: 'rude and unfriendly', cn: '粗鲁不友善的', correct: false, reason: '大家特意绕过来看，显然是被外貌吸引，不是因为他没礼貌。' },
+          { key: 'B', en: 'ordinary-looking', cn: '长相普通的', correct: false, reason: '如果只是普通，就不会有半个科室的人找借口经过。' },
+          { key: 'C', en: 'extremely beautiful', cn: '美呆了，非常好看', correct: true, reason: '护士们特意绕路来看，说明他长得非常出众。' }
         ],
-        analysis: '请客、刚到手，paycheck 本义是工资单，口语里直接代指“发到手的薪水”。',
-        wrongFeedback: '她答成“处方”，周叙差点被饭噎到：“你拿处方请我吃饭？”',
-        afterCorrect: '温以宁还是被他说得没法拒绝，小声嘟囔：“那我下次还你。”'
+        analysis: 'gorgeous 比 beautiful 语气更强，形容人时可以指「美得让人挪不开眼」。',
+        wrongFeedback: '你答成「普通」，可邻桌的实习生还在偷看第三眼。气血 -10',
+        afterCorrect: '周叙顺着她的目光回头，那几个实习生立刻低头喝汤。他转回来，很轻地说：「你以前也这样看我。」'
       },
       {
-        plotDescription: '食堂电视在播水电涨价的新闻，温以宁叹了口气，说这个月开销太多。',
-        line: "The bills are piling up again. Electricity, water, and my phone.",
-        lineCn: '账单又堆成山了。电费、水费，还有手机费。',
-        prompt: "根据上下文，选出画线词汇 'Bills' 最准确的意思。",
+        plotDescription: '为了打破沉默，她提起了食堂的旧菜单。',
+        line: "It's weird, but I still remember what you ordered in the school canteen.",
+        lineCn: '说来奇怪，我到现在还记得你在学校食堂点什么。',
+        prompt: "根据上下文，选出画线词汇 'Weird' 最准确的意思。",
         options: [
-          { key: 'A', en: 'medical records', cn: '病历', correct: false, reason: '电费水费不是病历，这里说的是要付的钱。' },
-          { key: 'B', en: 'statements you have to pay', cn: '要付的账单', correct: true, reason: '水电手机三项都是开销，bills 就是该付的账单。' },
-          { key: 'C', en: 'hospital beds', cn: '病床', correct: false, reason: '病床不会“堆成山”，也不会连着手机费一起说。' }
+          { key: 'A', en: 'strange', cn: '奇怪的，说不上来的', correct: true, reason: '十年后还记得一顿饭，连她自己都觉得不可思议。' },
+          { key: 'B', en: 'completely normal', cn: '完全正常的', correct: false, reason: '她说「说来奇怪」，本身就承认这件事有点反常。' },
+          { key: 'C', en: 'delicious', cn: '好吃的', correct: false, reason: '这里形容的是「记得」这件事，不是菜的味道。' }
         ],
-        analysis: '电费水费手机费，piling up 是“越堆越多”，bills 就是一张张等着付的账单。',
-        wrongFeedback: '她答成“病历”，周叙看了她一眼：“温医生，你这是职业病。”',
-        afterCorrect: '周叙把自己那份汤推过去：“少点外卖，账单就少了。”她没抬头，勺子在汤里转了一圈。'
+        analysis: 'weird 表示「奇怪的、反常的」，语气比 strange 更口语，常用来引出自己都觉得意外的事。',
+        wrongFeedback: '你把它听成「正常」，她愣了一下，那句藏了十年的话就这样滑过去了。气血 -10',
+        afterCorrect: '周叙放下筷子：「你点的番茄鸡蛋面，加两个蛋。」他答得太快，两个人都安静了。'
       },
       {
-        plotDescription: '结账时机器坏了，周叙翻遍口袋，只摸出几张皱掉的纸币。',
-        line: "The card machine is down. Do you have any cash on you?",
-        lineCn: '刷卡机坏了。你身上有现金吗？',
-        prompt: "根据上下文，选出画线词汇 'Cash' 最准确的意思。",
+        plotDescription: '她忽然注意到门口有个男人，站了快一个小时，一直盯着药房。',
+        line: "That man by the pharmacy looks sketchy — he's been watching the door for an hour.",
+        lineCn: '药房边那个男的很可疑，盯着门口都一个小时了。',
+        prompt: "根据上下文，选出画线词汇 'Sketchy' 最准确的意思。",
         options: [
-          { key: 'A', en: 'paper money', cn: '现金', correct: true, reason: '刷卡机坏了才要找另一种付款方式，cash 就是现钞。' },
-          { key: 'B', en: 'a bank card', cn: '银行卡', correct: false, reason: '刷卡机都坏了，再问银行卡就没有意义了。' },
-          { key: 'C', en: 'a coupon', cn: '优惠券', correct: false, reason: '优惠券不能替代付款，和机器坏了的语境无关。' }
+          { key: 'A', en: 'lost and asking for help', cn: '迷路在求助的', correct: false, reason: '他只是站着盯门，没有向任何人问路。' },
+          { key: 'B', en: 'friendly and talkative', cn: '友善又健谈的', correct: false, reason: '盯了一个小时不吭声，一点也不像友善健谈。' },
+          { key: 'C', en: 'suspicious', cn: '可疑的，让人不放心的', correct: true, reason: '长时间徘徊又盯着门口，正是让人起疑的行为。' }
         ],
-        analysis: '刷卡机坏了才要找替代的付钱方式，cash 指能直接递出去的实体现金。',
-        wrongFeedback: '她答成“银行卡”，周叙无奈地晃了晃手里那几张纸币。',
-        afterCorrect: '温以宁从白大褂内袋摸出一张五十，动作熟练得像做过很多次：“我请你。”'
+        analysis: 'sketchy 是口语里形容人或事「不太对劲、可疑」的常用词，暗示可能有问题。',
+        wrongFeedback: '你答成「迷路」，温以宁已经站起来往护士站走了。气血 -10',
+        afterCorrect: '周叙比她更快，起身时把她往身后带了半步：「你先坐着，我去问。」'
       },
       {
-        plotDescription: '走出食堂，周叙接了个电话，挂了以后说自己在办房子的事。',
-        line: "The bank approved my loan. I'm buying a place near the hospital.",
-        lineCn: '银行批了我的贷款，我要在医院附近买套房。',
-        prompt: "根据上下文，选出画线词汇 'Loan' 最准确的意思。",
+        plotDescription: '保安过去一问，那人居然准确说出了温以宁的名字和科室。',
+        line: "The whole thing was bizarre: he knew my name before I said it.",
+        lineCn: '整件事诡异得很，我还没开口他就知道我的名字。',
+        prompt: "根据上下文，选出画线词汇 'Bizarre' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a lease contract', cn: '租约', correct: false, reason: '租来的房子不需要银行审批，买房才要。' },
-          { key: 'B', en: 'a savings account', cn: '储蓄账户', correct: false, reason: '储蓄账户是自己存钱，和银行批钱给你相反。' },
-          { key: 'C', en: 'money borrowed from a bank', cn: '向银行借的贷款', correct: true, reason: '买房、银行审批，loan 就是借来按月偿还的钱。' }
+          { key: 'A', en: 'very strange and hard to explain', cn: '诡异的，难以解释的', correct: true, reason: '素未谋面却知道她的名字，确实反常到无法解释。' },
+          { key: 'B', en: 'completely ordinary', cn: '平平无奇的', correct: false, reason: '陌生人知道她名字，这件事一点都不普通。' },
+          { key: 'C', en: 'funny and relaxing', cn: '好笑又轻松的', correct: false, reason: '当时的氛围是紧张，不是好笑。' }
         ],
-        analysis: '买房、银行批款，loan 就是借来的钱，需要按月连本带息还回去。',
-        wrongFeedback: '她答成“租约”，周叙顿了顿：“租的房，不用银行批。”',
-        afterCorrect: '温以宁“哦”了一声，走了几步才反应过来：他说的是“附近”。'
+        analysis: 'bizarre 比 weird 更强烈，强调离奇、荒诞、超出常理，常形容难以解释的怪事。',
+        wrongFeedback: '你说「挺普通的」，温以宁看了你一眼，后背还有点凉。气血 -10',
+        afterCorrect: '那人被保安带走时，回头看了她一眼。周叙不动声色地把椅子往她那边挪了半寸。'
       }
     ],
-    completeText: '回科室的路上，她走得很慢。十年了，她以为自己早就把那个人放进“过去”里，可他一句“附近”，又把她拉回来了。'
+    completeText: '食堂的广播响起午间提示音。温以宁低头扒饭，听见周叙说：「下次有人问你的名字，先让我站到你前面。」'
   },
   {
     id: 'pl_4',
@@ -207,66 +211,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 4 章 · 急诊科的深夜',
     novel: '暗恋你第十年',
     speaker: { name: '周叙', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '凌晨两点，救护车一辆接一辆。温以宁连着处理了三个病人，白大褂前襟沾了血。周叙从手术室出来，把一瓶常温水递给她，她仰头灌了半瓶。',
+    storyText: '凌晨两点，急诊终于安静下来。两人坐在休息室分一盒凉掉的饺子，聊起高中文艺汇演，温以宁忽然把脸埋进掌心。',
     questions: [
       {
-        plotDescription: '休息间隙，温以宁笑他连水都挑最省钱的那种。',
-        line: "You always buy the cheap water. You're a department head now.",
-        lineCn: '你老买最便宜的水。你现在都是主任了。',
-        prompt: "根据上下文，选出画线词汇 'Cheap' 最准确的意思。",
+        plotDescription: '他说起那年班级话剧，全校都在传。',
+        line: "Our class play was epic — the whole school talked about it for a month.",
+        lineCn: '我们班那场话剧是史诗级的，全校聊了整整一个月。',
+        prompt: "根据上下文，选出画线词汇 'Epic' 最准确的意思。",
         options: [
-          { key: 'A', en: 'expensive', cn: '昂贵的', correct: false, reason: '她说“都当主任了还这样”，显然是在嫌他买得便宜。' },
-          { key: 'B', en: 'low in price', cn: '价格便宜的', correct: true, reason: '她拿主任的身份作对比，说的是水卖得便宜。' },
-          { key: 'C', en: 'ice-cold', cn: '冰镇的', correct: false, reason: '那可是常温水，和冰凉不冰凉没有关系。' }
+          { key: 'A', en: 'short and boring', cn: '又短又无聊的', correct: false, reason: '全校聊了一个月，显然不是无聊的短剧。' },
+          { key: 'B', en: 'cancelled at the last minute', cn: '临开场被取消的', correct: false, reason: '如果取消了，就没有「全校聊了一个月」这回事。' },
+          { key: 'C', en: 'amazing and unforgettable', cn: '史诗级的，难忘的', correct: true, reason: '被全校讨论一个月，说明这场演出极其出彩。' }
         ],
-        analysis: '她在说他买的牌子便宜，不是温度也不是贵。cheap 形容商品时就是“价格低”。',
-        wrongFeedback: '他答成“冰镇的”，温以宁举着常温的瓶子看他：“你摸摸，冰吗？”',
-        afterCorrect: '周叙拧开自己那瓶：“水而已，能喝就行。”顿了顿，“钱要花在别的地方。”'
+        analysis: 'epic 本义是史诗，口语里夸张地形容某件事「超级震撼、值得记一辈子」。',
+        wrongFeedback: '你答成「又短又无聊」，他挑了挑眉：「那你当年为什么坐在第一排？」气血 -10',
+        afterCorrect: '温以宁的手还捂着脸，从指缝里说：「那是因为礼堂没别的位置。」'
       },
       {
-        plotDescription: '她说起想报个进修班，看到价格又默默关掉了页面。',
-        line: "I really want that course, but I can't afford it right now.",
-        lineCn: '我特别想上那个课，但现在负担不起。',
-        prompt: "根据上下文，选出画线词汇 'Afford' 最准确的意思。",
+        plotDescription: '温以宁翻出当年的录像，只看三秒就关掉了。',
+        line: "Watching that video now is pure cringe — I can't believe I wore that.",
+        lineCn: '现在看那段录像简直脚趾扣地，我居然穿过那种衣服。',
+        prompt: "根据上下文，选出画线词汇 'Cringe' 最准确的意思。",
         options: [
-          { key: 'A', en: 'have enough money for', cn: '负担得起', correct: true, reason: '看到价格就关页面，卡住她的是钱，不是时间。' },
-          { key: 'B', en: 'find time for', cn: '抽得出时间', correct: false, reason: '她没提排班，只说价格，说明问题不在时间。' },
-          { key: 'C', en: 'be qualified for', cn: '有资格', correct: false, reason: '报名资格和钱无关，这里明显是被价格劝退。' }
+          { key: 'A', en: 'deeply embarrassing', cn: '尴尬到脚趾扣地的', correct: true, reason: '看三秒就关掉、不敢相信自己的穿着，正是强烈的尴尬。' },
+          { key: 'B', en: 'relaxing and pleasant', cn: '放松愉快的', correct: false, reason: '她立刻关掉视频，显然不是愉快的体验。' },
+          { key: 'C', en: 'award-winning', cn: '拿过大奖的', correct: false, reason: '这里说的是观看时的感受，不是作品有没有获奖。' }
         ],
-        analysis: '看到价格就关掉页面，说明卡在费用上。afford 指经济上承担得起。',
-        wrongFeedback: '她答成“抽得出时间”，周叙反问：“那你为什么不报名？”',
-        afterCorrect: '周叙没多说，只问了一句课程名字，低头记在了手机备忘录里。'
+        analysis: 'cringe 在网络上常指「让人替自己或别人尴尬到缩起来」的感觉，作名词也很常见。',
+        wrongFeedback: '你答成「放松愉快」，可她已经把手机倒扣在桌上了。气血 -10',
+        afterCorrect: '周叙把视频又点开，音量调小：「别关，我还没看完。」'
       },
       {
-        plotDescription: '天快亮时，那个车祸少年终于脱离危险，家属在门口哭着道谢。',
-        line: "Six hours in there, but seeing him wake up — totally worth it.",
-        lineCn: '在里面站了六个小时，可看他醒过来，真的值了。',
-        prompt: "根据上下文，选出画线词汇 'Worth it' 最准确的意思。",
+        plotDescription: '他却说她在台上一点都不怯场，连忘词都忘得很漂亮。',
+        line: "You were fabulous on stage. I forgot my lines staring at you.",
+        lineCn: '你在台上太棒了，我光顾着看你，把自己的台词都忘了。',
+        prompt: "根据上下文，选出画线词汇 'Fabulous' 最准确的意思。",
         options: [
-          { key: 'A', en: 'too expensive', cn: '太贵了', correct: false, reason: '这句在讲抢救，不是在花钱，跟贵不贵无关。' },
-          { key: 'B', en: 'a waste of time', cn: '浪费时间', correct: false, reason: '病人醒了、家属道谢，显然不是白费功夫。' },
-          { key: 'C', en: 'deserving the effort', cn: '值得付出的', correct: true, reason: '六小时很累，但人醒了，说明付出得到了回报。' }
+          { key: 'A', en: 'terrible and embarrassing', cn: '糟糕又丢脸的', correct: false, reason: '他说自己忘词是因为看她，语气是赞美，不是贬低。' },
+          { key: 'B', en: 'nervous and shaky', cn: '紧张发抖的', correct: false, reason: '他夸的是她台上的状态，紧张发抖和赞美矛盾。' },
+          { key: 'C', en: 'wonderful', cn: '极好的，太出色了', correct: true, reason: '他看得忘了台词，正说明她在台上非常耀眼。' }
         ],
-        analysis: '六小时很累，但病人醒了过来，worth it 表示这份付出是值得的。',
-        wrongFeedback: '他答成“浪费时间”，温以宁看他一眼：“那六个小时你白站了？”',
-        afterCorrect: '周叙靠在墙上闭了闭眼，嘴角是松下来的弧度：“这句话，我十年没听过了。”'
+        analysis: 'fabulous 表示「极好的、令人赞叹的」，比 good 语气强烈得多。',
+        wrongFeedback: '你答成「糟糕」，他停了一下：「我夸人的时候，你能不能别往坏处想。」气血 -10',
+        afterCorrect: '温以宁把脸从掌心抬起来，眼睛有点亮。她小声说：「那你后来补上台词了吗？」'
       },
       {
-        plotDescription: '温以宁说自己周末在网上给医学生做辅导，赚点额外的钱。',
-        line: "It's just a side hustle. I teach med students on weekends.",
-        lineCn: '就是个副业，我周末给医学生上课。',
-        prompt: "根据上下文，选出画线词汇 'Side hustle' 最准确的意思。",
+        plotDescription: '她笑着提醒他，自己唱歌那一段才是全场灾难。',
+        line: "My singing was terrible, but you clapped the loudest.",
+        lineCn: '我唱得糟糕透了，可你鼓掌鼓得最响。',
+        prompt: "根据上下文，选出画线词汇 'Terrible' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a full-time job', cn: '全职工作', correct: false, reason: '她只有周末做，还说“就是个”，显然不是主业。' },
-          { key: 'B', en: 'extra work for extra money', cn: '赚外快的副业', correct: true, reason: '周末额外上课、赚点钱，正是主业之外的副业。' },
-          { key: 'C', en: 'a hobby', cn: '爱好', correct: false, reason: '她明确说是为了赚钱，不只是图个喜欢。' }
+          { key: 'A', en: 'perfect and moving', cn: '完美又动人的', correct: false, reason: '她自己说那是「全场灾难」，不可能用完美形容。' },
+          { key: 'B', en: 'very bad', cn: '糟糕透顶的', correct: true, reason: '和「全场灾难」对应，terrible 就是非常糟。' },
+          { key: 'C', en: 'quiet and soft', cn: '安静轻柔的', correct: false, reason: '这里评价的是唱得好不好，不是音量大小。' }
         ],
-        analysis: '周末、额外收入，side hustle 指主业之外用来赚钱的第二份活。',
-        wrongFeedback: '她答成“全职”，周叙笑：“你哪来的时间全职两份？”',
-        afterCorrect: '“教什么？”他问。“解剖。”她说。周叙沉默两秒：“那我当年要是补课，是不是就……”'
+        analysis: 'terrible 表示「非常糟糕」，和 bad 同向但语气更重，常用来吐槽自己的黑历史。',
+        wrongFeedback: '你答成「完美」，她笑了一声：「你比周叙还会哄人。」气血 -10',
+        afterCorrect: '饺子吃完了，谁也没提要走。走廊的钟走到三点，周叙忽然说：「那天我准备了台词，一句都没说出口。」'
       }
     ],
-    completeText: '她没让他说完，转身去接新的病人。心跳声太响，她怕他听见。'
+    completeText: '休息室的灯管嗡嗡响。温以宁没有追问那句没出口的台词，只把空盒子叠好，说：「留着吧，反正我们都还记得。」'
   },
   {
     id: 'pl_5',
@@ -274,66 +278,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 5 章 · 同学群里的消息',
     novel: '暗恋你第十年',
     speaker: { name: '温以宁', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '下了夜班，温以宁在更衣室看到高中同学群炸了——有人组织十周年聚会，还@了全班。她盯着那个熟悉的名字看了很久，最后只回了一个“尽量”。',
+    storyText: '同学群里突然翻出十年前的合照，消息一条接一条。温以宁盯着屏幕，看见自己站在最边上，而周叙站在她身后半步的位置。',
     questions: [
       {
-        plotDescription: '群里有人晒出当年的实习合同，感叹那阵子挣得太少。',
-        line: "I worked for minimum wage that whole summer. Never again.",
-        lineCn: '那个夏天我拿最低工资干了一整季。再也不干了。',
-        prompt: "根据上下文，选出画线词汇 'Minimum wage' 最准确的意思。",
+        plotDescription: '群里有人提起当年最爱出风头的男生，说他现在完全变了。',
+        line: "He turned out pretty decent — not the show-off I remembered.",
+        lineCn: '他现在挺体面的，不是我记得的那个爱显摆的人了。',
+        prompt: "根据上下文，选出画线词汇 'Decent' 最准确的意思。",
         options: [
-          { key: 'A', en: 'the lowest legal pay', cn: '法定最低工资', correct: true, reason: '干了一夏天、钱少到不想再来，就是最低的那档报酬。' },
-          { key: 'B', en: 'a big bonus', cn: '高额奖金', correct: false, reason: '奖金高就不会说“再也不干了”，语气完全相反。' },
-          { key: 'C', en: 'unpaid training', cn: '无薪培训', correct: false, reason: '他说的是拿了工资但很低，不是一分钱没有。' }
+          { key: 'A', en: 'good and respectable', cn: '体面的，像样的', correct: true, reason: '和「爱显摆」形成对比，说明他现在为人不错、让人看得起。' },
+          { key: 'B', en: 'rude and arrogant', cn: '粗鲁又傲慢的', correct: false, reason: '句子里特意说他不再是当年那个样子，rude 与之相反。' },
+          { key: 'C', en: 'extremely rich', cn: '非常有钱的', correct: false, reason: '这里评价的是为人，不是财富。' }
         ],
-        analysis: '干了一夏天、钱少到不想再来，minimum wage 是法律规定的报酬下限。',
-        wrongFeedback: '她答成“高额奖金”，群里的话题瞬间被她带歪了。',
-        afterCorrect: '温以宁看着屏幕笑了笑，想起自己实习那年，也是靠着最少的钱撑过来的。'
+        analysis: 'decent 形容人时是「还不错的、正派的」，比 good 含蓄，是成年人常用的稳妥夸奖。',
+        wrongFeedback: '你答成「傲慢」，群里的气氛一下子冷了半截。气血 -10',
+        afterCorrect: '温以宁往上翻聊天记录，翻到那张合照。拍照的人手抖，只有周叙站得笔直，像在替谁挡风。'
       },
       {
-        plotDescription: '有人私聊她借钱，说卡已经刷爆，还欠着一笔费用。',
-        line: "I hit an overdraft again. The fee is killing me.",
-        lineCn: '我又透支了，手续费快把我压死了。',
-        prompt: "根据上下文，选出画线词汇 'Overdraft' 最准确的意思。",
+        plotDescription: '她自嘲当年总一个人躲在楼梯间看书，被同学起了外号。',
+        line: "Everyone called me a weirdo because I read in the stairwell.",
+        lineCn: '大家都叫我怪胎，因为我总在楼梯间看书。',
+        prompt: "根据上下文，选出画线词汇 'Weirdo' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a salary raise', cn: '涨薪', correct: false, reason: '涨薪是好事，不会让人被手续费压得喘不过气。' },
-          { key: 'B', en: 'a savings plan', cn: '储蓄计划', correct: false, reason: '储蓄是存钱，刷爆卡是另一回事，语义相反。' },
-          { key: 'C', en: 'spending more than you have', cn: '花超了账户余额', correct: true, reason: '卡刷爆、还要交手续费，正是把账户花成了负数。' }
+          { key: 'A', en: 'a top student', cn: '优等生', correct: false, reason: '外号来自她躲起来看书的行为，不是成绩排名。' },
+          { key: 'B', en: 'a class monitor', cn: '班长', correct: false, reason: '她没提过任何职务，这个外号和行为无关。' },
+          { key: 'C', en: 'an odd person', cn: '怪胎，行为古怪的人', correct: true, reason: '总一个人躲楼梯间，在同学眼里就成了古怪的人。' }
         ],
-        analysis: '卡刷爆、还要交手续费，overdraft 指账户被花超、形成透支。',
-        wrongFeedback: '她答成“涨薪”，对方发来一串问号，她赶紧撤回。',
-        afterCorrect: '她转了两百过去，附一句：“先吃饭，别硬撑。”'
+        analysis: 'weirdo 是名词，指行为古怪、和别人不太一样的人，语气可轻可重，这里带有自嘲。',
+        wrongFeedback: '你答成「优等生」，她笑了一下：「那他们可没这么客气。」气血 -10',
+        afterCorrect: '屏幕上方弹出周叙的私聊：「楼梯间第三层，靠窗那格。我路过过很多次。」'
       },
       {
-        plotDescription: '群里聊到聚会AA，温以宁说自己最近能不花就不花。',
-        line: "I'm trying to save up for something. Count me out of the fancy dinner.",
-        lineCn: '我在攒钱买点东西，那顿贵的就不算我了。',
-        prompt: "根据上下文，选出画线词汇 'Save up' 最准确的意思。",
+        plotDescription: '群里忽然开始刷屏，说新来的体育老师长得好看。',
+        line: "Half the group chat says the new gym teacher is hot.",
+        lineCn: '群里一半人都在说新来的体育老师很性感。',
+        prompt: "根据上下文，选出画线词汇 'Hot' 最准确的意思。",
         options: [
-          { key: 'A', en: 'spend freely', cn: '随便花', correct: false, reason: '她刚拒绝了贵餐厅，明显是在省，不是随便花。' },
-          { key: 'B', en: 'put money aside', cn: '攒钱', correct: true, reason: '不去贵餐厅、要为某件事存钱，正是把钱一点点留下。' },
-          { key: 'C', en: 'borrow money', cn: '借钱', correct: false, reason: '攒钱是自己的钱慢慢积累，不是向别人借。' }
+          { key: 'A', en: 'sweaty after exercise', cn: '运动后满头汗的', correct: false, reason: '大家在讨论长相，不是他刚运动完的状态。' },
+          { key: 'B', en: 'very attractive', cn: '性感好看的', correct: true, reason: '群里刷屏讨论的显然是外貌吸引力。' },
+          { key: 'C', en: 'strict with students', cn: '对学生很严格的', correct: false, reason: '刷屏的理由是长相，不是教学风格。' }
         ],
-        analysis: '不去贵餐厅、要“攒”，save up 是把钱一点点存起来，为某个目标做准备。',
-        wrongFeedback: '她答成“随便花”，群里立刻有人起哄让她请客。',
-        afterCorrect: '有人问她攒钱做什么，她打了半天字，最后删掉，只发了个笑脸。'
+        analysis: 'hot 形容人时是口语里的「性感、有魅力」，和温度无关。',
+        wrongFeedback: '你答成「严格」，群里已经有人开始发表情包了。气血 -10',
+        afterCorrect: '温以宁把手机往桌上一扣，觉得自己有点无聊。她起身去倒水，路过镜子时多看了自己一眼。'
       },
       {
-        plotDescription: '老同学在群里推销理财，说年轻人要早点学会把钱投出去。',
-        line: "You should invest in yourself before you invest in stocks.",
-        lineCn: '在投股票之前，你该先投资自己。',
-        prompt: "根据上下文，选出画线词汇 'Invest' 最准确的意思。",
+        plotDescription: '周叙私聊她，说照片里她的旧发型很有意思。',
+        line: "Your old haircut was cute — you looked like a lost puppy.",
+        lineCn: '你以前的发型很可爱，像只迷路的小狗。',
+        prompt: "根据上下文，选出画线词汇 'Cute' 最准确的意思。",
         options: [
-          { key: 'A', en: 'put money into something for return', cn: '投入以换取回报', correct: true, reason: '前后两个 invest 对照，都是把资源投进去换长期回报。' },
-          { key: 'B', en: 'spend money on food', cn: '花钱吃饭', correct: false, reason: '投资自己和吃饭不是一回事，句子里也没有食物。' },
-          { key: 'C', en: 'give money away', cn: '把钱送人', correct: false, reason: '投资是期待回报，白送出去可没有回报。' }
+          { key: 'A', en: 'ugly and strange', cn: '难看又奇怪的', correct: false, reason: '他用了「像迷路的小狗」，是带着喜欢的形容，不是嫌难看。' },
+          { key: 'B', en: 'expensive to maintain', cn: '打理起来很贵的', correct: false, reason: '这里说的是看起来的感觉，和花费无关。' },
+          { key: 'C', en: 'endearing and sweet', cn: '可爱的，招人喜欢的', correct: true, reason: '把旧照片里的她说成迷路小狗，是亲昵的可爱。' }
         ],
-        analysis: '前后两个 invest 形成对照，前者是投资自己，指把资源投进去换取长期回报。',
-        wrongFeedback: '她答成“把钱送人”，对方半天没回，气氛一度很安静。',
-        afterCorrect: '温以宁把这句话截图存了下来，备注写着：那我也算，投资了十年。'
+        analysis: 'cute 不只指外表可爱，也常用来表达一种让人心软的喜欢。',
+        wrongFeedback: '你答成「难看」，他隔了很久才回：「我不是那个意思。」气血 -10',
+        afterCorrect: '她回了三个句号，又删掉，最后只发了一个「哦」。半分钟后，周叙发来一张截图：照片里他的手，正虚虚扶在她背后。'
       }
     ],
-    completeText: '手机屏幕暗下去，映出她自己的脸。十年，说长不长，说短不短，够一个人把暗恋过成习惯。'
+    completeText: '她把那张截图存了下来，藏在相册最深处。窗外天亮了，她忽然很想问一句：当年你站得那么近，到底在看谁。'
   },
   {
     id: 'pl_6',
@@ -341,66 +345,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 6 章 · 聚会上的空座位',
     novel: '暗恋你第十年',
     speaker: { name: '周叙', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '聚会定在周六晚上，一家不算贵的餐厅。温以宁到得早，坐在靠窗的位置，右手边空着一把椅子。七点整，门被推开，周叙穿着深灰毛衣走进来，目光在屋里转了一圈，落在她旁边。',
+    storyText: '同学聚会定在城西，周叙开车，温以宁坐在副驾。一路上红灯很多，车里放着十年前的歌。到了饭店，靠窗的位置空着一个。',
     questions: [
       {
-        plotDescription: '点单时有人抱怨这家店加收服务费，还要另外算一笔钱。',
-        line: "The price on the menu doesn't include tax. Classic.",
-        lineCn: '菜单上的价格不含税。老套路了。',
-        prompt: "根据上下文，选出画线词汇 'Tax' 最准确的意思。",
+        plotDescription: '他抱怨自己每天上下班要花两个小时。',
+        line: "My commute takes an hour each way, so I sleep on the bus.",
+        lineCn: '我上下班单程一小时，所以在公交上睡觉。',
+        prompt: "根据上下文，选出画线词汇 'Commute' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a service charge', cn: '服务费', correct: false, reason: '句子里已经另说了服务费，tax 是另一笔交给政府的钱。' },
-          { key: 'B', en: 'a discount', cn: '折扣', correct: false, reason: '折扣会让价格变低，这里是要额外加钱。' },
-          { key: 'C', en: 'money paid to the government', cn: '交给政府的税', correct: true, reason: '菜单价之外另加的那笔钱，就是消费税。' }
+          { key: 'A', en: 'the daily trip to and from work', cn: '通勤，每天上下班的路程', correct: true, reason: '单程一小时、在公交上睡，说的正是每天往返的路。' },
+          { key: 'B', en: 'a hospital shift', cn: '医院的一班岗', correct: false, reason: '班次是工作时段，不会用「单程」来计算。' },
+          { key: 'C', en: 'a business trip', cn: '出差', correct: false, reason: '每天往返、坐公交，是日常通勤，不是出差。' }
         ],
-        analysis: '菜单价之外另加的钱是税，tax 和政府征收有关，和服务费、折扣不是一回事。',
-        wrongFeedback: '他答成“服务费”，旁边同学笑：“周叙，你留学白去了？”',
-        afterCorrect: '温以宁低头抿水，掩住嘴角那点笑——他以前就是这样，认真到有点笨。'
+        analysis: 'commute 作名词指每天上下班的路程，作动词就是「通勤」。',
+        wrongFeedback: '你答成「出差」，他笑：「天天出差，我早就住饭店了。」气血 -10',
+        afterCorrect: '温以宁看着窗外：「我以前坐 17 路，会经过你们学校后门。」红灯亮起，周叙的手指在方向盘上停了一下。'
       },
       {
-        plotDescription: '上的菜太咸，服务员说可以重做，也可以把钱退回来。',
-        line: "If it's that bad, just ask for a refund.",
-        lineCn: '要是真那么难吃，就要求退款。',
-        prompt: "根据上下文，选出画线词汇 'Refund' 最准确的意思。",
+        plotDescription: '她打了个哈欠，说昨晚值夜几乎没睡。',
+        line: "I need a nap before dinner, or I'll fall asleep in the soup.",
+        lineCn: '饭前我得打个盹，不然会一头栽进汤里。',
+        prompt: "根据上下文，选出画线词汇 'Nap' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a free dessert', cn: '免费甜点', correct: false, reason: '他说的是把钱要回来，不是换一份甜点。' },
-          { key: 'B', en: 'money back for a bad product', cn: '退回的钱', correct: true, reason: '菜太咸、不想重做，refund 就是把付的钱退回来。' },
-          { key: 'C', en: 'a second order', cn: '再点一份', correct: false, reason: '重做和退款是两回事，refund 强调钱回到手里。' }
+          { key: 'A', en: 'a shower', cn: '洗个澡', correct: false, reason: '她说的是困，不是身上脏。' },
+          { key: 'B', en: 'a short sleep', cn: '打盹，小睡一会儿', correct: true, reason: '值夜没睡、怕栽进汤里，需要的是一小觉。' },
+          { key: 'C', en: 'a snack', cn: '吃点零食', correct: false, reason: '她怕的是睡着，不是饿。' }
         ],
-        analysis: '菜太咸，可以重做也可以退钱。refund 指把已经付的钱要回来。',
-        wrongFeedback: '他答成“免费甜点”，服务员真的端来一份，全场笑成一片。',
-        afterCorrect: '温以宁小声说：“你还是这么不会吵架。”周叙侧过头：“那你教教我。”'
+        analysis: 'nap 特指白天或饭前的短时间小睡，和正式的 sleep 不一样。',
+        wrongFeedback: '你答成「零食」，她打了个哈欠：「我现在只想闭眼。」气血 -10',
+        afterCorrect: '周叙把车停稳，没急着下车：「睡十分钟，我叫你。」她真的闭上了眼睛，呼吸很快平稳下来。'
       },
       {
-        plotDescription: '结账时，组织者让每个人留好小票，回去好分摊。',
-        line: "Keep the receipt. We can split it later.",
-        lineCn: '把收据留好，回头我们分摊。',
-        prompt: "根据上下文，选出画线词汇 'Receipt' 最准确的意思。",
+        plotDescription: '到了饭店，几个人嫌外面冷，提议干脆不出门了。',
+        line: "Nobody wants to go out. Let's just order in tonight.",
+        lineCn: '没人想出门，今晚干脆点外卖吧。',
+        prompt: "根据上下文，选出画线词汇 'Order in' 最准确的意思。",
         options: [
-          { key: 'A', en: 'proof of payment', cn: '付款凭证/收据', correct: true, reason: '留着好分摊、好算账，receipt 就是记录付款的凭证。' },
-          { key: 'B', en: 'a menu', cn: '菜单', correct: false, reason: '菜单上没有付过的金额，没法用来分摊。' },
-          { key: 'C', en: 'a reservation slip', cn: '预订单', correct: false, reason: '预订单是订位用的，结完账要留的是付款凭证。' }
+          { key: 'A', en: 'have food delivered to you', cn: '点外卖，让人送上门', correct: true, reason: '不想出门又要吃饭，order in 就是把餐点叫到家里。' },
+          { key: 'B', en: 'eat at the restaurant', cn: '在饭店里吃', correct: false, reason: '大家都说不想出门了，正好和去饭店相反。' },
+          { key: 'C', en: 'cook together', cn: '一起做饭', correct: false, reason: 'order 是点单，不是自己下厨。' }
         ],
-        analysis: '留着好分摊、报销，receipt 是记录这笔付款的收据，上面有金额和明细。',
-        wrongFeedback: '他答成“菜单”，组织者看着他：“菜单能报销吗？”',
-        afterCorrect: '周叙把自己那张叠好，顺手也把温以宁的收进了口袋。'
+        analysis: 'order in 和 eat out 正好相反：一个是叫外卖到家，一个是出去吃。',
+        wrongFeedback: '你答成「一起做饭」，可冰箱里连鸡蛋都没有。气血 -10',
+        afterCorrect: '温以宁却坚持说一年才聚一次，还是该好好吃一顿。最后他们还是出了门，冷风一吹，她清醒了大半。'
       },
       {
-        plotDescription: '服务员全程很周到，临走时大家商量要不要多给一点。',
-        line: "She was great tonight. Let's leave a decent tip.",
-        lineCn: '她今晚服务很好，我们留点像样的小费吧。',
-        prompt: "根据上下文，选出画线词汇 'Tip' 最准确的意思。",
+        plotDescription: '她坚持说该好好吃一顿，指了指楼下那家小面馆。',
+        line: "We could eat out for once — there's a noodle place downstairs.",
+        lineCn: '难得出去吃一次吧，楼下就有家面馆。',
+        prompt: "根据上下文，选出画线词汇 'Eat out' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a complaint', cn: '投诉', correct: false, reason: '服务很好还要投诉，和前半句的夸奖自相矛盾。' },
-          { key: 'B', en: 'extra money for good service', cn: '给服务员的赏钱', correct: true, reason: '因为服务好才留钱，tip 就是额外给服务员的小费。' },
-          { key: 'C', en: 'a phone number', cn: '电话号码', correct: false, reason: '留号码和感谢服务没关系，语境完全不对。' }
+          { key: 'A', en: 'buy groceries and cook', cn: '买菜自己做', correct: false, reason: '她指的是楼下那家面馆，是去店里吃。' },
+          { key: 'B', en: 'skip dinner', cn: '不吃晚饭', correct: false, reason: '她说「好好吃一顿」，不是跳过。' },
+          { key: 'C', en: 'have a meal at a restaurant', cn: '下馆子，在外面吃饭', correct: true, reason: '楼下有面馆、难得一次，都是在外面用餐。' }
         ],
-        analysis: '服务好、额外给钱，tip 就是顾客给服务员的小费，是对服务的额外感谢。',
-        wrongFeedback: '他答成“投诉”，温以宁赶紧按住他的手：“别，人家服务挺好的。”',
-        afterCorrect: '周叙把钱压在杯底，抬眼问她：“送你回去？”她说：“不用。”脚步却没动。'
+        analysis: 'eat out 指出门去餐馆吃饭，和 order in 是一对常见的生活口语搭配。',
+        wrongFeedback: '你答成「自己做」，她指了指自己空空的冰箱，笑得很无奈。气血 -10',
+        afterCorrect: '空着的那个位置没人坐，服务员来收了三次碗筷。温以宁小声问：「那是给谁留的？」周叙说：「一个没来的人。」'
       }
     ],
-    completeText: '最后是他撑开伞，两个人挤在一把伞下走了半条街。谁都没提十年，谁都没提那把空椅子。'
+    completeText: '面端上来的时候，热气挡住了两个人的脸。周叙把碗往她那边推了推：「多吃点，你最近瘦了。」她低头，没让他看见自己笑。'
   },
   {
     id: 'pl_7',
@@ -408,66 +412,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 7 章 · 谁先举的杯',
     novel: '暗恋你第十年',
     speaker: { name: '温以宁', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '聚会上聊起工作，当年的班长已经开了公司，举着杯子说自己今年招了一批新人。有人问周叙怎么从住院医熬到主任，他只说了一句：“熬着。”',
+    storyText: '聚会散得很晚，周叙送她回家，进门才发现她家客厅堆着没拆的纸箱。她不好意思地把沙发上的衣服抱走：「最近太忙了。」',
     questions: [
       {
-        plotDescription: '班长拍着周叙的肩，说只要他愿意来自己的私立医院，随时都能安排。',
-        line: "Say the word and I'll hire you tomorrow. Name your price.",
-        lineCn: '你点个头，我明天就雇你。价钱你开。',
-        prompt: "根据上下文，选出画线词汇 'Hire' 最准确的意思。",
+        plotDescription: '他挽起袖子，问拖把放在哪。',
+        line: "You still have chores? Laundry, dishes, and a fridge that smells like a science project.",
+        lineCn: '你还有一堆家务没做？衣服、碗，还有一台味道像实验课作业的冰箱。',
+        prompt: "根据上下文，选出画线词汇 'Chores' 最准确的意思。",
         options: [
-          { key: 'A', en: 'give someone a job', cn: '雇用', correct: true, reason: '“明天就来上班、价钱你开”，hire 就是给工作、雇人。' },
-          { key: 'B', en: 'fire someone', cn: '解雇', correct: false, reason: '开价请人过去，是招人不是赶人，方向正相反。' },
-          { key: 'C', en: 'promote someone', cn: '提拔', correct: false, reason: '提拔是内部升职，这里说的是让他跳槽过来。' }
+          { key: 'A', en: 'routine household tasks', cn: '家务，日常杂活', correct: true, reason: '洗衣、洗碗、清理冰箱，都是家里日常要做的事。' },
+          { key: 'B', en: 'errands at work', cn: '工作上的差事', correct: false, reason: '场景是在她家，说的是生活琐事不是工作。' },
+          { key: 'C', en: 'medical duties', cn: '医疗职责', correct: false, reason: '洗衣洗碗和医院职责没有关系。' }
         ],
-        analysis: '“明天就来上班、价钱你开”，hire 是给工作、把某人招进来。',
-        wrongFeedback: '她答成“解雇”，一桌人安静了一秒，然后笑得更大声。',
-        afterCorrect: '周叙端着杯没接话，只笑：“我走了，急诊科谁值夜班。”'
+        analysis: 'chores 指家里那些重复、琐碎但必须做的活，语气偏日常。',
+        wrongFeedback: '你答成「工作差事」，周叙已经拿起她沙发上的脏衣服了。气血 -10',
+        afterCorrect: '温以宁抢过衣服：「别动，那是我明天要穿的。」他看了眼那堆衣服，很认真地说：「明天你穿哪件都不合适。」'
       },
       {
-        plotDescription: '有人说起自己公司裁员，一个老员工因为迟到被直接赶走。',
-        line: "They fired him for being late three times. No warning.",
-        lineCn: '迟到三次就把他解雇了，连警告都没有。',
-        prompt: "根据上下文，选出画线词汇 'Fire' 最准确的意思。",
+        plotDescription: '她坦白自己总把事拖到最后一刻。',
+        line: "I procrastinate all weekend, then panic on Sunday night.",
+        lineCn: '整个周末我都在拖，然后周日晚上开始抓狂。',
+        prompt: "根据上下文，选出画线词汇 'Procrastinate' 最准确的意思。",
         options: [
-          { key: 'A', en: 'promoted him', cn: '提拔了他', correct: false, reason: '迟到三次不可能升职，逻辑上说不通。' },
-          { key: 'B', en: 'warned him', cn: '警告了他', correct: false, reason: '后面明说“连警告都没有”，所以不是警告。' },
-          { key: 'C', en: 'dismissed him from the job', cn: '把他辞退了', correct: true, reason: '迟到三次、没有警告就直接让人走，fire 就是解雇。' }
+          { key: 'A', en: 'finish things early', cn: '提前把事情做完', correct: false, reason: '周日晚上才抓狂，说明一直在拖，不是提前完成。' },
+          { key: 'B', en: 'keep putting things off', cn: '拖延，一直往后拖', correct: true, reason: '周末拖着不做、最后才慌，正是 procrastinate。' },
+          { key: 'C', en: 'plan everything carefully', cn: '把一切都计划好', correct: false, reason: '她的问题是没计划，拖到最后一刻。' }
         ],
-        analysis: '迟到三次直接走人，fire 是雇主辞退员工，比警告严重得多。',
-        wrongFeedback: '她答成“提拔”，说这话的人自己都愣住了。',
-        afterCorrect: '周叙低声补了一句：“我们科室不这样，我从不拿迟到说事。”'
+        analysis: 'procrastinate 是「拖延」的正式说法，强调明知该做却一再往后推。',
+        wrongFeedback: '你答成「计划得好」，她笑了一声：「我也想啊。」气血 -10',
+        afterCorrect: '周叙把垃圾袋系好：「那就从今天开始，别等周日。」她靠在门框上看他，忽然觉得这个画面有点熟悉。'
       },
       {
-        plotDescription: '温以宁说起自己差点离开医院，最后还是留在了急诊。',
-        line: "I almost quit last winter. Then I remembered why I started.",
-        lineCn: '去年冬天我差点辞职，后来想起自己为什么开始。',
-        prompt: "根据上下文，选出画线词汇 'Quit' 最准确的意思。",
+        plotDescription: '他打开她的电视，发现播放记录停在同一部剧。',
+        line: "You binge-watched the whole season in one night, didn't you?",
+        lineCn: '你一晚上把整季都刷完了，对吧？',
+        prompt: "根据上下文，选出画线词汇 'Binge-watch' 最准确的意思。",
         options: [
-          { key: 'A', en: 'got promoted', cn: '升职了', correct: false, reason: '升职是好事，不会用“差点”来形容。' },
-          { key: 'B', en: 'left the job', cn: '辞职离开', correct: true, reason: '“差点”加上“为什么开始”，quit 指主动辞掉工作。' },
-          { key: 'C', en: 'took a vacation', cn: '休假', correct: false, reason: '休假之后还会回来，和“差点不干”不是一回事。' }
+          { key: 'A', en: 'watch many episodes in a row', cn: '一口气连刷很多集', correct: true, reason: '一晚上看完一整季，正是连续狂刷。' },
+          { key: 'B', en: 'record and save', cn: '录下来存着', correct: false, reason: '播放记录停在同一部剧，是看过了，不是录下来没看。' },
+          { key: 'C', en: 'skip episodes', cn: '跳过几集', correct: false, reason: '她看的是一整季，不是跳过。' }
         ],
-        analysis: '“差点”加上“为什么开始”，quit 指主动辞掉工作、离开岗位。',
-        wrongFeedback: '她答成“休假”，说完自己先笑了：“休一年那种？”',
-        afterCorrect: '周叙安静地看着她，过了会儿说：“幸好你没走。”'
+        analysis: 'binge-watch 指不休息地连续追剧，和 binge-eat（暴食）结构类似。',
+        wrongFeedback: '你答成「录下来」，他指着进度条：「这可不是没看过的样子。」气血 -10',
+        afterCorrect: '她抢过遥控器：「睡前看一集而已。」他挑眉：「一整季也叫一集？」'
       },
       {
-        plotDescription: '班长举杯恭喜周叙，说他这么年轻就升了主任。',
-        line: "Congrats on the promotion. Youngest department head in years.",
-        lineCn: '恭喜升职。这些年最年轻的科室主任。',
-        prompt: "根据上下文，选出画线词汇 'Promotion' 最准确的意思。",
+        plotDescription: '她辩解自己只是睡前看会儿手机。',
+        line: "I scroll in bed until my eyes hurt. That's my real hobby.",
+        lineCn: '我躺床上刷手机刷到眼睛疼，这才是我真正的爱好。',
+        prompt: "根据上下文，选出画线词汇 'Scroll' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a move to a higher position', cn: '升职', correct: true, reason: '被恭喜、当上主任，promotion 就是职位往上走。' },
-          { key: 'B', en: 'a pay cut', cn: '降薪', correct: false, reason: '降薪不会成为举杯恭喜的理由，语气不合。' },
-          { key: 'C', en: 'a transfer to another city', cn: '调去外地', correct: false, reason: '主任是职位，不是地点变化，句中没有调动信息。' }
+          { key: 'A', en: 'read paper books', cn: '读纸质书', correct: false, reason: '她说的是在床上看手机，不是读书。' },
+          { key: 'B', en: 'call friends', cn: '给朋友打电话', correct: false, reason: '刷到眼睛疼，显然不是通话。' },
+          { key: 'C', en: 'move through content on a screen', cn: '刷屏，上下滑动屏幕看内容', correct: true, reason: '躺床上看手机看到眼睛疼，正是不断滑动屏幕。' }
         ],
-        analysis: '恭喜、年轻就当主任，promotion 指职位上的晋升。',
-        wrongFeedback: '她答成“降薪”，班长一口酒差点喷出来：“我这是恭喜还是扎心？”',
-        afterCorrect: '周叙碰了碰杯，只说：“运气好。”眼睛却越过杯沿，看了温以宁一眼。'
+        analysis: 'scroll 原指滚动，在手机上就是「刷」——不断上下滑动看内容。',
+        wrongFeedback: '你答成「读书」，她晃了晃手机：「书哪有这么亮。」气血 -10',
+        afterCorrect: '周叙把最后一袋垃圾拎到门口，站了一会儿才说：「你这里缺的不是时间。」她没问缺什么，只把楼道的灯留到了很晚。'
       }
     ],
-    completeText: '那一眼很短，短到别人都没看见。温以宁却低头喝完了整杯饮料，喉咙里全是气泡的声音。'
+    completeText: '门关上以后，屋里安静得能听见冰箱的声音。温以宁站在客厅中央，忽然发现沙发被整理过，靠垫摆得整整齐齐。'
   },
   {
     id: 'pl_8',
@@ -475,66 +479,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 8 章 · 走廊尽头的解释',
     novel: '暗恋你第十年',
     speaker: { name: '周叙', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '聚会散场后，医院打来电话。一个术后病人血压骤降，周叙和她同时往回赶。出租车上谁也不说话，只有手机屏幕的光，一闪一闪照在车窗上。',
+    storyText: '连着下了三天雨，急诊走廊的地面一直是湿的。温以宁在护士站打了个盹，醒来发现肩上多了一件外套。',
     questions: [
       {
-        plotDescription: '车上温以宁接了个电话，是同事问她今晚能不能再顶一班。',
-        line: "I'll take the overtime. Tell them I'm on my way.",
-        lineCn: '这班加班我接了，跟他们说我在路上。',
-        prompt: "根据上下文，选出画线词汇 'Overtime' 最准确的意思。",
+        plotDescription: '他提醒她戴着手套别乱碰屏幕，刚才差点挂断电话。',
+        line: "Don't swipe the screen with gloves on — you'll hang up on the patient.",
+        lineCn: '戴着手套别乱滑屏幕，你刚才差点把病人的电话挂了。',
+        prompt: "根据上下文，选出画线词汇 'Swipe' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a day off', cn: '调休', correct: false, reason: '她正在赶回医院顶班，调休是休息，方向相反。' },
-          { key: 'B', en: 'a night shift', cn: '夜班', correct: false, reason: '夜班是班次，这里强调的是正常班之外多干的时间。' },
-          { key: 'C', en: 'extra hours beyond normal work', cn: '额外加班', correct: true, reason: '再顶一班、马上到，overtime 指超出正常工作的额外工时。' }
+          { key: 'A', en: 'slide your finger across a screen', cn: '滑屏，用手指在屏幕上滑动', correct: true, reason: '戴手套误触挂断电话，正是滑动屏幕造成的。' },
+          { key: 'B', en: 'press the power button', cn: '按电源键', correct: false, reason: '挂断电话是滑动的结果，不是按电源键。' },
+          { key: 'C', en: 'wipe the screen clean', cn: '把屏幕擦干净', correct: false, reason: '这里说的是操作手机，不是清洁屏幕。' }
         ],
-        analysis: '再顶一班、马上赶回去，overtime 指正常排班之外额外多干的时间。',
-        wrongFeedback: '她答成“调休”，周叙在旁边听得皱眉：“你这是往反方向理解。”',
-        afterCorrect: '周叙只说了一句：“到了先看病人，剩下的我来。”'
+        analysis: 'swipe 在触屏时代特指手指在屏幕上滑动，接电话、解锁都用得到。',
+        wrongFeedback: '你答成「擦屏幕」，他看了一眼你手套上的水：「难怪刚才挂断了。」气血 -10',
+        afterCorrect: '温以宁把外套往上拉了拉，闻到一点消毒水和洗衣液混在一起的味道。她没问是谁的。'
       },
       {
-        plotDescription: '病人的家属在门口追问什么时候能出结果，周叙看了眼表。',
-        line: "The lab has a deadline. We'll know by four.",
-        lineCn: '化验室有截止时间，四点前能出结果。',
-        prompt: "根据上下文，选出画线词汇 'Deadline' 最准确的意思。",
+        plotDescription: '她说自己还能撑，他让她去值班室躺一会儿。',
+        line: "I'll crash on the couch for two hours. Wake me if anything changes.",
+        lineCn: '我在沙发上睡两个小时，有情况就叫我。',
+        prompt: "根据上下文，选出画线词汇 'Crash' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a lunch break', cn: '午休', correct: false, reason: '凌晨四点出结果，和午休时间没有关系。' },
-          { key: 'B', en: 'the latest time to finish', cn: '必须完成的最后期限', correct: true, reason: '四点前必须出报告，deadline 就是不可越过的时限。' },
-          { key: 'C', en: 'an appointment', cn: '预约', correct: false, reason: '这里是化验室的工作时限，不是病人预约。' }
+          { key: 'A', en: 'fall down suddenly', cn: '突然摔倒', correct: false, reason: '他说的是在沙发上睡，不是摔倒。' },
+          { key: 'B', en: 'stay awake all night', cn: '整夜不睡', correct: false, reason: '他明确说了睡两个小时，和熬夜相反。' },
+          { key: 'C', en: 'sleep deeply for a while', cn: '倒头睡一觉', correct: true, reason: '在沙发上睡两小时、让人有情况叫他，正是补觉。' }
         ],
-        analysis: '四点前必须交出结果，deadline 是不可推迟的最后完成时间。',
-        wrongFeedback: '他答成“午休”，温以宁忍不住提醒：“凌晨四点，也没法午休。”',
-        afterCorrect: '他站在检验室门口，一直等到四点零三分，报告出来才松了一口气。'
+        analysis: 'crash 在口语里可以表示「累到倒头就睡」，也可以指借宿一晚。',
+        wrongFeedback: '你答成「摔倒」，她看了看那张窄沙发，觉得确实有点像。气血 -10',
+        afterCorrect: '两个小时后他醒过来，外套已经叠好放在桌角，上面压着一杯还温的水。'
       },
       {
-        plotDescription: '天亮后，一家医疗器械公司的销售守在办公室外，说要见他。',
-        line: "I have a client waiting. Give me ten minutes.",
-        lineCn: '有个客户在等，给我十分钟。',
-        prompt: "根据上下文，选出画线词汇 'Client' 最准确的意思。",
+        plotDescription: '换班后，他问她要是不困，要不要一起待会儿。',
+        line: "Do you want to hang out after the shift? Just coffee, nothing loud.",
+        lineCn: '下班后要不要一起待会儿？就喝杯咖啡，不去吵的地方。',
+        prompt: "根据上下文，选出画线词汇 'Hang out' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a business customer', cn: '客户', correct: true, reason: '器械销售等在门外谈事，client 是业务上的客户。' },
-          { key: 'B', en: 'a patient', cn: '病人', correct: false, reason: '病人应该在病房或诊室，不会守在办公室外。' },
-          { key: 'C', en: 'a colleague', cn: '同事', correct: false, reason: '同事不必用“客户”来称呼，也不在门外等。' }
+          { key: 'A', en: 'spend time together casually', cn: '一起消磨时间，随便待会儿', correct: true, reason: '喝杯咖啡、不去吵的地方，就是轻松地一起待着。' },
+          { key: 'B', en: 'work overtime together', cn: '一起加班', correct: false, reason: '他特意说下班后，不是继续工作。' },
+          { key: 'C', en: 'go home separately', cn: '各回各家', correct: false, reason: '他是在发出一起待着的邀请。' }
         ],
-        analysis: '器械公司的销售等在办公室外谈业务，client 指业务往来中的客户。',
-        wrongFeedback: '她答成“病人”，周叙纠正：“病人在病房，不在办公室外头。”',
-        afterCorrect: '温以宁把病历夹往怀里一抱：“十分钟，超时我就去敲门。”'
+        analysis: 'hang out 指没有明确目的、轻松地一起待着，是朋友或暧昧对象之间最常见的邀约。',
+        wrongFeedback: '你答成「加班」，他沉默了两秒：「我看起来这么不会约人？」气血 -10',
+        afterCorrect: '温以宁说自己不困。其实她很困，只是不想那么快回到一个人的房间。'
       },
       {
-        plotDescription: '下午有院感科的会，温以宁被点名必须参加。',
-        line: "The meeting starts at two. Don't be late again.",
-        lineCn: '会议两点开始。别再迟到了。',
-        prompt: "根据上下文，选出画线词汇 'Meeting' 最准确的意思。",
+        plotDescription: '她指了指空下来的休息室，说终于能歇一会儿。',
+        line: "Kick back for ten minutes. The ward is quiet.",
+        lineCn: '放松十分钟吧，病房现在很安静。',
+        prompt: "根据上下文，选出画线词汇 'Kick back' 最准确的意思。",
         options: [
-          { key: 'A', en: 'an operation', cn: '手术', correct: false, reason: '手术不会用“两点开始、别迟到”这样的通知方式。' },
-          { key: 'B', en: 'a ward round', cn: '查房', correct: false, reason: '查房是逐个看病人，这里说的是院感科组织的会。' },
-          { key: 'C', en: 'a formal discussion', cn: '正式会议', correct: true, reason: '被点名参加、有固定时间，meeting 就是正式开会。' }
+          { key: 'A', en: 'stand guard at the door', cn: '站在门口守着', correct: false, reason: '他说病房安静、歇十分钟，是让人放松。' },
+          { key: 'B', en: 'run errands quickly', cn: '赶紧去跑腿', correct: false, reason: '和「歇一会儿」正好相反。' },
+          { key: 'C', en: 'relax', cn: '放松，歇着', correct: true, reason: '病房安静、只有十分钟，正是让人放松一会儿。' }
         ],
-        analysis: '两点开始、被点名参加，meeting 指一群人有议题地正式开会。',
-        wrongFeedback: '她答成“查房”，周叙无奈：“查房我自己会去。”',
-        afterCorrect: '两点整，她推门进去，发现周叙旁边空着的椅子上放着一杯温水。'
+        analysis: 'kick back 是口语里的「放松、歇着」，比 relax 更随意。',
+        wrongFeedback: '你答成「守着门」，他笑：「门不用你守，你先坐下。」气血 -10',
+        afterCorrect: '雨小了一点。两个人坐在窗边，谁都没说话，咖啡的热气把玻璃糊白了一小块。'
       }
     ],
-    completeText: '会议很长，她一个字没听进去。只记得他偶尔侧过身，替她把投影的光挡住。'
+    completeText: '窗外有辆车驶过，灯光扫过他的侧脸。温以宁忽然想起高三那场雨，他也是这样，把外套搭在她肩上，然后装作什么都没发生。'
   },
   {
     id: 'pl_9',
@@ -542,66 +546,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 9 章 · 那件没送出去的礼物',
     novel: '暗恋你第十年',
     speaker: { name: '温以宁', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '科室聚餐，聊到有人创业失败。温以宁想起高三那年，自己攒了三个月的钱，买了一支钢笔，最后没敢送出去，一直放在抽屉最底层。',
+    storyText: '月底的交接夜，桌上堆着一摞没处理的表格。周叙搬了把椅子坐到她对面，把袖子挽到手肘。',
     questions: [
       {
-        plotDescription: '有人问周叙最近在忙什么，他说在推进创伤中心的事。',
-        line: "It's a big project. Two years, maybe longer.",
-        lineCn: '是个大项目。两年，可能更久。',
-        prompt: "根据上下文，选出画线词汇 'Project' 最准确的意思。",
+        plotDescription: '她看了眼时间，说先把交接做完。',
+        line: "Let's wrap up the handover before midnight.",
+        lineCn: '我们在十二点前把交接收尾吧。',
+        prompt: "根据上下文，选出画线词汇 'Wrap up' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a kind of medicine', cn: '一种药', correct: false, reason: '药不会用“两年、可能更久”来描述周期。' },
-          { key: 'B', en: 'a planned piece of work', cn: '项目', correct: true, reason: '有周期、要长期推进，project 指有目标的规划性工作。' },
-          { key: 'C', en: 'a patient case', cn: '病例', correct: false, reason: '单个病例不会做两年，这里说的是科室建设。' }
+          { key: 'A', en: 'finish', cn: '收尾，把事做完', correct: true, reason: '十二点前要完成交接，正是把工作收个尾。' },
+          { key: 'B', en: 'start over from the beginning', cn: '从头再来', correct: false, reason: '表格已经处理了一半，她是要做完不是重来。' },
+          { key: 'C', en: 'delay until tomorrow', cn: '拖到明天', correct: false, reason: '她特意提了「十二点前」，是要今天完成。' }
         ],
-        analysis: '两年周期、要持续推进的事，project 指有明确目标的规划性工作。',
-        wrongFeedback: '她答成“病例”，周叙补充：“病例不用两年。”',
-        afterCorrect: '温以宁问是什么项目，他说：“抢救室改造。”顿了顿，“想请你一起。”'
+        analysis: 'wrap up 是「收尾、结束」的常用短语，工作、会议、项目都能用。',
+        wrongFeedback: '你答成「从头再来」，她看着那摞表格，脸色白了一下。气血 -10',
+        afterCorrect: '周叙抽走一半：「你念，我写。这样快。」'
       },
       {
-        plotDescription: '有人自嘲说上一份工作干砸了，直接被老板赶走。',
-        line: "I got fired on my second week. Didn't even get a reason.",
-        lineCn: '第二周我就被炒了，连理由都没给。',
-        prompt: "根据上下文，选出画线词汇 'Fired' 最准确的意思。",
+        plotDescription: '他说保险那部分交给他。',
+        line: "I'll sort out the insurance forms before Friday.",
+        lineCn: '周五之前我会把保险表格处理好。',
+        prompt: "根据上下文，选出画线词汇 'Sort out' 最准确的意思。",
         options: [
-          { key: 'A', en: 'lost the job', cn: '被解雇', correct: true, reason: '第二周就走人、还没给理由，显然是被辞退了。' },
-          { key: 'B', en: 'got a raise', cn: '涨工资', correct: false, reason: '涨工资是好事，不会被“连理由都没给”地赶走。' },
-          { key: 'C', en: 'was praised', cn: '被表扬', correct: false, reason: '第二周被表扬很合理，可这里说的是干砸了。' }
+          { key: 'A', en: 'throw away', cn: '扔掉', correct: false, reason: '保险表格是要提交的材料，不可能扔掉。' },
+          { key: 'B', en: 'copy by hand', cn: '手抄一份', correct: false, reason: '他说的处理是把事情理顺，不是抄写。' },
+          { key: 'C', en: 'deal with and organize', cn: '处理并整理好', correct: true, reason: '把一堆表格在周五前弄明白，正是整理解决。' }
         ],
-        analysis: '干砸、第二周就走人，fired 表示被雇主辞退，是 fire 的过去式。',
-        wrongFeedback: '她答成“被表扬”，那人苦着脸：“表扬到不用来了？”',
-        afterCorrect: '周叙给他倒了杯茶：“至少你知道自己不适合。”'
+        analysis: 'sort out 强调把混乱的事情理清楚、处理好，常接问题、文件、误会。',
+        wrongFeedback: '你答成「扔掉」，他赶紧把那叠表格往自己这边拉。气血 -10',
+        afterCorrect: '温以宁看着他写字，忽然说：「你以前字很难看。」他头也没抬：「现在也难看，只是你不好意思说。」'
       },
       {
-        plotDescription: '有人问班长公司做得怎么样，他笑说今年行情还行。',
-        line: "Business is good this year. Nothing to complain about.",
-        lineCn: '今年生意不错，没什么好抱怨的。',
-        prompt: "根据上下文，选出画线词汇 'Business' 最准确的意思。",
+        plotDescription: '她指着另一叠，说家属那边得有人去沟通。',
+        line: "You deal with the family; I'll handle the paperwork.",
+        lineCn: '你去处理家属那边，我来管这些文书。',
+        prompt: "根据上下文，选出画线词汇 'Deal with' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a hobby', cn: '爱好', correct: false, reason: ' hobby 不涉及行情好坏，也不会用“生意不错”来说。' },
-          { key: 'B', en: 'health condition', cn: '身体状况', correct: false, reason: '“今年行情”说的是公司经营，不是身体好坏。' },
-          { key: 'C', en: 'commercial activity', cn: '生意/经营', correct: true, reason: '公司、行情、好与不好，business 指商业经营状况。' }
+          { key: 'A', en: 'handle', cn: '处理，应对', correct: true, reason: '和后面的 handle the paperwork 并列，都是把事情接过去处理。' },
+          { key: 'B', en: 'avoid completely', cn: '完全避开', correct: false, reason: '她是分工，不是让谁躲开家属。' },
+          { key: 'C', en: 'interview for a job', cn: '面试', correct: false, reason: '这里是医院场景，和求职无关。' }
         ],
-        analysis: '说到公司、行情，business 指商业经营活动，而不是个人爱好或身体。',
-        wrongFeedback: '她答成“身体状况”，班长笑得直摆手：“我身体也没差。”',
-        afterCorrect: '温以宁忽然想起抽屉里那支钢笔，想起它当年花光了她所有的零花钱。'
+        analysis: 'deal with 是最常用的「处理、应对」，对象可以是人、问题或麻烦。',
+        wrongFeedback: '你答成「避开」，她抬头看你：「家属那边总得有人去。」气血 -10',
+        afterCorrect: '周叙起身前停了一下：「家属要是哭，你别硬撑。」她说：「我知道。」声音很轻。'
       },
       {
-        plotDescription: '班长半开玩笑，说以后科室的耗材都从他那儿走，算笔好买卖。',
-        line: "Let's make a deal. You buy from me, I'll cut the price.",
-        lineCn: '我们做笔交易。你从我这儿进货，我给你压价。',
-        prompt: "根据上下文，选出画线词汇 'Deal' 最准确的意思。",
+        plotDescription: '他看她越写越急，伸手按住她的笔。',
+        line: "Hey, chill out. Nobody is blaming you.",
+        lineCn: '嘿，冷静点，没人怪你。',
+        prompt: "根据上下文，选出画线词汇 'Chill out' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a joke', cn: '玩笑', correct: false, reason: '他连压价条件都提了，显然是在认真谈合作。' },
-          { key: 'B', en: 'an agreement between two sides', cn: '双方达成的交易', correct: true, reason: '你买我让利，双方各有条件，deal 就是谈成的交易。' },
-          { key: 'C', en: 'a punishment', cn: '惩罚', correct: false, reason: '进货压价是互利，和惩罚没有一点关系。' }
+          { key: 'A', en: 'hurry up', cn: '快点', correct: false, reason: '她已经在着急了，他是在让她慢下来。' },
+          { key: 'B', en: 'get angry', cn: '发火', correct: false, reason: '他按住她的笔，是安抚不是挑火。' },
+          { key: 'C', en: 'calm down', cn: '冷静下来，放松点', correct: true, reason: '「没人怪你」正是在劝她别那么紧绷。' }
         ],
-        analysis: '你买我的货、我给你让价，双方各有让步，deal 指谈成的交易。',
-        wrongFeedback: '她答成“玩笑”，班长举杯：“我这可是认真的。”',
-        afterCorrect: '周叙没说好也没说不好，只看了温以宁一眼：“耗材的事，得问我们温医生。”'
+        analysis: 'chill out 是「冷静、别紧张」的口语说法，也可以指放松休息。',
+        wrongFeedback: '你答成「发火」，他愣了一下，把手收了回去。气血 -10',
+        afterCorrect: '十二点差五分，表格终于理完了。她靠着椅背，说了一句：「其实我一直想送你件东西，到现在还没送出去。」'
       }
     ],
-    completeText: '她被点名，筷子差点掉下去。十年了，他还是这样，一句话就能把她推到台前。'
+    completeText: '周叙没有问是什么。他只是把最后一盏灯关掉，说：「那就别送了，你留着。」'
   },
   {
     id: 'pl_10',
@@ -609,66 +613,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 10 章 · 没说出口的那个字',
     novel: '暗恋你第十年',
     speaker: { name: '周叙', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '月底，医院签下一份新的合作协议。签字那天，温以宁站在会议室角落，看见周叙低头写名字，笔尖停顿了一下，像是在确认什么。',
+    storyText: '她说完那句就没再开口，低头收拾桌面。周叙把自己那份表格压在下面，没让她收走。',
     questions: [
       {
-        plotDescription: '签完字，行政把一份厚厚的文件递给他，让他收好。',
-        line: "Read it before you sign. A contract is not a formality.",
-        lineCn: '签之前先读一遍。合同不是走个形式。',
-        prompt: "根据上下文，选出画线词汇 'Contract' 最准确的意思。",
+        plotDescription: '他看她晚饭又没吃，从口袋里摸出一块巧克力。',
+        line: "Keep a snack in your pocket; you skipped lunch again.",
+        lineCn: '口袋里放点零食，你午饭又没吃。',
+        prompt: "根据上下文，选出画线词汇 'Snack' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a legal agreement', cn: '具有约束力的合同', correct: true, reason: '签字、条款、要逐条读，contract 是有法律效力的合同。' },
-          { key: 'B', en: 'a greeting card', cn: '贺卡', correct: false, reason: '贺卡不需要签字前仔细阅读，也没有条款。' },
-          { key: 'C', en: 'a meeting note', cn: '会议记录', correct: false, reason: '会议记录不需要双方签字生效，性质不同。' }
+          { key: 'A', en: 'a small amount of food between meals', cn: '零食，两餐之间垫肚子的东西', correct: true, reason: '口袋里放一块巧克力垫肚子，正是 snack。' },
+          { key: 'B', en: 'a full meal', cn: '一顿正餐', correct: false, reason: '一块巧克力不是正餐，他自己也说「垫一垫」。' },
+          { key: 'C', en: 'a hot drink', cn: '一杯热饮', correct: false, reason: '他递的是巧克力，不是饮料。' }
         ],
-        analysis: '签字、条款、要“读一遍”，contract 是双方签署、具有约束力的法律文件。',
-        wrongFeedback: '她答成“贺卡”，周叙抬头看她：“那我签个祝福给你？”',
-        afterCorrect: '温以宁低下头，耳朵却慢慢红了。'
+        analysis: 'snack 指正餐之外的小份食物，作动词就是「吃零食」。',
+        wrongFeedback: '你答成「正餐」，他看了看那块巧克力，又看了看你。气血 -10',
+        afterCorrect: '温以宁剥开糖纸，掰了一半递回去。他愣了一下，接过来的时候指尖碰到她的。'
       },
       {
-        plotDescription: '会上有人汇报，新合作第一年赚得不多，但值得长期做。',
-        line: "The profit is thin this year, but the plan is long-term.",
-        lineCn: '今年利润薄，但这是长期计划。',
-        prompt: "根据上下文，选出画线词汇 'Profit' 最准确的意思。",
+        plotDescription: '她嘴唇干得起了皮，他把水杯推过去。',
+        line: "You need to hydrate — your lips are cracked.",
+        lineCn: '你得喝点水，嘴唇都裂了。',
+        prompt: "根据上下文，选出画线词汇 'Hydrate' 最准确的意思。",
         options: [
-          { key: 'A', en: 'the total cost', cn: '总成本', correct: false, reason: '成本是花出去的钱，和“赚得薄”正好相反。' },
-          { key: 'B', en: 'money left after costs', cn: '利润', correct: true, reason: '和成本相对，今年薄但长期做，profit 是赚到的净收入。' },
-          { key: 'C', en: 'the number of staff', cn: '员工人数', correct: false, reason: '人数不会用“薄”来形容，也不涉及赚多赚少。' }
+          { key: 'A', en: 'sleep enough', cn: '睡够觉', correct: false, reason: '嘴唇干裂指向缺水，不是睡眠。' },
+          { key: 'B', en: 'drink enough water', cn: '补水，喝够水', correct: true, reason: '嘴唇裂了还递水杯，正是提醒她补充水分。' },
+          { key: 'C', en: 'eat more salt', cn: '多吃点盐', correct: false, reason: '吃盐只会更渴，和补水相反。' }
         ],
-        analysis: '和成本相对、今年薄但长期做，profit 是收入减去成本后剩下的钱。',
-        wrongFeedback: '她答成“总成本”，汇报的人愣了半天。',
-        afterCorrect: '周叙记下一句：“长期做。”他说这话的时候，眼睛没有看报表。'
+        analysis: 'hydrate 是「补充水分」，医学和日常语境都常用，名词形式是 hydration。',
+        wrongFeedback: '你答成「多睡觉」，她舔了舔干裂的嘴唇，还是没喝水。气血 -10',
+        afterCorrect: '她接过杯子喝了一口，忽然说：「你以前也总这样，盯着我喝水。」他说：「你以前也总不喝。」'
       },
       {
-        plotDescription: '项目落地，院里给参与的人发了一笔额外的钱。',
-        line: "There's a bonus for everyone on the team. Don't spend it all at once.",
-        lineCn: '团队每个人都有奖金。别一下子花光。',
-        prompt: "根据上下文，选出画线词汇 'Bonus' 最准确的意思。",
+        plotDescription: '她坐得太久，站起来时腰响了一声。',
+        line: "Stand up and stretch before the next patient.",
+        lineCn: '下一个病人来之前，起来拉伸一下。',
+        prompt: "根据上下文，选出画线词汇 'Stretch' 最准确的意思。",
         options: [
-          { key: 'A', en: 'extra money for good work', cn: '额外奖励的奖金', correct: true, reason: '项目落地、团队人人有份，bonus 是工资之外的额外奖励。' },
-          { key: 'B', en: 'a fine', cn: '罚款', correct: false, reason: '罚款是往外掏钱，不会说“别一下子花光”。' },
-          { key: 'C', en: 'a loan', cn: '贷款', correct: false, reason: '贷款要还，奖励不用还，性质完全不同。' }
+          { key: 'A', en: 'extend and move your body', cn: '拉伸，舒展身体', correct: true, reason: '坐久了腰响，站起来活动身体正是 stretch。' },
+          { key: 'B', en: 'sit still', cn: '坐着不动', correct: false, reason: '她刚坐太久，他让她起来，不是继续坐着。' },
+          { key: 'C', en: 'take medicine', cn: '吃药', correct: false, reason: '他给的是动作建议，不是用药。' }
         ],
-        analysis: '项目落地、团队都有，bonus 是正职薪酬之外额外发放的奖励。',
-        wrongFeedback: '她答成“罚款”，周叙笑：“那我发钱，你交钱？”',
-        afterCorrect: '温以宁小声问：“那你的呢？”他说：“还没想好。”'
+        analysis: 'stretch 指伸展身体、拉筋，久坐之后最常见。',
+        wrongFeedback: '你答成「坐着别动」，她扶着腰，表情更僵了。气血 -10',
+        afterCorrect: '她扶着桌沿伸了个懒腰，白大褂下摆提起来一点。周叙移开视线，去开窗。'
       },
       {
-        plotDescription: '有人问她愿不愿意调到新中心，待遇比现在高。',
-        line: "The salary is higher, but I like the ER.",
-        lineCn: '薪资更高，但我喜欢急诊。',
-        prompt: "根据上下文，选出画线词汇 'Salary' 最准确的意思。",
+        plotDescription: '她应了一声，眼神却飘到窗外。',
+        line: "I zoned out for a second and missed the blood pressure reading.",
+        lineCn: '我走神了一秒，血压读数就错过了。',
+        prompt: "根据上下文，选出画线词汇 'Zone out' 最准确的意思。",
         options: [
-          { key: 'A', en: 'the work schedule', cn: '排班', correct: false, reason: '她拿“喜欢急诊”作对比，说的是钱，不是班次。' },
-          { key: 'B', en: 'the job title', cn: '职位头衔', correct: false, reason: '头衔高低是另一回事，这里明确在比待遇。' },
-          { key: 'C', en: 'the money paid for a job', cn: '工作薪资', correct: true, reason: '“待遇更高”和喜欢急诊对举，salary 指固定薪酬。' }
+          { key: 'A', en: 'fall asleep', cn: '睡着', correct: false, reason: '她说的是「一秒」，是注意力飘走，不是睡着。' },
+          { key: 'B', en: 'lose focus', cn: '走神，注意力飘走', correct: true, reason: '眼神飘到窗外、错过读数，正是短暂失去专注。' },
+          { key: 'C', en: 'get angry suddenly', cn: '突然生气', correct: false, reason: '她的语气是懊恼，不是发火。' }
         ],
-        analysis: '和“喜欢急诊”做对比，salary 指工作换来的固定薪酬，通常按月发。',
-        wrongFeedback: '她答成“排班”，对方还以为她在担心夜班太多。',
-        afterCorrect: '周叙在旁边听见了，什么也没说，只把那份调动表轻轻推远了一点。'
+        analysis: 'zone out 指人还在原地，注意力却飘走了，常发生在疲惫或发呆的时候。',
+        wrongFeedback: '你答成「睡着」，她摇头：「睡着就不止一秒了。」气血 -10',
+        afterCorrect: '周叙伸手在她眼前晃了一下。温以宁回过神，忽然说：「高三那年，我在礼堂后门等过你。」他的手停在半空。'
       }
     ],
-    completeText: '第一幕就这样结束了。他们从“十年没见”走到“每天都能见”，可谁都没有把那个字说出口。'
+    completeText: '走廊的自动灯灭了一盏。周叙很久才开口：「我知道。」温以宁怔住，而他没有再解释，只把窗关小了一点。'
   },
   {
     id: 'pl_11',
@@ -676,66 +680,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 11 章 · 旧铁盒里的信',
     novel: '暗恋你第十年',
     speaker: { name: '温以宁', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '周末温以宁回家收拾旧物，从床底拖出一个生锈的铁盒。里面是十几封没寄出的信，信封上写着同一个名字。她坐在地板上，一封一封拆开，窗外的天慢慢黑透了。',
+    storyText: '那晚之后，周叙没再解释。温以宁请了半天假搬家，从床底拖出一个旧铁盒，里面是高中时的车票、褪色的收据，还有一封没寄出去的信。房东的消息同时弹了出来：下个月涨租。',
     questions: [
       {
-        plotDescription: '信里写着她被同桌气到，却还是在校门口等到路灯亮。',
-        line: "I was so pissed off that day, but I still waited for you after class.",
-        lineCn: '那天我气得要命，可放学后还是等了你。',
-        prompt: "根据上下文，选出画线词汇 'Pissed off' 最准确的意思。",
+        plotDescription: '她蹲在纸箱中间算账，最后把外卖软件卸载了。',
+        line: "I'm broke until payday, so I'm moving to a cheaper place.",
+        lineCn: '发工资前我身无分文，只能搬到便宜点的地方。',
+        prompt: "根据上下文，选出画线词汇 'Broke' 最准确的意思。",
         options: [
-          { key: 'A', en: 'very angry', cn: '火大', correct: true, reason: '又气又等，pissed off 是口语里“气炸了”的意思。' },
-          { key: 'B', en: 'very sleepy', cn: '很困', correct: false, reason: '信里写的是被气到，跟困不困没有关系。' },
-          { key: 'C', en: 'very hungry', cn: '很饿', correct: false, reason: '她在校门口等人，不是在写肚子饿。' }
+          { key: 'A', en: 'having no money', cn: '身无分文，没钱了', correct: true, reason: '要等发工资、还要搬去便宜的地方，说明手头确实没钱。' },
+          { key: 'B', en: 'injured', cn: '受伤的', correct: false, reason: 'broke 虽可指骨折，但这里说的是账户余额。' },
+          { key: 'C', en: 'broken', cn: '坏掉的', correct: false, reason: '她说的是自己没钱，不是东西坏了。' }
         ],
-        analysis: '信里写她生气却还等他，pissed off 是口语里情绪很重的“火大、气炸”。',
-        wrongFeedback: '她答成“很困”，信里的委屈忽然变得可笑，她把纸按在膝盖上。',
-        afterCorrect: '下一行写着：“我知道你不会来，可我还是等到路灯亮了。”她盯着那行字，眼眶有点热。'
+        analysis: 'broke 形容人时只表示「一分钱都没有」，和 break 的过去式没有关系。',
+        wrongFeedback: '你答成「受伤」，她低头看了看自己的手，觉得这误会比没钱还难受。气血 -10',
+        afterCorrect: '她把铁盒放进纸箱最上层，动作很轻。盒子底部有一道旧划痕，是高三那年摔的。'
       },
       {
-        plotDescription: '另一封信写到高考前夜，她紧张得手一直在抖。',
-        line: "I nearly freaked out before the exam, and you just handed me a bottle of water.",
-        lineCn: '考试前我差点崩溃，你只递给我一瓶水。',
-        prompt: "根据上下文，选出画线词汇 'Freak out' 最准确的意思。",
+        plotDescription: '房东在电话里说得很客气，涨的钱却一点不含糊。',
+        line: "My rent is going up by eight hundred next month.",
+        lineCn: '我的房租下个月要涨八百。',
+        prompt: "根据上下文，选出画线词汇 'Rent' 最准确的意思。",
         options: [
-          { key: 'A', en: 'fell asleep', cn: '睡着了', correct: false, reason: '考试前她紧张到发抖，不可能一睡过去。' },
-          { key: 'B', en: 'laughed out loud', cn: '大笑', correct: false, reason: '手抖和笑是两回事，语境里全是紧张。' },
-          { key: 'C', en: 'lost control from panic', cn: '慌到失控', correct: true, reason: '考前紧张到差点撑不住，freak out 就是情绪失控。' }
+          { key: 'A', en: 'a car payment', cn: '车贷', correct: false, reason: '她和房东谈的是住的地方，不是车。' },
+          { key: 'B', en: 'money paid monthly for housing', cn: '房租，每月付的住房钱', correct: true, reason: '房东通知涨价，涨的自然是房租。' },
+          { key: 'C', en: 'a hospital bill', cn: '医院账单', correct: false, reason: '电话那头是房东，不是医院收费处。' }
         ],
-        analysis: '高考前紧张到不行，freak out 指情绪突然失控、抓狂，程度比“紧张”更重。',
-        wrongFeedback: '她答成“睡着了”，可那晚她明明睁眼到天亮。',
-        afterCorrect: '她想起那瓶水是温的，瓶盖已经被他拧松了。十年过去，她居然还记得。'
+        analysis: 'rent 指租房子每月付的钱，作动词就是「租」。',
+        wrongFeedback: '你答成「车贷」，她看了一眼窗外那辆共享单车，笑不出来。气血 -10',
+        afterCorrect: '新房子离医院更远，但便宜。她在纸上写下「早起四十分钟」，写完又划掉了。'
       },
       {
-        plotDescription: '信里写到她看见他值日到很晚，最后什么都没说。',
-        line: "You looked exhausted, so I didn't say anything.",
-        lineCn: '你看起来累坏了，所以我什么都没说。',
-        prompt: "根据上下文，选出画线词汇 'Exhausted' 最准确的意思。",
+        plotDescription: '她撕下一个信封的背面，把每月的开销一条条列出来。',
+        line: "I wrote a new budget on the back of an envelope.",
+        lineCn: '我在信封背面重新写了一份预算。',
+        prompt: "根据上下文，选出画线词汇 'Budget' 最准确的意思。",
         options: [
-          { key: 'A', en: 'very excited', cn: '很兴奋', correct: false, reason: '值日到很晚是累，不是兴奋得停不下来。' },
-          { key: 'B', en: 'completely worn out', cn: '精疲力尽', correct: true, reason: '她因为心疼才把话咽回去，说明他已经累到极点。' },
-          { key: 'C', en: 'a little shy', cn: '有点害羞', correct: false, reason: '害羞不能解释她为什么放弃开口。' }
+          { key: 'A', en: 'a plan for how much to spend', cn: '预算，开销计划', correct: true, reason: '把每月开销一条条列出来，正是做预算。' },
+          { key: 'B', en: 'a list of patients', cn: '病人名单', correct: false, reason: '信封背面写的是钱，不是病人。' },
+          { key: 'C', en: 'a kind of insurance', cn: '一种保险', correct: false, reason: '保险要投保，不会一条条列水电饭钱。' }
         ],
-        analysis: '她因为心疼才没把话说完，exhausted 是累到极点的状态。',
-        wrongFeedback: '她答成“很兴奋”，读到这里自己都笑了，哪有人兴奋到黑眼圈。',
-        afterCorrect: '那天的信停在这里，后面半页被撕掉了。她翻了很久，也没有找到结尾。'
+        analysis: 'budget 是事先算好的花钱计划，可以很正式，也可以写在信封背面。',
+        wrongFeedback: '你答成「病人名单」，她看了看信封，忽然觉得自己的确累糊涂了。气血 -10',
+        afterCorrect: '算到最后一行，她把笔停下。这个月唯一超支的，是那盒很贵的草莓。'
       },
       {
-        plotDescription: '最后一封信写毕业聚会，她喝多了，第二天他来送站。',
-        line: "I had a hangover after graduation, and you still came to see me off.",
-        lineCn: '毕业聚会后我宿醉，你还是来送我了。',
-        prompt: "根据上下文，选出画线词汇 'Hangover' 最准确的意思。",
+        plotDescription: '她打开冰箱，看见自己上周买的那盒草莓，只剩空盒。',
+        line: "The only thing I splurged on this month was that box of strawberries.",
+        lineCn: '这个月我唯一挥霍的一次，就是那盒草莓。',
+        prompt: "根据上下文，选出画线词汇 'Splurge' 最准确的意思。",
         options: [
-          { key: 'A', en: 'the sick feeling after drinking', cn: '醉酒后的难受', correct: true, reason: '毕业聚会喝了酒，第二天不舒服，正是宿醉。' },
-          { key: 'B', en: 'a headache from studying', cn: '学习累出的头痛', correct: false, reason: '这里提到聚会和喝酒，不是熬夜看书。' },
-          { key: 'C', en: 'a feeling of excitement', cn: '兴奋的感觉', correct: false, reason: '她抱着垃圾桶坐了一早上，显然不是兴奋。' }
+          { key: 'A', en: 'saved money carefully', cn: '精打细算', correct: false, reason: '她说那是「唯一超支」的东西，和节省相反。' },
+          { key: 'B', en: 'returned something', cn: '退货', correct: false, reason: '草莓已经吃完了，不是退回去。' },
+          { key: 'C', en: 'spend a lot on a treat', cn: '挥霍，为心头好大手笔花钱', correct: true, reason: '预算那么紧还买贵草莓，正是偶尔放纵一次。' }
         ],
-        analysis: '毕业聚会喝了酒，第二天难受得厉害，hangover 专指醉酒后的宿醉。',
-        wrongFeedback: '她答成“兴奋”，可那天她明明抱着垃圾桶坐了一早上。',
-        afterCorrect: '信的最后一句是：“你替我拎着行李，我一句话都没敢说。”她把信折回原样。'
+        analysis: 'splurge 指明知不便宜还是买了，带一点自我纵容的甜。',
+        wrongFeedback: '你答成「精打细算」，她看着空盒，觉得自己那点甜也被说没了。气血 -10',
+        afterCorrect: '铁盒里的信滑了出来，信封上没写收件人，只写着日期。十年前的六月，正是毕业那天。'
       }
     ],
-    completeText: '铁盒最底下压着一张车票，日期是十年前的九月。她忽然明白，自己不是没写过，只是从来没敢寄。'
+    completeText: '她没有拆信，只把它压在预算表下面。手机亮了一下，周叙发来一句：「搬哪？我去帮忙。」'
   },
   {
     id: 'pl_12',
@@ -743,66 +747,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 12 章 · 字迹没变',
     novel: '暗恋你第十年',
     speaker: { name: '周叙', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '周一早上，温以宁抱着一摞病历进办公室，口袋里那封信露出一个角。周叙伸手替她扶住，指尖碰到信纸，动作停了一下。他没有抽出来，只说了句：“你的字，我认得。”',
+    storyText: '信还没拆，手机先响了。一个自称医院人事的人要温以宁交「入职保证金」，说名额只剩最后一个。周叙刚好站在门口，听到一半就把电话接了过去。',
     questions: [
       {
-        plotDescription: '两人聊起高中班上一对分分合合的情侣，周叙摇了摇头。',
-        line: "That relationship was toxic. Everyone saw it except her.",
-        lineCn: '那段关系是有毒的，除了她所有人都看出来了。',
-        prompt: "根据上下文，选出画线词汇 'Toxic' 最准确的意思。",
+        plotDescription: '对方说制服和培训要三千块，先转账再安排岗位。',
+        line: "Three thousand for a uniform? That's a rip-off.",
+        lineCn: '一套制服三千？这明摆着是坑钱。',
+        prompt: "根据上下文，选出画线词汇 'Rip-off' 最准确的意思。",
         options: [
-          { key: 'A', en: 'very romantic', cn: '很浪漫', correct: false, reason: '他摇头、说“只有她没看出来”，显然不是在夸浪漫。' },
-          { key: 'B', en: 'very stable', cn: '很稳定', correct: false, reason: '稳定就不会让所有人看出问题。' },
-          { key: 'C', en: 'harmful and draining', cn: '有害又消耗人', correct: true, reason: '所有人都看出不对，toxic 形容关系有害、把人耗空。' }
+          { key: 'A', en: 'a good deal', cn: '划算的买卖', correct: false, reason: '他语气里全是不信，说「划算」正好弄反。' },
+          { key: 'B', en: 'a free sample', cn: '免费试用品', correct: false, reason: '对方要三千块，和免费完全相反。' },
+          { key: 'C', en: 'way overpriced', cn: '坑钱货，价格离谱', correct: true, reason: '一套制服要三千，rip-off 就是明摆着宰人。' }
         ],
-        analysis: '所有人都看出来有问题，toxic 形容一段关系有害、让人被消耗。',
-        wrongFeedback: '他答成“很浪漫”，温以宁抬眼看他：“你当年真这么想的？”',
-        afterCorrect: '周叙把病历放下：“所以那时候，我也不敢多说。”'
+        analysis: 'rip-off 指价格远超价值的东西，也可以指一场明目张胆的骗钱。',
+        wrongFeedback: '你答成「划算」，周叙已经把免提打开了，让对方再说一遍。气血 -10',
+        afterCorrect: '温以宁站在旁边，听见他说话的语气一点点冷下来，像换了个人。'
       },
       {
-        plotDescription: '信纸从口袋滑到地上，办公室里忽然安静下来。',
-        line: "The silence got awkward, so I pretended I didn't see it.",
-        lineCn: '沉默变得很尴尬，所以我装作没看见。',
-        prompt: "根据上下文，选出画线词汇 'Awkward' 最准确的意思。",
+        plotDescription: '对方说不出科室，也说不清院长姓什么，只反复催转账。',
+        line: "That so-called agent is just a freeloader — he wants our money for nothing.",
+        lineCn: '那个所谓的代理就是个白嫖怪，什么活都不干就想拿钱。',
+        prompt: "根据上下文，选出画线词汇 'Freeloader' 最准确的意思。",
         options: [
-          { key: 'A', en: 'uncomfortable', cn: '尴尬不自在', correct: true, reason: '信掉出来、两人都不说话，正是让人手足无措的尴尬。' },
-          { key: 'B', en: 'peaceful', cn: '安静平和', correct: false, reason: '空气僵得能听见钟表声，谈不上平和。' },
-          { key: 'C', en: 'funny', cn: '好笑', correct: false, reason: '他选择假装没看见，说明气氛并不好笑。' }
+          { key: 'A', en: 'someone who takes without paying', cn: '白吃白拿、占便宜的人', correct: true, reason: '不干活只想要钱，正是 freeloader 的核心。' },
+          { key: 'B', en: 'a new intern', cn: '新来的实习生', correct: false, reason: '实习生是要干活的，和「什么都不干」相反。' },
+          { key: 'C', en: 'a paying customer', cn: '付钱的客户', correct: false, reason: '他是想拿钱的一方，不是付钱的一方。' }
         ],
-        analysis: '信掉出来、两人都不说话，awkward 是那种让人手足无措的尴尬。',
-        wrongFeedback: '他答成“平和”，可空气明明僵得能听见钟表声。',
-        afterCorrect: '温以宁弯腰去捡，他先一步按住那张纸：“别急，我不看。”'
+        analysis: 'freeloader 形容总占别人便宜、从不付出的人，语气很不客气。',
+        wrongFeedback: '你答成「实习生」，周叙摇头：「实习生可不敢这么理直气壮。」气血 -10',
+        afterCorrect: '他挂了电话，把号码记在纸上：「这种电话以后直接给我。」'
       },
       {
-        plotDescription: '他盯着信封上的字看了一会儿，忽然笑出声。',
-        line: "Your handwriting hasn't changed. That little hook on the 'y' is dead funny.",
-        lineCn: '你的字一点没变。那个 y 的小钩子笑死人了。',
-        prompt: "根据上下文，选出画线词汇 'Dead' 最准确的意思。",
+        plotDescription: '温以宁这才后知后觉，对方连她的科室都说错了。',
+        line: "It's a scam. The hospital never asks for money by phone.",
+        lineCn: '这是骗局。医院从来不会打电话要钱。',
+        prompt: "根据上下文，选出画线词汇 'Scam' 最准确的意思。",
         options: [
-          { key: 'A', en: 'almost unreadable', cn: '几乎看不清', correct: false, reason: '他认出了字迹，说明看得清，只是在打趣。' },
-          { key: 'B', en: 'extremely funny', cn: '特别好笑', correct: true, reason: 'dead 在口语里起强调作用，dead funny 就是特别好笑。' },
-          { key: 'C', en: 'very serious', cn: '很严肃', correct: false, reason: '他刚笑出声，怎么会是严肃。' }
+          { key: 'A', en: 'a charity event', cn: '慈善活动', correct: false, reason: '慈善不会收「入职保证金」。' },
+          { key: 'B', en: 'a trick to steal money', cn: '骗局，骗钱的套路', correct: true, reason: '冒充人事、催转账、说不清科室，全是骗钱手法。' },
+          { key: 'C', en: 'a new hospital policy', cn: '医院的新政策', correct: false, reason: '正规政策不会用私人电话催转账。' }
         ],
-        analysis: 'dead 在口语里可以当强调词用，dead funny 等于“特别好笑”。',
-        wrongFeedback: '他答成“看不清”，温以宁把信抽回去：“那你别看了。”',
-        afterCorrect: '她嘴上生气，手却把信往他那边推了推：“只许看信封。”'
+        analysis: 'scam 作名词是「骗局」，作动词是「诈骗」，是这类电话最准确的定性。',
+        wrongFeedback: '你答成「新政策」，她捏着手机，后颈还有点凉。气血 -10',
+        afterCorrect: '周叙把那张纸折好放进口袋，忽然说：「你刚才第一反应是信他。」她没反驳，因为她确实信了。'
       },
       {
-        plotDescription: '他说起自己一直以为高中那些细节都是自作多情。',
-        line: "I'm thrilled you kept it. I thought I imagined all of it.",
-        lineCn: '你还留着，我高兴坏了。我还以为那些都是我瞎想的。',
-        prompt: "根据上下文，选出画线词汇 'Thrilled' 最准确的意思。",
+        plotDescription: '她问他为什么一眼就看出来，他沉默了一会儿。',
+        line: "I know about debt. I spent my twenties paying off med school loans.",
+        lineCn: '我懂债务的滋味。二十多岁那几年，我都在还医学院的贷款。',
+        prompt: "根据上下文，选出画线词汇 'Debt' 最准确的意思。",
         options: [
-          { key: 'A', en: 'confused', cn: '困惑', correct: false, reason: '他刚说“高兴坏了”，不是想不明白。' },
-          { key: 'B', en: 'nervous', cn: '紧张', correct: false, reason: '信就在眼前，他的情绪是喜悦而不是忐忑。' },
-          { key: 'C', en: 'extremely happy', cn: '欣喜若狂', correct: true, reason: '多年猜测被证实，thrilled 表示极强的喜悦。' }
+          { key: 'A', en: 'money you owe', cn: '欠下的债', correct: true, reason: '还医学院的贷款，debt 就是欠着、需要偿还的钱。' },
+          { key: 'B', en: 'a scholarship', cn: '奖学金', correct: false, reason: '奖学金是拿到的钱，不会用「还清」来说。' },
+          { key: 'C', en: 'a monthly bonus', cn: '每月奖金', correct: false, reason: '奖金是收入，和还债的方向相反。' }
         ],
-        analysis: '他以为一切都是自己幻想，如今信在眼前，thrilled 是极强的喜悦。',
-        wrongFeedback: '他答成“困惑”，温以宁看着他，忽然不知道该怎么接。',
-        afterCorrect: '周叙把信放回桌上，很轻：“那我们现在，从第一封开始读？”'
+        analysis: 'debt 指欠别人的钱，pay off debt 就是「还清债务」。',
+        wrongFeedback: '你答成「奖学金」，他看了你一眼，没解释那句「还」。气血 -10',
+        afterCorrect: '温以宁想说「我也是」，话到嘴边，变成了：「那现在，还清了吗？」'
       }
     ],
-    completeText: '她没有点头，也没有拒绝。窗外的阳光落在信纸上，把十年前的字照得发亮。'
+    completeText: '他点头，又摇头：「钱还清了，别的没有。」桌上的信还压在那里，信封上的字迹和他胸牌上的签名一模一样。'
   },
   {
     id: 'pl_13',
@@ -810,66 +814,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 13 章 · 一句被听错的话',
     novel: '暗恋你第十年',
     speaker: { name: '温以宁', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '午后，温以宁去楼梯间接水，听见周叙和护士长在说话。护士长笑问：“温医生是不是你女朋友？”他停了两秒，说：“She is just an old classmate.”她端着杯子，站在门后没动。',
+    storyText: '为了谢他，温以宁请他去楼下吃面。结账时刷卡机坏了，周叙翻遍口袋，只摸出几张皱掉的纸币。面馆的电视正在播水电涨价的新闻。',
     questions: [
       {
-        plotDescription: '回到护士站，桌上又多了两摞表格，她连笔都握不稳。',
-        line: "I'm overwhelmed with these forms. Can you give me a minute?",
-        lineCn: '这些表格压得我喘不过气，能给我一分钟吗？',
-        prompt: "根据上下文，选出画线词汇 'Overwhelmed' 最准确的意思。",
+        plotDescription: '她伸手要付，他先一步把钱压在桌上。',
+        line: "My paycheck came in yesterday, so dinner is on me.",
+        lineCn: '我昨天刚发薪水，这顿我请。',
+        prompt: "根据上下文，选出画线词汇 'Paycheck' 最准确的意思。",
         options: [
-          { key: 'A', en: 'bored with them', cn: '觉得无聊', correct: false, reason: '她是被工作量压住，不是闲得发闷。' },
-          { key: 'B', en: 'buried and stressed', cn: '被压得应付不过来', correct: true, reason: '表格堆成山、还要缓一分钟，正是被压得喘不过气。' },
-          { key: 'C', en: 'finished with them', cn: '已经做完了', correct: false, reason: '她刚求人给一分钟，不可能已经做完。' }
+          { key: 'A', en: 'a written prescription', cn: '处方', correct: false, reason: '处方不会到账，也不能拿来请客。' },
+          { key: 'B', en: 'the money you earn from work', cn: '薪水，工作挣的钱', correct: true, reason: '刚到手、能请客，paycheck 在这里代指发下来的工资。' },
+          { key: 'C', en: 'a work schedule', cn: '排班表', correct: false, reason: '排班表不会「到账」，也付不了面钱。' }
         ],
-        analysis: '表格堆成山、需要缓一分钟，overwhelmed 是被压得应付不过来。',
-        wrongFeedback: '她答成“做完了”，同事把一摞新表格放在她桌上，她彻底说不出话。',
-        afterCorrect: '她躲进值班室，把那句“old classmate”在脑子里重放了一遍又一遍。'
+        analysis: 'paycheck 本义是工资单，口语里常直接代指「发到手的薪水」。',
+        wrongFeedback: '你答成「处方」，他差点被面汤呛到：「你拿处方请我吃面？」气血 -10',
+        afterCorrect: '温以宁没抢过他，只好说：「那下次我请。」他低头吃面，耳朵有点红。'
       },
       {
-        plotDescription: '同事看她脸色不好，把椅子拉过来让她先坐下。',
-        line: "Just chill. Nobody's blaming you for the delay.",
-        lineCn: '放轻松点，没人因为延误怪你。',
-        prompt: "根据上下文，选出画线词汇 'Chill' 最准确的意思。",
+        plotDescription: '电视里念着水电和燃气调价，她叹了口气。',
+        line: "The bills are piling up again — electricity, water, and my phone.",
+        lineCn: '账单又堆成山了，电费、水费，还有手机费。',
+        prompt: "根据上下文，选出画线词汇 'Bills' 最准确的意思。",
         options: [
-          { key: 'A', en: 'relax', cn: '放松下来', correct: true, reason: '同事在安慰她别紧张，chill 就是放轻松。' },
-          { key: 'B', en: 'leave', cn: '离开', correct: false, reason: '同事让她坐下，不是让她走。' },
-          { key: 'C', en: 'hurry up', cn: '赶快', correct: false, reason: '后半句明确说没人怪她，语气是安抚不是催促。' }
+          { key: 'A', en: 'medical records', cn: '病历', correct: false, reason: '电费水费不是病历，这里说的是要付的钱。' },
+          { key: 'B', en: 'hospital beds', cn: '病床', correct: false, reason: '病床不会连着手机费一起「堆成山」。' },
+          { key: 'C', en: 'statements you have to pay', cn: '账单，该付的钱', correct: true, reason: '水电手机三项都是每月要付的开销。' }
         ],
-        analysis: '同事在安慰她别紧张，chill 在这里是“放轻松、别绷着”。',
-        wrongFeedback: '她答成“赶紧走”，同事愣住：“我是让你别急。”',
-        afterCorrect: '她勉强笑了笑，可手指一直捏着那张没送出去的信。'
+        analysis: 'bills 指一张张等着付的账单，piling up 就是越积越多。',
+        wrongFeedback: '你答成「病历」，他抬眼：「温医生，职业病又犯了。」气血 -10',
+        afterCorrect: '他把自己的汤推过去：「少点外卖，账单就少了。」她没抬头，勺子在汤里转了一圈。'
       },
       {
-        plotDescription: '交完班，她靠着更衣柜坐下，连抬手的力气都没有。',
-        line: "After that shift I felt completely drained.",
-        lineCn: '那班下来，我觉得自己被彻底掏空了。',
-        prompt: "根据上下文，选出画线词汇 'Drained' 最准确的意思。",
+        plotDescription: '结账时机器坏了，老板说只能收现金。',
+        line: "The card machine is down. Do you have any cash on you?",
+        lineCn: '刷卡机坏了，你身上有现金吗？',
+        prompt: "根据上下文，选出画线词汇 'Cash' 最准确的意思。",
         options: [
-          { key: 'A', en: 'excited', cn: '兴奋', correct: false, reason: '她连抬手都费力，和兴奋完全是两种状态。' },
-          { key: 'B', en: 'hungry', cn: '饿', correct: false, reason: '累到没力气不等于饿，这里强调的是精力耗尽。' },
-          { key: 'C', en: 'completely worn out', cn: '被掏空', correct: true, reason: '一整班高强度工作后毫无力气，drained 指精力被抽干。' }
+          { key: 'A', en: 'paper money', cn: '现金，现钞', correct: true, reason: '刷卡机坏了才要找另一种付款方式，cash 就是实体现金。' },
+          { key: 'B', en: 'a bank card', cn: '银行卡', correct: false, reason: '刷卡机都坏了，再问银行卡就没有意义了。' },
+          { key: 'C', en: 'a coupon', cn: '优惠券', correct: false, reason: '优惠券不能替代付款，和机器坏了的语境无关。' }
         ],
-        analysis: '一整班高强度工作后毫无力气，drained 指精力被彻底抽干。',
-        wrongFeedback: '她答成“饿”，于是去食堂点了两份饭，一口也吃不下。',
-        afterCorrect: '她靠着更衣柜坐下，忽然很想问一句：老同学，到底算什么呢。'
+        analysis: 'cash 指能直接递出去的现金，和刷卡、转账相对。',
+        wrongFeedback: '你答成「银行卡」，老板无奈地晃了晃手里那几张纸币。气血 -10',
+        afterCorrect: '温以宁从包里摸出一张五十，动作熟练得像做过很多次：「我请你。」'
       },
       {
-        plotDescription: '夜里她翻来覆去，盯着天花板想他那两秒的停顿。',
-        line: "I've been anxious about what he thinks of me.",
-        lineCn: '我一直在焦虑他怎么看我。',
-        prompt: "根据上下文，选出画线词汇 'Anxious' 最准确的意思。",
+        plotDescription: '走出面馆，他接了个电话，挂了以后说自己在办房子的事。',
+        line: "The bank approved my loan. I'm buying a place near the hospital.",
+        lineCn: '银行批了我的贷款，我要在医院附近买套房。',
+        prompt: "根据上下文，选出画线词汇 'Loan' 最准确的意思。",
         options: [
-          { key: 'A', en: 'worried', cn: '焦虑不安', correct: true, reason: '反复猜测对方心意、睡不着，anxious 就是心里发紧。' },
-          { key: 'B', en: 'curious', cn: '好奇', correct: false, reason: '好奇不会让人翻来覆去到半夜。' },
-          { key: 'C', en: 'certain', cn: '确定', correct: false, reason: '她连他一句话的意思都拿不准，谈何确定。' }
+          { key: 'A', en: 'a lease contract', cn: '租约', correct: false, reason: '租来的房子不需要银行审批，买房才要。' },
+          { key: 'B', en: 'money borrowed from a bank', cn: '贷款，向银行借的钱', correct: true, reason: '买房、银行批款，loan 就是借来按月偿还的钱。' },
+          { key: 'C', en: 'a savings account', cn: '储蓄账户', correct: false, reason: '储蓄账户是自己存钱，和银行批钱给你相反。' }
         ],
-        analysis: '反复猜测对方的心意、心里发紧，anxious 是焦虑不安。',
-        wrongFeedback: '她答成“确定”，可她连他一句话的意思都拿不准。',
-        afterCorrect: '手机亮了一下，是周叙：“明天夜班，一起？”她盯着那行字看了很久。'
+        analysis: 'loan 指借来的钱，需要连本带息还回去，房贷是最常见的用法之一。',
+        wrongFeedback: '你答成「租约」，他顿了顿：「租的房，不用银行批。」气血 -10',
+        afterCorrect: '温以宁「哦」了一声，走了几步才反应过来：他说的是「医院附近」。'
       }
     ],
-    completeText: '她最后回了一个“好”。发出去的瞬间，又觉得自己像个十七岁的人。'
+    completeText: '她忽然停下：「你刚才说，医院附近？」周叙也停下，路灯把两个人的影子拉得很近：「嗯。走路十分钟。」'
   },
   {
     id: 'pl_14',
@@ -877,66 +881,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 14 章 · 冷战第三天',
     novel: '暗恋你第十年',
     speaker: { name: '周叙', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '接下来三天，温以宁只在必须说话时开口，说完就走。周叙把病历翻来覆去想不通，直到护士长提醒他：“那天你说话，她可能听见了。”',
+    storyText: '温以宁坚持这顿面要 AA，周叙说不用，她当场把零钱数好放在他桌上。第二天开始，两个人说话都客气了三分，走廊里碰见只点头。',
     questions: [
       {
-        plotDescription: '护士长说温以宁这两天说话带刺，连水杯都放得很重。',
-        line: "She was furious when she heard what I said.",
-        lineCn: '她听到我说的话时气坏了。',
-        prompt: "根据上下文，选出画线词汇 'Furious' 最准确的意思。",
+        plotDescription: '同事问她为什么连一杯咖啡都要算清楚。',
+        line: "I'm not cheap — I just don't like wasting money.",
+        lineCn: '我不是抠门，我只是不喜欢乱花钱。',
+        prompt: "根据上下文，选出画线词汇 'Cheap' 最准确的意思。",
         options: [
-          { key: 'A', en: 'relieved', cn: '松了口气', correct: false, reason: '她三天不理人，显然不是放松，而是生气。' },
-          { key: 'B', en: 'amused', cn: '觉得好笑', correct: false, reason: '说话带刺、放杯子很重，和觉得好笑相反。' },
-          { key: 'C', en: 'extremely angry', cn: '狂怒', correct: true, reason: '三天冷战、处处带刺，furious 是愤怒到极点。' }
+          { key: 'A', en: 'unwilling to spend money', cn: '抠门的，舍不得花钱', correct: true, reason: '她急着否认的正是「舍不得花钱」这个评价。' },
+          { key: 'B', en: 'low in price', cn: '价格便宜的', correct: false, reason: '这里说的是人对待钱的态度，不是商品价格。' },
+          { key: 'C', en: 'generous', cn: '大方的', correct: false, reason: '她说「不是」，后面又补「不喜欢乱花」，显然不是大方。' }
         ],
-        analysis: '三天不理人、说话带刺，furious 是愤怒到极点的状态。',
-        wrongFeedback: '他答成“松了口气”，护士长看他一眼：“你哪只眼睛看见的？”',
-        afterCorrect: '周叙捏着笔，第一次觉得那句“老同学”说得太顺口了。'
+        analysis: 'cheap 形容人时是贬义，指小气、舍不得花钱；形容东西时才是「便宜」。',
+        wrongFeedback: '你答成「大方」，她笑了一下，那笑有点凉。气血 -10',
+        afterCorrect: '她把零钱一枚枚塞回钱包，忽然觉得自己昨晚数的不是钱，是分寸。'
       },
       {
-        plotDescription: '他坐在办公室里，连最爱的手术记录都写不下去。',
-        line: "I've been depressed all week and I don't know why.",
-        lineCn: '我难受了一个星期，也不知道为什么。',
-        prompt: "根据上下文，选出画线词汇 'Depressed' 最准确的意思。",
+        plotDescription: '路过商场橱窗，她看见一支钢笔，价格让她停住脚。',
+        line: "I can't afford that pen, but I can afford dinner.",
+        lineCn: '那支笔我买不起，但一顿饭还是请得起的。',
+        prompt: "根据上下文，选出画线词汇 'Afford' 最准确的意思。",
         options: [
-          { key: 'A', en: 'very low and sad', cn: '情绪低落', correct: true, reason: '持续一周提不起劲，depressed 指情绪长期低沉。' },
-          { key: 'B', en: 'very busy', cn: '很忙', correct: false, reason: '他连手术都推了两台，忙不是重点。' },
-          { key: 'C', en: 'very calm', cn: '很平静', correct: false, reason: '写不下记录、说不出原因，显然不是平静。' }
+          { key: 'A', en: 'have enough money for', cn: '负担得起，买得起', correct: true, reason: '她对比了笔和饭的价格，说的是钱够不够。' },
+          { key: 'B', en: 'deserve something', cn: '配得上某物', correct: false, reason: '这里谈的是钱够不够，不是配不配。' },
+          { key: 'C', en: 'repair something', cn: '修理某物', correct: false, reason: '她只是在看价格，没有修东西的意思。' }
         ],
-        analysis: '持续一周的低落、说不清原因，depressed 指情绪长期低沉。',
-        wrongFeedback: '他答成“很忙”，可他那周连手术都推了两台。',
-        afterCorrect: '护士长叹气：“周主任，你以前可不这样。”'
+        analysis: 'afford 表示经济上负担得起，常和 can、can not 连用。',
+        wrongFeedback: '你答成「配得上」，她看着橱窗里的笔，眼神暗了一下。气血 -10',
+        afterCorrect: '她没进去。走了两步，又回头看了一眼那支笔，像在记住一个暂时够不到的东西。'
       },
       {
-        plotDescription: '走廊里，年轻护士们正围着手机抢演唱会门票。',
-        line: "Everyone's hyped about the concert, and I'm here sorting files.",
-        lineCn: '大家都在为演唱会兴奋，我却在这儿整理文件。',
-        prompt: "根据上下文，选出画线词汇 'Hyped' 最准确的意思。",
+        plotDescription: '周叙不知什么时候站在她旁边，说那支笔其实很耐用。',
+        line: "It's expensive, but it's worth it — you'll use it every day.",
+        lineCn: '是有点贵，但值了，你会天天用到它。',
+        prompt: "根据上下文，选出画线词汇 'Worth it' 最准确的意思。",
         options: [
-          { key: 'A', en: 'worried', cn: '担心', correct: false, reason: '抢票现场很热闹，没人露出担心的样子。' },
-          { key: 'B', en: 'very excited', cn: '极度兴奋', correct: true, reason: '和“我在整理文件”对比，hyped 是兴奋到不行的状态。' },
-          { key: 'C', en: 'tired', cn: '疲惫', correct: false, reason: '真正疲惫的是他自己，不是那群护士。' }
+          { key: 'A', en: 'worth the money', cn: '值了，这个钱花得值', correct: true, reason: '虽然贵，但天天用，说明他认为价值对得起价格。' },
+          { key: 'B', en: 'a waste of money', cn: '浪费钱', correct: false, reason: '他用了「值了」，和浪费正好相反。' },
+          { key: 'C', en: 'too cheap to trust', cn: '便宜得不可靠', correct: false, reason: '他先说了 expensive，不是便宜。' }
         ],
-        analysis: '和“我在这儿整理文件”对比，hyped 是大家兴奋到不行的状态。',
-        wrongFeedback: '他答成“担心”，可走廊里明明有人在讨论抢票。',
-        afterCorrect: '他低头继续理文件，理了半天，同一张纸拿起来三次。'
+        analysis: 'worth it 表示某样东西的价值对得起你付出的钱或代价。',
+        wrongFeedback: '你答成「浪费钱」，他看了你一眼，把话咽了回去。气血 -10',
+        afterCorrect: '温以宁说：「你怎么知道我会天天用。」他说：「你写字的时候，笔总没水。」'
       },
       {
-        plotDescription: '交班时他想叫住她，最后只问出一句“今天怎么样”。',
-        line: "I had a miserable day. Don't ask.",
-        lineCn: '我今天惨透了，别问。',
-        prompt: "根据上下文，选出画线词汇 'Miserable' 最准确的意思。",
+        plotDescription: '她后来才知道，他最近晚上还在给别人写报告。',
+        line: "He pays for it with a side hustle — writing reports at night.",
+        lineCn: '他靠副业付的钱，晚上给人写报告。',
+        prompt: "根据上下文，选出画线词汇 'Side hustle' 最准确的意思。",
         options: [
-          { key: 'A', en: 'wonderful', cn: '特别好', correct: false, reason: '她说“别问”，显然不是好得想分享。' },
-          { key: 'B', en: 'ordinary', cn: '普通', correct: false, reason: '普通的答案不需要用“别问”来挡。' },
-          { key: 'C', en: 'very bad', cn: '糟糕透顶', correct: true, reason: '一句“别问”已经把糟糕写满，miserable 就是惨到不行。' }
+          { key: 'A', en: 'a main full-time job', cn: '全职主业', correct: false, reason: '写报告是晚上额外做的，不是主业。' },
+          { key: 'B', en: 'a hobby that costs money', cn: '花钱的爱好', correct: false, reason: '写报告是挣钱，不是花钱的爱好。' },
+          { key: 'C', en: 'extra work for extra income', cn: '副业，主业之外的赚钱活', correct: true, reason: '白天上班、晚上写报告挣钱，正是副业。' }
         ],
-        analysis: '“别问”加上整天的状态，miserable 是糟到不行的意思。',
-        wrongFeedback: '他答成“特别好”，温以宁冷笑一声，转身走了。',
-        afterCorrect: '他站在原地，忽然明白：有些话不说清楚，比说错还伤人。'
+        analysis: 'side hustle 指主业之外的赚钱方式，比 part-time job 更强调个人经营。',
+        wrongFeedback: '你答成「花钱的爱好」，她沉默了很久。气血 -10',
+        afterCorrect: '冷战第三天，周叙把一支钢笔放在她桌上，笔帽上还有店里没撕干净的价签。'
       }
     ],
-    completeText: '那天晚上，他坐在办公室里写了一条很长的消息，删到只剩四个字：“我们谈谈。”'
+    completeText: '温以宁拿起笔，看见价签下面压着一张小票，日期是昨天。她忽然明白，他不是不在乎，只是从来不会说。'
   },
   {
     id: 'pl_15',
@@ -944,66 +948,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 15 章 · 同一个夜班',
     novel: '暗恋你第十年',
     speaker: { name: '温以宁', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '排班表出来，两人被分在同一组。凌晨的急诊安静得反常，温以宁写病历，周叙在旁边看片子。谁都没提那三个字，可谁都没走开。',
+    storyText: '排班表把两个人排进了同一个夜班。凌晨收了一个年轻病人，为了省钱连挂号都犹豫。温以宁给他处理伤口时，听见他说自己打两份工。',
     questions: [
       {
-        plotDescription: '她盯着排班表看了半天，最后还是没忍住笑。',
-        line: "I was ecstatic when I saw the schedule. Don't tell anyone.",
-        lineCn: '看到排班表的时候我高兴坏了，别告诉别人。',
-        prompt: "根据上下文，选出画线词汇 'Ecstatic' 最准确的意思。",
+        plotDescription: '年轻人说两份工加起来，也只够在这座城市活着。',
+        line: "He works two jobs at minimum wage and still can't pay the rent.",
+        lineCn: '他打两份工，拿最低工资，还是付不起房租。',
+        prompt: "根据上下文，选出画线词汇 'Minimum wage' 最准确的意思。",
         options: [
-          { key: 'A', en: 'surprised', cn: '惊讶', correct: false, reason: '她盯着看了半天才笑，重点是高兴不是意外。' },
-          { key: 'B', en: 'extremely happy', cn: '欣喜若狂', correct: true, reason: '看到和他同一班就高兴得藏不住，ecstatic 是极度的喜悦。' },
-          { key: 'C', en: 'annoyed', cn: '恼火', correct: false, reason: '她还让人别说出去，显然在偷着乐。' }
+          { key: 'A', en: 'the lowest legal pay', cn: '最低工资，法定最低报酬', correct: true, reason: '两份工、仍付不起房租，强调的就是收入处在法定下限。' },
+          { key: 'B', en: 'a high salary', cn: '高薪', correct: false, reason: '如果高薪，就不会两份工还付不起房租。' },
+          { key: 'C', en: 'unpaid overtime', cn: '无偿加班', correct: false, reason: '这里说的是每小时的报酬标准，不是加班有没有钱。' }
         ],
-        analysis: '看到和他同一班就高兴，还让保密，ecstatic 是藏不住的极度喜悦。',
-        wrongFeedback: '她答成“恼火”，可嘴角一直压不下去，实在不像。',
-        afterCorrect: '周叙没抬头：“放心，我也不打算告诉别人。”'
+        analysis: 'minimum wage 是法律规定的每小时最低工资，常用来讨论底层收入困境。',
+        wrongFeedback: '你答成「高薪」，病人苦笑了一下，把袖子放了下来。气血 -10',
+        afterCorrect: '温以宁给他开了最便宜的药，又在单子上多写了一句「按时吃饭」。'
       },
       {
-        plotDescription: '一台急诊手术做完，她的手腕僵得放不下来。',
-        line: "My hands went numb after holding the retractor for hours.",
-        lineCn: '举了几个小时拉钩，我的手都麻了。',
-        prompt: "根据上下文，选出画线词汇 'Numb' 最准确的意思。",
+        plotDescription: '缴费时，年轻人的卡刷了两次都被拒。',
+        line: "My account went into overdraft again this month.",
+        lineCn: '我这个月账户又透支了。',
+        prompt: "根据上下文，选出画线词汇 'Overdraft' 最准确的意思。",
         options: [
-          { key: 'A', en: 'without feeling', cn: '失去知觉', correct: true, reason: '长时间保持一个动作后没感觉，numb 就是麻木。' },
-          { key: 'B', en: 'very warm', cn: '很暖', correct: false, reason: '手腕僵住不是发热，暖解决不了问题。' },
-          { key: 'C', en: 'shaking', cn: '发抖', correct: false, reason: '她说的是没知觉，而不是在抖。' }
+          { key: 'A', en: 'a savings plan', cn: '储蓄计划', correct: false, reason: '卡被拒、账户透支，是钱不够，不是存钱计划。' },
+          { key: 'B', en: 'spending more than you have', cn: '透支，花超了账户里的钱', correct: true, reason: '刷卡被拒、账户见底，正是透支的状态。' },
+          { key: 'C', en: 'a bank bonus', cn: '银行奖励', correct: false, reason: '奖励不会让卡刷不出来。' }
         ],
-        analysis: '长时间保持一个姿势后失去感觉，numb 指麻木、没有知觉。',
-        wrongFeedback: '她答成“很暖”，周叙看了她一眼：“麻就说麻。”',
-        afterCorrect: '他伸手替她揉了揉手腕，动作很自然，好像这十年从没断过。'
+        analysis: 'overdraft 指账户余额不足却仍被扣款，形成负数，也就是「透支」。',
+        wrongFeedback: '你答成「储蓄计划」，年轻人低下头，手指抠着卡边。气血 -10',
+        afterCorrect: '周叙没说话，直接把自己的卡递过去。温以宁按住他的手：「我来。」'
       },
       {
-        plotDescription: '一位女外科医生笑着拍周叙的肩，还凑近看他的片子。',
-        line: "I'm not jealous. I just don't like her standing so close.",
-        lineCn: '我没嫉妒，我只是不喜欢她站那么近。',
-        prompt: "根据上下文，选出画线词汇 'Jealous' 最准确的意思。",
+        plotDescription: '交完费，两个人在走廊尽头站着，她说起自己刚工作那两年。',
+        line: "I saved up for two years just to pay off my dad's hospital bills.",
+        lineCn: '我攒了两年钱，只为了还清我爸的住院费。',
+        prompt: "根据上下文，选出画线词汇 'Save up' 最准确的意思。",
         options: [
-          { key: 'A', en: 'sleepy', cn: '困', correct: false, reason: '她介意的是距离，不是想打瞌睡。' },
-          { key: 'B', en: 'grateful', cn: '感激', correct: false, reason: '她嘴上否认，情绪明显是介意、吃醋。' },
-          { key: 'C', en: 'envious and possessive', cn: '吃醋嫉妒', correct: true, reason: '嘴上说没有、又在介意距离，正是吃醋。' }
+          { key: 'A', en: 'put money aside over time', cn: '攒钱，一点点存起来', correct: true, reason: '两年才凑够，正是长期把钱存下来。' },
+          { key: 'B', en: 'borrow money from a bank', cn: '向银行借钱', correct: false, reason: '她说的是攒，不是借。' },
+          { key: 'C', en: 'spend it all at once', cn: '一次性花光', correct: false, reason: '攒两年和一次花光是相反的。' }
         ],
-        analysis: '嘴上否认、又在介意别人靠近，jealous 就是吃醋、心里不是滋味。',
-        wrongFeedback: '她答成“困”，说完自己都圆不回来。',
-        afterCorrect: '周叙低头笑了一下：“那下次我离你近一点。”'
+        analysis: 'save up 强调为了某个目标持续存钱，和 save 单独用相比更侧重过程。',
+        wrongFeedback: '你答成「向银行借」，她笑了一下：「那时候没人肯借给我。」气血 -10',
+        afterCorrect: '周叙看着走廊尽头：「我那时候在还贷款，什么都不知道。」她说：「现在知道了。」'
       },
       {
-        plotDescription: '她想起白天冲他发的那句话，声音低了下去。',
-        line: "I felt guilty the second I said it.",
-        lineCn: '话一出口我就内疚了。',
-        prompt: "根据上下文，选出画线词汇 'Guilty' 最准确的意思。",
+        plotDescription: '她忽然问他，为什么学医。',
+        line: "I wanted to invest in something that lasts — even if it takes years.",
+        lineCn: '我想投资在能长久的东西上，哪怕要花很多年。',
+        prompt: "根据上下文，选出画线词汇 'Invest' 最准确的意思。",
         options: [
-          { key: 'A', en: 'sorry for doing wrong', cn: '内疚', correct: true, reason: '刚说出口就后悔，guilty 是做错事后心里过不去。' },
-          { key: 'B', en: 'proud', cn: '骄傲', correct: false, reason: '她那句话把自己刺了一下，不是值得骄傲的事。' },
-          { key: 'C', en: 'confused', cn: '困惑', correct: false, reason: '她清楚自己错在哪，不是想不明白。' }
+          { key: 'A', en: 'put money or effort into future gain', cn: '投资，为将来的回报投入', correct: true, reason: '学医要花很多年，是把时间和钱投进长远的事。' },
+          { key: 'B', en: 'waste time on nothing', cn: '把时间浪费在没意义的事上', correct: false, reason: '他说「能长久的东西」，显然认为值得，不是浪费。' },
+          { key: 'C', en: 'give everything away', cn: '把一切送人', correct: false, reason: '投资是投入以求得回报，不是无条件送出去。' }
         ],
-        analysis: '刚说出口就后悔，guilty 是做错事后心里过不去的愧疚。',
-        wrongFeedback: '她答成“骄傲”，可那句话明明把她自己刺了一下。',
-        afterCorrect: '她小声说了句“对不起”，周叙摇头：“你骂得也不算错。”'
+        analysis: 'invest 不只是金钱投资，也可以指投入时间、精力去换长远的回报。',
+        wrongFeedback: '你答成「浪费时间」，他摇头：「那我这十年也太亏了。」气血 -10',
+        afterCorrect: '温以宁没接话。走廊的钟走到四点，她忽然觉得，这个夜班没有那么长了。'
       }
     ],
-    completeText: '天快亮时，两个人都靠在椅背上睡着了。中间隔着半米，谁也没有先靠近。'
+    completeText: '天快亮时，年轻人出院了，临走前朝他们鞠了一躬。周叙把值班室的门推开，说：「睡一会儿吧，我守着。」'
   },
   {
     id: 'pl_16',
@@ -1011,133 +1015,133 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 16 章 · 凌晨三点的便利店',
     novel: '暗恋你第十年',
     speaker: { name: '周叙', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '夜班中场，两人去楼下便利店。货架只剩最后一盒关东煮，温以宁伸手，周叙也伸手，两只手在塑料盒上碰了一下，同时缩回去。',
+    storyText: '下班后两个人都没回家，拐进医院对面的便利店。关东煮的热气糊住玻璃，收银台边贴着一张手写的告示：小本生意，恕不赊账。',
     questions: [
       {
-        plotDescription: '他看她一直皱着眉，把椅子往她那边踢了踢。',
-        line: "You look stressed. Sit down and eat something.",
-        lineCn: '你看起来压力很大，坐下吃点东西。',
-        prompt: "根据上下文，选出画线词汇 'Stressed' 最准确的意思。",
+        plotDescription: '他看着货架上的标价，说这座城市什么都在涨。',
+        line: "Everything costs more after tax in this city.",
+        lineCn: '在这座城市，什么东西加上税都更贵。',
+        prompt: "根据上下文，选出画线词汇 'Tax' 最准确的意思。",
         options: [
-          { key: 'A', en: 'relaxed', cn: '放松', correct: false, reason: '她眉头一直没松开，和放松相反。' },
-          { key: 'B', en: 'bored', cn: '无聊', correct: false, reason: '急诊夜班忙得脚不沾地，谈不上无聊。' },
-          { key: 'C', en: 'under pressure', cn: '压力大', correct: true, reason: '连轴转、饭也没吃，stressed 指被压力压着。' }
+          { key: 'A', en: 'money paid to the government', cn: '税，交给政府的钱', correct: true, reason: '标价之外还要加的那部分，就是税。' },
+          { key: 'B', en: 'a discount', cn: '折扣', correct: false, reason: '加税让价格更高，和折扣相反。' },
+          { key: 'C', en: 'a delivery fee', cn: '配送费', correct: false, reason: '在店里买东西不涉及配送费。' }
         ],
-        analysis: '她眉头没松开过、饭也没吃，stressed 指被压力压得紧绷。',
-        wrongFeedback: '他答成“放松”，温以宁抬头：“你看我像吗？”',
-        afterCorrect: '她把盒子推给他：“你先吃，我不饿。”肚子却不合时宜地叫了一声。'
+        analysis: 'tax 是政府向个人或商品征收的钱，价格里常标「不含税」。',
+        wrongFeedback: '你答成「折扣」，他举了举手里那瓶水：「要是有折扣就好了。」气血 -10',
+        afterCorrect: '温以宁拿了两串关东煮，又放回去一串。他看见了，没说什么，结账时多拿了一串。'
       },
       {
-        plotDescription: '她提起这个月已经连着三个夜班，声音有点哑。',
-        line: "Three night shifts in a row — that's how burnout starts.",
-        lineCn: '连着三个夜班，职业倦怠就是这么来的。',
-        prompt: "根据上下文，选出画线词汇 'Burnout' 最准确的意思。",
+        plotDescription: '她说今年退了一笔钱，算这个月唯一的惊喜。',
+        line: "I got a tax refund, so tonight is my treat.",
+        lineCn: '我拿到一笔退税，今晚我请。',
+        prompt: "根据上下文，选出画线词汇 'Refund' 最准确的意思。",
         options: [
-          { key: 'A', en: 'exhaustion from overwork', cn: '过度劳累后的倦怠', correct: true, reason: '连续夜班把身体和情绪都耗空，正是 burnout。' },
-          { key: 'B', en: 'a happy mood', cn: '好心情', correct: false, reason: '连上三个夜班不会是“好心情”的来源。' },
-          { key: 'C', en: 'a kind of fever', cn: '一种发烧', correct: false, reason: '这里说的是工作状态，不是生病发烧。' }
+          { key: 'A', en: 'money you owe', cn: '欠的钱', correct: false, reason: '她说这是「惊喜」，欠钱不会是惊喜。' },
+          { key: 'B', en: 'money returned to you', cn: '退款，退回来的钱', correct: true, reason: '多缴的税退回来，正是 refund。' },
+          { key: 'C', en: 'a fine you pay', cn: '要交的罚款', correct: false, reason: '罚款是往外付，退税是收回来。' }
         ],
-        analysis: '连续夜班、身体和情绪都被消耗，burnout 指过度工作导致的倦怠。',
-        wrongFeedback: '他答成“好心情”，温以宁笑：“那你天天好心情？”',
-        afterCorrect: '周叙把热汤推过去：“吃完这顿，我给你调班。”'
+        analysis: 'refund 指多付或取消交易后退回的钱，tax refund 就是退税。',
+        wrongFeedback: '你答成「欠的钱」，她把钱包合上：「那我可请不起。」气血 -10',
+        afterCorrect: '周叙笑她：「一笔退税就高兴成这样。」她说：「你不懂，这叫意外之财。」'
       },
       {
-        plotDescription: '便利店外忽然有人喊救命，一个孩子倒在地上抽搐。',
-        line: "Don't panic. We've got him.",
-        lineCn: '别慌，我们接住了。',
-        prompt: "根据上下文，选出画线词汇 'Panic' 最准确的意思。",
+        plotDescription: '结账时他把小票折好，放进外套内袋。',
+        line: "Keep the receipt — we might need to return it.",
+        lineCn: '把小票留着，说不定要退货。',
+        prompt: "根据上下文，选出画线词汇 'Receipt' 最准确的意思。",
         options: [
-          { key: 'A', en: 'laugh', cn: '笑', correct: false, reason: '孩子倒在地上，没人笑得出来。' },
-          { key: 'B', en: 'sudden fear', cn: '恐慌', correct: true, reason: '家属六神无主，panic 是突然袭来的惊慌。' },
-          { key: 'C', en: 'sleep', cn: '睡', correct: false, reason: '这是急救现场，和睡觉毫无关系。' }
+          { key: 'A', en: 'a shopping list', cn: '购物清单', correct: false, reason: '结账后打出来的是付款凭证，不是清单。' },
+          { key: 'B', en: 'a coupon', cn: '优惠券', correct: false, reason: '小票不能当优惠券用，这里是退换货的凭据。' },
+          { key: 'C', en: 'proof of payment', cn: '收据，付款凭证', correct: true, reason: '要退货就需要证明在这里买过，正是 receipt。' }
         ],
-        analysis: '抢救现场家属六神无主，panic 是突然袭来的惊慌失措。',
-        wrongFeedback: '他答成“笑”，可家属的眼泪还挂在脸上。',
-        afterCorrect: '那句话说完，家属真的安静了一点。温以宁看了他一眼。'
+        analysis: 'receipt 是交易凭证，退货、报销都靠它，注意 p 不发音。',
+        wrongFeedback: '你答成「购物清单」，他展开那张纸，上面只有金额和时间。气血 -10',
+        afterCorrect: '温以宁瞥见内袋里还塞着别的小票，最上面那张，是那家钢笔店的。'
       },
       {
-        plotDescription: '孩子被送上车后，监护仪上的数字终于慢慢稳住。',
-        line: "I was relieved when his vitals stabilized.",
-        lineCn: '他的生命体征稳下来，我才松了口气。',
-        prompt: "根据上下文，选出画线词汇 'Relieved' 最准确的意思。",
+        plotDescription: '临走时，他把找零放进柜台上的小费罐。',
+        line: "The old man at the noodle shop never takes a tip.",
+        lineCn: '面馆那位老人从来不肯收小费。',
+        prompt: "根据上下文，选出画线词汇 'Tip' 最准确的意思。",
         options: [
-          { key: 'A', en: 'worried', cn: '担心', correct: false, reason: '指标已经稳住，担心应该放下了。' },
-          { key: 'B', en: 'angry', cn: '生气', correct: false, reason: '抢救成功不是让人愤怒的事。' },
-          { key: 'C', en: 'freed from worry', cn: '松了口气', correct: true, reason: '悬着的心落下，relieved 是担忧解除后的轻松。' }
+          { key: 'A', en: 'advice', cn: '建议', correct: false, reason: '放进罐子里的找零是钱，不是建议。' },
+          { key: 'B', en: 'extra money for good service', cn: '小费，给服务人员的额外钱', correct: true, reason: '把找零留给店员，就是给服务的小费。' },
+          { key: 'C', en: 'a small mistake', cn: '小错误', correct: false, reason: '这里说的是钱，不是差错。' }
         ],
-        analysis: '指标稳定、悬着的心落下，relieved 是担忧解除后的轻松。',
-        wrongFeedback: '他答成“担心”，可监护仪明明已经平稳了。',
-        afterCorrect: '两个人靠在便利店门口，谁都没说话，肩膀却挨得很近。'
+        analysis: 'tip 作名词可以指小费，也可以指建议、诀窍，要看语境。',
+        wrongFeedback: '你答成「建议」，他看着那个罐子：「建议可装不进去。」气血 -10',
+        afterCorrect: '走出便利店，天边已经发白。温以宁忽然说：「你那条小票，是钢笔店的吧。」他脚步慢了半拍。'
       }
     ],
-    completeText: '回医院的路上，她忽然说：“刚才那盒关东煮，其实我想让给你。”他答：“我知道。”'
+    completeText: '他没有否认，只说：「本来想等你生日。」她低头看着脚下的路，觉得自己这十年，好像一直在错过同一句话。'
   },
   {
     id: 'pl_17',
     index: 17,
-    title: '第 17 章 · 他递来的热水',
+    title: '第 17 章 · 一张人事通知',
     novel: '暗恋你第十年',
     speaker: { name: '温以宁', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '降温那天，温以宁的手一直冰凉。周叙把自己的保温杯放在她桌上，什么也没说。杯壁还是热的，杯盖上贴着一张便签：“喝完再还我。”',
+    storyText: '早交班时，公告栏上贴出新的人事通知。科室要扩编，也要清退外包人员。温以宁站在人群后面，看见周叙的名字出现在拟任名单第一行。',
     questions: [
       {
-        plotDescription: '一个老人的抢救没能成功，家属在走廊里哭到站不直。',
-        line: "She was heartbroken when the old man passed.",
-        lineCn: '老人走的时候，她心都碎了。',
-        prompt: "根据上下文，选出画线词汇 'Heartbroken' 最准确的意思。",
+        plotDescription: '护士长说夜班终于要加人了。',
+        line: "They're going to hire two more nurses for the night shift.",
+        lineCn: '夜班要再招两个护士。',
+        prompt: "根据上下文，选出画线词汇 'Hire' 最准确的意思。",
         options: [
-          { key: 'A', en: 'deeply sad', cn: '心碎难过', correct: true, reason: '亲人离世、哭到站不直，heartbroken 是极度的悲伤。' },
-          { key: 'B', en: 'a little tired', cn: '有点累', correct: false, reason: '哭到站不直，远不止“有点累”。' },
-          { key: 'C', en: 'very angry', cn: '生气', correct: false, reason: '她面对的是失去，不是被谁激怒。' }
+          { key: 'A', en: 'employ someone', cn: '雇用，招人', correct: true, reason: '夜班缺人、要加两个，正是招人进来。' },
+          { key: 'B', en: 'dismiss someone', cn: '把某人辞退', correct: false, reason: '招人补夜班和辞退正好相反。' },
+          { key: 'C', en: 'train someone for free', cn: '免费培训某人', correct: false, reason: '公告说的是增加岗位，不是培训。' }
         ],
-        analysis: '面对病人离世、情绪崩溃，heartbroken 是极度的悲伤。',
-        wrongFeedback: '她答成“有点累”，可那姑娘在走廊哭了半个小时。',
-        afterCorrect: '周叙站在旁边，很久才说：“我们救不回来的人，会一直记得。”'
+        analysis: 'hire 是「雇用、招聘」，和 fire（解雇）是一对反义动作。',
+        wrongFeedback: '你答成「辞退」，护士长看了你一眼：「那我们夜班更没人了。」气血 -10',
+        afterCorrect: '温以宁松了口气。至少下个月，她不用一个人守整层楼。'
       },
       {
-        plotDescription: '他凭一个细节发现了别人漏掉的骨折，忍不住挑了下眉。',
-        line: "Don't look so smug. You missed it yesterday.",
-        lineCn: '别那么得意，你昨天还漏了。',
-        prompt: "根据上下文，选出画线词汇 'Smug' 最准确的意思。",
+        plotDescription: '通知后面附了一段说明，说外包公司伪造了发票。',
+        line: "They fired the supplier after the fake invoice.",
+        lineCn: '伪造发票的事出来以后，他们把供应商解雇了。',
+        prompt: "根据上下文，选出画线词汇 'Fire' 最准确的意思。",
         options: [
-          { key: 'A', en: 'tired', cn: '累', correct: false, reason: '他刚发现关键线索，精神得很。' },
-          { key: 'B', en: 'self-satisfied', cn: '得意忘形', correct: true, reason: '被说“昨天还漏了”却还挑着眉，smug 就是自满。' },
-          { key: 'C', en: 'worried', cn: '担心', correct: false, reason: '他的表情是得意，不是发愁。' }
+          { key: 'A', en: 'light a flame', cn: '点火', correct: false, reason: '这里是处理供应商，不是真的放火。' },
+          { key: 'B', en: 'dismiss from a job', cn: '解雇，开除', correct: true, reason: '伪造发票后终止合作、让其走人，正是解雇。' },
+          { key: 'C', en: 'give a warning', cn: '给个警告', correct: false, reason: '通知里已经终止合作，不只是警告。' }
         ],
-        analysis: '被说“昨天还漏了”还一脸得意，smug 是自满、自我感觉太好。',
-        wrongFeedback: '他答成“累”，温以宁指了指他的嘴角：“累的人不会这么笑。”',
-        afterCorrect: '周叙收起笑，认真把片子又看了一遍。'
+        analysis: 'fire 作动词在职场里是「解雇、开除」，语气比 lay off 更直接。',
+        wrongFeedback: '你答成「点火」，旁边的实习生差点笑出来。气血 -10',
+        afterCorrect: '她忽然想起那通诈骗电话，原来不是巧合。有人早就知道科室在换人。'
       },
       {
-        plotDescription: '她发现他这两天总绕开她的桌位，连眼神都不肯对上。',
-        line: "I'm annoyed by the way he avoids me.",
-        lineCn: '他躲着我的样子让我烦透了。',
-        prompt: "根据上下文，选出画线词汇 'Annoyed' 最准确的意思。",
+        plotDescription: '午休时，她跟周叙说自己动过离开的念头。',
+        line: "I thought about quitting, but then you showed up.",
+        lineCn: '我想过辞职，结果你就出现了。',
+        prompt: "根据上下文，选出画线词汇 'Quit' 最准确的意思。",
         options: [
-          { key: 'A', en: 'touched', cn: '感动', correct: false, reason: '被刻意躲开，很难生出感动。' },
-          { key: 'B', en: 'amused', cn: '觉得有趣', correct: false, reason: '她连饭都吃得很少，显然不是觉得有趣。' },
-          { key: 'C', en: 'irritated', cn: '烦躁不快', correct: true, reason: '对方刻意回避、她心里堵得慌，annoyed 是被惹烦了。' }
+          { key: 'A', en: 'leave a job voluntarily', cn: '辞职，主动离开工作', correct: true, reason: '她说的是自己动过离开的念头，正是主动辞职。' },
+          { key: 'B', en: 'be promoted', cn: '被升职', correct: false, reason: '「离开」和升职是两回事。' },
+          { key: 'C', en: 'take a short break', cn: '短暂休息', correct: false, reason: 'quit 是彻底离开岗位，不是休息一下。' }
         ],
-        analysis: '对方刻意回避、她心里堵得慌，annoyed 是被惹得烦躁不快。',
-        wrongFeedback: '她答成“感动”，可那几天她连饭都吃得很少。',
-        afterCorrect: '话音刚落，周叙从拐角出来，手里还拿着那个保温杯。'
+        analysis: 'quit 指主动辞去工作，也可以指戒掉某个习惯。',
+        wrongFeedback: '你答成「升职」，她笑：「我要是升职，还用得着犹豫？」气血 -10',
+        afterCorrect: '周叙停下筷子：「那你现在还想走吗？」她没回答，只把汤喝完了。'
       },
       {
-        plotDescription: '她自嘲最近总怀疑别人在背后议论自己。',
-        line: "It's not paranoia if they're actually whispering about you.",
-        lineCn: '如果她们真的在议论你，那就不算被害妄想了。',
-        prompt: "根据上下文，选出画线词汇 'Paranoia' 最准确的意思。",
+        plotDescription: '下午的会上，主任宣布了拟任名单。',
+        line: "He got a promotion, and he didn't even tell me.",
+        lineCn: '他升职了，居然一个字都没跟我说。',
+        prompt: "根据上下文，选出画线词汇 'Promotion' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a serious illness', cn: '重病', correct: false, reason: '这里是口语打趣，不是在诊断疾病。' },
-          { key: 'B', en: 'false suspicion', cn: '无端的猜疑', correct: true, reason: '句子里用“真的在议论”作对照，paranoia 指没有根据的猜疑。' },
-          { key: 'C', en: 'good hearing', cn: '听力好', correct: false, reason: '听力好和怀疑别人议论是两码事。' }
+          { key: 'A', en: 'a move to a higher position', cn: '升职，职位提升', correct: true, reason: '名单第一行、主任宣布，说的是职位晋升。' },
+          { key: 'B', en: 'a pay cut', cn: '降薪', correct: false, reason: '拟任名单第一行是好事，不是降薪。' },
+          { key: 'C', en: 'a transfer to another city', cn: '调去外地', correct: false, reason: '通知里说的是职位，不是地点。' }
         ],
-        analysis: '前后用“真的在议论”作对照，paranoia 指没有根据的猜疑。',
-        wrongFeedback: '他答成“重病”，温以宁白他一眼：“你才重病。”',
-        afterCorrect: '周叙把杯子往她手边推了推：“那就让她们说。”'
+        analysis: 'promotion 指职位晋升，也可以指促销活动，这里显然是前者。',
+        wrongFeedback: '你答成「降薪」，她皱眉：「那他怎么还笑得出来。」气血 -10',
+        afterCorrect: '散会后她走过去，把通知单放在他面前：「周主任，恭喜。」他看着她：「你生气了。」'
       }
     ],
-    completeText: '热水从喉咙一路暖到胃里。她忽然发现，自己好像没那么怕冷了。'
+    completeText: '她说不生气。可回到座位，她还是把那支钢笔从抽屉里拿出来，放进了包里最深的夹层。'
   },
   {
     id: 'pl_18',
@@ -1145,66 +1149,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 18 章 · 病历本里的糖',
     novel: '暗恋你第十年',
     speaker: { name: '周叙', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '查房时，周叙翻开一本病历，里面掉出一颗水果糖。糖纸是十年前校门口小卖部的那种。他抬头，温以宁正假装看窗外。',
+    storyText: '升职以后，周叙的会越来越多。温以宁连着三天在走廊里只看见他的背影。第四天，她在自己的病历本里摸到一颗糖，糖纸被压得很平。',
     questions: [
       {
-        plotDescription: '一个术后病人指标反复，他半夜在办公室来回走。',
-        line: "I've been restless all night. Something feels off.",
-        lineCn: '我一整晚都坐立不安，总觉得哪里不对。',
-        prompt: "根据上下文，选出画线词汇 'Restless' 最准确的意思。",
+        plotDescription: '她值完夜班又接了白班，眼睛下面一片青。',
+        line: "I've been doing overtime every night this week.",
+        lineCn: '这周我每天晚上都在加班。',
+        prompt: "根据上下文，选出画线词汇 'Overtime' 最准确的意思。",
         options: [
-          { key: 'A', en: 'unable to settle', cn: '焦躁不安', correct: true, reason: '整晚静不下来、预感不对，restless 是坐立难安。' },
-          { key: 'B', en: 'sleeping deeply', cn: '睡得很沉', correct: false, reason: '他一整晚在走，眼下还有青黑，显然没睡。' },
-          { key: 'C', en: 'very hungry', cn: '很饿', correct: false, reason: '他在担心病人指标，不是肚子饿。' }
+          { key: 'A', en: 'extra hours beyond normal work', cn: '加班，正常工时之外的时间', correct: true, reason: '夜班后又接白班，正是超出正常工时的部分。' },
+          { key: 'B', en: 'a day off', cn: '调休', correct: false, reason: '她一直在上班，没有休息。' },
+          { key: 'C', en: 'a night shift only', cn: '只上夜班', correct: false, reason: '她夜班之后还接了白班，不止夜班。' }
         ],
-        analysis: '整晚静不下来、预感不对，restless 是坐立难安、定不下来。',
-        wrongFeedback: '他答成“睡得很沉”，可他眼下的青黑骗不了人。',
-        afterCorrect: '温以宁把糖推回去：“那就再检查一遍，别凭感觉。”'
+        analysis: 'overtime 指超出正常工作时间的那部分，可以拿加班费或调休。',
+        wrongFeedback: '你答成「调休」，她揉了揉眼睛：「我也想啊。」气血 -10',
+        afterCorrect: '她把糖放进嘴里，橘子味的。十年前他抽屉里也总有这个味道。'
       },
       {
-        plotDescription: '说到高中那场没解释清的误会，温以宁的语气冷了下来。',
-        line: "She is still bitter about what happened in high school.",
-        lineCn: '她对高中那件事还是耿耿于怀。',
-        prompt: "根据上下文，选出画线词汇 'Bitter' 最准确的意思。",
+        plotDescription: '主任催一份质量报告，说明天早上就要。',
+        line: "The deadline is Friday, and the report isn't half done.",
+        lineCn: '截止时间是周五，报告连一半都没写完。',
+        prompt: "根据上下文，选出画线词汇 'Deadline' 最准确的意思。",
         options: [
-          { key: 'A', en: 'forgetful', cn: '健忘', correct: false, reason: '她还记着那件事，说明并不健忘。' },
-          { key: 'B', en: 'excited', cn: '兴奋', correct: false, reason: '语气冷下来，和兴奋完全不搭。' },
-          { key: 'C', en: 'resentful', cn: '怨恨难平', correct: true, reason: '多年过去仍放不下，bitter 指心里存着怨和不甘。' }
+          { key: 'A', en: 'the final time to finish', cn: '截止时间，死线', correct: true, reason: '周五必须交、报告还没写完，正是最后期限。' },
+          { key: 'B', en: 'the start of a project', cn: '项目的开始', correct: false, reason: '报告已经写到一半，这里说的是结束期限。' },
+          { key: 'C', en: 'a break between shifts', cn: '班次之间的休息', correct: false, reason: '和报告提交时间没有关系。' }
         ],
-        analysis: '多年过去仍放不下，bitter 指心里存着怨气和不甘。',
-        wrongFeedback: '他答成“健忘”，可她把那封信留了十年。',
-        afterCorrect: '周叙把糖纸捏平：“有些事，我也没放下。”'
+        analysis: 'deadline 是必须完成某事的最后时间，口语里常说「赶死线」。',
+        wrongFeedback: '你答成「项目开始」，她看了眼日历，觉得更绝望了。气血 -10',
+        afterCorrect: '周叙把自己的电脑推过来：「一半我写。你别熬到三点。」'
       },
       {
-        plotDescription: '她承认自己在他面前总是把话咽回去，怕显得太在意。',
-        line: "It's hard to be vulnerable with someone you've liked for ten years.",
-        lineCn: '在一个喜欢了十年的人面前示弱，太难了。',
-        prompt: "根据上下文，选出画线词汇 'Vulnerable' 最准确的意思。",
+        plotDescription: '报告是给一家合作机构做的，对方要求改第三版。',
+        line: "The client wants everything changed by Monday.",
+        lineCn: '客户要求周一之前全部改掉。',
+        prompt: "根据上下文，选出画线词汇 'Client' 最准确的意思。",
         options: [
-          { key: 'A', en: 'funny', cn: '好笑', correct: false, reason: '她说这话时眼睛都红了，并不是在开玩笑。' },
-          { key: 'B', en: 'open and exposed', cn: '脆弱不设防', correct: true, reason: '怕被看见在意、把软处露出来，vulnerable 正是不设防。' },
-          { key: 'C', en: 'confident', cn: '自信', correct: false, reason: '她明明在说“太难了”，怎么会是自信。' }
+          { key: 'A', en: 'a customer who pays for a service', cn: '客户，付费买服务的人', correct: true, reason: '提出修改要求、约定时间的合作方，正是 client。' },
+          { key: 'B', en: 'a patient in the ER', cn: '急诊病人', correct: false, reason: '这里谈的是报告和修改，不是来就诊的人。' },
+          { key: 'C', en: 'a new employee', cn: '新员工', correct: false, reason: '提出要求的是外部合作方，不是同事。' }
         ],
-        analysis: '喜欢太久反而怕受伤，vulnerable 指把软处露出来的不设防。',
-        wrongFeedback: '他答成“好笑”，温以宁的眼睛却红了。',
-        afterCorrect: '周叙沉默了一会儿，说：“那我们先从一颗糖开始。”'
+        analysis: 'client 指购买专业服务的客户，和 customer 相近，但更常用于服务、咨询场景。',
+        wrongFeedback: '你答成「急诊病人」，她笑了一声：「这个病人还挺会提要求。」气血 -10',
+        afterCorrect: '两个人并排改到深夜，谁也没提那颗糖。窗外有清洁车经过，灯一闪一闪。'
       },
       {
-        plotDescription: '他想起高三那年，自己以为这辈子都不会有机会。',
-        line: "It felt hopeless back then. I didn't think I had a chance.",
-        lineCn: '那时候觉得没希望，我以为自己一点机会都没有。',
-        prompt: "根据上下文，选出画线词汇 'Hopeless' 最准确的意思。",
+        plotDescription: '凌晨一点，她提醒他早上还有会。',
+        line: "The meeting ran two hours over last time.",
+        lineCn: '上次那个会开了两个多小时。',
+        prompt: "根据上下文，选出画线词汇 'Meeting' 最准确的意思。",
         options: [
-          { key: 'A', en: 'without hope', cn: '绝望没希望', correct: true, reason: '以为没有机会、看不到结果，hopeless 指毫无希望。' },
-          { key: 'B', en: 'very easy', cn: '很容易', correct: false, reason: '他说“没机会”，和容易正好相反。' },
-          { key: 'C', en: 'certain to succeed', cn: '一定会成功', correct: false, reason: '后半句已经否定了“有机会”，更谈不上必成。' }
+          { key: 'A', en: 'a planned discussion', cn: '会议，约好的讨论', correct: true, reason: '开到凌晨、还超时两小时，说的就是会议。' },
+          { key: 'B', en: 'a chance encounter', cn: '偶遇', correct: false, reason: '会议是有安排、有时长的，不是偶遇。' },
+          { key: 'C', en: 'a surgery', cn: '手术', correct: false, reason: '这里说的是开会，不是上手术台。' }
         ],
-        analysis: '以为没有机会、看不到结果，hopeless 指毫无希望。',
-        wrongFeedback: '他答成“一定会成功”，温以宁愣住：“你当年这么自信？”',
-        afterCorrect: '他摇头：“不是自信，是不敢想。”'
+        analysis: 'meeting 是事先安排的会议、碰面，run over 表示超时。',
+        wrongFeedback: '你答成「偶遇」，他看了眼日程表：「这偶遇还挺长。」气血 -10',
+        afterCorrect: '周叙合上电脑：「那这次我早点结束。」停了一下，他又说：「结束以后，我有话跟你说。」'
       }
     ],
-    completeText: '那颗糖最后被分成了两半。甜味很淡，可两个人都记了很久。'
+    completeText: '温以宁「嗯」了一声，把那颗糖纸展平，夹进病历本。她忽然有点怕，又有点期待。'
   },
   {
     id: 'pl_19',
@@ -1212,66 +1216,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 19 章 · 心照不宣',
     novel: '暗恋你第十年',
     speaker: { name: '温以宁', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '科室里开始有人打趣他们。温以宁不承认也不否认，只是每次周叙经过，她手里的笔都会停一下。周叙也一样，走到她桌边，脚步总会慢半拍。',
+    storyText: '分诊流程改造做成了一个小项目，运行一个月，急诊的拥堵少了一半。庆功的盒饭摆在会议室，周叙却被人叫去了人事科。',
     questions: [
       {
-        plotDescription: '那晚她快要撑不住，是他留下来陪她写完了所有记录。',
-        line: "I'm grateful you stayed that night.",
-        lineCn: '那天晚上你留下来，我很感激。',
-        prompt: "根据上下文，选出画线词汇 'Grateful' 最准确的意思。",
+        plotDescription: '会上有人提起这一个月的变化。',
+        line: "The new triage project is finally working.",
+        lineCn: '新的分诊项目终于见效了。',
+        prompt: "根据上下文，选出画线词汇 'Project' 最准确的意思。",
         options: [
-          { key: 'A', en: 'surprised', cn: '惊讶', correct: false, reason: '她是在道谢，不是在表示意外。' },
-          { key: 'B', en: 'sorry', cn: '抱歉', correct: false, reason: '对方帮了她，她没有理由道歉。' },
-          { key: 'C', en: 'thankful', cn: '感激', correct: true, reason: '在她最难的时候被留下，grateful 是由衷的感谢。' }
+          { key: 'A', en: 'a planned piece of work', cn: '项目，有计划的一项工作', correct: true, reason: '改造流程、运行一个月，正是有目标有计划的项目。' },
+          { key: 'B', en: 'a quick chat', cn: '随便聊两句', correct: false, reason: '运行一个月、减少拥堵，显然不是随便聊聊。' },
+          { key: 'C', en: 'a personal favor', cn: '私人帮忙', correct: false, reason: '这是科室层面的工作，不是私人人情。' }
         ],
-        analysis: '对方在她最难的时候留下，grateful 是由衷的感谢。',
-        wrongFeedback: '她答成“抱歉”，周叙皱眉：“你道什么歉？”',
-        afterCorrect: '温以宁低头整理袖口：“那你也别总一个人扛。”'
+        analysis: 'project 指有明确目标和周期的一项工作，可大可小。',
+        wrongFeedback: '你答成「随便聊聊」，护士长看了看投影上的数据，没说话。气血 -10',
+        afterCorrect: '温以宁坐在角落吃饭，听见有人小声说：「这次改造，周主任压了不少人。」'
       },
       {
-        plotDescription: '午后的阳光落在窗台上，她难得没有想接下来的排班。',
-        line: "For the first time in years, I feel content.",
-        lineCn: '这么多年，我第一次觉得满足。',
-        prompt: "根据上下文，选出画线词汇 'Content' 最准确的意思。",
+        plotDescription: '散会后，消息传开：当初伪造记录的那个住院医被处理了。',
+        line: "The resident who forged the records was fired.",
+        lineCn: '那个伪造记录的住院医被开除了。',
+        prompt: "根据上下文，选出画线词汇 'Fired' 最准确的意思。",
         options: [
-          { key: 'A', en: 'anxious', cn: '焦虑', correct: false, reason: '她难得没有想排班，状态是放松的。' },
-          { key: 'B', en: 'quietly satisfied', cn: '满足安心', correct: true, reason: '没有大起大落、心里踏实，content 是平静的满足。' },
-          { key: 'C', en: 'bored', cn: '无聊', correct: false, reason: '她享受这一刻，不是觉得没意思。' }
+          { key: 'A', en: 'dismissed from a job', cn: '被开除、被解雇', correct: true, reason: '伪造记录后被处理，正是被单位开除。' },
+          { key: 'B', en: 'praised publicly', cn: '被公开表扬', correct: false, reason: '伪造记录是严重问题，不可能被表扬。' },
+          { key: 'C', en: 'moved to another department', cn: '被调到别的科室', correct: false, reason: '这里的处理是终止工作，不是平级调动。' }
         ],
-        analysis: '没有大起大落、心里踏实，content 是平静而满足的状态。',
-        wrongFeedback: '她答成“焦虑”，可她说这话时正靠在窗边晒太阳。',
-        afterCorrect: '周叙站在门口，没舍得打断那一刻。'
+        analysis: 'fired 是 fire 的过去分词，职场里表示「被解雇」。',
+        wrongFeedback: '你答成「被表扬」，旁边的人看了你一眼，把声音压得更低。气血 -10',
+        afterCorrect: '温以宁放下筷子。她记得那个住院医，也记得他曾经替周叙挡过一次投诉。'
       },
       {
-        plotDescription: '有人问她要不要调去更轻松的科室，她摇了摇头。',
-        line: "I feel fulfilled here, even on the bad days.",
-        lineCn: '就算是最糟的日子，我也觉得在这里很充实。',
-        prompt: "根据上下文，选出画线词汇 'Fulfilled' 最准确的意思。",
+        plotDescription: '她忍不住问护士长，医院到底是怎么想的。',
+        line: "The hospital is not a business — people aren't numbers.",
+        lineCn: '医院不是一门生意，人不是数字。',
+        prompt: "根据上下文，选出画线词汇 'Business' 最准确的意思。",
         options: [
-          { key: 'A', en: 'having a sense of meaning', cn: '有成就感', correct: true, reason: '再糟也觉得有意义，fulfilled 指内心被价值感填满。' },
-          { key: 'B', en: 'empty', cn: '空虚', correct: false, reason: '她拒绝调走，显然不是觉得空虚。' },
-          { key: 'C', en: 'tired', cn: '疲惫', correct: false, reason: '她说的是“就算最糟的日子”，重点在值得。' }
+          { key: 'A', en: 'a company or commercial activity', cn: '生意，商业活动', correct: true, reason: '和「人不是数字」对照，business 指追求利润的商业运作。' },
+          { key: 'B', en: 'a charity', cn: '慈善机构', correct: false, reason: '她说「不是生意」，不是说它是慈善机构。' },
+          { key: 'C', en: 'a government office', cn: '政府机关', correct: false, reason: '这里对比的是逐利行为，不是机构性质。' }
         ],
-        analysis: '再糟也觉得有意义，fulfilled 指内心被价值感和成就感填满。',
-        wrongFeedback: '她答成“空虚”，可她说的是“就算最糟的日子”。',
-        afterCorrect: '周叙点头：“我也是。”他顿了顿，“尤其是你在的时候。”'
+        analysis: 'business 可以指生意、公司，也可以指「关我什么事」，这里取商业运作之意。',
+        wrongFeedback: '你答成「慈善机构」，护士长叹了口气：「要真是就好了。」气血 -10',
+        afterCorrect: '护士长说：「上面要的是数字，周主任要的是人。你说他得罪谁？」'
       },
       {
-        plotDescription: '走廊尽头，一位母亲看到受伤的孩子，情绪突然崩了。',
-        line: "The mother became hysterical when she saw him.",
-        lineCn: '那位母亲看到他的时候，情绪彻底失控了。',
-        prompt: "根据上下文，选出画线词汇 'Hysterical' 最准确的意思。",
+        plotDescription: '晚上，周叙回来了，脸色很平静，只说事情已经谈好。',
+        line: "We made a deal: I keep the project, and they keep their hands off my team.",
+        lineCn: '我们谈成了一笔交易：项目归我，他们别碰我的团队。',
+        prompt: "根据上下文，选出画线词汇 'Deal' 最准确的意思。",
         options: [
-          { key: 'A', en: 'calm', cn: '平静', correct: false, reason: '走廊里全是她的哭声，谈不上平静。' },
-          { key: 'B', en: 'happy', cn: '开心', correct: false, reason: '孩子受了伤，母亲不可能开心。' },
-          { key: 'C', en: 'wildly emotional', cn: '歇斯底里', correct: true, reason: '见到孩子伤成那样，情绪彻底崩溃，正是 hysterical。' }
+          { key: 'A', en: 'an agreement', cn: '交易，达成的协议', correct: true, reason: '双方各让一步、谈成条件，正是达成协议。' },
+          { key: 'B', en: 'a serious illness', cn: '重病', correct: false, reason: '这里说的是谈判结果，和疾病无关。' },
+          { key: 'C', en: 'a written prescription', cn: '处方', correct: false, reason: '处方不会涉及项目和团队。' }
         ],
-        analysis: '见到孩子伤成那样，母亲情绪崩了，hysterical 指失控的激烈情绪。',
-        wrongFeedback: '她答成“平静”，可走廊里全是她的哭声。',
-        afterCorrect: '温以宁蹲下来，握住那位母亲的手，声音很轻：“他还在，我们都在。”'
+        analysis: 'deal 在口语里常指「交易、协议」，make a deal 就是谈成条件。',
+        wrongFeedback: '你答成「重病」，他愣了一下：「我看起来像病了？」气血 -10',
+        afterCorrect: '温以宁看着他，忽然说：「你把自己搭进去了。」他说：「本来就该有人搭。」'
       }
     ],
-    completeText: '那天夜里，她忽然想明白了：喜欢一个人，不只是心跳，也是想和他一起把难的日子过完。'
+    completeText: '那天晚上，两个人在空掉的会议室坐了很久。谁都没提「有话要说」，但好像都已经知道了。'
   },
   {
     id: 'pl_20',
@@ -1279,66 +1283,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 20 章 · 第二幕落幕',
     novel: '暗恋你第十年',
     speaker: { name: '周叙', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '月底，一场医闹闹到凌晨。有人推倒了护士站的椅子，周叙挡在温以宁前面。等保安把人带走，他回头第一句是：“你没事吧？”',
+    storyText: '六月，科室所有人的合同一起到期。人事把续签材料发下来，走廊里到处是低声讨论。温以宁在名单最后看见自己的名字，后面跟着一行小字：待定。',
     questions: [
       {
-        plotDescription: '闹事的人被拦下时还在吼，双手抖得厉害。',
-        line: "He was shaking with rage.",
-        lineCn: '他气得整个人都在抖。',
-        prompt: "根据上下文，选出画线词汇 'Rage' 最准确的意思。",
+        plotDescription: '护士长问她续不续，她盯着那张纸。',
+        line: "My contract ends in June. I don't know if they'll renew it.",
+        lineCn: '我的合同六月到期，不知道他们会不会续。',
+        prompt: "根据上下文，选出画线词汇 'Contract' 最准确的意思。",
         options: [
-          { key: 'A', en: 'fear', cn: '害怕', correct: false, reason: '他在大声吼人，不是退缩求饶。' },
-          { key: 'B', en: 'violent anger', cn: '暴怒', correct: true, reason: '情绪激烈到身体发抖，rage 是压不住的暴怒。' },
-          { key: 'C', en: 'cold', cn: '冷', correct: false, reason: '发抖在这里是气到发抖，不是气温低。' }
+          { key: 'A', en: 'a formal work agreement', cn: '合同，正式的工作协议', correct: true, reason: '到期、续签，说的正是工作合同。' },
+          { key: 'B', en: 'a patient file', cn: '病人档案', correct: false, reason: '档案不存在「续签」这回事。' },
+          { key: 'C', en: 'a shift schedule', cn: '排班表', correct: false, reason: '排班表每月重排，不会说「到期续不续」。' }
         ],
-        analysis: '情绪激烈到身体发抖，rage 是压不住的暴怒。',
-        wrongFeedback: '他答成“害怕”，温以宁看着他挡在前面的背影，摇了摇头。',
-        afterCorrect: '周叙把椅子扶起来，手还在抖，声音却稳：“报警。”'
+        analysis: 'contract 指具有约束力的正式协议，工作合同是最常见的场景。',
+        wrongFeedback: '你答成「排班表」，她摇头：「排班表可没这么要命。」气血 -10',
+        afterCorrect: '她把材料折好放进包里，和那支钢笔放在一起。'
       },
       {
-        plotDescription: '人被带走后，护士站安静下来，只剩一盏灯亮着。',
-        line: "There was a quiet sorrow in the room.",
-        lineCn: '房间里有一种安静的悲伤。',
-        prompt: "根据上下文，选出画线词汇 'Sorrow' 最准确的意思。",
+        plotDescription: '有人在会上提出，把急诊的夜间值班外包出去更省钱。',
+        line: "The private clinic cares about profit, not patients.",
+        lineCn: '那家私立机构只在乎利润，不在乎病人。',
+        prompt: "根据上下文，选出画线词汇 'Profit' 最准确的意思。",
         options: [
-          { key: 'A', en: 'deep sadness', cn: '悲伤', correct: true, reason: '“安静”修饰的是沉下去的难过，sorrow 是深层悲伤。' },
-          { key: 'B', en: 'anger', cn: '愤怒', correct: false, reason: '闹事的人已经走了，剩下的是沉重不是怒火。' },
-          { key: 'C', en: 'relief', cn: '轻松', correct: false, reason: '刚经历冲突，气氛并不轻松。' }
+          { key: 'A', en: 'money gained after costs', cn: '利润，扣除成本后赚的钱', correct: true, reason: '为了省钱、外包值班，指向的正是利润。' },
+          { key: 'B', en: 'the number of patients', cn: '病人数量', correct: false, reason: '句子里明确说「不是病人」，所以不是数量。' },
+          { key: 'C', en: "a doctor license", cn: '医师执照', correct: false, reason: '执照和赚钱多少没有直接关系。' }
         ],
-        analysis: '“安静”修饰的是一种沉下去的难过，sorrow 指深层的悲伤。',
-        wrongFeedback: '他答成“愤怒”，可那个房间安静得只剩呼吸声。',
-        afterCorrect: '他没再说笑，只把窗帘拉开了一点，让天光进来。'
+        analysis: 'profit 指收入减去成本后的盈余，常被用来批评只看钱不看人的做法。',
+        wrongFeedback: '你答成「病人数量」，她苦笑：「他们连数量都不看。」气血 -10',
+        afterCorrect: '周叙在会上直接反对。散会时他脸色不好，却还是先去看了留观的病人。'
       },
       {
-        plotDescription: '混乱里他一直抓着她的手腕，直到人群散开也没松。',
-        line: "A wave of euphoria hit me when he didn't let go.",
-        lineCn: '他没松手的那一刻，一阵狂喜涌上来。',
-        prompt: "根据上下文，选出画线词汇 'Euphoria' 最准确的意思。",
+        plotDescription: '月底发钱时，工资条上多了一栏。',
+        line: "We got a bonus for the extra shifts.",
+        lineCn: '我们加了班，拿到一笔奖金。',
+        prompt: "根据上下文，选出画线词汇 'Bonus' 最准确的意思。",
         options: [
-          { key: 'A', en: 'panic', cn: '恐慌', correct: false, reason: '他握着她，她感到的是高兴而不是害怕。' },
-          { key: 'B', en: 'sleepiness', cn: '困意', correct: false, reason: '心跳加速的时刻不会犯困。' },
-          { key: 'C', en: 'intense happiness', cn: '极度愉悦', correct: true, reason: '被握住手、心里发亮，euphoria 是强烈到发晕的幸福。' }
+          { key: 'A', en: 'extra money on top of salary', cn: '奖金，工资之外的额外收入', correct: true, reason: '工资条上多出来的一栏，正是额外奖励。' },
+          { key: 'B', en: 'a deduction', cn: '扣款', correct: false, reason: '多出来的一栏是加钱，不是扣钱。' },
+          { key: 'C', en: 'a tax', cn: '税款', correct: false, reason: '税是从工资里扣的，不是额外给的。' }
         ],
-        analysis: '被握住手、心里发亮，euphoria 是强烈到发晕的幸福感。',
-        wrongFeedback: '他答成“恐慌”，温以宁抽回手：“我看起来像害怕？”',
-        afterCorrect: '周叙低头看了眼自己的手，慢慢收回去，又停住了。'
+        analysis: 'bonus 指正常薪资之外的奖励，通常和业绩、加班或项目挂钩。',
+        wrongFeedback: '你答成「扣款」，她指着那栏数字：「这扣得也太客气了。」气血 -10',
+        afterCorrect: '温以宁看着那笔钱，刚好够买那支笔。她笑了一下，把钱转进了另一个账户。'
       },
       {
-        plotDescription: '她想起前几天他一句解释都没有，心里那点凉一直没散。',
-        line: "His apathy hurt more than anger would.",
-        lineCn: '他的冷漠比生气更伤人。',
-        prompt: "根据上下文，选出画线词汇 'Apathy' 最准确的意思。",
+        plotDescription: '同一天，她无意中听见人事在核对薪资。',
+        line: "My salary is the same as three years ago.",
+        lineCn: '我的薪资和三年前一样。',
+        prompt: "根据上下文，选出画线词汇 'Salary' 最准确的意思。",
         options: [
-          { key: 'A', en: 'kindness', cn: '善意', correct: false, reason: '善意不会“更伤人”，语义自相矛盾。' },
-          { key: 'B', en: 'lack of feeling', cn: '冷漠', correct: true, reason: '和“生气”作对比，apathy 是连情绪都懒得给的冷淡。' },
-          { key: 'C', en: 'honesty', cn: '诚实', correct: false, reason: '诚实不是这里让她难受的原因。' }
+          { key: 'A', en: 'fixed monthly pay', cn: '薪资，固定的月薪', correct: true, reason: '和三年前对比、按月发放，正是 salary。' },
+          { key: 'B', en: 'a one-time gift', cn: '一次性礼物', correct: false, reason: '一次性礼物不会拿来和三年前比。' },
+          { key: 'C', en: 'a travel allowance', cn: '出差补贴', correct: false, reason: '这里说的是整体工资，不是单项补贴。' }
         ],
-        analysis: '和“生气”对比，apathy 是连情绪都懒得给的冷淡。',
-        wrongFeedback: '他答成“善意”，温以宁笑了一下，那笑比哭还难看。',
-        afterCorrect: '周叙沉默很久，说：“我不是不在乎，我是不知道怎么开口。”'
+        analysis: 'salary 指按月固定发放的薪资，和按小时计算的 wage 不同。',
+        wrongFeedback: '你答成「一次性礼物」，她笑不出来：「要是礼物就好了。」气血 -10',
+        afterCorrect: '她把续签材料放在桌上，迟迟没签字。窗外的蝉开始叫，六月真的来了。'
       }
     ],
-    completeText: '第二幕到这里收尾。十年的信被翻开，误会也开了口，可那句“喜欢”，还是卡在两个人中间。'
+    completeText: '第二幕到这里结束。温以宁在「是否续签」那一栏停了很久，最后写下两个字：留下。'
   },
   {
     id: 'pl_21',
@@ -1346,66 +1350,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 21 章 · 他先开了口',
     novel: '暗恋你第十年',
     speaker: { name: '温以宁', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '夜班结束，周叙把她叫到天台。风很大，他把外套披在她肩上，说了一句她等了十年的话。她愣在原地，第一反应不是回答，而是想跑。',
+    storyText: '分诊流程通过验收那晚，科室在楼下火锅店包了两桌。温以宁只喝了两杯就上脸，周叙被几个年轻医生轮着灌。散场时她扶他下台阶，他忽然停下来，说了一句谁都没听清的话。',
     questions: [
       {
-        plotDescription: '天台上，他看着她，声音被风吹得有点散。',
-        line: "I've had a crush on you since high school. You never noticed.",
-        lineCn: '我从高中就暗恋你，你从来没发现。',
-        prompt: "根据上下文，选出画线词汇 'Crush' 最准确的意思。",
+        plotDescription: '有人提起周叙高中时的外号，他笑着，笑意却没到眼睛里。',
+        line: "He looked pissed off when they brought up his old nickname.",
+        lineCn: '他们提起他高中时的外号时，他明显火大了。',
+        prompt: "根据上下文，选出画线词汇 'Pissed off' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a small injury', cn: '小伤', correct: false, reason: '他说的是从高中到现在的感情，不是受伤。' },
-          { key: 'B', en: 'a secret love', cn: '偷偷的喜欢', correct: true, reason: '从高中到现在、还问她有没有察觉，crush 指暗恋。' },
-          { key: 'C', en: 'a bad habit', cn: '坏习惯', correct: false, reason: '喜欢一个人不是习惯，句中也没有相关线索。' }
+          { key: 'A', en: 'angry and offended', cn: '火大，被惹毛了', correct: true, reason: '笑意没到眼睛里，说明他被戳到了，正是火大。' },
+          { key: 'B', en: 'a little sleepy', cn: '有点困', correct: false, reason: '他刚被灌了酒，但这里写的是笑不出来，不是犯困。' },
+          { key: 'C', en: 'pleasantly surprised', cn: '又惊又喜', correct: false, reason: '旧外号不是惊喜，是旧伤。' }
         ],
-        analysis: '从高中到现在、还问她有没有察觉，crush 指藏在心里、没有说出口的喜欢。',
-        wrongFeedback: '她答成“小伤”，天台上的风忽然变得很好笑。',
-        afterCorrect: '她张了张嘴，最后只说：“风太大了，我没听清。”'
+        analysis: 'pissed off 是口语里非常常用的「火大、被惹毛」，语气比 annoyed 重，比 furious 生活化。',
+        wrongFeedback: '你答成「又惊又喜」，可桌上那一瞬的安静，不是惊喜该有的样子。气血 -10',
+        afterCorrect: '温以宁替他接了下一杯，说：「他酒量不行，我替他。」周叙侧过头看她，眼神有点晃。'
       },
       {
-        plotDescription: '接下来两天，她不回消息，查房也绕着他走。',
-        line: "I didn't mean to ghost you. I just didn't know what to say.",
-        lineCn: '我不是故意玩消失，我只是不知道说什么。',
-        prompt: "根据上下文，选出画线词汇 'Ghost' 最准确的意思。",
+        plotDescription: '她手一抖，半杯红酒全洒在他的白衬衫上。他先低头看了看，然后笑了。',
+        line: "Don't freak out — it's just a shirt, I have five more.",
+        lineCn: '别抓狂，就是件衬衫，我还有五件。',
+        prompt: "根据上下文，选出画线词汇 'Freak out' 最准确的意思。",
         options: [
-          { key: 'A', en: 'disappear without replying', cn: '不回消息、突然消失', correct: true, reason: '两天不回消息、躲着走，正是 ghost 的动词用法。' },
-          { key: 'B', en: 'shout at someone', cn: '冲人喊', correct: false, reason: '她是在躲，不是发脾气。' },
-          { key: 'C', en: 'send a gift', cn: '送礼物', correct: false, reason: '不回消息和送礼物是两回事。' }
+          { key: 'A', en: 'calm down completely', cn: '彻底冷静下来', correct: false, reason: '他说的是「别 freak out」，是叫人别失控，不是叫人冷静这个动作。' },
+          { key: 'B', en: 'panic and lose control', cn: '抓狂，情绪失控', correct: true, reason: '衬衫被洒了酒，他反而先劝她别崩溃，freak out 正是这个意思。' },
+          { key: 'C', en: 'take the shirt off', cn: '把衬衫脱下来', correct: false, reason: 'freak out 和脱衣服没有关系。' }
         ],
-        analysis: '不回消息、躲着不见，ghost 作动词指毫无解释地突然玩消失。',
-        wrongFeedback: '她答成“送礼物”，周叙看着她：“两天不回消息，算送礼？”',
-        afterCorrect: '他站在她办公室门口：“那我等你，等到你会说为止。”'
+        analysis: 'freak out 指因为小事突然情绪失控、抓狂，常出现在「别慌」这种安慰里。',
+        wrongFeedback: '你答成「把衬衫脱下来」，她愣了一下，把纸巾按得更用力了。气血 -10',
+        afterCorrect: '她拿纸巾按在他胸口，按了两下才发现手在抖。他说：「温以宁，你这样我更像个病人了。」'
       },
       {
-        plotDescription: '她自嘲一被人表白就想逃，这毛病大概没救了。',
-        line: "Running away when someone confesses — that's a red flag.",
-        lineCn: '一有人表白就跑，这可是个危险信号。',
-        prompt: "根据上下文，选出画线词汇 'Red flag' 最准确的意思。",
+        plotDescription: '散场后两个人坐在店门口的台阶上，街灯把地面的油光映得发亮。',
+        line: "I'm exhausted — I've been on my feet for sixteen hours.",
+        lineCn: '我精疲力尽了，站了整整十六个小时。',
+        prompt: "根据上下文，选出画线词汇 'Exhausted' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a warning sign', cn: '值得警惕的迹象', correct: true, reason: '她拿“危险信号”自嘲自己的逃避，指关系里的警示。' },
-          { key: 'B', en: 'a red flag on a pole', cn: '旗杆上的红旗', correct: false, reason: '这里说的是人的行为，不是真的旗子。' },
-          { key: 'C', en: 'good news', cn: '好消息', correct: false, reason: '她是在自责，不会把逃避说成好消息。' }
+          { key: 'A', en: 'completely worn out', cn: '精疲力尽，被榨干', correct: true, reason: '站了十六个小时，说的正是身体的耗尽。' },
+          { key: 'B', en: 'a little drunk', cn: '有点喝多了', correct: false, reason: '句子给的理由是站了十六小时，不是喝了多少。' },
+          { key: 'C', en: 'very hungry', cn: '很饿', correct: false, reason: '刚吃完火锅，饿不成立。' }
         ],
-        analysis: '她用“危险信号”自嘲自己的逃避，red flag 指关系里值得警惕的迹象。',
-        wrongFeedback: '她答成“红旗”，自己都笑不出来。',
-        afterCorrect: '周叙却认真：“我不觉得。你只是怕。”'
+        analysis: 'exhausted 表示体力或精力被彻底耗尽，比 tired 更重。',
+        wrongFeedback: '你答成「很饿」，她把手里打包的酥肉递过去：「那你怎么不吃？」气血 -10',
+        afterCorrect: '她把外套脱下来搭在他肩上，他忽然说：「温以宁，今天谢谢你。」'
       },
       {
-        plotDescription: '第二天，护士站的人围着他们起哄，问昨晚是不是在一起了。',
-        line: "We didn't hook up. We just talked on the roof all night.",
-        lineCn: '我们没有在一起，只是在天台聊了一整晚。',
-        prompt: "根据上下文，选出画线词汇 'Hook up' 最准确的意思。",
+        plotDescription: '第二天早上九点，她给他发消息，问他还活着吗。',
+        line: "Do you have a hangover? You drank a lot last night.",
+        lineCn: '你宿醉了吗？昨晚你喝了不少。',
+        prompt: "根据上下文，选出画线词汇 'Hangover' 最准确的意思。",
         options: [
-          { key: 'A', en: 'get together romantically', cn: '勾搭上、暧昧地在一起', correct: true, reason: '同事在起哄两人关系，hook up 指亲密或暧昧地在一起。' },
-          { key: 'B', en: 'have a fight', cn: '吵架', correct: false, reason: '她是在解释关系，不是在说吵架。' },
-          { key: 'C', en: 'work overtime', cn: '加班', correct: false, reason: '加班不会引来这种起哄。' }
+          { key: 'A', en: 'a headache and nausea after drinking', cn: '宿醉，酒后的头痛恶心', correct: true, reason: '昨晚喝多了、今天难受，正是 hangover。' },
+          { key: 'B', en: 'a happy memory of last night', cn: '昨晚的美好回忆', correct: false, reason: '句子在问他身体难不难受，不是在聊回忆。' },
+          { key: 'C', en: 'an empty stomach', cn: '空腹', correct: false, reason: '空腹是喝酒前的事，hangover 是喝完之后。' }
         ],
-        analysis: '同事起哄问他们是不是在一起了，hook up 指暧昧或亲密地在一起。',
-        wrongFeedback: '她答成“加班”，同事笑得更厉害。',
-        afterCorrect: '她说完才意识到，自己一整晚都在替他解释。'
+        analysis: 'hangover 特指饮酒过量后第二天的不适，和「还没醒酒」是两件事。',
+        wrongFeedback: '你答成「空腹」，她回了个省略号：他昨天可一点没空着。气血 -10',
+        afterCorrect: '他回得很快：还行。隔了半分钟又补一句：昨晚我说的话，你别当真。'
       }
     ],
-    completeText: '天台的门被风吹得直响。她没答应，也没拒绝，只把他的外套抱得更紧了一点。'
+    completeText: '她盯着那句「你别当真」看了很久，最后只回了一个「嗯」。放下手机，她才发现自己手心全是汗。'
   },
   {
     id: 'pl_22',
@@ -1413,66 +1417,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 22 章 · 我配不上你',
     novel: '暗恋你第十年',
     speaker: { name: '周叙', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '她开始躲。周叙在值班室堵住她，她把那把钥匙放回他手里，说：“周叙，我配不上你。”他没接，手就停在半空。',
+    storyText: '夜班结束，周叙在楼梯间坐到天亮。两个年轻医生从上面下来，压着声音说：温医生明明能留在省院，为什么回这儿来。他捏着那杯凉透的咖啡，没出声。',
     questions: [
       {
-        plotDescription: '他追到楼梯间，声音压得很低，怕被人听见。',
-        line: "I don't want any drama. I just want a straight answer.",
-        lineCn: '我不想闹得难看，我只想要个直接的答案。',
-        prompt: "根据上下文，选出画线词汇 'Drama' 最准确的意思。",
+        plotDescription: '他终于对一个老同学说起从前那段关系，说得很少。',
+        line: "That relationship was toxic — we made each other worse.",
+        lineCn: '那段关系是有毒的，我们让彼此都变得更糟。',
+        prompt: "根据上下文，选出画线词汇 'Toxic' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a stage play', cn: '戏剧', correct: false, reason: '他们在谈感情，不是在演舞台剧。' },
-          { key: 'B', en: 'messy emotional fuss', cn: '抓马、纠缠不清的事', correct: true, reason: '他要的是干脆答案，drama 指感情里的拉扯和闹剧。' },
-          { key: 'C', en: 'a performance', cn: '表演', correct: false, reason: '这里没有演出，只有两个人的僵持。' }
+          { key: 'A', en: 'harmful and draining', cn: '有毒的，互相消耗的', correct: true, reason: '让彼此变得更糟，正是 toxic 的核心。' },
+          { key: 'B', en: 'sweet but short', cn: '甜蜜但短暂', correct: false, reason: '让人变糟的关系，谈不上甜蜜。' },
+          { key: 'C', en: 'long and boring', cn: '漫长又无聊', correct: false, reason: '句子说的是伤害，不是无聊。' }
         ],
-        analysis: '他要的是干脆的答案，drama 指感情里那些拉扯、闹剧和情绪消耗。',
-        wrongFeedback: '他答成“戏剧”，温以宁疲惫地闭了下眼。',
-        afterCorrect: '温以宁盯着那把钥匙：“答案就是，我们不合适。”'
+        analysis: 'toxic 本义有毒，口语里形容关系、环境让人被消耗、被伤害。',
+        wrongFeedback: '你答成「甜蜜但短暂」，老同学沉默了一下：「你听完整句了吗？」气血 -10',
+        afterCorrect: '他把咖啡放下，忽然想到：这十年，他好像一直在重复同一种关系。'
       },
       {
-        plotDescription: '她解释自己不是不想靠近，只是怕靠得太近会招人烦。',
-        line: "I don't want to be clingy. I just miss you.",
-        lineCn: '我不想黏人，我只是想你。',
-        prompt: "根据上下文，选出画线词汇 'Clingy' 最准确的意思。",
+        plotDescription: '电梯在两层之间停了十几秒，门没开，两个人谁也没说话。',
+        line: "It got awkward when the elevator stopped and neither of us spoke.",
+        lineCn: '电梯停下、谁都不说话的时候，气氛尴尬死了。',
+        prompt: "根据上下文，选出画线词汇 'Awkward' 最准确的意思。",
         options: [
-          { key: 'A', en: 'too dependent and attached', cn: '黏人、过度依赖', correct: true, reason: '她怕自己靠太近招人烦，clingy 指黏着不放。' },
-          { key: 'B', en: 'cold and distant', cn: '冷漠疏远', correct: false, reason: '她说的是“想你”，和冷漠正相反。' },
-          { key: 'C', en: 'polite', cn: '客气', correct: false, reason: '客气不会和“想你”放在一起。' }
+          { key: 'A', en: 'uncomfortable and embarrassing', cn: '尴尬，令人不自在', correct: true, reason: '门不开、没人说话，正是尴尬的沉默。' },
+          { key: 'B', en: 'dangerous', cn: '危险的', correct: false, reason: '电梯只是停了一下，句子强调的是沉默带来的不自在。' },
+          { key: 'C', en: 'exciting', cn: '令人兴奋的', correct: false, reason: '十几秒的沉默不像兴奋。' }
         ],
-        analysis: '她怕自己靠得太近招人烦，clingy 指过度依赖、黏着不放。',
-        wrongFeedback: '她答成“冷漠”，可她说的是“我想你”。',
-        afterCorrect: '周叙把钥匙推回去：“那就黏着，我不怕。”'
+        analysis: 'awkward 形容场面、对话让人不自在，和「危险」无关。',
+        wrongFeedback: '你答成「危险的」，她低声说：「你倒是一点都不觉得尴尬。」气血 -10',
+        afterCorrect: '门开了，他先迈出去，走了两步又停住，等她走上来。'
       },
       {
-        plotDescription: '他把钥匙放在桌上，没有强迫她收下。',
-        line: "I'll respect your boundaries. But don't shut the door completely.",
-        lineCn: '我会尊重你的边界，但别把门彻底关死。',
-        prompt: "根据上下文，选出画线词汇 'Boundaries' 最准确的意思。",
+        plotDescription: '他把老同学那句话复述给温以宁：我这十年，像在候诊室排队。',
+        line: "He called his love life a waiting room — I'm dead.",
+        lineCn: '他形容自己的感情生活像候诊室，笑死我了。',
+        prompt: "根据上下文，选出画线词汇 'Dead' 最准确的意思。",
         options: [
-          { key: 'A', en: 'personal limits', cn: '底线和分寸', correct: true, reason: '他愿意退一步、不越界，boundaries 指人的界限。' },
-          { key: 'B', en: 'medical records', cn: '病历', correct: false, reason: '这是两个人的关系，不是病历。' },
-          { key: 'C', en: 'rent payments', cn: '房租', correct: false, reason: '房租和“别把门关死”没有关系。' }
+          { key: 'A', en: 'dying of laughter', cn: '笑死我了', correct: true, reason: '她把这句话当段子转述，正是被逗到不行。' },
+          { key: 'B', en: 'actually dead', cn: '真的死了', correct: false, reason: '这是口语夸张，不是字面死亡。' },
+          { key: 'C', en: 'completely exhausted', cn: '累到极点', correct: false, reason: '句子里是笑，不是累。' }
         ],
-        analysis: '他愿意退一步、不越界，boundaries 指人与人之间的界限和分寸。',
-        wrongFeedback: '他答成“病历”，周叙愣住：“这跟病历有什么关系。”',
-        afterCorrect: '她把钥匙收进抽屉，没说好也没说不好。'
+        analysis: 'dead 在网络口语里常表示「笑死我了」，情绪上是极度好笑。',
+        wrongFeedback: '你答成「累到极点」，她笑得更厉害：「我说的是好笑。」气血 -10',
+        afterCorrect: '他看着她笑，忽然说：「我没在开玩笑。」她的笑停在一半。'
       },
       {
-        plotDescription: '他提起上周那顿饭，从七点等到餐厅打烊。',
-        line: "You bailed on dinner again. I waited two hours.",
-        lineCn: '你又放我鸽子，我等了两个小时。',
-        prompt: "根据上下文，选出画线词汇 'Bail' 最准确的意思。",
+        plotDescription: '她把签好的续签合同拍下来发给他，只写了两个字：留下。',
+        line: "I'm thrilled you're staying — really, I am.",
+        lineCn: '你要留下来，我太高兴了，真的。',
+        prompt: "根据上下文，选出画线词汇 'Thrilled' 最准确的意思。",
         options: [
-          { key: 'A', en: 'cancel at the last minute', cn: '临时爽约、放鸽子', correct: true, reason: '等了两小时人没来，bail 指临时不去、撂挑子。' },
-          { key: 'B', en: 'pay the bill', cn: '买单', correct: false, reason: '他没有等到人，谈不上买单。' },
-          { key: 'C', en: 'arrive late', cn: '迟到', correct: false, reason: '“又”加上等两小时，说明人根本没到。' }
+          { key: 'A', en: 'a little relieved', cn: '有点放心', correct: false, reason: 'relieved 只是松口气，thrilled 是高兴到不行。' },
+          { key: 'B', en: 'extremely happy', cn: '爽飞了，极度高兴', correct: true, reason: '连说两遍 really，说明情绪强烈。' },
+          { key: 'C', en: 'not surprised at all', cn: '一点也不意外', correct: false, reason: '不意外是平静，thrilled 是激动。' }
         ],
-        analysis: '等了两小时人没来，bail 指临时爽约、把已经约好的事丢下。',
-        wrongFeedback: '她答成“买单”，周叙看她：“我等到餐厅打烊。”',
-        afterCorrect: '她想说对不起，最后只说：“下次不会了。”'
+        analysis: 'thrilled 比 happy 强烈得多，常用来表达「太棒了、太高兴了」。',
+        wrongFeedback: '你答成「一点也不意外」，他盯着屏幕，把打好的长句一个字一个字删掉了。气血 -10',
+        afterCorrect: '他最后只回了两个字：真好。然后把手机放回口袋，又拿出来看了一遍。'
       }
     ],
-    completeText: '那把钥匙在桌上放了一整夜。第二天早上，它被挪到了她的水杯旁边，像是从来没被退回去。'
+    completeText: '天亮时他去洗了把脸，镜子里的自己眼下发青，却难得在笑。他想，三十岁这年，好像才刚开头。'
   },
   {
     id: 'pl_23',
@@ -1480,66 +1484,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 23 章 · 退回的钥匙',
     novel: '暗恋你第十年',
     speaker: { name: '温以宁', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '温母来城里看病，顺手给她安排了一场相亲。温以宁坐在咖啡馆，脑子里全是周叙那把没收回去的钥匙。',
+    storyText: '连着三个大夜，加上母亲复查的报告还没出，温以宁在更衣室坐了很久。排班表上的名字密密麻麻，她看了半天，一个也没记住。',
     questions: [
       {
-        plotDescription: '好友听说她在相亲，发来消息打趣周叙。',
-        line: "Bro code says I should warn you she's about to run.",
-        lineCn: '兄弟法则说我该提醒你，她又要跑了。',
-        prompt: "根据上下文，选出画线词汇 'Bro code' 最准确的意思。",
+        plotDescription: '护士长推门进来，看见她一个人对着排班表发呆。',
+        line: "I'm overwhelmed — there's too much on my plate this week.",
+        lineCn: '我压力过载了，这周要处理的事太多了。',
+        prompt: "根据上下文，选出画线词汇 'Overwhelmed' 最准确的意思。",
         options: [
-          { key: 'A', en: 'unwritten rules between male friends', cn: '兄弟间默认的规矩', correct: true, reason: '朋友拿“兄弟法则”打趣，指男生之间默认的义气规矩。' },
-          { key: 'B', en: 'hospital regulations', cn: '医院规章', correct: false, reason: '这是朋友间的玩笑，不是正式制度。' },
-          { key: 'C', en: 'traffic rules', cn: '交通规则', correct: false, reason: '和开车、道路没有关系。' }
+          { key: 'A', en: 'relaxed and free', cn: '轻松自在', correct: false, reason: '事情堆在一起，正好相反。' },
+          { key: 'B', en: 'having too much to handle', cn: '压力过载，应付不过来', correct: true, reason: 'on my plate 指手上的事，太多就是被压住。' },
+          { key: 'C', en: 'slightly bored', cn: '有点无聊', correct: false, reason: '她不是没事做，是事太多。' }
         ],
-        analysis: '朋友拿“兄弟法则”打趣，bro code 指男生之间默认的义气规矩。',
-        wrongFeedback: '她答成“医院规章”，朋友笑得直拍桌。',
-        afterCorrect: '周叙没笑：“她要跑，我就追。”'
+        analysis: 'overwhelmed 指被事情、情绪淹没，超出能承受的范围。',
+        wrongFeedback: '你答成「轻松自在」，她抬起头，眼下两团青黑。气血 -10',
+        afterCorrect: '护士长把排班表抽走，说：「今晚你休息，我顶。」她张了张嘴，最后只说了句谢谢。'
       },
       {
-        plotDescription: '温母在电话里已经开始盘算两家见面的事。',
-        line: "My mother already mentioned in-laws. We haven't even had a first date.",
-        lineCn: '我妈都提到亲家了，我们连第一次约会都还没有。',
-        prompt: "根据上下文，选出画线词汇 'In-laws' 最准确的意思。",
+        plotDescription: '周叙敲了敲更衣室的门，说今晚什么都别做。',
+        line: "Let's just chill tonight — no charts, no phones.",
+        lineCn: '今晚就躺平放松吧，不看病历，不看手机。',
+        prompt: "根据上下文，选出画线词汇 'Chill' 最准确的意思。",
         options: [
-          { key: 'A', en: 'relatives by marriage', cn: '公婆、岳父母等姻亲', correct: true, reason: '谈婚论嫁时提到的双方父母，in-laws 指姻亲。' },
-          { key: 'B', en: 'colleagues', cn: '同事', correct: false, reason: '母亲盘算的是两家见面，不是同事关系。' },
-          { key: 'C', en: 'neighbors', cn: '邻居', correct: false, reason: '邻居不会出现在这种谈婚论嫁的语境里。' }
+          { key: 'A', en: 'get cold', cn: '觉得冷', correct: false, reason: 'chill 在这里是动词，指放松，不是温度。' },
+          { key: 'B', en: 'work harder', cn: '更努力一点', correct: false, reason: '他说不看病历，显然不是继续干活。' },
+          { key: 'C', en: 'relax and do nothing', cn: '躺平，彻底放松', correct: true, reason: '不看病历不看手机，就是什么都不做。' }
         ],
-        analysis: '谈婚论嫁时提到的双方父母，in-laws 指因婚姻而结成的姻亲。',
-        wrongFeedback: '她答成“同事”，自己都觉得离谱。',
-        afterCorrect: '周叙在电话那头沉默两秒：“那先补上第一次约会。”'
+        analysis: 'chill 作动词是「放松、躺平」，作名词还可以指「凉意」，要看上下文。',
+        wrongFeedback: '你答成「觉得冷」，他把外套递过来：「我说的不是空调。」气血 -10',
+        afterCorrect: '她跟着他上了天台。风很大，谁都没提工作，也谁都没提那把钥匙。'
       },
       {
-        plotDescription: '她压低声音，说对面坐着一个完全陌生的人。',
-        line: "She set me up on a blind date. I'm sitting here with a stranger.",
-        lineCn: '她给我安排了一场相亲，我正和一个陌生人坐着。',
-        prompt: "根据上下文，选出画线词汇 'Blind date' 最准确的意思。",
+        plotDescription: '抢救结束，她贴着墙慢慢滑下去，声音很轻。',
+        line: "After that code, I felt completely drained.",
+        lineCn: '那次抢救之后，我觉得自己被彻底掏空了。',
+        prompt: "根据上下文，选出画线词汇 'Drained' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a date with a blind person', cn: '和盲人约会', correct: false, reason: 'blind 在这里不是眼睛看不见，而是事先没见过。' },
-          { key: 'B', en: 'a meeting arranged for romance', cn: '相亲', correct: true, reason: '母亲安排、对面是陌生人，正是相亲。' },
-          { key: 'C', en: 'a work shift', cn: '加班', correct: false, reason: '她坐在咖啡馆见人，不是在工作。' }
+          { key: 'A', en: 'refreshed', cn: '神清气爽', correct: false, reason: '抢救之后不可能神清气爽。' },
+          { key: 'B', en: 'emptied out', cn: '被掏空，精力耗尽', correct: true, reason: '贴着墙滑下去，正是被抽干的样子。' },
+          { key: 'C', en: 'angry with the team', cn: '对团队发火', correct: false, reason: '她在说自己累，不是在生气。' }
         ],
-        analysis: '母亲安排、对面是陌生人，blind date 指双方事先没见过面的相亲。',
-        wrongFeedback: '她答成“盲人约会”，对方礼貌地咳了一声。',
-        afterCorrect: '她低头回消息：“救我。”'
+        analysis: 'drained 原意是「被排干」，形容人时指精力、情绪被彻底抽走。',
+        wrongFeedback: '你答成「神清气爽」，她闭着眼笑了一下，连反驳的力气都没有。气血 -10',
+        afterCorrect: '周叙把一瓶水放在她手边，蹲下来和她视线齐平，什么也没说。'
       },
       {
-        plotDescription: '电话里，周叙说别人都能看明白，只有她自己看不清。',
-        line: "You're my blind spot. I can't see clearly when it comes to you.",
-        lineCn: '你是我的盲区。一遇到你，我就看不清楚了。',
-        prompt: "根据上下文，选出画线词汇 'Blind spot' 最准确的意思。",
+        plotDescription: '复查报告说下午三点出，她从两点五十开始看手机。',
+        line: "I'm anxious about the results — I keep checking my phone.",
+        lineCn: '结果没出来，我焦虑得一直看手机。',
+        prompt: "根据上下文，选出画线词汇 'Anxious' 最准确的意思。",
         options: [
-          { key: 'A', en: 'something you fail to see', cn: '看不见、顾不到的盲区', correct: true, reason: '他说自己遇到她就判断不清，blind spot 指看不清的地方。' },
-          { key: 'B', en: 'a good quality', cn: '优点', correct: false, reason: '“看不清楚”不是夸奖。' },
-          { key: 'C', en: 'a secret', cn: '秘密', correct: false, reason: '这里是判断上的盲区，不是藏起来的事。' }
+          { key: 'A', en: 'confident about the outcome', cn: '对结果很有信心', correct: false, reason: '一直看手机是放不下心，不是有把握。' },
+          { key: 'B', en: 'completely indifferent', cn: '完全无所谓', correct: false, reason: '无所谓就不会反复看手机。' },
+          { key: 'C', en: 'worried and uneasy', cn: '焦虑，坐立不安', correct: true, reason: '反复查看手机，是典型的焦虑。' }
         ],
-        analysis: '他说自己遇到她就判断不清，blind spot 指看不清、容易忽略的盲区。',
-        wrongFeedback: '她答成“优点”，心跳却漏了一拍。',
-        afterCorrect: '十分钟后，周叙出现在咖啡馆门口。'
+        analysis: 'anxious 指对还没发生的事感到不安，身体上常表现为坐不住。',
+        wrongFeedback: '你答成「完全无所谓」，她已经把手机解锁了第七次。气血 -10',
+        afterCorrect: '三点零七分，报告出来了。她盯着那行「良性」看了三遍，才敢往下滑。'
       }
     ],
-    completeText: '他站在门口，没进来，只朝她抬了抬下巴。温以宁放下咖啡杯，第一次觉得“逃”这个字，也有点舍不得。'
+    completeText: '天台上风很大，周叙什么也没问，只把外套披到她肩上。她忽然发现，原来被人陪着的时候，可以什么都不用解释。'
   },
   {
     id: 'pl_24',
@@ -1547,66 +1551,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 24 章 · 原生家庭的门',
     novel: '暗恋你第十年',
     speaker: { name: '周叙', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '她跟着周叙回家吃饭，站在老小区楼道里，忽然说起自己父母。那扇门她十年没敢推开，连过年都只送到楼下。',
+    storyText: '他父亲出现在住院部走廊，手里拎着一袋水果，说来看「老同事」。周叙站在护士站后面，一动不动。十年了，他还是那副样子：说话很轻，刀很钝。',
     questions: [
       {
-        plotDescription: '她提起一个总在需要帮忙时才出现的老同学。',
-        line: "She's a toxic friend. She only calls when she needs something.",
-        lineCn: '她是个有毒的朋友，只有需要帮忙时才找我。',
-        prompt: "根据上下文，选出画线词汇 'Toxic friend' 最准确的意思。",
+        plotDescription: '父亲说起他母亲，语气像在讲别人的事。',
+        line: "I was furious — he said it like it was nothing.",
+        lineCn: '我狂怒了，他说得好像那不算什么。',
+        prompt: "根据上下文，选出画线词汇 'Furious' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a friend who drains you', cn: '只会消耗你的朋友', correct: true, reason: '只在有事时联系、让人心累，正是消耗型朋友。' },
-          { key: 'B', en: 'an old classmate', cn: '老同学', correct: false, reason: '老同学只是身份，句子里强调的是被消耗。' },
-          { key: 'C', en: 'a coworker', cn: '同事', correct: false, reason: '这里说的是朋友关系，不是工作关系。' }
+          { key: 'A', en: 'violently angry', cn: '狂怒，怒到极点', correct: true, reason: '把旧伤说得云淡风轻，正是最让人暴怒的地方。' },
+          { key: 'B', en: 'mildly annoyed', cn: '稍微有点烦', correct: false, reason: '程度差太远，他当时手都在抖。' },
+          { key: 'C', en: 'amused', cn: '觉得有趣', correct: false, reason: '这种场合不可能觉得有趣。' }
         ],
-        analysis: '只在有事时才联系、让人心累，toxic friend 指只会消耗你的朋友。',
-        wrongFeedback: '她答成“老同学”，周叙问：“老同学会让你每次挂电话都难受？”',
-        afterCorrect: '温以宁低头：“我妈也是这样。”'
+        analysis: 'furious 表示愤怒到极点，比 angry 强烈得多。',
+        wrongFeedback: '你答成「稍微有点烦」，他的手在护士站下面握成了拳。气血 -10',
+        afterCorrect: '他没有上前打招呼，转身进了处置室，把门轻轻带上。'
       },
       {
-        plotDescription: '面馆里热气腾腾，她把筷子摆好，忽然认真起来。',
-        line: "This is a date, right? Not just two colleagues having noodles.",
-        lineCn: '这算约会吧？不只是两个同事吃面。',
-        prompt: "根据上下文，选出画线词汇 'Date' 最准确的意思。",
+        plotDescription: '他回到值班室，把门反锁，坐在地上。',
+        line: "Some nights I still feel depressed for no clear reason.",
+        lineCn: '有些晚上我还是会莫名其妙地抑郁。',
+        prompt: "根据上下文，选出画线词汇 'Depressed' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a calendar day', cn: '日期', correct: false, reason: '她在确认两人的关系，不是在问几月几号。' },
-          { key: 'B', en: 'a romantic meeting', cn: '约会', correct: true, reason: '她特意排除“同事吃面”，date 指带感情意味的约会。' },
-          { key: 'C', en: 'a work shift', cn: '排班', correct: false, reason: '两人在面馆吃饭，不是排班。' }
+          { key: 'A', en: 'cheerful and light', cn: '心情轻松愉快', correct: false, reason: '坐在反锁的房间里，不是轻松的状态。' },
+          { key: 'B', en: 'very focused on work', cn: '非常专注工作', correct: false, reason: '句子说的是情绪低落，和专注无关。' },
+          { key: 'C', en: 'deeply low', cn: '抑郁，情绪极度低落', correct: true, reason: '没有明确原因却持续低落，正是 depressed。' }
         ],
-        analysis: '她特意确认“不是同事吃面”，date 指带有感情意味的约会。',
-        wrongFeedback: '她答成“日期”，周叙笑：“几月几号？”',
-        afterCorrect: '他放下筷子：“是约会。我准备很久了。”'
+        analysis: 'depressed 指持续时间较长的情绪低落，不只是「今天不开心」。',
+        wrongFeedback: '你答成「非常专注」，可那晚他一份病历都没翻开。气血 -10',
+        afterCorrect: '手机在口袋里震了两下，是温以宁：你在哪？他没回，过了十分钟又拿起手机。'
       },
       {
-        plotDescription: '楼道里灯坏了，她站在暗处，声音很轻。',
-        line: "My parents broke up when I was twelve. I never learned how to stay.",
-        lineCn: '我十二岁那年父母分开了，我一直没学会怎么留下。',
-        prompt: "根据上下文，选出画线词汇 'Break up' 最准确的意思。",
+        plotDescription: '但一说到急诊改造方案，他整个人都不一样了。',
+        line: "He gets all hyped about the new triage plan.",
+        lineCn: '一说到新的分诊方案，他就极度兴奋。',
+        prompt: "根据上下文，选出画线词汇 'Hyped' 最准确的意思。",
         options: [
-          { key: 'A', en: 'separate, end a relationship', cn: '分开、关系破裂', correct: true, reason: '父母婚姻结束、她因此不会“留下”，break up 指关系破裂。' },
-          { key: 'B', en: 'argue loudly', cn: '大声吵架', correct: false, reason: '她说的是分开，不只是吵架。' },
-          { key: 'C', en: 'move house', cn: '搬家', correct: false, reason: '搬家无法解释“没学会留下”。' }
+          { key: 'A', en: 'extremely excited', cn: '极度兴奋，热血上头', correct: true, reason: '整个人都不一样了，正是被点燃的状态。' },
+          { key: 'B', en: 'indifferent', cn: '毫无兴趣', correct: false, reason: '完全相反。' },
+          { key: 'C', en: 'worried about it', cn: '为此担忧', correct: false, reason: '句子强调他的兴奋，不是担心。' }
         ],
-        analysis: '父母婚姻结束、她因此不会“留下”，break up 指关系破裂、分开。',
-        wrongFeedback: '她答成“搬家”，可她说的明明是“没学会留下”。',
-        afterCorrect: '周叙没有安慰她，只说：“那我们一起学。”'
+        analysis: 'hyped 是口语里「兴奋、期待值拉满」，常和 about 连用。',
+        wrongFeedback: '你答成「毫无兴趣」，可他说方案时眼睛是亮的。气血 -10',
+        afterCorrect: '他说到一半忽然停下，因为她正站在门口，手里拎着两份盒饭。'
       },
       {
-        plotDescription: '她讲起表姐的婚事，在最后一刻突然散了。',
-        line: "He dumped her two weeks before the wedding. Everyone was shocked.",
-        lineCn: '他在婚礼前两周把她甩了，所有人都震惊了。',
-        prompt: "根据上下文，选出画线词汇 'Dump' 最准确的意思。",
+        plotDescription: '温以宁问他高三那年过得怎么样。他想了很久。',
+        line: "Honestly, I was miserable in senior year.",
+        lineCn: '说实话，我高三那年惨透了。',
+        prompt: "根据上下文，选出画线词汇 'Miserable' 最准确的意思。",
         options: [
-          { key: 'A', en: 'abandon a partner', cn: '把恋人甩了', correct: true, reason: '婚礼前突然结束关系，dump 在口语里指甩掉恋人。' },
-          { key: 'B', en: 'pursue someone', cn: '追求某人', correct: false, reason: '婚礼前两周不会是追求，而是结束。' },
-          { key: 'C', en: 'forgive someone', cn: '原谅某人', correct: false, reason: '所有人都震惊，显然不是原谅。' }
+          { key: 'A', en: 'very popular', cn: '很受欢迎', correct: false, reason: '受欢迎和「惨」是两回事。' },
+          { key: 'B', en: 'extremely unhappy', cn: '惨透了，非常痛苦', correct: true, reason: '想很久才开口，说的正是那段难熬的日子。' },
+          { key: 'C', en: 'busy but fine', cn: '很忙但还好', correct: false, reason: '如果只是忙，他不会停顿那么久。' }
         ],
-        analysis: '婚礼前突然结束关系，dump 在口语里指把恋人甩掉、抛弃。',
-        wrongFeedback: '她答成“追求”，周叙摇头：“婚礼前两周？”',
-        afterCorrect: '她忽然明白，自己怕的不是婚姻，是被丢下。'
+        analysis: 'miserable 形容处境或情绪糟糕到极点，常用来回忆难熬的阶段。',
+        wrongFeedback: '你答成「很忙但还好」，他笑了一下：「要真只是忙就好了。」气血 -10',
+        afterCorrect: '他说到一半停下来：「算了，太长了。」她说：「我有时间。」'
       }
     ],
-    completeText: '那扇门最后还是开了。屋里飘出饭菜味，周叙的母亲在厨房喊他名字，像喊了很多年。'
+    completeText: '走廊尽头，他父亲还站在那里，水果袋放在长椅上。周叙走过去，没有叫爸，只说了一句：「她不是不懂事，她只是撑不住了。」'
   },
   {
     id: 'pl_25',
@@ -1614,66 +1618,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 25 章 · 母亲的电话',
     novel: '暗恋你第十年',
     speaker: { name: '温以宁', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '母亲在电话里哭，说父亲又没回家。温以宁站在阳台上，听了一整夜的风。天亮时，周叙的消息躺在最上面：“今天降温，记得穿厚点。”',
+    storyText: '下午三点，母亲的活检结果出来了：良性。温以宁在走廊里蹲下去，蹲了足足一分钟，才想起来要给人打电话。',
     questions: [
       {
-        plotDescription: '她第一次对别人说起家里的事，声音很平。',
-        line: "My father cheated. That's why I don't believe in promises.",
-        lineCn: '我爸出过轨，所以我不太相信承诺。',
-        prompt: "根据上下文，选出画线词汇 'Cheat' 最准确的意思。",
+        plotDescription: '电话接通，她第一句话就破了音。',
+        line: "I'm ecstatic — the biopsy came back clean.",
+        lineCn: '我欣喜若狂，活检结果是好的。',
+        prompt: "根据上下文，选出画线词汇 'Ecstatic' 最准确的意思。",
         options: [
-          { key: 'A', en: 'copy in an exam', cn: '考试作弊', correct: false, reason: '她说的是父亲对婚姻的背叛，不是考试。' },
-          { key: 'B', en: 'be unfaithful in love', cn: '出轨、背叛感情', correct: true, reason: '父亲的事让她不信承诺，cheat 指感情里的不忠。' },
-          { key: 'C', en: 'quarrel', cn: '争吵', correct: false, reason: '争吵不会直接推到“不信承诺”这一步。' }
+          { key: 'A', en: 'relieved but calm', cn: '松了口气，但很平静', correct: false, reason: 'relieved 偏平静，她当时是破音喊出来的。' },
+          { key: 'B', en: 'confused by the result', cn: '对结果感到困惑', correct: false, reason: '结果是良性，她听得懂。' },
+          { key: 'C', en: 'beyond happy', cn: '欣喜若狂，高兴到极点', correct: true, reason: '蹲在地上、声音发抖，正是高兴到极点。' }
         ],
-        analysis: '她说的是父亲对婚姻的背叛，cheat 指感情里的不忠、出轨。',
-        wrongFeedback: '她答成“作弊”，电话那头的母亲沉默了很久。',
-        afterCorrect: '周叙只说：“我不是他。”'
+        analysis: 'ecstatic 是情绪强度的顶点，比 happy、glad、relieved 都强烈。',
+        wrongFeedback: '你答成「松了口气但很平静」，可全走廊都听见她那一句。气血 -10',
+        afterCorrect: '电话那头沉默了两秒，然后她听见周叙很轻地笑了一声。'
       },
       {
-        plotDescription: '她自嘲嘴笨，喜欢一个人十年，连句好听的话都说不出。',
-        line: "I don't know how to flirt. I just stand there and say nothing.",
-        lineCn: '我不会调情，我就站在那儿，什么也说不出来。',
-        prompt: "根据上下文，选出画线词汇 'Flirt' 最准确的意思。",
+        plotDescription: '挂了电话，她坐在长椅上，哭不出来，也笑不出来。',
+        line: "For a minute I just felt numb — I couldn't cry or smile.",
+        lineCn: '有那么一分钟我整个人是麻木的，哭不出来也笑不出来。',
+        prompt: "根据上下文，选出画线词汇 'Numb' 最准确的意思。",
         options: [
-          { key: 'A', en: 'tease romantically', cn: '调情、撩人', correct: true, reason: '她自嘲不会说好听的话，flirt 指带暧昧意味地撩人。' },
-          { key: 'B', en: 'argue', cn: '争吵', correct: false, reason: '她说自己“什么也说不出来”，不是吵架。' },
-          { key: 'C', en: 'lie', cn: '撒谎', correct: false, reason: '语境里没有欺骗，只有不善表达。' }
+          { key: 'A', en: 'unable to feel anything', cn: '麻木，什么都感觉不到', correct: true, reason: '哭不出也笑不出，正是情绪的暂时关闭。' },
+          { key: 'B', en: 'extremely happy', cn: '极度开心', correct: false, reason: '她明确说自己笑不出来。' },
+          { key: 'C', en: 'very sleepy', cn: '非常困', correct: false, reason: '不是困，是情绪一下子空了。' }
         ],
-        analysis: '她自嘲不会说好听的话，flirt 指带暧昧意味地撩人、调情。',
-        wrongFeedback: '她答成“吵架”，周叙笑了一声：“那你确实不会。”',
-        afterCorrect: '他说：“不用会。你站着，我就过来了。”'
+        analysis: 'numb 指感觉麻木、情绪暂时失灵，常在巨大冲击之后出现。',
+        wrongFeedback: '你答成「极度开心」，可她自己说哭不出来。气血 -10',
+        afterCorrect: '她低头看自己的手，指甲缝里还有早上洗手液的味道。'
       },
       {
-        plotDescription: '她忽然发现，自己活了三十年，感情履历一片空白。',
-        line: "I don't have an ex. I've only ever liked one person.",
-        lineCn: '我没有前任，我只喜欢过一个人。',
-        prompt: "根据上下文，选出画线词汇 'Ex' 最准确的意思。",
+        plotDescription: '隔壁床的女儿每天来，削水果、擦身、讲笑话。',
+        line: "I know it's silly, but I'm jealous of that family.",
+        lineCn: '我知道这很傻，但我嫉妒那一家人。',
+        prompt: "根据上下文，选出画线词汇 'Jealous' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a former partner', cn: '前任', correct: true, reason: '和“只喜欢过一个人”对照，ex 指过去交往过的恋人。' },
-          { key: 'B', en: 'a boss', cn: '老板', correct: false, reason: '这里谈的是感情经历，不是工作。' },
-          { key: 'C', en: 'a classmate', cn: '同学', correct: false, reason: '同学不等于交往过的对象。' }
+          { key: 'A', en: 'angry at them', cn: '生他们的气', correct: false, reason: '她不是生气，是羡慕。' },
+          { key: 'B', en: 'envious of what they have', cn: '嫉妒，羡慕别人拥有的', correct: true, reason: '对方天天来，她半年只回两次家，这是羡慕。' },
+          { key: 'C', en: 'grateful to them', cn: '对他们心存感激', correct: false, reason: '句子前面已经说了「很傻」，是自嘲的羡慕。' }
         ],
-        analysis: '和“只喜欢过一个人”对照，ex 指过去交往过的恋人、前任。',
-        wrongFeedback: '她答成“老板”，周叙的眼神软下来。',
-        afterCorrect: '她说完才发觉，这句话等于把十年交代了。'
+        analysis: 'jealous 指因为别人拥有自己没有的东西而心里不平衡，可以是善意的羡慕。',
+        wrongFeedback: '你答成「生他们的气」，她把削了一半的苹果放下，没再说话。气血 -10',
+        afterCorrect: '母亲说：「那姑娘也不容易，天天请假。」她嗯了一声。'
       },
       {
-        plotDescription: '好友在电话那头恨铁不成钢，让她主动一点。',
-        line: "I'll be your wingman. Just go talk to him.",
-        lineCn: '我给你当僚机，去跟他说啊。',
-        prompt: "根据上下文，选出画线词汇 'Wingman' 最准确的意思。",
+        plotDescription: '她算了一下，这半年回家的次数。',
+        line: "I feel guilty for not coming home more often.",
+        lineCn: '我因为没多回家而内疚。',
+        prompt: "根据上下文，选出画线词汇 'Guilty' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a friend who helps you connect', cn: '帮忙撮合的朋友', correct: true, reason: '朋友在推她主动开口，wingman 指帮忙搭桥助攻的人。' },
-          { key: 'B', en: 'a driver', cn: '司机', correct: false, reason: '这里没有开车，只有撮合。' },
-          { key: 'C', en: 'a patient', cn: '病人', correct: false, reason: '电话那头是好友，不是病人。' }
+          { key: 'A', en: 'proud of herself', cn: '为自己骄傲', correct: false, reason: '回家次数少，不可能骄傲。' },
+          { key: 'B', en: 'innocent', cn: '清白无辜', correct: false, reason: '这里说的是自责，不是清白。' },
+          { key: 'C', en: 'feeling you did something wrong', cn: '内疚，觉得自己没做好', correct: true, reason: '算次数就是自我清算，正是内疚。' }
         ],
-        analysis: '朋友在推她主动开口，wingman 指帮忙搭桥、在旁边助攻的人。',
-        wrongFeedback: '她答成“司机”，朋友翻了个白眼。',
-        afterCorrect: '她攥着手机，最后只发了一句：“你睡了吗？”'
+        analysis: 'guilty 指因为觉得自己亏欠、做错而不安，是道德层面的不适。',
+        wrongFeedback: '你答成「清白无辜」，她低声说：「我要是真无辜就好了。」气血 -10',
+        afterCorrect: '她走进病房，把报告举给母亲看。母亲看了很久，只说：「那今晚，你回家吃饭吧。」'
       }
     ],
-    completeText: '消息几乎是秒回的：“没睡。阳台冷，进去说。”她看着屏幕，忽然不知道是该哭还是该笑。'
+    completeText: '她给母亲削苹果，削得坑坑洼洼，皮断了好几次。母亲看着她的手说：「你现在这样，比以前好。」她没听懂，也没问。'
   },
   {
     id: 'pl_26',
@@ -1681,66 +1685,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 26 章 · 那年的冬天',
     novel: '暗恋你第十年',
     speaker: { name: '周叙', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '冬天第一场雪，两人被派去社区义诊。回程的公交上，她靠着窗睡着了，醒来时肩上多了一件外套，车窗外的雪还在下。',
+    storyText: '流感高峰，急诊走廊加了三张床。周叙连着四十小时没合眼，白大褂下摆蹭到了碘伏，泛着一块黄。',
     questions: [
       {
-        plotDescription: '他看着窗外，忽然提起很多年前那个天台。',
-        line: "The vibe that night, on the rooftop — I still think about it.",
-        lineCn: '天台上那晚的氛围，我到现在还会想起。',
-        prompt: "根据上下文，选出画线词汇 'Vibe' 最准确的意思。",
+        plotDescription: '护士站的白板上写着排班，今晚缺两个人。',
+        line: "Everyone's stressed — we're two nurses short tonight.",
+        lineCn: '所有人都压力很大，今晚少两个护士。',
+        prompt: "根据上下文，选出画线词汇 'Stressed' 最准确的意思。",
         options: [
-          { key: 'A', en: 'atmosphere and feeling', cn: '气氛、感觉', correct: true, reason: '他回忆的是那一晚的整体感觉，vibe 指氛围。' },
-          { key: 'B', en: 'weather report', cn: '天气预报', correct: false, reason: '他说的不是温度风力，而是那晚的感觉。' },
-          { key: 'C', en: 'a smell', cn: '气味', correct: false, reason: '句中没有任何气味线索。' }
+          { key: 'A', en: 'under a lot of pressure', cn: '压力大，绷得很紧', correct: true, reason: '人手不足、工作量翻倍，正是压力的来源。' },
+          { key: 'B', en: 'well paid', cn: '待遇很好', correct: false, reason: '句子讲的是人手，不是钱。' },
+          { key: 'C', en: 'completely relaxed', cn: '完全放松', correct: false, reason: '少两个护士不可能放松。' }
         ],
-        analysis: '他回忆的是那一晚的整体感觉，vibe 指氛围、气场。',
-        wrongFeedback: '他答成“天气预报”，温以宁摇头：“那天风很大，但我说的是别的。”',
-        afterCorrect: '温以宁看着窗外的雪，没接话。'
+        analysis: 'stressed 指因为压力而紧绷，是当代口语里最高频的情绪词之一。',
+        wrongFeedback: '你答成「完全放松」，她指了指走廊里的加床。气血 -10',
+        afterCorrect: '他把自己的名字写进夜班栏，护士长说：「你昨天也在这儿。」'
       },
       {
-        plotDescription: '她说自己不太相信命中注定，他点了点头。',
-        line: "I don't believe in soulmates. I believe in choosing someone every day.",
-        lineCn: '我不信灵魂伴侣，我相信的是每天重新选择一个人。',
-        prompt: "根据上下文，选出画线词汇 'Soulmate' 最准确的意思。",
+        plotDescription: '一个月里，科里走了三个人。有人在群里说是「吃不了苦」。',
+        line: "Three people quit last month — it's burnout, not laziness.",
+        lineCn: '上个月走了三个人，那是职业倦怠，不是懒。',
+        prompt: "根据上下文，选出画线词汇 'Burnout' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a perfect person', cn: '完美的人', correct: false, reason: '他把“命中注定”换成“每天选择”，重点不在此。' },
-          { key: 'B', en: 'a destined perfect match', cn: '天生契合的灵魂伴侣', correct: true, reason: '和“每天选择”对照，soulmate 指天生一对的人。' },
-          { key: 'C', en: 'a coworker', cn: '同事', correct: false, reason: '这里谈的是爱情观，不是工作关系。' }
+          { key: 'A', en: 'a small careless mistake', cn: '粗心的小失误', correct: false, reason: '走人不是失误。' },
+          { key: 'B', en: 'exhaustion from long-term overwork', cn: '长期过劳带来的职业倦怠', correct: true, reason: '连着多少人辞职，指向的是被耗尽，而非态度问题。' },
+          { key: 'C', en: 'a disease only patients get', cn: '只有病人才会得的病', correct: false, reason: '这里说的是工作状态，不限于病人。' }
         ],
-        analysis: '他把“命中注定”换成“每天选择”，soulmate 指天生契合的人。',
-        wrongFeedback: '她答成“完美的人”，他笑：“没人完美。”',
-        afterCorrect: '她轻声问：“那你会选多久？”他说：“十年起步。”'
+        analysis: 'burnout 指长期高压工作后情绪与体力的彻底枯竭，不是简单的累。',
+        wrongFeedback: '你答成「粗心的小失误」，他抬起头：「辞职是失误？」气血 -10',
+        afterCorrect: '他退出了那个群。退群之前，他在输入框里打了一行字，又删掉了。'
       },
       {
-        plotDescription: '她想起高中时，两人隔着两排座位，却总能同时抬头。',
-        line: "We had chemistry before we even spoke. You felt it too, right?",
-        lineCn: '我们还没说话就有化学反应了，你也感觉到了吧？',
-        prompt: "根据上下文，选出画线词汇 'Chemistry' 最准确的意思。",
+        plotDescription: '走廊那头突然有人喊「孩子抽了」，家属的声音都变了。',
+        line: "Don't panic — bring me the oxygen, now.",
+        lineCn: '别慌，把氧气给我拿过来，马上。',
+        prompt: "根据上下文，选出画线词汇 'Panic' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a science class', cn: '化学课', correct: false, reason: '两人隔着座位对视，不是在上课。' },
-          { key: 'B', en: 'mutual attraction', cn: '彼此间的吸引', correct: true, reason: '还没说话就有感觉，chemistry 指人和人之间的吸引。' },
-          { key: 'C', en: 'an argument', cn: '争吵', correct: false, reason: '同时抬头是默契，不是吵架。' }
+          { key: 'A', en: 'lose control from fear', cn: '恐慌，因害怕而失控', correct: true, reason: '家属喊到变声，他先稳住场面，正是让人别慌。' },
+          { key: 'B', en: 'shout angrily', cn: '生气地大喊', correct: false, reason: '他要的是氧气，不是在骂人。' },
+          { key: 'C', en: 'run away', cn: '赶紧跑开', correct: false, reason: '正好相反，大家都往孩子那边跑。' }
         ],
-        analysis: '两人之间的心动和默契，chemistry 指人和人之间的化学反应。',
-        wrongFeedback: '她答成“化学课”，耳根却红了。',
-        afterCorrect: '她把外套往上拉了拉，遮住半张脸。'
+        analysis: 'panic 指被恐惧接管、失去行动条理；急救场合最怕的就是它。',
+        wrongFeedback: '你答成「生气地大喊」，可他那句是压着声音说的。气血 -10',
+        afterCorrect: '孩子被推进抢救室。他戴上手套，声音反而更低了：「准备建立通道。」'
       },
       {
-        plotDescription: '她说起自己为什么总是把人往外推。',
-        line: "Trust is the part I'm still learning. Be patient with me.",
-        lineCn: '信任是我还在学的事，对我有点耐心。',
-        prompt: "根据上下文，选出画线词汇 'Trust' 最准确的意思。",
+        plotDescription: '孩子哇地哭出来，他靠在墙边，闭了下眼。',
+        line: "I was relieved when the boy started crying — crying means breathing.",
+        lineCn: '孩子哭出来的那一刻我松了口气，能哭说明能呼吸。',
+        prompt: "根据上下文，选出画线词汇 'Relieved' 最准确的意思。",
         options: [
-          { key: 'A', en: "belief that someone won't hurt you", cn: '信任', correct: true, reason: '她说自己还在学，trust 指相信对方不会伤害自己。' },
-          { key: 'B', en: 'speed', cn: '速度', correct: false, reason: '“还在学”说的是心理，不是快慢。' },
-          { key: 'C', en: 'memory', cn: '记忆', correct: false, reason: '记性和把人推开没有直接关系。' }
+          { key: 'A', en: 'disappointed', cn: '失望', correct: false, reason: '孩子救回来了，不可能失望。' },
+          { key: 'B', en: 'still worried', cn: '仍然担心', correct: false, reason: '他说的是那口气松下来了。' },
+          { key: 'C', en: 'worry gone', cn: '松了口气，悬着的心放下', correct: true, reason: '靠墙闭眼，正是紧绷之后的松弛。' }
         ],
-        analysis: '她说自己还在学，trust 指相信对方不会伤害自己的那份信任。',
-        wrongFeedback: '她答成“速度”，周叙点头：“好，我不催。”',
-        afterCorrect: '他把她的手放进自己口袋里：“慢慢来。”'
+        analysis: 'relieved 指压在心里的担忧突然解除，往往伴随着身体的放松。',
+        wrongFeedback: '你答成「仍然担心」，可他靠着墙，肩膀已经塌下去了。气血 -10',
+        afterCorrect: '他把手套脱下来，才发现手指被碘伏泡得发白。凌晨四点，走廊终于安静。'
       }
     ],
-    completeText: '公交车到站时，雪已经积了薄薄一层。她下车，没有立刻抽回手。'
+    completeText: '他在值班室的镜子前站了会儿，看见自己袖口磨破了一块。他想，该换了。然后拿出手机，给温以宁发了句：今天很累，但还好。'
   },
   {
     id: 'pl_27',
@@ -1748,66 +1752,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 27 章 · 她终于哭了',
     novel: '暗恋你第十年',
     speaker: { name: '温以宁', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '春节前，她终于在他面前哭出来。不是委屈，是十年没敢说的话一起涌上来。周叙没有抱她，只把纸巾一张张递过去。',
+    storyText: '她去主任办公室送材料，抽屉半开着，里面露出一张旧照片的一角。照片上是二十几岁的周叙，旁边站着一个女孩。她没敢抽出来看全。',
     questions: [
       {
-        plotDescription: '她擦着眼睛，自嘲这十年活得像一场独角戏。',
-        line: "I've been loyal to a feeling for ten years. That's not healthy, is it?",
-        lineCn: '我对一种感觉忠诚了十年，这不太健康，对吧？',
-        prompt: "根据上下文，选出画线词汇 'Loyal' 最准确的意思。",
+        plotDescription: '她给闺蜜打电话，声音平静得不像自己。',
+        line: "I was heartbroken over something that wasn't even real.",
+        lineCn: '我为一件根本不存在的事心碎了。',
+        prompt: "根据上下文，选出画线词汇 'Heartbroken' 最准确的意思。",
         options: [
-          { key: 'A', en: 'faithful and devoted', cn: '忠诚、专一', correct: true, reason: '十年只守着同一个人，loyal 指感情上的忠诚专一。' },
-          { key: 'B', en: 'lucky', cn: '幸运', correct: false, reason: '她是在自嘲辛苦，不是在说自己运气好。' },
-          { key: 'C', en: 'calm', cn: '冷静', correct: false, reason: '她正哭着，和冷静相反。' }
+          { key: 'A', en: 'full of grief', cn: '心碎，难过到极点', correct: true, reason: '一张没看清的照片就让她整晚没睡，正是心碎。' },
+          { key: 'B', en: 'a little bored', cn: '有点无聊', correct: false, reason: '她声音平静得反常，是在硬撑。' },
+          { key: 'C', en: 'embarrassed', cn: '尴尬', correct: false, reason: '重点是难过，不是尴尬。' }
         ],
-        analysis: '十年只守着同一个人，loyal 指感情上的忠诚、专一和坚持。',
-        wrongFeedback: '她答成“幸运”，周叙把纸巾递过去：“不是幸运，是辛苦。”',
-        afterCorrect: '他没说“你不健康”，只说“你只是太久没被回应”。'
+        analysis: 'heartbroken 指因为失去或误解而遭受的剧烈情感打击，常用来形容感情上的痛。',
+        wrongFeedback: '你答成「有点无聊」，闺蜜在电话那头叹了口气：「你骗谁呢。」气血 -10',
+        afterCorrect: '她把那晚的电话挂了，坐在床边，眼泪一直没下来。'
       },
       {
-        plotDescription: '她急着解释，怕他以为自己又一次把人推开。',
-        line: "I'm not rejecting you. I'm scared of losing you.",
-        lineCn: '我不是在拒绝你，我是怕失去你。',
-        prompt: "根据上下文，选出画线词汇 'Reject' 最准确的意思。",
+        plotDescription: '第二天真相大白：那是同事的旧照片，周叙只是帮忙收拾抽屉。闺蜜在电话里一脸得意。',
+        line: "Don't look so smug — you were wrong too.",
+        lineCn: '别那么得意忘形，你也猜错了。',
+        prompt: "根据上下文，选出画线词汇 'Smug' 最准确的意思。",
         options: [
-          { key: 'A', en: "refuse someone's feelings", cn: '拒绝', correct: true, reason: '她解释自己不是不接受，reject 指拒绝对方的心意。' },
-          { key: 'B', en: 'accept', cn: '接受', correct: false, reason: '句首用了“不是”，正好相反。' },
-          { key: 'C', en: 'forget', cn: '忘记', correct: false, reason: '她怕的是失去，不是忘记。' }
+          { key: 'A', en: 'sad and quiet', cn: '难过又沉默', correct: false, reason: '她猜对了，正在得意。' },
+          { key: 'B', en: 'too pleased with yourself', cn: '得意忘形，自满', correct: true, reason: '「你也猜错了」这种回击，正对着对方那副得意。' },
+          { key: 'C', en: 'humble', cn: '谦逊', correct: false, reason: '和「得意」正相反。' }
         ],
-        analysis: '她解释自己不是不接受，reject 指拒绝对方的心意、把人推开。',
-        wrongFeedback: '她答成“接受”，周叙轻声说：“那你为什么退钥匙？”',
-        afterCorrect: '她哭得更厉害：“因为钥匙一交出去，我就没有退路了。”'
+        analysis: 'smug 指因为自己正确或聪明而露出让人有点不爽的得意。',
+        wrongFeedback: '你答成「谦逊」，闺蜜笑出声：「我什么时候谦逊过。」气血 -10',
+        afterCorrect: '她挂了电话，回头看见周叙站在门口，手里拿着那份材料。'
       },
       {
-        plotDescription: '他把纸巾盒放在她手边，语气很轻。',
-        line: "I confessed first, remember? You don't have to say it back tonight.",
-        lineCn: '是我先表白的，记得吗？你今晚不用回应。',
-        prompt: "根据上下文，选出画线词汇 'Confess' 最准确的意思。",
+        plotDescription: '周叙听她解释完，只问了一句：「你就为这个躲我三天？」',
+        line: "I'm annoyed, but mostly at myself.",
+        lineCn: '我挺烦的，但主要是气我自己。',
+        prompt: "根据上下文，选出画线词汇 'Annoyed' 最准确的意思。",
         options: [
-          { key: 'A', en: 'admit a mistake', cn: '承认错误', correct: false, reason: '他指的是天台上说出喜欢，不是认错。' },
-          { key: 'B', en: 'reveal romantic feelings', cn: '表白、坦白心意', correct: true, reason: '“先表白”说明是说出喜欢，confess 指坦白心意。' },
-          { key: 'C', en: 'complain', cn: '抱怨', correct: false, reason: '他的话是体谅，不是抱怨。' }
+          { key: 'A', en: 'delighted', cn: '非常开心', correct: false, reason: '躲了三天，谈不上开心。' },
+          { key: 'B', en: 'terrified', cn: '非常害怕', correct: false, reason: '她烦的是自己的反应，不是害怕。' },
+          { key: 'C', en: 'bothered and irritated', cn: '烦透了，心里不痛快', correct: true, reason: '后半句「气我自己」说明了这种烦躁的来源。' }
         ],
-        analysis: '他指的是天台上说出喜欢，confess 指坦白心意、表白。',
-        wrongFeedback: '她答成“承认错误”，眼泪还挂在脸上，忍不住笑了一下。',
-        afterCorrect: '她吸了吸鼻子：“那你也别催我。”'
+        analysis: 'annoyed 指被小事持续打扰而产生的不快，程度比 angry 轻。',
+        wrongFeedback: '你答成「非常开心」，她低下头，把病历抱得更紧了。气血 -10',
+        afterCorrect: '他说：「下次想知道什么，直接问我。」她点头，眼泪这才掉下来。'
       },
       {
-        plotDescription: '他说自己想的不是束缚，而是有一个固定的归处。',
-        line: "Commitment isn't a cage to me. It's a place to come back to.",
-        lineCn: '承诺对我来说不是笼子，是一个可以回来的地方。',
-        prompt: "根据上下文，选出画线词汇 'Commitment' 最准确的意思。",
+        plotDescription: '闺蜜最后总结了一句。',
+        line: "That's not intuition, that's paranoia.",
+        lineCn: '那不叫直觉，那叫被害妄想。',
+        prompt: "根据上下文，选出画线词汇 'Paranoia' 最准确的意思。",
         options: [
-          { key: 'A', en: 'long-term dedication to a relationship', cn: '对关系的承诺与投入', correct: true, reason: '他把承诺说成“可以回去的地方”，commitment 指长期投入。' },
-          { key: 'B', en: 'a punishment', cn: '惩罚', correct: false, reason: '“可以回来的地方”是温柔的，不是惩罚。' },
-          { key: 'C', en: 'a trip', cn: '旅行', correct: false, reason: '这里谈的是关系，不是出行。' }
+          { key: 'A', en: 'unreasonable suspicion', cn: '被害妄想，无端的猜疑', correct: true, reason: '凭一张没看完的照片就断定一切，正是无端猜疑。' },
+          { key: 'B', en: 'careful planning', cn: '周密的计划', correct: false, reason: '她什么都没计划，只是胡思乱想。' },
+          { key: 'C', en: 'deep insight', cn: '深刻的洞察', correct: false, reason: '闺蜜明确否定了「直觉」，更不会是洞察。' }
         ],
-        analysis: '他把承诺说成“可以回去的地方”，commitment 指对关系的长期投入。',
-        wrongFeedback: '她答成“惩罚”，可他的话明明是温柔的。',
-        afterCorrect: '温以宁看着他，第一次没有往后退。'
+        analysis: 'paranoia 指没有依据却坚信自己被针对、被背叛，是不合理的猜疑。',
+        wrongFeedback: '你答成「深刻的洞察」，闺蜜说：「你要真这么准，就不会猜错。」气血 -10',
+        afterCorrect: '她把照片放回抽屉，出门时才发现背面有一行小字：2014，实习第一天。那一年，她也在那家医院。'
       }
     ],
-    completeText: '那天她哭到很晚。走的时候，她把那把钥匙从包里拿出来，放进了自己的口袋。'
+    completeText: '她站在走廊里，忽然明白自己错过了什么。有些话如果十年前问出口，也许整件事都不一样。'
   },
   {
     id: 'pl_28',
@@ -1815,66 +1819,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 28 章 · 慢慢来',
     novel: '暗恋你第十年',
     speaker: { name: '周叙', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '他们开始约会，频率不高，一周一次。她学着不逃，他学着不催。科室的人都说，周主任最近看手机的次数变多了。',
+    storyText: '误会解开的那晚，他在她家楼下停了车，坐了很久才熄火。仪表盘的光暗下去，整条街只剩路灯。',
     questions: [
       {
-        plotDescription: '她承认自己不太会让人靠近，连并肩走都会紧张。',
-        line: "Intimacy scares me more than surgery. I'm not joking.",
-        lineCn: '亲密比手术更让我害怕，我没开玩笑。',
-        prompt: "根据上下文，选出画线词汇 'Intimacy' 最准确的意思。",
+        plotDescription: '他说这半个月几乎没睡好。',
+        line: "I've been restless — I wake up at three every night.",
+        lineCn: '我一直很焦躁，每天三点就醒。',
+        prompt: "根据上下文，选出画线词汇 'Restless' 最准确的意思。",
         options: [
-          { key: 'A', en: 'emotional closeness', cn: '亲密', correct: true, reason: '她拿手术作比较，说的是靠近一个人的害怕。' },
-          { key: 'B', en: 'a medical operation', cn: '手术', correct: false, reason: '手术只是她用来对比的事物，不是被问的词。' },
-          { key: 'C', en: 'loneliness', cn: '孤独', correct: false, reason: '她怕的是靠近，不是一个人待着。' }
+          { key: 'A', en: 'sleeping deeply', cn: '睡得很沉', correct: false, reason: '三点就醒，正好相反。' },
+          { key: 'B', en: 'energetic and lively', cn: '精力充沛', correct: false, reason: '每天三点醒的人不会精力充沛。' },
+          { key: 'C', en: 'unable to settle', cn: '焦躁不安，静不下来', correct: true, reason: '夜里反复醒来、白天坐不住，正是 restless。' }
         ],
-        analysis: '她拿手术作比较，说的是靠近一个人的害怕，intimacy 指情感上的亲密。',
-        wrongFeedback: '她答成“手术”，周叙看她：“你刚说比手术还怕。”',
-        afterCorrect: '他没有靠近，只把椅子往旁边挪了一点：“那我坐这儿。”'
+        analysis: 'restless 指身体或心静不下来，既可以是睡不着，也可以是坐立不安。',
+        wrongFeedback: '你答成「睡得很沉」，他笑了一下：「要是能睡沉就好了。」气血 -10',
+        afterCorrect: '她说：「那你今晚别开车回去。」他愣了两秒，才说：「好。」'
       },
       {
-        plotDescription: '她发现他的好从来不挂在嘴上，全在琐碎的小事里。',
-        line: "He shows affection in small ways — soup, gloves, a warm seat.",
-        lineCn: '他的爱意都藏在小事里，一碗汤、一副手套、一个暖好的座位。',
-        prompt: "根据上下文，选出画线词汇 'Affection' 最准确的意思。",
+        plotDescription: '他说起这十年，语气很平。',
+        line: "I'm not bitter about it anymore. I just wish I'd said something.",
+        lineCn: '我已经不怨了，只是后悔当时什么都没说。',
+        prompt: "根据上下文，选出画线词汇 'Bitter' 最准确的意思。",
         options: [
-          { key: 'A', en: 'tender love', cn: '爱慕、温柔的情感', correct: true, reason: '他不用嘴说，用细节表达在意，affection 指温柔爱意。' },
-          { key: 'B', en: 'anger', cn: '生气', correct: false, reason: '汤是热的、座位是暖的，和生气无关。' },
-          { key: 'C', en: 'distance', cn: '距离', correct: false, reason: '这些小事恰恰是在拉近距离。' }
+          { key: 'A', en: 'resentful and sour', cn: '苦涩怨恨，心里有气', correct: true, reason: '「不再」二字说明曾经怨过，bitter 正是那种苦。' },
+          { key: 'B', en: 'sweet and warm', cn: '甜蜜温暖', correct: false, reason: '和「怨不怨」这个语境不搭。' },
+          { key: 'C', en: 'confused', cn: '困惑', correct: false, reason: '他很清楚自己在说什么。' }
         ],
-        analysis: '他不用嘴说，用细节表达在意，affection 指温柔的爱意。',
-        wrongFeedback: '她答成“生气”，可汤还是热的。',
-        afterCorrect: '温以宁把汤喝完，连碗底都刮干净了。'
+        analysis: 'bitter 形容因长期委屈而生的怨气，也指经历留下的苦味。',
+        wrongFeedback: '你答成「甜蜜温暖」，他沉默了一会儿：「你听漏了一个词。」气血 -10',
+        afterCorrect: '她把手放在他手背上，他没有抽开。'
       },
       {
-        plotDescription: '他们约好每周五不聊工作，只做普通情侣会做的事。',
-        line: "Friday is our date night. No hospital talk, no pagers.",
-        lineCn: '周五是我们的约会之夜，不许谈医院，不许带呼机。',
-        prompt: "根据上下文，选出画线词汇 'Date night' 最准确的意思。",
+        plotDescription: '他说这句话的时候没看她，手指在方向盘上敲了两下。',
+        line: "This is me being vulnerable — please don't laugh.",
+        lineCn: '我现在是在你面前示弱，别笑我。',
+        prompt: "根据上下文，选出画线词汇 'Vulnerable' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a fixed romantic evening', cn: '约会之夜', correct: true, reason: '固定的周五、只属于两个人，date night 就是约会夜。' },
-          { key: 'B', en: 'a night shift', cn: '值班夜', correct: false, reason: '他明确说不许谈医院、不带呼机，显然不是值班。' },
-          { key: 'C', en: 'a family dinner', cn: '家庭聚餐', correct: false, reason: '句中只提到两个人，没有家人。' }
+          { key: 'A', en: 'strong and confident', cn: '强大又自信', correct: false, reason: '他不敢看她，显然不是自信。' },
+          { key: 'B', en: 'open and easily hurt', cn: '脆弱，把软肋露出来', correct: true, reason: '提前说「别笑我」，正是把软肋递出去。' },
+          { key: 'C', en: 'joking around', cn: '在开玩笑', correct: false, reason: '他明确说了不是在开玩笑。' }
         ],
-        analysis: '固定的周五、只属于两个人，date night 指情侣之间的约会之夜。',
-        wrongFeedback: '她答成“值班夜”，周叙笑：“那我可太亏了。”',
-        afterCorrect: '那天她的呼机还是响了，他叹了口气：“走吧，我陪你。”'
+        analysis: 'vulnerable 指把自己不设防的一面暴露出来，因此容易被伤到。',
+        wrongFeedback: '你答成「强大又自信」，他把手从方向盘上收了回去。气血 -10',
+        afterCorrect: '她说：「周叙，你在我这儿不用那么硬。」他低下头，很久没说话。'
       },
       {
-        plotDescription: '同事撞见他对着窗户发呆，嘴角还挂着笑。',
-        line: "He's totally smitten. Look at him, he's smiling at nothing.",
-        lineCn: '他彻底神魂颠倒了，你看他，对着空气都在笑。',
-        prompt: "根据上下文，选出画线词汇 'Smitten' 最准确的意思。",
+        plotDescription: '她问他，那几年有没有想过放弃。',
+        line: "For a long time I felt hopeless about us.",
+        lineCn: '有很长一段时间，我对我们之间感到绝望。',
+        prompt: "根据上下文，选出画线词汇 'Hopeless' 最准确的意思。",
         options: [
-          { key: 'A', en: 'completely in love', cn: '神魂颠倒', correct: true, reason: '对着空气笑、满眼都是她，smitten 指被爱冲昏头。' },
-          { key: 'B', en: 'angry', cn: '生气', correct: false, reason: '他正笑着，和生气相反。' },
-          { key: 'C', en: 'tired', cn: '疲倦', correct: false, reason: '发呆的笑不是累出来的。' }
+          { key: 'A', en: 'full of hope', cn: '充满希望', correct: false, reason: 'hopeless 正好相反。' },
+          { key: 'B', en: 'curious but calm', cn: '好奇但平静', correct: false, reason: '句子说的是看不到出路。' },
+          { key: 'C', en: 'believing nothing will change', cn: '绝望，觉得不会再有转机', correct: true, reason: '十年没有回应，正是看不到任何可能。' }
         ],
-        analysis: '对着空气笑、满眼都是她，smitten 指被爱冲昏头、神魂颠倒。',
-        wrongFeedback: '她答成“生气”，可那人正对着窗户傻笑。',
-        afterCorrect: '温以宁低头喝汤，耳朵却红透了。'
+        analysis: 'hopeless 指对未来不抱任何期待，是情绪里最沉的一种。',
+        wrongFeedback: '你答成「充满希望」，他说：「那十年，我要是有一点希望就好了。」气血 -10',
+        afterCorrect: '她把他手里那杯凉透的水拿过来喝了一口。他说：「那杯是我的。」她说：「我知道。」'
       }
     ],
-    completeText: '周五的饭吃到一半，两个人同时接到电话。他们对视一眼，一起站起来，谁也没抱怨。'
+    completeText: '车里安静了一会儿，他忽然说：「温以宁，我们慢慢来，好不好。」她点头的时候，路灯正好换成绿灯。'
   },
   {
     id: 'pl_29',
@@ -1882,66 +1886,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 29 章 · 并肩的雨伞',
     novel: '暗恋你第十年',
     speaker: { name: '温以宁', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '进修通知下来，周叙要去外地一年。那天下着雨，两人挤在一把伞下，谁都没先开口。伞面很小，他的半边肩膀很快就湿了。',
+    storyText: '母亲出院那天，周叙请了半天假，跑上跑下办手续、搬东西。电梯口，母亲忽然停下来，认真地问：「小周，你今年多大了？」',
     questions: [
       {
-        plotDescription: '她原以为自己会崩溃，结果只是安静地接过伞。',
-        line: "The heartbreak I imagined never came. He just held the umbrella lower.",
-        lineCn: '我想象中的心碎没有来，他只是把伞压低了一点。',
-        prompt: "根据上下文，选出画线词汇 'Heartbreak' 最准确的意思。",
+        plotDescription: '她把住院押金单收好，对他说。',
+        line: "I'm grateful — you didn't have to do any of this.",
+        lineCn: '我很感激，这些你本来都不用做的。',
+        prompt: "根据上下文，选出画线词汇 'Grateful' 最准确的意思。",
         options: [
-          { key: 'A', en: 'deep emotional pain', cn: '心碎', correct: true, reason: '她原以为会受重创，heartbreak 指感情上的巨大痛苦。' },
-          { key: 'B', en: 'a pleasant surprise', cn: '惊喜', correct: false, reason: '她要面对分别，不是收到礼物。' },
-          { key: 'C', en: 'a misunderstanding', cn: '误会', correct: false, reason: '这里没有误会，只有离别。' }
+          { key: 'A', en: 'sorry for the trouble', cn: '为添麻烦而抱歉', correct: false, reason: '她是在道谢，不是在道歉。' },
+          { key: 'B', en: 'thankful', cn: '感激，真心谢谢', correct: true, reason: '「本来不用做」正是把对方的付出看在眼里。' },
+          { key: 'C', en: 'surprised by him', cn: '对他感到意外', correct: false, reason: '她并不意外，她只是想说谢谢。' }
         ],
-        analysis: '她原以为会受重创，heartbreak 指感情上的巨大痛苦、心碎。',
-        wrongFeedback: '她答成“惊喜”，可伞明明在往她这边偏。',
-        afterCorrect: '雨落在伞面上，她忽然觉得一年也没那么长。'
+        analysis: 'grateful 指因为别人为自己付出而心存感谢，比 thanks 更正式、更重。',
+        wrongFeedback: '你答成「为添麻烦而抱歉」，他把单子接过去：「我又不是外人。」气血 -10',
+        afterCorrect: '她说不出下一句。他把单子叠好放进包里，动作很轻。'
       },
       {
-        plotDescription: '他说一年很快，她低头看着地上的水洼。',
-        line: "Long-distance is hard, but I'd rather try than not have you.",
-        lineCn: '异地恋很难，但我宁愿试试，也不想没有你。',
-        prompt: "根据上下文，选出画线词汇 'Long-distance' 最准确的意思。",
+        plotDescription: '两个人在医院楼下的长椅上坐着，等车来。',
+        line: "Sitting here with you, I feel content.",
+        lineCn: '和你坐在这儿，我就很满足。',
+        prompt: "根据上下文，选出画线词汇 'Content' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a long phone call', cn: '长途电话', correct: false, reason: '他去外地一年，重点是两人分隔两地。' },
-          { key: 'B', en: 'a relationship across cities', cn: '异地恋', correct: true, reason: '两人要在不同城市一年，long-distance 指异地恋。' },
-          { key: 'C', en: 'a long trip', cn: '长途旅行', correct: false, reason: '这不是旅行，而是长期分隔。' }
+          { key: 'A', en: 'quietly satisfied', cn: '满足，心里踏实', correct: true, reason: '没有大事发生，只是坐着，正是 content 的安稳。' },
+          { key: 'B', en: 'extremely excited', cn: '极其兴奋', correct: false, reason: '坐着等车，谈不上兴奋。' },
+          { key: 'C', en: 'restless and impatient', cn: '坐立不安', correct: false, reason: '她说的是满足，不是着急。' }
         ],
-        analysis: '他去外地一年、两人分隔两地，long-distance 指异地恋。',
-        wrongFeedback: '她答成“长途电话”，周叙轻轻叹气。',
-        afterCorrect: '她把伞往他那边推了推：“那你要每天打给我。”'
+        analysis: 'content 指不需要更多东西的满足感，语气平静而踏实。',
+        wrongFeedback: '你答成「极其兴奋」，她侧头看你一眼，笑了。气血 -10',
+        afterCorrect: '她把头靠在椅背上，第一次觉得等人的时间并不难熬。'
       },
       {
-        plotDescription: '她忽然问他，会不会觉得她这样的人太难靠近。',
-        line: "I could never do polyamory. I can only look at one person.",
-        lineCn: '我做不来多边恋，我一次只能看一个人。',
-        prompt: "根据上下文，选出画线词汇 'Polyamory' 最准确的意思。",
+        plotDescription: '母亲坐在车上说，这半年是她这些年最踏实的日子。',
+        line: "For the first time in years, I feel fulfilled.",
+        lineCn: '这么多年，我第一次觉得充实。',
+        prompt: "根据上下文，选出画线词汇 'Fulfilled' 最准确的意思。",
         options: [
-          { key: 'A', en: 'having several partners', cn: '多边恋', correct: true, reason: '和“一次只能看一个人”对照，指同时与多人交往。' },
-          { key: 'B', en: 'being single', cn: '单身', correct: false, reason: '她说的是关系形式，不是单身。' },
-          { key: 'C', en: 'remarriage', cn: '复婚', correct: false, reason: '句中没有任何复婚的线索。' }
+          { key: 'A', en: 'tired and empty', cn: '又累又空', correct: false, reason: '「踏实」和「空」正相反。' },
+          { key: 'B', en: 'life feels complete', cn: '充实，觉得人生有着落', correct: true, reason: '第一次觉得踏实，正是被填满的感觉。' },
+          { key: 'C', en: 'bored with everything', cn: '对一切都没兴趣', correct: false, reason: '她是在说满足，不是厌倦。' }
         ],
-        analysis: '和“一次只能看一个人”对照，polyamory 指同时与多人交往的多边恋。',
-        wrongFeedback: '她答成“单身”，周叙摇头：“你听我后半句。”',
-        afterCorrect: '他说：“我也一样。”声音很轻，被雨盖住了一半。'
+        analysis: 'fulfilled 指因为生活有意义、有依靠而感到充实，比 happy 更深。',
+        wrongFeedback: '你答成「又累又空」，母亲在后座摇了摇头。气血 -10',
+        afterCorrect: '母亲接着说：「你要是有人照顾，我就更踏实了。」'
       },
       {
-        plotDescription: '她说起父母那场分开，自己为什么总想先退一步。',
-        line: "My parents' divorce taught me to leave before I get left.",
-        lineCn: '我父母的离婚教会我，在被丢下之前先走。',
-        prompt: "根据上下文，选出画线词汇 'Divorce' 最准确的意思。",
+        plotDescription: '母亲紧接着问：「那你打算什么时候娶她？」周叙一本正经地回答了日期。温以宁笑到蹲在地上。',
+        line: "She laughed until she was hysterical — the whole floor heard her.",
+        lineCn: '她笑到歇斯底里，整层楼都听见了。',
+        prompt: "根据上下文，选出画线词汇 'Hysterical' 最准确的意思。",
         options: [
-          { key: 'A', en: 'the legal end of a marriage', cn: '离婚', correct: true, reason: '她讲父母婚姻结束、自己因此怕被丢下。' },
-          { key: 'B', en: 'a wedding', cn: '婚礼', correct: false, reason: '婚礼是结合，和“被丢下”相反。' },
-          { key: 'C', en: 'moving away', cn: '搬家', correct: false, reason: '搬家不会直接教人“先走”。' }
+          { key: 'A', en: 'crying uncontrollably', cn: '控制不住地哭', correct: false, reason: '上下文是她笑到蹲下，不是哭。' },
+          { key: 'B', en: 'angry and shouting', cn: '生气地大喊', correct: false, reason: '她在笑，不是在发火。' },
+          { key: 'C', en: 'laughing wildly out of control', cn: '歇斯底里，笑到失控', correct: true, reason: '笑到蹲在地上、整层楼都听见，正是情绪失控。' }
         ],
-        analysis: '她讲父母婚姻结束、自己因此怕被丢下，divorce 指离婚。',
-        wrongFeedback: '她答成“婚礼”，话一出口自己都沉默了。',
-        afterCorrect: '周叙把伞柄塞进她手里：“这次你先拿着，我不走。”'
+        analysis: 'hysterical 指情绪强烈到无法控制，可以是狂笑，也可以是崩溃大哭，要看上下文。',
+        wrongFeedback: '你答成「控制不住地哭」，可她的眼泪是笑出来的。气血 -10',
+        afterCorrect: '母亲上车前握了握她的手：「这孩子不错。」她说：「妈，我们还没——」母亲说：「我知道。」'
       }
     ],
-    completeText: '雨停了，伞还举着。她忽然发现，自己已经把“一年”在心里排成了三百六十五天。'
+    completeText: '车开走以后，周叙还站在原地，耳朵是红的。她第一次觉得，把他介绍给谁，好像都不算难。'
   },
   {
     id: 'pl_30',
@@ -1949,66 +1953,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 30 章 · 第三幕落幕',
     novel: '暗恋你第十年',
     speaker: { name: '周叙', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '他走前最后一天，科室给他办欢送会。有人喝多了，说外科主任一走，急诊科要冷清一半。温以宁坐在角落，杯子里的饮料一口没动。',
+    storyText: '第三幕的最后一晚，他把所有事都说了：十年前她突然转学，是因为他母亲去学校找过她。他一直不知道，直到去年整理旧物，看见母亲留下的一封信。',
     questions: [
       {
-        plotDescription: '有人低声议论他升得快，是靠关系，还说听见了绯闻。',
-        line: "The rumor about an affair was fake. Someone just wanted his position.",
-        lineCn: '那个出轨传闻是假的，有人只是想要他的位置。',
-        prompt: "根据上下文，选出画线词汇 'Affair' 最准确的意思。",
+        plotDescription: '说到这里，他停下来，杯子在手里转了半圈。',
+        line: "I felt pure rage when I found out.",
+        lineCn: '知道真相的那一刻，我只觉得纯粹的暴怒。',
+        prompt: "根据上下文，选出画线词汇 'Rage' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a secret romantic relationship', cn: '绯闻、私情', correct: true, reason: '传闻指私生活不当，affair 在此指不正当的男女关系。' },
-          { key: 'B', en: 'a meeting', cn: '会议', correct: false, reason: '会议不会有“真假”传闻，也不涉及位置之争。' },
-          { key: 'C', en: 'a surgery', cn: '手术', correct: false, reason: '手术和“想要他的位置”没有关系。' }
+          { key: 'A', en: 'violent anger', cn: '暴怒，怒火冲天', correct: true, reason: '十年被瞒着，pure rage 说明怒到极处。' },
+          { key: 'B', en: 'mild annoyance', cn: '轻微的不快', correct: false, reason: '程度完全不对。' },
+          { key: 'C', en: 'fear of his mother', cn: '对母亲的恐惧', correct: false, reason: '句子说的是怒，不是怕。' }
         ],
-        analysis: '传闻指私生活不当，affair 在这种语境里指不正当的男女关系。',
-        wrongFeedback: '她答成“会议”，说这话的护士都笑了。',
-        afterCorrect: '温以宁把杯子放下，第一次当众替他说话：“他不是那种人。”'
+        analysis: 'rage 是强度极高的愤怒，常指压不住、会爆发的怒。',
+        wrongFeedback: '你答成「轻微的不快」，他把杯子放下，杯底磕出一声。气血 -10',
+        afterCorrect: '她说：「那封信，你还留着吗？」他说：「烧了。」'
       },
       {
-        plotDescription: '散场后，她帮他收拾东西，忽然说了句很轻的话。',
-        line: "I don't need grand romance. I just need you to come back.",
-        lineCn: '我不需要盛大的浪漫，我只需要你回来。',
-        prompt: "根据上下文，选出画线词汇 'Romance' 最准确的意思。",
+        plotDescription: '但怒过之后，剩下的东西更重。',
+        line: "Later it turned into sorrow — for both of us.",
+        lineCn: '后来那种情绪变成了悲伤，为我们两个人。',
+        prompt: "根据上下文，选出画线词汇 'Sorrow' 最准确的意思。",
         options: [
-          { key: 'A', en: 'romantic gestures and feeling', cn: '浪漫', correct: true, reason: '她把“盛大的浪漫”和“回来”对比，romance 指浪漫情调。' },
-          { key: 'B', en: 'a gift', cn: '礼物', correct: false, reason: '礼物只是浪漫的一种，不能概括整句。' },
-          { key: 'C', en: 'a promise', cn: '承诺', correct: false, reason: '她强调的是形式上的浪漫，不是承诺本身。' }
+          { key: 'A', en: 'relief', cn: '轻松', correct: false, reason: '他明确说「更重」，不是轻松。' },
+          { key: 'B', en: 'deep sadness', cn: '悲伤，深深的哀痛', correct: true, reason: '为两个人难过，正是深层的悲。' },
+          { key: 'C', en: 'excitement', cn: '激动', correct: false, reason: '这个语境不可能激动。' }
         ],
-        analysis: '她把“盛大的浪漫”和“回来”对比，romance 指浪漫的情调和举动。',
-        wrongFeedback: '她答成“礼物”，周叙看她：“比礼物重要。”',
-        afterCorrect: '他低声说：“那我把这一年，都攒着回来给你。”'
+        analysis: 'sorrow 比 sad 更沉、更久，常指为失去的东西而哀伤。',
+        wrongFeedback: '你答成「轻松」，他抬起头：「我一点都不轻松。」气血 -10',
+        afterCorrect: '他说：「那十年，我们都被人替着做了决定。」'
       },
       {
-        plotDescription: '同事羡慕地说，周主任这种人，喜欢谁都藏在行动里。',
-        line: "His devotion is in the details. He remembers what I forget.",
-        lineCn: '他的深情都在细节里，我忘的他都记得。',
-        prompt: "根据上下文，选出画线词汇 'Devotion' 最准确的意思。",
+        plotDescription: '可说完之后，他反而觉得身上轻了。',
+        line: "There was a strange euphoria after I finally told you.",
+        lineCn: '终于告诉你之后，我有一种奇怪的极度愉悦。',
+        prompt: "根据上下文，选出画线词汇 'Euphoria' 最准确的意思。",
         options: [
-          { key: 'A', en: 'deep and lasting dedication', cn: '深情、奉献', correct: true, reason: '他长期默默记得她的小事，devotion 指持久的投入。' },
-          { key: 'B', en: 'doubt', cn: '怀疑', correct: false, reason: '记住她的药名是投入，不是怀疑。' },
-          { key: 'C', en: 'distance', cn: '距离', correct: false, reason: '细节里的照顾恰恰是在靠近。' }
+          { key: 'A', en: 'guilt for talking too much', cn: '说太多之后的内疚', correct: false, reason: '他说的是轻了，不是后悔。' },
+          { key: 'B', en: 'confusion about the past', cn: '对过去的困惑', correct: false, reason: '说开之后反而清楚，不是困惑。' },
+          { key: 'C', en: 'intense happiness', cn: '极度愉悦，兴奋到飘起来', correct: true, reason: 'strange 加上「终于」，正是压久了之后的释放。' }
         ],
-        analysis: '他长期默默记得她的小事，devotion 指持久的投入与深情。',
-        wrongFeedback: '她答成“怀疑”，可他把她的药名都记住了。',
-        afterCorrect: '她低头笑了：“你连我不吃香菜都记得。”'
+        analysis: 'euphoria 指异常强烈、几乎不真实的幸福感，常出现在压力释放之后。',
+        wrongFeedback: '你答成「内疚」，他说：「我十年没这么轻松过。」气血 -10',
+        afterCorrect: '她把手伸过去，和他十指扣在一起：「那现在开始，我们自己决定。」'
       },
       {
-        plotDescription: '有人问她怕不怕一年太长，她想了想。',
-        line: "Passion fades. What's left is whether you still choose each other.",
-        lineCn: '激情会退，剩下的是你们还选不选彼此。',
-        prompt: "根据上下文，选出画线词汇 'Passion' 最准确的意思。",
+        plotDescription: '他承认，中间有几年，他什么都不在乎。',
+        line: "For a while I felt nothing but apathy.",
+        lineCn: '有一段时间，我心里只有冷漠，什么都不在乎。',
+        prompt: "根据上下文，选出画线词汇 'Apathy' 最准确的意思。",
         options: [
-          { key: 'A', en: 'intense romantic feeling', cn: '激情', correct: true, reason: '和“还选不选彼此”对照，passion 指热烈的感情冲动。' },
-          { key: 'B', en: 'patience', cn: '耐心', correct: false, reason: '她说的是热度和选择，不是忍耐。' },
-          { key: 'C', en: 'memory', cn: '记忆', correct: false, reason: '记忆不会“退去”后被选择取代。' }
+          { key: 'A', en: 'no interest or feeling at all', cn: '冷漠，彻底无感', correct: true, reason: 'nothing but 强调只剩这一种状态。' },
+          { key: 'B', en: 'deep love for you', cn: '对你深深的爱', correct: false, reason: '句子说的是什么都不在乎。' },
+          { key: 'C', en: 'strong anger', cn: '强烈的愤怒', correct: false, reason: '他说的是无感，不是怒。' }
         ],
-        analysis: '和“还选不选彼此”对照，passion 指热烈的感情冲动，会随时间退去。',
-        wrongFeedback: '她答成“耐心”，周叙摇头：“不是那个。”',
-        afterCorrect: '温以宁看着他，慢慢说：“那我选。”'
+        analysis: 'apathy 指对什么都提不起兴趣、没有情绪反应的状态，比「冷淡」更彻底。',
+        wrongFeedback: '你答成「深深的爱」，他低下头：「那几年，我连自己都不在乎。」气血 -10',
+        afterCorrect: '话说到这里，第三幕结束了。温以宁看着他，忽然开口：「周叙，那天你妈妈跟我说的最后一句话，我要不要告诉你？」'
       }
     ],
-    completeText: '第三幕结束在机场。她站在安检口外，没哭，也没挥手，只在他回头时，轻轻点了下头。'
+    completeText: '他愣住。窗外天快亮了，第四幕，从这里开始。'
   },
   {
     id: 'pl_31',
@@ -2016,66 +2020,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 31 章 · 靠近一点点',
     novel: '暗恋你第十年',
     speaker: { name: '温以宁', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '周叙走后，科室里有人传他是靠关系调走。温以宁第一次没有忍，直接在办公室把话问清楚。她发现，替一个人说话，比想象中容易。',
+    storyText: '第四幕开场，温以宁开始注意到一些很小的事：他记得她咖啡不加糖，知道她怕冷，会把走廊里的窗关上。她一边提醒自己别多想，一边数着他今天看了她几眼。',
     questions: [
       {
-        plotDescription: '她把门关上，走到那个同事桌前，声音很稳。',
-        line: "I need to confront her about what she said. I'm not letting it slide.",
-        lineCn: '我得去跟她对质，不能就这么算了。',
-        prompt: "根据上下文，选出画线词汇 'Confront' 最准确的意思。",
+        plotDescription: '闺蜜在电话里问她，到底怎么想的。',
+        line: "I think I have a crush on him — and I've had it for ten years.",
+        lineCn: '我好像是暗恋他，而且已经十年了。',
+        prompt: "根据上下文，选出画线词汇 'Crush' 最准确的意思。",
         options: [
-          { key: 'A', en: 'pretend not to hear', cn: '假装没听见', correct: false, reason: '她已经走到桌前，还要“不让它过去”，不可能装没听见。' },
-          { key: 'B', en: 'face and question directly', cn: '当面对质', correct: true, reason: '关上门、当面问清楚，confront 指直接面对并质问。' },
-          { key: 'C', en: 'apologize', cn: '道歉', correct: false, reason: '她是去追问造谣的人，没有道歉的理由。' }
+          { key: 'A', en: 'a strong liking for someone', cn: '暗恋，对某人心动', correct: true, reason: '「十年」是时间的证据，说的正是长期的心动。' },
+          { key: 'B', en: 'a sudden anger', cn: '突然的愤怒', correct: false, reason: '她说的是喜欢，不是生气。' },
+          { key: 'C', en: 'a small injury', cn: '小伤', correct: false, reason: 'crush 作名词还有「压伤」的意思，但这里说的是人。' }
         ],
-        analysis: '关上门、当面把话问清楚，confront 指正面面对某人、直接质问。',
-        wrongFeedback: '她答成“假装没听见”，可那口气怎么也咽不下去。',
-        afterCorrect: '她站在办公室门口，声音不大，但每个字都很清楚。'
+        analysis: 'crush 指对某人心动、暗恋，常用 have a crush on somebody。',
+        wrongFeedback: '你答成「小伤」，闺蜜在电话那头笑：「这伤还挺久的。」气血 -10',
+        afterCorrect: '闺蜜说：「十年？你怎么不去考个证。」她把脸埋进枕头里。'
       },
       {
-        plotDescription: '对方不肯认，还笑着说只是玩笑，她把手里的记录本合上。',
-        line: "If she keeps doing this, I'll cut ties with her completely.",
-        lineCn: '她再这样，我就跟她彻底断交。',
-        prompt: "根据上下文，选出画线词汇 'Cut ties' 最准确的意思。",
+        plotDescription: '有一次他连着七天没回消息，她以为自己被删了。',
+        line: "He ghosted me for a week — then showed up with soup.",
+        lineCn: '他消失了一周，然后拎着汤出现了。',
+        prompt: "根据上下文，选出画线词汇 'Ghost' 最准确的意思。",
         options: [
-          { key: 'A', en: 'work together', cn: '合作', correct: false, reason: '对方一再造谣，她不可能选择继续合作。' },
-          { key: 'B', en: 'buy her a meal', cn: '请她吃饭', correct: false, reason: '这既不合语境，也解决不了造谣的问题。' },
-          { key: 'C', en: 'end the relationship', cn: '断绝关系', correct: true, reason: '她说不愿再往来，cut ties 指彻底切断关系。' }
+          { key: 'A', en: 'called every single day', cn: '每天都打电话', correct: false, reason: '句子说的是没回消息，正好相反。' },
+          { key: 'B', en: 'disappeared without a word', cn: '玩消失，一声不吭地断联', correct: true, reason: '七天不回消息、她以为被删了，正是 ghost。' },
+          { key: 'C', en: 'sent a gift', cn: '送了礼物', correct: false, reason: '礼物是他出现时带的汤，不是消失的方式。' }
         ],
-        analysis: '对反复造谣的人不再往来，cut ties 指切断关系、断绝联系。',
-        wrongFeedback: '她答成“合作”，同事们都愣住了。',
-        afterCorrect: '话说完，办公室里安静了几秒，然后有人先低了头。'
+        analysis: 'ghost 在感情语境里指突然断联、不回消息，像人间蒸发。',
+        wrongFeedback: '你答成「每天都打电话」，可那七天她的手机一次都没响。气血 -10',
+        afterCorrect: '她问：「你去哪了？」他说：「我父亲住院，手机丢了。」她一下说不出话。'
       },
       {
-        plotDescription: '第二天排班出了错，那位同事却把责任推到了周叙身上。',
-        line: "I messed up the schedule, and she blamed you for it.",
-        lineCn: '我把排班弄错了，她却把责任推给你。',
-        prompt: "根据上下文，选出画线词汇 'Mess up' 最准确的意思。",
+        plotDescription: '她把他的问题一条一条列给闺蜜听。',
+        line: "Working eighty hours a week is a red flag, isn't it?",
+        lineCn: '一周工作八十个小时，这算危险信号吧？',
+        prompt: "根据上下文，选出画线词汇 'Red flag' 最准确的意思。",
         options: [
-          { key: 'A', en: 'do something wrong', cn: '搞砸、弄错', correct: true, reason: '排班出了错、还被人甩锅，mess up 指把事情弄糟。' },
-          { key: 'B', en: 'organize perfectly', cn: '整理得很好', correct: false, reason: '后面已经说“出了错”，和整理得好相反。' },
-          { key: 'C', en: 'save a file', cn: '保存文件', correct: false, reason: '这里说的是排班错误，不是文件操作。' }
+          { key: 'A', en: 'a warning sign', cn: '危险信号，值得警惕的迹象', correct: true, reason: '她在列「问题」，问的正是这段关系里该不该警惕。' },
+          { key: 'B', en: 'a good quality', cn: '一个优点', correct: false, reason: '用「危险」来形容，显然不是优点。' },
+          { key: 'C', en: 'a red uniform', cn: '红色的制服', correct: false, reason: 'red flag 在这里是比喻，不是衣服。' }
         ],
-        analysis: '排班出错、还被人甩锅，mess up 指把事情弄糟、做错。',
-        wrongFeedback: '她答成“整理好”，对方一脸茫然。',
-        afterCorrect: '温以宁把排班表拍在桌上：“那我们把时间线捋一遍。”'
+        analysis: 'red flag 原指红旗，口语里指关系或处境里值得警惕的信号。',
+        wrongFeedback: '你答成「一个优点」，闺蜜说：「你要是这么想，我就不劝了。」气血 -10',
+        afterCorrect: '闺蜜补了一句：「那他对你十年没变心，算什么？」'
       },
       {
-        plotDescription: '她拉住还想再忍的实习生，让她现在就去解释。',
-        line: "Don't screw up your chance to explain. Talk to her now.",
-        lineCn: '别把解释的机会弄没了，现在就去找她说。',
-        prompt: "根据上下文，选出画线词汇 'Screw up' 最准确的意思。",
+        plotDescription: '闺蜜最后问得直白。',
+        line: "So you two finally hooked up after ten years?",
+        lineCn: '所以你们俩十年了，终于在一起了？',
+        prompt: "根据上下文，选出画线词汇 'Hook up' 最准确的意思。",
         options: [
-          { key: 'A', en: 'cherish', cn: '珍惜', correct: false, reason: '“别”后面接珍惜，语义别扭，也不是原词意思。' },
-          { key: 'B', en: 'ruin or spoil', cn: '弄糟、搞坏', correct: true, reason: '机会一旦错过就没了，screw up 指把事情搞坏。' },
-          { key: 'C', en: 'give up', cn: '放弃', correct: false, reason: '她是在催对方去说，不是让人放弃。' }
+          { key: 'A', en: 'broken up', cn: '分手了', correct: false, reason: '句子说「终于」，是开始，不是结束。' },
+          { key: 'B', en: 'hung up the phone', cn: '挂了电话', correct: false, reason: 'hook up 和挂电话没有关系。' },
+          { key: 'C', en: 'got together', cn: '勾搭上了，在一起了', correct: true, reason: 'finally 加上 ten years，说的正是终于走到一起。' }
         ],
-        analysis: '机会一旦错过就补不回来，screw up 指把事情弄糟、搞坏。',
-        wrongFeedback: '她答成“珍惜”，句子读起来别扭，自己先皱了眉。',
-        afterCorrect: '她深吸一口气，敲了门。'
+        analysis: 'hook up 口语里指两个人走到一起，可以是暧昧、约会，也可以是更进一步。',
+        wrongFeedback: '你答成「挂了电话」，闺蜜说：「我问的可不是这个。」气血 -10',
+        afterCorrect: '她说：「没有。」闺蜜安静了三秒：「那你打算等到第几个十年？」'
       }
     ],
-    completeText: '那天之后，科室里再没人拿周叙的事开玩笑。温以宁回到座位，才发现手心全是汗。'
+    completeText: '挂了电话，她看见周叙发来一张照片：走廊窗户关好了，配文「今天降温」。她回了两个字：知道。'
   },
   {
     id: 'pl_32',
@@ -2083,66 +2087,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 32 章 · 见家长',
     novel: '暗恋你第十年',
     speaker: { name: '周叙', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '春节，周叙飞回来。温以宁带他回家吃饭，温母在厨房忙了一下午，饭桌上却忽然安静。周叙放下筷子，先开了口。',
+    storyText: '他带她回家吃饭。老房子，圆桌，表姐一家也在。菜刚上齐，话题就从「你们医院忙不忙」拐到了十年前的旧账。',
     questions: [
       {
-        plotDescription: '小姨笑着把椅子往前挪，非要听他们怎么在一起的。',
-        line: "Come on, spill the tea. How did you two end up together?",
-        lineCn: '快说快说，吃瓜了，你们俩怎么在一起的？',
-        prompt: "根据上下文，选出画线词汇 'Spill the tea' 最准确的意思。",
+        plotDescription: '表姐一说起当年，桌上就安静了。',
+        line: "There's always drama at my family dinners.",
+        lineCn: '我家每次聚餐都要上演一出抓马。',
+        prompt: "根据上下文，选出画线词汇 'Drama' 最准确的意思。",
         options: [
-          { key: 'A', en: 'pour hot tea', cn: '倒热茶', correct: false, reason: '小姨问的是恋爱经过，不是让人添茶。' },
-          { key: 'B', en: 'share the gossip', cn: '爆料、说八卦', correct: true, reason: '一桌人等着听故事，spill the tea 指把八卦说出来。' },
-          { key: 'C', en: 'keep quiet', cn: '保持沉默', correct: false, reason: '她正催着人讲，和沉默相反。' }
+          { key: 'A', en: 'dramatic conflict and scenes', cn: '抓马，戏剧化的冲突场面', correct: true, reason: '一说旧账桌上就安静，正是家里那套戏码。' },
+          { key: 'B', en: 'a quiet and peaceful meal', cn: '安静平和的一顿饭', correct: false, reason: '和「always」加旧账的语境相反。' },
+          { key: 'C', en: 'a formal ceremony', cn: '正式的仪式', correct: false, reason: '这是家常饭，不是仪式。' }
         ],
-        analysis: '亲戚笑着追问恋爱经过，spill the tea 指把八卦、内情说出来。',
-        wrongFeedback: '他答成“倒茶”，一桌人笑成一片。',
-        afterCorrect: '周叙看了温以宁一眼，慢慢说：“是我先喜欢她的。”'
+        analysis: 'drama 在口语里指小题大做、充满冲突的场面，常带吐槽意味。',
+        wrongFeedback: '你答成「安静平和的一顿饭」，表姐正把筷子往桌上一放。气血 -10',
+        afterCorrect: '他给她夹了一筷子菜，低声说：「吃你的，别听。」'
       },
       {
-        plotDescription: '温母半信半疑，他放下杯子，语气认真。',
-        line: "I swear to god I didn't plan this. It just happened.",
-        lineCn: '我对天发誓，我真没计划，就是自然而然。',
-        prompt: "根据上下文，选出画线词汇 'Swear to god' 最准确的意思。",
+        plotDescription: '表姐翻出他小时候的事，笑得很开心。',
+        line: "He was so clingy as a kid — he followed me everywhere.",
+        lineCn: '他小时候特别黏人，我走哪他跟哪。',
+        prompt: "根据上下文，选出画线词汇 'Clingy' 最准确的意思。",
         options: [
-          { key: 'A', en: 'promise solemnly that it is true', cn: '对天发誓、强调是真的', correct: true, reason: '他急着解释不是刻意安排，用这句话强调没撒谎。' },
-          { key: 'B', en: 'tell a lie', cn: '撒谎', correct: false, reason: '他正是在证明自己没撒谎，方向相反。' },
-          { key: 'C', en: 'pray', cn: '祈祷', correct: false, reason: '饭桌上是在解释，不是在祈祷。' }
+          { key: 'A', en: 'independent', cn: '很独立', correct: false, reason: '走哪跟哪，显然不独立。' },
+          { key: 'B', en: 'too attached', cn: '黏人，过分依赖', correct: true, reason: '跟着人到处走，正是黏人。' },
+          { key: 'C', en: 'shy and silent', cn: '害羞又沉默', correct: false, reason: '他是一路跟着，不是躲着。' }
         ],
-        analysis: '他急着解释不是刻意安排，swear to god 用来强调自己说的是真话。',
-        wrongFeedback: '他答成“撒谎”，温母的筷子停在半空。',
-        afterCorrect: '温以宁低头扒饭，耳朵却红了。'
+        analysis: 'clingy 形容人过分依赖、总要贴着别人，常带一点亲昵的抱怨。',
+        wrongFeedback: '你答成「很独立」，表姐笑得更大声了。气血 -10',
+        afterCorrect: '温以宁侧头看他，他耳朵红了，把碗里的汤喝得一干二净。'
       },
       {
-        plotDescription: '温母说了几句不太好听的话，他没有反驳，只把碗放下。',
-        line: "Whatever. Believe what you want. I know what I feel.",
-        lineCn: '随便吧，你爱信不信，我知道自己的感觉。',
-        prompt: "根据上下文，选出画线词汇 'Whatever' 最准确的意思。",
+        plotDescription: '说到他父亲，温以宁替他接了一句。',
+        line: "He's learned to set boundaries with his father.",
+        lineCn: '他已经学会和父亲划清界限了。',
+        prompt: "根据上下文，选出画线词汇 'Boundaries' 最准确的意思。",
         options: [
-          { key: 'A', en: 'no matter what', cn: '无论什么', correct: false, reason: '这里不是连接从句，而是独立的口气词。' },
-          { key: 'B', en: 'very angry', cn: '非常生气', correct: false, reason: '他的语气是退让，不是发火。' },
-          { key: 'C', en: 'fine, forget it', cn: '随便吧、算了', correct: true, reason: '他不再争辩、把话放下，whatever 表示“随便、算了”。' }
+          { key: 'A', en: 'physical walls', cn: '实体的墙', correct: false, reason: '这里说的是人和人之间的相处方式，不是墙。' },
+          { key: 'B', en: 'house rules', cn: '家里的规矩', correct: false, reason: 'boundaries 是他自己划的线，不是家规。' },
+          { key: 'C', en: 'limits on what he accepts', cn: '边界感，能接受什么的底线', correct: true, reason: '和父亲「划清」，正是设置相处的底线。' }
         ],
-        analysis: '他懒得再争辩，whatever 在这里表示“随便、算了”的退让语气。',
-        wrongFeedback: '他答成“无论什么”，句子完全不通。',
-        afterCorrect: '温母看了他很久，忽然叹了口气：“吃饭吧。”'
+        analysis: 'boundaries 在人际关系里指情绪与责任的界线，也就是常说的「边界感」。',
+        wrongFeedback: '你答成「家里的规矩」，桌上没人接话，她自己把话补完了。气血 -10',
+        afterCorrect: '表姐愣了一下，然后说：「这倒是，他以前一句都不敢回。」'
       },
       {
-        plotDescription: '温以宁听说他专程飞回来，筷子都停在半空。',
-        line: "Seriously? You flew back just for one dinner?",
-        lineCn: '你认真的吗？你飞回来就为了一顿饭？',
-        prompt: "根据上下文，选出画线词汇 'Seriously?' 最准确的意思。",
+        plotDescription: '饭吃到一半，他的手机响了。他看了一眼，站起来拿外套。',
+        line: "Sorry, I have to bail — there's an emergency.",
+        lineCn: '抱歉，我得先撤了，有急诊。',
+        prompt: "根据上下文，选出画线词汇 'Bail' 最准确的意思。",
         options: [
-          { key: 'A', en: 'in a serious manner', cn: '严肃地', correct: false, reason: '这里是独立的反问，不是修饰动作的副词。' },
-          { key: 'B', en: 'are you kidding me?', cn: '你认真的吗', correct: true, reason: '她惊讶他专程飞回，seriously 是难以置信的反问。' },
-          { key: 'C', en: 'very good', cn: '真的很好', correct: false, reason: '她是在吃惊，不是在夸好。' }
+          { key: 'A', en: 'pay the bill', cn: '买单', correct: false, reason: '他拿的是外套，不是钱包。' },
+          { key: 'B', en: 'leave suddenly', cn: '临时撤了，先走一步', correct: true, reason: '急诊电话一来就得走，正是临时离场。' },
+          { key: 'C', en: 'stay longer', cn: '多待一会儿', correct: false, reason: '正好相反。' }
         ],
-        analysis: '她惊讶他专程飞回，seriously 在这里是难以置信的反问“你认真的吗”。',
-        wrongFeedback: '他答成“严肃地”，温以宁忍不住笑。',
-        afterCorrect: '周叙给她夹了块鱼：“不止一顿。”'
+        analysis: 'bail 口语里指临时取消、抽身离开，也可以指「放人鸽子」。',
+        wrongFeedback: '你答成「买单」，他已经把外套穿上了：「下次我请。」气血 -10',
+        afterCorrect: '她跟着站起来：「我跟你一起。」表姐在后面喊：「汤还没喝呢！」'
       }
     ],
-    completeText: '那顿饭吃到很晚。温母送他到门口，说了句“下次别飞了”，语气却软了。'
+    completeText: '车上他一直在道歉。她说：「你不用道歉，你刚才在饭桌上替我说话的时候，我挺高兴的。」'
   },
   {
     id: 'pl_33',
@@ -2150,66 +2154,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 33 章 · 父亲的沉默',
     novel: '暗恋你第十年',
     speaker: { name: '温以宁', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '父亲突然出现在医院门口，拎着一袋橘子。温以宁站在原地，十年没叫出口的那个称呼，卡在喉咙里。',
+    storyText: '他父亲在住院部楼下坐了一整晚。第二天早上温以宁下楼买早餐，看见他还坐在那儿，脚边是一袋没拆的水果。',
     questions: [
       {
-        plotDescription: '他站在风里，先把橘子往前递了递。',
-        line: "My bad. I should have called before coming.",
-        lineCn: '我的错，我该来之前先打个电话。',
-        prompt: "根据上下文，选出画线词汇 'My bad' 最准确的意思。",
+        plotDescription: '周叙的朋友劝他别再瞒着她。',
+        line: "There's a bro code about this, but I'm telling you anyway.",
+        lineCn: '这事儿本来有兄弟法则，但我还是告诉你。',
+        prompt: "根据上下文，选出画线词汇 'Bro code' 最准确的意思。",
         options: [
-          { key: 'A', en: 'my goodness', cn: '我的天', correct: false, reason: '这是感叹，不是认错，后面还接了具体该做的事。' },
-          { key: 'B', en: 'my business', cn: '我的事', correct: false, reason: '句子里是在承担责任，不是强调私事。' },
-          { key: 'C', en: 'my fault, sorry', cn: '我的锅、我的错', correct: true, reason: '他意识到自己来得唐突，my bad 是口语里的认错。' }
+          { key: 'A', en: 'a law about brothers', cn: '关于兄弟的法律', correct: false, reason: '这不是法律条文，是朋友之间默认的规矩。' },
+          { key: 'B', en: 'unwritten rules among male friends', cn: '兄弟法则，男性朋友间的默契规矩', correct: true, reason: '「但我还是告诉你」说明他破了那条默认规矩。' },
+          { key: 'C', en: 'a hospital rule', cn: '医院的规定', correct: false, reason: 'bro code 和朋友有关，和医院无关。' }
         ],
-        analysis: '他意识到自己来得唐突，my bad 是口语里轻描淡写的认错。',
-        wrongFeedback: '她答成“我的天”，父亲的表情更僵了。',
-        afterCorrect: '她接过橘子，袋子很沉，像是装了别的话。'
+        analysis: 'bro code 指男性朋友之间不成文的规矩，比如不抢兄弟的对象、不替兄弟瞒大事。',
+        wrongFeedback: '你答成「关于兄弟的法律」，他把手机收起来：「那我白说了。」气血 -10',
+        afterCorrect: '她听完只说了句「谢谢」，然后转身往楼下走。'
       },
       {
-        plotDescription: '两人在花坛边坐下，他看着地面，忽然提起从前。',
-        line: "Don't blame your mother for everything. Some of it was mine.",
-        lineCn: '别把一切都怪在你妈身上，有些是我的错。',
-        prompt: "根据上下文，选出画线词汇 'Blame' 最准确的意思。",
+        plotDescription: '护士站的人问她，那位老先生是谁。',
+        line: "Dealing with in-laws is harder than surgery.",
+        lineCn: '应付公婆岳父母比做手术还难。',
+        prompt: "根据上下文，选出画线词汇 'In-laws' 最准确的意思。",
         options: [
-          { key: 'A', en: 'hold responsible', cn: '责怪、归咎', correct: true, reason: '他在承认自己的责任，blame 指把过错归到别人身上。' },
-          { key: 'B', en: 'praise', cn: '表扬', correct: false, reason: '“有些是我的错”明显是在认错，不是表扬。' },
-          { key: 'C', en: 'take care of', cn: '照顾', correct: false, reason: '照顾母亲和分担过错是两回事。' }
+          { key: 'A', en: 'your partner family', cn: '公婆、岳父母等姻亲', correct: true, reason: '楼下那位是周叙的父亲，正是要面对的姻亲。' },
+          { key: 'B', en: 'your own children', cn: '自己的孩子', correct: false, reason: '孩子不是 in-laws。' },
+          { key: 'C', en: 'work colleagues', cn: '同事', correct: false, reason: '句子拿它和手术对比，说的是家里人。' }
         ],
-        analysis: '他在承认自己的责任，blame 指把过错归到别人身上、责怪。',
-        wrongFeedback: '她答成“表扬”，父亲沉默了很久。',
-        afterCorrect: '温以宁看着他的手，那双手已经有很多皱纹。'
+        analysis: 'in-laws 指因婚姻而来的亲属，包括公婆、岳父母、姻亲。',
+        wrongFeedback: '你答成「自己的孩子」，护士笑：「你还没孩子呢。」气血 -10',
+        afterCorrect: '她在楼梯口停了一下，还是走过去，在他旁边坐下。'
       },
       {
-        plotDescription: '他说起她小时候，家里的声音总是很大。',
-        line: "We used to argue every night. You probably heard all of it.",
-        lineCn: '我们以前每晚都吵，你大概全听见了。',
-        prompt: "根据上下文，选出画线词汇 'Argue' 最准确的意思。",
+        plotDescription: '老人先开的口，说当年给儿子安排过饭局。',
+        line: "I set him up on a blind date once. He didn't go.",
+        lineCn: '我给他安排过一次相亲，他没去。',
+        prompt: "根据上下文，选出画线词汇 'Blind date' 最准确的意思。",
         options: [
-          { key: 'A', en: 'chat happily', cn: '愉快聊天', correct: false, reason: '“声音总是很大”和“每晚”说明不是愉快聊天。' },
-          { key: 'B', en: 'quarrel', cn: '争吵', correct: true, reason: '每晚的冲突、孩子都听见，argue 指反复争吵。' },
-          { key: 'C', en: 'cook', cn: '做饭', correct: false, reason: '做饭不会让孩子“全听见”还留下阴影。' }
+          { key: 'A', en: 'a date arranged by others', cn: '相亲，别人安排的见面', correct: true, reason: '「我安排的」加上「他没去」，正是相亲。' },
+          { key: 'B', en: 'a date with a blind person', cn: '和盲人约会', correct: false, reason: 'blind 在这里是「事先不知道对方是谁」，不是看不见。' },
+          { key: 'C', en: 'a group dinner', cn: '集体聚餐', correct: false, reason: 'blind date 是两个人被安排的见面。' }
         ],
-        analysis: '父母婚姻里的冲突反复发生，argue 指争吵、争执。',
-        wrongFeedback: '她答成“聊天”，可她的童年没有那种热闹。',
-        afterCorrect: '她低声说：“我戴着耳机，也听得见。”'
+        analysis: 'blind date 指由别人撮合、双方事先不了解的相亲约会。',
+        wrongFeedback: '你答成「和盲人约会」，老人愣了一下，没再往下说。气血 -10',
+        afterCorrect: '她问：「他为什么不去？」老人说：「他说他在等人。」'
       },
       {
-        plotDescription: '他停了很久，才把最难的那句说出口。',
-        line: "I'm sorry you heard me yell. I was not a good father.",
-        lineCn: '对不起让你听见我大喊大叫，我不是个好父亲。',
-        prompt: "根据上下文，选出画线词汇 'Yell' 最准确的意思。",
+        plotDescription: '老人忽然说了一句让她心里一沉的话。',
+        line: "His blind spot is that he thinks he doesn't deserve anything good.",
+        lineCn: '他的盲区在于，他觉得自己不配得到任何好东西。',
+        prompt: "根据上下文，选出画线词汇 'Blind spot' 最准确的意思。",
         options: [
-          { key: 'A', en: 'sing', cn: '唱歌', correct: false, reason: '“不是个好父亲”说明那声音是伤人的，不是唱歌。' },
-          { key: 'B', en: 'apologize', cn: '道歉', correct: false, reason: 'yell 是发出声音的动作，道歉是后面的内容。' },
-          { key: 'C', en: 'shout loudly', cn: '大喊大叫', correct: true, reason: '他回忆自己发脾气的方式，yell 指大声吼叫。' }
+          { key: 'A', en: 'an eye problem', cn: '眼睛的毛病', correct: false, reason: '这里说的是他看不见自己的问题，不是视力。' },
+          { key: 'B', en: 'a place with no light', cn: '没有光的地方', correct: false, reason: 'blind spot 这里是比喻。' },
+          { key: 'C', en: 'something you can not see about yourself', cn: '盲区，自己看不见的认知死角', correct: true, reason: '「他觉得自己不配」正是他自己看不见的那部分。' }
         ],
-        analysis: '他回忆自己发脾气的方式，yell 指大声吼叫、喊叫。',
-        wrongFeedback: '她答成“唱歌”，眼眶却先红了。',
-        afterCorrect: '她没说话，只把橘子分了一半递回去。'
+        analysis: 'blind spot 原指视野里看不见的区域，引申为一个人意识不到的自身问题。',
+        wrongFeedback: '你答成「眼睛的毛病」，老人摇了摇头：「他眼睛好得很。」气血 -10',
+        afterCorrect: '她站起来，把那袋水果拎起来：「叔叔，上去吧，他在楼上。」'
       }
     ],
-    completeText: '父亲走的时候，背影比记忆里矮。她站在门口，第一次没有立刻转身。'
+    completeText: '老人跟她上了楼。走到病房门口，他停下来，说了句「我不太会说话」。她说：「他也不会。」'
   },
   {
     id: 'pl_34',
@@ -2217,66 +2221,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 34 章 · 一桌家常菜',
     novel: '暗恋你第十年',
     speaker: { name: '周叙', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '元宵节，温以宁把父母都请来了。桌上四菜一汤，谁都没提过去。周叙坐在她旁边，替她把鱼刺挑干净。',
+    storyText: '老同学组局，桌上八个人。有个叫陈默的从坐下就开始讲周叙的糗事，讲到最后，连服务员都听出不对味了。',
     questions: [
       {
-        plotDescription: '父亲说起当年的事，一口咬定自己没做错。',
-        line: "He denied everything, but his hands were shaking.",
-        lineCn: '他什么都否认，可手一直在抖。',
-        prompt: "根据上下文，选出画线词汇 'Deny' 最准确的意思。",
+        plotDescription: '温以宁在桌下碰了碰他的手。',
+        line: "That guy is a toxic friend — he only calls when he needs something.",
+        lineCn: '那人是那种有毒的朋友，只有需要你的时候才打电话。',
+        prompt: "根据上下文，选出画线词汇 'Toxic friend' 最准确的意思。",
         options: [
-          { key: 'A', en: 'refuse to admit', cn: '否认', correct: true, reason: '嘴上不承认、身体露了馅，deny 指否认事实。' },
-          { key: 'B', en: 'admit', cn: '承认', correct: false, reason: '后半句用“可手在抖”转折，说明他并没有承认。' },
-          { key: 'C', en: 'agree', cn: '同意', correct: false, reason: '同意和“否认一切”正好相反。' }
+          { key: 'A', en: 'someone who harms you', cn: '有毒的朋友，只会消耗你', correct: true, reason: '当面贬低、只在有求时出现，正是消耗型的朋友。' },
+          { key: 'B', en: 'a friend who cooks for you', cn: '会给你做饭的朋友', correct: false, reason: 'toxin 和做饭没关系。' },
+          { key: 'C', en: 'a friend who is sick', cn: '生病的朋友', correct: false, reason: 'toxic 是比喻，不是真的生病。' }
         ],
-        analysis: '嘴上不承认、身体却露了馅，deny 指否认事实、拒绝承认。',
-        wrongFeedback: '他答成“承认”，温以宁看了他一眼。',
-        afterCorrect: '周叙没接话，只把汤往她父亲那边推了推。'
+        analysis: 'toxic friend 指长期贬低你、索取你，让你越来越糟的朋友。',
+        wrongFeedback: '你答成「会给你做饭的朋友」，她把手收了回去。气血 -10',
+        afterCorrect: '他放下筷子，笑着对陈默说：「这顿我请，你下次别叫我了。」'
       },
       {
-        plotDescription: '饭吃到一半，父亲忽然站起来，端着杯子。',
-        line: "He finally apologized. It only took twenty years.",
-        lineCn: '他终于道歉了，只用了二十年。',
-        prompt: "根据上下文，选出画线词汇 'Apologize' 最准确的意思。",
+        plotDescription: '散场后两个人走在路上，他忽然问了一句。',
+        line: "Is this a date, or are we just two doctors eating noodles?",
+        lineCn: '这算约会，还是两个医生在吃面？',
+        prompt: "根据上下文，选出画线词汇 'Date' 最准确的意思。",
         options: [
-          { key: 'A', en: 'complain', cn: '抱怨', correct: false, reason: '他端着杯子站起来，不是要抱怨。' },
-          { key: 'B', en: 'say sorry', cn: '道歉', correct: true, reason: '迟到二十年的那句“对不起”，apologize 指为过错道歉。' },
-          { key: 'C', en: 'explain', cn: '解释', correct: false, reason: '“只用了二十年”指向的是一句迟来的道歉。' }
+          { key: 'A', en: 'a calendar day', cn: '日历上的日期', correct: false, reason: '他在问这顿饭的性质，不是问几号。' },
+          { key: 'B', en: 'a romantic outing', cn: '约会，两人的浪漫出行', correct: true, reason: '「还是两个医生在吃面」正是在区分约会和普通吃饭。' },
+          { key: 'C', en: 'a work meeting', cn: '工作会议', correct: false, reason: '他恰恰是在排开「同事吃饭」这个可能。' }
         ],
-        analysis: '迟到二十年的“对不起”，apologize 指为自己的过错道歉。',
-        wrongFeedback: '他答成“抱怨”，可桌上真的安静了。',
-        afterCorrect: '温以宁低头喝汤，汤有点咸。'
+        analysis: 'date 除了日期，还指带有浪漫意味的两人约会。',
+        wrongFeedback: '你答成「工作会议」，她停下脚步：「你开会会问这种问题吗？」气血 -10',
+        afterCorrect: '她说：「你想让它算什么？」他说：「我想让它算约会。」'
       },
       {
-        plotDescription: '她放下勺子，说自己还没想好要不要翻篇。',
-        line: "I don't know if I can forgive him. But I can listen.",
-        lineCn: '我不知道能不能原谅他，但我可以听他说。',
-        prompt: "根据上下文，选出画线词汇 'Forgive' 最准确的意思。",
+        plotDescription: '陈默在饭桌上又提起他的前任。',
+        line: "They broke up years ago — why does he keep bringing it up?",
+        lineCn: '他们几年前就分手了，他为什么老提这事？',
+        prompt: "根据上下文，选出画线词汇 'Break up' 最准确的意思。",
         options: [
-          { key: 'A', en: 'forget completely', cn: '彻底忘记', correct: false, reason: '她说的是“听”，不是失忆，细节她都记得。' },
-          { key: 'B', en: 'blame', cn: '责怪', correct: false, reason: '她已经愿意听，和继续责怪不是一回事。' },
-          { key: 'C', en: 'stop blaming and accept', cn: '原谅', correct: true, reason: '她在考虑是否放下怨恨，forgive 指原谅。' }
+          { key: 'A', en: 'ended the relationship', cn: '分手，结束恋爱关系', correct: true, reason: '「几年前」加「前任」，说的正是关系结束。' },
+          { key: 'B', en: 'fixed a problem', cn: '解决了一个问题', correct: false, reason: '和「前任」这个语境不搭。' },
+          { key: 'C', en: 'split the bill', cn: '分摊账单', correct: false, reason: 'break up 在饭桌上也可能指散场，但这里接的是前任。' }
         ],
-        analysis: '她说的是放下怨恨、不再追究，forgive 指原谅。',
-        wrongFeedback: '他答成“忘记”，可她连细节都记得。',
-        afterCorrect: '周叙轻轻碰了碰她的手背：“那就先听。”'
+        analysis: 'break up 指恋爱关系结束，也可以指解散、散场，要看宾语。',
+        wrongFeedback: '你答成「分摊账单」，她低声说：「他提的是人，不是钱。」气血 -10',
+        afterCorrect: '他说：「因为那是他唯一赢过我的一次。」'
       },
       {
-        plotDescription: '温母整晚没怎么说话，最后却把饭递了过去。',
-        line: "She held a grudge for years, but tonight she passed him the rice.",
-        lineCn: '她记恨了很多年，可今晚还是把饭递给了他。',
-        prompt: "根据上下文，选出画线词汇 'Grudge' 最准确的意思。",
+        plotDescription: '温以宁听不下去了，替他说了一句。',
+        line: "She dumped him, not the other way around.",
+        lineCn: '是她甩了他，不是他甩了人家。',
+        prompt: "根据上下文，选出画线词汇 'Dump' 最准确的意思。",
         options: [
-          { key: 'A', en: 'long-held resentment', cn: '记仇、长期怨恨', correct: true, reason: '多年放不下、与递饭形成对照，grudge 指记恨。' },
-          { key: 'B', en: 'gratitude', cn: '感激', correct: false, reason: '她整晚没说话，不是心怀感激的状态。' },
-          { key: 'C', en: 'care', cn: '关心', correct: false, reason: '递饭是松动，不是一直关心。' }
+          { key: 'A', en: 'threw away the trash', cn: '倒垃圾', correct: false, reason: '句子的宾语是人，不是垃圾。' },
+          { key: 'B', en: 'left a message', cn: '留了个言', correct: false, reason: 'dumped 在这里是结束关系。' },
+          { key: 'C', en: 'end it with someone', cn: '甩了对方，主动结束关系', correct: true, reason: '「不是他甩了人家」把主语说得很清楚。' }
         ],
-        analysis: '多年放不下的怨，与递饭的动作形成对照，grudge 指记恨、长期怨恨。',
-        wrongFeedback: '他答成“感激”，可她说起往事时语气还是硬的。',
-        afterCorrect: '那碗饭递过去，桌上所有人都松了一口气。'
+        analysis: 'dump 口语里指单方面甩掉恋人，语气比较直接。',
+        wrongFeedback: '你答成「留了个言」，桌上有人没忍住笑了一声。气血 -10',
+        afterCorrect: '陈默的脸僵了一下。周叙低头吃面，肩膀却在轻轻抖。'
       }
     ],
-    completeText: '饭后，温母在厨房洗碗，父亲在旁边擦盘子。温以宁站在门口看了很久，没有进去。'
+    completeText: '回家的路上他一直笑。她说：「你笑什么。」他说：「笑我第一次被人替着说话。」'
   },
   {
     id: 'pl_35',
@@ -2284,66 +2288,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 35 章 · 进修通知',
     novel: '暗恋你第十年',
     speaker: { name: '温以宁', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '院里公布进修名单，温以宁拿到了名额，城市正好是周叙所在的那座。她盯着通知单，第一反应还是想找理由拒绝。',
+    storyText: '进修名额下来了，半年，外省。主任把通知放在她桌上，说这是个好机会。她拿着那张纸，在走廊里站了很久。',
     questions: [
       {
-        plotDescription: '她跟同事说，自己走了会拖累大家，说着说着声音低下去。',
-        line: "Taking this spot would betray the team. At least that's what I told myself.",
-        lineCn: '拿这个名额像是背叛团队，至少我是这么告诉自己的。',
-        prompt: "根据上下文，选出画线词汇 'Betray' 最准确的意思。",
+        plotDescription: '她主动提起那件事，说得很直接。',
+        line: "I'm not going to cheat on you — that's not who I am.",
+        lineCn: '我不会出轨的，我不是那种人。',
+        prompt: "根据上下文，选出画线词汇 'Cheat' 最准确的意思。",
         options: [
-          { key: 'A', en: 'help', cn: '帮助', correct: false, reason: '她把它当成一种对不起，和帮助相反。' },
-          { key: 'B', en: 'thank', cn: '感谢', correct: false, reason: '句中没有任何感谢对象，语气是自责。' },
-          { key: 'C', en: 'let down, be disloyal', cn: '背叛、辜负', correct: true, reason: '她担心对不起同事，betray 指辜负信任。' }
+          { key: 'A', en: 'copy answers in an exam', cn: '考试作弊', correct: false, reason: 'cheat 确实有作弊的意思，但这里说的是两个人之间的忠诚。' },
+          { key: 'B', en: 'be unfaithful', cn: '出轨，对伴侣不忠', correct: true, reason: '「我不是那种人」是在承诺感情上的忠诚。' },
+          { key: 'C', en: 'tell a small lie', cn: '撒个小谎', correct: false, reason: '句子谈的是半年异地，不是撒谎。' }
         ],
-        analysis: '她把离开说成对不起同事，betray 指背叛、辜负他人的信任。',
-        wrongFeedback: '她答成“帮助”，可这理由连她自己都说服不了。',
-        afterCorrect: '周叙在电话那头说：“你不是在背叛谁，你是在往前走。”'
+        analysis: 'cheat 在感情语境里指背叛伴侣，和考试作弊是同一个词的两个方向。',
+        wrongFeedback: '你答成「考试作弊」，他愣了一下：「我又不考你。」气血 -10',
+        afterCorrect: '他说：「我知道。」停了两秒又说：「我怕的不是这个。」'
       },
       {
-        plotDescription: '她嘴上说不想去，电话那头的人直接拆穿了她。',
-        line: "You're a terrible liar. You want to come. Just say it.",
-        lineCn: '你太不会撒谎了，你想来，直接说。',
-        prompt: "根据上下文，选出画线词汇 'Liar' 最准确的意思。",
+        plotDescription: '她提起那边医院的一个熟人。',
+        line: "He still flirts with me like we just met.",
+        lineCn: '他还像刚认识那样跟我调情。',
+        prompt: "根据上下文，选出画线词汇 'Flirt' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a lawyer', cn: '律师', correct: false, reason: '这里没有法律场景，只有拆穿口是心非。' },
-          { key: 'B', en: 'a person who lies', cn: '骗子、撒谎的人', correct: true, reason: '他直接点破她口是心非，liar 指说谎的人。' },
-          { key: 'C', en: 'a listener', cn: '听众', correct: false, reason: '听众和“不会撒谎”搭配不上。' }
+          { key: 'A', en: 'playfully show attraction', cn: '调情，带玩笑地示好', correct: true, reason: '「像刚认识那样」正是那种试探性的示好。' },
+          { key: 'B', en: 'argue about work', cn: '为工作争吵', correct: false, reason: '句子说的是示好，不是争吵。' },
+          { key: 'C', en: 'ignore completely', cn: '完全无视', correct: false, reason: '正好相反。' }
         ],
-        analysis: '他拆穿她的口是心非，liar 指说谎的人。',
-        wrongFeedback: '她答成“律师”，忍不住笑出声。',
-        afterCorrect: '她咬了下嘴唇：“那我说了，你接住。”'
+        analysis: 'flirt 指用玩笑、眼神、话语表达好感，通常不带承诺。',
+        wrongFeedback: '你答成「完全无视」，他挑了下眉：「那他挺会无视人的。」气血 -10',
+        afterCorrect: '她说：「我拒绝了。」他说：「我没问。」她说：「我知道。」'
       },
       {
-        plotDescription: '她终于承认，自己这些天一直在硬撑。',
-        line: "I'm tired of being fake. I don't want to pretend I'm fine.",
-        lineCn: '我厌倦了虚伪，不想再装作没事。',
-        prompt: "根据上下文，选出画线词汇 'Fake' 最准确的意思。",
+        plotDescription: '她解释自己为什么犹豫。',
+        line: "My ex is in that hospital — but that's not why I'm hesitating.",
+        lineCn: '我前任在那家医院，但那不是我犹豫的原因。',
+        prompt: "根据上下文，选出画线词汇 'Ex' 最准确的意思。",
         options: [
-          { key: 'A', en: 'not genuine, pretending', cn: '虚伪、装出来的', correct: true, reason: '她不想再演“没事”，fake 指不真实、装出来的样子。' },
-          { key: 'B', en: 'sincere', cn: '真诚', correct: false, reason: '她说的是“装”，和真诚相反。' },
-          { key: 'C', en: 'brave', cn: '勇敢', correct: false, reason: '硬撑不等于勇敢，句中强调的是假装。' }
+          { key: 'A', en: 'an extra shift', cn: '额外的一班', correct: false, reason: 'extra 才是加班，ex 指的是人。' },
+          { key: 'B', en: 'an expensive machine', cn: '昂贵的机器', correct: false, reason: '句子里说的是「在那家医院」，是人。' },
+          { key: 'C', en: 'a former partner', cn: '前任，以前的伴侣', correct: true, reason: '能被称作 ex 又在那家医院的，正是前任。' }
         ],
-        analysis: '她不想再演“没事”，fake 指不真实、装出来的样子。',
-        wrongFeedback: '她答成“真诚”，可她说的是“装”。',
-        afterCorrect: '电话那头安静了两秒：“那就别装。”'
+        analysis: 'ex 是 ex-boyfriend、ex-husband 的简称，指前任伴侣。',
+        wrongFeedback: '你答成「额外的一班」，他说：「那你犹豫什么？」气血 -10',
+        afterCorrect: '他说：「那你去。」她说：「半年。」他说：「我知道。」'
       },
       {
-        plotDescription: '她提起父亲，说他说自己变了，她一个字都不信。',
-        line: "I called him a hypocrite for saying he'd changed.",
-        lineCn: '他说自己变了，我骂他是伪君子。',
-        prompt: "根据上下文，选出画线词汇 'Hypocrite' 最准确的意思。",
+        plotDescription: '他的朋友听说后，自告奋勇要帮忙看着。',
+        line: "He was my wingman for ten years and never once got me a date.",
+        lineCn: '他给我当了十年僚机，一次约会都没帮我约到。',
+        prompt: "根据上下文，选出画线词汇 'Wingman' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a hero', cn: '英雄', correct: false, reason: '她是在骂人，不可能是夸英雄。' },
-          { key: 'B', en: 'a patient', cn: '病人', correct: false, reason: '这里说的是父亲的言行，不是病人身份。' },
-          { key: 'C', en: 'someone who says one thing but does another', cn: '伪君子', correct: true, reason: '她不信父亲的改变，hypocrite 指说一套做一套的人。' }
+          { key: 'A', en: 'a pilot', cn: '飞行员', correct: false, reason: 'wingman 原义是僚机飞行员，这里是引申用法。' },
+          { key: 'B', en: 'a friend who helps with romance', cn: '僚机，帮朋友追人的那个人', correct: true, reason: '「帮我约到约会」正是僚机干的事。' },
+          { key: 'C', en: 'a driver', cn: '司机', correct: false, reason: '他没提开车，提的是约会。' }
         ],
-        analysis: '她不信父亲的改变，hypocrite 指嘴上说得好听、做的却是另一套的人。',
-        wrongFeedback: '她答成“英雄”，自己都觉得荒唐。',
-        afterCorrect: '周叙问：“那如果他是真的变了呢？”'
+        analysis: 'wingman 引申为在感情上帮朋友助攻的人，也就是中文里的「僚机」。',
+        wrongFeedback: '你答成「飞行员」，他朋友说：「我倒是想开飞机。」气血 -10',
+        afterCorrect: '她笑了。那天晚上她填了申请表，签名时手很稳。'
       }
     ],
-    completeText: '报名表交上去那天，她在走廊里站了很久。窗外是春天，树刚发新芽。'
+    completeText: '出发前一晚，他把一个信封塞进她包里。她上高铁才打开：里面是三十七张便利贴，每张写着一句话和一个日期。'
   },
   {
     id: 'pl_36',
@@ -2351,66 +2355,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 36 章 · 异地第两百天',
     novel: '暗恋你第十年',
     speaker: { name: '周叙', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '异地第两百天，视频通话卡了三次。她值完夜班坐在更衣室，头发乱着，说了一句“我们这样是不是很没意思”。',
+    storyText: '异地第两百天。视频接通时，她那边是凌晨，他这边刚下夜班。两个人对着屏幕吃同一款泡面，谁都没说话，却谁也不肯挂。',
     questions: [
       {
-        plotDescription: '她说科室里有人为了名额，表面帮她，背后告了她一状。',
-        line: "A colleague backstabbed me for the promotion. I saw the email.",
-        lineCn: '一个同事为了升职背刺我，我看到了那封邮件。',
-        prompt: "根据上下文，选出画线词汇 'Backstab' 最准确的意思。",
+        plotDescription: '她说那边医院和这里完全不一样。',
+        line: "The vibe in that hospital is completely different from ours.",
+        lineCn: '那家医院的氛围和我们这儿完全不一样。',
+        prompt: "根据上下文，选出画线词汇 'Vibe' 最准确的意思。",
         options: [
-          { key: 'A', en: 'help quietly', cn: '暗中帮助', correct: false, reason: '告状邮件不是帮助，方向正好相反。' },
-          { key: 'B', en: 'betray behind someone’s back', cn: '背后捅刀、背刺', correct: true, reason: '表面同事、背后下手，backstab 指背刺。' },
-          { key: 'C', en: 'praise publicly', cn: '公开表扬', correct: false, reason: '她看到的是告状邮件，不是表扬。' }
+          { key: 'A', en: 'the atmosphere and feeling', cn: '氛围感，整体的感觉', correct: true, reason: '「完全不一样」说的是整体气氛，正是 vibe。' },
+          { key: 'B', en: 'a kind of medicine', cn: '一种药', correct: false, reason: '医院之间对比的是气氛，不是药品。' },
+          { key: 'C', en: 'a machine vibration', cn: '机器的震动', correct: false, reason: 'vibe 原义有震动，但这里说的是人的感受。' }
         ],
-        analysis: '表面是同事、背后却下手，backstab 指背地里捅刀、出卖。',
-        wrongFeedback: '他答成“帮助”，可那封邮件明明是告状。',
-        afterCorrect: '温以宁在那头皱眉：“那你打算怎么办？”'
+        analysis: 'vibe 是口语里的「氛围、感觉」，常用来形容一个地方或一个人的气场。',
+        wrongFeedback: '你答成「一种药」，她笑：「你上班上傻了。」气血 -10',
+        afterCorrect: '他问：「那你什么时候回来？」她看了眼日历，没答。'
       },
       {
-        plotDescription: '他说起自己也被上级这样对待过，让她别把错揽在身上。',
-        line: "Don't let him gaslight you into thinking it's your fault.",
-        lineCn: '别让他 PUA 你，让你以为都是你的错。',
-        prompt: "根据上下文，选出画线词汇 'Gaslight' 最准确的意思。",
+        plotDescription: '她忽然想起高中时的一件事。',
+        line: "You finished my sentence again — are you my soulmate or my colleague?",
+        lineCn: '你又把我话接完了，你是我灵魂伴侣还是我同事？',
+        prompt: "根据上下文，选出画线词汇 'Soulmate' 最准确的意思。",
         options: [
-          { key: 'A', en: 'comfort', cn: '安慰', correct: false, reason: '让人怀疑自己是伤害，不是安慰。' },
-          { key: 'B', en: 'praise', cn: '表扬', correct: false, reason: '句子里说的是被扭曲认知，不是被夸。' },
-          { key: 'C', en: 'psychologically manipulate', cn: '心理操控、PUA', correct: true, reason: '对方让她怀疑自己，gaslight 指用心理手段操控认知。' }
+          { key: 'A', en: 'a roommate', cn: '室友', correct: false, reason: '能接完一句话和住不住一起没关系。' },
+          { key: 'B', en: 'a teacher', cn: '老师', correct: false, reason: '她拿它和「同事」并列，是在开玩笑说关系。' },
+          { key: 'C', en: 'a person perfectly matched to you', cn: '灵魂伴侣，天生契合的人', correct: true, reason: '话被接完，正是那种「不用说也懂」的契合。' }
         ],
-        analysis: '对方让她怀疑自己、把错全揽下，gaslight 指用心理手段操控他人认知。',
-        wrongFeedback: '他答成“安慰”，温以宁冷笑：“这算哪门子安慰。”',
-        afterCorrect: '她沉默了一会儿：“我差点真的信了。”'
+        analysis: 'soulmate 指在精神上高度契合、像天生一对的人。',
+        wrongFeedback: '你答成「室友」，他说：「那室友费我就不交了。」气血 -10',
+        afterCorrect: '他说：「高中就这样。你每次说到一半，我就知道下半句。」'
       },
       {
-        plotDescription: '他提醒她，那个上级最擅长的就是先给甜头。',
-        line: "He manipulates people by being nice first, then cruel.",
-        lineCn: '他先对人好，再翻脸，就是这么操控人的。',
-        prompt: "根据上下文，选出画线词汇 'Manipulate' 最准确的意思。",
+        plotDescription: '她提起高三那年第一次说话。',
+        line: "We had chemistry from the first day of senior year.",
+        lineCn: '高三第一天起，我们就有化学反应。',
+        prompt: "根据上下文，选出画线词汇 'Chemistry' 最准确的意思。",
         options: [
-          { key: 'A', en: 'control others unfairly', cn: '操控', correct: true, reason: '先示好再伤人，一步步控制别人，manipulate 指操控。' },
-          { key: 'B', en: 'take care of', cn: '照顾', correct: false, reason: '“再翻脸”说明不是单纯的照顾。' },
-          { key: 'C', en: 'forgive', cn: '原谅', correct: false, reason: '这里没有原谅，只有手段。' }
+          { key: 'A', en: 'mutual attraction and connection', cn: '化学反应，彼此来电的默契', correct: true, reason: '「第一天起」说的是两个人之间的感觉。' },
+          { key: 'B', en: 'a science experiment', cn: '化学实验', correct: false, reason: '他们不是在实验室，是在说关系。' },
+          { key: 'C', en: 'a medical test', cn: '医学化验', correct: false, reason: '化验不会从第一天开始算。' }
         ],
-        analysis: '先示好再伤人，一步步控制别人的判断，manipulate 指操控。',
-        wrongFeedback: '他答成“照顾”，可“再翻脸”三个字摆在那里。',
-        afterCorrect: '周叙说：“把邮件留下，别自己扛。”'
+        analysis: 'chemistry 在人际语境里指两个人之间的吸引力和默契，常说 have chemistry。',
+        wrongFeedback: '你答成「化学实验」，她说：「你当年化学也不怎么样。」气血 -10',
+        afterCorrect: '他沉默了一下，说：「我以为只有我一个人觉得。」'
       },
       {
-        plotDescription: '她自嘲太好说话，谁求她帮忙都不会拒绝。',
-        line: "You're not a push over. You just don't like fighting.",
-        lineCn: '你不是老好人，你只是不喜欢争。',
-        prompt: "根据上下文，选出画线词汇 'Push over' 最准确的意思。",
+        plotDescription: '视频卡了两秒，她认真起来。',
+        line: "Long-distance only works with trust.",
+        lineCn: '异地恋只有靠信任才能走下去。',
+        prompt: "根据上下文，选出画线词汇 'Trust' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a leader', cn: '领导', correct: false, reason: '她自嘲好说话，和领导形象相反。' },
-          { key: 'B', en: 'someone easily taken advantage of', cn: '老好人、容易被拿捏', correct: true, reason: '他强调她不是任人拿捏，push over 指好欺负的人。' },
-          { key: 'C', en: 'a patient', cn: '病人', correct: false, reason: '这里说的是性格，不是病人。' }
+          { key: 'A', en: 'money', cn: '钱', correct: false, reason: '视频里两个人都没提钱。' },
+          { key: 'B', en: 'belief in each other', cn: '信任，相信对方', correct: true, reason: '异地最难的就是看不见，只能靠相信。' },
+          { key: 'C', en: 'a written contract', cn: '书面合同', correct: false, reason: '感情不是靠合同维系的。' }
         ],
-        analysis: '他强调她不是任人拿捏，push over 指好说话、容易被欺负的老好人。',
-        wrongFeedback: '他答成“领导”，她笑了一声：“我要是就好了。”',
-        afterCorrect: '她低头，声音轻了：“那你教我怎么争。”'
+        analysis: 'trust 指相信对方的为人与选择，是长期关系里最基础的东西。',
+        wrongFeedback: '你答成「钱」，她说：「那我这半年白省了。」气血 -10',
+        afterCorrect: '他说：「那你信我吗？」她把摄像头转向窗外：「你看，我这边天亮了。」'
       }
     ],
-    completeText: '视频挂断前，他忽然说：“第两百天了。”她愣了一下，才反应过来他在数日子。'
+    completeText: '视频挂断前，他忽然说：「第两百天，还剩一百六十五天。」她愣了一下，才发现他在数。'
   },
   {
     id: 'pl_37',
@@ -2418,133 +2422,133 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 37 章 · 视频里的手术灯',
     novel: '暗恋你第十年',
     speaker: { name: '温以宁', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '凌晨，他在那头刚下手术，背后是走廊的白灯。她抱着手机坐在值班室，忽然说想看他工作的样子。他把镜头转了一圈。',
+    storyText: '视频接通时，他背后的手术灯还亮着。他说刚下台，又说有件事要报告：有人给他介绍对象。',
     questions: [
       {
-        plotDescription: '他提起上次评审会，有人当场质疑她的方案。',
-        line: "I stood up for you in that meeting. Some people didn't like it.",
-        lineCn: '我在会上替你说话了，有些人不高兴。',
-        prompt: "根据上下文，选出画线词汇 'Stand up for' 最准确的意思。",
+        plotDescription: '他说得很慢，像在交代什么。',
+        line: "I've been loyal to someone who didn't even know it for ten years.",
+        lineCn: '我对一个人忠诚了十年，而她根本不知道。',
+        prompt: "根据上下文，选出画线词汇 'Loyal' 最准确的意思。",
         options: [
-          { key: 'A', en: 'defend and support', cn: '捍卫、替人说话', correct: true, reason: '她在众人面前维护他，stand up for 指为某人挺身而出。' },
-          { key: 'B', en: 'criticize', cn: '批评', correct: false, reason: '“有些人不高兴”说明她是在维护，不是批评。' },
-          { key: 'C', en: 'avoid', cn: '躲避', correct: false, reason: '她当场开口，和躲避相反。' }
+          { key: 'A', en: 'faithful', cn: '忠诚，始终如一', correct: true, reason: '十年没变、对方还不知情，正是忠诚。' },
+          { key: 'B', en: 'popular with everyone', cn: '很受欢迎', correct: false, reason: '受欢迎是被很多人喜欢，不是对一个人忠。' },
+          { key: 'C', en: 'honest about his mistakes', cn: '坦率承认错误', correct: false, reason: 'loyal 强调的是对某人的忠实，不是坦白。' }
         ],
-        analysis: '她在众人面前维护他，stand up for 指为某人挺身而出、说话。',
-        wrongFeedback: '她答成“批评”，周叙笑：“你替我批评我？”',
-        afterCorrect: '他看着她：“谢谢。但别把自己搭进去。”'
+        analysis: 'loyal 指对人或承诺保持忠实，不因时间、距离而改变。',
+        wrongFeedback: '你答成「很受欢迎」，她说：「你这话说得可一点都不像。」气血 -10',
+        afterCorrect: '她握着手机，指节有点发白，说：「然后呢。」'
       },
       {
-        plotDescription: '她说自己手里有原始记录，只是一直不敢拿出来。',
-        line: "If they push you again, fight back. You have proof.",
-        lineCn: '他们再逼你，就反击，你有证据。',
-        prompt: "根据上下文，选出画线词汇 'Fight back' 最准确的意思。",
+        plotDescription: '他说完了处理方式。',
+        line: "I rejected her offer, politely.",
+        lineCn: '我礼貌地拒绝了她的提议。',
+        prompt: "根据上下文，选出画线词汇 'Reject' 最准确的意思。",
         options: [
-          { key: 'A', en: 'give in', cn: '退让', correct: false, reason: '他让她别退，和退让相反。' },
-          { key: 'B', en: 'stay silent', cn: '保持沉默', correct: false, reason: '手里有证据还沉默，正是他要她改变的做法。' },
-          { key: 'C', en: 'resist and strike back', cn: '反击', correct: true, reason: '有证据在手、被逼到墙角，fight back 指回击。' }
+          { key: 'A', en: 'accepted it', cn: '接受了', correct: false, reason: 'polite 不等于接受。' },
+          { key: 'B', en: 'delayed it', cn: '推迟了', correct: false, reason: '推迟是还没决定，他是已经回绝。' },
+          { key: 'C', en: 'refused', cn: '拒绝，回绝', correct: true, reason: '前面交代「有人介绍对象」，这里说不。' }
         ],
-        analysis: '有证据在手、被逼到墙角，fight back 指反击、回击。',
-        wrongFeedback: '她答成“退让”，可他说的是“有证据”。',
-        afterCorrect: '温以宁捏着手机，第一次觉得“反击”没那么可怕。'
+        analysis: 'reject 指明确不接受某人或某提议，比 refuse 更正式一些。',
+        wrongFeedback: '你答成「接受了」，她挑了下眉：「那你报告什么？」气血 -10',
+        afterCorrect: '她说：「为什么告诉我。」他说：「因为我不想让你从别人嘴里听到。」'
       },
       {
-        plotDescription: '她说自己明天要在会上讲清楚，数字一个都不会改。',
-        line: "I'll defend my report tomorrow. I'm not changing the numbers.",
-        lineCn: '明天我会为我的报告辩护，数字我不会改。',
-        prompt: "根据上下文，选出画线词汇 'Defend' 最准确的意思。",
+        plotDescription: '他说起高三那年的事。',
+        line: "I never had the nerve to confess in high school.",
+        lineCn: '高中时我一直没胆量表白。',
+        prompt: "根据上下文，选出画线词汇 'Confess' 最准确的意思。",
         options: [
-          { key: 'A', en: 'submit', cn: '提交', correct: false, reason: '提交只是动作，重点在“不改数字”的维护。' },
-          { key: 'B', en: 'argue in support of', cn: '辩护、维护', correct: true, reason: '她要为自己的结论据理力争，defend 指辩护、维护。' },
-          { key: 'C', en: 'revise', cn: '修改', correct: false, reason: '她明确说不改数字，和修改相反。' }
+          { key: 'A', en: 'admit a crime', cn: '认罪', correct: false, reason: 'confess 有认罪的意思，但这里说的是高中喜欢的人。' },
+          { key: 'B', en: 'tell someone your feelings', cn: '表白，说出心意', correct: true, reason: '「没胆量」正是喜欢却不敢说的那种心情。' },
+          { key: 'C', en: 'apologize', cn: '道歉', correct: false, reason: '句子里没有需要道歉的事。' }
         ],
-        analysis: '她要为自己的结论据理力争，defend 指辩护、维护。',
-        wrongFeedback: '她答成“提交”，可重点在“不改数字”。',
-        afterCorrect: '周叙点头：“那今晚早点睡，明天才有力气。”'
+        analysis: 'confess 在感情里指表白、坦白心意，和「认罪」是同一动作的不同对象。',
+        wrongFeedback: '你答成「认罪」，她笑出声：「你高中犯什么事了。」气血 -10',
+        afterCorrect: '她说：「那现在呢。」他说：「现在也没胆量，但我有耐心。」'
       },
       {
-        plotDescription: '他让她别被几句闲话牵着走，早点休息。',
-        line: "Ignore the noise. They want a reaction.",
-        lineCn: '别理那些噪音，他们就想看你反应。',
-        prompt: "根据上下文，选出画线词汇 'Ignore' 最准确的意思。",
+        plotDescription: '她问，异地半年靠什么撑。',
+        line: "A relationship takes commitment, not just feeling.",
+        lineCn: '一段关系靠的是承诺和投入，不只是感觉。',
+        prompt: "根据上下文，选出画线词汇 'Commitment' 最准确的意思。",
         options: [
-          { key: 'A', en: 'pay no attention to', cn: '无视、不去理会', correct: true, reason: '对方故意挑事，ignore 指不去理会。' },
-          { key: 'B', en: 'listen carefully', cn: '认真倾听', correct: false, reason: '他把那些话称为噪音，显然不是让她听。' },
-          { key: 'C', en: 'write down', cn: '记录', correct: false, reason: '记录不是这里的建议。' }
+          { key: 'A', en: 'a quick decision', cn: '一个快速的决定', correct: false, reason: '句子把它和「感觉」对比，指的是长期的投入。' },
+          { key: 'B', en: 'long-term dedication', cn: '承诺，长期的投入与坚守', correct: true, reason: '和「不只是感觉」并列，正是要长期做下去的东西。' },
+          { key: 'C', en: 'a legal document', cn: '一份法律文件', correct: false, reason: '他们还没到那一步，说的是态度。' }
         ],
-        analysis: '对方故意挑事，ignore 指不去理会、无视。',
-        wrongFeedback: '她答成“认真倾听”，可那些话根本不值得。',
-        afterCorrect: '她笑了一下：“你以前可不这么会安慰人。”'
+        analysis: 'commitment 指愿意为一段关系长期负责、持续投入，而不是一时心动。',
+        wrongFeedback: '你答成「一份法律文件」，她说：「那我还得找律师。」气血 -10',
+        afterCorrect: '他说：「我签过最长的合同是三年。这次我想签久一点。」'
       }
     ],
-    completeText: '视频里，他把镜头转向手术室的灯：“每次看到它亮着，我就想，你也在某盏灯下面。”'
+    completeText: '视频那头手术灯灭了。他说：「我得去洗手。」她说：「周叙。」他回头：「嗯？」她说：「我也是。」'
   },
   {
     id: 'pl_38',
     index: 38,
-    title: '第 38 章 · 沉默的举报信',
+    title: '第 38 章 · 视频里的约会',
     novel: '暗恋你第十年',
     speaker: { name: '周叙', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '匿名举报信送到院里，说她进修期间违规操作，还扬言要把她的报告撤下来。温以宁把原始数据打印了三份，一份交院办，一份留科室，一份锁进柜子。',
+    storyText: '周五晚上，两个人隔着八百公里吃同一家的面。她那边下雨，他这边刮风。屏幕里两碗面都在冒气，像坐在同一张桌上。',
     questions: [
       {
-        plotDescription: '评审会上，别人说得很多，她从头到尾没有辩解。',
-        line: "Her silence in the meeting said more than any speech.",
-        lineCn: '她在会上什么都没说，却比任何发言都有分量。',
-        prompt: "根据上下文，选出画线词汇 'Silence' 最准确的意思。",
+        plotDescription: '她忽然不说话了，只是看着他吃。',
+        line: "Sharing a silent meal on video — that's a kind of intimacy.",
+        lineCn: '隔着屏幕安静地吃一顿饭，那也是一种亲密。',
+        prompt: "根据上下文，选出画线词汇 'Intimacy' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a speech', cn: '发言', correct: false, reason: '句子正把沉默和发言作对比，不能混为一谈。' },
-          { key: 'B', en: 'laughter', cn: '笑声', correct: false, reason: '评审会气氛紧张，没有笑声。' },
-          { key: 'C', en: 'the state of not speaking', cn: '沉默', correct: true, reason: '她全程不辩解，silence 指沉默。' }
+          { key: 'A', en: 'closeness between two people', cn: '亲密，彼此靠近的感觉', correct: true, reason: '不说话也不尴尬，正是关系里的亲近。' },
+          { key: 'B', en: 'formal politeness', cn: '客套的礼貌', correct: false, reason: '客套不会让人安静地陪着吃饭。' },
+          { key: 'C', en: 'loneliness', cn: '孤独', correct: false, reason: '她说的是两个人之间的东西。' }
         ],
-        analysis: '她全程不辩解、只用行动回应，silence 指沉默。',
-        wrongFeedback: '她答成“发言”，可整场会她一个字没说。',
-        afterCorrect: '会后，主任把她那份数据留了下来。'
+        analysis: 'intimacy 指情感上的亲近与不设防，不一定和身体有关。',
+        wrongFeedback: '你答成「客套的礼貌」，他把面放下：「我们什么时候客气过。」气血 -10',
+        afterCorrect: '她笑了一下，继续低头吃面。屏幕里两双筷子同时抬起来。'
       },
       {
-        plotDescription: '有人在楼梯间拦住她，话里带着明显的警告。',
-        line: "He threatened to ruin my career if I spoke up.",
-        lineCn: '他威胁说，我要是开口就毁了我的职业生涯。',
-        prompt: "根据上下文，选出画线词汇 'Threaten' 最准确的意思。",
+        plotDescription: '她说起他记住的那些小事。',
+        line: "He shows affection in small ways, like remembering how I take my coffee.",
+        lineCn: '他用很小的方式表达爱慕，比如记得我咖啡怎么喝。',
+        prompt: "根据上下文，选出画线词汇 'Affection' 最准确的意思。",
         options: [
-          { key: 'A', en: 'encourage', cn: '鼓励', correct: false, reason: '用前途施压不是鼓励，语气完全相反。' },
-          { key: 'B', en: 'warn with harm', cn: '威胁', correct: true, reason: '对方用前途施压，threaten 指威胁。' },
-          { key: 'C', en: 'thank', cn: '感谢', correct: false, reason: '被人堵在楼梯间警告，没有感谢的理由。' }
+          { key: 'A', en: 'anger', cn: '愤怒', correct: false, reason: '记住咖啡口味不可能是愤怒。' },
+          { key: 'B', en: 'fondness and love', cn: '爱慕，温柔的喜欢', correct: true, reason: '在小事上在意，正是 affection 的表达方式。' },
+          { key: 'C', en: 'respect for elders', cn: '对长辈的尊敬', correct: false, reason: '这里说的是恋人之间的在意。' }
         ],
-        analysis: '对方用前途施压，threaten 指威胁、以伤害相要挟。',
-        wrongFeedback: '她答成“鼓励”，可那句话明明是刀子。',
-        afterCorrect: '温以宁把录音存进三个地方，才回了一句：“我知道了。”'
+        analysis: 'affection 指温柔持久的喜爱，常通过细节表现，比 love 更轻更暖。',
+        wrongFeedback: '你答成「愤怒」，她笑：「你这理解能力，病人敢找你吗。」气血 -10',
+        afterCorrect: '他说：「你上次说过一次，不加糖。」她说：「一次就记住了？」'
       },
       {
-        plotDescription: '她把数据摊在桌上，一页一页翻给调查组看。',
-        line: "They wanted to ruin my report, but the data is real.",
-        lineCn: '他们想毁掉我的报告，可数据是真的。',
-        prompt: "根据上下文，选出画线词汇 'Ruin' 最准确的意思。",
+        plotDescription: '她把周五空出来，写在排班表上。',
+        line: "Friday is our date night, even if it's over the phone.",
+        lineCn: '周五是我们的约会之夜，哪怕是在电话里。',
+        prompt: "根据上下文，选出画线词汇 'Date night' 最准确的意思。",
         options: [
-          { key: 'A', en: 'destroy or spoil', cn: '毁掉、破坏', correct: true, reason: '对方想让她做不成，ruin 指毁掉。' },
-          { key: 'B', en: 'publish', cn: '发表', correct: false, reason: '他们是要撤下报告，不是帮她发表。' },
-          { key: 'C', en: 'translate', cn: '翻译', correct: false, reason: '这里没有翻译，只有数据真伪之争。' }
+          { key: 'A', en: 'a night shift', cn: '夜班', correct: false, reason: '她特意把周五空出来，正好相反。' },
+          { key: 'B', en: 'a deadline', cn: '截止期限', correct: false, reason: '这是两个人定的约会，不是工作。' },
+          { key: 'C', en: 'a set evening for a romantic date', cn: '约会之夜，固定的浪漫时段', correct: true, reason: '写进排班表、每周固定，正是 date night。' }
         ],
-        analysis: '对方想让她做不成、把报告撤下，ruin 指毁掉、破坏。',
-        wrongFeedback: '她答成“发表”，语境正好相反。',
-        afterCorrect: '周叙在电话里说：“那就让数据自己说话。”'
+        analysis: 'date night 指伴侣之间固定留出的约会时间，形式可以很随意。',
+        wrongFeedback: '你答成「夜班」，她说：「那我这半年白排了。」气血 -10',
+        afterCorrect: '他真的在自己的排班表上写了三个字：不排班。'
       },
       {
-        plotDescription: '调查组走后，她把报告副本锁进柜子。',
-        line: "You can destroy a paper. You can't destroy the truth.",
-        lineCn: '你可以毁掉一份文件，但毁不掉事实。',
-        prompt: "根据上下文，选出画线词汇 'Destroy' 最准确的意思。",
+        plotDescription: '护士路过，看见他对着手机笑。',
+        line: "He's completely smitten — he keeps smiling at his phone.",
+        lineCn: '他彻底神魂颠倒了，一直对着手机笑。',
+        prompt: "根据上下文，选出画线词汇 'Smitten' 最准确的意思。",
         options: [
-          { key: 'A', en: 'copy', cn: '复印', correct: false, reason: '复印是保留，不是毁掉。' },
-          { key: 'B', en: 'destroy completely', cn: '摧毁', correct: true, reason: '文件和事实形成对比，destroy 指彻底摧毁。' },
-          { key: 'C', en: 'collect', cn: '收藏', correct: false, reason: '收藏和“毁掉一份文件”语境不符。' }
+          { key: 'A', en: 'deeply in love', cn: '神魂颠倒，被爱冲昏头', correct: true, reason: '对着手机傻笑，正是陷进去的样子。' },
+          { key: 'B', en: 'annoyed', cn: '烦躁', correct: false, reason: '烦躁的人不会一直笑。' },
+          { key: 'C', en: 'confused', cn: '困惑', correct: false, reason: '他清楚自己在看谁。' }
         ],
-        analysis: '文件和事实形成对比，destroy 指彻底摧毁、毁掉。',
-        wrongFeedback: '她答成“复印”，自己都笑了。',
-        afterCorrect: '她把柜子锁好，钥匙放进口袋。'
+        analysis: 'smitten 指被爱情击中、完全沉迷于某人，常带一点好笑的意味。',
+        wrongFeedback: '你答成「烦躁」，护士说：「他这烦躁得也太甜了。」气血 -10',
+        afterCorrect: '他抬头，正好对上护士的眼神，立刻把手机扣在桌上。'
       }
     ],
-    completeText: '举报最后被驳回。院里没有公开道歉，但从那以后，没人再动她的报告。'
+    completeText: '那晚挂断前，她说：「我发现一件事。」他问什么。她说：「隔着屏幕，我还是会紧张。」'
   },
   {
     id: 'pl_39',
@@ -2552,66 +2556,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 39 章 · 三十七张机票',
     novel: '暗恋你第十年',
     speaker: { name: '温以宁', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '事情平息后，她整理抽屉，数出三十七张机票。每一张都是他飞回来又飞走的证明。她把它们摊在床上，忽然觉得异地也可以被数清楚。',
+    storyText: '她收拾行李准备回去，从抽屉里倒出一叠登机牌。数了两遍，三十七张。半年，三十七次往返，她把它们一张张摊在床上。',
     questions: [
       {
-        plotDescription: '她问他飞来飞去累不累，他摇头。',
-        line: "I don't regret a single flight. Not one.",
-        lineCn: '我一张机票都不后悔，一张都不。',
-        prompt: "根据上下文，选出画线词汇 'Regret' 最准确的意思。",
+        plotDescription: '室友看着那堆登机牌，问她值不值。',
+        line: "Long-distance isn't always heartbreak — sometimes it's just tired.",
+        lineCn: '异地恋不总是心碎，有时候只是累。',
+        prompt: "根据上下文，选出画线词汇 'Heartbreak' 最准确的意思。",
         options: [
-          { key: 'A', en: 'forget', cn: '忘记', correct: false, reason: '每一张票他都留着，显然没有忘。' },
-          { key: 'B', en: 'feel sorry about', cn: '后悔', correct: true, reason: '他愿意为每次往返付出，regret 指对做过的事后悔。' },
-          { key: 'C', en: 'show off', cn: '炫耀', correct: false, reason: '他是在回答累不累，不是在炫耀。' }
+          { key: 'A', en: 'a cheap flight', cn: '廉价的航班', correct: false, reason: '这里说的是感情里的痛，不是机票。' },
+          { key: 'B', en: 'deep emotional pain', cn: '心碎，深切的情感之痛', correct: true, reason: '和「只是累」对比，指的正是那种撕裂的痛。' },
+          { key: 'C', en: 'a broken bone', cn: '骨折', correct: false, reason: 'heart 是心，不是骨头。' }
         ],
-        analysis: '他愿意为每次往返付出、一张都不后悔，regret 指对做过的事感到后悔。',
-        wrongFeedback: '她答成“忘记”，可每一张票都被他留着。',
-        afterCorrect: '她低头笑：“三十七张，够买一台不错的仪器了。”'
+        analysis: 'heartbreak 指感情破裂或失望带来的剧烈痛苦，比 sad 重得多。',
+        wrongFeedback: '你答成「廉价的航班」，室友说：「你这三十七张可不便宜。」气血 -10',
+        afterCorrect: '她说：「值。」然后把登机牌按日期排好，一张都没舍得扔。'
       },
       {
-        plotDescription: '她问他要不要追究那些造谣的人，他放下手里的票。',
-        line: "I don't want revenge. I want the truth on the record.",
-        lineCn: '我不要复仇，我要真相留在记录里。',
-        prompt: "根据上下文，选出画线词汇 'Revenge' 最准确的意思。",
+        plotDescription: '室友问她，这样跑累不累。',
+        line: "Long-distance is expensive, but we made it work.",
+        lineCn: '异地恋很花钱，但我们撑下来了。',
+        prompt: "根据上下文，选出画线词汇 'Long-distance' 最准确的意思。",
         options: [
-          { key: 'A', en: 'payback, retaliation', cn: '复仇、报复', correct: true, reason: '他把报复和“真相”对举，revenge 指报复。' },
-          { key: 'B', en: 'a reward', cn: '奖励', correct: false, reason: '真相留在记录里不是奖励。' },
-          { key: 'C', en: 'an apology', cn: '道歉', correct: false, reason: '他要的是记录，不是一句道歉。' }
+          { key: 'A', en: 'a relationship across cities', cn: '异地恋，分隔两地的关系', correct: true, reason: '三十七张登机牌，正是两地往返的代价。' },
+          { key: 'B', en: 'a very long phone call', cn: '一次很长的通话', correct: false, reason: '花掉的是机票钱，不是话费。' },
+          { key: 'C', en: 'a long journey', cn: '一段长途旅行', correct: false, reason: '这里说的是关系状态，不是单次旅行。' }
         ],
-        analysis: '他把“报复”和“真相”对举，revenge 指复仇、报复。',
-        wrongFeedback: '他答成“奖励”，温以宁看他：“这像奖励吗？”',
-        afterCorrect: '他补了一句：“但该道歉的人，一个都不能少。”'
+        analysis: 'long-distance 常作 long-distance relationship 的简称，指异地恋。',
+        wrongFeedback: '你答成「一次很长的通话」，室友笑：「那你话费挺贵。」气血 -10',
+        afterCorrect: '她算了算这半年的花销，忽然明白他为什么那几个月总吃食堂。'
       },
       {
-        plotDescription: '她把机票摞好，说以后只想过安稳日子。',
-        line: "All I want is peace. A quiet life with you.",
-        lineCn: '我只想要平静，和你过安安静静的日子。',
-        prompt: "根据上下文，选出画线词汇 'Peace' 最准确的意思。",
+        plotDescription: '室友开玩笑，说你们这么忙，怎么不出轨。',
+        line: "He joked that we're too busy for polyamory.",
+        lineCn: '他开玩笑说，我们忙得连多边恋都没时间搞。',
+        prompt: "根据上下文，选出画线词汇 'Polyamory' 最准确的意思。",
         options: [
-          { key: 'A', en: 'quarrel', cn: '争吵', correct: false, reason: '她要的是安静日子，和争吵相反。' },
-          { key: 'B', en: 'wealth', cn: '财富', correct: false, reason: '句中没有任何关于钱的描述。' },
-          { key: 'C', en: 'calm and freedom from conflict', cn: '平静、安宁', correct: true, reason: '和“安静的日子”并列，peace 指内心的安宁。' }
+          { key: 'A', en: 'having several partners at once', cn: '多边恋，同时拥有多个伴侣', correct: true, reason: '和「忙得没时间」并列，说的正是同时谈多段关系。' },
+          { key: 'B', en: 'having many friends', cn: '朋友很多', correct: false, reason: 'poly 是「多」，但这里接的是伴侣。' },
+          { key: 'C', en: 'working several jobs', cn: '同时打几份工', correct: false, reason: '句子说的是感情关系。' }
         ],
-        analysis: '和“安静的日子”并列，peace 指没有冲突的平静与安宁。',
-        wrongFeedback: '他答成“争吵”，她笑：“那你还挺会想。”',
-        afterCorrect: '她把机票一张张收好，动作很慢。'
+        analysis: 'polyamory 指在知情同意的前提下同时拥有多个亲密关系。',
+        wrongFeedback: '你答成「同时打几份工」，室友说：「那他可真够忙的。」气血 -10',
+        afterCorrect: '她笑完，忽然说：「其实我们连一个都顾不上。」'
       },
       {
-        plotDescription: '旧事说累了，她靠在他肩上，说不想再翻旧账。',
-        line: "Can we call a truce? I'm tired of being angry.",
-        lineCn: '我们能休战吗？我气累了。',
-        prompt: "根据上下文，选出画线词汇 'Truce' 最准确的意思。",
+        plotDescription: '室友说起自己家里的事。',
+        line: "Her parents went through a divorce when she was twelve.",
+        lineCn: '她十二岁那年，父母离婚了。',
+        prompt: "根据上下文，选出画线词汇 'Divorce' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a pause in conflict', cn: '休战、暂时停火', correct: true, reason: '她想停下争吵，truce 指双方暂时停战。' },
-          { key: 'B', en: 'a breakup', cn: '分手', correct: false, reason: '她靠在他肩上，不是要分开。' },
-          { key: 'C', en: 'a wedding', cn: '结婚', correct: false, reason: '这里说的是停止争吵，不是婚礼。' }
+          { key: 'A', en: 'a family trip', cn: '一次家庭旅行', correct: false, reason: 'go through 加十二岁的时间点，不是旅行。' },
+          { key: 'B', en: 'a serious argument', cn: '一场严重争吵', correct: false, reason: '吵架不等于离婚，divorce 是法律上的结束。' },
+          { key: 'C', en: 'legal end of a marriage', cn: '离婚，婚姻关系的法律终结', correct: true, reason: '父母「went through」的正是这道程序。' }
         ],
-        analysis: '她想停下争吵、不再翻旧账，truce 指双方暂时停战。',
-        wrongFeedback: '他答成“分手”，她摇头：“我只是不想吵了。”',
-        afterCorrect: '周叙沉默了一会儿：“好，休战。”'
+        analysis: 'divorce 指婚姻在法律上正式解除，和单纯的分居、争吵不同。',
+        wrongFeedback: '你答成「一场严重争吵」，室友低下头：「要是只是吵架就好了。」气血 -10',
+        afterCorrect: '她想起自己母亲那句「你现在这样，比以前好」，忽然有点明白了。'
       }
     ],
-    completeText: '那天夜里，她把机票按日期排好，发现每一张的背面，都写着一个她的名字。'
+    completeText: '临走前她把三十七张登机牌塞进包里。她想，回去以后要给他看，让他知道这半年不只是他在数日子。'
   },
   {
     id: 'pl_40',
@@ -2619,66 +2623,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 40 章 · 车站的拥抱',
     novel: '暗恋你第十年',
     speaker: { name: '周叙', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '进修结束那天，她拖着箱子出站，远远看见周叙站在人群里，手里举着一杯热饮。她走过去，第一次主动抱了他。',
+    storyText: '高铁到站，人潮往外涌。周叙站在出站口最前面，手里没拿花，只拿了一件外套。她拖着箱子出来，两个人在人群里站了两秒，然后抱在一起。',
     questions: [
       {
-        plotDescription: '她提起父母终于坐下来吃了顿饭，虽然话还是不多。',
-        line: "They finally reconciled after years of silence.",
-        lineCn: '沉默多年后，他们终于和解了。',
-        prompt: "根据上下文，选出画线词汇 'Reconcile' 最准确的意思。",
+        plotDescription: '旁边的护士后来打趣他们。',
+        line: "The nurse thought we were having an affair.",
+        lineCn: '那个护士还以为我们在搞婚外情。',
+        prompt: "根据上下文，选出画线词汇 'Affair' 最准确的意思。",
         options: [
-          { key: 'A', en: 'quarrel again', cn: '再次争吵', correct: false, reason: '“终于”加上一起吃饭，是缓和不是争吵。' },
-          { key: 'B', en: 'move away', cn: '搬走', correct: false, reason: '一起吃饭不能推出搬家。' },
-          { key: 'C', en: 'make peace after a conflict', cn: '和解', correct: true, reason: '多年不说话后重新和好，reconcile 指和解。' }
+          { key: 'A', en: 'a secret romantic relationship', cn: '绯闻、地下情，秘密的感情关系', correct: true, reason: '被人误会成偷偷摸摸的关系，正是 affair。' },
+          { key: 'B', en: 'a business deal', cn: '一笔生意', correct: false, reason: 'affair 有事务的意思，但这里说的是两个人。' },
+          { key: 'C', en: 'a party', cn: '一场派对', correct: false, reason: '没有派对，只有出站口的拥抱。' }
         ],
-        analysis: '多年不说话后重新和好、能坐在一起吃饭，reconcile 指和解。',
-        wrongFeedback: '她答成“再次争吵”，可她说的是“终于”。',
-        afterCorrect: '周叙低头看她：“那我们呢，算不算？”'
+        analysis: 'affair 常指隐秘的恋情或婚外情，也可以泛指「事情」。',
+        wrongFeedback: '你答成「一笔生意」，她笑：「我们这生意做得挺亏。」气血 -10',
+        afterCorrect: '他说：「那你怎么解释？」她说：「我说是我男朋友。」'
       },
       {
-        plotDescription: '她笑说上次吵架的内容，自己已经想不起来了。',
-        line: "Our last argument was about something stupid. I don't even remember.",
-        lineCn: '我们上次争吵是为了件小事，我都记不清了。',
-        prompt: "根据上下文，选出画线词汇 'Argument' 最准确的意思。",
+        plotDescription: '她笑他从来不会准备惊喜。',
+        line: "He says he doesn't know anything about romance.",
+        lineCn: '他说自己对浪漫一窍不通。',
+        prompt: "根据上下文，选出画线词汇 'Romance' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a quarrel', cn: '争论、争吵', correct: true, reason: '两人为小事起冲突，argument 指争论。' },
-          { key: 'B', en: 'a date', cn: '约会', correct: false, reason: '“为了件小事”说明是冲突，不是约会。' },
-          { key: 'C', en: 'a trip', cn: '旅行', correct: false, reason: '句中没有任何出行信息。' }
+          { key: 'A', en: 'love and romantic gestures', cn: '浪漫，爱情里的心动与仪式感', correct: true, reason: '「一窍不通」说的正是制造惊喜这类事。' },
+          { key: 'B', en: 'a novel', cn: '一本小说', correct: false, reason: 'romance 可以指言情小说，但这里说的是他的行为。' },
+          { key: 'C', en: 'a kind of music', cn: '一种音乐', correct: false, reason: '句子谈的是惊喜，不是音乐。' }
         ],
-        analysis: '两人为小事起冲突、事后都记不清，argument 指争论、争吵。',
-        wrongFeedback: '她答成“约会”，周叙笑：“那倒希望是。”',
-        afterCorrect: '她说：“以后吵完，别隔夜。”'
+        analysis: 'romance 指爱情中的浪漫氛围与举动，也可指爱情故事。',
+        wrongFeedback: '你答成「一本小说」，她说：「他要真写过书，我第一个买。」气血 -10',
+        afterCorrect: '她说：「那你包里那三十七张便利贴是什么？」他别过脸：「不算什么。」'
       },
       {
-        plotDescription: '她承认这一年他们也吵过，但从来没有想过分开。',
-        line: "We had a fight, but we never stopped loving each other.",
-        lineCn: '我们吵过架，但从来没有不爱对方。',
-        prompt: "根据上下文，选出画线词汇 'Fight' 最准确的意思。",
+        plotDescription: '她数了数他这半年做的事。',
+        line: "Ten years of showing up — that's devotion.",
+        lineCn: '十年如一日地出现，那是深情。',
+        prompt: "根据上下文，选出画线词汇 'Devotion' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a match', cn: '比赛', correct: false, reason: '这里没有输赢和对手，只有两个人的冲突。' },
-          { key: 'B', en: 'an angry dispute', cn: '争吵、冲突', correct: true, reason: '和“从没停止爱”并列，fight 指激烈争执。' },
-          { key: 'C', en: 'a hug', cn: '拥抱', correct: false, reason: '拥抱不会用“吵过”来修饰。' }
+          { key: 'A', en: 'a duty shift', cn: '一次值班', correct: false, reason: '十年不是一班岗。' },
+          { key: 'B', en: 'deep loyalty and care', cn: '深情，长久的忠诚与付出', correct: true, reason: '十年一直出现，正是持续不断的在意。' },
+          { key: 'C', en: 'an obligation to family', cn: '对家庭的义务', correct: false, reason: '这里说的是他主动的选择，不是义务。' }
         ],
-        analysis: '和“从没停止爱”并列，fight 指激烈的争执、吵架。',
-        wrongFeedback: '她答成“比赛”，可这里没有输赢。',
-        afterCorrect: '他把她手里的箱子接过去：“那以后少吵。”'
+        analysis: 'devotion 指长期、专注的付出与忠诚，带感情色彩。',
+        wrongFeedback: '你答成「一次值班」，她说：「这班值了十年。」气血 -10',
+        afterCorrect: '他拎起她的箱子，说：「走吧，我请你吃面。」她说：「你怎么知道我想吃面。」'
       },
       {
-        plotDescription: '她说两个人过日子，不能总让一个人退。',
-        line: "A good relationship takes compromise. Both of us, not just you.",
-        lineCn: '好的关系需要妥协，是两个人，不只你一个。',
-        prompt: "根据上下文，选出画线词汇 'Compromise' 最准确的意思。",
+        plotDescription: '车上她问他，还喜欢急诊吗。',
+        line: "There's still passion there — you can hear it when he talks about the ER.",
+        lineCn: '那份激情还在，他说起急诊时你听得出来。',
+        prompt: "根据上下文，选出画线词汇 'Passion' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a command', cn: '命令', correct: false, reason: '“两个人各让一步”不是命令。' },
-          { key: 'B', en: 'doubt', cn: '怀疑', correct: false, reason: '这里谈的是相处方式，不是信任问题。' },
-          { key: 'C', en: 'each side giving a little', cn: '妥协、各让一步', correct: true, reason: '他强调双方都退一步，compromise 指妥协。' }
+          { key: 'A', en: 'a fruit', cn: '一种水果', correct: false, reason: 'passion fruit 是百香果，但这里说的是他的状态。' },
+          { key: 'B', en: 'physical pain', cn: '身体的疼痛', correct: false, reason: 'passion 和疼痛无关。' },
+          { key: 'C', en: 'intense feeling and enthusiasm', cn: '激情，强烈的热爱', correct: true, reason: '一说起急诊就听得出来，正是那种热爱。' }
         ],
-        analysis: '他强调双方都退一步、不能只让一个人扛，compromise 指妥协。',
-        wrongFeedback: '她答成“命令”，可他说的是“两个人”。',
-        afterCorrect: '她点头：“那这次，我先让一步。”'
+        analysis: 'passion 指强烈的情感或热爱，可以是爱情，也可以是对事业的热忱。',
+        wrongFeedback: '你答成「一种水果」，她笑得靠在他肩上：「你真是。」气血 -10',
+        afterCorrect: '他说：「喜欢。」停了一下又说：「但今年开始，我更喜欢下班。」'
       }
     ],
-    completeText: '出站口人来人往。她抱着他，忽然发现，十年的距离原来可以缩成一个拥抱那么短。'
+    completeText: '第四幕过了一半。那天晚上他送她到楼下，没有立刻走，说：「温以宁，有件事我一直没告诉你。」'
   },
   {
     id: 'pl_41',
@@ -2686,66 +2690,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 41 章 · 平安夜的戒指',
     novel: '暗恋你第十年',
     speaker: { name: '温以宁', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '平安夜，急诊科难得安静。周叙把温以宁叫到天台，说上来看看楼下的灯。他一只手一直揣在大衣口袋里，始终没有拿出来。',
+    storyText: '平安夜，急诊难得安静。周叙的母亲站在护士站外面，手里捧着一个旧铁盒，盒盖上的漆掉了一半。温以宁认出那盒子，十年前她见过一次。',
     questions: [
       {
-        plotDescription: '她盯着他那只一直不肯拿出来的手，笑意先一步浮上来。',
-        line: "You're way too savvy to think I only brought you up here for the lights.",
-        lineCn: '你这么精明，不会以为我叫你上来只是为了看灯吧。',
-        prompt: "根据上下文，选出画线词汇 'Savvy' 最准确的意思。",
+        plotDescription: '她走过去，没有绕开。',
+        line: "I finally confronted her — I asked why she did it.",
+        lineCn: '我终于当面问了她，问她为什么要那样做。',
+        prompt: "根据上下文，选出画线词汇 'Confront' 最准确的意思。",
         options: [
-          { key: 'A', en: 'sharp, quick to notice', cn: '精明、看得很透', correct: true, reason: '他打趣她一眼就能看穿自己的打算，savvy 指机敏、看得透。' },
-          { key: 'B', en: 'innocent', cn: '天真的', correct: false, reason: '她恰恰是太看得懂才被他拿来打趣，和天真正好相反。' },
-          { key: 'C', en: 'wealthy', cn: '有钱的', correct: false, reason: '这里谈的是眼力，不是钱包，savvy 与财富无关。' }
+          { key: 'A', en: 'face it directly', cn: '对质，当面把话摊开', correct: true, reason: '走过去、直接问，正是 confront 的动作。' },
+          { key: 'B', en: 'avoid the person', cn: '躲开那个人', correct: false, reason: '她「没有绕开」，正好相反。' },
+          { key: 'C', en: 'forgive quietly', cn: '默默原谅', correct: false, reason: '她开口是问原因，不是原谅。' }
         ],
-        analysis: '他半开玩笑地承认自己藏不住，savvy 在这里是“机敏、一眼看穿”，不是书呆子式的聪明。',
-        wrongFeedback: '你把它理解成了“有钱”，他口袋里的手一僵，这点气氛全让你说没了。',
-        afterCorrect: '她抱着手臂看他：“那口袋里是什么？”周叙沉默了半秒，终于把手拿出来，指节因为攥得太久有点发白。'
+        analysis: 'confront 指主动面对冲突、把问题摊开来讲，语气比 ask 重得多。',
+        wrongFeedback: '你答成「躲开那个人」，可她已经走到对方面前了。气血 -10',
+        afterCorrect: '老人把铁盒放在台面上，说：「我知道你恨我。」她说：「我不恨，我只是想知道。」'
       },
       {
-        plotDescription: '她没打算给他留台阶，话直白得让自己都愣了一下。',
-        line: "I'll be blunt — if that's a ring, you'd better be sure about me.",
-        lineCn: '我直说——如果那是戒指，你最好确定你要的是我。',
-        prompt: "根据上下文，选出画线词汇 'Blunt' 最准确的意思。",
+        plotDescription: '老人说，周叙知道真相后，有两年没回过家。',
+        line: "He cut ties with his family for two years.",
+        lineCn: '他和家里断了两年联系。',
+        prompt: "根据上下文，选出画线词汇 'Cut ties' 最准确的意思。",
         options: [
-          { key: 'A', en: 'dull, not sharp', cn: '钝的', correct: false, reason: 'blunt 形容刀是“钝”，可她说的是一句话，不是刀。' },
-          { key: 'B', en: 'direct, saying it straight', cn: '直截了当、不绕弯子', correct: true, reason: '她声明自己要直说，blunt 指说话不留情面、直截了当。' },
-          { key: 'C', en: 'polite', cn: '客气的', correct: false, reason: '她特意说“我直说”，正是省掉了客套，与客气相反。' }
+          { key: 'A', en: 'ended all contact', cn: '断绝关系，彻底断了联系', correct: true, reason: '两年没回家，正是把关系剪断。' },
+          { key: 'B', en: 'moved to another city', cn: '搬到另一个城市', correct: false, reason: '搬家不等于断联系。' },
+          { key: 'C', en: 'tied a knot', cn: '打了个结', correct: false, reason: 'tie 是系上，cut ties 是剪断，意思正好相反。' }
         ],
-        analysis: 'blunt 的核心是“不修饰”。她说“我直说”，后面那句不留余地的话，正是它的用法。',
-        wrongFeedback: '你答成“钝的”，那句直白的告白被听成了刀，天台的风都凉了一层。',
-        afterCorrect: '周叙听完反而松了一口气：“好，那我也直说。”他把口袋里那个丝绒盒子放到手心里，慢慢摊开，指尖在抖。'
+        analysis: 'cut ties 指正式断绝往来，常用于家庭、朋友或机构之间。',
+        wrongFeedback: '你答成「打了个结」，老人低头看着盒子：「他连电话都不接。」气血 -10',
+        afterCorrect: '温以宁想起那两年他总是独自值除夕的班。'
       },
       {
-        plotDescription: '她抢在他开口之前，先把气氛重新搅热了。',
-        line: "Relax. You look like I'm about to bite you. I'm just being sassy.",
-        lineCn: '放松点，你看我的眼神像我要咬你。我只是嘴上不饶人。',
-        prompt: "根据上下文，选出画线词汇 'Sassy' 最准确的意思。",
+        plotDescription: '老人打开盒子，里面是一枚旧戒指，压着一张折过的纸。',
+        line: "I messed up the timing — I should have said it earlier.",
+        lineCn: '我把时机搞砸了，本该早点说出这些。',
+        prompt: "根据上下文，选出画线词汇 'Mess up' 最准确的意思。",
         options: [
-          { key: 'A', en: 'quiet and shy', cn: '安静害羞', correct: false, reason: '她正拿话逗他，安静害羞正好说反了。' },
-          { key: 'B', en: 'sad', cn: '难过的', correct: false, reason: '她是在给两个人解围，语调里没有难过。' },
-          { key: 'C', en: 'playfully bold in speech', cn: '泼辣、嘴上不饶人', correct: true, reason: '她用自嘲化解紧张，sassy 指俏皮又带点冲的说话方式。' }
+          { key: 'A', en: 'made a mistake', cn: '搞砸了，弄错了', correct: true, reason: '「本该早点说」正是承认自己弄错了时机。' },
+          { key: 'B', en: 'cleaned everything up', cn: '收拾干净了', correct: false, reason: 'mess up 和收拾干净正好相反。' },
+          { key: 'C', en: 'arranged it perfectly', cn: '安排得很完美', correct: false, reason: '她说的是「本该早点」，显然不完美。' }
         ],
-        analysis: 'sassy 是一种带笑意的冒犯：不真伤人，但嘴上绝不吃亏。她用这个词替两个人松了绑。',
-        wrongFeedback: '你答成“难过”，他眼里那点紧张没被接住，反倒更不敢说话了。',
-        afterCorrect: '他被她逗笑，肩膀终于松下来，把盒子打开一条缝：“行，那我说了，你可别泼我冷水。”她把手背到身后，心跳快得不像话。'
+        analysis: 'mess up 口语里指把事情弄糟、弄出错，是很常用的自嘲说法。',
+        wrongFeedback: '你答成「安排得很完美」，老人抬起头，眼睛红了。气血 -10',
+        afterCorrect: '纸上是一行字：等你三十岁，如果还没结婚，就把这个给她。落款是十年前的日期。'
       },
       {
-        plotDescription: '他准备的台词实在太笨，她听完直接笑出来。',
-        line: "That was a lame speech, Zhou Xu. Try again.",
-        lineCn: '这段表白太蹩脚了，周叙。重来。',
-        prompt: "根据上下文，选出画线词汇 'Lame' 最准确的意思。",
+        plotDescription: '温以宁问，这戒指是谁的。',
+        line: "We both screwed up, and we both kept quiet about it.",
+        lineCn: '我们两个都弄糟了，又都对此保持沉默。',
+        prompt: "根据上下文，选出画线词汇 'Screw up' 最准确的意思。",
         options: [
-          { key: 'A', en: 'weak, not impressive', cn: '蹩脚、拿不出手', correct: true, reason: '她笑他台词准备得差，lame 指笨拙、不够看。' },
-          { key: 'B', en: 'unable to walk', cn: '腿脚不便的', correct: false, reason: 'lame 有“腿脚不便”的意思，但这里评价的是“一段话”。' },
-          { key: 'C', en: 'too long', cn: '太长了', correct: false, reason: '她嫌的不是长度，是内容不够好。' }
+          { key: 'A', en: 'fixed it perfectly', cn: '完美地修好了', correct: false, reason: '后面接的是「保持沉默」，不是在修补。' },
+          { key: 'B', en: 'ruined it', cn: '弄糟了，把事情搞坏', correct: true, reason: '两个人都不说话，正是把事弄坏了还不肯讲。' },
+          { key: 'C', en: 'apologized to each other', cn: '互相道歉了', correct: false, reason: '句子说的是沉默，不是道歉。' }
         ],
-        analysis: 'lame 用来评价表现时等于“弱、不够看”。她笑着让他重来，其实是在拖延自己的心跳。',
-        wrongFeedback: '你答成“瘸的”，他准备好的第二遍台词卡在喉咙里，张了张嘴没出声。',
-        afterCorrect: '周叙耳根通红，把稿子折起来塞回口袋，然后干脆不看纸，只说了一句：“温以宁，我想跟你过完以后的每一年。”'
+        analysis: 'screw up 和 mess up 意思接近，都指把事弄糟，语气更口语。',
+        wrongFeedback: '你答成「互相道歉了」，老人摇头：「要是道过歉就好了。」气血 -10',
+        afterCorrect: '她拿起那枚戒指，很轻，像一片叶子。她忽然明白周叙为什么总说「我不配」。'
       }
     ],
-    completeText: '雪落在天台的栏杆上。他说完那句话，两个人都没有再说话，只有楼下十字路口的灯一直在换颜色。她忽然想起十年前那个冬天，自己也是这样在灯下，偷偷看他。'
+    completeText: '她把戒指放回盒子，说：「阿姨，这个我不能收。要收，也得他自己给我。」老人笑了，那是她第一次看见她笑。'
   },
   {
     id: 'pl_42',
@@ -2753,66 +2757,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 42 章 · 求婚的草稿',
     novel: '暗恋你第十年',
     speaker: { name: '周叙', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '周叙在家写求婚的草稿，写到凌晨，七页删掉了六页。温以宁值完夜班回来，看见他趴在桌上睡着，脚边散着一地揉成团的纸，手边那页只写了半句。',
+    storyText: '他手机落在她桌上，屏幕亮了一下，弹出一份备忘录的提醒：十二月三十一日，念给她听。她没点开。晚上他自己招了。',
     questions: [
       {
-        plotDescription: '她捡起一张纸，上面的句子让她笑出声，也让她心里一动。',
-        line: "Okay, this line is actually dope. I'm keeping it.",
-        lineCn: '好吧，这句其实很赞，我要留着。',
-        prompt: "根据上下文，选出画线词汇 'Dope' 最准确的意思。",
+        plotDescription: '朋友在群里连发三条消息。',
+        line: "Come on, spill the tea — what did you write in that note?",
+        lineCn: '快说，爆料一下，你那张纸上到底写了什么？',
+        prompt: "根据上下文，选出画线词汇 'Spill the tea' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a drug', cn: '毒品', correct: false, reason: 'dope 有“毒品”的旧义，但没人会用它来形容一句话。' },
-          { key: 'B', en: 'really cool, great', cn: '很棒、很赞', correct: true, reason: '她夸自己写下的那句台词，dope 在口语里就是“牛、很棒”。' },
-          { key: 'C', en: 'stupid', cn: '愚蠢的', correct: false, reason: '她说“要留着”，说明她认可，不是嫌弃。' }
+          { key: 'A', en: 'make a cup of tea', cn: '泡一杯茶', correct: false, reason: '这里要的是内容，不是饮料。' },
+          { key: 'B', en: 'keep it a secret', cn: '保守秘密', correct: false, reason: '「快说」正好是让秘密说出来。' },
+          { key: 'C', en: 'share the gossip', cn: '爆料，把内情说出来', correct: true, reason: '群里追问纸上写了什么，正是让他抖出来。' }
         ],
-        analysis: 'dope 是年轻人夸东西好的常用词，比 good 更有情绪。她嘴上嫌弃，手上却把那张纸收了起来。',
-        wrongFeedback: '你答成“毒品”，那句好不容易写顺的台词，一下子变得可疑起来。',
-        afterCorrect: '她把纸折好，压在自己的值班表下面。周叙醒来时，看见那堆纸团被收进了垃圾桶，只剩最上面那张被抚平了。'
+        analysis: 'spill the tea 是网络口语，指把八卦、内幕说出来，tea 就是「料」。',
+        wrongFeedback: '你答成「泡一杯茶」，群里立刻刷了一排问号。气血 -10',
+        afterCorrect: '他打了三个字又删掉，最后只回：没什么。'
       },
       {
-        plotDescription: '她翻着他的草稿，忍不住指出其中的毛病。',
-        line: "Your handwriting is so sloppy. I can barely read this part.",
-        lineCn: '你字写得太潦草，这一段我几乎认不出来。',
-        prompt: "根据上下文，选出画线词汇 'Sloppy' 最准确的意思。",
+        plotDescription: '他对着她，手一直在摸后颈。',
+        line: "Swear to god, I didn't mean for you to see that.",
+        lineCn: '我对天发誓，我不是故意让你看到的。',
+        prompt: "根据上下文，选出画线词汇 'Swear to god' 最准确的意思。",
         options: [
-          { key: 'A', en: 'wet', cn: '湿的', correct: false, reason: '她说的是字，不是纸上的水渍，和潮湿无关。' },
-          { key: 'B', en: 'beautiful', cn: '漂亮的', correct: false, reason: '她刚说“几乎认不出来”，显然不是夸他字好看。' },
-          { key: 'C', en: 'messy, carelessly written', cn: '潦草、马虎', correct: true, reason: '字形糊成一团让她看不出内容，sloppy 指草率、不工整。' }
+          { key: 'A', en: 'seriously promise', cn: '对天发誓，非常认真地保证', correct: true, reason: '他紧张到摸后颈，这句是加重语气的保证。' },
+          { key: 'B', en: 'curse at God', cn: '咒骂上帝', correct: false, reason: 'swear 有骂人的意思，但 to god 是发誓。' },
+          { key: 'C', en: 'pray silently', cn: '默默祈祷', correct: false, reason: '他是在解释，不是在祈祷。' }
         ],
-        analysis: 'sloppy 形容字、活、穿着都行，核心是“不用心”。她一边嫌弃，一边把那张纸读了两遍。',
-        wrongFeedback: '你答成“湿的”，他赶紧去摸纸，才发现她说的是自己的字，脸有点挂不住。',
-        afterCorrect: '他抢过纸重抄一遍，写完还是歪的。她看了半天，说：“算了，你直接跟我说吧，别写了。”'
+        analysis: 'swear to god 用于强调自己说的是真的，相当于「我发誓」。',
+        wrongFeedback: '你答成「咒骂上帝」，他被口水呛了一下。气血 -10',
+        afterCorrect: '她说：「我一个字都没看到。」他说：「那我更亏了。」'
       },
       {
-        plotDescription: '他承认自己这阵子黏人，说得有点不好意思。',
-        line: "I know I've been needy this month. I just don't want to lose you.",
-        lineCn: '我知道我这个月很黏人，我只是不想失去你。',
-        prompt: "根据上下文，选出画线词汇 'Needy' 最准确的意思。",
+        plotDescription: '她说算了，不逼他念。',
+        line: "Whatever — I'm not going to make you say it.",
+        lineCn: '算了，我不逼你说。',
+        prompt: "根据上下文，选出画线词汇 'Whatever' 最准确的意思。",
         options: [
-          { key: 'A', en: 'overly clingy, needing constant attention', cn: '过度黏人、总需要陪伴', correct: true, reason: '他自己承认总想找她，needy 指情感上黏人、缺安全感。' },
-          { key: 'B', en: 'poor', cn: '贫穷的', correct: false, reason: 'needy 有“贫困”的意思，但这里说的是相处方式，不是钱。' },
-          { key: 'C', en: 'busy', cn: '忙碌的', correct: false, reason: '他的话是“总想找你”，不是“没空”。' }
+          { key: 'A', en: 'anything at all', cn: '任何东西', correct: false, reason: '这里单独成句，是让步的语气。' },
+          { key: 'B', en: 'never mind', cn: '算了，随便吧', correct: true, reason: '后面一句「不逼你」说明她已经放弃追问。' },
+          { key: 'C', en: 'for sure', cn: '当然', correct: false, reason: '语气不对，这里是退让不是肯定。' }
         ],
-        analysis: 'needy 在感情里常带一点自嘲：需要被回应的太多。他说出口，其实是把最没底的那部分交出来。',
-        wrongFeedback: '你答成“贫穷”，那句难得示弱的话被拐到了钱上，他只好低头笑了一下。',
-        afterCorrect: '她把手放在他头发上：“黏就黏吧。”停了停又补一句，“我值夜班的时候，也算黏你。”'
+        analysis: 'whatever 单独使用时表示「随便吧、算了」，常带一点无奈。',
+        wrongFeedback: '你答成「当然」，他愣了一下：「什么叫当然？」气血 -10',
+        afterCorrect: '他沉默了很久，说：「那你听一半吧。」'
       },
       {
-        plotDescription: '她把话说得有点重，说完自己先安静下来，手指扣着杯沿。',
-        line: "Ten years without a word — wasn't that a little selfish of you?",
-        lineCn: '十年一句话都没有，你是不是有点自私？',
-        prompt: "根据上下文，选出画线词汇 'Selfish' 最准确的意思。",
+        plotDescription: '他说，那份草稿是六月写的。',
+        line: "You wrote that in June? Seriously?",
+        lineCn: '你六月就写了？你认真的吗？',
+        prompt: "根据上下文，选出画线词汇 'Seriously?' 最准确的意思。",
         options: [
-          { key: 'A', en: 'honest', cn: '诚实的', correct: false, reason: '她是在责怪他，不是夸他坦白。' },
-          { key: 'B', en: 'thinking only of oneself', cn: '只想着自己、自私', correct: true, reason: '她质问他把十年一个人扛着、没给她选择，selfish 指只考虑自己。' },
-          { key: 'C', en: 'shy', cn: '害羞的', correct: false, reason: '这里是责怪的语气，和害羞无关。' }
+          { key: 'A', en: 'are you for real', cn: '你认真的吗，当真？', correct: true, reason: '她重复时间、再追问一句，正是确认他是否当真。' },
+          { key: 'B', en: 'in a very serious voice', cn: '用很严肃的语气', correct: false, reason: '这里单独成句，是在确认对方的态度，不是形容语气。' },
+          { key: 'C', en: 'immediately', cn: '立刻', correct: false, reason: 'seriously 没有「立刻」的意思。' }
         ],
-        analysis: '她说他自私，其实是在怪他替她做了决定。selfish 的指责背后，是她想被一起承担。',
-        wrongFeedback: '你答成“诚实的”，那句积了十年的委屈没被听懂，她起身去洗碗。',
-        afterCorrect: '他没有辩解，只说：“是，我自私。以后不会了，什么都先告诉你。”她把水龙头关小，肩膀终于松下来。'
+        analysis: 'seriously 单独作问句时，表示难以置信的确认，相当于「你说真的？」',
+        wrongFeedback: '你答成「用很严肃的语气」，他反问：「我哪句话不严肃？」气血 -10',
+        afterCorrect: '他说：「六月。你签续签那天。」'
       }
     ],
-    completeText: '那天晚上两个人在厨房站了很久。他把草稿纸全扔了，说不用了，反正要说的都在心里。她背对着他洗碗，水声盖住了一句很轻的“嗯”。'
+    completeText: '她忽然想起六月那个下午，她写下「留下」两个字。原来同一天，他也写下了一份草稿。'
   },
   {
     id: 'pl_43',
@@ -2820,66 +2824,66 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 43 章 · 她说了愿意',
     novel: '暗恋你第十年',
     speaker: { name: '温以宁', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '第二天上班，温以宁在走廊里被同事围住。她左手无名指上多了一圈细细的银光，怎么把袖口往下拉都藏不住，只好笑着认了。整个急诊科一上午都在讨论这件事。',
+    storyText: '十二月三十一日，医院天台。他准备了两周，气球、热饮、一台旧音响。结果戒指盒落在了车里，音响也接不上电。',
     questions: [
       {
-        plotDescription: '同事抓着她的手翻来覆去地看，感叹得很大声。',
-        line: "This ring is gorgeous. He has good taste.",
-        lineCn: '这枚戒指太好看了，他品味不错。',
-        prompt: "根据上下文，选出画线词汇 'Gorgeous' 最准确的意思。",
+        plotDescription: '他跑上来时满头是汗，第一句话就是认错。',
+        line: "My bad — I left the ring in the car.",
+        lineCn: '我的锅，戒指落车里了。',
+        prompt: "根据上下文，选出画线词汇 'My bad' 最准确的意思。",
         options: [
-          { key: 'A', en: 'expensive', cn: '昂贵的', correct: false, reason: '她在夸样子好看，价钱是另一回事，别硬往钱上靠。' },
-          { key: 'B', en: 'small', cn: '很小的', correct: false, reason: '句子在夸好看，不是在嫌它小。' },
-          { key: 'C', en: 'extremely beautiful', cn: '非常漂亮、美得抓眼', correct: true, reason: '她举着她的手连声赞叹，gorgeous 指极其好看、惊艳。' }
+          { key: 'A', en: 'my fault', cn: '我的锅，是我的错', correct: true, reason: '跑上来就认错，正是 my bad 的用法。' },
+          { key: 'B', en: 'my gift to you', cn: '给你的礼物', correct: false, reason: '他在道歉，不是在送礼。' },
+          { key: 'C', en: 'my turn', cn: '轮到我了', correct: false, reason: 'my turn 是轮流，这里没有轮次。' }
         ],
-        analysis: 'gorgeous 比 beautiful 更重，常带一点惊呼感。同事的语气里，惊艳是真的，替她高兴也是真的。',
-        wrongFeedback: '你答成“昂贵的”，同事那句赞叹落了地，她自己也只好尴尬地笑。',
-        afterCorrect: '温以宁把手指蜷了一下：“他说这个款式简单，适合天天戴。”说完才发现，自己已经在替他解释用心了。'
+        analysis: 'my bad 是非常口语的认错方式，语气轻，适合小事。',
+        wrongFeedback: '你答成「给你的礼物」，她笑：「这礼物还得你自己去拿。」气血 -10',
+        afterCorrect: '她说：「那你还不快去。」他转身就跑，跑到一半又回头：「你别走。」'
       },
       {
-        plotDescription: '有人提起周叙平时的样子，语气有点促狭。',
-        line: "Isn't it weird that he never smiles, but he smiles at you?",
-        lineCn: '他从不对别人笑，却对你笑，这不奇怪吗？',
-        prompt: "根据上下文，选出画线词汇 'Weird' 最准确的意思。",
+        plotDescription: '楼下保安拦住他，问怎么回事。',
+        line: "Don't blame him — I forgot to remind him.",
+        lineCn: '别怪他，是我忘了提醒他。',
+        prompt: "根据上下文，选出画线词汇 'Blame' 最准确的意思。",
         options: [
-          { key: 'A', en: 'strange, odd', cn: '奇怪的、反常的', correct: true, reason: '她拿他的反差打趣，weird 指让人意外、不合常理。' },
-          { key: 'B', en: 'romantic', cn: '浪漫的', correct: false, reason: '句子的落点是“反常”，不是浪漫，别把赞美塞进去。' },
-          { key: 'C', en: 'rude', cn: '无礼的', correct: false, reason: '没有人被冒犯，大家只是觉得惊讶。' }
+          { key: 'A', en: 'hold someone responsible', cn: '责怪，把责任算到别人头上', correct: true, reason: '「别怪他」正是让人别把责任推给他。' },
+          { key: 'B', en: 'praise him', cn: '表扬他', correct: false, reason: '和「忘了提醒」这个语境不搭。' },
+          { key: 'C', en: 'thank him', cn: '感谢他', correct: false, reason: '她在替他开脱，不是在道谢。' }
         ],
-        analysis: 'weird 在这句里没有恶意，是一种带笑的“太反常了”。那种反差本身，就是最好的证明。',
-        wrongFeedback: '你答成“浪漫的”，那点好玩的促狭全没了，她还得自己把话接回去。',
-        afterCorrect: '她低头把袖口拉好：“他本来就不爱笑。”话一说完，整圈人齐声拖长了“哦——”，她耳朵红了。'
+        analysis: 'blame 指认为某人该为某事负责，常带指责意味。',
+        wrongFeedback: '你答成「表扬他」，保安看了看两个人，把门打开了。气血 -10',
+        afterCorrect: '他跑回来时喘得说不出话，把盒子举得高高的。'
       },
       {
-        plotDescription: '她替他说了句话，自己也觉得有点好笑。',
-        line: "He looks sketchy when he's quiet, but he's just thinking.",
-        lineCn: '他安静的时候看起来有点可疑，其实他只是在想事情。',
-        prompt: "根据上下文，选出画线词汇 'Sketchy' 最准确的意思。",
+        plotDescription: '后来两个人在楼道里吵了两句。',
+        line: "We argued for ten minutes about which floor to go to.",
+        lineCn: '我们为了上几楼争了十分钟。',
+        prompt: "根据上下文，选出画线词汇 'Argue' 最准确的意思。",
         options: [
-          { key: 'A', en: 'handsome', cn: '帅气的', correct: false, reason: '“可疑”和“帅”是两个方向，句子里还用了 but 转折。' },
-          { key: 'B', en: 'doubtful, not to be trusted', cn: '可疑的、不太靠谱', correct: true, reason: '她承认他沉默时给人不安感，sketchy 指让人起疑、靠不住的样子。' },
-          { key: 'C', en: 'sleepy', cn: '困倦的', correct: false, reason: '“在想事情”不等于犯困，sketchy 也没有困的意思。' }
+          { key: 'A', en: 'agreed with each other', cn: '彼此同意', correct: false, reason: '争了十分钟，显然没同意。' },
+          { key: 'B', en: 'quarrel over something', cn: '争吵，为某件事争起来', correct: true, reason: '为了楼层争十分钟，正是 argue。' },
+          { key: 'C', en: 'laughed together', cn: '一起笑', correct: false, reason: '他们是在争，不是在笑。' }
         ],
-        analysis: 'sketchy 形容人或事“看着就不太对”。她用这个词自嘲，其实是在替他解释那份沉默。',
-        wrongFeedback: '你答成“帅气的”，她替人辩解的话变成了夸人，同事的笑意更浓了。',
-        afterCorrect: '她补了一句：“反正他对我不是。”说完自己先笑起来，走廊尽头的护士站也跟着响了一片。'
+        analysis: 'argue 指因为意见不同而争执，可以很轻，也可以很激烈。',
+        wrongFeedback: '你答成「彼此同意」，她说：「那十分钟我们在干嘛？」气血 -10',
+        afterCorrect: '最后是他说：「顶楼吧，那里能看见整个院区。」'
       },
       {
-        plotDescription: '她想起昨晚那场求婚，忍不住评价了一句。',
-        line: "The whole proposal was bizarre. He read from a draft.",
-        lineCn: '整场求婚都透着古怪，他居然照着草稿念。',
-        prompt: "根据上下文，选出画线词汇 'Bizarre' 最准确的意思。",
+        plotDescription: '她站在天台边上，听见楼下有人喊她的名字。',
+        line: "He yelled my name from the parking lot.",
+        lineCn: '他在停车场大喊我的名字。',
+        prompt: "根据上下文，选出画线词汇 'Yell' 最准确的意思。",
         options: [
-          { key: 'A', en: 'perfect', cn: '完美的', correct: false, reason: '她笑他念草稿，这是在吐槽，不是夸完美。' },
-          { key: 'B', en: 'quick', cn: '很迅速的', correct: false, reason: '句子的重点是“古怪”，不是快慢。' },
-          { key: 'C', en: 'very strange, absurd', cn: '离奇古怪、荒唐', correct: true, reason: '她形容那场求婚不走寻常路，bizarre 指怪异到让人想笑。' }
+          { key: 'A', en: 'whispered softly', cn: '轻轻地低语', correct: false, reason: '隔着停车场低声说话听不见。' },
+          { key: 'B', en: 'sang a song', cn: '唱了一首歌', correct: false, reason: '他喊的是名字。' },
+          { key: 'C', en: 'shout loudly', cn: '大喊，高声叫', correct: true, reason: '从停车场传到天台，只能是喊。' }
         ],
-        analysis: 'bizarre 比 weird 更重，带一点“简直离谱”。她说得嫌弃，嘴角却一直没压下去。',
-        wrongFeedback: '你答成“完美的”，那句好玩的吐槽完全失了味，她也懒得再多说。',
-        afterCorrect: '同事追问细节，她只说了句“反正最后我答应了”，然后低下头笑，怎么都收不住，干脆拿病历本挡了一下脸。'
+        analysis: 'yell 指因距离或情绪而高声喊叫。',
+        wrongFeedback: '你答成「轻轻地低语」，可整栋楼都听见了。气血 -10',
+        afterCorrect: '她趴在栏杆上往下看，他举着那个小盒子，像个傻子一样挥手。'
       }
     ],
-    completeText: '一整个上午，走廊里都有人往她手上瞟。温以宁第一次觉得，原来一件好事可以被这么多人同时分享。她把手插进白大褂口袋，戒指硌着指节，很轻，却一直在。'
+    completeText: '她说了愿意。没有音乐，没有气球升空，只有两个人在天台上冻得发抖，笑得停不下来。'
   },
   {
     id: 'pl_44',
@@ -2887,401 +2891,401 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 44 章 · 婚纱店的镜子',
     novel: '暗恋你第十年',
     speaker: { name: '周叙', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '周末去试婚纱。周叙坐在婚纱店的沙发上，手里捏着一杯已经凉掉的茶。帘子拉开的那一刻，他准备好的所有话都忘干净了，只剩下一个动作——站起来。',
+    storyText: '婚纱店里，暖黄的灯，三面镜子。她进去换衣服，他坐在外面，忽然想起母亲铁盒里压着的那张旧照片——也是这样的镜子，也是这样的白。',
     questions: [
       {
-        plotDescription: '店员在旁边笑着起哄，他自己都不知道说了什么。',
-        line: "That's epic. I mean it — you look unreal.",
-        lineCn: '太震撼了。我是认真的，你看起来不像真的。',
-        prompt: "根据上下文，选出画线词汇 'Epic' 最准确的意思。",
+        plotDescription: '他提了一次当年的事。',
+        line: "She still denies writing that letter.",
+        lineCn: '她至今否认写过那封信。',
+        prompt: "根据上下文，选出画线词汇 'Deny' 最准确的意思。",
         options: [
-          { key: 'A', en: 'extremely impressive', cn: '极其震撼、了不起', correct: true, reason: '他被那一幕正面击中，epic 指宏大、令人惊叹的程度。' },
-          { key: 'B', en: 'a long poem', cn: '史诗', correct: false, reason: 'epic 本是“史诗”，但他夸的是眼前的人，不是一本书。' },
-          { key: 'C', en: 'embarrassing', cn: '令人尴尬的', correct: false, reason: '他后面还补了“我是认真的”，显然是在夸，不是在嫌。' }
+          { key: 'A', en: 'say it is not true', cn: '否认，说那不是真的', correct: true, reason: '「至今」加「那封信」，正是她不承认。' },
+          { key: 'B', en: 'admit it', cn: '承认了', correct: false, reason: 'deny 和 admit 正好相反。' },
+          { key: 'C', en: 'forget about it', cn: '忘掉了', correct: false, reason: '不记得和否认是两件事。' }
         ],
-        analysis: 'epic 在口语里常形容“猛到超出预期”的事。他词穷了，只剩这个词能说出口。',
-        wrongFeedback: '你答成“史诗”，那句脱口而出的赞叹变成了文绉绉的比喻，气氛断了一下。',
-        afterCorrect: '温以宁站在镜子前，被他盯得有点不自在：“你坐下。”他没有坐，只是走过去，把她的手握住，握得很紧。'
+        analysis: 'deny 指否认某件事的真实性，也指拒绝给予。',
+        wrongFeedback: '你答成「承认了」，他说：「要是她承认，我反而好受点。」气血 -10',
+        afterCorrect: '她换好衣服出来，正好听见最后一句。她没说话，只是站到镜子前。'
       },
       {
-        plotDescription: '她回头看镜子里的自己，先替自己嫌了一句。',
-        line: "Don't look at me like that. I'm cringing at myself.",
-        lineCn: '别那样看我，我自己都觉得别扭。',
-        prompt: "根据上下文，选出画线词汇 'Cringe' 最准确的意思。",
+        plotDescription: '他迟到了十五分钟，进门先对着店员鞠躬。',
+        line: "He apologized to her mother for being late.",
+        lineCn: '他为迟到向她母亲道了歉。',
+        prompt: "根据上下文，选出画线词汇 'Apologize' 最准确的意思。",
         options: [
-          { key: 'A', en: 'crying', cn: '哭泣', correct: false, reason: '她不是难过，是害羞到浑身不自在。' },
-          { key: 'B', en: 'feeling awkward and embarrassed', cn: '觉得别扭、尴尬得不行', correct: true, reason: '她受不了自己被这样盯着看，cringe 指那种“脚趾抠地”的羞。' },
-          { key: 'C', en: 'smiling', cn: '微笑', correct: false, reason: '她正让他别看，笑意并不是重点。' }
+          { key: 'A', en: 'complain about the traffic', cn: '抱怨堵车', correct: false, reason: '鞠躬是道歉，不是抱怨。' },
+          { key: 'B', en: 'explain the reason', cn: '解释原因', correct: false, reason: '这里是先认错，解释是之后的事。' },
+          { key: 'C', en: 'say sorry', cn: '道歉，说对不起', correct: true, reason: '迟到十五分钟、进门先鞠躬，正是道歉。' }
         ],
-        analysis: 'cringe 是“替自己尴尬”的那种生理反应。她说出来，等于承认自己其实很开心。',
-        wrongFeedback: '你答成“哭泣”，他吓得松开手，以为婚纱哪里不合适。',
-        afterCorrect: '他笑出声：“那你慢慢习惯。”说完真的往后退了两步，从远处又认认真真地看了一遍，像在记什么。'
+        analysis: 'apologize 指为自己造成的问题向对方表示歉意。',
+        wrongFeedback: '你答成「解释原因」，她母亲说：「我又没问你为什么。」气血 -10',
+        afterCorrect: '她母亲看了他一眼，说：「下次早点出门。」他连点了三下头。'
       },
       {
-        plotDescription: '店员退到一边，他给出了自己的结论。',
-        line: "You look fabulous. Pick this one, please.",
-        lineCn: '你美极了，就选这件吧。',
-        prompt: "根据上下文，选出画线词汇 'Fabulous' 最准确的意思。",
+        plotDescription: '她试完衣服，站在镜子前很久。',
+        line: "I don't know if I can forgive her yet.",
+        lineCn: '我还不知道能不能原谅她。',
+        prompt: "根据上下文，选出画线词汇 'Forgive' 最准确的意思。",
         options: [
-          { key: 'A', en: 'expensive', cn: '贵的', correct: false, reason: '他谈的是好不好看，价钱这家店到最后才报。' },
-          { key: 'B', en: 'tired', cn: '疲惫的', correct: false, reason: '他正劝她定下这件，不可能是在说她累。' },
-          { key: 'C', en: 'wonderful, stunning', cn: '美极了、好得没话说', correct: true, reason: '他给出最直接的评价，fabulous 指极好、极美。' }
+          { key: 'A', en: 'stop being angry about it', cn: '原谅，放下那份怒', correct: true, reason: '「还不知道能不能」说的正是要不要放下。' },
+          { key: 'B', en: 'forget it completely', cn: '彻底忘记', correct: false, reason: '原谅不等于忘记，她记得很清楚。' },
+          { key: 'C', en: 'trust her again', cn: '重新信任她', correct: false, reason: '原谅是先放下怒，信任是更后面的事。' }
         ],
-        analysis: 'fabulous 带情绪，比 good 更热烈。他说“就选这件”，是替这场婚礼先做了个决定。',
-        wrongFeedback: '你答成“贵的”，那句赞美变成了心疼钱，她回头瞪了他一眼。',
-        afterCorrect: '她对着镜子转了半圈：“那就不试别的了。”话说完，两个人几乎同时松了一口气，店员也跟着笑了。'
+        analysis: 'forgive 指不再因某件事怨恨对方，是单方面的放下，不等于和好。',
+        wrongFeedback: '你答成「重新信任她」，她说：「信任比原谅难多了。」气血 -10',
+        afterCorrect: '他说：「那我陪你慢慢来。」她说：「你先把你妈那盒子拿回来。」'
       },
       {
-        plotDescription: '她低头看裙摆，忽然有点不确定，声音也小了下去。',
-        line: "Am I terrible at this? I've never worn anything like it.",
-        lineCn: '我是不是很糟？我从没穿过这样的衣服。',
-        prompt: "根据上下文，选出画线词汇 'Terrible' 最准确的意思。",
+        plotDescription: '说起那年，他停了一下。',
+        line: "He held a grudge for years, then let it go.",
+        lineCn: '他记了很多年的仇，后来放下了。',
+        prompt: "根据上下文，选出画线词汇 'Grudge' 最准确的意思。",
         options: [
-          { key: 'A', en: 'very bad, doing poorly', cn: '很糟、做得很差', correct: true, reason: '她在怀疑自己撑不起来，terrible 指糟糕透顶。' },
-          { key: 'B', en: 'beautiful', cn: '美丽的', correct: false, reason: '她是在自问是不是很糟，不是在自夸。' },
-          { key: 'C', en: 'frightening', cn: '可怕的', correct: false, reason: 'terrible 有时指“可怕的”，但这里担心的是自己做不好。' }
+          { key: 'A', en: 'a gift', cn: '一件礼物', correct: false, reason: 'grudge 和礼物没有关系。' },
+          { key: 'B', en: 'a heavy bag', cn: '一个重包', correct: false, reason: 'hold a grudge 是心里憋着气，不是提东西。' },
+          { key: 'C', en: 'long-held resentment', cn: '记仇，长期憋着的怨气', correct: true, reason: '憋了很多年又放下，正是 grudge。' }
         ],
-        analysis: 'be terrible at something 就是“某方面特别差”。婚纱把她平时的利落全打乱了，她第一次露出不确定。',
-        wrongFeedback: '你答成“美丽的”，她那点不安没有人接住，只好自己低头把裙摆整理好。',
-        afterCorrect: '周叙走到她身后，对镜子里的人说：“你不擅长的是这件裙子，不是这件事。”她低着头，把这句话记了很久。'
+        analysis: 'grudge 指因过去的伤害而长期怀有的怨恨，常用 hold a grudge。',
+        wrongFeedback: '你答成「一个重包」，她说：「这包他背了十年。」气血 -10',
+        afterCorrect: '镜子里她穿着那身白，他忽然站起来，说：「很好看。」'
       }
     ],
-    completeText: '从婚纱店出来，天已经黑了。她拎着那件被包好的白裙子，走两步就要看一眼袋子。他走在旁边，一句话没说，只是把手伸过去，让她牵着。'
+    completeText: '她转过身，裙摆扫过地面。她说：「周叙，我不需要你把过去都摆平，我只要你以后别再一个人扛。」'
   },
   {
     id: 'pl_45',
     index: 45,
-    title: '第 45 章 · 婚礼彩排',
+    title: '第 45 章 · 沉默的举报信',
     novel: '暗恋你第十年',
     speaker: { name: '温以宁', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '婚礼前一天彩排。礼堂里椅子摆得整整齐齐，两个人站在台前，司仪一句句念着流程。念到“新郎可以亲吻新娘”时，后排的人先起哄起来，温以宁低下头笑了一下。',
+    storyText: '婚礼前一周，医院的纪检收到一封匿名举报信，说周叙收受器械商回扣。信里提到的两次饭局、一个牌子的缝合线，只有科里几个人知道。',
     questions: [
       {
-        plotDescription: '她小声评价了一下这场彩排，语气里有满意也有将就。',
-        line: "It's decent. Not fancy, but it's ours.",
-        lineCn: '还不错，不算奢华，但这是我们的。',
-        prompt: "根据上下文，选出画线词汇 'Decent' 最准确的意思。",
+        plotDescription: '她看完信，第一反应不是怀疑。',
+        line: "Someone betrayed him — the details in that letter were private.",
+        lineCn: '有人背叛了他，信里的细节本来是私下的。',
+        prompt: "根据上下文，选出画线词汇 'Betray' 最准确的意思。",
         options: [
-          { key: 'A', en: 'perfect, without flaws', cn: '完美的、无可挑剔', correct: false, reason: '她自己补了“不算奢华”，说明只是“还行”，不是完美。' },
-          { key: 'B', en: 'good enough, acceptable', cn: '还不错、过得去', correct: true, reason: '她觉得够用又踏实，decent 指“体面、够好”。' },
-          { key: 'C', en: 'cheap and bad', cn: '廉价又糟糕', correct: false, reason: '她说“这是我们的”，带着珍惜，不是在嫌差。' }
+          { key: 'A', en: 'break someone trust', cn: '背叛，辜负信任', correct: true, reason: '只有熟人知道的细节被写进信里，正是信任被卖。' },
+          { key: 'B', en: 'supported him', cn: '支持了他', correct: false, reason: '匿名举报不是支持。' },
+          { key: 'C', en: 'protected him', cn: '保护了他', correct: false, reason: '这封信是要把他拉下来。' }
         ],
-        analysis: 'decent 停在“及格线之上但不夸张”的位置：不盛大，却踏实。这正是她想要的婚礼。',
-        wrongFeedback: '你答成“完美的”，她那句“不算奢华”被吞掉了，原本的分寸全没了。',
-        afterCorrect: '周叙侧过头：“以后也这样，好不好？不豪华，但都是我们的。”她点点头，没有让他看见自己的眼睛。'
+        analysis: 'betray 指辜负信任、做出背叛对方的事，是关系里最重的指控之一。',
+        wrongFeedback: '你答成「支持了他」，她把信纸攥出了褶。气血 -10',
+        afterCorrect: '她把信复印了一份，锁进自己的抽屉。'
       },
       {
-        plotDescription: '伴娘在旁边打趣他们俩，说得毫不客气。',
-        line: "You two are such weirdos. Who memorizes the other's schedule?",
-        lineCn: '你们俩真是怪人，谁会去背对方的排班表？',
-        prompt: "根据上下文，选出画线词汇 'Weirdo' 最准确的意思。",
+        plotDescription: '有人在背后议论，她当着所有人的面回了一句。',
+        line: "He's not a liar — I've seen every version of him.",
+        lineCn: '他不是骗子，他什么样子我都见过。',
+        prompt: "根据上下文，选出画线词汇 'Liar' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a stranger', cn: '陌生人', correct: false, reason: '她们是熟人之间打趣，和陌生无关。' },
-          { key: 'B', en: 'a genius', cn: '天才', correct: false, reason: '语气是调侃，不是在称赞天才。' },
-          { key: 'C', en: 'an odd person', cn: '古怪的人、怪咖', correct: true, reason: '她笑他们太反常，weirdo 指行为有点怪的人，多带善意。' }
+          { key: 'A', en: 'someone who lies', cn: '骗子，说谎的人', correct: true, reason: '「不是」加「什么样子我都见过」，正是在否掉这个指控。' },
+          { key: 'B', en: 'a lawyer', cn: '律师', correct: false, reason: 'liar 和 lawyer 发音像，但意思完全不同。' },
+          { key: 'C', en: 'a leader', cn: '领导', correct: false, reason: '她在说他的人品，不是在说职位。' }
         ],
-        analysis: 'weirdo 用在朋友之间，多半是又好笑又羡慕。那句“谁会背对方的排班表”，本身就是答案。',
-        wrongFeedback: '你答成“陌生人”，一句亲密的调侃被听成了划清界限。',
-        afterCorrect: '温以宁很坦然地承认：“我背了。”伴娘愣了两秒，随后整排椅子那边都笑倒了，连司仪都停下来看。'
+        analysis: 'liar 指习惯性说谎的人，是很有攻击性的词。',
+        wrongFeedback: '你答成「律师」，走廊里有人没忍住笑了一声。气血 -10',
+        afterCorrect: '她说：「你们要查就查，但别在背后说。」'
       },
       {
-        plotDescription: '她看向他的方向，顺口说了一句，说完有点后悔。',
-        line: "He looks hot in that suit. Yeah, I said it.",
-        lineCn: '他穿那身西装很性感。对，我就是说了。',
-        prompt: "根据上下文，选出画线词汇 'Hot' 最准确的意思。",
+        plotDescription: '她仔细看了那封信的落款。',
+        line: "The letter looked real, but the signature was fake.",
+        lineCn: '信看起来是真的，但签名是假的。',
+        prompt: "根据上下文，选出画线词汇 'Fake' 最准确的意思。",
         options: [
-          { key: 'A', en: 'very attractive', cn: '很性感、很帅', correct: true, reason: '她直白夸他好看，hot 形容人极有吸引力。' },
-          { key: 'B', en: 'warm in temperature', cn: '温度高、热的', correct: false, reason: '这里说的是穿西装的样子，不是天气。' },
-          { key: 'C', en: 'angry', cn: '愤怒的', correct: false, reason: '她后面那句“我就是说了”，是害羞，不是生气。' }
+          { key: 'A', en: 'expensive', cn: '昂贵的', correct: false, reason: '签名没有价格。' },
+          { key: 'B', en: 'not genuine', cn: '假的，伪造的', correct: true, reason: '和「看起来是真的」对比，正是伪造。' },
+          { key: 'C', en: 'handwritten', cn: '手写的', correct: false, reason: '手写和真假是两回事。' }
         ],
-        analysis: 'hot 形容人时特指外形上的吸引。她说完还要补一句承认，等于把自己供出来。',
-        wrongFeedback: '你答成“温度高”，那句难得的直白夸赞瞬间变成了一句天气预报。',
-        afterCorrect: '周叙在台前听见了，回头看她一眼。她立刻把脸转开，假装在研究花柱的位置，耳朵却先红了。'
+        analysis: 'fake 指伪造的、不真实的，可形容物品，也可形容人的情感。',
+        wrongFeedback: '你答成「手写的」，她把信举到灯下，笔画确实断了。气血 -10',
+        afterCorrect: '签名是器械商的名字，但那个人上个月已经出国了。'
       },
       {
-        plotDescription: '彩排结束，他走过来，说了一句让她没脾气的话。',
-        line: "You're cute when you pretend you didn't say that.",
-        lineCn: '你假装自己没说过那句话的时候很可爱。',
-        prompt: "根据上下文，选出画线词汇 'Cute' 最准确的意思。",
+        plotDescription: '她终于知道信是谁写的。',
+        line: "He called himself my friend — what a hypocrite.",
+        lineCn: '他还自称是我朋友，真是个伪君子。',
+        prompt: "根据上下文，选出画线词汇 'Hypocrite' 最准确的意思。",
         options: [
-          { key: 'A', en: 'smart', cn: '聪明的', correct: false, reason: '他说的是她否认时的样子，不是脑子好使。' },
-          { key: 'B', en: 'sweet, endearing', cn: '可爱、讨人喜欢', correct: true, reason: '他被她那点嘴硬取悦了，cute 指让人觉得可爱。' },
-          { key: 'C', en: 'short', cn: '个子矮的', correct: false, reason: 'cute 有“小巧”的用法，但这里指神态讨人喜欢。' }
+          { key: 'A', en: 'says one thing, does another', cn: '伪君子，说一套做一套', correct: true, reason: '嘴上叫朋友、背后写举报信，正是伪君子。' },
+          { key: 'B', en: 'a hero', cn: '英雄', correct: false, reason: '写匿名信的人不会被称作英雄。' },
+          { key: 'C', en: 'a stranger', cn: '陌生人', correct: false, reason: '句子说的是「自称朋友」，不是陌生人。' }
         ],
-        analysis: 'cute 在这里是带着笑意的亲昵。他不是在夸外貌，是在说她那个转身的动作很讨喜。',
-        wrongFeedback: '你答成“个子矮”，她立刻反驳：“我一米六八。”',
-        afterCorrect: '她愣了两秒，最后只能说：“明天你别说话。”他点头：“好，明天我只看着你。”'
+        analysis: 'hypocrite 指嘴上讲道德、实际做出相反行为的人。',
+        wrongFeedback: '你答成「英雄」，他说：「那我宁愿没有这种英雄。」气血 -10',
+        afterCorrect: '她说：「是陈默。」他闭了一下眼睛，很久才说：「我知道。」'
       }
     ],
-    completeText: '礼堂的灯一盏盏熄下去，红毯上还留着彩排时踩出的脚印。温以宁走在最后，回头看了一眼明天要站的位置。十七岁那年她连他的侧脸都不敢看，明天却要站在他旁边。'
+    completeText: '婚礼请柬已经发出去了。他把那张请柬从桌上拿起来，看了很久，最后放回原处，没有撕。'
   },
   {
     id: 'pl_46',
     index: 46,
-    title: '第 46 章 · 交换戒指',
+    title: '第 46 章 · 举报信之后',
     novel: '暗恋你第十年',
     speaker: { name: '周叙', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '婚礼当天，周叙谁都没让送。他一个人挤地铁去酒店，车厢摇摇晃晃，西装被人撞了两下。他握着口袋里的戒指盒，手心一直出汗。',
+    storyText: '陈默来了，站在办公室门口，说他是来「解释」的。他说那封信是为周叙好，怕他走错路。周叙给他倒了杯水，请他坐下。',
     questions: [
       {
-        plotDescription: '他给温以宁发消息，说路上有点堵。',
-        line: "My commute is longer than usual today. I'll still be early.",
-        lineCn: '我今天通勤比平时久，不过还是会早到。',
-        prompt: "根据上下文，选出画线词汇 'Commute' 最准确的意思。",
+        plotDescription: '温以宁在门外听完，忍不住开口。',
+        line: "That's a backstab, not advice.",
+        lineCn: '那是背刺，不是什么忠告。',
+        prompt: "根据上下文，选出画线词汇 'Backstab' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a phone call', cn: '一通电话', correct: false, reason: '他讲的是路上花的时间，不是打电话。' },
-          { key: 'B', en: 'wedding gift', cn: '婚礼礼物', correct: false, reason: '礼物已经在口袋里，这句说的是路况。' },
-          { key: 'C', en: 'the daily trip to work', cn: '通勤、上下班的那段路', correct: true, reason: '他在描述从家到酒店的路，commute 指日常往返路程。' }
+          { key: 'A', en: 'betray behind someone back', cn: '背刺，在背后捅刀', correct: true, reason: '匿名举报加「为你好」的说法，正是背刺。' },
+          { key: 'B', en: 'a joke', cn: '一个玩笑', correct: false, reason: '纪检调查不是玩笑。' },
+          { key: 'C', en: 'a friendly warning', cn: '善意的提醒', correct: false, reason: '提醒会当面说，不会写匿名信。' }
         ],
-        analysis: 'commute 是每天重复的那段路。用在这个早上，就把“平常”和“今天”叠在了一起。',
-        wrongFeedback: '你答成“一通电话”，她以为他在通话，只回了句“专心走路”。',
-        afterCorrect: '他回了一个“好”，把手机收起来。地铁到站时，他对着玻璃整了整领口，深深吸了一口气。'
+        analysis: 'backstab 指在对方背后做出伤害他的事，比 betray 更形象、更口语。',
+        wrongFeedback: '你答成「善意的提醒」，她推门进来：「提醒需要匿名吗？」气血 -10',
+        afterCorrect: '陈默的脸白了一下，说：「你们不懂。」'
       },
       {
-        plotDescription: '化妆间里，她困得眼睛都睁不开，妆师只好让她先靠一会儿。',
-        line: "Give me ten minutes for a nap. Then I'm yours.",
-        lineCn: '给我十分钟打个盹，之后我就是你的了。',
-        prompt: "根据上下文，选出画线词汇 'Nap' 最准确的意思。",
+        plotDescription: '陈默开始说「你自己也有问题」。',
+        line: "Don't let him gaslight you — he's the one who wrote it.",
+        lineCn: '别让他 PUA 你，信是他写的。',
+        prompt: "根据上下文，选出画线词汇 'Gaslight' 最准确的意思。",
         options: [
-          { key: 'A', en: 'a short sleep', cn: '小睡、打个盹', correct: true, reason: '她说只要十分钟，nap 指时间很短的一觉。' },
-          { key: 'B', en: 'a walk', cn: '散步', correct: false, reason: '她是困了，不是想出去走走。' },
-          { key: 'C', en: 'a meal', cn: '一顿饭', correct: false, reason: '十分钟不可能指吃饭，句子里也没有食物。' }
+          { key: 'A', en: 'flatter someone', cn: '奉承某人', correct: false, reason: '把责任推到对方身上，不是奉承。' },
+          { key: 'B', en: 'make someone doubt their own mind', cn: '心理操控，让人怀疑自己', correct: true, reason: '让对方觉得「你也有问题」，正是 gaslight 的手法。' },
+          { key: 'C', en: 'pay for dinner', cn: '请吃饭', correct: false, reason: 'gas 是煤气，但 gaslight 是心理操控。' }
         ],
-        analysis: 'nap 是“白天补的一小觉”。她说只要十分钟，是给今天的自己留最后一点喘息。',
-        wrongFeedback: '你答成“散步”，妆师真的去开门了，她只好摆手：“不是那个意思。”',
-        afterCorrect: '她靠在椅背上，十分钟不到就睡着了。妆师放轻了动作，把最后一只耳环替她戴好，然后退到一边不再出声。'
+        analysis: 'gaslight 源于电影，指通过否认、扭曲事实让对方怀疑自己的判断。',
+        wrongFeedback: '你答成「请吃饭」，她说：「他倒是想请。」气血 -10',
+        afterCorrect: '周叙一直没说话，直到陈默停下来，他才开口：「说完了吗。」'
       },
       {
-        plotDescription: '婚礼结束后，两个人累得谁都不想动。',
-        line: "Let's just order in tonight. I don't have the strength to go out.",
-        lineCn: '今晚就点外卖吧，我真没力气出门了。',
-        prompt: "根据上下文，选出画线词汇 'Order in' 最准确的意思。",
+        plotDescription: '她后来才知道，陈默在科里说了很多话。',
+        line: "He manipulated the whole department into doubting me.",
+        lineCn: '他操控了整个科室，让他们都怀疑我。',
+        prompt: "根据上下文，选出画线词汇 'Manipulate' 最准确的意思。",
         options: [
-          { key: 'A', en: 'go to a restaurant', cn: '去餐厅吃饭', correct: false, reason: '她明说自己没力气出门，正好相反。' },
-          { key: 'B', en: 'have food delivered', cn: '点外卖、叫餐上门', correct: true, reason: '她不想出门，于是让饭送过来，order in 指点外卖。' },
-          { key: 'C', en: 'cook at home', cn: '在家做饭', correct: false, reason: '她说的是“点”，不是自己做。' }
+          { key: 'A', en: 'control unfairly', cn: '操控，不正当地影响别人', correct: true, reason: '让整个科室都起疑，正是背后的操控。' },
+          { key: 'B', en: 'taught them patiently', cn: '耐心地教他们', correct: false, reason: '结果是「怀疑」，不是学到东西。' },
+          { key: 'C', en: 'entertained them', cn: '娱乐了大家', correct: false, reason: '这不是娱乐，是伤害。' }
         ],
-        analysis: 'order in 和 eat out 正好相对：一个是叫进来，一个是走出去。婚礼第一晚，他们选了前者。',
-        wrongFeedback: '你答成“去餐厅”，她抬起眼睛：“你确定我现在还走得动？”',
-        afterCorrect: '他脱掉西装外套，一边点单一边念：“两份汤，一份你上次说想吃的那家。”她愣住，那是半年前的一句话。'
+        analysis: 'manipulate 指用不正当手段影响、控制他人，让人按自己的意思行事。',
+        wrongFeedback: '你答成「耐心地教他们」，她把水杯放下：「教他们怀疑我？」气血 -10',
+        afterCorrect: '他说：「我不怪他们。人在不确定的时候，都会信声音大的那个。」'
       },
       {
-        plotDescription: '第二天中午，他终于把两个人的状态说清楚。',
-        line: "We can eat out tomorrow. Today we rest.",
-        lineCn: '明天可以出去吃，今天休息。',
-        prompt: "根据上下文，选出画线词汇 'Eat out' 最准确的意思。",
+        plotDescription: '陈默最后说，你这个人就是太好说话。',
+        line: "Everyone thinks he's a push over, so they keep asking him for favors.",
+        lineCn: '所有人都觉得他是老好人，所以总找他帮忙。',
+        prompt: "根据上下文，选出画线词汇 'Push over' 最准确的意思。",
         options: [
-          { key: 'A', en: 'eat outside in the garden', cn: '在院子里吃饭', correct: false, reason: 'eat out 不是指在户外，别按字面拆开。' },
-          { key: 'B', en: 'skip the meal', cn: '不吃饭', correct: false, reason: '他说的是换个地方吃，不是不吃。' },
-          { key: 'C', en: 'have a meal at a restaurant', cn: '出去吃、下馆子', correct: true, reason: '和“今天休息”对照，eat out 指去外面吃饭。' }
+          { key: 'A', en: 'very strong and firm', cn: '非常强硬', correct: false, reason: '被当成好说话的人，正好相反。' },
+          { key: 'B', en: 'a physical push', cn: '一次推搡', correct: false, reason: 'push over 这里是比喻，指人好欺负。' },
+          { key: 'C', en: 'too easy to take advantage of', cn: '老好人，好拿捏', correct: true, reason: '总被找帮忙、不会拒绝，正是这个意思。' }
         ],
-        analysis: 'eat out 是固定说法，意思是出去吃而不是在家做。他把“明天”留给出门，把“今天”留给她。',
-        wrongFeedback: '你答成“在院子里吃饭”，她想了想：“我们家没有院子。”',
-        afterCorrect: '她躺回沙发里，把毯子拉到肩上：“那今天就这样。”他坐在另一头，替她把露在外面的脚盖好，两个人都没再说话。'
+        analysis: 'push over（也写 pushover）指容易被说服、被占便宜的人。',
+        wrongFeedback: '你答成「非常强硬」，陈默笑了一下：「他自己知道。」气血 -10',
+        afterCorrect: '周叙站起来，把门打开：「帮忙可以，背刺不行。你走吧。」'
       }
     ],
-    completeText: '戒指戴上的时候，她的手在抖，他的手也在抖。交换完，两个人都忘了下一步该做什么，台下笑成一片。他忽然俯下身，在她耳边说了一句只有她听得见的话。'
+    completeText: '门关上以后，他站在窗边很久。温以宁走过去，没有抱他，只是站在他旁边，一起看楼下的车灯。'
   },
   {
     id: 'pl_47',
     index: 47,
-    title: '第 47 章 · 敬酒时的告白',
+    title: '第 47 章 · 她站到他前面',
     novel: '暗恋你第十年',
     speaker: { name: '温以宁', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '敬酒到第三桌，有人起哄让周叙讲讲这十年是怎么熬过来的。他端着杯子站起来，说了第一句就停住，继而笑了一下，说那我从最小的事讲起。',
+    storyText: '调查说明会在示教室开。长桌，六个人，一台投影。周叙坐在最边上，手放在膝盖上不动。主持人刚说完「请当事人回避」，她先站了起来。',
     questions: [
       {
-        plotDescription: '他提起住在同一栋楼的那些年，说得格外具体。',
-        line: "I did her chores for a year and never told her.",
-        lineCn: '我替她做了一年家务，从没告诉过她。',
-        prompt: "根据上下文，选出画线词汇 'Chores' 最准确的意思。",
+        plotDescription: '她开口时，声音比预想的稳。',
+        line: "I stood up for him in front of the whole committee.",
+        lineCn: '我在整个委员会面前替他说话。',
+        prompt: "根据上下文，选出画线词汇 'Stand up for' 最准确的意思。",
         options: [
-          { key: 'A', en: 'everyday household tasks', cn: '日常家务', correct: true, reason: '他讲的是倒垃圾、洗碗这些事，chores 指日常杂活。' },
-          { key: 'B', en: 'work meetings', cn: '工作会议', correct: false, reason: '句子说的是住处的事，和会议无关。' },
-          { key: 'C', en: 'homework', cn: '学生作业', correct: false, reason: 'chores 是家务，homework 才是作业，两个词别混。' }
+          { key: 'A', en: 'stand up from a chair', cn: '从椅子上站起来', correct: false, reason: 'stand up for 的重点是「替谁说话」，不是起身的动作。' },
+          { key: 'B', en: 'defend someone publicly', cn: '站出来捍卫某人', correct: true, reason: '当着委员会开口维护他，正是这个短语。' },
+          { key: 'C', en: 'give up on him', cn: '放弃他', correct: false, reason: '她恰恰是没有放弃。' }
         ],
-        analysis: 'chores 指不得不做的琐碎家务。他说“做了一年没告诉她”，那些小事就成了十年的证据。',
-        wrongFeedback: '你答成“工作会议”，那一桌人先笑，随后又安静下来，本来该是动人的。',
-        afterCorrect: '温以宁坐在旁边，手指捏紧了杯子。她忽然想起有一年冬天，垃圾总在她下楼之前就被人拿走了。'
+        analysis: 'stand up for somebody 指在别人质疑、攻击时站出来支持他。',
+        wrongFeedback: '你答成「从椅子上站起来」，主持人愣了一下：「你可以坐下说。」气血 -10',
+        afterCorrect: '她把那封信的复印件放在桌上，说：「签名是假的，人已经出国了。」'
       },
       {
-        plotDescription: '他承认自己那几年最擅长的事，语气有点自嘲。',
-        line: "I procrastinated for ten years. I kept telling myself there was time.",
-        lineCn: '我拖延了十年，一直骗自己还有时间。',
-        prompt: "根据上下文，选出画线词汇 'Procrastinate' 最准确的意思。",
+        plotDescription: '有人问周叙为什么不解释。',
+        line: "He finally fought back and asked for the evidence.",
+        lineCn: '他终于反击了，要求拿出证据。',
+        prompt: "根据上下文，选出画线词汇 'Fight back' 最准确的意思。",
         options: [
-          { key: 'A', en: 'work too hard', cn: '工作太拼', correct: false, reason: '他是在检讨自己没做的事，与勤奋相反。' },
-          { key: 'B', en: 'keep putting things off', cn: '拖延、一拖再拖', correct: true, reason: '“一直骗自己还有时间”正是拖延，procrastinate 指不断往后推。' },
-          { key: 'C', en: 'travel a lot', cn: '经常出差', correct: false, reason: '那几年他一直在同一个城市，没跑远。' }
+          { key: 'A', en: 'resist and respond', cn: '反击，回击', correct: true, reason: '被人质疑后要求证据，正是回击。' },
+          { key: 'B', en: 'run away from it', cn: '逃避', correct: false, reason: '他开口了，不是逃。' },
+          { key: 'C', en: 'give in quietly', cn: '默默让步', correct: false, reason: '要求证据不是让步。' }
         ],
-        analysis: 'procrastinate 强调“明知该做却一直往后拖”。他拖的不是任务，是一句告白。',
-        wrongFeedback: '你答成“工作太拼”，他自嘲的忏悔一下子变成了炫耀，桌上有人笑出声。',
-        afterCorrect: '他停了一下，转头看向她：“所以今天我不拖了。”温以宁低下头，杯子里的酒轻轻晃了一下。'
+        analysis: 'fight back 指受到攻击后反击，可以是言语，也可以是行动。',
+        wrongFeedback: '你答成「逃避」，可他那天一句都没退。气血 -10',
+        afterCorrect: '会议室安静了几秒。有人翻开了材料。'
       },
       {
-        plotDescription: '他讲起两个人最早的共同记忆，声音放软了。',
-        line: "We binge-watched a whole season that night and you fell asleep on my arm.",
-        lineCn: '那天晚上我们一口气刷完了一整季，你在我胳膊上睡着了。',
-        prompt: "根据上下文，选出画线词汇 'Binge-watch' 最准确的意思。",
+        plotDescription: '她说完，坐回他旁边。',
+        line: "I'll defend him as long as I know the truth.",
+        lineCn: '只要我知道真相，我就会为他辩护。',
+        prompt: "根据上下文，选出画线词汇 'Defend' 最准确的意思。",
         options: [
-          { key: 'A', en: 'watch a single episode', cn: '只看一集', correct: false, reason: '他说的是“一整季”，不是一集。' },
-          { key: 'B', en: 'watch without sound', cn: '静音看', correct: false, reason: 'binge 指连续大量地看，与声音无关。' },
-          { key: 'C', en: 'watch many episodes in a row', cn: '连着刷很多集', correct: true, reason: '“一整季”一口气看完，binge-watch 指连续追剧。' }
+          { key: 'A', en: 'attack him', cn: '攻击他', correct: false, reason: 'defend 和 attack 正好相反。' },
+          { key: 'B', en: 'suspect him', cn: '怀疑他', correct: false, reason: '她明确站在他这边。' },
+          { key: 'C', en: 'speak in support of', cn: '辩护，为他说话', correct: true, reason: '「只要我知道真相」说明她是在为他撑住。' }
         ],
-        analysis: 'binge-watch 是流媒体时代的高频词：不按集数停。那天晚上，谁都没说“再看一集就睡”。',
-        wrongFeedback: '你答成“看一集”，那个“一整季”的分量就没了，故事也跟着变轻。',
-        afterCorrect: '她记得那一晚。她其实早就醒了，只是一直不想动，怕他一察觉就会把自己挪开，于是就那样装睡到天亮。'
+        analysis: 'defend 指为某人或某观点辩护，抵御指责。',
+        wrongFeedback: '你答成「攻击他」，她说：「我要是想攻击，就不用坐这儿了。」气血 -10',
+        afterCorrect: '他在桌下握住她的手，很用力，指节都白了。'
       },
       {
-        plotDescription: '他说到最后，承认自己做过最傻的事。',
-        line: "I used to scroll through your photos at three in the morning.",
-        lineCn: '我以前会凌晨三点翻你的照片。',
-        prompt: "根据上下文，选出画线词汇 'Scroll' 最准确的意思。",
+        plotDescription: '散会后有人在走廊里传话。',
+        line: "Don't ignore the rumor — it will grow.",
+        lineCn: '别无视那些传言，它会越长越大。',
+        prompt: "根据上下文，选出画线词汇 'Ignore' 最准确的意思。",
         options: [
-          { key: 'A', en: 'move through a screen with your finger', cn: '用手指刷屏、往下滑', correct: true, reason: '他翻手机里的照片，scroll 指在屏幕上滑动浏览。' },
-          { key: 'B', en: 'print photos out', cn: '把照片打印出来', correct: false, reason: '“凌晨三点”说的是躺着看手机，不是打印。' },
-          { key: 'C', en: 'delete photos', cn: '删除照片', correct: false, reason: '他是舍不得，不是要删。' }
+          { key: 'A', en: 'pay no attention to', cn: '无视，不去理会', correct: true, reason: '「会长大」正是对「不理它」的警告。' },
+          { key: 'B', en: 'spread it widely', cn: '到处传播', correct: false, reason: '句子是劝人别不理，不是去传。' },
+          { key: 'C', en: 'write it down', cn: '记下来', correct: false, reason: 'ignore 和记录无关。' }
         ],
-        analysis: 'scroll 指在屏幕上不断往下滑。它把那种没说出口的想念变得很具体：反复滑，反复看。',
-        wrongFeedback: '你答成“打印”，那一桌人笑场，他也不好意思地咳了一声。',
-        afterCorrect: '她抬起头，眼睛有点红：“你早说一句会怎样？”他把杯子轻轻放下：“会早十年。”整桌人都没有出声。'
+        analysis: 'ignore 指故意不去理会，常和 warning 搭配表示「别不当回事」。',
+        wrongFeedback: '你答成「到处传播」，她说：「我像是在传播的人吗。」气血 -10',
+        afterCorrect: '她当天下午写了一份情况说明，交到了纪检。'
       }
     ],
-    completeText: '那一桌人没有再起哄。有人低头喝酒，有人悄悄擦了擦眼睛。温以宁一直没说话，直到他坐下，才在桌子底下找到他的手，握住。'
+    completeText: '一周后，调查结论出来了：举报不实。她把那张纸折好，放进包里，和那支钢笔放在一起。'
   },
   {
     id: 'pl_48',
     index: 48,
-    title: '第 48 章 · 十年的账',
+    title: '第 48 章 · 婚礼前夜',
     novel: '暗恋你第十年',
     speaker: { name: '周叙', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '婚礼散场，礼金和账单摊满一桌。两个人坐在酒店房间的地毯上，一份一份对账，对到后来的数字全都对不上，反而笑成一团，她还不忘吐槽他酒喝多了。',
+    storyText: '婚礼前一夜，酒店房间。手机亮了一下，是陈默：明天我会到场，把十年前的事讲清楚。后面跟着一句：你猜大家会信谁。',
     questions: [
       {
-        plotDescription: '她把卡递给他，动作里带着点壮烈。',
-        line: "Just swipe the card. We can be broke tomorrow.",
-        lineCn: '刷卡吧，明天开始我们可以身无分文。',
-        prompt: "根据上下文，选出画线词汇 'Swipe' 最准确的意思。",
+        plotDescription: '他盯着那条消息，没有回复。',
+        line: "His silence was worse than any threat.",
+        lineCn: '他的沉默比任何威胁都难受。',
+        prompt: "根据上下文，选出画线词汇 'Silence' 最准确的意思。",
         options: [
-          { key: 'A', en: 'tear the card', cn: '把卡撕了', correct: false, reason: '她要付钱，不是毁卡。' },
-          { key: 'B', en: 'slide a card through a reader', cn: '刷卡', correct: true, reason: '付账时的动作，swipe 指把卡在机器上刷一下。' },
-          { key: 'C', en: 'hide the card', cn: '把卡藏起来', correct: false, reason: '她说“明天再穷”，是准备花钱，不是藏钱。' }
+          { key: 'A', en: 'saying nothing at all', cn: '沉默，一句话都不说', correct: true, reason: '盯着消息不回，正是那种沉默。' },
+          { key: 'B', en: 'a loud argument', cn: '大声争吵', correct: false, reason: '他一个字都没发。' },
+          { key: 'C', en: 'a phone call', cn: '一通电话', correct: false, reason: '消息是文字，不是通话。' }
         ],
-        analysis: 'swipe 的本义是“快速滑动”，刷卡正是这个动作。她嘴上说得夸张，手已经把卡递过去了。',
-        wrongFeedback: '你答成“把卡撕了”，他赶紧把卡抢回来，还以为她真的喝多了。',
-        afterCorrect: '他接过卡，却先把自己那份钱转给她：“AA。”她挑眉：“新婚第一天就AA？”他咳了一声：“我怕你后悔。”'
+        analysis: 'silence 指向外界传达出的「不说话」，在关系里常被理解为一种压力。',
+        wrongFeedback: '你答成「大声争吵」，可屏幕上只有那条消息。气血 -10',
+        afterCorrect: '他把手机扣在桌上，又翻过来，打了两个字：随你。'
       },
       {
-        plotDescription: '对完最后一笔，两个人几乎同时撑不住了。',
-        line: "I'm going to crash. Wake me up in the morning.",
-        lineCn: '我要倒头就睡了，早上叫我。',
-        prompt: "根据上下文，选出画线词汇 'Crash' 最准确的意思。",
+        plotDescription: '温以宁看完消息，问他要不要报警。',
+        line: "He threatened to tell everyone at the wedding.",
+        lineCn: '他威胁要在婚礼上告诉所有人。',
+        prompt: "根据上下文，选出画线词汇 'Threaten' 最准确的意思。",
         options: [
-          { key: 'A', en: 'have an accident', cn: '撞车、出事故', correct: false, reason: 'crash 有“撞车”的意思，但这里没有人开车，是困到极限。' },
-          { key: 'B', en: 'get angry', cn: '发火', correct: false, reason: '他说“早上叫我”，语气是累，不是怒。' },
-          { key: 'C', en: 'fall asleep immediately', cn: '累到一下就睡着', correct: true, reason: '婚礼一整天之后只想躺下，crash 指精疲力尽地睡过去。' }
+          { key: 'A', en: 'invite everyone', cn: '邀请所有人', correct: false, reason: '「告诉所有人」在这里是威胁，不是邀请。' },
+          { key: 'B', en: 'warn of harm', cn: '威胁，扬言要做伤害人的事', correct: true, reason: '要在婚礼上揭旧事，正是拿这件事压人。' },
+          { key: 'C', en: 'promise a gift', cn: '承诺送礼物', correct: false, reason: '没有礼物，只有条件。' }
         ],
-        analysis: '口语里 crash 常指“累坏了一沾床就睡”。婚礼的红包和账单一起，把他彻底放倒。',
-        wrongFeedback: '你答成“撞车”，她吓得坐直：“谁撞了？”他已经在打哈欠。',
-        afterCorrect: '她还想再算两笔，转头时他已经睡着了，手里还捏着一张账单。她把纸抽出来，替他盖好了被子。'
+        analysis: 'threaten 指扬言要做出对对方不利的事，用来施压。',
+        wrongFeedback: '你答成「邀请所有人」，她说：「他可不是来喝喜酒的。」气血 -10',
+        afterCorrect: '他说：「不用报警。他想说，就让他说。」'
       },
       {
-        plotDescription: '她翻着礼金簿，忽然想起很久以前的事。',
-        line: "Remember when we used to hang out on the roof after school?",
-        lineCn: '还记得我们以前放学后总在天台上待着吗？',
-        prompt: "根据上下文，选出画线词汇 'Hang out' 最准确的意思。",
+        plotDescription: '她问他怕不怕。',
+        line: "He wanted to ruin the day for both of us.",
+        lineCn: '他就是想毁掉我们两个的这一天。',
+        prompt: "根据上下文，选出画线词汇 'Ruin' 最准确的意思。",
         options: [
-          { key: 'A', en: 'spend time together casually', cn: '一起消磨时间、待在一起', correct: true, reason: '她问的是放学后那段闲待着的日子，hang out 指没有目的地待在一起。' },
-          { key: 'B', en: 'hang clothes outside', cn: '把衣服晾出去', correct: false, reason: 'hang out 有“晾衣服”的意思，但这里说的是天台上的两个人。' },
-          { key: 'C', en: 'study hard', cn: '用功读书', correct: false, reason: '她说的是“待着”，不是学习。' }
+          { key: 'A', en: 'improve it', cn: '让它变得更好', correct: false, reason: '和「想毁掉」正好相反。' },
+          { key: 'B', en: 'plan it carefully', cn: '仔细地安排', correct: false, reason: 'ruin 是破坏，不是安排。' },
+          { key: 'C', en: 'spoil completely', cn: '毁掉，彻底搞坏', correct: true, reason: '在婚礼上揭旧事，目的就是让这一天毁掉。' }
         ],
-        analysis: 'hang out 几乎不带目的性。十年前那段“什么都没做”的时间，反而是他们最靠近的时候。',
-        wrongFeedback: '你答成“晾衣服”，她笑出声：“我们那时候是在晾自己。”',
-        afterCorrect: '他闭着眼睛应了一声：“记得。你每次都坐那个角，说那里风小。”她愣住了，他连位置都记得。'
+        analysis: 'ruin 指把原本好的事物彻底破坏，常指机会、心情、场合。',
+        wrongFeedback: '你答成「仔细地安排」，她说：「他倒是真精心。」气血 -10',
+        afterCorrect: '他说：「那我更不能怕。」'
       },
       {
-        plotDescription: '她把账本合上，往后一靠，做了个决定。',
-        line: "Let's kick back for a few days. The rest can wait.",
-        lineCn: '我们放松几天吧，剩下的都可以等。',
-        prompt: "根据上下文，选出画线词汇 'Kick back' 最准确的意思。",
+        plotDescription: '她想起白天母亲说的话。',
+        line: "One sentence can destroy ten years of trust.",
+        lineCn: '一句话就能摧毁十年的信任。',
+        prompt: "根据上下文，选出画线词汇 'Destroy' 最准确的意思。",
         options: [
-          { key: 'A', en: 'kick something away', cn: '把东西踢开', correct: false, reason: 'kick back 不是“踢”，别按字面拆开理解。' },
-          { key: 'B', en: 'relax and do nothing much', cn: '放松、歇着', correct: true, reason: '她说“剩下的都可以等”，kick back 指懒散地休息。' },
-          { key: 'C', en: 'return the money', cn: '把钱退回去', correct: false, reason: '账已经对完，她说的是休息，不是退款。' }
+          { key: 'A', en: 'damage beyond repair', cn: '摧毁，破坏到无法修复', correct: true, reason: '和「十年的信任」搭配，指的正是不可逆的破坏。' },
+          { key: 'B', en: 'build up slowly', cn: '慢慢建立', correct: false, reason: 'destroy 和 build 正好相反。' },
+          { key: 'C', en: 'measure exactly', cn: '精确测量', correct: false, reason: 'trust 不能被测量。' }
         ],
-        analysis: 'kick back 是彻底的松懈：不做正事，也不内疚。这对她来说，比婚纱和戒指都难。',
-        wrongFeedback: '你答成“把东西踢开”，她本来轻轻的一句话被听成了发脾气。',
-        afterCorrect: '他睁开一只眼睛：“你确定你能闲着？”她认真想了想：“不能。但我可以学着。”他笑出声，把毯子分她一半。'
+        analysis: 'destroy 指彻底毁坏，比 damage 更重，常带不可挽回的意味。',
+        wrongFeedback: '你答成「慢慢建立」，她说：「我们现在缺的恰恰是这个。」气血 -10',
+        afterCorrect: '他把那件熨好的衬衫挂起来，说：「明天穿这件。」'
       }
     ],
-    completeText: '地毯上还散着礼金簿和红包。灯没有关，两个人一个躺着，一个靠着，谁也没有动。十年里他们错过了太多这样的夜晚，从今天起，得慢慢补回来。'
+    completeText: '那一晚两个人都没怎么睡。凌晨三点，他给她发了句：明天不管他说什么，你站我旁边就行。她回：我一直都在。'
   },
   {
     id: 'pl_49',
     index: 49,
-    title: '第 49 章 · 新婚的第一天',
+    title: '第 49 章 · 十年的账',
     novel: '暗恋你第十年',
     speaker: { name: '温以宁', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '新婚后第一个白天，家里像被搬空又搬回来。纸箱从门口堆到客厅，衣服分不清是谁的，冰箱里只剩半瓶水。温以宁站在中间，第一次觉得自己该有个计划。',
+    storyText: '婚礼当天早上，酒店休息室。他父亲来了，身后跟着陈默。老人把那个铁盒放在桌上，说：「今天这账，我来算。」',
     questions: [
       {
-        plotDescription: '她指着最后一箱没拆的东西，给他派了活。',
-        line: "Let's wrap up this room before dinner, okay?",
-        lineCn: '晚饭前把这个房间收尾吧，行吗？',
-        prompt: "根据上下文，选出画线词汇 'Wrap up' 最准确的意思。",
+        plotDescription: '老人先开口，声音很低。',
+        line: "My biggest regret is that I never asked you why.",
+        lineCn: '我最后悔的，是从来没问过你为什么。',
+        prompt: "根据上下文，选出画线词汇 'Regret' 最准确的意思。",
         options: [
-          { key: 'A', en: 'wrap it as a gift', cn: '把它包成礼物', correct: false, reason: '屋里全是纸箱，没有人要送礼物。' },
-          { key: 'B', en: 'cover it with a sheet', cn: '用布把它盖上', correct: false, reason: '“收尾”指的是把活干完，不是盖起来。' },
-          { key: 'C', en: 'finish it up', cn: '收尾、把事情做完', correct: true, reason: '她说的是把这间屋子收拾完，wrap up 指结束、完成。' }
+          { key: 'A', en: 'feeling sorry about the past', cn: '后悔，为过去的事懊悔', correct: true, reason: '「从来没问过」正是回头看的懊悔。' },
+          { key: 'B', en: 'a plan for the future', cn: '对未来的计划', correct: false, reason: '句子说的是回头看的事。' },
+          { key: 'C', en: 'a happy memory', cn: '一段快乐的回忆', correct: false, reason: '「最后悔」不可能是快乐。' }
         ],
-        analysis: 'wrap up 从“包起来”引申为“收尾”。她给它加了个时间点：晚饭前，把乱的东西切成一段段。',
-        wrongFeedback: '你答成“包成礼物”，他举起一个纸箱：“那这个送谁？”',
-        afterCorrect: '他答应了，蹲下来拆胶带。她站在门口看了一会儿，忽然发现有人一起干活，累这件事就轻了一半。'
+        analysis: 'regret 指对已经发生或没做的事感到后悔，是可数名词也可作动词。',
+        wrongFeedback: '你答成「对未来的计划」，老人低下头：「我没有未来了。」气血 -10',
+        afterCorrect: '周叙没有接话，只是把手放在桌上，慢慢握成拳。'
       },
       {
-        plotDescription: '她蹲在衣服堆前，开始分那些分不清主人的东西。',
-        line: "Help me sort out whose clothes are whose.",
-        lineCn: '帮我分一下这些衣服到底是谁的。',
-        prompt: "根据上下文，选出画线词汇 'Sort out' 最准确的意思。",
+        plotDescription: '陈默说他是被逼的。',
+        line: "He didn't want revenge — he wanted to be seen.",
+        lineCn: '他不是想复仇，他只是想被人看见。',
+        prompt: "根据上下文，选出画线词汇 'Revenge' 最准确的意思。",
         options: [
-          { key: 'A', en: 'separate and organize', cn: '分类整理、理清楚', correct: true, reason: '她把混在一起的衣服按人分开，sort out 指整理归类。' },
-          { key: 'B', en: 'throw away', cn: '扔掉', correct: false, reason: '她只是要分开，并没有说要丢。' },
-          { key: 'C', en: 'buy new ones', cn: '买新的', correct: false, reason: '句子里没有购物，只有一堆旧衣服。' }
+          { key: 'A', en: 'hurting someone back', cn: '复仇，回击伤害过自己的人', correct: true, reason: '写举报信、放话要揭旧事，正是报复的动作。' },
+          { key: 'B', en: 'forgiveness', cn: '原谅', correct: false, reason: '和「复仇」正好相反。' },
+          { key: 'C', en: 'money', cn: '金钱', correct: false, reason: '句子里说的是「被看见」，不是钱。' }
         ],
-        analysis: 'sort out 既指“分类”，也常指“把事情理顺”。她收拾的是衣服，理的是两个人从此住在一起。',
-        wrongFeedback: '你答成“扔掉”，他赶紧护住自己那件旧卫衣：“这个不能扔。”',
-        afterCorrect: '两件一模一样的黑T恤摆在中间，谁也认不出来。她抬眼看他：“以后买点有颜色的。”'
+        analysis: 'revenge 指为了所受的伤害而回击对方，常带情绪上的执念。',
+        wrongFeedback: '你答成「原谅」，陈默抬起头，眼睛是红的。气血 -10',
+        afterCorrect: '老人说：「我当年也没看见他。这是我的错。」'
       },
       {
-        plotDescription: '楼下邻居来敲门，说他们家漏水，语气不太好。',
-        line: "I'll deal with the neighbor. You keep unpacking.",
-        lineCn: '邻居那边我去处理，你继续拆箱子。',
-        prompt: "根据上下文，选出画线词汇 'Deal with' 最准确的意思。",
+        plotDescription: '话说开之后，房间里安静下来。',
+        line: "For the first time in ten years, I felt peace.",
+        lineCn: '十年来我第一次觉得平静。',
+        prompt: "根据上下文，选出画线词汇 'Peace' 最准确的意思。",
         options: [
-          { key: 'A', en: 'argue with', cn: '和……吵架', correct: false, reason: '他说的是“我去处理”，还没到吵架这一步。' },
-          { key: 'B', en: 'handle, take care of', cn: '处理、应付', correct: true, reason: '他去面对邻居的问题，deal with 指应对、解决。' },
-          { key: 'C', en: 'invite in', cn: '请进来', correct: false, reason: '漏水是麻烦，不是要请客。' }
+          { key: 'A', en: 'excitement', cn: '兴奋', correct: false, reason: '房间安静下来，不是兴奋的场面。' },
+          { key: 'B', en: 'calm and quiet', cn: '平静，心里安稳', correct: true, reason: '账算清了、话说开了，正是那种安静。' },
+          { key: 'C', en: 'fear', cn: '恐惧', correct: false, reason: '她用的是「第一次」，是松下来。' }
         ],
-        analysis: 'deal with 常带“不得不面对的麻烦”。他把麻烦接过去，让她继续做手上那一件。',
-        wrongFeedback: '你答成“请进来”，门一开，邻居身后还跟着物业，客厅更乱了。',
-        afterCorrect: '他出去不到十分钟就回来了，说已经约好师傅。她抬头：“这么快？”他耸肩：“态度好就行。”'
+        analysis: 'peace 指没有冲突、内心安宁的状态，比 quiet 更偏心理层面。',
+        wrongFeedback: '你答成「恐惧」，可她站着，肩膀已经松了。气血 -10',
+        afterCorrect: '她把茶推到陈默面前，说：「喝口水。等会儿还有仪式。」'
       },
       {
-        plotDescription: '忙到晚上，她还想再擦一遍地，被按在了沙发上。',
-        line: "Chill out. The floor will still be there tomorrow.",
-        lineCn: '放松点吧，地板明天还在那儿。',
-        prompt: "根据上下文，选出画线词汇 'Chill out' 最准确的意思。",
+        plotDescription: '老人提议，今天先停战。',
+        line: "They called a truce for one day — just for the wedding.",
+        lineCn: '他们说好休战一天，就为了这场婚礼。',
+        prompt: "根据上下文，选出画线词汇 'Truce' 最准确的意思。",
         options: [
-          { key: 'A', en: 'get cold', cn: '变冷', correct: false, reason: 'chill out 不是温度变化，而是让人放松下来。' },
-          { key: 'B', en: 'go outside', cn: '到外面去', correct: false, reason: '句子是让她别干活，不是叫她出门。' },
-          { key: 'C', en: 'relax, calm down', cn: '放松、别绷着', correct: true, reason: '他让她停下手上的活，chill out 指放轻松。' }
+          { key: 'A', en: 'a wedding gift', cn: '一份结婚礼物', correct: false, reason: 'truce 是停战约定，不是礼物。' },
+          { key: 'B', en: 'a long trip', cn: '一段长途旅行', correct: false, reason: '句子说的是「一天」，不是旅行。' },
+          { key: 'C', en: 'an agreement to stop fighting', cn: '休战，暂时停止冲突的约定', correct: true, reason: '「就为了婚礼」加「一天」，正是暂时停战。' }
         ],
-        analysis: 'chill out 是劝人“别绷着”。对她这种习惯把一切做完的人来说，这句话需要练很久。',
-        wrongFeedback: '你答成“变冷”，她愣了一下：“地板怎么会变冷？”',
-        afterCorrect: '她终于把抹布放下，靠进沙发里。窗外的灯亮起来的时候，她第一次觉得，这个家已经像家了。'
+        analysis: 'truce 指双方约定暂时停止争斗，通常是有限期的。',
+        wrongFeedback: '你答成「一份结婚礼物」，老人说：「这个我可送不起。」气血 -10',
+        afterCorrect: '陈默点了下头，站起来，走到门口又回头：「对不起。」'
       }
     ],
-    completeText: '纸箱拆完，最后一格柜子空出来，正好放一张两人的合照。她把它摆上去，退后两步看。照片里的他们还在医院走廊，隔着半步，谁都没敢靠得太近。'
+    completeText: '门关上。老人把铁盒推到周叙面前：「这本来该十年前给你。」周叙打开，里面除了戒指，还有一张他小时候的照片。'
   },
   {
     id: 'pl_50',
@@ -3289,65 +3293,65 @@ window.NOVEL_CHAPTERS.pure_love = [
     title: '第 50 章 · 十年之后，仍在心动',
     novel: '暗恋你第十年',
     speaker: { name: '周叙', avatar: window.VERSION_AVATARS.pure_love },
-    storyText: '一年后的冬天，温以宁又在急诊科值大夜。凌晨两点，周叙刚下手术，拎着一袋东西站在护士站外，没有出声，只是等她抬头。走廊的灯白得发冷。',
+    storyText: '婚礼后第十年，同一家医院，同一个天台。风还是那么大，栏杆新刷过一遍漆。温以宁值完夜班上来，他已经在上面了，手里两杯热豆浆。',
     questions: [
       {
-        plotDescription: '他把袋子放在桌上，动作像在做一件很熟练的事。',
-        line: "I brought snacks. You skipped dinner again, didn't you?",
-        lineCn: '我带了点吃的。你又没吃晚饭吧？',
-        prompt: "根据上下文，选出画线词汇 'Snacks' 最准确的意思。",
+        plotDescription: '他说起这十年。',
+        line: "It took us ten years to reconcile with the past.",
+        lineCn: '我们花了十年才和过去和解。',
+        prompt: "根据上下文，选出画线词汇 'Reconcile' 最准确的意思。",
         options: [
-          { key: 'A', en: 'small food between meals', cn: '零食、垫肚子的小食', correct: true, reason: '他带来给她临时吃的东西，snack 指正餐之外的小食。' },
-          { key: 'B', en: 'medicine', cn: '药', correct: false, reason: '他问的是“没吃晚饭”，带的是吃的。' },
-          { key: 'C', en: 'a report', cn: '一份报告', correct: false, reason: '袋子里是可以吃的东西，不是文件。' }
+          { key: 'A', en: 'make peace with', cn: '和解，与过去讲和', correct: true, reason: '「花了十年」加「和过去」，正是慢慢放下、重新相处。' },
+          { key: 'B', en: 'forget everything', cn: '把一切忘掉', correct: false, reason: '和解不等于忘记，他们记得很清楚。' },
+          { key: 'C', en: 'argue again', cn: '再吵一次', correct: false, reason: '花了十年才做到的事，不可能是再吵。' }
         ],
-        analysis: 'snack 是“随手垫一口”的东西。他知道她忙起来会跳过饭，所以从不空手来。',
-        wrongFeedback: '你答成“药”，她愣了一下，以为自己是不是做错了什么。',
-        afterCorrect: '她抬起头，先看见那个袋子，再看见他。她笑了一下：“你怎么知道我没吃？”他把椅子拉过来：“十年了。”'
+        analysis: 'reconcile 指在分歧之后重新和好，也可指接受无法改变的事。',
+        wrongFeedback: '你答成「把一切忘掉」，她把豆浆递回去：「我可一句都没忘。」气血 -10',
+        afterCorrect: '他说：「我也没忘。我连你那天穿的鞋都记得。」'
       },
       {
-        plotDescription: '她抓起杯子就要灌咖啡，被他按住，推过来一瓶水。',
-        line: "Hydrate first. Coffee can wait ten minutes.",
-        lineCn: '先补点水，咖啡可以等十分钟。',
-        prompt: "根据上下文，选出画线词汇 'Hydrate' 最准确的意思。",
+        plotDescription: '她说他们现在也会吵。',
+        line: "We still have an argument every month about whose turn it is to cook.",
+        lineCn: '我们每个月还会为谁做饭争一次。',
+        prompt: "根据上下文，选出画线词汇 'Argument' 最准确的意思。",
         options: [
-          { key: 'A', en: 'eat something', cn: '吃点东西', correct: false, reason: '他递的是水，说的是喝水，不是吃东西。' },
-          { key: 'B', en: 'take in water', cn: '补水、喝够水', correct: true, reason: '他拦住咖啡递上水，hydrate 指补充水分。' },
-          { key: 'C', en: 'take a break', cn: '休息一下', correct: false, reason: '“休息”是 rest，这里的重点是水。' }
+          { key: 'A', en: 'a love letter', cn: '一封情书', correct: false, reason: '为做饭争执，不是情书。' },
+          { key: 'B', en: 'a disagreement', cn: '争论，意见不合', correct: true, reason: '「为谁做饭」加「每个月」，正是日常的小争执。' },
+          { key: 'C', en: 'a medical case', cn: '一个病例', correct: false, reason: '和做饭无关。' }
         ],
-        analysis: 'hydrate 是医学和健身场景都常用的词。她知道他是对的，只好把水接过来，先喝了一口。',
-        wrongFeedback: '你答成“吃点东西”，她张嘴就要说话，被他一句“先喝”堵了回去。',
-        afterCorrect: '她仰头喝了几口，才发现自己一整天真的没怎么喝水。他一直盯着，等她喝完才把咖啡推回去。'
+        analysis: 'argument 指意见不同引发的争论，可大可小，日常小事也常用。',
+        wrongFeedback: '你答成「一封情书」，她说：「这情书写得挺凶。」气血 -10',
+        afterCorrect: '他说：「每次都是我赢。」她说：「你赢是因为我懒得说。」'
       },
       {
-        plotDescription: '他站起来活动了一下，顺手也把她从椅子上拉起来。',
-        line: "Stand up and stretch. Your neck is going to hurt.",
-        lineCn: '站起来伸个懒腰，不然你脖子要疼了。',
-        prompt: "根据上下文，选出画线词汇 'Stretch' 最准确的意思。",
+        plotDescription: '她问他，现在还打架吗。',
+        line: "We don't fight anymore — we just talk too long.",
+        lineCn: '我们不吵了，就是话说得太久。',
+        prompt: "根据上下文，选出画线词汇 'Fight' 最准确的意思。",
         options: [
-          { key: 'A', en: 'exaggerate, stretch the truth', cn: '夸大其词', correct: false, reason: 'stretch 有“夸大”的用法，但这里说的是身体动作。' },
-          { key: 'B', en: 'lie down', cn: '躺下', correct: false, reason: '他让她“站起来”，不是躺下。' },
-          { key: 'C', en: 'extend your body to relax the muscles', cn: '伸展、活动筋骨', correct: true, reason: '久坐之后脖子疼，stretch 指伸展身体。' }
+          { key: 'A', en: 'a loud or physical quarrel', cn: '打架、激烈争吵', correct: true, reason: '和「只是话说得久」对比，指的正是那种激烈的冲突。' },
+          { key: 'B', en: 'hug each other', cn: '互相拥抱', correct: false, reason: '和「不再」连用，说的是冲突。' },
+          { key: 'C', en: 'work overtime', cn: '加班', correct: false, reason: '句子说的是两个人的相处。' }
         ],
-        analysis: 'stretch 在这里是具体动作：把绷了一整天的地方拉开。他管得太细，细到像在记录她的习惯。',
-        wrongFeedback: '你答成“夸大其词”，她一边站起来一边笑：“我现在没力气夸张。”',
-        afterCorrect: '她被拉着站好，双臂举过头顶，肩颈处响了一声。他满意地点头：“这才对。”护士站里有人笑。'
+        analysis: 'fight 可指肢体冲突，也可指激烈的争吵，要看上下文。',
+        wrongFeedback: '你答成「互相拥抱」，她说：「那倒也是，抱得挺多。」气血 -10',
+        afterCorrect: '他笑了一下，说：「主要是你话多。」她说：「你现在敢说了。」'
       },
       {
-        plotDescription: '她靠着墙，忽然不说话了，眼睛落在远处某个点上。',
-        line: "You're zoning out. Go lie down for twenty minutes.",
-        lineCn: '你走神了，去躺二十分钟吧。',
-        prompt: "根据上下文，选出画线词汇 'Zone out' 最准确的意思。",
+        plotDescription: '风把她的头发吹到脸上，他伸手替她拨开。',
+        line: "Marriage is mostly compromise — and remembering to buy milk.",
+        lineCn: '婚姻大部分是妥协，还有记得买牛奶。',
+        prompt: "根据上下文，选出画线词汇 'Compromise' 最准确的意思。",
         options: [
-          { key: 'A', en: 'stop paying attention, drift off', cn: '走神、发呆放空', correct: true, reason: '她眼神散掉、不说话，zone out 指注意力飘走。' },
-          { key: 'B', en: 'fall asleep deeply', cn: '睡得很沉', correct: false, reason: '她还站着，只是发呆，没到睡着的程度。' },
-          { key: 'C', en: 'leave the room', cn: '离开房间', correct: false, reason: '她靠墙站着没动，zone out 是精神上走开了。' }
+          { key: 'A', en: 'winning every time', cn: '每次都赢', correct: false, reason: '妥协不是每次赢。' },
+          { key: 'B', en: 'silence', cn: '沉默', correct: false, reason: '他把妥协和「买牛奶」并列，是日常的让步。' },
+          { key: 'C', en: 'both sides give a little', cn: '妥协，各让一步', correct: true, reason: '日常琐事里各退一点，正是 compromise。' }
         ],
-        analysis: 'zone out 是“人在，神不在”。他一整晚都在看她的状态，所以她刚一走神，他就发现了。',
-        wrongFeedback: '你答成“睡得很沉”，她眨了下眼：“我还站着呢。”',
-        afterCorrect: '她被他推进值班室，躺下之前还说了句“十五分钟叫我”。他没有答应，只是把门轻轻带上。'
+        analysis: 'compromise 指双方各自让步、达成都能接受的方案。',
+        wrongFeedback: '你答成「每次都赢」，她说：「那你今天做饭。」他立刻改口：「我妥协。」气血 -10',
+        afterCorrect: '她靠在他肩上，说：「周叙，你知道吗，我到现在还是会心跳快。」'
       }
     ],
-    completeText: '很多年后的冬天也许还是这样：她在急诊科忙到忘记吃饭，他在走廊外等她抬头。灯很白，可只要有人抬头，就能看见另一个人站在那里。十年讲完了，往后的每一年还在继续。'
+    completeText: '他低头看她，眼睛还是十年前那双。他说：「我也是。」风从走廊那头吹过来，天亮了。十年前她在这里错过他一次，十年后，她还站在这里。'
   }
 ];

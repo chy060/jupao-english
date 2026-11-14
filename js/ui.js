@@ -153,6 +153,15 @@
           <h1 class="title">剧抛大脑</h1>
           <p class="subtitle">英语生存局 · English Survival</p>
           <p class="hero-desc">200 个欧美剧高频词 × 5 种剧情人生<br>答对一题，小说剧情就往前一步</p>
+          <div class="how-to-play">
+            <span class="how-step"><i>1</i>选择人设</span>
+            <span class="how-sep">→</span>
+            <span class="how-step"><i>2</i>阅读剧情</span>
+            <span class="how-sep">→</span>
+            <span class="how-step"><i>3</i>完成英语选择</span>
+            <span class="how-sep">→</span>
+            <span class="how-step"><i>4</i>解锁下一章</span>
+          </div>
         </header>
         ${save ? `
           <div class="resume-banner" id="resumeBanner">

@@ -27,6 +27,12 @@ window.TTS = (function() {
     pure_love:   { pitch: 1.40, rate: 0.88, prefer: ['Google US English', 'Samantha', 'Aria', 'Jenny', 'Zira'] } // 纯爱：轻缓治愈
   };
 
+  const UA = (typeof navigator !== 'undefined' && navigator.userAgent) || '';
+  // iOS / iPadOS 的语音合成必须在用户手势的同一个事件循环里调用
+  const IS_APPLE = /iPhone|iPad|iPod/i.test(UA) || (/Macintosh/.test(UA) && navigator.maxTouchPoints > 1);
+  // 微信内置浏览器对 Web Speech 支持不稳定，直接用音频更保险
+  const IS_WECHAT = /MicroMessenger/i.test(UA);
+
   function init() {
     if ('speechSynthesis' in window) {
       synth = window.speechSynthesis;
@@ -100,20 +106,30 @@ window.TTS = (function() {
 
         let started = false;
         utter.onstart = function() { started = true; };
-        utter.onerror = function() { if (!started) playAudio(text); };
+        utter.onerror = function() { if (!started && !IS_APPLE) playAudio(text); };
 
         currentUtterance = utter;
         if (synth.paused) synth.resume();
         synth.speak(utter);
 
-        // 合成器没有任何反应（系统缺语音/被静音）时改用云端音频
-        setTimeout(function() {
-          if (!started && !synth.speaking && !synth.pending) playAudio(text);
-        }, 1200);
+        // 合成器没有任何反应（系统缺语音/被静音）时改用词典音频
+        // iOS 上这里一定已经被系统拦截，不用白试
+        if (!IS_APPLE) {
+          setTimeout(function() {
+            if (!started && !synth.speaking && !synth.pending) playAudio(text);
+          }, 1200);
+        }
       } catch (e) {
-        playAudio(text);
+        if (!IS_APPLE) playAudio(text);
       }
     };
+
+    // iOS/Safari：朗读必须在用户点击的同一个事件里发起，任何延时都会被吞掉
+    if (IS_APPLE) {
+      if (synth.speaking || synth.pending) synth.cancel();
+      startSpeak();
+      return;
+    }
 
     if (synth.speaking || synth.pending) {
       synth.cancel();
@@ -131,6 +147,19 @@ window.TTS = (function() {
     const language = lang || 'en-US';
 
     stopAudio();
+
+    // 微信内置浏览器：Web Speech 经常没声音，直接用音频
+    if (IS_WECHAT) {
+      playAudio(content);
+      return;
+    }
+
+    // iOS/Safari：不能等语音列表，也不能延时，必须在点击的同一事件里直接读
+    if (IS_APPLE) {
+      if (synth) doSpeak(content, language);
+      else playAudio(content);
+      return;
+    }
 
     if (!synth) {
       playAudio(content);

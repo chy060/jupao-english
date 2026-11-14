@@ -283,6 +283,8 @@
   // ========== 3.5 章节模式（答题 ↔ 小说章节绑定） ==========
   function renderChapterGame() {
     const state = window.GameEngine.getState();
+    // 换人设就换音色
+    if (window.TTS) window.TTS.setProfile(state.version.id);
     const chapters = window.GameEngine.getChapterList();
     const ch = state.chapters[state.chapterIndex];
     const done = state.chapterDone;
@@ -590,6 +592,7 @@
   }
 
   function renderQuestion(q) {
+    if (window.TTS) window.TTS.setProfile(q.version.id);
     const speakerName = (q.scene && q.scene[0] && q.scene[0].who) || q.version.name;
     return `
       <div class="speaker-row">
@@ -1094,6 +1097,8 @@
   /** 只列出已答过的单词：一直对=绿、错过但答对过=黄、一次没对过=红 */
   function renderWordBook(from) {
     document.documentElement.style.setProperty('--theme-color', '#6a11cb');
+    // 单词本是跨剧本汇总的，用回默认音色
+    if (window.TTS) window.TTS.setProfile(null);
 
     const stats = window.Store.loadWordStats();
     const bank = window.WORD_BANK || [];
